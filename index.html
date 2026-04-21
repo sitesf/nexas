@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexas — Agenție Web Premiată din România</title>
+  <meta name="description" content="Transformă-ți afacerea cu web design și dezvoltare de ultimă generație. Creăm site-uri care convertesc vizitatorii în clienți." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #0a0a0a;
+  --card-bg: #141414;
+  --card-border: rgba(255,255,255,0.08);
+  --white: #ffffff;
+  --gray: #888888;
+  --gray-light: #aaaaaa;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 40px;
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --t: 0.4s;
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'DM Serif Display', serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 2px; }
+
+/* ── NAVBAR ── */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 36px;
+  background: rgba(10,10,10,0.7);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  transition: background 0.3s ease;
+}
+.navbar.scrolled { background: rgba(10,10,10,0.95); }
+
+.nav-logo {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 8px 22px; border-radius: 100px;
+  font-size: 15px; font-weight: 600; letter-spacing: 0.06em;
+  color: var(--white); cursor: pointer;
+  transition: background var(--t) var(--ease);
+  user-select: none;
+}
+.nav-logo:hover { background: rgba(255,255,255,0.14); }
+
+.nav-right { display: flex; align-items: center; gap: 12px; }
+
+.btn-start {
+  background: var(--white); color: var(--black);
+  border: none; padding: 10px 24px; border-radius: 100px;
+  font-size: 13px; font-weight: 500; font-family: var(--font-body);
+  cursor: pointer; transition: opacity var(--t), transform var(--t);
+  position: relative; overflow: hidden;
+}
+.btn-start:hover { opacity: 0.85; transform: scale(0.98); }
+
+.nav-menu-btn {
+  width: 42px; height: 42px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.06);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 4px; cursor: pointer;
+  transition: background var(--t);
+}
+.nav-menu-btn:hover { background: rgba(255,255,255,0.12); }
+.nav-menu-btn span {
+  display: block; width: 15px; height: 1.5px;
+  background: var(--white); border-radius: 1px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-menu-btn.active span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+.nav-menu-btn.active span:nth-child(2) { opacity: 0; }
+.nav-menu-btn.active span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+
+/* ── BUTOANE ── */
+.btn-primary {
+  background: var(--white); color: var(--black);
+  padding: 14px 30px; border-radius: 100px;
+  font-size: 14px; font-weight: 500; font-family: var(--font-body);
+  border: none; cursor: pointer; text-decoration: none; display: inline-block;
+  transition: opacity var(--t), transform var(--t);
+  position: relative; overflow: hidden;
+}
+.btn-primary:hover { opacity: 0.85; transform: scale(0.98); }
+
+.btn-ghost {
+  background: transparent; color: var(--white);
+  padding: 14px 30px; border-radius: 100px;
+  font-size: 14px; font-weight: 400; font-family: var(--font-body);
+  border: 1px solid rgba(255,255,255,0.2);
+  cursor: pointer; text-decoration: none; display: inline-block;
+  transition: border-color var(--t), background var(--t);
+  position: relative; overflow: hidden;
+}
+.btn-ghost:hover { border-color: rgba(255,255,255,0.45); background: rgba(255,255,255,0.05); }
+
+.btn-outline {
+  background: transparent; color: var(--white);
+  padding: 12px 28px; border-radius: 100px;
+  font-size: 13px; font-weight: 400; font-family: var(--font-body);
+  border: 1px solid rgba(255,255,255,0.2);
+  cursor: pointer; text-decoration: none; display: inline-block;
+  transition: all var(--t); position: relative; overflow: hidden;
+}
+.btn-outline:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.4); }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh; display: flex; align-items: center;
+  position: relative; overflow: hidden;
+  padding: 100px 60px 60px; gap: 40px;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.045; pointer-events: none; z-index: 0;
+}
+.hero::after {
+  content: ''; position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
+  width: 900px; height: 500px;
+  background: radial-gradient(ellipse, rgba(255,255,255,0.04) 0%, transparent 70%);
+  pointer-events: none; z-index: 0;
+}
+
+.hero-content { position: relative; z-index: 1; flex: 1; max-width: 520px; }
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--gray-light);
+  margin-bottom: 28px; letter-spacing: 0.04em;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(44px, 5.5vw, 72px);
+  font-weight: 400; line-height: 1.08;
+  color: var(--white); margin-bottom: 24px;
+  letter-spacing: -0.01em; will-change: transform;
+}
+
+.hero-desc {
+  font-size: 15px; color: var(--gray);
+  line-height: 1.7; max-width: 390px; margin-bottom: 40px;
+}
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* galerie hero */
+.hero-gallery {
+  position: relative; z-index: 1; flex: 1;
+  display: flex; gap: 14px; max-height: 82vh; overflow: hidden;
+  align-items: flex-start;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+.gallery-col { display: flex; flex-direction: column; gap: 14px; flex: 1; will-change: transform; }
+.gallery-col-1 { animation: scrollUp 22s linear infinite; }
+.gallery-col-2 { animation: scrollDown 28s linear infinite; margin-top: -70px; }
+.gallery-col:hover { animation-play-state: paused; }
+@keyframes scrollUp   { 0%{transform:translateY(0)}    100%{transform:translateY(-50%)} }
+@keyframes scrollDown { 0%{transform:translateY(-50%)} 100%{transform:translateY(0)} }
+
+.gallery-card {
+  border-radius: var(--radius-md); overflow: hidden;
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  position: relative; cursor: pointer; flex-shrink: 0;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.gallery-card:hover { transform: scale(1.02); border-color: rgba(255,255,255,0.22); }
+
+.gc-thumb {
+  width: 100%; height: 196px;
+  display: flex; align-items: flex-end; padding: 16px;
+  position: relative;
+}
+.gc-thumb::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);
+}
+.gc-badge {
+  position: absolute; top: 12px; left: 12px; z-index: 1;
+  background: rgba(0,0,0,0.55); backdrop-filter: blur(8px);
+  padding: 3px 10px; border-radius: 100px;
+  font-size: 10px; color: rgba(255,255,255,0.65);
+  letter-spacing: 0.07em; text-transform: uppercase;
+}
+.gc-inner { position: relative; z-index: 1; }
+.gc-sub { font-size: 9px; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing:.1em; margin-bottom: 4px; }
+.gc-name { font-family: var(--font-display); font-size: 26px; color: rgba(255,255,255,0.85); line-height: 1.1; }
+.gc-footer { padding: 12px 16px; font-size: 12px; color: var(--gray); border-top: 1px solid var(--card-border); }
+
+/* animatii hero entrance */
+.hero-badge  { opacity:0; animation: fadeUp .8s  .2s forwards ease-out; }
+.hero-title  { opacity:0; animation: fadeUp .9s  .4s forwards ease-out; }
+.hero-desc   { opacity:0; animation: fadeUp .8s  .6s forwards ease-out; }
+.hero-btns   { opacity:0; animation: fadeUp .8s  .8s forwards ease-out; }
+.hero-gallery{ opacity:0; animation: fadeIn 1.2s .5s forwards ease-out; }
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+/* ── SECȚIUNI COMUNE ── */
+section { padding: 120px 60px; position: relative; }
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 400; letter-spacing: -0.01em;
+  margin-bottom: 16px; line-height: 1.1;
+}
+.section-sub {
+  font-size: 15px; color: var(--gray);
+  max-width: 500px; margin: 0 auto; line-height: 1.65;
+}
+
+/* scroll reveal */
+.reveal {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity .7s var(--ease), transform .7s var(--ease);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.d1{transition-delay:.1s} .d2{transition-delay:.2s} .d3{transition-delay:.3s}
+.d4{transition-delay:.4s} .d5{transition-delay:.5s}
+
+/* ── SERVICII ── */
+.services-header-btn { margin-top: 24px; }
+.services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.service-card {
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg); overflow: hidden;
+  transition: transform var(--t) var(--ease), border-color var(--t);
+  cursor: pointer;
+}
+.service-card:hover { transform: translateY(-5px); border-color: rgba(255,255,255,0.18); }
+.service-visual {
+  height: 256px; display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden; background: #0f0f0f;
+}
+
+/* seo */
+.seo-bg {
+  position: absolute; inset: 0;
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 8px; padding: 20px; font-size: 11px;
+  color: rgba(255,255,255,0.12); align-content: start;
+}
+.seo-bg span.hi { color: rgba(255,255,255,0.42); }
+.seo-icon {
+  position: absolute; width: 58px; height: 58px; border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.28);
+  background: rgba(255,255,255,0.05); backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* web dev */
+.wd-mockup {
+  width: 84%; height: 78%; border-radius: 10px; overflow: hidden;
+  background: #131320; border: 1px solid rgba(255,255,255,0.1);
+}
+.wd-bar {
+  height: 28px; background: rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex; align-items: center; padding: 0 10px; gap: 5px;
+}
+.wd-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.14); }
+.wd-body { padding: 14px; display: flex; flex-direction: column; gap: 9px; }
+.wd-line { height: 2px; border-radius: 2px; background: rgba(255,255,255,0.08); }
+.wd-block {
+  height: 38px; border-radius: 6px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.05), rgba(80,60,200,0.07));
+  border: 1px solid rgba(255,255,255,0.05);
+}
+.wd-btn { width: 56px; height: 14px; border-radius: 100px; background: rgba(255,255,255,0.18); }
+
+/* branding */
+.brand-stack { display: flex; flex-direction: column; align-items: center; }
+.brand-card {
+  width: 156px; height: 96px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform .35s var(--ease);
+}
+.brand-card-dark  { background: #1c1c1c; color: rgba(255,255,255,0.75); font-family: var(--font-display); font-size: 22px; transform: rotate(-3deg); border: 1px solid rgba(255,255,255,0.08); z-index:1; }
+.brand-card-light { background: #ede8df; color: #111; font-family: var(--font-body); font-size: 12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; transform: rotate(2deg) translateY(-22px); z-index:2; }
+.service-card:nth-child(3):hover .brand-card-dark  { transform: rotate(-5deg) translateX(-12px); }
+.service-card:nth-child(3):hover .brand-card-light { transform: rotate(5deg) translateY(-28px) translateX(12px); }
+
+.service-info { padding: 24px 28px 28px; }
+.service-name { font-size: 20px; font-weight: 500; margin-bottom: 8px; }
+.service-desc { font-size: 13px; color: var(--gray); line-height: 1.65; }
+
+/* ── PORTOFOLIU ── */
+.work-track {
+  display: flex; gap: 18px;
+  overflow-x: auto; scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; scrollbar-width: none;
+  padding: 0 60px 36px; cursor: grab;
+}
+.work-track:active { cursor: grabbing; }
+.work-track::-webkit-scrollbar { display: none; }
+.work-card {
+  min-width: 370px; border-radius: var(--radius-lg);
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  overflow: hidden; scroll-snap-align: start; flex-shrink: 0;
+  transition: transform var(--t) var(--ease), border-color var(--t);
+  cursor: pointer;
+}
+.work-card:hover { transform: translateY(-6px); border-color: rgba(255,255,255,0.2); }
+.wc-thumb {
+  width: 100%; height: 230px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 36px;
+  color: rgba(255,255,255,0.12); border-bottom: 1px solid var(--card-border);
+}
+.wc-body { padding: 20px 24px 26px; }
+.wc-tag { font-size: 11px; color: var(--gray); text-transform: uppercase; letter-spacing:.08em; margin-bottom: 8px; }
+.wc-name { font-family: var(--font-display); font-size: 22px; margin-bottom: 8px; }
+.wc-desc { font-size: 13px; color: var(--gray); line-height: 1.65; }
+
+.scroll-nav { display: flex; justify-content: flex-end; gap: 10px; padding: 0 60px; margin-top: 6px; }
+.nav-btn {
+  width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent; color: var(--white); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; transition: all var(--t);
+}
+.nav-btn:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); }
+
+/* ── PROMISIUNI ── */
+.promise-track {
+  display: flex; gap: 16px;
+  overflow-x: auto; -ms-overflow-style: none; scrollbar-width: none;
+  padding: 0 60px 20px; cursor: grab;
+}
+.promise-track:active { cursor: grabbing; }
+.promise-track::-webkit-scrollbar { display: none; }
+.promise-card {
+  min-width: 295px; border-radius: var(--radius-lg);
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  overflow: hidden; flex-shrink: 0;
+  transition: transform var(--t) var(--ease), border-color var(--t);
+}
+.promise-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.2); }
+.promise-visual {
+  height: 218px; display: flex; align-items: center; justify-content: center;
+  background: #0f0f0f; border-bottom: 1px solid var(--card-border); overflow: hidden;
+}
+
+.dg { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 12px; }
+.di {
+  width: 68px; height: 68px; border-radius: 16px; margin: auto;
+  border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.04);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 5px; font-size: 10px; color: rgba(255,255,255,0.38);
+}
+.shield-wrap { display: flex; flex-direction: column; align-items: center; }
+.shield-line-t { width: 2px; height: 36px; background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.28)); }
+.shield-circle {
+  width: 68px; height: 68px; border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.28); background: rgba(255,255,255,0.06);
+  display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px);
+}
+.shield-line-b { width: 2px; height: 36px; background: linear-gradient(to top, transparent, rgba(255,255,255,0.28)); }
+.launch {
+  width: 78%; background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px;
+}
+.launch-hdr { display: flex; justify-content: space-between; font-size: 11px; color: rgba(255,255,255,0.38); margin-bottom: 14px; }
+.launch-dots { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+.ld { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.18); }
+.launch-bar {
+  height: 28px; border-radius: 100px;
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; color: rgba(255,255,255,0.28); letter-spacing: .2em;
+}
+.orbit-wrap {
+  position: relative; width: 120px; height: 120px; border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.07);
+  display: flex; align-items: center; justify-content: center;
+}
+.orbit-wrap::before { content:''; position:absolute; width:80px; height:80px; border-radius:50%; border:1.5px solid rgba(255,255,255,0.1); }
+.orbit-wrap::after  { content:''; position:absolute; width:38px; height:38px; border-radius:50%; border:1.5px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.05); }
+.orbit-dot {
+  position: absolute; width: 9px; height: 9px; border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+  animation: orbit 4s linear infinite;
+  top: calc(50% - 4.5px); left: calc(50% - 4.5px);
+}
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+}
+.promise-info { padding: 22px 24px 26px; }
+.promise-name { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
+.promise-desc { font-size: 13px; color: var(--gray); line-height: 1.65; }
+.promise-footer { display: flex; justify-content: space-between; align-items: center; padding: 20px 60px 0; }
+.p-dots { display: flex; gap: 6px; }
+.p-dot { width: 24px; height: 3px; border-radius: 2px; background: rgba(255,255,255,0.18); transition: background .3s; }
+.p-dot.active { background: rgba(255,255,255,0.9); }
+.p-nav { display: flex; gap: 10px; }
+
+/* ── DE CE NOI ── */
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 900px; margin: 0 auto; }
+.why-col { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius-lg); padding: 32px 36px; }
+.why-col.dim { opacity: .6; }
+.why-col-lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--gray); margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--card-border); }
+.why-col-lbl.bright { color: var(--white); }
+.why-row { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; font-size: 14px; line-height: 1.55; color: rgba(255,255,255,0.82); }
+.wi { width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 11px; margin-top: 1px; }
+.wi.x  { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.28); }
+.wi.ok { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); color: var(--white); }
+
+/* ── ECHIPĂ ── */
+.team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 40px; max-width: 740px; margin: 0 auto; }
+.team-member { text-align: center; }
+.team-avatar {
+  width: 156px; height: 156px; border-radius: 50%; margin: 0 auto 20px;
+  border: 1px solid var(--card-border); background: var(--card-bg);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 52px; color: rgba(255,255,255,0.14);
+  transition: transform var(--t) var(--ease), border-color var(--t);
+}
+.team-member:hover .team-avatar { transform: scale(1.04); border-color: rgba(255,255,255,0.22); }
+.team-name { font-size: 16px; font-weight: 500; margin-bottom: 4px; }
+.team-role { font-size: 13px; color: var(--gray); }
+
+/* ── TESTIMONIALE ── */
+.testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.testi-card {
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: var(--radius-md); padding: 28px;
+  transition: border-color var(--t), transform var(--t);
+}
+.testi-card:hover { border-color: rgba(255,255,255,0.2); transform: translateY(-4px); }
+.testi-stars { display: flex; gap: 3px; margin-bottom: 16px; }
+.testi-star { font-size: 13px; color: rgba(255,255,255,0.82); }
+.testi-text { font-size: 14px; color: var(--gray-light); line-height: 1.72; margin-bottom: 22px; font-style: italic; }
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-av {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: rgba(255,255,255,0.07); border: 1px solid var(--card-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.45); flex-shrink: 0;
+}
+.testi-name { font-size: 14px; font-weight: 500; }
+.testi-co   { font-size: 12px; color: var(--gray); }
+
+/* ── FAQ ── */
+.faq-list { max-width: 800px; margin: 0 auto; }
+.faq-item { border-top: 1px solid var(--card-border); }
+.faq-item:last-child { border-bottom: 1px solid var(--card-border); }
+.faq-q {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 24px 0; cursor: pointer; font-size: 16px;
+  color: var(--white); gap: 20px; user-select: none; transition: color var(--t);
+}
+.faq-q:hover { color: rgba(255,255,255,0.72); }
+.faq-icon {
+  width: 32px; height: 32px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 20px; line-height: 1; color: var(--white);
+  transition: transform .4s var(--ease), background var(--t), border-color var(--t);
+}
+.faq-item.open .faq-icon { transform: rotate(45deg); background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.36); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height .45s var(--ease); }
+.faq-item.open .faq-a { max-height: 220px; }
+.faq-a p { font-size: 14px; color: var(--gray); line-height: 1.72; padding-bottom: 24px; }
+
+/* ── CTA ── */
+.cta-section { padding: 0 60px 120px; }
+.cta-inner {
+  background: #111; border-radius: var(--radius-xl);
+  padding: 90px 60px; text-align: center;
+  position: relative; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.cta-inner::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: .04; pointer-events: none;
+}
+.cta-blob { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.022); animation: blobFloat 8s ease-in-out infinite; }
+.cta-blob-1 { width: 320px; height: 320px; left:-90px; top:-90px; animation-delay:0s; }
+.cta-blob-2 { width: 210px; height: 210px; right:-50px; bottom:-60px; animation-delay:-4s; }
+@keyframes blobFloat { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-18px) scale(1.04)} }
+.cta-label { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--gray); margin-bottom: 20px; position: relative; }
+.cta-title { font-family: var(--font-display); font-size: clamp(28px, 4vw, 52px); line-height: 1.1; margin-bottom: 20px; position: relative; }
+.cta-desc { font-size: 15px; color: var(--gray); max-width: 480px; margin: 0 auto 40px; line-height: 1.7; position: relative; }
+.cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative; }
+
+/* ── FOOTER ── */
+footer { background: #f4f1ee; color: #111; padding: 64px 60px 40px; }
+.footer-top { display: flex; justify-content: space-between; gap: 60px; margin-bottom: 48px; flex-wrap: wrap; }
+.footer-brand { font-family: var(--font-display); font-size: 28px; color: #111; letter-spacing: 0.04em; }
+.footer-tagline { font-size: 13px; color: #888; margin-top: 6px; }
+.footer-cols { display: flex; gap: 60px; flex-wrap: wrap; }
+.footer-col-ttl { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: #888; margin-bottom: 16px; }
+.footer-col a { display: block; font-size: 14px; color: #444; text-decoration: none; margin-bottom: 10px; transition: color .2s; }
+.footer-col a:hover { color: #000; }
+.footer-bottom { border-top: 1px solid rgba(0,0,0,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-copy { font-size: 13px; color: #999; }
+.footer-privacy { font-size: 13px; color: #999; text-decoration: none; transition: color .2s; }
+.footer-privacy:hover { color: #111; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  section { padding: 80px 40px; }
+  .hero { padding: 100px 40px 60px; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .testi-grid { grid-template-columns: 1fr 1fr; }
+  .work-track, .promise-track { padding-left: 40px; padding-right: 40px; }
+  .scroll-nav, .promise-footer { padding: 0 40px; }
+  .cta-section { padding: 0 40px 80px; }
+}
+@media (max-width: 768px) {
+  .navbar { padding: 14px 20px; }
+  section { padding: 60px 24px; }
+  .hero { flex-direction: column; padding: 90px 24px 40px; }
+  .hero-gallery { max-height: 260px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .testi-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .work-card { min-width: 280px; }
+  .promise-card { min-width: 260px; }
+  .work-track, .promise-track { padding-left: 24px; padding-right: 24px; }
+  .scroll-nav, .promise-footer { padding: 0 24px; }
+  .cta-section { padding: 0 20px 60px; }
+  .cta-inner { padding: 60px 28px; border-radius: var(--radius-lg); }
+  footer { padding: 48px 24px 32px; }
+  .footer-cols { gap: 32px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     NAVBAR
+════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">NEXAS</div>
+  <div class="nav-right">
+    <button class="btn-start">Începe Acum</button>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Meniu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════
+     HERO
+════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 1L9.8 5.6L14.5 6L11.1 9L12.1 13.8L8 11.3L3.9 13.8L4.9 9L1.5 6L6.2 5.6Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+      Agenție Premiată
+    </div>
+    <h1 class="hero-title">Construim Experiențe Digitale</h1>
+    <p class="hero-desc">Transformă-ți afacerea cu web design și dezvoltare de ultimă generație. Creăm site-uri care convertesc vizitatorii în clienți.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Începe Proiectul</a>
+      <a href="#portofoliu" class="btn-ghost">Vezi Portofoliul</a>
+    </div>
+  </div>
+
+  <div class="hero-gallery">
+    <!-- Coloana 1 — scroll sus -->
+    <div class="gallery-col gallery-col-1" id="col1">
+      <div class="gallery-card">
+        <div class="gc-thumb" style="background:linear-gradient(140deg,#1a1a2e,#16213e);">
+          <div class="gc-badge">Turism</div>
+          <div class="gc-inner"><div class="gc-sub">Proiect Nou</div><div class="gc-name">Vilmont</div></div>
+        </div>
+        <div class="gc-footer">Turism de Lux în România</div>
+      </div>
+      <div class="gallery-card">
+        <div class="gc-thumb" style="background:linear-gradient(140deg,#1a0d18,#2d1828);">
+          <div class="gc-badge">Sănătate</div>
+          <div class="gc-inner"><div class="gc-sub">Proiect Nou</div><div class="gc-name">Belladerm</div></div>
+        </div>
+        <div class="gc-footer">Clinică Estetică Premium</div>
+      </div>
+      <div class="gallery-card">
+        <div class="gc-thumb" style="background:linear-gradient(140deg,#1a1008,#2d1e10);">
+          <div class="gc-badge">Artizanat</div>
+          <div class="gc-inner"><div class="gc-sub">Proiect Nou</div><div class="gc-name">Fierăria</div></div>
+        </div>
+        <div class="gc-footer">Meșteșuguri Tradiționale</div>
+      </div>
+      <div class="gallery-card">
+        <div class="gc-thumb" style="background:linear-gradient(140deg,#0a0a1a,#1a1030);">
+          <div class="gc-badge">SaaS</div>
+          <div class="gc-inner"><div class="gc-sub">Proiect Nou</div><div class="gc-name">FacturAI</div></div>
+        </div>
+        <div class="gc-footer">Facturare Inteligentă</div>
+      </div>
+    </div>
+
+    <!-- Coloana 2 — scroll jos -->
+    <div class="gallery-col gallery-col-2" id="col2">
+      <div class="gallery-card">
+        <div class="gc-thumb" style="background:linear-gradient(140deg,#0d1a0d,#1a2d1a);">
+          <div class="gc-badge">Medical</div>
+          <div class="gc-inner"><div class="gc-sub">Proiect Nou</div><div class="gc-name">DentalPro</div></div>
+        </div>
+        <div class="gc-footer">Cabinet Stomatologic</div>
+      </div>
+      <div class="gallery-card">
+        <div class="gc-thumb" style="background:linear-gradient(140deg,#101520,#1a2030);">
+          <div class="gc-badge">Public</div>
+          <div class="gc-inner"><div class="gc-sub">Proiect Nou</div><div class="gc-name">Primăria<br>Mea</div></div>
+        </div>
+        <div class="gc-footer">Servicii Publice Digitale</div>
+      </div>
+      <div class="gallery-card">
+        <div class="gc-thumb" style="background:linear-gradient(140deg,#1a1510,#2a2015);">
+          <div class="gc-badge">Hotel</div>
+          <div class="gc-inner"><div class="gc-sub">Proiect Nou</div><div class="gc-name">Casa<br>Regală</div></div>
+        </div>
+        <div class="gc-footer">Hotel Boutique 5 Stele</div>
+      </div>
+      <div class="gallery-card">
+        <div class="gc-thumb" style="background:linear-gradient(140deg,#1a0a10,#2d1520);">
+          <div class="gc-badge">Modă</div>
+          <div class="gc-inner"><div class="gc-sub">Proiect Nou</div><div class="gc-name">Ie<br>Modernă</div></div>
+        </div>
+        <div class="gc-footer">Modă Tradițională Română</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     SERVICII
+════════════════════════════════ -->
+<section id="servicii">
+  <div class="section-header">
+    <h2 class="section-title reveal">Serviciile Noastre</h2>
+    <p class="section-sub reveal d1">Oferim o suită completă de servicii digitale pentru ca brandul tău să iasă în evidență online.</p>
+    <div class="services-header-btn reveal d2"><a href="#contact" class="btn-outline">Toate Serviciile</a></div>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card reveal d1">
+      <div class="service-visual">
+        <div class="seo-bg">
+          <span class="hi">Cuvinte Cheie</span><span>Backlink</span><span class="hi">Meta Tags</span>
+          <span>Indexare</span><span class="hi">Organic</span><span>Trafic</span>
+          <span class="hi">Schema</span><span>Autoritate</span><span>SERP</span>
+          <span>Titlu</span><span class="hi">CTR</span><span>Viteză</span>
+          <span class="hi">Linkuri</span><span>Sitemap</span><span class="hi">Rang</span>
+          <span>Alt Text</span><span class="hi">Crawl</span><span>Conținut</span>
+        </div>
+        <div class="seo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.72)" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+      </div>
+      <div class="service-info">
+        <div class="service-name">Optimizare SEO</div>
+        <div class="service-desc">Poziționăm site-ul tău în topul rezultatelor Google și atragem trafic organic calificat.</div>
+      </div>
+    </div>
+
+    <div class="service-card reveal d2">
+      <div class="service-visual">
+        <div class="wd-mockup">
+          <div class="wd-bar"><div class="wd-dot"></div><div class="wd-dot"></div><div class="wd-dot"></div></div>
+          <div class="wd-body">
+            <div class="wd-line" style="width:78%"></div>
+            <div class="wd-line" style="width:55%"></div>
+            <div class="wd-block"></div>
+            <div class="wd-line" style="width:38%"></div>
+            <div class="wd-btn"></div>
+            <div class="wd-line" style="width:65%"></div>
+            <div class="wd-line" style="width:82%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="service-info">
+        <div class="service-name">Dezvoltare Web</div>
+        <div class="service-desc">Site-uri construite custom, rapide, responsive și optimizate pentru conversii maxime.</div>
+      </div>
+    </div>
+
+    <div class="service-card reveal d3">
+      <div class="service-visual">
+        <div class="brand-stack">
+          <div class="brand-card brand-card-dark">Aa</div>
+          <div class="brand-card brand-card-light">BRAND</div>
+        </div>
+      </div>
+      <div class="service-info">
+        <div class="service-name">Identitate Vizuală</div>
+        <div class="service-desc">Construim branduri memorabile care rezonează cu publicul tău țintă și inspiră încredere.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     PORTOFOLIU
+════════════════════════════════ -->
+<section id="portofoliu" style="padding-bottom:60px;">
+  <div class="section-header">
+    <h2 class="section-title reveal">Portofoliul Nostru</h2>
+    <p class="section-sub reveal d1">Proiecte în care ne mândrim — construite cu atenție și pasiune.</p>
+  </div>
+  <div class="work-track" id="workTrack">
+    <div class="work-card">
+      <div class="wc-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e);">Vilmont</div>
+      <div class="wc-body"><div class="wc-tag">Turism · UI/UX Design</div><div class="wc-name">Vilmont Turism</div><div class="wc-desc">Platformă de rezervări premium pentru experiențe de lux în România și Europa.</div></div>
+    </div>
+    <div class="work-card">
+      <div class="wc-thumb" style="background:linear-gradient(135deg,#1a0d18,#2d1828);">Belladerm</div>
+      <div class="wc-body"><div class="wc-tag">Sănătate · Branding</div><div class="wc-name">Belladerm Clinic</div><div class="wc-desc">Site modern pentru o clinică estetică premium, cu programări online și portofoliu de tratamente.</div></div>
+    </div>
+    <div class="work-card">
+      <div class="wc-thumb" style="background:linear-gradient(135deg,#0a0a1a,#1a1030);">FacturAI</div>
+      <div class="wc-body"><div class="wc-tag">SaaS · Dashboard</div><div class="wc-name">FacturAI</div><div class="wc-desc">Aplicație SaaS de facturare inteligentă cu automatizări AI pentru IMM-uri din România.</div></div>
+    </div>
+    <div class="work-card">
+      <div class="wc-thumb" style="background:linear-gradient(135deg,#0d1a0d,#1a2d1a);">DentalPro</div>
+      <div class="wc-body"><div class="wc-tag">Medical · Web</div><div class="wc-name">DentalPro</div><div class="wc-desc">Cabinet stomatologic cu programări online, prezentare echipă și galerie tratamente.</div></div>
+    </div>
+    <div class="work-card">
+      <div class="wc-thumb" style="background:linear-gradient(135deg,#1a1510,#2a2015);">Casa Regală</div>
+      <div class="wc-body"><div class="wc-tag">Ospitalitate · Design</div><div class="wc-name">Casa Regală Hotel</div><div class="wc-desc">Hotel boutique 5 stele cu experiență de rezervare imersivă și prezentare premium.</div></div>
+    </div>
+  </div>
+  <div class="scroll-nav">
+    <button class="nav-btn" id="wPrev">&#8592;</button>
+    <button class="nav-btn" id="wNext">&#8594;</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     PROMISIUNEA NOASTRĂ
+════════════════════════════════ -->
+<section id="promisiuni">
+  <div class="section-header">
+    <h2 class="section-title reveal">Promisiunea Noastră</h2>
+    <p class="section-sub reveal d1">Livrăm rezultate care vorbesc de la sine.</p>
+  </div>
+  <div class="promise-track" id="promiseTrack">
+
+    <div class="promise-card reveal d1">
+      <div class="promise-visual">
+        <div class="dg">
+          <div class="di"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg>Telefon</div>
+          <div class="di"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>TV</div>
+          <div class="di"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop</div>
+          <div class="di"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="19" r="1" fill="currentColor"/></svg>Tabletă</div>
+        </div>
+      </div>
+      <div class="promise-info">
+        <div class="promise-name">Optimizat pe Toate Dispozitivele</div>
+        <div class="promise-desc">Site-uri pixel-perfect pe orice ecran și rezoluție, fără compromisuri.</div>
+      </div>
+    </div>
+
+    <div class="promise-card reveal d2">
+      <div class="promise-visual">
+        <div class="shield-wrap">
+          <div class="shield-line-t"></div>
+          <div class="shield-circle">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.78)" stroke-width="1.5"><path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.5C16.5 22.15 20 17.25 20 12V6L12 2z"/></svg>
+          </div>
+          <div class="shield-line-b"></div>
+        </div>
+      </div>
+      <div class="promise-info">
+        <div class="promise-name">Hosting Securizat</div>
+        <div class="promise-desc">Securitate enterprise și uptime 99.9% garantat pentru site-ul tău.</div>
+      </div>
+    </div>
+
+    <div class="promise-card reveal d3">
+      <div class="promise-visual">
+        <div class="launch">
+          <div class="launch-hdr"><span>✦ Lansare Proiect</span><span>Săptămâna 1</span></div>
+          <div class="launch-dots"><div class="ld"></div><div class="ld"></div><div class="ld"></div></div>
+          <div class="launch-bar">• • •</div>
+        </div>
+      </div>
+      <div class="promise-info">
+        <div class="promise-name">Livrare Rapidă</div>
+        <div class="promise-desc">De la concept la lansare în timp record, fără compromisuri de calitate.</div>
+      </div>
+    </div>
+
+    <div class="promise-card reveal d4">
+      <div class="promise-visual">
+        <div class="orbit-wrap"><div class="orbit-dot"></div></div>
+      </div>
+      <div class="promise-info">
+        <div class="promise-name">Integrări Fără Efort</div>
+        <div class="promise-desc">Conectăm cu instrumentele tale — plăți, CRM, analytics și altele.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="promise-footer reveal">
+    <div class="p-dots">
+      <div class="p-dot active"></div><div class="p-dot"></div>
+      <div class="p-dot"></div><div class="p-dot"></div>
+    </div>
+    <div class="p-nav">
+      <button class="nav-btn" id="pPrev">&#8592;</button>
+      <button class="nav-btn" id="pNext">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     DE CE NOI
+════════════════════════════════ -->
+<section id="de-ce-noi">
+  <div class="section-header">
+    <h2 class="section-title reveal">De Ce Să Ne Alegi</h2>
+    <p class="section-sub reveal d1">Vezi diferența pe care o face o agenție web profesionistă.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-col dim reveal">
+      <div class="why-col-lbl">Alții</div>
+      <div class="why-row"><div class="wi x">✕</div><span>Șabloane generice fără personalitate</span></div>
+      <div class="why-row"><div class="wi x">✕</div><span>Timp de încărcare lent și performanță slabă</span></div>
+      <div class="why-row"><div class="wi x">✕</div><span>Nicio strategie SEO sau vizibilitate în căutări</span></div>
+      <div class="why-row"><div class="wi x">✕</div><span>Design învechit care dăunează credibilității</span></div>
+      <div class="why-row"><div class="wi x">✕</div><span>Niciun suport după lansare</span></div>
+    </div>
+    <div class="why-col reveal d2">
+      <div class="why-col-lbl bright">Nexas</div>
+      <div class="why-row"><div class="wi ok">✓</div><span>Design custom adaptat perfect brandului tău</span></div>
+      <div class="why-row"><div class="wi ok">✓</div><span>Performanță fulger pe toate dispozitivele</span></div>
+      <div class="why-row"><div class="wi ok">✓</div><span>SEO integrat pentru trafic organic constant</span></div>
+      <div class="why-row"><div class="wi ok">✓</div><span>Design modern care inspiră încredere</span></div>
+      <div class="why-row"><div class="wi ok">✓</div><span>Suport dedicat și mentenanță continuă</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     ECHIPĂ
+════════════════════════════════ -->
+<section id="echipa">
+  <div class="section-header">
+    <h2 class="section-title reveal">Echipa Noastră</h2>
+    <p class="section-sub reveal d1">Mințile creative din spatele proiectului tău.</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-member reveal d1">
+      <div class="team-avatar">A</div>
+      <div class="team-name">Andrei Ionescu</div>
+      <div class="team-role">Lead Developer</div>
+    </div>
+    <div class="team-member reveal d2">
+      <div class="team-avatar">M</div>
+      <div class="team-name">Maria Constantin</div>
+      <div class="team-role">Director Creativ</div>
+    </div>
+    <div class="team-member reveal d3">
+      <div class="team-avatar">R</div>
+      <div class="team-name">Radu Popescu</div>
+      <div class="team-role">UX Designer</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     TESTIMONIALE
+════════════════════════════════ -->
+<section id="testimoniale">
+  <div class="section-header">
+    <h2 class="section-title reveal">Ce Spun Clienții</h2>
+    <p class="section-sub reveal d1">Rezultate reale de la afaceri românești care au avut încredere în noi.</p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal d1">
+      <div class="testi-stars"><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span></div>
+      <div class="testi-text">„Nexas ne-a transformat complet prezența online. Numărul de rezervări a crescut cu 180% în primele 3 luni după lansarea noului site."</div>
+      <div class="testi-author"><div class="testi-av">AM</div><div><div class="testi-name">Alexandru Marin</div><div class="testi-co">CEO, Vilmont Turism</div></div></div>
+    </div>
+    <div class="testi-card reveal d2">
+      <div class="testi-stars"><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span></div>
+      <div class="testi-text">„Atenția la detalii este excepțională. Au livrat înainte de termen și rezultatul final a depășit toate așteptările mele."</div>
+      <div class="testi-author"><div class="testi-av">ID</div><div><div class="testi-name">Ioana Dumitrescu</div><div class="testi-co">Fondator, Belladerm</div></div></div>
+    </div>
+    <div class="testi-card reveal d3">
+      <div class="testi-stars"><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span></div>
+      <div class="testi-text">„Traficul organic s-a dublat în 2 luni. Strategia SEO implementată de la zero a fost o schimbare majoră pentru business-ul nostru."</div>
+      <div class="testi-author"><div class="testi-av">CG</div><div><div class="testi-name">Cristian Gheorghe</div><div class="testi-co">Director, FacturAI</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     FAQ
+════════════════════════════════ -->
+<section id="faq">
+  <div class="section-header">
+    <h2 class="section-title reveal">Întrebări Frecvente</h2>
+    <p class="section-sub reveal d1">Tot ce trebuie să știi despre colaborarea cu noi.</p>
+  </div>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <div class="faq-q">Cât durează realizarea unui site web?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><p>Un site de prezentare este gata în 2–3 săptămâni. Proiectele mai complexe (e-commerce, platforme SaaS) durează 6–10 săptămâni. Stabilim un calendar clar la începutul fiecărei colaborări, astfel știi exact ce se întâmplă în fiecare etapă.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Care este structura de prețuri?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><p>Site-urile de prezentare pornesc de la 500€, iar proiectele complexe (e-commerce, aplicații web) de la 2.000€. Fiecare proiect începe cu o consultație gratuită în urma căreia oferim un deviz personalizat, fără surprize.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Oferiți mentenanță după lansare?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><p>Da. Pachetele de mentenanță lunară includ actualizări, monitorizare performanță, patch-uri de securitate și modificări de conținut. Prețurile pornesc de la 80€/lună și se adaptează nevoilor tale.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Puteți redesena site-ul meu existent?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><p>Absolut. Suntem specializați în redesign și migrare. Analizăm ce funcționează pe site-ul actual, păstrăm capitalul SEO acumulat și construim ceva semnificativ mai bun.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Ce tehnologii folosiți?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><p>Lucrăm cu Next.js, React, WordPress, Shopify și HTML/CSS/JS custom. Recomandăm tehnologia potrivită pentru fiecare proiect în parte, în funcție de obiective și buget.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     CTA
+════════════════════════════════ -->
+<section class="cta-section" id="contact">
+  <div class="cta-inner reveal">
+    <div class="cta-blob cta-blob-1"></div>
+    <div class="cta-blob cta-blob-2"></div>
+    <div class="cta-label">Contactează-ne</div>
+    <h2 class="cta-title">Gata să Îți Transformi<br>Prezența Online?</h2>
+    <p class="cta-desc">Hai să construim ceva extraordinar împreună. Contactează-ne și discutăm despre proiectul tău.</p>
+    <div class="cta-btns">
+      <a href="mailto:contact@nexas.ro" class="btn-primary">Începe Proiectul</a>
+      <a href="#portofoliu" class="btn-ghost">Vezi Portofoliul</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">NEXAS</div>
+      <div class="footer-tagline">Construim Experiențe Digitale</div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-col-ttl">Companie</div>
+        <a href="#">Despre Noi</a>
+        <a href="#">Servicii</a>
+        <a href="#">Portofoliu</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-ttl">Servicii</div>
+        <a href="#">Dezvoltare Web</a>
+        <a href="#">Optimizare SEO</a>
+        <a href="#">Identitate Vizuală</a>
+        <a href="#">Design UI/UX</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-ttl">Conectează-te</div>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">Behance</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 | Nexas. Toate drepturile rezervate.</span>
+    <a href="#" class="footer-privacy">Politică de Confidențialitate</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+
+  /* navbar scroll */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  /* hamburger */
+  document.getElementById('menuBtn').addEventListener('click', function () {
+    this.classList.toggle('active');
+  });
+
+  /* duplicate gallery cards pentru loop infinit */
+  ['col1','col2'].forEach(id => {
+    const col = document.getElementById(id);
+    if (!col) return;
+    col.querySelectorAll('.gallery-card').forEach(c => col.appendChild(c.cloneNode(true)));
+  });
+
+  /* scroll reveal */
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  /* parallax hero title */
+  const ht = document.querySelector('.hero-title');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY < window.innerHeight && ht)
+      ht.style.transform = `translateY(${window.scrollY * 0.11}px)`;
+  }, { passive: true });
+
+  /* drag-to-scroll */
+  function dragScroll(el) {
+    if (!el) return;
+    let down = false, sx, sl;
+    el.addEventListener('mousedown', e => { down=true; el.style.userSelect='none'; sx=e.pageX-el.offsetLeft; sl=el.scrollLeft; });
+    el.addEventListener('mouseleave', () => { down=false; });
+    el.addEventListener('mouseup', () => { down=false; el.style.userSelect=''; });
+    el.addEventListener('mousemove', e => { if(!down) return; e.preventDefault(); el.scrollLeft = sl-(e.pageX-el.offsetLeft-sx)*1.6; });
+    let tx, tsl;
+    el.addEventListener('touchstart', e => { tx=e.touches[0].pageX; tsl=el.scrollLeft; }, {passive:true});
+    el.addEventListener('touchmove',  e => { el.scrollLeft = tsl+(tx-e.touches[0].pageX)*1.6; }, {passive:true});
+  }
+  dragScroll(document.getElementById('workTrack'));
+  dragScroll(document.getElementById('promiseTrack'));
+
+  /* portofoliu prev/next */
+  const wt = document.getElementById('workTrack');
+  document.getElementById('wPrev')?.addEventListener('click', () => wt.scrollBy({left:-400, behavior:'smooth'}));
+  document.getElementById('wNext')?.addEventListener('click', () => wt.scrollBy({left: 400, behavior:'smooth'}));
+
+  /* promise prev/next + dots */
+  const pt = document.getElementById('promiseTrack');
+  const pDots = document.querySelectorAll('.p-dot');
+  document.getElementById('pPrev')?.addEventListener('click', () => pt.scrollBy({left:-320, behavior:'smooth'}));
+  document.getElementById('pNext')?.addEventListener('click', () => pt.scrollBy({left: 320, behavior:'smooth'}));
+  pt?.addEventListener('scroll', () => {
+    const cards = pt.querySelectorAll('.promise-card');
+    let ci=0, cd=Infinity;
+    cards.forEach((c,i) => { const d=Math.abs(c.offsetLeft-pt.scrollLeft-60); if(d<cd){cd=d;ci=i;} });
+    pDots.forEach((d,i) => d.classList.toggle('active', i===ci));
+  }, {passive:true});
+
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  /* ripple pe butoane */
+  const rs = document.createElement('style');
+  rs.textContent = '@keyframes rpl{to{transform:translate(-50%,-50%) scale(80);opacity:0}}';
+  document.head.appendChild(rs);
+  document.querySelectorAll('.btn-primary,.btn-ghost,.btn-outline,.btn-start').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const r = this.getBoundingClientRect();
+      const s = document.createElement('span');
+      s.style.cssText = `position:absolute;width:4px;height:4px;border-radius:50%;
+        background:rgba(255,255,255,0.25);left:${e.clientX-r.left}px;top:${e.clientY-r.top}px;
+        transform:translate(-50%,-50%) scale(0);pointer-events:none;
+        animation:rpl .6s ease-out forwards;`;
+      this.appendChild(s);
+      setTimeout(() => s.remove(), 620);
+    });
+  });
+
+  /* smooth anchor scroll */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); }
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
