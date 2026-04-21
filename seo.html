@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optimizare SEO — Nexas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --black: #0a0a0a;
+  --card-bg: #141414;
+  --card-border: rgba(255,255,255,0.08);
+  --white: #ffffff;
+  --gray: #888888;
+  --gray-light: #aaaaaa;
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'DM Serif Display', serif;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 2px; }
+
+/* NAVBAR */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 36px;
+  background: rgba(10,10,10,0.85);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.nav-logo {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 8px 22px; border-radius: 100px;
+  font-size: 15px; font-weight: 600; letter-spacing: 0.06em;
+  color: var(--white); cursor: pointer; text-decoration: none;
+  transition: background 0.3s;
+}
+.nav-logo:hover { background: rgba(255,255,255,0.14); }
+.nav-back {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; color: var(--gray);
+  text-decoration: none; border: 1px solid rgba(255,255,255,0.15);
+  padding: 9px 20px; border-radius: 100px;
+  transition: all 0.3s;
+}
+.nav-back:hover { color: var(--white); border-color: rgba(255,255,255,0.35); }
+.nav-back svg { width: 14px; height: 14px; }
+
+/* HERO SEO */
+.seo-hero {
+  min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 120px 80px 80px;
+  position: relative; overflow: hidden;
+  gap: 80px;
+}
+.seo-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.04; pointer-events: none;
+}
+.seo-hero::after {
+  content: ''; position: absolute; top: -150px; right: -100px;
+  width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(255,255,255,0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.seo-hero-left {
+  flex: 1; position: relative; z-index: 1; max-width: 600px;
+}
+.seo-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--gray-light);
+  margin-bottom: 28px; letter-spacing: 0.06em; text-transform: uppercase;
+  opacity: 0; animation: fadeUp .7s .2s forwards ease-out;
+}
+.seo-title {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 400; line-height: 1.1;
+  margin-bottom: 28px; letter-spacing: -0.01em;
+  opacity: 0; animation: fadeUp .8s .35s forwards ease-out;
+}
+.seo-title span { font-style: italic; }
+.seo-desc {
+  font-size: 15px; color: var(--gray); line-height: 1.8;
+  margin-bottom: 18px;
+  opacity: 0; animation: fadeUp .7s .5s forwards ease-out;
+}
+.seo-desc-2 {
+  font-size: 15px; color: var(--gray); line-height: 1.8;
+  margin-bottom: 18px;
+  opacity: 0; animation: fadeUp .7s .6s forwards ease-out;
+}
+.seo-desc-3 {
+  font-size: 15px; color: var(--gray); line-height: 1.8;
+  margin-bottom: 48px;
+  opacity: 0; animation: fadeUp .7s .7s forwards ease-out;
+}
+.seo-cta {
+  opacity: 0; animation: fadeUp .7s .85s forwards ease-out;
+}
+.btn-wa {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--white); color: var(--black);
+  padding: 16px 32px; border-radius: 100px;
+  font-size: 14px; font-weight: 500; font-family: var(--font-body);
+  text-decoration: none;
+  transition: opacity 0.3s, transform 0.3s;
+  position: relative; overflow: hidden;
+}
+.btn-wa:hover { opacity: 0.87; transform: scale(0.98); }
+.btn-wa svg { width: 18px; height: 18px; }
+
+/* HERO RIGHT — logos */
+.seo-hero-right {
+  flex: 1; position: relative; z-index: 1;
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 2px;
+  opacity: 0; animation: fadeIn 1s .5s forwards ease-out;
+}
+.logo-cell {
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.02);
+  display: flex; align-items: center; justify-content: center;
+  padding: 28px 20px; aspect-ratio: 2/1;
+  transition: background 0.3s, border-color 0.3s;
+  cursor: default;
+}
+.logo-cell:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.14); }
+.logo-cell span {
+  font-family: var(--font-display); font-size: 18px;
+  color: rgba(255,255,255,0.25); letter-spacing: 0.04em;
+  transition: color 0.3s;
+  text-align: center;
+}
+.logo-cell:hover span { color: rgba(255,255,255,0.55); }
+
+/* STATS */
+.stats-section {
+  padding: 0 80px 80px;
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.stat-item {
+  padding: 48px 40px;
+  border-right: 1px solid rgba(255,255,255,0.06);
+  position: relative;
+}
+.stat-item:last-child { border-right: none; }
+.stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 5vw, 64px);
+  font-weight: 400; line-height: 1;
+  margin-bottom: 12px; color: var(--white);
+}
+.stat-label { font-size: 14px; color: var(--gray); line-height: 1.55; }
+
+/* CE INCLUDEM */
+.includes-section { padding: 80px; }
+.section-label {
+  font-size: 11px; text-transform: uppercase; letter-spacing: .12em;
+  color: var(--gray); margin-bottom: 20px;
+}
+.includes-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.5vw, 48px);
+  font-weight: 400; margin-bottom: 60px; max-width: 500px; line-height: 1.15;
+}
+.includes-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1px; background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; overflow: hidden;
+}
+.include-card {
+  background: var(--black); padding: 36px 32px;
+  transition: background 0.3s;
+}
+.include-card:hover { background: var(--card-bg); }
+.include-icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+}
+.include-icon svg { width: 20px; height: 20px; opacity: 0.6; }
+.include-name { font-size: 16px; font-weight: 500; margin-bottom: 10px; }
+.include-desc { font-size: 13px; color: var(--gray); line-height: 1.65; }
+
+/* PROCES */
+.process-section { padding: 0 80px 80px; }
+.process-steps {
+  display: flex; flex-direction: column; gap: 0;
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; overflow: hidden;
+}
+.process-step {
+  display: flex; align-items: flex-start; gap: 32px;
+  padding: 36px 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: background 0.3s;
+}
+.process-step:last-child { border-bottom: none; }
+.process-step:hover { background: rgba(255,255,255,0.02); }
+.step-num {
+  font-family: var(--font-display); font-size: 32px;
+  color: rgba(255,255,255,0.1); min-width: 48px; line-height: 1;
+  flex-shrink: 0; margin-top: 4px;
+}
+.step-body { flex: 1; }
+.step-name { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
+.step-desc { font-size: 14px; color: var(--gray); line-height: 1.65; }
+
+/* CTA FINAL */
+.cta-section { padding: 0 80px 80px; }
+.cta-inner {
+  background: #111; border-radius: 32px;
+  padding: 80px 60px; text-align: center;
+  position: relative; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.cta-inner::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: .04; pointer-events: none;
+}
+.cta-blob {
+  position: absolute; border-radius: 50%;
+  background: rgba(255,255,255,0.02);
+  animation: blobFloat 8s ease-in-out infinite;
+}
+.cta-blob-1 { width: 280px; height: 280px; left:-60px; top:-60px; }
+.cta-blob-2 { width: 180px; height: 180px; right:-40px; bottom:-40px; animation-delay:-4s; }
+@keyframes blobFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-16px)} }
+.cta-label { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--gray); margin-bottom: 20px; position: relative; }
+.cta-title { font-family: var(--font-display); font-size: clamp(26px, 3.5vw, 44px); line-height: 1.1; margin-bottom: 18px; position: relative; }
+.cta-desc { font-size: 15px; color: var(--gray); max-width: 440px; margin: 0 auto 36px; line-height: 1.7; position: relative; }
+.cta-btns { display: flex; gap: 12px; justify-content: center; position: relative; }
+.btn-ghost {
+  background: transparent; color: var(--white);
+  padding: 14px 30px; border-radius: 100px;
+  font-size: 14px; font-family: var(--font-body);
+  border: 1px solid rgba(255,255,255,0.2);
+  cursor: pointer; text-decoration: none; display: inline-block;
+  transition: border-color 0.3s, background 0.3s;
+}
+.btn-ghost:hover { border-color: rgba(255,255,255,0.45); background: rgba(255,255,255,0.05); }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.d1{transition-delay:.1s} .d2{transition-delay:.2s} .d3{transition-delay:.3s} .d4{transition-delay:.4s} .d5{transition-delay:.5s} .d6{transition-delay:.6s}
+
+@keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .seo-hero { flex-direction: column; padding: 100px 40px 60px; gap: 50px; }
+  .seo-hero-right { max-width: 100%; }
+  .stats-section { padding: 0 40px 60px; }
+  .includes-section, .process-section, .cta-section { padding-left: 40px; padding-right: 40px; }
+  .includes-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .navbar { padding: 14px 20px; }
+  .seo-hero { padding: 90px 24px 50px; }
+  .seo-hero-right { grid-template-columns: repeat(2,1fr); }
+  .stats-section { grid-template-columns: 1fr; padding: 0 24px 50px; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .stat-item:last-child { border-bottom: none; }
+  .includes-section, .process-section, .cta-section { padding-left: 24px; padding-right: 24px; }
+  .includes-grid { grid-template-columns: 1fr; }
+  .cta-inner { padding: 50px 24px; }
+  .cta-btns { flex-direction: column; align-items: center; }
+  .process-step { flex-direction: column; gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">NEXAS</a>
+  <a href="index.html" class="nav-back">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Înapoi
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="seo-hero">
+  <div class="seo-hero-left">
+    <div class="seo-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Serviciu — Optimizare SEO
+    </div>
+    <h1 class="seo-title">Prin SEO ajutăm <span>brandurile</span> să crească!</h1>
+    <p class="seo-desc">Relevant atât pentru un start-up, cât și pentru o companie în creștere, optimizarea SEO este un element crucial care nu trebuie să lipsească din planul de marketing. Indiferent de dimensiunea sau domeniul afacerii tale, o strategie SEO bine pusă la punct poate face diferența dintre succes și mediocritate.</p>
+    <p class="seo-desc-2">Vom face eforturi susținute pentru ca website-ul afacerii tale să fie construit corespunzător și upgradat constant, pentru a ține pasul cu toate update-urile de la Google care privesc factorii de ranking.</p>
+    <p class="seo-desc-3">Aceasta include nu doar optimizarea tehnică și de conținut, dar și adaptarea continuă la tendințele SEO și la comportamentul utilizatorilor. Scopul nostru este să asigurăm că site-ul tău nu doar că ajunge în topul rezultatelor de căutare, dar oferă și o experiență de navigare excepțională vizitatorilor.</p>
+    <div class="seo-cta">
+      <a href="https://wa.me/40764639118?text=Salut%2C%20doresc%20să%20începem%20o%20colaborare%20pentru%20optimizare%20SEO." target="_blank" rel="noopener" class="btn-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Discută cu noi pe WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Logo grid -->
+  <div class="seo-hero-right">
+    <div class="logo-cell"><span>Marelbo</span></div>
+    <div class="logo-cell"><span>Chocolat</span></div>
+    <div class="logo-cell"><span>ExpoPark</span></div>
+    <div class="logo-cell"><span>AutoEco</span></div>
+    <div class="logo-cell"><span>BookZone</span></div>
+    <div class="logo-cell"><span>ChicBijoux</span></div>
+    <div class="logo-cell"><span>Rohnson</span></div>
+    <div class="logo-cell"><span>SanoTechnik</span></div>
+    <div class="logo-cell"><span>Neakaisa</span></div>
+    <div class="logo-cell"><span>GQS</span></div>
+    <div class="logo-cell"><span>RWA</span></div>
+    <div class="logo-cell"><span>Kalenda</span></div>
+  </div>
+</section>
+
+<!-- STATISTICI -->
+<div class="stats-section">
+  <div class="stat-item reveal">
+    <div class="stat-num">+200%</div>
+    <div class="stat-label">Creștere medie a traficului organic în primele 6 luni</div>
+  </div>
+  <div class="stat-item reveal d2">
+    <div class="stat-num">Top 3</div>
+    <div class="stat-label">Poziționare garantată în Google pentru cuvintele cheie țintă</div>
+  </div>
+  <div class="stat-item reveal d3">
+    <div class="stat-num">98%</div>
+    <div class="stat-label">Rată de satisfacție a clienților după 12 luni de colaborare</div>
+  </div>
+</div>
+
+<!-- CE INCLUDEM -->
+<section class="includes-section">
+  <div class="section-label reveal">Ce includem</div>
+  <h2 class="includes-title reveal d1">Tot ce ai nevoie pentru a domina Google</h2>
+  <div class="includes-grid">
+    <div class="include-card reveal d1">
+      <div class="include-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <div class="include-name">Audit SEO Complet</div>
+      <div class="include-desc">Analiză tehnică detaliată a site-ului tău — viteza, structura, erorile și oportunitățile de îmbunătățire.</div>
+    </div>
+    <div class="include-card reveal d2">
+      <div class="include-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      </div>
+      <div class="include-name">Cercetare Cuvinte Cheie</div>
+      <div class="include-desc">Identificăm termenii cu cel mai mare potențial pentru afacerea ta și construim o strategie în jurul lor.</div>
+    </div>
+    <div class="include-card reveal d3">
+      <div class="include-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      </div>
+      <div class="include-name">Optimizare On-Page</div>
+      <div class="include-desc">Titluri, meta-descrieri, structura URL, headings, imagini — totul optimizat pentru motoarele de căutare.</div>
+    </div>
+    <div class="include-card reveal d4">
+      <div class="include-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101"/><path d="M14.828 11.172a4 4 0 015.656 0l4 4a4 4 0 01-5.656 5.656l-1.102-1.101"/></svg>
+      </div>
+      <div class="include-name">Link Building</div>
+      <div class="include-desc">Construim autoritate prin obținerea de backlink-uri de calitate de pe site-uri relevante din nișa ta.</div>
+    </div>
+    <div class="include-card reveal d5">
+      <div class="include-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+      </div>
+      <div class="include-name">Raportare Lunară</div>
+      <div class="include-desc">Rapoarte clare cu evoluția pozițiilor, traficului și conversiilor — știi mereu unde ești și unde te îndreptăm.</div>
+    </div>
+    <div class="include-card reveal d6">
+      <div class="include-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg>
+      </div>
+      <div class="include-name">SEO Tehnic</div>
+      <div class="include-desc">Viteza site-ului, Core Web Vitals, structured data, sitemap XML — fundația tehnică pentru o poziționare solidă.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESUL NOSTRU -->
+<section class="process-section">
+  <div class="section-label reveal">Cum lucrăm</div>
+  <h2 class="includes-title reveal d1">Procesul nostru în 4 pași</h2>
+  <div class="process-steps">
+    <div class="process-step reveal">
+      <div class="step-num">01</div>
+      <div class="step-body">
+        <div class="step-name">Audit & Analiză</div>
+        <div class="step-desc">Începem cu o analiză completă a site-ului tău actual, a concurenților și a pieței. Identificăm punctele slabe și oportunitățile imediate de creștere.</div>
+      </div>
+    </div>
+    <div class="process-step reveal d1">
+      <div class="step-num">02</div>
+      <div class="step-body">
+        <div class="step-name">Strategie Personalizată</div>
+        <div class="step-desc">Construim o strategie SEO adaptată obiectivelor tale de business, bugetului disponibil și nișei în care activezi.</div>
+      </div>
+    </div>
+    <div class="process-step reveal d2">
+      <div class="step-num">03</div>
+      <div class="step-body">
+        <div class="step-name">Implementare & Optimizare</div>
+        <div class="step-desc">Implementăm toate modificările tehnice și de conținut, construim backlink-uri și monitorizăm evoluția în timp real.</div>
+      </div>
+    </div>
+    <div class="process-step reveal d3">
+      <div class="step-num">04</div>
+      <div class="step-body">
+        <div class="step-name">Raportare & Scalare</div>
+        <div class="step-desc">Lunar îți trimitem un raport detaliat cu rezultatele obținute și ajustăm strategia pentru a maximiza creșterea organică.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <div class="cta-blob cta-blob-1"></div>
+    <div class="cta-blob cta-blob-2"></div>
+    <div class="cta-label">Hai să Începem</div>
+    <h2 class="cta-title">Gata să Crești în Google?</h2>
+    <p class="cta-desc">Contactează-ne acum și îți oferim o analiză SEO gratuită a site-ului tău în 24 de ore.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/40764639118?text=Salut%2C%20doresc%20o%20analiz%C4%83%20SEO%20gratuit%C4%83%20pentru%20site-ul%20meu." target="_blank" rel="noopener" class="btn-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Analiză SEO Gratuită
+      </a>
+      <a href="index.html" class="btn-ghost">Înapoi la Site</a>
+    </div>
+  </div>
+</section>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
