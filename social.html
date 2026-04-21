@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestionare Social Media — Nexas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --black: #0a0a0a;
+  --card-bg: #141414;
+  --card-border: rgba(255,255,255,0.08);
+  --white: #ffffff;
+  --gray: #888888;
+  --gray-light: #aaaaaa;
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'DM Serif Display', serif;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 2px; }
+
+/* NAVBAR */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 36px;
+  background: rgba(10,10,10,0.85);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.nav-logo {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 8px 22px; border-radius: 100px;
+  font-size: 15px; font-weight: 600; letter-spacing: 0.06em;
+  color: var(--white); text-decoration: none;
+  transition: background 0.3s;
+}
+.nav-logo:hover { background: rgba(255,255,255,0.14); }
+.nav-back {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; color: var(--gray); text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 9px 20px; border-radius: 100px;
+  transition: all 0.3s;
+}
+.nav-back:hover { color: var(--white); border-color: rgba(255,255,255,0.35); }
+
+/* HERO */
+.hero {
+  min-height: 100vh; display: flex; align-items: center;
+  padding: 120px 80px 80px; gap: 80px;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.04; pointer-events: none;
+}
+
+.hero-left { flex: 1; position: relative; z-index: 1; max-width: 580px; }
+
+.badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--gray-light);
+  margin-bottom: 28px; letter-spacing: 0.06em; text-transform: uppercase;
+  opacity: 0; animation: fadeUp .7s .2s forwards ease-out;
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 400; line-height: 1.1; margin-bottom: 28px;
+  letter-spacing: -0.01em;
+  opacity: 0; animation: fadeUp .8s .35s forwards ease-out;
+}
+.hero-title span { font-style: italic; }
+.hero-desc {
+  font-size: 15px; color: var(--gray); line-height: 1.8; margin-bottom: 16px;
+  opacity: 0; animation: fadeUp .7s .5s forwards ease-out;
+}
+.hero-desc-2 {
+  font-size: 15px; color: var(--gray); line-height: 1.8; margin-bottom: 48px;
+  opacity: 0; animation: fadeUp .7s .62s forwards ease-out;
+}
+.hero-cta { opacity: 0; animation: fadeUp .7s .78s forwards ease-out; }
+
+.btn-wa {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--white); color: var(--black);
+  padding: 16px 32px; border-radius: 100px;
+  font-size: 14px; font-weight: 500; font-family: var(--font-body);
+  text-decoration: none;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.btn-wa:hover { opacity: 0.87; transform: scale(0.98); }
+
+/* HERO RIGHT — phone mockup + posts */
+.hero-right {
+  flex: 1; position: relative; z-index: 1;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; animation: fadeIn 1s .5s forwards ease-out;
+}
+
+.phone-mockup {
+  width: 260px; background: #111;
+  border-radius: 36px; border: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden; position: relative;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+}
+.phone-notch {
+  height: 28px; background: #111;
+  display: flex; align-items: center; justify-content: center;
+}
+.phone-notch-bar {
+  width: 80px; height: 8px; border-radius: 4px; background: #1a1a1a;
+}
+.phone-screen { background: #0f0f0f; padding: 0 0 16px; }
+
+/* instagram header */
+.ig-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 14px; border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.ig-avatar {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 600; color: white; flex-shrink: 0;
+}
+.ig-name { font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.85); }
+.ig-handle { font-size: 10px; color: rgba(255,255,255,0.35); }
+.ig-dots { margin-left: auto; color: rgba(255,255,255,0.3); font-size: 16px; letter-spacing: 2px; }
+
+/* post image placeholder */
+.post-img {
+  width: 100%; aspect-ratio: 1/1;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 28px;
+  color: rgba(255,255,255,0.12);
+}
+.post-actions {
+  display: flex; align-items: center; gap: 14px;
+  padding: 10px 14px 6px;
+}
+.post-action { display: flex; align-items: center; gap: 4px; font-size: 11px; color: rgba(255,255,255,0.4); }
+.post-action svg { width: 16px; height: 16px; opacity: 0.5; }
+.post-likes { font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.6); padding: 0 14px 4px; }
+.post-caption { font-size: 11px; color: rgba(255,255,255,0.45); padding: 0 14px; line-height: 1.5; }
+.post-caption strong { color: rgba(255,255,255,0.7); }
+
+/* floating cards */
+.float-card {
+  position: absolute; background: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px; padding: 12px 16px;
+  backdrop-filter: blur(12px);
+  animation: floatCard 4s ease-in-out infinite;
+}
+.float-card-1 { top: 10%; right: -20px; animation-delay: 0s; }
+.float-card-2 { bottom: 15%; left: -30px; animation-delay: -2s; }
+@keyframes floatCard { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+
+.fc-label { font-size: 10px; color: rgba(255,255,255,0.35); margin-bottom: 6px; text-transform: uppercase; letter-spacing:.06em; }
+.fc-value { font-size: 20px; font-family: var(--font-display); color: rgba(255,255,255,0.85); }
+.fc-sub { font-size: 10px; color: #4ade80; margin-top: 2px; }
+
+/* STATS */
+.stats { padding: 0 80px 80px; display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+.stat { padding: 48px 40px; border-right: 1px solid rgba(255,255,255,0.06); }
+.stat:last-child { border-right: none; }
+.stat-num { font-family: var(--font-display); font-size: clamp(40px,5vw,60px); font-weight: 400; line-height: 1; margin-bottom: 12px; }
+.stat-label { font-size: 14px; color: var(--gray); line-height: 1.55; }
+
+/* CE INCLUDEM */
+.includes { padding: 80px; }
+.sec-label { font-size: 11px; text-transform: uppercase; letter-spacing:.12em; color: var(--gray); margin-bottom: 20px; }
+.sec-title { font-family: var(--font-display); font-size: clamp(28px,3.5vw,48px); font-weight: 400; margin-bottom: 60px; max-width: 480px; line-height: 1.15; }
+
+.cards-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; overflow: hidden; }
+.inc-card { background: var(--black); padding: 36px 32px; transition: background 0.3s; }
+.inc-card:hover { background: var(--card-bg); }
+.inc-icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+}
+.inc-icon svg { width: 20px; height: 20px; opacity: 0.6; }
+.inc-name { font-size: 16px; font-weight: 500; margin-bottom: 10px; }
+.inc-desc { font-size: 13px; color: var(--gray); line-height: 1.65; }
+
+/* PLATFORME */
+.platforms { padding: 0 80px 80px; }
+.plat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.plat-card {
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: 20px; padding: 36px;
+  display: flex; align-items: flex-start; gap: 24px;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.plat-card:hover { border-color: rgba(255,255,255,0.18); transform: translateY(-3px); }
+.plat-icon {
+  width: 56px; height: 56px; border-radius: 16px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.plat-name { font-size: 20px; font-weight: 500; margin-bottom: 10px; }
+.plat-desc { font-size: 14px; color: var(--gray); line-height: 1.65; }
+
+/* PROCES */
+.process { padding: 0 80px 80px; }
+.steps { display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; overflow: hidden; }
+.step { display: flex; align-items: flex-start; gap: 32px; padding: 36px 40px; border-bottom: 1px solid rgba(255,255,255,0.06); transition: background 0.3s; }
+.step:last-child { border-bottom: none; }
+.step:hover { background: rgba(255,255,255,0.02); }
+.step-num { font-family: var(--font-display); font-size: 32px; color: rgba(255,255,255,0.1); min-width: 48px; line-height: 1; flex-shrink: 0; margin-top: 4px; }
+.step-name { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
+.step-desc { font-size: 14px; color: var(--gray); line-height: 1.65; }
+
+/* CTA */
+.cta-section { padding: 0 80px 80px; }
+.cta-inner {
+  background: #111; border-radius: 32px; padding: 80px 60px;
+  text-align: center; position: relative; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.cta-inner::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: .04; pointer-events: none;
+}
+.cta-blob { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.02); animation: blobFloat 8s ease-in-out infinite; }
+.cta-blob-1 { width: 280px; height: 280px; left:-60px; top:-60px; }
+.cta-blob-2 { width: 180px; height: 180px; right:-40px; bottom:-40px; animation-delay:-4s; }
+@keyframes blobFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-16px)} }
+.cta-label { font-size: 11px; text-transform: uppercase; letter-spacing:.12em; color: var(--gray); margin-bottom: 20px; position: relative; }
+.cta-title { font-family: var(--font-display); font-size: clamp(26px,3.5vw,44px); line-height: 1.1; margin-bottom: 18px; position: relative; }
+.cta-desc { font-size: 15px; color: var(--gray); max-width: 440px; margin: 0 auto 36px; line-height: 1.7; position: relative; }
+.cta-btns { display: flex; gap: 12px; justify-content: center; position: relative; flex-wrap: wrap; }
+.btn-ghost { background: transparent; color: var(--white); padding: 14px 30px; border-radius: 100px; font-size: 14px; font-family: var(--font-body); border: 1px solid rgba(255,255,255,0.2); cursor: pointer; text-decoration: none; display: inline-block; transition: border-color 0.3s, background 0.3s; }
+.btn-ghost:hover { border-color: rgba(255,255,255,0.45); background: rgba(255,255,255,0.05); }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.d1{transition-delay:.1s} .d2{transition-delay:.2s} .d3{transition-delay:.3s} .d4{transition-delay:.4s} .d5{transition-delay:.5s} .d6{transition-delay:.6s}
+
+@keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero { flex-direction: column; padding: 100px 40px 60px; gap: 50px; }
+  .stats { padding: 0 40px 60px; }
+  .includes, .platforms, .process, .cta-section { padding-left: 40px; padding-right: 40px; }
+  .cards-grid { grid-template-columns: 1fr 1fr; }
+  .plat-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .navbar { padding: 14px 20px; }
+  .hero { padding: 90px 24px 50px; }
+  .stats { grid-template-columns: 1fr; padding: 0 24px 50px; }
+  .stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .stat:last-child { border-bottom: none; }
+  .includes, .platforms, .process, .cta-section { padding-left: 24px; padding-right: 24px; }
+  .cards-grid { grid-template-columns: 1fr; }
+  .cta-inner { padding: 50px 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">NEXAS</a>
+  <a href="index.html" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Înapoi
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      Serviciu — Social Media Management
+    </div>
+    <h1 class="hero-title">Ne ocupăm de <span>prezența ta</span> pe social media!</h1>
+    <p class="hero-desc">Gestionăm paginile tale de Facebook și Instagram în totalitate — de la crearea postărilor și a conținutului vizual, până la răspunsul la mesaje și comentarii. Tu te ocupi de afacere, noi de imaginea ta online.</p>
+    <p class="hero-desc-2">O prezență activă și constantă pe social media este esențială pentru orice afacere modernă. Îți construim o comunitate fidelă, creștem engagement-ul și transformăm urmăritorii în clienți.</p>
+    <div class="hero-cta">
+      <a href="https://wa.me/40764639118?text=Salut%2C%20doresc%20mai%20multe%20informa%C8%9Bii%20despre%20serviciul%20de%20gestionare%20social%20media." target="_blank" rel="noopener" class="btn-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Discută cu noi pe WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Phone mockup -->
+  <div class="hero-right">
+    <div style="position:relative;">
+      <div class="phone-mockup">
+        <div class="phone-notch"><div class="phone-notch-bar"></div></div>
+        <div class="phone-screen">
+          <div class="ig-header">
+            <div class="ig-avatar">N</div>
+            <div>
+              <div class="ig-name">nexas.agency</div>
+              <div class="ig-handle">@nexas.agency</div>
+            </div>
+            <div class="ig-dots">···</div>
+          </div>
+          <div class="post-img" style="background:linear-gradient(135deg,#1a1a2e,#16213e);">
+            Nexas
+          </div>
+          <div class="post-actions">
+            <div class="post-action">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+              <span>248</span>
+            </div>
+            <div class="post-action">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              <span>34</span>
+            </div>
+            <div class="post-action">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </div>
+          </div>
+          <div class="post-likes">248 aprecieri</div>
+          <div class="post-caption"><strong>nexas.agency</strong> Prezența ta online contează. Lasă-ne pe noi să ne ocupăm! 🚀 #socialmedia #marketing</div>
+        </div>
+      </div>
+
+      <!-- floating stats -->
+      <div class="float-card float-card-1">
+        <div class="fc-label">Reach lunar</div>
+        <div class="fc-value">12.4K</div>
+        <div class="fc-sub">↑ +34% față de luna trecută</div>
+      </div>
+      <div class="float-card float-card-2">
+        <div class="fc-label">Engagement</div>
+        <div class="fc-value">8.2%</div>
+        <div class="fc-sub">↑ Peste media industriei</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat reveal">
+    <div class="stat-num">3×</div>
+    <div class="stat-label">Creștere medie a engagement-ului în primele 60 de zile</div>
+  </div>
+  <div class="stat reveal d2">
+    <div class="stat-num">Daily</div>
+    <div class="stat-label">Postări și stories active pe toate platformele gestionate</div>
+  </div>
+  <div class="stat reveal d3">
+    <div class="stat-num">&lt; 1h</div>
+    <div class="stat-label">Timp mediu de răspuns la mesajele primite de la urmăritori</div>
+  </div>
+</div>
+
+<!-- CE INCLUDEM -->
+<section class="includes">
+  <div class="sec-label reveal">Ce includem</div>
+  <h2 class="sec-title reveal d1">Tot ce ai nevoie pentru o prezență online puternică</h2>
+  <div class="cards-grid">
+    <div class="inc-card reveal d1">
+      <div class="inc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      </div>
+      <div class="inc-name">Creare Conținut</div>
+      <div class="inc-desc">Postări vizuale atractive, texte captivante și stories creative adaptate brandului tău și publicului țintă.</div>
+    </div>
+    <div class="inc-card reveal d2">
+      <div class="inc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+      </div>
+      <div class="inc-name">Gestionare Mesaje</div>
+      <div class="inc-desc">Răspundem prompt la toate mesajele și comentariile primite, menținând o relație activă cu urmăritorii tăi.</div>
+    </div>
+    <div class="inc-card reveal d3">
+      <div class="inc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+      </div>
+      <div class="inc-name">Rapoarte Lunare</div>
+      <div class="inc-desc">Statistici clare despre reach, engagement, creșterea urmăritorilor și performanța fiecărei postări.</div>
+    </div>
+    <div class="inc-card reveal d4">
+      <div class="inc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
+      </div>
+      <div class="inc-name">Hashtag Strategy</div>
+      <div class="inc-desc">Cercetăm și folosim hashtagurile potrivite pentru a crește vizibilitatea organică a postărilor tale.</div>
+    </div>
+    <div class="inc-card reveal d5">
+      <div class="inc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <div class="inc-name">Calendar Editorial</div>
+      <div class="inc-desc">Planificăm conținutul cu săptămâni în avans pentru consistență și relevanță față de evenimentele din nișa ta.</div>
+    </div>
+    <div class="inc-card reveal d6">
+      <div class="inc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      </div>
+      <div class="inc-name">Creștere Organică</div>
+      <div class="inc-desc">Strategii dovedite pentru a atrage urmăritori reali și relevanți, fără metode artificiale sau cumpărare de like-uri.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORME -->
+<section class="platforms">
+  <div class="sec-label reveal">Platforme</div>
+  <h2 class="sec-title reveal d1">Pe ce rețele lucrăm</h2>
+  <div class="plat-grid">
+    <div class="plat-card reveal d1">
+      <div class="plat-icon" style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </div>
+      <div>
+        <div class="plat-name">Instagram</div>
+        <div class="plat-desc">Feed estetic, Reels, Stories, Highlights — construim o prezență vizuală coerentă și atractivă care reflectă brandul tău.</div>
+      </div>
+    </div>
+    <div class="plat-card reveal d2">
+      <div class="plat-icon" style="background:#1877f2;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </div>
+      <div>
+        <div class="plat-name">Facebook</div>
+        <div class="plat-desc">Postări, events, răspuns la recenzii și mesaje — menținem pagina ta activă și profesionistă în fața clienților.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCES -->
+<section class="process">
+  <div class="sec-label reveal">Cum lucrăm</div>
+  <h2 class="sec-title reveal d1">Procesul nostru simplu</h2>
+  <div class="steps">
+    <div class="step reveal">
+      <div class="step-num">01</div>
+      <div>
+        <div class="step-name">Onboarding & Analiză</div>
+        <div class="step-desc">Analizăm paginile tale actuale, publicul țintă și concurența. Înțelegem brandul tău pentru a crea conținut autentic.</div>
+      </div>
+    </div>
+    <div class="step reveal d1">
+      <div class="step-num">02</div>
+      <div>
+        <div class="step-name">Strategie & Calendar</div>
+        <div class="step-desc">Construim un calendar editorial lunar cu teme, tipuri de conținut și frecvența postărilor adaptate obiectivelor tale.</div>
+      </div>
+    </div>
+    <div class="step reveal d2">
+      <div class="step-num">03</div>
+      <div>
+        <div class="step-name">Creare & Publicare</div>
+        <div class="step-desc">Creăm tot conținutul, îl supunem aprobării tale și publicăm la orele cu cel mai mare engagement din nișa ta.</div>
+      </div>
+    </div>
+    <div class="step reveal d3">
+      <div class="step-num">04</div>
+      <div>
+        <div class="step-name">Monitorizare & Optimizare</div>
+        <div class="step-desc">Urmărim performanța zilnic, răspundem la mesaje și comentarii și ajustăm strategia lunar pe baza datelor reale.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <div class="cta-blob cta-blob-1"></div>
+    <div class="cta-blob cta-blob-2"></div>
+    <div class="cta-label">Hai să Începem</div>
+    <h2 class="cta-title">Gata să Crești pe Social Media?</h2>
+    <p class="cta-desc">Contactează-ne acum și îți oferim o analiză gratuită a paginilor tale de Facebook și Instagram.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/40764639118?text=Salut%2C%20doresc%20mai%20multe%20informa%C8%9Bii%20despre%20gestionarea%20paginilor%20mele%20de%20social%20media." target="_blank" rel="noopener" class="btn-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Analiză Gratuită
+      </a>
+      <a href="index.html" class="btn-ghost">Înapoi la Site</a>
+    </div>
+  </div>
+</section>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
