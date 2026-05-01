@@ -557,6 +557,7 @@ footer { background: #f4f1ee; color: #111; padding: 64px 60px 40px; }
 </style>
 </head>
 <body>
+<canvas id="nexas-bg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
 
 <!-- ═══════════════════════════════
      NAVBAR
@@ -1065,6 +1066,64 @@ Detailing Interior & Exterior</div><div class="wc-desc">Programări online, prez
     });
   });
 
+})();
+</script>
+
+<script>
+(function(){
+  var canvas = document.getElementById('nexas-bg');
+  var ctx = canvas.getContext('2d');
+  var W, H;
+  
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // Orbs: negru-baza, mov adanc, verde inchis, roz/magenta, albastru neon
+  var orbs = [
+    { x: 0.15, y: 0.2,  r: 0.55, color: '139,92,246',   speed: 0.00018, phase: 0      },  // mov
+    { x: 0.8,  y: 0.15, r: 0.45, color: '236,72,153',   speed: 0.00023, phase: 1.2    },  // roz/magenta
+    { x: 0.5,  y: 0.75, r: 0.5,  color: '34,197,94',    speed: 0.00015, phase: 2.4    },  // verde
+    { x: 0.85, y: 0.7,  r: 0.4,  color: '59,130,246',   speed: 0.00020, phase: 0.8    },  // albastru
+    { x: 0.3,  y: 0.6,  r: 0.35, color: '168,85,247',   speed: 0.00025, phase: 3.6    },  // violet
+  ];
+
+  var t = 0;
+  var lastTs = 0;
+
+  function draw(ts) {
+    var dt = ts - lastTs;
+    lastTs = ts;
+    t += dt;
+
+    ctx.clearRect(0, 0, W, H);
+    // Fundal negru pur
+    ctx.fillStyle = '#0a0a0a';
+    ctx.fillRect(0, 0, W, H);
+
+    orbs.forEach(function(orb) {
+      var px = (orb.x + Math.sin(t * orb.speed + orb.phase) * 0.18) * W;
+      var py = (orb.y + Math.cos(t * orb.speed * 0.7 + orb.phase) * 0.14) * H;
+      var radius = orb.r * Math.min(W, H);
+
+      var grad = ctx.createRadialGradient(px, py, 0, px, py, radius);
+      grad.addColorStop(0,   'rgba(' + orb.color + ', 0.13)');
+      grad.addColorStop(0.5, 'rgba(' + orb.color + ', 0.05)');
+      grad.addColorStop(1,   'rgba(' + orb.color + ', 0)');
+
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(px, py, radius, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  requestAnimationFrame(draw);
 })();
 </script>
 </body>
