@@ -391,13 +391,8 @@ p { color: var(--text-dim); }
           mask-image: radial-gradient(circle at 50% 50%, black 60%, transparent 92%);
   opacity: 0.55;
 }
-.orb-ring {
-  position: absolute; inset: -8%;
-  border-radius: 50%;
-  border: 1px dashed rgba(140,200,255,0.20);
-  animation: ring-spin 38s linear infinite;
-}
-.orb-ring.r2 { inset: -18%; border-style: dotted; opacity: 0.6; animation-duration: 60s; animation-direction: reverse; }
+.orb-ring { display: none; }
+  
 @keyframes ring-spin { to { transform: rotate(360deg); } }
 .orb-mark {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
