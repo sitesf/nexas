@@ -675,8 +675,9 @@ footer {
 
 /* Responsive */
 @media (max-width: 880px) {
-  .hero { grid-template-columns: 1fr; gap: 32px; }
-  .orb-stage { order: -1; max-width: 360px; margin-inline: auto; }
+  .hero { grid-template-columns: 1fr; gap: 32px; min-height: auto; padding-top: 130px; padding-bottom: 50px; align-items: start; }
+  .orb-stage { order: -1; max-width: 280px; margin-inline: auto; aspect-ratio: 1; }
+  .orb-stage::before { display: none; }
   .section-head { grid-template-columns: 1fr; gap: 18px; align-items: start; }
   .services-mini { grid-template-columns: 1fr 1fr; }
   .svc-grid { grid-template-columns: 1fr 1fr; }
@@ -695,8 +696,8 @@ footer {
 @media (max-width: 760px) {
   .nav-links, .nav-cta { display: none; }
   .menu-btn { display: flex; align-items: center; justify-content: center; }
-  .hero { padding-top: 110px; min-height: auto; }
-  .orb-stage { max-width: 280px; }
+  .hero { padding-top: 110px; padding-bottom: 40px; min-height: auto; gap: 24px; }
+  .orb-stage { max-width: 240px; }
   .svc-grid .svc-card[style*="span 2"] { grid-column: span 1 !important; }
   .actions .btn { width: 100%; }
   .hero-meta { flex-wrap: wrap; gap: 16px 28px; }
@@ -1097,7 +1098,7 @@ footer {
           Scrie pe WhatsApp
           <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
-        <a class="btn btn-secondary" href="mailto:contact@nexas.ro">contact@nexas.ro</a>
+        <a class="btn btn-secondary" href="/cdn-cgi/l/email-protection#33505c5d47525047735d564b52401d415c"><span class="__cf_email__" data-cfemail="0d6e6263796c6e794d6368756c7e237f62">[email&#160;protected]</span></a>
       </div>
     </section>
 
@@ -1136,7 +1137,7 @@ footer {
         <h4>Contact</h4>
         <ul>
           <li><a href="https://wa.me/40764639118">+40 764 639 118</a></li>
-          <li><a href="mailto:contact@nexas.ro">contact@nexas.ro</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#abc8c4c5dfcac8dfebc5ced3cad885d9c4"><span class="__cf_email__" data-cfemail="e4878b8a90858790a48a819c8597ca968b">[email&#160;protected]</span></a></li>
           <li><a href="#">București · România</a></li>
           <li><a href="#">L–V · 09:00–18:00</a></li>
         </ul>
@@ -1153,7 +1154,7 @@ footer {
 <div id="tweaks-root"></div>
 
 <!-- Tweakable defaults (persisted by host) -->
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   window.__NEXAS_TWEAKS__ = /*EDITMODE-BEGIN*/{
     "accent": "blue",
     "density": "compact"
