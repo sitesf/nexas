@@ -419,7 +419,8 @@ h1 span{color:var(--blue);}
 // ── CONFIG ────────────────────────────────────────────────────────────────────
 // Adauga cheile tale mai jos SAU foloseste variabile de mediu intr-un backend
 // Pentru GitHub Pages (static), cheile se pun direct aici (doar PageSpeed e publica, Gemini nu)
-const GEMINI_KEY    = ''; // Adauga cheia Gemini aici sau lasa gol
+const GEMINI_KEY    = 'PUNE_CHEIA_TA_AICI'; // Cheia Gemini API
+const PAGESPEED_KEY = 'PUNE_CHEIA_TA_AICI'; // Aceeasi cheie pentru PageSpeed
 const EMAILJS_SVC   = ''; // EmailJS Service ID
 const EMAILJS_TPL   = ''; // EmailJS Template ID
 const EMAILJS_KEY   = ''; // EmailJS Public Key
@@ -463,7 +464,7 @@ function cleanUrl(raw) {
 
 // ── PAGESPEED API ─────────────────────────────────────────────────────────────
 async function fetchPageSpeed(url, strategy) {
-  const endpoint = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&strategy=${strategy}&category=performance&category=seo&category=accessibility&category=best-practices`;
+  const endpoint = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&strategy=${strategy}&category=performance&category=seo&category=accessibility&category=best-practices&key=${PAGESPEED_KEY}`;
   const resp = await fetch(endpoint);
   if (!resp.ok) throw new Error(`PageSpeed API eroare: HTTP ${resp.status}`);
   return await resp.json();
