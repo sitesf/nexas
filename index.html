@@ -864,6 +864,287 @@ Detailing Interior & Exterior</div><div class="wc-desc">Programări online, prez
 </section>
 
 <!-- ═══════════════════════════════
+     AGENTI NEXAS
+════════════════════════════════ -->
+<section id="agenti" style="padding:80px 60px;position:relative;overflow:hidden;">
+
+<style>
+/* ── Agents section ── */
+.agents-wrap { max-width: 1200px; margin: 0 auto; }
+
+.agents-header { text-align:center; margin-bottom:64px; }
+.agents-eyebrow {
+  display:inline-block;
+  font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:#6366f1;margin-bottom:16px;
+  padding:5px 14px;border-radius:99px;
+  background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);
+}
+.agents-title {
+  font-family:var(--font-display);
+  font-size:clamp(2rem,4vw,3.2rem);
+  font-weight:300;color:#f1f5f9;
+  margin-bottom:14px;line-height:1.1;
+}
+.agents-title strong { font-weight:600; }
+.agents-sub { font-size:15px;color:var(--gray);max-width:520px;margin:0 auto;line-height:1.7; }
+
+/* Grid */
+.agents-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+/* Card base */
+.agent-card {
+  position:relative;
+  border-radius:22px;
+  border:1px solid rgba(255,255,255,.07);
+  background:rgba(255,255,255,.03);
+  padding:32px 24px 28px;
+  overflow:hidden;
+  transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;
+  cursor:default;
+}
+.agent-card::before {
+  content:'';position:absolute;inset:0;border-radius:22px;
+  opacity:0;transition:opacity .35s ease;
+  pointer-events:none;
+}
+.agent-card:hover { transform:translateY(-8px); }
+
+/* NEO */
+.agent-neo { --ac:#3b82f6; --ac-soft:rgba(59,130,246,.12); }
+.agent-neo::before { background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.18),transparent 70%); }
+.agent-neo:hover { border-color:rgba(59,130,246,.4);box-shadow:0 24px 60px rgba(59,130,246,.15); }
+.agent-neo:hover::before { opacity:1; }
+
+/* SAN */
+.agent-san { --ac:#f59e0b; --ac-soft:rgba(245,158,11,.12); }
+.agent-san::before { background:radial-gradient(circle at 50% 0%,rgba(245,158,11,.18),transparent 70%); }
+.agent-san:hover { border-color:rgba(245,158,11,.4);box-shadow:0 24px 60px rgba(245,158,11,.15); }
+.agent-san:hover::before { opacity:1; }
+
+/* FLIP */
+.agent-flip { --ac:#10b981; --ac-soft:rgba(16,185,129,.12); }
+.agent-flip::before { background:radial-gradient(circle at 50% 0%,rgba(16,185,129,.18),transparent 70%); }
+.agent-flip:hover { border-color:rgba(16,185,129,.4);box-shadow:0 24px 60px rgba(16,185,129,.15); }
+.agent-flip:hover::before { opacity:1; }
+
+/* BET */
+.agent-bet { --ac:#ef4444; --ac-soft:rgba(239,68,68,.12); }
+.agent-bet::before { background:radial-gradient(circle at 50% 0%,rgba(239,68,68,.18),transparent 70%); }
+.agent-bet:hover { border-color:rgba(239,68,68,.4);box-shadow:0 24px 60px rgba(239,68,68,.15); }
+.agent-bet:hover::before { opacity:1; }
+
+/* Agent visual orb */
+.agent-orb {
+  width:64px;height:64px;border-radius:18px;
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:22px;position:relative;
+  background:var(--ac-soft);border:1px solid rgba(255,255,255,.08);
+}
+.agent-orb-ring {
+  position:absolute;inset:-6px;border-radius:22px;
+  border:1px solid var(--ac);opacity:.25;
+  animation:ring-pulse 3s ease-in-out infinite;
+}
+@keyframes ring-pulse {
+  0%,100%{opacity:.2;transform:scale(1);}
+  50%{opacity:.5;transform:scale(1.06);}
+}
+.agent-orb svg { width:28px;height:28px; }
+
+/* Status dot */
+.agent-status {
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  margin-bottom:10px;color:var(--ac);
+}
+.agent-status-dot {
+  width:6px;height:6px;border-radius:50%;
+  background:var(--ac);
+  box-shadow:0 0 8px var(--ac);
+  animation:blink-dot 2s ease-in-out infinite;
+}
+@keyframes blink-dot{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* Agent name */
+.agent-name {
+  font-family:var(--font-display);
+  font-size:1.7rem;font-weight:600;
+  color:#f1f5f9;margin-bottom:4px;letter-spacing:-.02em;
+}
+.agent-role {
+  font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ac);margin-bottom:16px;
+}
+
+/* Divider */
+.agent-divider {
+  height:1px;background:rgba(255,255,255,.06);margin-bottom:16px;
+}
+
+/* Personality */
+.agent-personality {
+  font-size:12px;color:rgba(255,255,255,.4);
+  font-style:italic;margin-bottom:14px;line-height:1.6;
+}
+
+/* Capabilities */
+.agent-caps { list-style:none;padding:0;margin:0 0 24px; display:flex;flex-direction:column;gap:7px; }
+.agent-caps li {
+  font-size:12px;color:rgba(255,255,255,.55);
+  display:flex;align-items:flex-start;gap:8px;line-height:1.5;
+}
+.agent-caps li::before {
+  content:'';width:4px;height:4px;border-radius:50%;
+  background:var(--ac);flex-shrink:0;margin-top:5px;
+}
+
+/* CTA */
+.agent-cta {
+  display:block;width:100%;padding:11px 16px;
+  border-radius:12px;border:1px solid var(--ac);
+  background:var(--ac-soft);color:var(--ac);
+  font-family:var(--font-body);font-size:13px;font-weight:600;
+  text-align:center;text-decoration:none;
+  transition:all .25s ease;letter-spacing:.02em;
+}
+.agent-cta:hover {
+  background:var(--ac);color:#0a0a0a;
+  box-shadow:0 8px 24px rgba(0,0,0,.25);
+}
+
+/* Email line */
+.agents-email {
+  text-align:center;margin-top:40px;
+  font-size:12px;color:rgba(255,255,255,.3);
+}
+.agents-email a { color:rgba(255,255,255,.5);text-decoration:none; }
+.agents-email a:hover { color:#f1f5f9; }
+
+@media(max-width:1100px){
+  .agents-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:600px){
+  .agents-grid { grid-template-columns:1fr; }
+  #agenti { padding:60px 24px; }
+}
+</style>
+
+<div class="agents-wrap">
+  <div class="agents-header">
+    <div class="agents-eyebrow">Echipa Nexas</div>
+    <h2 class="agents-title">Agentii care <strong>lucreaza</strong> pentru tine</h2>
+    <p class="agents-sub">Fiecare agent specializat, antrenat cu un singur scop — sa livreze rezultate masurabile pentru afacerea ta.</p>
+  </div>
+
+  <div class="agents-grid">
+
+    <!-- NEO -->
+    <div class="agent-card agent-neo reveal">
+      <div class="agent-orb">
+        <div class="agent-orb-ring"></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          <path d="M11 8v3l2 2"/>
+        </svg>
+      </div>
+      <div class="agent-status"><span class="agent-status-dot"></span>Activ</div>
+      <div class="agent-name">NEO</div>
+      <div class="agent-role">Agent SEO & Audit</div>
+      <div class="agent-divider"></div>
+      <div class="agent-personality">"Precis, analitic, rece. Nu ghiceste — verifica, masoara, raporteaza."</div>
+      <ul class="agent-caps">
+        <li>Audit complet al oricarui site web</li>
+        <li>Analiza titluri, meta, structura URL</li>
+        <li>Identificare probleme de viteza</li>
+        <li>Raport detaliat cu prioritati clare</li>
+      </ul>
+      <a href="https://wa.me/40764639118?text=Salut%2C%20vreau%20sa%20comand%20serviciul%20NEO%20-%20Audit%20SEO%20pentru%20site-ul%20meu." target="_blank" rel="noopener" class="agent-cta">Comanda NEO</a>
+    </div>
+
+    <!-- SAN -->
+    <div class="agent-card agent-san reveal d1">
+      <div class="agent-orb">
+        <div class="agent-orb-ring"></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round">
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <path d="M8 21h8m-4-4v4"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+      </div>
+      <div class="agent-status"><span class="agent-status-dot"></span>Activ</div>
+      <div class="agent-name">SAN</div>
+      <div class="agent-role">Agent Social Media</div>
+      <div class="agent-divider"></div>
+      <div class="agent-personality">"Creativ, energic, conectat. Stie ce opreste scroll-ul si ce genereaza reactii."</div>
+      <ul class="agent-caps">
+        <li>7 postari saptamanale per platforma</li>
+        <li>Adaptat per Facebook, Instagram, LinkedIn</li>
+        <li>Hook puternic + CTA strategic per zi</li>
+        <li>Export direct in Buffer pentru publicare</li>
+      </ul>
+      <a href="https://wa.me/40764639118?text=Salut%2C%20vreau%20sa%20comand%20serviciul%20SAN%20-%20Postari%20Social%20Media%20pentru%20afacerea%20mea." target="_blank" rel="noopener" class="agent-cta">Comanda SAN</a>
+    </div>
+
+    <!-- FLIP -->
+    <div class="agent-card agent-flip reveal d2">
+      <div class="agent-orb">
+        <div class="agent-orb-ring"></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round">
+          <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+        </svg>
+      </div>
+      <div class="agent-status"><span class="agent-status-dot"></span>Activ</div>
+      <div class="agent-name">FLIP</div>
+      <div class="agent-role">Agent Continut</div>
+      <div class="agent-divider"></div>
+      <div class="agent-personality">"Rapid, versatil, liber. Transforma orice idee in continut care convinge si se pozitioneaza."</div>
+      <ul class="agent-caps">
+        <li>Articole blog optimizate SEO</li>
+        <li>Descrieri produse si servicii</li>
+        <li>Texte landing page si prezentare</li>
+        <li>Continut adaptat tonului brandului</li>
+      </ul>
+      <a href="https://wa.me/40764639118?text=Salut%2C%20vreau%20sa%20comand%20serviciul%20FLIP%20-%20Generare%20Continut%20pentru%20afacerea%20mea." target="_blank" rel="noopener" class="agent-cta">Comanda FLIP</a>
+    </div>
+
+    <!-- BET -->
+    <div class="agent-card agent-bet reveal d3">
+      <div class="agent-orb">
+        <div class="agent-orb-ring"></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+        </svg>
+      </div>
+      <div class="agent-status"><span class="agent-status-dot"></span>Live</div>
+      <div class="agent-name">BET</div>
+      <div class="agent-role">Agent Predictii Sportive</div>
+      <div class="agent-divider"></div>
+      <div class="agent-personality">"Calculat, bazat pe date reale. Nu pariaza pe noroc — analizeaza, filtreaza, decide."</div>
+      <ul class="agent-caps">
+        <li>50+ meciuri analizate saptamanal</li>
+        <li>Pronosticuri validate de AI</li>
+        <li>Bilet AI generat automat</li>
+        <li>Stiri sportive actualizate zilnic</li>
+      </ul>
+      <a href="https://sitesf.github.io/pariuri" target="_blank" rel="noopener" class="agent-cta">Acceseaza BET</a>
+    </div>
+
+  </div>
+
+  <div class="agents-email">
+    Contact direct: <a href="mailto:fopreaa@gmail.com">fopreaa@gmail.com</a>
+  </div>
+</div>
+
+</section>
+
+
+<!-- ═══════════════════════════════
      CTA
 ════════════════════════════════ -->
 <section class="cta-section" id="contact">
