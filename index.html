@@ -706,8 +706,8 @@ footer {
   .process-step:last-child { border-bottom: none; }
   .stats { grid-template-columns: 1fr; gap: 24px; padding: 32px 0; }
   .stat { padding: 0; border-right: none; }
-  .portfolio { grid-template-columns: 1fr; grid-auto-rows: 200px; }
-  .work-1 { grid-row: span 1; }
+  .portfolio { grid-template-columns: 1fr; grid-auto-rows: auto; }
+  .work-1, .work-2, .work-3, .work-4, .work-5 { grid-column: span 1 !important; grid-row: span 1 !important; min-height: 200px; }
   .logos-row { grid-template-columns: repeat(2, 1fr); gap: 18px; }
   .cta-large { padding: 40px 24px; }
   .foot-grid { grid-template-columns: 1fr; gap: 32px; }
