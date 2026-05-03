@@ -1,12 +1,10 @@
 (function () {
 
   const CONFIG = {
-    API_KEY: "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",
+    PROXY_URL: "https://script.google.com/macros/s/AKfycby5w9eJSZ55_L3FuYfGMI1882-mXDlppiS0veWtSB9uY4sKDZg9GnHibOe8d8L45zD8oA/exec",
     WHATSAPP: "40764639118",
     AGENT_NAME: "Alex",
     AGENCY_NAME: "Nexas",
-    PRIMARY_COLOR: "#7c3aed",
-    ACCENT_COLOR: "#4f46e5",
   };
 
   const SYSTEM_PROMPT = `Ești Alex, asistentul virtual al agenției Nexas — o agenție digitală din România specializată în crearea de site-uri web profesionale, optimizare SEO și managementul social media.
@@ -72,7 +70,6 @@ REGULI:
     const style = document.createElement("style");
     style.textContent = CSS;
     document.head.appendChild(style);
-
     const root = document.createElement("div");
     root.id = "nexas-widget";
     root.innerHTML = `
@@ -110,14 +107,14 @@ REGULI:
   }
 
   function initLogic() {
-    const panel    = document.getElementById("nx-panel");
-    const btn      = document.getElementById("nx-btn");
-    const closeBtn = document.getElementById("nx-close-btn");
-    const msgsEl   = document.getElementById("nx-msgs");
-    const inputEl  = document.getElementById("nx-input");
-    const sendBtn  = document.getElementById("nx-send-btn");
-    const iconChat = document.getElementById("nx-icon-chat");
-    const iconClose= document.getElementById("nx-icon-close");
+    const panel     = document.getElementById("nx-panel");
+    const btn       = document.getElementById("nx-btn");
+    const closeBtn  = document.getElementById("nx-close-btn");
+    const msgsEl    = document.getElementById("nx-msgs");
+    const inputEl   = document.getElementById("nx-input");
+    const sendBtn   = document.getElementById("nx-send-btn");
+    const iconChat  = document.getElementById("nx-icon-chat");
+    const iconClose = document.getElementById("nx-icon-close");
 
     let open = false, loading = false, history = [];
 
@@ -172,13 +169,10 @@ REGULI:
       addMessage("user", text);
       showTyping();
       try {
-        const res = await fetch("https://api.anthropic.com/v1/messages", {
+        const res = await fetch(CONFIG.PROXY_URL, {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
-            "x-api-key": CONFIG.API_KEY,
-            "anthropic-version": "2023-06-01",
-            "anthropic-dangerous-direct-browser-access": "true"
+            "Content-Type": "text/plain"
           },
           body: JSON.stringify({
             model: "claude-haiku-4-5-20251001",
@@ -208,7 +202,7 @@ REGULI:
       iconChat.style.display = open ? "none" : "block";
       iconClose.style.display = open ? "block" : "none";
       if (open && history.length === 0) {
-        addMessage("assistant", "Salut! Sunt Alex de la Nexas 👋 Te pot ajuta cu informații despre site-uri web, SEO sau social media. Ce te interesează?");
+        addMessage("assistant", "Salut! Sunt Alex de la Agentia Nexas.  Te pot ajuta cu informații despre site-uri web, SEO sau social media. Ce te interesează?");
         setTimeout(() => inputEl.focus(), 100);
       }
     }
