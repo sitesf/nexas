@@ -1,7 +1,7 @@
 (function () {
 
   const CONFIG = {
-    API_KEY: "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",
+    API_KEY: "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",
     WHATSAPP: "40764639118",
     AGENT_NAME: "Alex",
     AGENCY_NAME: "Nexas",
