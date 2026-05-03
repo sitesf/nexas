@@ -1360,6 +1360,7 @@ footer {
     </div>
     <div class="foot-bottom">
       <span>© 2026 NEXAS · Toate drepturile rezervate.</span>
+      <a href="/privacy.html" style="color: var(--text-mute); font-size: 13px;">Politică de confidențialitate</a>
       <span class="status"><span class="dot" aria-hidden="true"></span> Acceptăm proiecte noi pentru Q3 2026</span>
     </div>
   </div>
@@ -1480,9 +1481,8 @@ footer {
 <script type="text/babel" src="tweaks-panel.jsx"></script>
 <script type="text/babel" src="tweaks-app.jsx"></script>
 
-  -pentru cookie 
-  
-  <div id="cookie-banner" role="dialog" aria-label="Consimțământ cookie-uri">
+<!-- Cookie Banner -->
+<div id="cookie-banner" role="dialog" aria-label="Consimțământ cookie-uri">
   <p>
     Folosim cookie-uri pentru a îmbunătăți experiența pe site și pentru a analiza traficul. Prin click pe „Accept", ești de acord cu utilizarea acestora.
     <a href="/privacy.html" target="_blank" rel="noopener">Politică de confidențialitate</a>
@@ -1495,20 +1495,12 @@ footer {
 
 <style>
 #cookie-banner {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-  width: min(580px, calc(100% - 32px));
-  background: rgba(7, 11, 20, 0.95);
+  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+  z-index: 9999; width: min(620px, calc(100% - 32px));
+  background: rgba(7, 11, 20, 0.97);
   border: 1px solid rgba(120, 170, 230, 0.22);
-  border-radius: 14px;
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  border-radius: 14px; padding: 16px 20px;
+  display: none; align-items: center; justify-content: space-between; gap: 16px;
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.03) inset;
   animation: cb-slide 0.35s ease;
@@ -1518,18 +1510,30 @@ footer {
   to   { opacity:1; transform: translateX(-50%) translateY(0); }
 }
 #cookie-banner.hidden { display: none !important; }
-#cookie-banner p {
-  font-size: 13.5px;
-  color: #b6c3d6;
-  margin: 0;
-  line-height: 1.5;
+#cookie-banner p { font-size: 13.5px; color: #b6c3d6; margin: 0; line-height: 1.5; }
+#cookie-banner p a { color: #5aa6ff; text-decoration: underline; text-underline-offset: 3px; margin-left: 4px; }
+.cb-actions { display: flex; gap: 8px; flex-shrink: 0; }
+.cb-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 600;
+  cursor: pointer; border: 1px solid transparent; white-space: nowrap; transition: opacity 0.2s;
 }
-#cookie-banner p a {
-  color: #5aa6ff;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.cb-actio
-  
+.cb-btn:hover { opacity: 0.85; }
+.cb-ok { background: linear-gradient(180deg, #4a9bff, #1f6bdb); color: #fff; box-shadow: 0 4px 16px rgba(31,107,219,0.35); }
+.cb-more { color: #b6c3d6; border: 1px solid rgba(120,170,230,0.22); background: rgba(120,170,230,0.06); text-decoration: none; }
+@media (max-width: 520px) { #cookie-banner { flex-direction: column; align-items: flex-start; } }
+</style>
+
+<script>
+(function(){
+  var KEY = 'nexas_cookie_ok';
+  function getCookie(n){ var m = document.cookie.match('(^|;)\\s*'+n+'\\s*=\\s*([^;]+)'); return m ? m.pop() : null; }
+  function setCookie(n,v,d){ var e = new Date(Date.now()+d*864e5).toUTCString(); document.cookie=n+'='+v+';path=/;expires='+e+';SameSite=Lax'; }
+  var b = document.getElementById('cookie-banner');
+  if(!getCookie(KEY)){ b.style.display='flex'; }
+  document.getElementById('cookie-accept').addEventListener('click',function(){ setCookie(KEY,'1',365); b.classList.add('hidden'); });
+})();
+</script>
+
 </body>
 </html>
