@@ -330,7 +330,10 @@ REGULI:
             "anthropic-dangerous-direct-browser-access": "true"
           },
           body: JSON.stringify({
-            model: "claude-sonnet-4-20250514",
+            model: "claude-haiku-4-5-20251001
+→ Commit changes → direct to main
+
+Asta e fix-ul. Haiku e mai rapid și mai ieftin pentru un chatbot. Spune-mi când ai dat commit. 👇",
             max_tokens: 500,
             system: SYSTEM_PROMPT,
             messages: history
