@@ -5,7 +5,7 @@
   // ============================================================
 
   const CONFIG = {
-    API_KEY: "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",           // <-- Anthropic API Key
+  API_KEY: "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",          // <-- Anthropic API Key
     WHATSAPP: "40764639118",                // <-- Numarul tau WhatsApp (fara +)
     AGENT_NAME: "Alex",
     AGENCY_NAME: "Nexas",
