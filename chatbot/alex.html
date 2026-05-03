@@ -34,6 +34,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nlogo{display:flex;align-items:center;gap:.7rem;}
 .nicon{width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(108,99,255,.5);background:rgba(108,99,255,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .nicon svg{width:18px;height:18px;}
+
+/* Logo poza Alex — fara patrat, glow animat */
+.alex-logo-wrap{border:none;background:transparent;overflow:visible;width:40px;height:40px;}
+.alex-logo-img{width:40px;height:40px;border-radius:50%;object-fit:cover;display:block;filter:drop-shadow(0 0 5px rgba(108,99,255,.75)) drop-shadow(0 0 12px rgba(0,212,255,.4));animation:alexGlow 3s ease-in-out infinite;transition:filter .3s ease,transform .3s ease;}
+.alex-logo-img:hover{filter:drop-shadow(0 0 10px rgba(108,99,255,1)) drop-shadow(0 0 22px rgba(0,212,255,.7));transform:scale(1.1) rotate(5deg);}
+@keyframes alexGlow{0%,100%{filter:drop-shadow(0 0 4px rgba(108,99,255,.65)) drop-shadow(0 0 9px rgba(0,212,255,.3));}50%{filter:drop-shadow(0 0 9px rgba(108,99,255,.95)) drop-shadow(0 0 18px rgba(0,212,255,.55));}}
 .ntxt{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:800;letter-spacing:.08em;color:var(--text);}
 .ntxt .ac{color:var(--accent);}
 .nlinks{display:flex;gap:2.25rem;}
@@ -262,12 +268,8 @@ footer{padding:2rem 2rem;border-top:1px solid var(--gb);display:flex;justify-con
 
 <nav>
   <div class="nlogo">
-    <div class="nicon">
-      <svg viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="4" fill="rgba(108,99,255,.7)"/>
-        <circle cx="12" cy="12" r="8" stroke="rgba(108,99,255,.4)" stroke-width="1.5" fill="none"/>
-        <circle cx="12" cy="12" r="11" stroke="rgba(0,212,255,.18)" stroke-width=".7" fill="none"/>
-      </svg>
+    <div class="nicon alex-logo-wrap">
+      <img src="poze/pozaLogoAlex.png" alt="Alex" class="alex-logo-img" width="38" height="38" />
     </div>
     <span class="ntxt">AL<span class="ac">EX</span></span>
   </div>
