@@ -1,112 +1,174 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="noindex,nofollow" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Politică de Confidențialitate — NEXAS</title>
-<link rel="canonical" href="https://nexas.ro/privacy.html" />
+<meta name="robots" content="noindex"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg-0: #04070d;
-  --text: #eef3fb; --text-dim: #b6c3d6; --text-mute: #7d8da4;
-  --accent: #5aa6ff; --line-2: rgba(120,170,230,0.18);
-  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --bg: #000005; --bg2: #06080f; --border: rgba(255,255,255,0.08);
+  --blue: #5aaeff; --text: #fff; --dim: rgba(255,255,255,0.65);
+  --mute: rgba(255,255,255,0.35); --sans: 'Syne', system-ui, sans-serif;
 }
-@font-face { font-family: 'Geist'; src: url('fonts/geist-latin-400-normal.woff2') format('woff2'); font-weight: 400; font-display: swap; }
-@font-face { font-family: 'Geist'; src: url('fonts/geist-latin-600-normal.woff2') format('woff2'); font-weight: 600; font-display: swap; }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: var(--font-sans); background: var(--bg-0); color: var(--text); line-height: 1.7; font-size: 16px; -webkit-font-smoothing: antialiased; }
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
-nav { display: flex; align-items: center; justify-content: space-between; padding: 20px min(5%, 40px); border-bottom: 1px solid var(--line-2); }
-.brand { font-size: 17px; font-weight: 700; letter-spacing: 0.15em; color: var(--text); }
-.brand span { color: var(--accent); }
-.wrap { max-width: 760px; margin: 0 auto; padding: 60px 24px 100px; }
-h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 8px; }
-.meta { color: var(--text-mute); font-size: 14px; margin-bottom: 48px; }
-h2 { font-size: 20px; font-weight: 600; margin: 40px 0 12px; color: var(--text); }
-p { color: var(--text-dim); margin-bottom: 14px; }
-ul { color: var(--text-dim); padding-left: 22px; margin-bottom: 14px; }
-ul li { margin-bottom: 6px; }
-.box { background: rgba(10,18,31,0.72); border: 1px solid var(--line-2); border-radius: 12px; padding: 20px 24px; margin: 24px 0; }
-.box p { margin: 0; }
-.foot { display: block; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line-2); color: var(--text-mute); font-size: 13px; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:var(--sans); background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+nav {
+  position:sticky; top:0; z-index:50;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:18px 40px;
+  background:rgba(0,0,5,0.92); border-bottom:1px solid var(--border);
+  backdrop-filter:blur(16px);
+}
+.nav-brand { font-size:14px; font-weight:700; text-decoration:none; color:var(--text); letter-spacing:.04em; }
+.nav-brand .slash { color:var(--mute); margin:0 5px; }
+.nav-brand .sub { color:var(--mute); font-weight:400; }
+.nav-back { font-size:12px; color:var(--dim); text-decoration:none; letter-spacing:.1em; text-transform:uppercase; transition:color .2s; }
+.nav-back:hover { color:#fff; }
+.doc { max-width:780px; margin:0 auto; padding:60px 24px 100px; }
+.doc-tag {
+  display:inline-flex; align-items:center; gap:8px;
+  font-size:10px; letter-spacing:.26em; text-transform:uppercase;
+  color:var(--blue); border:1px solid rgba(90,174,255,.2);
+  padding:4px 13px; border-radius:100px; margin-bottom:24px; font-family:monospace;
+}
+.doc h1 { font-size:clamp(30px,4vw,48px); font-weight:800; letter-spacing:-.03em; line-height:1.05; margin-bottom:12px; }
+.doc .updated { font-size:12px; color:var(--mute); letter-spacing:.1em; margin-bottom:48px; font-family:monospace; }
+.doc h2 { font-size:18px; font-weight:700; letter-spacing:-.01em; margin:40px 0 14px; padding-top:16px; border-top:1px solid var(--border); }
+.doc h3 { font-size:14px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--blue); margin:24px 0 10px; }
+.doc p  { font-size:14px; color:var(--dim); line-height:1.75; margin-bottom:14px; }
+.doc ul { margin:10px 0 14px 20px; }
+.doc ul li { font-size:14px; color:var(--dim); line-height:1.7; margin-bottom:6px; }
+.doc a  { color:rgba(90,174,255,.8); text-decoration:underline; }
+.doc strong { color:var(--text); font-weight:600; }
+.info-box {
+  background:rgba(90,174,255,.06); border:1px solid rgba(90,174,255,.15);
+  border-radius:12px; padding:20px 24px; margin:20px 0;
+}
+.info-box p { margin:0; }
+@media(max-width:640px){ nav { padding:16px 20px; } }
 </style>
 </head>
 <body>
+
 <nav>
-  <a class="brand" href="/">NE<span>X</span>AS</a>
-  <a href="/" style="color: var(--text-mute); font-size: 14px;">&#8592; Inapoi la site</a>
+  <a href="index.html" class="nav-brand">NEXAS <span class="slash">/</span><span class="sub">agenție</span></a>
+  <a href="index.html" class="nav-back">← Înapoi</a>
 </nav>
-<div class="wrap">
-  <h1>Politica de Confidentialitate</h1>
-  <p class="meta">Ultima actualizare: mai 2026 &nbsp;&middot;&nbsp; NEXAS Digital, Romania</p>
-  <div class="box">
-    <p>NEXAS respecta confidentialitatea vizitatorilor. Aceasta pagina explica ce date colectam, de ce si cum le protejam, in conformitate cu Regulamentul UE 2016/679 (GDPR).</p>
+
+<div class="doc">
+  <div class="doc-tag">GDPR · Art. 13 &amp; 14</div>
+  <h1>Politică de Confidențialitate</h1>
+  <!-- ► Actualizează data la fiecare modificare -->
+  <p class="updated">Ultima actualizare: 05 Mai 2025 · Versiunea 1.0</p>
+
+  <div class="info-box">
+    <p><strong>Operator de date:</strong> NEXAS SRL &nbsp;·&nbsp;
+    <!-- ► Completează cu datele tale juridice reale -->
+    CUI: XXXXXXXX &nbsp;·&nbsp;
+    Adresă: [Adresa ta], România &nbsp;·&nbsp;
+    Email: <a href="mailto:contact@nexas.ro">contact@nexas.ro</a> &nbsp;·&nbsp;
+    Tel: <a href="tel:+40764639118">+40 764 639 118</a>
+    </p>
   </div>
 
-  <h2>1. Operatorul de date</h2>
-  <p><strong>NEXAS Digital</strong>, Bucuresti, Romania.<br>
-  CUI: <em>[de completat dupa inregistrare]</em> &nbsp;&middot;&nbsp; Nr. Reg. Com.: <em>[de completat]</em><br>
-  Contact: <a href="mailto:contact@nexas.ro">contact@nexas.ro</a> &nbsp;&middot;&nbsp; +40 764 639 118</p>
+  <h2>1. Ce date colectăm și de ce</h2>
+  <p>NEXAS colectează date cu caracter personal exclusiv atunci când tu ni le furnizezi în mod voluntar, prin formularul de contact sau prin comunicare directă (telefon, email, WhatsApp).</p>
 
-  <h2>2. Ce date colectam si baza legala (Art. 6 GDPR)</h2>
-  <p>Site-ul nexas.ro nu colecteaza date personale in mod automat, cu exceptia datelor tehnice procesate de Cloudflare (vezi sectiunea 7).</p>
-  <p>Daca ne contactati prin WhatsApp sau email, ne furnizati voluntar: numele, numarul de telefon si/sau adresa de email.</p>
+  <h3>1.1 Date colectate prin formularul de contact</h3>
   <ul>
-    <li><strong>Date de contact (WhatsApp / email):</strong> prelucrate in temeiul Art. 6(1)(b) GDPR — necesar pentru executarea unui contract sau pentru luarea de masuri la cererea dvs. inainte de incheierea unui contract.</li>
-    <li><strong>Date tehnice Cloudflare (adresa IP, timp de raspuns):</strong> prelucrate in temeiul Art. 6(1)(f) GDPR — interesul legitim al operatorului pentru securitatea si disponibilitatea serviciului.</li>
-    <li><strong>Cookie de consimtamant (<em>nexas_cookie_ok</em>):</strong> cookie tehnic strict necesar pentru retinerea preferintei dvs. — scutit de consimtamant conform Directivei ePrivacy.</li>
+    <li><strong>Nume și prenume</strong> — pentru a te adresa personalizat</li>
+    <li><strong>Adresă de email</strong> — pentru a-ți răspunde la solicitare</li>
+    <li><strong>Număr de telefon</strong> (opțional) — pentru contact rapid</li>
+    <li><strong>Conținutul mesajului</strong> — pentru a înțelege solicitarea ta</li>
+    <li><strong>Serviciul de interes</strong> — pentru a direcționa corect cererea</li>
   </ul>
-  <p>Aceste date sunt folosite exclusiv pentru a raspunde solicitarii dvs. si nu sunt transmise tertilor in scop comercial.</p>
 
-  <h2>3. Asistent conversational (chatbot NEXAS)</h2>
-  <p>Site-ul include un asistent conversational propriu (nexas-agent). Acesta poate procesa textul mesajelor pe care le introduceti pentru a genera raspunsuri automate. Baza legala: Art. 6(1)(b) GDPR — executarea unui serviciu la cererea dvs. Nu stocam conversatiile decat in masura necesara furnizarii raspunsului. Nu transmitem continutul conversatiilor catre terti in scop de marketing.</p>
-
-  <h2>4. Cookie-uri</h2>
-  <p>Folosim urmatoarele cookie-uri:</p>
+  <h3>1.2 Date colectate automat</h3>
   <ul>
-    <li><strong>nexas_cookie_ok</strong> — cookie tehnic pentru retinerea preferintei de consimtamant. Valabilitate: 1 an. Nu contine date personale. Nu necesita consimtamant (strict necesar).</li>
+    <li><strong>Adresa IP</strong> — pentru securitate și analiză trafic</li>
+    <li><strong>Browser și sistem de operare</strong> — pentru optimizare tehnică</li>
+    <li><strong>Pagini vizitate și timp petrecut</strong> — prin cookies analitice (cu consimțământul tău)</li>
   </ul>
-  <p>In prezent nu folosim cookie-uri de analiza sau marketing. Daca aceasta situatie se va schimba, vom actualiza aceasta politica si vom solicita consimtamantul dvs. explicit inainte de activarea oricarui cookie non-esential.</p>
 
-  <h2>5. Cat timp pastram datele</h2>
+  <h2>2. Baza legală a prelucrării (Art. 6 GDPR)</h2>
   <ul>
-    <li><strong>Date de contact (email / WhatsApp):</strong> 3 ani de la ultima interactiune sau pana la retragerea consimtamantului / cererea de stergere.</li>
-    <li><strong>Date tehnice Cloudflare (loguri acces):</strong> maxim 24-72 de ore, conform politicii Cloudflare.</li>
-    <li><strong>Cookie nexas_cookie_ok:</strong> 1 an de la setare.</li>
+    <li><strong>Consimțământ [Art. 6(1)(a)]</strong> — pentru datele din formularul de contact și cookies non-esențiale. Poți retrage consimțământul oricând.</li>
+    <li><strong>Interes legitim [Art. 6(1)(f)]</strong> — pentru securitatea site-ului și prevenirea fraudelor.</li>
+    <li><strong>Executarea unui contract [Art. 6(1)(b)]</strong> — dacă devenim parteneri de afaceri.</li>
   </ul>
-  <p>La expirarea acestor termene, datele sunt sterse sau anonimizate.</p>
 
-  <h2>6. Fonturi web</h2>
-  <p>Site-ul foloseste fonturi stocate local. Nu se realizeaza nicio conexiune la Google Fonts sau alte servicii externe la incarcarea paginii.</p>
+  <h2>3. Cum folosim datele</h2>
+  <ul>
+    <li>Răspundem la solicitările și întrebările tale</li>
+    <li>Elaborăm oferte și estimări de preț</li>
+    <li>Gestionăm relația contractuală (dacă existe)</li>
+    <li>Îmbunătățim serviciile și site-ul nostru</li>
+    <li>Respectăm obligații legale</li>
+  </ul>
+  <p><strong>Nu folosim datele tale pentru marketing fără consimțământ explicit separat.</strong> Nu vindem, nu închiriem și nu cedăm datele tale unor terțe părți în scopuri comerciale.</p>
 
-  <h2>7. Hosting si transferuri internationale</h2>
-  <p>Site-ul este gazduit pe <strong>Cloudflare Pages</strong>. Cloudflare proceseaza automat adresa IP a vizitatorilor pentru protectie DDoS si livrare rapida a continutului.</p>
-  <p>Cloudflare Inc. este stabilita in SUA. Transferul datelor catre SUA are la baza <strong>Clauzele Contractuale Standard (SCC)</strong> aprobate de Comisia Europeana, conform Art. 46 GDPR. Consultati <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">politica Cloudflare</a>.</p>
-  <p>Comunicarile prin <strong>WhatsApp</strong> sunt procesate de Meta Platforms Ireland Ltd. Meta utilizeaza de asemenea mecanisme de transfer conform cadrului UE-SUA. Consultati <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">politica WhatsApp</a>.</p>
+  <h2>4. Cui transmitem datele (destinatari)</h2>
+  <p>Datele tale pot fi accesate de:</p>
+  <ul>
+    <li><strong>EmailJS Inc.</strong> (SUA) — serviciu de trimitere email, conform <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener">Politicii lor de confidențialitate</a>. Transfer acoperit de Clauze Contractuale Standard (SCC).</li>
+    <li><strong>Angajații NEXAS</strong> implicați în gestionarea proiectelor</li>
+    <li><strong>Autorități publice</strong> — doar dacă suntem obligați legal</li>
+  </ul>
 
-  <h2>8. Responsabil cu protectia datelor (DPO)</h2>
-  <p>NEXAS nu are obligatia legala de a desemna un responsabil cu protectia datelor (DPO), intrucat nu prelucreaza date cu caracter personal la scara larga si nu efectueaza monitorizare sistematica a persoanelor fizice [Art. 37 GDPR]. Pentru orice chestiune legata de prelucrarea datelor, contactati operatorul la adresa: <a href="mailto:contact@nexas.ro">contact@nexas.ro</a>.</p>
+  <h2>5. Transferuri internaționale</h2>
+  <p>EmailJS are servere în SUA. Transferul este acoperit de <strong>Clauze Contractuale Standard (SCC)</strong> adoptate de Comisia Europeană, asigurând un nivel adecvat de protecție conform Art. 46 GDPR.</p>
 
-  <h2>9. Drepturile dvs.</h2>
-  <p>Conform GDPR, aveti dreptul la: acces, rectificare, stergere ("dreptul de a fi uitat"), restrictionarea prelucrarii, portabilitatea datelor si opozitie. Acolo unde prelucrarea se bazeaza pe consimtamant, aveti dreptul de a va retrage consimtamantul oricand, fara a afecta legalitatea prelucrarii anterioare.</p>
-  <p>Contactati-ne la <a href="mailto:contact@nexas.ro">contact@nexas.ro</a>. Raspundem in maxim 30 de zile calendaristice.</p>
+  <h2>6. Cât timp păstrăm datele</h2>
+  <ul>
+    <li><strong>Date din formularul de contact</strong>: maximum 24 de luni de la ultima interacțiune, dacă nu a rezultat un contract</li>
+    <li><strong>Date contractuale</strong>: 5 ani de la finalizarea contractului (obligație legală fiscală)</li>
+    <li><strong>Logs de securitate (IP)</strong>: 90 de zile</li>
+    <li><strong>Cookie-uri analitice</strong>: conform setărilor din Politica de Cookies</li>
+  </ul>
 
-  <h2>10. Dreptul de a depune o plangere</h2>
-  <p>Daca considerati ca prelucrarea datelor dvs. cu caracter personal incalca prevederile GDPR, aveti dreptul de a depune o plangere la autoritatea de supraveghere competenta:</p>
-  <div class="box">
-    <p><strong>Autoritatea Nationala de Supraveghere a Prelucrarii Datelor cu Caracter Personal (ANSPDCP)</strong><br>
-    Bd. G-ral. Gheorghe Magheru nr. 28-30, Sector 1, 010336, Bucuresti<br>
-    Tel.: +40.318.059.211 &nbsp;&middot;&nbsp; Email: <a href="mailto:anspdcp@dataprotection.ro">anspdcp@dataprotection.ro</a><br>
-    Web: <a href="https://www.dataprotection.ro" target="_blank" rel="noopener">www.dataprotection.ro</a></p>
+  <h2>7. Drepturile tale (Art. 15–22 GDPR)</h2>
+  <p>În calitate de persoană vizată, ai următoarele drepturi:</p>
+  <ul>
+    <li><strong>Dreptul de acces (Art. 15)</strong> — poți solicita o copie a datelor pe care le deținem despre tine</li>
+    <li><strong>Dreptul la rectificare (Art. 16)</strong> — poți cere corectarea datelor inexacte</li>
+    <li><strong>Dreptul la ștergere (Art. 17)</strong> — poți cere ștergerea datelor ("dreptul de a fi uitat")</li>
+    <li><strong>Dreptul la restricționarea prelucrării (Art. 18)</strong> — în anumite circumstanțe</li>
+    <li><strong>Dreptul la portabilitatea datelor (Art. 20)</strong> — primești datele într-un format structurat</li>
+    <li><strong>Dreptul la opoziție (Art. 21)</strong> — poți te opune prelucrării bazate pe interes legitim</li>
+    <li><strong>Dreptul de a retrage consimțământul</strong> — oricând, fără a afecta prelucrările anterioare</li>
+  </ul>
+
+  <div class="info-box">
+    <p>Pentru a-ți exercita oricare dintre aceste drepturi, scrie-ne la <a href="mailto:contact@nexas.ro">contact@nexas.ro</a> sau pe WhatsApp la <a href="https://wa.me/40764639118">+40 764 639 118</a>. Răspundem în maxim <strong>30 de zile</strong>, conform Art. 12 GDPR.</p>
   </div>
 
-  <h2>11. Modificari</h2>
-  <p>Ne rezervam dreptul de a actualiza aceasta politica. Data ultimei modificari este afisata in antetul paginii. Va recomandam sa verificati periodic aceasta pagina.</p>
+  <h2>8. Dreptul de a depune plângere</h2>
+  <p>Dacă consideri că prelucrarea datelor tale încalcă GDPR, ai dreptul să depui o plângere la autoritatea de supraveghere din România:</p>
+  <ul>
+    <li><strong>ANSPDCP</strong> — Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal</li>
+    <li>Website: <a href="https://www.dataprotection.ro" target="_blank" rel="noopener">www.dataprotection.ro</a></li>
+    <li>Email: <a href="mailto:anspdcp@dataprotection.ro">anspdcp@dataprotection.ro</a></li>
+    <li>Tel: +40 318 059 211</li>
+  </ul>
 
-  <span class="foot">&#169; 2026 NEXAS &nbsp;&middot;&nbsp; <a href="/">nexas.ro</a> &nbsp;&middot;&nbsp; <a href="/termeni.html">Termeni si conditii</a></span>
+  <h2>9. Securitatea datelor</h2>
+  <p>Implementăm măsuri tehnice și organizatorice adecvate pentru a proteja datele tale: conexiuni HTTPS criptate, acces restricționat la date, revizuire periodică a măsurilor de securitate.</p>
+
+  <h2>10. Modificări ale acestei politici</h2>
+  <p>Putem actualiza această politică periodic. Versiunea actuală este întotdeauna disponibilă pe această pagină. Modificările semnificative vor fi comunicate prin email (dacă deținem adresa ta) sau printr-un banner pe site.</p>
+
+  <h2>11. Contact</h2>
+  <p>Pentru orice întrebare legată de prelucrarea datelor tale personale:</p>
+  <ul>
+    <li>Email: <a href="mailto:contact@nexas.ro">contact@nexas.ro</a></li>
+    <li>WhatsApp / Telefon: <a href="tel:+40764639118">+40 764 639 118</a></li>
+    <!-- ► Completează cu adresa fizică -->
+    <li>Adresă: [Adresa ta completă], România</li>
+  </ul>
+
 </div>
 </body>
 </html>
