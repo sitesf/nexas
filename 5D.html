@@ -233,6 +233,8 @@ nav.on { opacity: 1; }
 }
 </style>
 </head>
+
+  
 <body>
 
 <!-- ════════════════════════════════════════
@@ -928,5 +930,80 @@ window.addEventListener('resize', () => {
 });
 
 </script>
+
+  <!-- ════ BANNER COOKIES (GDPR) ════ -->
+<div id="cookie-banner">
+  <p>
+    Folosim cookie-uri esențiale și, cu acordul tău, cookie-uri analitice.
+    <a href="cookies.html" target="_blank">Politică cookies</a> ·
+    <a href="privacy.html" target="_blank">Confidențialitate</a>
+  </p>
+  <div class="cb-btns">
+    <button id="cb-reject">Refuz</button>
+    <button id="cb-accept">Accept</button>
+  </div>
+</div>
+
+<style>
+#cookie-banner {
+  position: fixed; bottom: 20px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: min(600px, calc(100% - 32px));
+  background: rgba(6, 8, 15, 0.97);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px; padding: 16px 20px;
+  display: none; align-items: center;
+  justify-content: space-between; gap: 16px;
+  backdrop-filter: blur(20px);
+  font-family: 'Syne', sans-serif;
+}
+#cookie-banner.show { display: flex; }
+#cookie-banner p {
+  font-size: 13px; color: rgba(255,255,255,0.6);
+  margin: 0; line-height: 1.5;
+}
+#cookie-banner a { color: #5aaeff; text-decoration: underline; }
+.cb-btns { display: flex; gap: 8px; flex-shrink: 0; }
+.cb-btns button {
+  padding: 8px 18px; border-radius: 8px;
+  font-size: 13px; font-weight: 600;
+  cursor: pointer; border: none;
+}
+#cb-accept { background: #5aaeff; color: #000; }
+#cb-reject {
+  background: transparent; color: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.15) !important;
+}
+@media(max-width:520px) {
+  #cookie-banner { flex-direction: column; }
+}
+</style>
+
+<script>
+(function(){
+  var KEY = 'nexas_cookie_ok';
+  function get(n){ var m=document.cookie.match('(^|;)\\s*'+n+'\\s*=\\s*([^;]+)'); return m?m.pop():null; }
+  function set(n,v,d){ var e=new Date(Date.now()+d*864e5).toUTCString(); document.cookie=n+'='+v+';path=/;expires='+e+';SameSite=Lax'; }
+  var b = document.getElementById('cookie-banner');
+  if(!get(KEY)) b.classList.add('show');
+  document.getElementById('cb-accept').onclick = function(){ set(KEY,'1',365); b.classList.remove('show'); };
+  document.getElementById('cb-reject').onclick  = function(){ set(KEY,'0',365); b.classList.remove('show'); };
+})();
+</script>
+
+  <footer style="
+  position:fixed; bottom:0; left:0; right:0;
+  z-index:25; padding:10px 32px;
+  display:flex; justify-content:center; gap:24px;
+  font-size:11px; font-family:'Syne',sans-serif;
+  color:rgba(255,255,255,0.25); letter-spacing:.08em;
+">
+  <a href="privacy.html"  style="color:rgba(255,255,255,0.25); text-decoration:none;">Confidențialitate</a>
+  <a href="cookies.html"  style="color:rgba(255,255,255,0.25); text-decoration:none;">Cookies</a>
+  <a href="termeni.html"  style="color:rgba(255,255,255,0.25); text-decoration:none;">Termeni</a>
+  <a href="contact.html"  style="color:rgba(255,255,255,0.25); text-decoration:none;">Contact</a>
+</footer>
+  
 </body>
 </html>
