@@ -712,6 +712,7 @@ let scrollLocked = false;
 let lockTimer    = null;
 let lastZone     = 'big';
 let lastLockFrame = -1;
+let autoScrolling = true; 
 
 window.addEventListener('scroll', () => {
   rawScrollY = window.scrollY;
