@@ -702,13 +702,24 @@ scene.add(rimLight);
    ► 6 frame-uri × 125vh = 750vh total scroll */
 document.body.style.height = '750vh';
 
-let scrollY = 0;
-window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
+// ► LOCK_DURATION = cât timp e blocat scrollul când apare textul (ms)
+const LOCK_DURATION = 300;
+
+let rawScrollY   = 0;   // scroll real al ferestrei
+let animScrollY  = 0;   // scroll folosit în animație
+let scrollLocked = false;
+let lockTimer    = null;
+let lastZone     = 'big';
+let lastLockFrame = -1;
+
+window.addEventListener('scroll', () => {
+  rawScrollY = window.scrollY;
+}, { passive: true });
 
 /* Returnează progresul global de scroll între 0.0 și 1.0 */
 function getGlobalP() {
   const maxSY = document.documentElement.scrollHeight - window.innerHeight;
-  return maxSY > 0 ? Math.min(1, scrollY / maxSY) : 0;
+  return maxSY > 0 ? Math.min(1, animScrollY / maxSY) : 0;
 }
 
 /* ── Funcții helper ── */
@@ -828,6 +839,27 @@ const clock = new THREE.Clock();
 function animate() {
   requestAnimationFrame(animate);
 
+  /* Scroll smooth — urmărește rawScrollY când nu e blocat */
+  if (!scrollLocked) {
+    animScrollY += (rawScrollY - animScrollY) * 0.10;
+  }
+
+  /* Detectează tranziția bila-mare → text și blochează 300ms */
+  const _gp = getGlobalP();
+  const _fi = Math.min(Math.floor(_gp * FRAMES.length), FRAMES.length - 1);
+  const _lp = (_gp * FRAMES.length) - Math.floor(_gp * FRAMES.length);
+  const zone = (_fi === 0)
+    ? (_lp < 0.65 ? 'text' : 'big')
+    : (_lp > 0.52 ? 'text' : 'big');
+
+  if (zone === 'text' && lastZone === 'big' && lastLockFrame !== _fi) {
+    scrollLocked  = true;
+    lastLockFrame = _fi;
+    clearTimeout(lockTimer);
+    lockTimer = setTimeout(() => { scrollLocked = false; }, LOCK_DURATION);
+  }
+  lastZone = zone;
+  
   const time = clock.getElapsedTime(); /* Timp scurs de la start (secunde) */
   const gp   = getGlobalP();            /* Progres scroll global 0→1 */
   const N    = FRAMES.length;
