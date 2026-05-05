@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#000000"/>
+<title>NEXAS — Prezență Digitală &amp; Automatizări</title>
+
+<!--
+  ╔══════════════════════════════════════════════════════════╗
+  ║  NEXAS 3D — nexas.ro                                    ║
+  ║  Inspirat din: passion.peachworlds.com                  ║
+  ║                                                          ║
+  ║  STRUCTURA FIȘIERULUI:                                   ║
+  ║  1. <style>   — CSS: loader, nav, text, UI              ║
+  ║  2. <body>    — HTML: loader, nav, canvas, texte        ║
+  ║  3. <script>  — JavaScript Three.js                     ║
+  ║     [CONFIG]  — Editează texte și culori AICI           ║
+  ║     [LOADER]  — Animație 0→100%                         ║
+  ║     [SETUP]   — Renderer, Scenă, Cameră                 ║
+  ║     [ROOM]    — Platou 3D: podea, tavan, panouri ecran  ║
+  ║     [ORB]     — Bila 3D: geometrie + material           ║
+  ║     [LIGHTS]  — Iluminare scenă                         ║
+  ║     [SCROLL]  — Logica scroll + calcul progres          ║
+  ║     [ANIMATE] — Loop animație 60fps                     ║
+  ║     [RESIZE]  — Responsive                              ║
+  ╚══════════════════════════════════════════════════════════╝
+-->
+
+<!-- Font display: Syne — bold, modern, fără serif -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════════════════════
+   CSS — INTERFAȚA UTILIZATOR
+   Toate elementele HTML peste canvas-ul 3D
+   Canvas-ul Three.js = fundal fix, UI = deasupra
+   ══════════════════════════════════════════════════════════ */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: auto; }
+
+body {
+  background: #000;
+  font-family: 'Syne', system-ui, sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  /* Înălțimea totală se setează din JavaScript */
+}
+
+/* ── Canvas Three.js: fix pe tot ecranul ── */
+#canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100vh;
+  display: block;
+  z-index: 0;
+}
+
+/* ══════════════════════
+   LOADER
+   ══════════════════════ */
+#loader {
+  position: fixed; inset: 0;
+  z-index: 300;
+  background: #000;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 22px;
+  transition: opacity 0.9s ease;
+}
+#loader.out { opacity: 0; pointer-events: none; }
+
+.ld-logo {
+  font-size: 18px; font-weight: 800;
+  letter-spacing: .55em; color: #fff;
+  text-transform: uppercase;
+}
+.ld-logo em { color: #5aaeff; font-style: normal; }
+
+.ld-track {
+  width: 110px; height: 1px;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+}
+.ld-bar {
+  height: 100%; width: 0%;
+  background: #fff;
+  transition: width .1s ease;
+}
+.ld-pct {
+  font-size: 11px; letter-spacing: .35em;
+  color: rgba(255,255,255,0.35);
+  font-family: monospace;
+}
+
+/* ══════════════════════
+   NAV
+   ══════════════════════ */
+nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 50;
+  display: flex; align-items: center;
+  justify-content: space-between;
+  padding: 22px 32px;
+  opacity: 0;
+  transition: opacity .7s 0.9s ease;
+}
+nav.on { opacity: 1; }
+
+.nav-brand {
+  font-size: 13px; font-weight: 700;
+  letter-spacing: .04em;
+}
+.nav-brand em  { font-style: normal; }
+.nav-brand .slash { color: rgba(255,255,255,0.35); margin: 0 6px; }
+.nav-brand .sub   { color: rgba(255,255,255,0.4); font-weight: 400; }
+
+.nav-links { display: flex; gap: 30px; }
+.nav-links a {
+  font-size: 13px; font-weight: 400;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none; letter-spacing: .02em;
+  transition: color .2s;
+}
+.nav-links a:hover { color: #fff; }
+
+@media (max-width: 640px) { .nav-links { display: none; } }
+
+/* ══════════════════════
+   TEXT OVERLAY (frame-uri)
+   ══════════════════════ */
+#text-layer {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100vh;
+  z-index: 20;
+  pointer-events: none;
+  display: flex; align-items: center;
+}
+
+/* Container individual per frame */
+.frame-text {
+  position: absolute;
+  top: 50%; left: 7vw;
+  transform: translateY(-50%);
+  max-width: 46%;
+  opacity: 0;
+  pointer-events: none;
+  /* Tranziție CSS pentru fade + slide */
+  transition: opacity .5s ease;
+}
+.frame-text.on { pointer-events: auto; }
+
+/* Titlu principal — mare, alb, bold */
+/* ► Schimbă font-size pentru mai mare/mic */
+.frame-text h1 {
+  font-size: clamp(38px, 5.8vw, 82px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -.03em;
+  color: #fff;
+  white-space: pre-line; /* Respectă \n din HTML */
+}
+
+/* Subtext mic sub titlu */
+/* ► Schimbă font-size sau color pentru ajustare */
+.frame-text p {
+  font-size: clamp(14px, 1.3vw, 17px);
+  color: rgba(255,255,255,0.58);
+  margin-top: 18px;
+  line-height: 1.65;
+  font-weight: 400;
+  max-width: 400px;
+}
+
+/* Buton "Read More" sau CTA */
+.read-more {
+  display: inline-flex; align-items: center; gap: 12px;
+  margin-top: 28px;
+  font-size: 13px; font-weight: 600;
+  color: #fff; letter-spacing: .06em;
+  text-decoration: none;
+  pointer-events: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.rm-circle {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.35);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  transition: background .25s, border-color .25s;
+}
+.read-more:hover .rm-circle {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.6);
+}
+
+/* ══════════════════════
+   UI BOTTOM BAR
+   ══════════════════════ */
+#scroll-hint {
+  position: fixed; bottom: 26px; left: 32px;
+  z-index: 30;
+  font-size: 11px; letter-spacing: .22em;
+  color: rgba(255,255,255,0.35);
+  font-family: monospace;
+  text-transform: lowercase;
+  opacity: 0;
+  transition: opacity .7s 1.4s ease;
+}
+#scroll-hint.on { opacity: 1; }
+
+#frame-counter {
+  position: fixed; bottom: 26px; right: 32px;
+  z-index: 30;
+  font-size: 11px; letter-spacing: .18em;
+  color: rgba(255,255,255,0.3);
+  font-family: monospace;
+  opacity: 0;
+  transition: opacity .7s 1.4s ease;
+}
+#frame-counter.on { opacity: 1; }
+
+/* ══════════════════════
+   MOBILE
+   ══════════════════════ */
+@media (max-width: 768px) {
+  nav { padding: 18px 20px; }
+  .frame-text { max-width: 88%; left: 5vw; }
+  #scroll-hint, #frame-counter { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     LOADER
+     ════════════════════════════════════════ -->
+<div id="loader">
+  <div class="ld-logo">NEX<em>A</em>S</div>
+  <div class="ld-track"><div class="ld-bar" id="lbar"></div></div>
+  <div class="ld-pct" id="lpct">0%</div>
+</div>
+
+<!-- ════════════════════════════════════════
+     NAV
+     ════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-brand">
+    NEX<em>A</em>S
+    <span class="slash">/</span>
+    <span class="sub">agenție</span>
+  </div>
+  <div class="nav-links">
+    <!-- ► Schimbă linkurile după nevoie -->
+    <a href="#">Servicii</a>
+    <a href="#">Portofoliu</a>
+    <a href="#">Despre</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════
+     CANVAS 3D (Three.js)
+     ════════════════════════════════════════ -->
+<canvas id="canvas"></canvas>
+
+<!-- ════════════════════════════════════════
+     TEXT OVERLAY — 6 FRAME-URI
+     ════════════════════════════════════════
+     ► Editează textele direct în h1 și p
+     ► data-frame = indexul frame-ului (0-5)
+     ════════════════════════════════════════ -->
+<div id="text-layer">
+
+  <!-- FRAME 0 — Albastru -->
+  <div class="frame-text" data-frame="0">
+    <h1>Prezență digitală
+în 10 zile.</h1>
+    <!-- Fără subtext la frame 0 -->
+  </div>
+
+  <!-- FRAME 1 — Albastru → Mov -->
+  <div class="frame-text" data-frame="1">
+    <h1>Creativitate</h1>
+    <p>Creem povești care surprind esența brandului tău.</p>
+    <a href="#" class="read-more">
+      Află mai mult
+      <div class="rm-circle">→</div>
+    </a>
+  </div>
+
+  <!-- FRAME 2 — Mov -->
+  <!-- ► Înlocuiește "TEST" cu textul real -->
+  <div class="frame-text" data-frame="2">
+    <h1>Descoperă</h1>
+    <p>TEST</p>
+  </div>
+
+  <!-- FRAME 3 — Mov → Roz -->
+  <!-- ► Înlocuiește "TEST" cu textul real -->
+  <div class="frame-text" data-frame="3">
+    <h1>Plan</h1>
+    <p>TEST</p>
+  </div>
+
+  <!-- FRAME 4 — Roz → Turcoaz -->
+  <!-- ► Înlocuiește "TEST" cu textul real -->
+  <div class="frame-text" data-frame="4">
+    <h1>Construiește</h1>
+    <p>TEST</p>
+  </div>
+
+  <!-- FRAME 5 — Turcoaz (final) -->
+  <!-- ► Înlocuiește numărul WhatsApp în href -->
+  <div class="frame-text" data-frame="5">
+    <h1>Lansare</h1>
+    <p>TEST</p>
+    <a href="https://wa.me/40764639118" target="_blank" rel="noopener" class="read-more">
+      Scrie pe WhatsApp
+      <div class="rm-circle">→</div>
+    </a>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════
+     UI ELEMENTE
+     ════════════════════════════════════════ -->
+<div id="scroll-hint">scroll to explore</div>
+<div id="frame-counter">01 / 06</div>
+
+<!-- Three.js r128 — librărie 3D -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script>
+/* ══════════════════════════════════════════════════════════════
+   ██████████████████████████████████████████████████████████
+   [CONFIG] — EDITEAZĂ TEXTELE ȘI CULORILE NEXAS AICI
+   ██████████████████████████████████████████████████████████
+
+   Fiecare obiect = un frame (scenă) la scroll.
+   Ordinea = ordinea apariției la scroll.
+
+   orbHex   → culoarea bilei               (#rrggbb)
+   emissHex → lumina interioară a bilei    (#rrggbb, mai închis)
+   gradA    → culoarea de sus a ecranului  (#rrggbb)
+   gradB    → culoarea de jos a ecranului  (#rrggbb)
+   ══════════════════════════════════════════════════════════════ */
+const FRAMES = [
+  /* 0 — ALBASTRU */
+  {
+    orbHex:  '#1a5fff',
+    emissHex:'#040e40',
+    gradA:   '#0a14bb',
+    gradB:   '#4aaaff',
+  },
+  /* 1 — ALBASTRU → MOV */
+  {
+    orbHex:  '#6a10ff',
+    emissHex:'#12043a',
+    gradA:   '#3200bb',
+    gradB:   '#bb60ff',
+  },
+  /* 2 — MOV */
+  {
+    orbHex:  '#aa00ee',
+    emissHex:'#280040',
+    gradA:   '#6600aa',
+    gradB:   '#dd44ff',
+  },
+  /* 3 — MOV → ROZ */
+  {
+    orbHex:  '#ee0088',
+    emissHex:'#3a001e',
+    gradA:   '#aa0055',
+    gradB:   '#ff55bb',
+  },
+  /* 4 — ROZ → TURCOAZ */
+  {
+    orbHex:  '#ff2299',
+    emissHex:'#400024',
+    gradA:   '#cc0066',
+    gradB:   '#ff88dd',
+  },
+  /* 5 — TURCOAZ */
+  {
+    orbHex:  '#00e5cc',
+    emissHex:'#003838',
+    gradA:   '#009999',
+    gradB:   '#66ffee',
+  },
+];
+
+/* Dimensiunile bilei
+   ► ORB_BIG  = raza când e singură pe ecran (fără text)
+   ► ORB_SMALL= raza când e text vizibil (se face mică)
+   ► ORB_SHIFT= cât se muta pe axa X dreapta când e text    */
+const ORB_BIG   = 1.80;
+const ORB_SMALL = 0.88;
+const ORB_SHIFT = 2.20;
+
+/* Camera
+   ► CAM_Z_START = distanța inițială a camerei (departe)
+   ► CAM_Z_END   = distanța finală (aproape, zoom-in la scroll) */
+const CAM_Z_START = 13.0;
+const CAM_Z_END   =  6.5;
+
+
+/* ══════════════════════════════════════════════════════════════
+   [LOADER] — Animație de încărcare 0 → 100%
+   ══════════════════════════════════════════════════════════════ */
+const loaderEl  = document.getElementById('loader');
+const lbarEl    = document.getElementById('lbar');
+const lpctEl    = document.getElementById('lpct');
+const navEl     = document.getElementById('nav');
+const hintEl    = document.getElementById('scroll-hint');
+const counterEl = document.getElementById('frame-counter');
+
+let ldPct = 0;
+const ldTimer = setInterval(() => {
+  ldPct = Math.min(100, ldPct + Math.floor(Math.random() * 11 + 5));
+  lbarEl.style.width = ldPct + '%';
+  lpctEl.textContent  = ldPct + '%';
+  if (ldPct >= 100) {
+    clearInterval(ldTimer);
+    setTimeout(() => {
+      loaderEl.classList.add('out');
+      navEl.classList.add('on');
+      hintEl.classList.add('on');
+      counterEl.classList.add('on');
+    }, 350);
+  }
+}, 80);
+
+
+/* ══════════════════════════════════════════════════════════════
+   [SETUP] — Three.js: Renderer, Scenă, Cameră
+   ══════════════════════════════════════════════════════════════ */
+const canvas3d = document.getElementById('canvas');
+
+/* Renderer — WebGL cu antialiasing */
+const renderer = new THREE.WebGLRenderer({ canvas: canvas3d, antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type    = THREE.PCFSoftShadowMap;
+renderer.toneMapping       = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.25;
+
+/* Scenă */
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x000005); /* Negru aproape pur */
+scene.fog        = new THREE.Fog(0x000005, 14, 40); /* Ceață pentru adâncime */
+
+/* Cameră perspectivă — pornind de la CAM_Z_START, zoomează la scroll */
+const camera = new THREE.PerspectiveCamera(
+  60,                                      /* FOV — câmp vizual */
+  window.innerWidth / window.innerHeight,  /* Aspect ratio */
+  0.1,                                     /* Near clip */
+  100                                      /* Far clip */
+);
+camera.position.set(0, 0.8, CAM_Z_START);
+camera.lookAt(0, 0, 0);
+
+
+/* ══════════════════════════════════════════════════════════════
+   [ROOM] — Platoul 3D
+   Podea reflectivă, tavan cu spoturi, 3 panouri ecran, pereți
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Podea ── */
+const floor = new THREE.Mesh(
+  new THREE.PlaneGeometry(32, 28),
+  new THREE.MeshStandardMaterial({
+    color:     0x040608,  /* ► Schimbă pentru podea mai deschisă */
+    roughness: 0.72,
+    metalness: 0.30,
+  })
+);
+floor.rotation.x = -Math.PI / 2;
+floor.position.y = -3.1;
+floor.receiveShadow = true;
+scene.add(floor);
+
+/* ── Tavan ── */
+const ceiling = new THREE.Mesh(
+  new THREE.PlaneGeometry(24, 20),
+  new THREE.MeshStandardMaterial({ color: 0x050709, roughness: 0.95 })
+);
+ceiling.rotation.x =  Math.PI / 2;
+ceiling.position.y = 5.8;
+scene.add(ceiling);
+
+/* ── Pereți laterali (negri, subtili) ── */
+const wallMat = new THREE.MeshStandardMaterial({ color: 0x030405, roughness: 0.98 });
+
+const wallL = new THREE.Mesh(new THREE.PlaneGeometry(20, 11), wallMat);
+wallL.position.set(-9.5, 1.2, -3);
+wallL.rotation.y = Math.PI / 2;
+scene.add(wallL);
+
+const wallR = new THREE.Mesh(new THREE.PlaneGeometry(20, 11), wallMat);
+wallR.position.set(9.5, 1.2, -3);
+wallR.rotation.y = -Math.PI / 2;
+scene.add(wallR);
+
+/* ── Panouri ecran (canvas texture 2D cu gradient dinamic) ──
+
+   Cele 3 panouri verticale din spate — identic cu Passion.
+   Gradientul se actualizează la fiecare frame sincronizat cu bila.
+
+   ► SCR_W / SCR_H = rezoluția texturii canvas (mai mare = mai clar)
+*/
+const SCR_W = 512, SCR_H = 1024;
+const scrCanvas = document.createElement('canvas');
+scrCanvas.width  = SCR_W;
+scrCanvas.height = SCR_H;
+const scrCtx = scrCanvas.getContext('2d');
+const scrTex = new THREE.CanvasTexture(scrCanvas);
+
+/* Funcție de repictare gradient ecran
+   gradA, gradB = culori hex string ('#rrggbb') sau 'rgb(r,g,b)' */
+function paintScreen(gradA, gradB) {
+  /* Gradient liniar diagonal */
+  const grd = scrCtx.createLinearGradient(0, 0, SCR_W * 0.8, SCR_H);
+  grd.addColorStop(0,    gradA);
+  grd.addColorStop(0.42, gradB);
+  grd.addColorStop(0.78, gradA);
+  grd.addColorStop(1,    gradB);
+  scrCtx.fillStyle = grd;
+  scrCtx.fillRect(0, 0, SCR_W, SCR_H);
+
+  /* Highlight alb ușor în centru (reflecție simulată) */
+  const hl = scrCtx.createRadialGradient(
+    SCR_W * 0.5, SCR_H * 0.3, 0,
+    SCR_W * 0.5, SCR_H * 0.3, SCR_W * 0.75
+  );
+  hl.addColorStop(0, 'rgba(255,255,255,0.18)');
+  hl.addColorStop(1, 'rgba(255,255,255,0)');
+  scrCtx.fillStyle = hl;
+  scrCtx.fillRect(0, 0, SCR_W, SCR_H);
+
+  scrTex.needsUpdate = true; /* Spune Three.js să re-uploadeze textura */
+}
+
+/* Pictare inițială cu culorile frame-ului 0 */
+paintScreen(FRAMES[0].gradA, FRAMES[0].gradB);
+
+/* Material ecran — folosește textura canvas */
+const panelMat = new THREE.MeshBasicMaterial({ map: scrTex });
+
+/* Geometria unui panou (PlaneGeometry = dreptunghi plat)
+   ► PANEL_W / PANEL_H = lățimea și înălțimea unui panou */
+const PANEL_W   = 3.15;
+const PANEL_H   = 7.0;
+const panelGeo  = new THREE.PlaneGeometry(PANEL_W, PANEL_H);
+const frameGeo  = new THREE.PlaneGeometry(PANEL_W + 0.18, PANEL_H + 0.18);
+const frameMat  = new THREE.MeshBasicMaterial({ color: 0x040404 });
+
+/* Cele 3 panouri: stânga (rotit ușor), centru, dreapta (rotit ușor)
+   ► Ajustează x pentru spacing, z pentru adâncime, ry pentru unghi */
+const panelDefs = [
+  { x: -3.35, z: -6.3, ry:  0.11 }, /* Panou stânga */
+  { x:  0.00, z: -6.0, ry:  0.00 }, /* Panou centru */
+  { x:  3.35, z: -6.3, ry: -0.11 }, /* Panou dreapta */
+];
+
+panelDefs.forEach(d => {
+  /* Cadru negru în spatele ecranului */
+  const fr = new THREE.Mesh(frameGeo, frameMat);
+  fr.position.set(d.x, 0.4, d.z - 0.02);
+  fr.rotation.y = d.ry;
+  scene.add(fr);
+
+  /* Ecranul propriu-zis */
+  const sc = new THREE.Mesh(panelGeo, panelMat);
+  sc.position.set(d.x, 0.4, d.z);
+  sc.rotation.y = d.ry;
+  scene.add(sc);
+});
+
+/* ── Spoturi tavan (sfere emissive + PointLights) ──
+
+   Creează grila de spoturi ca în studioul Passion.
+   Fiecare spot = o sferă mică albă + o lumină punctuală.
+   ► Adaugă sau elimină poziții din array pentru mai puține/mai multe spoturi */
+const spotDefs = [
+  [-4, 5.65, -1.5], [-2.2, 5.65, -1.5], [0, 5.65, -1.5], [2.2, 5.65, -1.5], [4, 5.65, -1.5],
+  [-3.1, 5.65, 0.5], [-1, 5.65, 0.5], [1, 5.65, 0.5], [3.1, 5.65, 0.5],
+  [-4, 5.65, 2.5],   [-2.2, 5.65, 2.5], [0, 5.65, 2.5], [2.2, 5.65, 2.5], [4, 5.65, 2.5],
+];
+
+const spotBulbGeo = new THREE.SphereGeometry(0.055, 6, 6);
+const spotBulbMat = new THREE.MeshBasicMaterial({ color: 0xfff8ee });
+
+spotDefs.forEach(([x, y, z]) => {
+  /* Sferuța vizuală (becul) */
+  const bulb = new THREE.Mesh(spotBulbGeo, spotBulbMat);
+  bulb.position.set(x, y, z);
+  scene.add(bulb);
+
+  /* Lumina punctuală a spotului — ► intensity: mai mare = mai luminos */
+  const pl = new THREE.PointLight(0xfff8ee, 0.22, 10);
+  pl.position.set(x, y - 0.12, z);
+  scene.add(pl);
+});
+
+
+/* ══════════════════════════════════════════════════════════════
+   [ORB] — Bila 3D NEXAS
+   Sferă high-poly cu material lucios + PointLight sincronizat
+   ══════════════════════════════════════════════════════════════ */
+
+/* Geometrie sferă — 80 segmente pentru aspect neted */
+const orbGeo = new THREE.SphereGeometry(1, 80, 80);
+
+/* Material Phong = lucios, bun cu iluminare dinamică
+   ► shininess (0-300): mai mic = mat, mai mare = oglindă
+   ► emissiveIntensity: lumina proprie a bilei               */
+const orbMat = new THREE.MeshPhongMaterial({
+  color:             new THREE.Color(FRAMES[0].orbHex),
+  emissive:          new THREE.Color(FRAMES[0].emissHex),
+  emissiveIntensity: 0.55,
+  specular:          new THREE.Color(0xffffff),
+  shininess:         230,
+});
+
+const orb = new THREE.Mesh(orbGeo, orbMat);
+orb.castShadow = true;
+scene.add(orb);
+
+/* Lumina bilei — point light care se mișcă cu bila și îi schimbă culoarea */
+const orbPtLight = new THREE.PointLight(0x1a5fff, 4.0, 9.0);
+scene.add(orbPtLight);
+
+/* Variabile de stare curente ale bilei (smooth interpolated) */
+let curOrbScale = ORB_BIG;  /* Scara curentă */
+let curOrbX     = 0;        /* Poziția X curentă */
+let curOrbY     = 0;        /* Poziția Y curentă (hover) */
+
+
+/* ══════════════════════════════════════════════════════════════
+   [LIGHTS] — Iluminarea scenei
+   ══════════════════════════════════════════════════════════════ */
+
+/* Lumină ambiantă — iluminare de bază pe tot scena
+   ► Mărește intensitatea pentru scenă mai luminoasă global */
+scene.add(new THREE.AmbientLight(0x0d1520, 3.0));
+
+/* Lumina principală (key light) — din față-sus, aruncă umbre */
+const keyLight = new THREE.DirectionalLight(0xffffff, 2.0);
+keyLight.position.set(4, 7, 6);
+keyLight.castShadow = true;
+scene.add(keyLight);
+
+/* Lumina de umplere (fill light) — din stânga, reduce umbrele dure */
+const fillLight = new THREE.DirectionalLight(0x7090cc, 0.7);
+fillLight.position.set(-6, 2, 4);
+scene.add(fillLight);
+
+/* Lumina de contur (rim light) — din spate, separă bila de fundal */
+const rimLight = new THREE.DirectionalLight(0xffffff, 1.1);
+rimLight.position.set(0, 4, -9);
+scene.add(rimLight);
+
+
+/* ══════════════════════════════════════════════════════════════
+   [SCROLL] — Calcul progres și mapare frame-uri
+   ══════════════════════════════════════════════════════════════ */
+
+/* Setează înălțimea totală a paginii pentru scroll
+   ► 6 frame-uri × 125vh = 750vh total scroll */
+document.body.style.height = '750vh';
+
+let scrollY = 0;
+window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
+
+/* Returnează progresul global de scroll între 0.0 și 1.0 */
+function getGlobalP() {
+  const maxSY = document.documentElement.scrollHeight - window.innerHeight;
+  return maxSY > 0 ? Math.min(1, scrollY / maxSY) : 0;
+}
+
+/* ── Funcții helper ── */
+function lerp(a, b, t)    { return a + (b - a) * t; }
+function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+function smooth(t)         { t = clamp(t, 0, 1); return t * t * (3 - 2 * t); } /* Smoothstep */
+
+/* Convertire hex → [r, g, b] 0-255 */
+function hexToRgb(hex) {
+  const h = hex.replace('#','');
+  return [
+    parseInt(h.slice(0,2), 16),
+    parseInt(h.slice(2,4), 16),
+    parseInt(h.slice(4,6), 16),
+  ];
+}
+
+/* Interpolează între două culori hex și returnează 'rgb(r,g,b)' */
+function lerpHex(h1, h2, t) {
+  const [r1,g1,b1] = hexToRgb(h1);
+  const [r2,g2,b2] = hexToRgb(h2);
+  return `rgb(${Math.round(lerp(r1,r2,t))},${Math.round(lerp(g1,g2,t))},${Math.round(lerp(b1,b2,t))})`;
+}
+
+/* Returnează culoarea bilei interpolată pe baza progresului global */
+function getOrbColor(gp) {
+  const raw = gp * (FRAMES.length - 1);
+  const i   = Math.min(Math.floor(raw), FRAMES.length - 2);
+  const f   = smooth(raw - i);
+  const c1  = new THREE.Color(FRAMES[i].orbHex);
+  const c2  = new THREE.Color(FRAMES[i + 1].orbHex);
+  return new THREE.Color(
+    lerp(c1.r, c2.r, f),
+    lerp(c1.g, c2.g, f),
+    lerp(c1.b, c2.b, f)
+  );
+}
+
+/* Returnează emissive-ul bilei interpolat */
+function getEmissColor(gp) {
+  const raw = gp * (FRAMES.length - 1);
+  const i   = Math.min(Math.floor(raw), FRAMES.length - 2);
+  const f   = smooth(raw - i);
+  const c1  = new THREE.Color(FRAMES[i].emissHex);
+  const c2  = new THREE.Color(FRAMES[i + 1].emissHex);
+  return new THREE.Color(
+    lerp(c1.r, c2.r, f),
+    lerp(c1.g, c2.g, f),
+    lerp(c1.b, c2.b, f)
+  );
+}
+
+/* Returnează gradientele ecranului interpolate */
+function getScreenColors(gp) {
+  const raw = gp * (FRAMES.length - 1);
+  const i   = Math.min(Math.floor(raw), FRAMES.length - 2);
+  const f   = smooth(raw - i);
+  return {
+    gradA: lerpHex(FRAMES[i].gradA, FRAMES[i+1].gradA, f),
+    gradB: lerpHex(FRAMES[i].gradB, FRAMES[i+1].gradB, f),
+  };
+}
+
+/* Referințe DOM pentru textele frame-urilor */
+const frameTexts = document.querySelectorAll('.frame-text');
+
+/* Setează opacitatea textului unui frame specific */
+function showText(idx, opacity) {
+  frameTexts.forEach((el, i) => {
+    if (i === idx) {
+      el.style.opacity = opacity;
+      el.classList.toggle('on', opacity > 0.05);
+    } else {
+      el.style.opacity = 0;
+      el.classList.remove('on');
+    }
+  });
+}
+
+/* Calculează opacitatea textului în funcție de frame și progres local
+   ► textFadeIn  = de la ce % din frame începe să apară textul
+   ► textFadeLen = pe câte % din frame se face fade-in               */
+function computeTextOpacity(frameIdx, localP) {
+  const N = FRAMES.length;
+
+  if (frameIdx === 0) {
+    /* Frame 0 (HERO): textul e vizibil de la start, dispare la finalul frame-ului */
+    if (localP < 0.65) return 1.0;
+    return smooth(clamp(1 - (localP - 0.65) / 0.35, 0, 1));
+
+  } else if (frameIdx === N - 1) {
+    /* Ultimul frame: textul apare devreme și rămâne */
+    return smooth(clamp((localP - 0.30) / 0.28, 0, 1));
+
+  } else {
+    /* Frame-uri intermediare: textul apare în a 2-a jumătate a frame-ului */
+    return smooth(clamp((localP - 0.55) / 0.28, 0, 1));
+  }
+}
+
+/* Variabile cameră (smooth) */
+let camZ = CAM_Z_START;
+let camX = 0;
+let camY = 0.8;
+
+/* Pentru refresh screen texture */
+let lastGradKey = '';
+let lastFrameForCounter = -1;
+
+
+/* ══════════════════════════════════════════════════════════════
+   [ANIMATE] — Loop principal 60fps
+   Rulează continuu: calculează starea, actualizează scena, renderizează
+   ══════════════════════════════════════════════════════════════ */
+const clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  const time = clock.getElapsedTime(); /* Timp scurs de la start (secunde) */
+  const gp   = getGlobalP();            /* Progres scroll global 0→1 */
+  const N    = FRAMES.length;
+
+  /* ── Index frame curent și progres LOCAL în frame (0→1) ── */
+  const rawFrame = gp * N;
+  const frameIdx = Math.min(Math.floor(rawFrame), N - 1);
+  const localP   = rawFrame - Math.floor(rawFrame); /* 0→1 în interiorul frame-ului */
+
+  /* ── Opacitate text frame curent ── */
+  const textOp = computeTextOpacity(frameIdx, localP);
+  showText(frameIdx, textOp);
+
+  /* ── Target bilă ──
+     Bila e MARE când nu e text (textOp=0)
+     Bila e MICĂ și mutată dreapta când e text (textOp=1) */
+  const orbScaleTarget = lerp(ORB_BIG, ORB_SMALL, textOp);
+  const orbXTarget     = frameIdx === 0
+    ? 0                               /* Frame 0: orb centrat mereu */
+    : lerp(0, ORB_SHIFT, textOp);    /* Alte frame-uri: orb se muta dreapta */
+  /* Hover: mișcare verticală sinusoidală subtilă */
+  const orbYTarget = Math.sin(time * 0.65) * 0.10;
+
+  /* ── Smooth lerp spre target (lag 6%) ── */
+  curOrbScale = lerp(curOrbScale, orbScaleTarget, 0.06);
+  curOrbX     = lerp(curOrbX,     orbXTarget,     0.06);
+  curOrbY     = lerp(curOrbY,     orbYTarget,     0.08);
+
+  /* Aplică pe mesh */
+  orb.scale.setScalar(curOrbScale);
+  orb.position.set(curOrbX, curOrbY, 0);
+  /* Rotație continuă lentă */
+  orb.rotation.y += 0.0035;
+  orb.rotation.x  = Math.sin(time * 0.38) * 0.04;
+
+  /* ── Culori bilă (interpolate pe gp global) ── */
+  const orbCol  = getOrbColor(gp);
+  const emCol   = getEmissColor(gp);
+  orbMat.color.copy(orbCol);
+  orbMat.emissive.copy(emCol);
+
+  /* Lumina bilei urmează pozitia + culoarea bilei */
+  orbPtLight.color.copy(orbCol);
+  orbPtLight.position.set(curOrbX, curOrbY + 0.5, 1.5);
+  /* Lumina e mai intensă când bila e mare */
+  orbPtLight.intensity = lerp(1.8, 4.5, 1 - textOp);
+
+  /* ── Camera: zoom-in + pan lateral ──
+     Zoom: CAM_Z_START → CAM_Z_END pe toată lungimea scroll-ului
+     Pan X: oscilație sinusoidală (se mișcă ușor stânga-dreapta)
+     Pan Y: ușor în jos pe zoom (mai cinematic)                    */
+  const camZTarget = lerp(CAM_Z_START, CAM_Z_END, smooth(gp));
+  const camXTarget = Math.sin(gp * Math.PI * 2.2) * 0.9   /* oscilație */
+                   - textOp * 0.8;                          /* ușor stânga când text dreapta */
+  const camYTarget = lerp(0.8, 0.2, smooth(gp));
+
+  camZ = lerp(camZ, camZTarget, 0.035); /* Lag 3.5% = zoom foarte lin */
+  camX = lerp(camX, camXTarget, 0.030);
+  camY = lerp(camY, camYTarget, 0.030);
+
+  camera.position.set(camX, camY, camZ);
+  /* Camera privește ușor spre centrul scenei, nu exact la bila */
+  camera.lookAt(orb.position.x * 0.12, 0.15, 0);
+
+  /* ── Ecran gradient update ──
+     Repictăm canvas-ul la fiecare frame în timpul tranzițiilor
+     (operație 2D ușoară, nu afectează performanța)              */
+  const { gradA, gradB } = getScreenColors(gp);
+  const gradKey = gradA + '|' + gradB;
+  if (gradKey !== lastGradKey) {
+    paintScreen(gradA, gradB);
+    lastGradKey = gradKey;
+  }
+
+  /* ── Counter frame (01/06) ── */
+  if (frameIdx !== lastFrameForCounter) {
+    counterEl.textContent = String(frameIdx + 1).padStart(2, '0') + ' / ' + String(N).padStart(2, '0');
+    lastFrameForCounter   = frameIdx;
+  }
+
+  /* ── Scroll hint dispare după primul scroll ── */
+  hintEl.style.opacity = Math.max(0, 1 - gp * 14).toString();
+
+  /* ── Render final ── */
+  renderer.render(scene, camera);
+}
+
+/* Pornește loop-ul de animație */
+animate();
+
+
+/* ══════════════════════════════════════════════════════════════
+   [RESIZE] — Responsive la redimensionarea ferestrei
+   ══════════════════════════════════════════════════════════════ */
+window.addEventListener('resize', () => {
+  /* Actualizează aspect ratio camera */
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  /* Redimensionează renderer */
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+});
+
+</script>
+</body>
+</html>
