@@ -818,9 +818,20 @@ function animate() {
      Bila e MARE când nu e text (textOp=0)
      Bila e MICĂ și mutată dreapta când e text (textOp=1) */
   const orbScaleTarget = lerp(ORB_BIG, ORB_SMALL, textOp);
-  const orbXTarget     = frameIdx === 0
-    ? 0                               /* Frame 0: orb centrat mereu */
-    : lerp(0, ORB_SHIFT, textOp);    /* Alte frame-uri: orb se muta dreapta */
+  
+ // ► POZIȚIILE BILEI per frame (când e text vizibil)
+// Pozitiv = dreapta, Negativ = stânga, 0 = centru
+const ORB_POS_PER_FRAME = [
+   0.0,   // Frame 0 — centru (hero)
+   2.5,   // Frame 1 — dreapta
+   0.0,   // Frame 2 — centru
+  -2.5,   // Frame 3 — stânga
+   2.5,   // Frame 4 — dreapta
+   0.0,   // Frame 5 — centru (final)
+];
+
+const orbXTarget = lerp(0, ORB_POS_PER_FRAME[frameIdx], textOp);
+  
   /* Hover: mișcare verticală sinusoidală subtilă */
   const orbYTarget = Math.sin(time * 0.65) * 0.10;
 
