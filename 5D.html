@@ -562,10 +562,11 @@ const frameMat  = new THREE.MeshBasicMaterial({ color: 0x040404 });
 
 /* Cele 3 panouri: stânga (rotit ușor), centru, dreapta (rotit ușor)
    ► Ajustează x pentru spacing, z pentru adâncime, ry pentru unghi */
+  
 const panelDefs = [
-  { x: -3.35, z: -6.3, ry:  0.11 }, /* Panou stânga */
-  { x:  0.00, z: -6.0, ry:  0.00 }, /* Panou centru */
-  { x:  3.35, z: -6.3, ry: -0.11 }, /* Panou dreapta */
+  { x: -8.4,  z: -5.0, ry:  0.11 },  // stânga
+  { x:  0.00, z: -4.5, ry:  0.00 },  // centru
+  { x:  8.4,  z: -5.0, ry: -0.11 },  // dreapta
 ];
 
 panelDefs.forEach(d => {
