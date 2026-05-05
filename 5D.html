@@ -641,6 +641,7 @@ scene.add(orbPtLight);
 let curOrbScale = ORB_BIG;  /* Scara curentă */
 let curOrbX     = 0;        /* Poziția X curentă */
 let curOrbY     = 0;        /* Poziția Y curentă (hover) */
+  let curOrbZ     = 0; 
 
 
 /* ══════════════════════════════════════════════════════════════
@@ -823,27 +824,28 @@ function animate() {
  // ► POZIȚIILE BILEI per frame (când e text vizibil)
 // Pozitiv = dreapta, Negativ = stânga, 0 = centru
 const ORB_POS_PER_FRAME = [
-   0.0,   // Frame 0 — centru (hero)
-   2.5,   // Frame 1 — dreapta
-   0.0,   // Frame 2 — centru
-  -2.5,   // Frame 3 — stânga
-   2.5,   // Frame 4 — dreapta
-   0.0,   // Frame 5 — centru (final)
+  { x:  0.0, z:  0.0 },  // Frame 0 — centru (hero)
+  { x:  3.5, z:  0.0 },  // Frame 1 — dreapta
+  { x: -3.5, z:  2.5 },  // Frame 2 — față + stânga
+  { x:  3.5, z:  2.5 },  // Frame 3 — față + dreapta
+  { x: -3.5, z:  2.5 },  // Frame 4 — față + stânga
+  { x:  3.5, z:  2.5 },  // Frame 5 — față + dreapta
 ];
 
-const orbXTarget = lerp(0, ORB_POS_PER_FRAME[frameIdx], textOp);
+const orbXTarget = lerp(0, ORB_POS_PER_FRAME[frameIdx].x, textOp);
+const orbZTarget = lerp(0, ORB_POS_PER_FRAME[frameIdx].z, textOp);
   
   /* Hover: mișcare verticală sinusoidală subtilă */
   const orbYTarget = Math.sin(time * 0.65) * 0.10;
 
   /* ── Smooth lerp spre target (lag 6%) ── */
-  curOrbScale = lerp(curOrbScale, orbScaleTarget, 0.06);
-  curOrbX     = lerp(curOrbX,     orbXTarget,     0.06);
-  curOrbY     = lerp(curOrbY,     orbYTarget,     0.08);
-
+curOrbScale = lerp(curOrbScale, orbScaleTarget, 0.06);
+curOrbX     = lerp(curOrbX,     orbXTarget,     0.06);
+curOrbY     = lerp(curOrbY,     orbYTarget,     0.08);
+curOrbZ     = lerp(curOrbZ,     orbZTarget,     0.06); 
   /* Aplică pe mesh */
   orb.scale.setScalar(curOrbScale);
-  orb.position.set(curOrbX, curOrbY, 0);
+  orb.position.set(curOrbX, curOrbY, curOrbZ);
   /* Rotație continuă lentă */
   orb.rotation.y += 0.0035;
   orb.rotation.x  = Math.sin(time * 0.38) * 0.04;
