@@ -851,7 +851,7 @@ function animate() {
   const _lp = (_gp * FRAMES.length) - Math.floor(_gp * FRAMES.length);
   const zone = (_fi === 0)
     ? (_lp < 0.65 ? 'text' : 'big')
-    : (_lp > 0.52 ? 'text' : 'big');
+    : (_lp > 0.75 ? 'text' : 'big');  /* 0.52 → 0.75 */
 
   if (zone === 'text' && lastZone === 'big' && lastLockFrame !== _fi) {
     scrollLocked  = true;
