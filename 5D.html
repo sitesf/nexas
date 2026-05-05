@@ -398,9 +398,12 @@ const FRAMES = [
    ► ORB_BIG  = raza când e singură pe ecran (fără text)
    ► ORB_SMALL= raza când e text vizibil (se face mică)
    ► ORB_SHIFT= cât se muta pe axa X dreapta când e text    */
-const ORB_BIG   = 1.80;
-const ORB_SMALL = 0.88;
+const isMobile  = window.innerWidth < 768;
+const ORB_BIG   = isMobile ? 1.2  : 1.80;
+const ORB_SMALL = isMobile ? 0.55 : 0.88;
 const ORB_SHIFT = 2.20;
+const xShift    = isMobile ? 1.2  : 3.5;
+const zShift    = isMobile ? 1.0  : 2.5;
 
 /* Camera
    ► CAM_Z_START = distanța inițială a camerei (departe)
@@ -823,13 +826,19 @@ function animate() {
   
  // ► POZIȚIILE BILEI per frame (când e text vizibil)
 // Pozitiv = dreapta, Negativ = stânga, 0 = centru
+  
+// Pe mobil valorile X se reduc automat
+const isMobile = window.innerWidth < 768;
+const xShift   = isMobile ? 1.2 : 3.5;  // ► 1.2 = mobil, 3.5 = desktop
+const zShift   = isMobile ? 1.0 : 2.5;  // ► același pentru Z
+
 const ORB_POS_PER_FRAME = [
-  { x:  0.0, z:  0.0 },  // Frame 0 — centru (hero)
-  { x:  3.5, z:  0.0 },  // Frame 1 — dreapta
-  { x: -3.5, z:  2.5 },  // Frame 2 — față + stânga
-  { x:  3.5, z:  2.5 },  // Frame 3 — față + dreapta
-  { x: -3.5, z:  2.5 },  // Frame 4 — față + stânga
-  { x:  3.5, z:  2.5 },  // Frame 5 — față + dreapta
+  { x:  0.0,    z:  0.0   },  // Frame 0
+  { x:  xShift, z:  0.0   },  // Frame 1
+  { x: -xShift, z:  zShift},  // Frame 2
+  { x:  xShift, z:  zShift},  // Frame 3
+  { x: -xShift, z:  zShift},  // Frame 4
+  { x:  xShift, z:  zShift},  // Frame 5
 ];
 
 const orbXTarget = lerp(0, ORB_POS_PER_FRAME[frameIdx].x, textOp);
