@@ -811,6 +811,11 @@ const glow = { rotation: torus.rotation };
     time += 0.008;
 
     const p   = getProgress();
+    const targetScale = p > 0.72 ? 2 : 1;
+orbGroup.scale.lerp(
+  new THREE.Vector3(targetScale, targetScale, targetScale),
+  0.06
+);
     const tCY = -p * CAM_TRAVEL;
 
     // Side buildings move slightly upward while the orb goes down
