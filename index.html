@@ -122,10 +122,33 @@ nav.on { opacity: 1; }
   display: flex; align-items: center;
 }
 .frame-text {
-  position: absolute; top: 50%; left: 7vw;
-  transform: translateY(-50%); max-width: 46%;
-  opacity: 0; pointer-events: none;
-  transition: opacity .5s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%; /* DEFAULT - toate în stânga */
+  text-align: left;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+  z-index: 10;
+  padding: 0 2rem;
+}
+
+/* Frame 2 - DREAPTA */
+.frame-text[data-frame="2"] {
+  left: auto;
+  right: 5%;
+  text-align: right;
+}
+
+/* Frame 4 - DREAPTA */
+.frame-text[data-frame="4"] {
+  left: auto;
+  right: 5%;
+  text-align: right;
+}
 }
 .frame-text.on { pointer-events: auto; }
 
