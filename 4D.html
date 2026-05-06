@@ -696,15 +696,7 @@ rimLight.position.set(0, 4, -9); scene.add(rimLight);
 document.body.style.height = '750vh';
 
 /* ► LOCK_DURATION = pauza în ms când apare textul (300-2000) */
-const LOCK_DURATION = 2000;
 
-let rawScrollY    = 0;
-let animScrollY   = 0;
-let scrollLocked  = false;
-let lockTimer     = null;
-let lastZone      = 'big';
-let lastLockFrame = -1;
-let autoScrolling = true;
 
 window.addEventListener('scroll', () => {
   rawScrollY    = window.scrollY;
@@ -804,7 +796,7 @@ function animate() {
     window.scrollTo(0, rawScrollY);
   }
   if (!scrollLocked) {
-    animScrollY += (rawScrollY - animScrollY) * 0.10;
+   animScrollY += (rawScrollY - animScrollY) * 0.08;
   }
 
   /* Detectează tranziția → blochează scroll */
