@@ -479,7 +479,7 @@ scene.fog        = new THREE.Fog(0x000005, 14, 40); /* Ceață pentru adâncime 
 
 /* Cameră perspectivă — pornind de la CAM_Z_START, zoomează la scroll */
 const camera = new THREE.PerspectiveCamera(
-  60,                                      /* FOV — câmp vizual */
+  isMobile ? 82 : 60,                                     /* FOV — câmp vizual */
   window.innerWidth / window.innerHeight,  /* Aspect ratio */
   0.1,                                     /* Near clip */
   100                                      /* Far clip */
@@ -585,10 +585,14 @@ const frameMat  = new THREE.MeshBasicMaterial({ color: 0x040404 });
 /* Cele 3 panouri: stânga (rotit ușor), centru, dreapta (rotit ușor)
    ► Ajustează x pentru spacing, z pentru adâncime, ry pentru unghi */
   
-const panelDefs = [
-  { x: -8.4,  z: -5.0, ry:  0.11 },  // stânga
-  { x:  0.00, z: -4.5, ry:  0.00 },  // centru
-  { x:  8.4,  z: -5.0, ry: -0.11 },  // dreapta
+const panelDefs = isMobile ? [
+  { x: -2.55, z: -5.0, ry:  0.08 },
+  { x:  0.00, z: -4.5, ry:  0.00 },
+  { x:  2.55, z: -5.0, ry: -0.08 },
+] : [
+  { x: -8.4,  z: -5.0, ry:  0.11 },
+  { x:  0.00, z: -4.5, ry:  0.00 },
+  { x:  8.4,  z: -5.0, ry: -0.11 },
 ];
 
 panelDefs.forEach(d => {
