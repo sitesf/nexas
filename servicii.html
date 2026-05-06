@@ -690,14 +690,14 @@ h1 .ac { color: var(--blue); }
 
     // Main torus
     const mat = new THREE.MeshPhongMaterial({
-      color:            0x5aa6ff,
-      emissive:         0x1a4adb,
-      emissiveIntensity: 0.9,
-      specular:         0xffffff,
-      shininess:        250,
-      transparent:      true,
-      opacity:          0.88,
-    });
+  color:            0xffffff,
+  emissive:         0xffffff,
+  emissiveIntensity: 0.8,
+  specular:         0xffffff,
+  shininess:        250,
+  transparent:      true,
+  opacity:          1,
+});
     const torus = new THREE.Mesh(new THREE.TorusGeometry(baseRadius, tube, 22, 130), mat);
     torus.position.y = y;
     torus.rotation.x = (Math.random() - 0.5) * 0.22;
@@ -705,13 +705,8 @@ h1 .ac { color: var(--blue); }
     scene.add(torus);
 
     // Glow aura (wide, very transparent)
-    const glowMat = new THREE.MeshBasicMaterial({
-      color: 0x5aa6ff, transparent: true, opacity: 0.055
-    });
-    const glow = new THREE.Mesh(new THREE.TorusGeometry(baseRadius, tube * 5.5, 10, 80), glowMat);
-    glow.position.copy(torus.position);
-    glow.rotation.copy(torus.rotation);
-    scene.add(glow);
+    const glowMat = { opacity: 0 };
+const glow = { rotation: torus.rotation };
 
     // Particle ring (floating dots around each ring)
     const pCount = 60;
