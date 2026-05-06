@@ -163,14 +163,12 @@ nav.on { opacity: 1; }
   position: fixed; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   z-index: 25;
-  display: flex;
-  flex-direction: column;  /* ← una sub cealaltă */
-  gap: 14px;               /* ← spațiu între butoane */
-  align-items: center;     /* ← centrate */
+  display: flex; gap: 18px; flex-wrap: wrap; justify-content: center;
   opacity: 0; pointer-events: none;
   transition: opacity 0.8s ease;
 }
 #cta-btns.on { opacity: 1; pointer-events: auto; }
+
 .cta-btn {
   padding: 17px 36px; border-radius: 13px;
   font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700;
@@ -698,7 +696,15 @@ rimLight.position.set(0, 4, -9); scene.add(rimLight);
 document.body.style.height = '750vh';
 
 /* ► LOCK_DURATION = pauza în ms când apare textul (300-2000) */
+const LOCK_DURATION = 2000;
 
+let rawScrollY    = 0;
+let animScrollY   = 0;
+let scrollLocked  = false;
+let lockTimer     = null;
+let lastZone      = 'big';
+let lastLockFrame = -1;
+let autoScrolling = true;
 
 window.addEventListener('scroll', () => {
   rawScrollY    = window.scrollY;
@@ -798,7 +804,7 @@ function animate() {
     window.scrollTo(0, rawScrollY);
   }
   if (!scrollLocked) {
-   animScrollY += (rawScrollY - animScrollY) * 0.08;
+    animScrollY += (rawScrollY - animScrollY) * 0.10;
   }
 
   /* Detectează tranziția → blochează scroll */
