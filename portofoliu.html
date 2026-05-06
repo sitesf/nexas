@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NEXAS | 3D Project Showcase</title>
+  <meta name="description" content="Pagina 3D de prezentare pentru proiecte digitale, automatizari, Excel, email si social media." />
+
+  <style>
+    /* =========================================================
+       1. <style> — CSS: loader, nav, text, UI
+    ========================================================= */
+
+    :root{
+      --bg:#040007;
+      --bg-soft:#100017;
+      --pink:#ff2f92;
+      --purple:#8b5cf6;
+      --cyan:#5fffe1;
+      --white:#ffffff;
+      --text:#f8f0ff;
+      --muted:#bba9c8;
+      --line:rgba(255,255,255,.14);
+      --glass:rgba(255,255,255,.07);
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      min-height:100vh;
+      overflow-x:hidden;
+      font-family:Inter, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 18% 16%, rgba(255,47,146,.24), transparent 28%),
+        radial-gradient(circle at 84% 8%, rgba(139,92,246,.24), transparent 30%),
+        linear-gradient(180deg, #030006 0%, #08000f 46%, #040007 100%);
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
+      background:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size:56px 56px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.85), transparent 85%);
+    }
+
+    #loader{
+      position:fixed;
+      inset:0;
+      z-index:999;
+      display:grid;
+      place-items:center;
+      background:#040007;
+      transition:opacity .7s ease, visibility .7s ease;
+    }
+
+    #loader.hide{
+      opacity:0;
+      visibility:hidden;
+    }
+
+    .loader-box{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      border:1px solid rgba(255,255,255,.12);
+      display:grid;
+      place-items:center;
+      background:radial-gradient(circle, rgba(255,47,146,.18), rgba(139,92,246,.06), transparent 70%);
+      box-shadow:0 0 90px rgba(255,47,146,.25);
+      animation:pulse 1.8s infinite ease-in-out;
+    }
+
+    .loader-box span{
+      font-weight:800;
+      letter-spacing:.26em;
+      font-size:15px;
+    }
+
+    @keyframes pulse{
+      0%,100%{transform:scale(1);opacity:.9}
+      50%{transform:scale(1.06);opacity:1}
+    }
+
+    .nav{
+      position:fixed;
+      top:18px;
+      left:50%;
+      transform:translateX(-50%);
+      z-index:80;
+      width:min(1140px, calc(100% - 28px));
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(7,0,13,.74);
+      backdrop-filter:blur(18px);
+      box-shadow:0 18px 60px rgba(0,0,0,.42);
+    }
+
+    .brand{
+      color:white;
+      text-decoration:none;
+      font-size:14px;
+      letter-spacing:.22em;
+      font-weight:900;
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:24px;
+    }
+
+    .nav-links a{
+      color:var(--muted);
+      text-decoration:none;
+      font-size:14px;
+      transition:color .25s ease;
+    }
+
+    .nav-links a:hover{
+      color:white;
+    }
+
+    #webgl{
+      position:fixed;
+      inset:0;
+      z-index:1;
+      width:100%;
+      height:100%;
+      pointer-events:none;
+    }
+
+    .page{
+      position:relative;
+      z-index:5;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:grid;
+      align-items:center;
+      padding:120px 20px 80px;
+    }
+
+    .wrap{
+      width:min(1140px,100%);
+      margin:0 auto;
+    }
+
+    .hero-content{
+      max-width:720px;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:9px 13px;
+      margin-bottom:24px;
+      border:1px solid rgba(255,255,255,.16);
+      border-radius:999px;
+      background:rgba(255,47,146,.09);
+      color:#ffd5ec;
+      font-size:13px;
+    }
+
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:var(--pink);
+      box-shadow:0 0 22px var(--pink);
+    }
+
+    h1{
+      max-width:760px;
+      font-size:clamp(46px,8vw,100px);
+      line-height:.93;
+      letter-spacing:-.07em;
+    }
+
+    .grad{
+      color:transparent;
+      background:linear-gradient(90deg, #fff, #ff8bd0, #a78bfa);
+      -webkit-background-clip:text;
+      background-clip:text;
+    }
+
+    .hero p{
+      max-width:620px;
+      margin:26px 0 34px;
+      color:var(--muted);
+      font-size:18px;
+      line-height:1.75;
+    }
+
+    .btns{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:48px;
+      padding:0 20px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:white;
+      text-decoration:none;
+      background:rgba(255,255,255,.08);
+      box-shadow:0 16px 46px rgba(0,0,0,.28);
+    }
+
+    .btn.primary{
+      border:none;
+      background:linear-gradient(135deg, var(--pink), var(--purple));
+    }
+
+    .spacer{
+      height:60vh;
+    }
+
+    .projects{
+      padding:120px 20px;
+    }
+
+    .section-head{
+      max-width:700px;
+      margin-bottom:44px;
+    }
+
+    h2{
+      font-size:clamp(34px,5vw,66px);
+      line-height:1;
+      letter-spacing:-.05em;
+      margin-bottom:16px;
+    }
+
+    .section-head p{
+      color:var(--muted);
+      font-size:17px;
+      line-height:1.7;
+    }
+
+    .project-list{
+      display:grid;
+      gap:28px;
+    }
+
+    .project{
+      min-height:260px;
+      display:grid;
+      grid-template-columns:1fr 1.1fr;
+      align-items:center;
+      gap:28px;
+      padding:28px;
+      border:1px solid var(--line);
+      border-radius:34px;
+      background:linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.035));
+      backdrop-filter:blur(14px);
+      box-shadow:0 26px 90px rgba(0,0,0,.3);
+    }
+
+    .project small{
+      color:#ffc4e5;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:12px;
+    }
+
+    .project h3{
+      margin:12px 0 12px;
+      font-size:30px;
+      letter-spacing:-.03em;
+    }
+
+    .project p{
+      color:var(--muted);
+      line-height:1.7;
+    }
+
+    .project img{
+      width:100%;
+      height:230px;
+      object-fit:cover;
+      border-radius:26px;
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow:0 22px 60px rgba(0,0,0,.35);
+    }
+
+    .contact{
+      padding:120px 20px 150px;
+    }
+
+    .contact-box{
+      padding:46px;
+      border-radius:36px;
+      border:1px solid var(--line);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,47,146,.22), transparent 34%),
+        radial-gradient(circle at 82% 0%, rgba(139,92,246,.22), transparent 34%),
+        rgba(255,255,255,.06);
+      box-shadow:0 30px 100px rgba(0,0,0,.35);
+    }
+
+    footer{
+      position:relative;
+      z-index:5;
+      padding:34px 20px;
+      color:var(--muted);
+      text-align:center;
+      font-size:14px;
+    }
+
+    @media(max-width:850px){
+      .nav-links a{
+        display:none;
+      }
+
+      .project{
+        grid-template-columns:1fr;
+      }
+
+      .hero{
+        padding-top:115px;
+      }
+
+      .spacer{
+        height:40vh;
+      }
+    }
+
+    @media(max-width:520px){
+      .contact-box{
+        padding:28px;
+      }
+
+      .project{
+        padding:18px;
+        border-radius:26px;
+      }
+
+      .project img{
+        height:200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =========================================================
+       2. <body> — HTML: loader, nav, canvas, texte
+  ========================================================= -->
+
+  <div id="loader">
+    <div class="loader-box">
+      <span>NEXAS</span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="#" class="brand">NEXAS</a>
+    <div class="nav-links">
+      <a href="#proiecte">Proiecte</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <canvas id="webgl"></canvas>
+
+  <main class="page">
+    <header class="hero">
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="dot"></span> Portofoliu cinematic 3D</div>
+          <h1>Construiesc <span class="grad">experiente digitale</span>.</h1>
+          <p>O pagina de prezentare pentru proiectele mele. Email dashboard, automatizari Excel, social media AI si site-uri moderne.</p>
+
+          <div class="btns">
+            <a href="#proiecte" class="btn primary">Vezi proiectele</a>
+            <a href="#contact" class="btn">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="spacer"></div>
+
+    <section id="proiecte" class="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Proiecte selectate</h2>
+          <p>Incarca imaginile in acelasi folder cu acest fisier. Foloseste exact numele: poza1email.jpg, poza1excel.jpg, poza1social.jpg.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project">
+            <div>
+              <small>Email automation</small>
+              <h3>Dashboard email</h3>
+              <p>Raport vizual pentru indicatori, tabele, totaluri si rezultate trimise automat pe email.</p>
+            </div>
+            <img src="poza1email.jpg" alt="Dashboard email">
+          </article>
+
+          <article class="project">
+            <div>
+              <small>Excel workflow</small>
+              <h3>Automatizare Excel</h3>
+              <p>Flux pentru fisiere, verificari, comparatii, curatare date si procese repetitive.</p>
+            </div>
+            <img src="poza1excel.jpg" alt="Automatizare Excel">
+          </article>
+
+          <article class="project">
+            <div>
+              <small>AI content</small>
+              <h3>Social Media AI</h3>
+              <p>Generare idei, texte, structura vizuala si continut pregatit pentru promovare.</p>
+            </div>
+            <img src="poza1social.jpg" alt="Social media AI">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <h2>Ai un proiect?</h2>
+          <p class="section-head" style="margin-bottom:28px;color:var(--muted);line-height:1.7;">Pot construi o pagina de prezentare, o automatizare sau un demo rapid pentru ideea ta.</p>
+          <a href="mailto:contact@nexas.ro" class="btn primary">Scrie-mi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 NEXAS. Proiecte digitale si automatizari.</footer>
+
+  <script type="module">
+    /* =========================================================
+       3. <script> — JavaScript Three.js
+    ========================================================= */
+
+    import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js";
+
+    const loader = document.getElementById("loader");
+    const canvas = document.getElementById("webgl");
+
+    const scene = new THREE.Scene();
+
+    const camera = new THREE.PerspectiveCamera(
+      38,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      100
+    );
+    camera.position.set(0, 0, 7.5);
+
+    const renderer = new THREE.WebGLRenderer({
+      canvas,
+      alpha:true,
+      antialias:true
+    });
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    const group = new THREE.Group();
+    scene.add(group);
+
+    const textureLoader = new THREE.TextureLoader();
+
+    const imageData = [
+      {
+        src:"poza1email.jpg",
+        title:"Email Dashboard",
+        position:[-2.5, .8, 0],
+        rotation:[0, .42, -.08]
+      },
+      {
+        src:"poza1excel.jpg",
+        title:"Excel Automation",
+        position:[2.35, .45, -.75],
+        rotation:[0, -.46, .08]
+      },
+      {
+        src:"poza1social.jpg",
+        title:"Social Media AI",
+        position:[-.1, -1.55, .35],
+        rotation:[-.05, .12, .03]
+      }
+    ];
+
+    const cards = [];
+
+    function createCard(item, index){
+      const texture = textureLoader.load(
+        item.src,
+        () => {
+          if(index === imageData.length - 1){
+            setTimeout(() => loader.classList.add("hide"), 600);
+          }
+        },
+        undefined,
+        () => {
+          setTimeout(() => loader.classList.add("hide"), 600);
+        }
+      );
+
+      texture.colorSpace = THREE.SRGBColorSpace;
+
+      const geometry = new THREE.PlaneGeometry(2.75, 1.7, 24, 24);
+      const material = new THREE.MeshBasicMaterial({
+        map:texture,
+        side:THREE.DoubleSide
+      });
+
+      const mesh = new THREE.Mesh(geometry, material);
+      mesh.position.set(...item.position);
+      mesh.rotation.set(...item.rotation);
+
+      const borderGeometry = new THREE.PlaneGeometry(2.82, 1.77);
+      const borderMaterial = new THREE.MeshBasicMaterial({
+        color: index === 0 ? 0xff2f92 : index === 1 ? 0x8b5cf6 : 0x5fffe1,
+        transparent:true,
+        opacity:.18,
+        side:THREE.DoubleSide
+      });
+
+      const border = new THREE.Mesh(borderGeometry, borderMaterial);
+      border.position.z = -.018;
+
+      const cardGroup = new THREE.Group();
+      cardGroup.add(border);
+      cardGroup.add(mesh);
+      cardGroup.position.copy(mesh.position);
+      cardGroup.rotation.copy(mesh.rotation);
+
+      mesh.position.set(0,0,.02);
+      mesh.rotation.set(0,0,0);
+
+      group.add(cardGroup);
+      cards.push(cardGroup);
+    }
+
+    imageData.forEach(createCard);
+
+    const light1 = new THREE.PointLight(0xff2f92, 1.8, 10);
+    light1.position.set(-3, 3, 3);
+    scene.add(light1);
+
+    const light2 = new THREE.PointLight(0x8b5cf6, 1.7, 10);
+    light2.position.set(3, 2, 2);
+    scene.add(light2);
+
+    const particlesGeometry = new THREE.BufferGeometry();
+    const particlesCount = 650;
+    const positions = new Float32Array(particlesCount * 3);
+
+    for(let i = 0; i < particlesCount; i++){
+      positions[i * 3] = (Math.random() - .5) * 12;
+      positions[i * 3 + 1] = (Math.random() - .5) * 8;
+      positions[i * 3 + 2] = (Math.random() - .5) * 9;
+    }
+
+    particlesGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+
+    const particlesMaterial = new THREE.PointsMaterial({
+      size:.014,
+      color:0xff8bd0,
+      transparent:true,
+      opacity:.55
+    });
+
+    const particles = new THREE.Points(particlesGeometry, particlesMaterial);
+    scene.add(particles);
+
+    let scrollY = window.scrollY;
+    let targetScroll = scrollY;
+    let mouseX = 0;
+    let mouseY = 0;
+
+    window.addEventListener("scroll", () => {
+      targetScroll = window.scrollY;
+    });
+
+    window.addEventListener("mousemove", (event) => {
+      mouseX = (event.clientX / window.innerWidth - .5) * 2;
+      mouseY = (event.clientY / window.innerHeight - .5) * 2;
+    });
+
+    window.addEventListener("resize", () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    });
+
+    function animate(){
+      requestAnimationFrame(animate);
+
+      scrollY += (targetScroll - scrollY) * .075;
+
+      const scrollProgress = scrollY / Math.max(document.body.scrollHeight - window.innerHeight, 1);
+
+      group.rotation.y = scrollProgress * Math.PI * 2.2 + mouseX * .08;
+      group.rotation.x = mouseY * .05;
+      group.position.y = -scrollProgress * 1.3;
+
+      cards.forEach((card, index) => {
+        card.rotation.z += Math.sin(Date.now() * .00045 + index) * .0008;
+        card.position.y += Math.sin(Date.now() * .001 + index) * .0007;
+      });
+
+      particles.rotation.y += .0008;
+      particles.rotation.x += .00025;
+
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    setTimeout(() => loader.classList.add("hide"), 2500);
+  </script>
+</body>
+</html>
