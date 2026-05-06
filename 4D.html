@@ -390,8 +390,8 @@ const ORB_POS_PER_FRAME = [
 ];
 
 /* Camera */
-const CAM_Z_START = 13.0;
-const CAM_Z_END   =  6.5;
+const CAM_Z_START = isMobile ? 8.0 : 13.0;
+const CAM_Z_END   = isMobile ? 4.0 :  6.5;
 
 
 /* ══════════════════════════════════════════════════════════════
@@ -440,7 +440,7 @@ scene.fog        = new THREE.Fog(0x000308, 14, 40);
 
 /* ► FOV: mai mare pe mobil ca să se vadă toate 3 oglinzi */
 const camera = new THREE.PerspectiveCamera(
-  isMobile ? 82 : 60,
+  isMobile ? 92 : 60,
   window.innerWidth / window.innerHeight,
   0.1, 100
 );
@@ -534,8 +534,8 @@ const panelMat = new THREE.MeshBasicMaterial({ map: scrTex });
 /* ── Dimensiuni panouri — responsive ──
    Desktop: mari și spectaculoase | Mobile: mici, toate 3 vizibile
    ► PANEL_W / PANEL_H = ajustează după gust */
-const PANEL_W = isMobile ? 2.4  : 8.15;
-const PANEL_H = isMobile ? 5.5  : 12.0;
+const PANEL_W = isMobile ? 3.8  : 8.15;
+const PANEL_H = isMobile ? 8  : 12.0;
 const panelGeo = new THREE.PlaneGeometry(PANEL_W, PANEL_H);
 const frameGeo = new THREE.PlaneGeometry(PANEL_W + 0.18, PANEL_H + 0.18);
 const frameMat = new THREE.MeshBasicMaterial({ color: 0x030303 });
@@ -543,15 +543,15 @@ const frameMat = new THREE.MeshBasicMaterial({ color: 0x030303 });
 /* Toate 3 panouri la ACEEAȘI adâncime z = -5.0 → dimensiuni egale
    ► Ajustează x pentru spacing între panouri                      */
 const panelDefs = isMobile ? [
-  { x: -2.55, z: -5.0, ry:  0.08 },  // stânga
-  { x:  0.00, z: -5.0, ry:  0.00 },  // centru
-  { x:  2.55, z: -5.0, ry: -0.08 },  // dreapta
+  { x: -4.0, z: -3.5, ry:  0.10 },
+  { x:  0.0, z: -3.2, ry:  0.00 },
+  { x:  4.0, z: -3.5, ry: -0.10 },
 ] : [
-  { x: -8.4,  z: -5.0, ry:  0.11 },  // stânga
-  { x:  0.00, z: -5.0, ry:  0.00 },  // centru
-  { x:  8.4,  z: -5.0, ry: -0.11 },  // dreapta
+  { x: -8.4, z: -5.0, ry:  0.11 },
+  { x:  0.0, z: -5.0, ry:  0.00 },
+  { x:  8.4, z: -5.0, ry: -0.11 },
 ];
-
+  
 panelDefs.forEach(d => {
   const fr = new THREE.Mesh(frameGeo, frameMat);
   fr.position.set(d.x, 0.4, d.z - 0.02); fr.rotation.y = d.ry;
