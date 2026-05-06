@@ -557,41 +557,7 @@ panelDefs.forEach(d => {
   scene.add(sc);
 });
 
-/* ── Logo NEXAS pe podea (sub ecranul central) ──
-   ► Pune nexas-logo.png în același folder cu index.html
-   ► Ajustează PlaneGeometry(lățime, înălțime) dacă logo-ul tău e diferit
-   ► Ajustează position.z pentru mai aproape/departe de cameră          */
-const logoLoader = new THREE.TextureLoader();
-const logoMesh = new THREE.Mesh(
-  new THREE.PlaneGeometry(5.5, 1.6),  /* ► Dimensiune logo pe podea */
-  new THREE.MeshBasicMaterial({
-    color: 0xffffff,
-    transparent: true,
-    opacity: 0.80,
-    depthWrite: false,
-  })
-);
-logoMesh.rotation.x = -Math.PI / 2;       /* Culcat pe podea */
-logoMesh.position.set(0, -3.08, -3.5);    /* ► z = distanța față de camere */
-logoMesh.visible = false;                  /* Ascuns până se încarcă textura */
-scene.add(logoMesh);
 
-logoLoader.load(
-  'nexas-logo.png',
-  (tex) => {
-    /* Textură încărcată cu succes */
-    logoMesh.material.map = tex;
-    logoMesh.material.needsUpdate = true;
-    logoMesh.visible = true;
-  },
-  undefined,
-  () => {
-    /* Dacă poza nu există, afișăm un placeholder simplu */
-    logoMesh.material.color.set(0x4a7ab4);
-    logoMesh.material.opacity = 0.15;
-    logoMesh.visible = true;
-  }
-);
 
 /* ── Spoturi tavan (sfere emissive + PointLights) ── */
 const spotDefs = [
