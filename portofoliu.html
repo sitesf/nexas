@@ -370,7 +370,96 @@
 </head>
 
 <body>
+  <!-- =========================================================
+       2. <body> — HTML: loader, nav, canvas, texte
+  ========================================================= -->
 
+  <div id="loader">
+    <div class="loader-box">
+      <span>NEXAS</span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="#" class="brand">NEXAS</a>
+    <div class="nav-links">
+      <a href="#proiecte">Proiecte</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <canvas id="webgl"></canvas>
+
+  <main class="page">
+    <header class="hero">
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="dot"></span> Portofoliu cinematic 3D</div>
+          <h1>Construiesc <span class="grad">experiente digitale</span>.</h1>
+          <p>O pagina de prezentare pentru proiectele mele. Email dashboard, automatizari Excel, social media AI si site-uri moderne.</p>
+
+          <div class="btns">
+            <a href="#proiecte" class="btn primary">Vezi proiectele</a>
+            <a href="#contact" class="btn">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="spacer"></div>
+
+    <section id="proiecte" class="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Proiecte selectate</h2>
+          <p>Incarca imaginile in acelasi folder cu acest fisier. Foloseste exact numele: poza1email.jpg, poza1excel.jpg, poza1social.jpg.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project">
+            <div>
+              <small>Email automation</small>
+              <h3>Dashboard email</h3>
+              <p>Raport vizual pentru indicatori, tabele, totaluri si rezultate trimise automat pe email.</p>
+            </div>
+            <img src="poza1email.jpg" alt="Dashboard email">
+          </article>
+
+          <article class="project">
+            <div>
+              <small>Excel workflow</small>
+              <h3>Automatizare Excel</h3>
+              <p>Flux pentru fisiere, verificari, comparatii, curatare date si procese repetitive.</p>
+            </div>
+            <img src="poza1excel.jpg" alt="Automatizare Excel">
+          </article>
+
+          <article class="project">
+            <div>
+              <small>AI content</small>
+              <h3>Social Media AI</h3>
+              <p>Generare idei, texte, structura vizuala si continut pregatit pentru promovare.</p>
+            </div>
+            <img src="poza1social.jpg" alt="Social media AI">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <h2>Ai un proiect?</h2>
+          <p class="section-head" style="margin-bottom:28px;color:var(--muted);line-height:1.7;">Pot construi o pagina de prezentare, o automatizare sau un demo rapid pentru ideea ta.</p>
+          <a href="mailto:contact@nexas.ro" class="btn primary">Scrie-mi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 NEXAS. Proiecte digitale si automatizari.</footer>
+
+  <script type="module">
     /* =========================================================
        3. <script> — JavaScript Three.js
     ========================================================= */
