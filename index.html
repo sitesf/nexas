@@ -105,7 +105,12 @@ nav.on { opacity: 1; }
   text-decoration: none; letter-spacing: .02em; transition: color .2s;
 }
 .nav-links a:hover { color: #fff; }
-@media (max-width: 640px) { .nav-links { display: none; } }
+@media (max-width: 640px) {
+  .nav-links { display: flex; gap: 14px; }
+  .nav-links a { font-size: 11px; letter-spacing: .01em; }
+  .nav-brand { display: none; }
+  nav { justify-content: center; }
+}
 
 /* ══════════════════════
    TEXT OVERLAY
