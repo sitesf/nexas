@@ -486,21 +486,7 @@ floor.position.y = -3.1;
 floor.receiveShadow = true;
 scene.add(floor);
 
-/* ── Tavan ── */
-const ceiling = new THREE.Mesh(
-  new THREE.PlaneGeometry(24, 20),
-  new THREE.MeshStandardMaterial({ color: 0x050709, roughness: 0.95 })
-);
-ceiling.rotation.x = Math.PI / 2;
-ceiling.position.y = 5.8;
-scene.add(ceiling);
 
-/* ── Pereți ── */
-const wallMat = new THREE.MeshStandardMaterial({ color: 0x030405, roughness: 0.98 });
-const wallL = new THREE.Mesh(new THREE.PlaneGeometry(20, 11), wallMat);
-wallL.position.set(-9.5, 1.2, -3); wallL.rotation.y = Math.PI/2; scene.add(wallL);
-const wallR = new THREE.Mesh(new THREE.PlaneGeometry(20, 11), wallMat);
-wallR.position.set(9.5, 1.2, -3); wallR.rotation.y = -Math.PI/2; scene.add(wallR);
 
 /* ── Canvas texture pentru panouri (gradient animat blob/val) ──
    Repictat la fiecare frame cu time pentru efect live
@@ -585,21 +571,6 @@ panelDefs.forEach(d => {
 });
 
 
-
-/* ── Spoturi tavan (sfere emissive + PointLights) ── */
-const spotDefs = [
-  [-4,5.65,-1.5],[-2.2,5.65,-1.5],[0,5.65,-1.5],[2.2,5.65,-1.5],[4,5.65,-1.5],
-  [-3.1,5.65,0.5],[-1,5.65,0.5],[1,5.65,0.5],[3.1,5.65,0.5],
-  [-4,5.65,2.5],[-2.2,5.65,2.5],[0,5.65,2.5],[2.2,5.65,2.5],[4,5.65,2.5],
-];
-const spotBulbGeo = new THREE.SphereGeometry(0.055, 6, 6);
-const spotBulbMat = new THREE.MeshBasicMaterial({ color: 0xfff8ee });
-spotDefs.forEach(([x,y,z]) => {
-  const bulb = new THREE.Mesh(spotBulbGeo, spotBulbMat);
-  bulb.position.set(x,y,z); scene.add(bulb);
-  const pl = new THREE.PointLight(0xfff8ee, 0.22, 10);
-  pl.position.set(x, y-0.12, z); scene.add(pl);
-});
 
 
 /* ══════════════════════════════════════════════════════════════
