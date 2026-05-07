@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preview Site Demo | NEXAS</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #010308;
+      --card: rgba(7, 14, 30, 0.78);
+      --blue: #5aa6ff;
+      --blue-strong: #1473ff;
+      --text: #eef3fb;
+      --muted: #8b99ad;
+      --border: rgba(90, 166, 255, 0.24);
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, rgba(90, 166, 255, 0.16), transparent 34%),
+        radial-gradient(circle at 80% 70%, rgba(20, 115, 255, 0.10), transparent 30%),
+        var(--bg);
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    .demo-preview {
+      min-height: 100vh;
+      padding: 90px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .preview-grid {
+      width: min(1180px, 100%);
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .preview-copy span {
+      display: inline-flex;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.26em;
+      margin-bottom: 18px;
+    }
+
+    .preview-copy h1 {
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      margin-bottom: 20px;
+    }
+
+    .preview-copy h1 em {
+      color: var(--blue);
+      font-style: normal;
+    }
+
+    .preview-copy p {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.7;
+      max-width: 520px;
+      margin-bottom: 30px;
+    }
+
+    .preview-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(90deg, var(--blue-strong), #0b47c9);
+      box-shadow: 0 12px 34px rgba(20, 115, 255, 0.32);
+    }
+
+    .btn-secondary {
+      color: var(--blue);
+      border: 1px solid var(--border);
+      background: rgba(90, 166, 255, 0.06);
+    }
+
+    .preview-shell {
+      position: relative;
+      padding: 14px;
+      border-radius: 34px;
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01)),
+        rgba(3, 8, 18, 0.72);
+      box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.6),
+        0 0 70px rgba(90, 166, 255, 0.10);
+      overflow: hidden;
+    }
+
+    .preview-topbar {
+      height: 34px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(90, 166, 255, 0.55);
+      box-shadow: 0 0 12px rgba(90, 166, 255, 0.45);
+    }
+
+    .preview-window {
+      height: 520px;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .preview-window iframe {
+      width: 1440px;
+      height: 1900px;
+      border: 0;
+      transform-origin: top left;
+      animation: scrollPreview 15s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes scrollPreview {
+      0%, 13% {
+        transform: scale(0.56) translateY(0);
+      }
+
+      42%, 56% {
+        transform: scale(0.56) translateY(-430px);
+      }
+
+      84%, 100% {
+        transform: scale(0.56) translateY(-900px);
+      }
+    }
+
+    .shine {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.10) 45%, transparent 70%);
+      transform: translateX(-120%);
+      animation: shineMove 5s ease-in-out infinite;
+    }
+
+    @keyframes shineMove {
+      0%, 45% { transform: translateX(-120%); }
+      75%, 100% { transform: translateX(120%); }
+    }
+
+    @media (max-width: 900px) {
+      .demo-preview {
+        padding: 60px 18px;
+      }
+
+      .preview-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .preview-copy {
+        text-align: center;
+      }
+
+      .preview-copy p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .preview-actions {
+        justify-content: center;
+      }
+
+      .preview-window {
+        height: 430px;
+      }
+
+      .preview-window iframe {
+        width: 1180px;
+        height: 1800px;
+        animation: scrollPreviewMobile 14s ease-in-out infinite;
+      }
+
+      @keyframes scrollPreviewMobile {
+        0%, 13% {
+          transform: scale(0.36) translateY(0);
+        }
+
+        45%, 58% {
+          transform: scale(0.36) translateY(-520px);
+        }
+
+        84%, 100% {
+          transform: scale(0.36) translateY(-980px);
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="demo-preview">
+    <div class="preview-grid">
+
+      <div class="preview-copy">
+        <span>DEMO LIVE</span>
+        <h1>Un site prezentat ca un <em>preview video</em></h1>
+        <p>
+          Pagina ruleaza automat in miniatura. Clientul vede designul, structura si atmosfera site-ului fara sa fie nevoie sa faci o filmare separata.
+        </p>
+
+        <div class="preview-actions">
+          <a href="florile-anei-index.html" class="btn btn-primary">Vezi demo complet</a>
+          <a href="contact.html" class="btn btn-secondary">Cere un site similar</a>
+        </div>
+      </div>
+
+      <div class="preview-shell">
+        <div class="preview-topbar">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <strong style="margin-left:10px; color:#eef3fb;">florile-anei.ro</strong>
+        </div>
+
+        <div class="preview-window">
+          <iframe src="florile-anei-index.html" title="Demo Florile Anei"></iframe>
+        </div>
+
+        <div class="shine"></div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
