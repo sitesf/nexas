@@ -279,9 +279,6 @@ nav.on { opacity: 1; }
 
 <!-- ════ TEXT OVERLAY ════ -->
 <div id="text-layer">
-  <div class="middle-screen-text">
-  <p>Design modern, experiente interactive si site-uri construite pentru impact vizual.</p>
-</div>
 
   <!-- FRAME 0 — Navy Blue -->
   <div class="frame-text" data-frame="0">
@@ -557,113 +554,53 @@ paintScreen(FRAMES[0].gradA, FRAMES[0].gradB, 0);
 
 const panelMat = new THREE.MeshBasicMaterial({ map: scrTex });
 
-/* ── Dimensiuni panouri responsive ──
-   Scop: panouri mari, dar toate 3 vizibile pe desktop si mobil */
-
-let PANEL_W, PANEL_H, panelDefs;
-
-if (isMobile) {
-  PANEL_W = 2.45;
-  PANEL_H = 5.7;
-
-  panelDefs = [
-    { x: -2.65, z: -4.1, ry:  0.08 },
-    { x:  0.00, z: -4.2, ry:  0.00 },
-    { x:  2.65, z: -4.1, ry: -0.08 },
-  ];
-} else {
-  PANEL_W = 5.85;
-  PANEL_H = 8.6;
-
-  panelDefs = [
-    { x: -6.05, z: -6.2, ry:  0.08 },
-    { x:  0.00, z: -6.3, ry:  0.00 },
-    { x:  6.05, z: -6.2, ry: -0.08 },
-  ];
-}
-
+/* ── Dimensiuni panouri — responsive ──
+   Desktop: mari și spectaculoase | Mobile: mici, toate 3 vizibile
+   ► PANEL_W / PANEL_H = ajustează după gust */
+const PANEL_W = isMobile ? 3.8  : 8.15;
+const PANEL_H = isMobile ? 8  : 12.0;
 const panelGeo = new THREE.PlaneGeometry(PANEL_W, PANEL_H);
-const frameGeo = new THREE.PlaneGeometry(PANEL_W + 0.14, PANEL_H + 0.14);
+const frameGeo = new THREE.PlaneGeometry(PANEL_W + 0.18, PANEL_H + 0.18);
 const frameMat = new THREE.MeshBasicMaterial({ color: 0x030303 });
 
+/* Toate 3 panouri la ACEEAȘI adâncime z = -5.0 → dimensiuni egale
+   ► Ajustează x pentru spacing între panouri                      */
+const panelDefs = isMobile ? [
+  { x: -4.0, z: -3.5, ry:  0.10 },
+  { x:  0.0, z: -3.2, ry:  0.00 },
+  { x:  4.0, z: -3.5, ry: -0.10 },
+] : [
+  { x: -8.4, z: -5.0, ry:  0.11 },
+  { x:  0.0, z: -5.0, ry:  0.00 },
+  { x:  8.4, z: -5.0, ry: -0.11 },
+];
+  
 panelDefs.forEach(d => {
   const fr = new THREE.Mesh(frameGeo, frameMat);
-  fr.position.set(d.x, 0.4, d.z - 0.02);
-  fr.rotation.y = d.ry;
+  fr.position.set(d.x, 0.4, d.z - 0.02); fr.rotation.y = d.ry;
   scene.add(fr);
-
   const sc = new THREE.Mesh(panelGeo, panelMat);
-  sc.position.set(d.x, 0.4, d.z);
-  sc.rotation.y = d.ry;
+  sc.position.set(d.x, 0.4, d.z); sc.rotation.y = d.ry;
   scene.add(sc);
 });
 
 
 
-/* ── Spoturi tavan realiste ── */
+/* ── Spoturi tavan (sfere emissive + PointLights) ── */
 const spotDefs = [
-  [-4,5.62,-1.5],[-2.2,5.62,-1.5],[0,5.62,-1.5],[2.2,5.62,-1.5],[4,5.62,-1.5],
-  [-3.1,5.62,0.5],[-1,5.62,0.5],[1,5.62,0.5],[3.1,5.62,0.5],
-  [-4,5.62,2.5],[-2.2,5.62,2.5],[0,5.62,2.5],[2.2,5.62,2.5],[4,5.62,2.5],
+  [-4,5.65,-1.5],[-2.2,5.65,-1.5],[0,5.65,-1.5],[2.2,5.65,-1.5],[4,5.65,-1.5],
+  [-3.1,5.65,0.5],[-1,5.65,0.5],[1,5.65,0.5],[3.1,5.65,0.5],
+  [-4,5.65,2.5],[-2.2,5.65,2.5],[0,5.65,2.5],[2.2,5.65,2.5],[4,5.65,2.5],
 ];
-
-const spotRingGeo = new THREE.CylinderGeometry(0.16, 0.18, 0.055, 32);
-const spotInnerGeo = new THREE.CylinderGeometry(0.105, 0.09, 0.035, 32);
-const spotGlowGeo = new THREE.CircleGeometry(0.095, 32);
-
-const spotRingMat = new THREE.MeshStandardMaterial({
-  color: 0x111820,
-  metalness: 0.75,
-  roughness: 0.28
-});
-
-const spotInnerMat = new THREE.MeshStandardMaterial({
-  color: 0x050607,
-  metalness: 0.35,
-  roughness: 0.45
-});
-
-const spotGlowMat = new THREE.MeshBasicMaterial({
-  color: 0xfff4dc,
-  transparent: true,
-  opacity: 0.95
-});
-
+const spotBulbGeo = new THREE.SphereGeometry(0.055, 6, 6);
+const spotBulbMat = new THREE.MeshBasicMaterial({ color: 0xfff8ee });
 spotDefs.forEach(([x,y,z]) => {
-  const spot = new THREE.Group();
-  spot.position.set(x, y, z);
-
-  const ring = new THREE.Mesh(spotRingGeo, spotRingMat);
-  ring.rotation.x = Math.PI / 2;
-  spot.add(ring);
-
-  const inner = new THREE.Mesh(spotInnerGeo, spotInnerMat);
-  inner.rotation.x = Math.PI / 2;
-  inner.position.y = -0.025;
-  spot.add(inner);
-
-  const glow = new THREE.Mesh(spotGlowGeo, spotGlowMat);
-  glow.rotation.x = -Math.PI / 2;
-  glow.position.y = -0.055;
-  spot.add(glow);
-
-  scene.add(spot);
-
-  const light = new THREE.SpotLight(
-    0xfff0d0,
-    0.75,
-    9,
-    Math.PI / 7,
-    0.55,
-    1.4
-  );
-
-  light.position.set(x, y - 0.08, z);
-  light.target.position.set(x, 0.2, z - 0.8);
-
-  scene.add(light);
-  scene.add(light.target);
+  const bulb = new THREE.Mesh(spotBulbGeo, spotBulbMat);
+  bulb.position.set(x,y,z); scene.add(bulb);
+  const pl = new THREE.PointLight(0xfff8ee, 0.22, 10);
+  pl.position.set(x, y-0.12, z); scene.add(pl);
 });
+
 
 /* ══════════════════════════════════════════════════════════════
    [ORB] — FORME GEOMETRICE 3D
