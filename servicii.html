@@ -19,11 +19,21 @@
   --bg:        #010308;
 }
 
+html {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
 body {
   background: var(--bg);
   font-family: -apple-system, "Geist", "SF Pro Display", system-ui, sans-serif;
   color: var(--text);
   overflow-x: hidden;
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
   /* height set by JS */
 }
 
@@ -31,9 +41,15 @@ body {
 #scene {
   position: fixed;
   top: 0; left: 0;
-  width: 100%; height: 100vh;
+  width: 100%;
+  height: 100svh;
+  min-height: 100svh;
   z-index: 0;
   display: block;
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  touch-action: pan-y;
 }
 
 /* ── LOADER ──────────────────────────────────────────────── */
@@ -628,7 +644,11 @@ h1 .ac { color: var(--blue); }
   'use strict';
 
   /* ── PAGE HEIGHT ────────────────────────────────────────── */
-  document.body.style.height = '480vh';
+  document.body.style.height = '480svh';
+
+  const isMobile = window.matchMedia('(max-width: 760px)').matches;
+  let stableW = window.innerWidth;
+  let stableH = window.innerHeight;
 
   /* ── LOADER ─────────────────────────────────────────────── */
   const loaderEl = document.getElementById('loader');
@@ -655,9 +675,13 @@ h1 .ac { color: var(--blue); }
 
   /* ── THREE.JS SETUP ─────────────────────────────────────── */
   const canvas   = document.getElementById('scene');
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  const renderer = new THREE.WebGLRenderer({
+    canvas,
+    antialias: !isMobile,
+    powerPreference: 'high-performance'
+  });
+  renderer.setPixelRatio(isMobile ? 1 : Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(stableW, stableH, false);
   renderer.toneMapping        = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.3;
 
@@ -666,7 +690,7 @@ h1 .ac { color: var(--blue); }
   scene.fog = new THREE.FogExp2(0x010308, 0.028);
 
   const camera = new THREE.PerspectiveCamera(
-    68, window.innerWidth / window.innerHeight, 0.1, 300
+    68, stableW / stableH, 0.1, 300
   );
   camera.position.set(0, 0, 9);
 
@@ -878,9 +902,12 @@ orbGroup.scale.lerp(
     }
 
     // Smooth camera descent
-    camYSmooth += (tCY - camYSmooth) * 0.07;
+    camYSmooth += (tCY - camYSmooth) * (isMobile ? 0.045 : 0.07);
     camera.position.y  = camYSmooth;
-    camera.position.x  = Math.sin(time * 0.25) * 0.12;
+
+    // Pe telefon eliminam miscarea laterala subtila.
+    // Aceasta da senzatia de ecran instabil cand utilizatorul da scroll.
+    camera.position.x  = isMobile ? 0 : Math.sin(time * 0.25) * 0.12;
     camera.lookAt(0, camYSmooth - 0.3, 0);
 
     // Orb: matches camera Y with gentle hover bob
@@ -934,10 +961,21 @@ orbGroup.scale.lerp(
 
   /* ── RESIZE ─────────────────────────────────────────────── */
   window.addEventListener('resize', () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    // Pe mobil, bara browserului apare/dispare la scroll si declanseaza resize.
+    // Ignoram aceste resize-uri mici pe inaltime ca sa nu tremure scena.
+    const newW = window.innerWidth;
+    const newH = window.innerHeight;
+    const onlyMobileBarMoved = isMobile && newW === stableW && Math.abs(newH - stableH) < 140;
+
+    if (onlyMobileBarMoved) return;
+
+    stableW = newW;
+    stableH = newH;
+
+    camera.aspect = stableW / stableH;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(stableW, stableH, false);
+    renderer.setPixelRatio(isMobile ? 1 : Math.min(window.devicePixelRatio, 2));
   });
 
 })();
