@@ -602,69 +602,6 @@ spotDefs.forEach(([x,y,z]) => {
 });
 
 
-/* ══════════════════════════════════════════════════════════════
-   [ORB] — FORME GEOMETRICE 3D
-   Se schimbă la fiecare frame cu swap-ul invizibil când forma e mică
-
-   Forme per frame:
-   0: Sferă         — simplă, pură, de start
-   1: Dodecahedron  — 12 fețe pentagonale
-   2: Octahedron    — 8 fețe, forma de diamant
-   3: Icosahedron   — 20 fețe triunghiulare
-   4: Merkaba/Stea  — 2 tetrahedre inversate (stea 3D)
-   5: Sferă         — revenire la origine
-   ══════════════════════════════════════════════════════════════ */
-
-/* Material comun pentru toate formele
-   ► shininess (0-300): mai mic = mat, mai mare = oglindă */
-const orbMat = new THREE.MeshPhongMaterial({
-  color:             new THREE.Color(FRAMES[0].orbHex),
-  emissive:          new THREE.Color(FRAMES[0].emissHex),
-  emissiveIntensity: 0.60,
-  specular:          new THREE.Color(0xffffff),
-  shininess:         240,
-});
-
-/* Geometriile pentru fiecare frame (built-in Three.js, fără librării extra) */
-const SHAPES = [
-  new THREE.SphereGeometry(1, 64, 64),       /* Frame 0: Sferă */
-  new THREE.DodecahedronGeometry(1, 0),       /* Frame 1: Dodecahedron */
-  new THREE.OctahedronGeometry(1, 0),         /* Frame 2: Octahedron (diamant) */
-  new THREE.IcosahedronGeometry(1, 0),        /* Frame 3: Icosahedron */
-  new THREE.TetrahedronGeometry(1.1, 0),      /* Frame 4: Tetrahedron (baza Merkaba) */
-  new THREE.SphereGeometry(1, 64, 64),        /* Frame 5: Sferă */
-];
-
-/* Group principal — conține forma curentă + helper Merkaba */
-const orbGroup = new THREE.Group();
-
-/* Forma principală */
-const orb = new THREE.Mesh(SHAPES[0], orbMat);
-orb.castShadow = true;
-orbGroup.add(orb);
-
-/* Al doilea tetrahedron pentru efectul Merkaba (stea) — doar pe frame 4
-   Se rotește invers față de primul pentru efectul de stea 3D spinning */
-const starHelper = new THREE.Mesh(
-  new THREE.TetrahedronGeometry(1.1, 0),
-  orbMat
-);
-starHelper.rotation.x = Math.PI;   /* Rotit invers față de primul tetrahedron */
-starHelper.visible = false;
-orbGroup.add(starHelper);
-
-scene.add(orbGroup);
-
-/* Lumina formei — urmărește poziția și culoarea */
-const orbPtLight = new THREE.PointLight(0x4a82b8, 4.0, 9.0);
-scene.add(orbPtLight);
-
-/* Variabile de stare (smooth interpolated) */
-let curOrbScale   = ORB_BIG;
-let curOrbX       = 0;
-let curOrbY       = 0;
-let curOrbZ       = 0;
-let shapeFrameIdx = -1;  /* Frame-ul pentru care s-a aplicat ultima formă */
 
 
 /* ══════════════════════════════════════════════════════════════
