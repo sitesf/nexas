@@ -1,984 +1,423 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#010308" />
-<title>NEXAS.RO - Experience</title>
-
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-:root {
-  --blue:      #5aa6ff;
-  --blue-deep: #1f6bdb;
-  --blue-dim:  #0a1a4a;
-  --text:      #eef3fb;
-  --text-dim:  #7d8da4;
-  --text-mute: #3a4a60;
-  --bg:        #010308;
-}
-
-html {
-  width: 100%;
-  min-height: 100%;
-  background: var(--bg);
-  overflow-x: hidden;
-  overscroll-behavior-y: none;
-}
-
-body {
-  background: var(--bg);
-  font-family: -apple-system, "Geist", "SF Pro Display", system-ui, sans-serif;
-  color: var(--text);
-  overflow-x: hidden;
-  overscroll-behavior-y: none;
-  -webkit-overflow-scrolling: touch;
-  /* height set by JS */
-}
-
-/* ── CANVAS ──────────────────────────────────────────────── */
-#scene {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100svh;
-  min-height: 100svh;
-  z-index: 0;
-  display: block;
-  transform: translateZ(0);
-  will-change: transform;
-  backface-visibility: hidden;
-  touch-action: pan-y;
-}
-
-/* ── LOADER ──────────────────────────────────────────────── */
-#loader {
-  position: fixed;
-  inset: 0;
-  z-index: 200;
-  background: var(--bg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  transition: opacity 0.9s cubic-bezier(0.4,0,0.2,1);
-}
-#loader.out { opacity: 0; pointer-events: none; }
-
-.loader-logo {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 0.45em;
-  color: var(--text);
-}
-.loader-logo em { color: var(--blue); font-style: normal; }
-
-.loader-bar-wrap {
-  width: 160px;
-  height: 1px;
-  background: rgba(90,166,255,0.12);
-  border-radius: 2px;
-  overflow: hidden;
-}
-.loader-bar {
-  height: 100%;
-  background: linear-gradient(90deg, var(--blue-deep), var(--blue));
-  width: 0%;
-  transition: width 0.15s ease;
-  box-shadow: 0 0 8px var(--blue);
-}
-.loader-pct {
-  font-size: 11px;
-  letter-spacing: 0.3em;
-  color: var(--blue);
-  font-variant-numeric: tabular-nums;
-  font-family: monospace;
-}
-
-/* ── NAV ─────────────────────────────────────────────────── */
-nav {
-  position: fixed;
-  top: 16px; left: 50%;
-  transform: translateX(-50%);
-  z-index: 60;
-  width: min(1100px, calc(100% - 32px));
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 11px 14px 11px 20px;
-  background: rgba(1, 3, 8, 0.72);
-  border: 1px solid rgba(90,166,255,0.12);
-  border-radius: 16px;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 16px 40px rgba(0,0,0,0.5);
-  opacity: 0;
-  transition: opacity 0.6s 1.2s ease;
-}
-nav.visible { opacity: 1; }
-
-.nav-brand {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  color: var(--text);
-}
-.nav-brand em { color: var(--blue); font-style: normal; }
-
-.nav-links { display: flex; gap: 4px; }
-.nav-links a {
-  font-size: 13px;
-  color: var(--text-dim);
-  padding: 7px 14px;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: color .2s, background .2s;
-}
-.nav-links a:hover { color: var(--text); background: rgba(90,166,255,0.08); }
-
-.nav-cta {
-  font-size: 13px;
-  font-weight: 600;
-  padding: 9px 18px;
-  border-radius: 10px;
-  background: linear-gradient(180deg, rgba(90,166,255,0.16), rgba(31,107,219,0.09));
-  border: 1px solid rgba(90,166,255,0.22);
-  color: var(--text);
-  text-decoration: none;
-  transition: transform .2s, box-shadow .2s;
-}
-.nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(31,107,219,0.3); }
-
-@media (max-width: 640px) { .nav-links { display: none; } }
-
-/* ── SECTION OVERLAYS ────────────────────────────────────── */
-.sec {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  z-index: 10;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.sec.on { pointer-events: auto; }
-
-/* Hero */
-.hero-wrap { max-width: 780px; padding: 0 24px; }
-
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 10.5px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--blue);
-  border: 1px solid rgba(90,166,255,0.25);
-  padding: 5px 14px;
-  border-radius: 100px;
-  margin-bottom: 28px;
-  font-family: monospace;
-}
-.eyebrow .dot {
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  background: var(--blue);
-  box-shadow: 0 0 8px var(--blue);
-  animation: pulse 2s ease infinite;
-}
-@keyframes pulse {
-  0%,100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}
-
-h1 {
-  font-size: clamp(46px, 8.5vw, 96px);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 0.93;
-  margin-bottom: 22px;
-}
-h1 .ac { color: var(--blue); }
-
-.hero-sub {
-  font-size: 17px;
-  color: var(--text-dim);
-  max-width: 440px;
-  margin: 0 auto 44px;
-  line-height: 1.65;
-}
-
-.scroll-hint {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  font-size: 10px;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--text-mute);
-  font-family: monospace;
-  animation: float 2.4s ease-in-out infinite;
-}
-@keyframes float {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(7px); }
-}
-.scroll-hint svg { opacity: 0.5; }
-
-/* Ring content cards (left/right) */
-.ring-card {
-  position: absolute;
-  max-width: 320px;
-  text-align: left;
-  padding: 28px 30px;
-  background: rgba(1,3,8,0.55);
-  border: 1px solid rgba(90,166,255,0.14);
-  border-radius: 18px;
-  backdrop-filter: blur(16px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.03) inset;
-}
-.ring-card.right { left: calc(50% + 160px); }
-.ring-card.left  { right: calc(50% + 160px); }
-
-.card-tag {
-  font-size: 10px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--blue);
-  font-family: monospace;
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.card-tag::before {
-  content: '';
-  display: block;
-  width: 18px; height: 1px;
-  background: var(--blue);
-  opacity: 0.6;
-}
-
-.ring-card h2 {
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-  line-height: 1.15;
-  margin-bottom: 10px;
-}
-.ring-card p {
-  font-size: 13.5px;
-  color: var(--text-dim);
-  line-height: 1.65;
-}
-
-.ring-card.service-card {
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(180deg, rgba(10,20,42,.82), rgba(1,3,8,.72));
-  border-color: rgba(90,166,255,.30);
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,.04) inset,
-    0 22px 70px rgba(0,0,0,.58),
-    0 0 46px rgba(90,166,255,.12);
-}
-.ring-card.service-card h2 {
-  font-size: clamp(24px, 2.3vw, 34px);
-}
-.ring-card.service-card .num {
-  position: absolute;
-  top: 26px;
-  left: 30px;
-  font-family: monospace;
-  color: var(--blue);
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: .18em;
-}
-.ring-card.service-card:hover {
-  border-color: rgba(90,166,255,.55);
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,.06) inset,
-    0 26px 90px rgba(0,0,0,.66),
-    0 0 80px rgba(90,166,255,.22);
-}
-
-@media (max-width: 880px) {
-  .ring-card { max-width: 280px; }
-  .ring-card.right { left: auto; right: 12px; }
-  .ring-card.left  { right: auto; left: 12px; }
-}
-@media (max-width: 600px) {
-  .ring-card.right, .ring-card.left {
-    position: relative;
-    left: auto; right: auto;
-    max-width: 100%;
-    margin: 0 20px;
-    text-align: center;
-  }
-  .ring-card { position: relative !important; }
-  .sec { justify-content: flex-end; padding-bottom: 80px; }
-}
-
-/* CTA */
-.cta-wrap { max-width: 580px; padding: 0 24px; }
-.cta-wrap h2 {
-  font-size: clamp(32px, 5.5vw, 58px);
-  font-weight: 700;
-  letter-spacing: -0.035em;
-  line-height: 1.05;
-  margin-bottom: 18px;
-}
-.cta-wrap h2 em { color: var(--blue); font-style: normal; }
-.cta-wrap p {
-  font-size: 16px;
-  color: var(--text-dim);
-  margin-bottom: 36px;
-  line-height: 1.6;
-}
-.cta-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 22px 46px;
-  min-width: 260px;
-  font-size: 20px;
-  font-weight: 800;
-  border-radius: 18px;
-}
-  color: #fff;
-  font-size: 15px;
-  font-weight: 700;
-  text-decoration: none;
-  letter-spacing: -0.01em;
-  box-shadow: 0 8px 32px rgba(31,107,219,0.45), 0 1px 0 rgba(255,255,255,0.15) inset;
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-.cta-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 48px rgba(31,107,219,0.55), 0 1px 0 rgba(255,255,255,0.2) inset; }
-
-
-
-/* ── FUTURISTIC SIDE BUILDINGS ───────────────────────────── */
-#side-buildings {
-  position: fixed;
-  inset: 0;
-  z-index: 2;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.building {
-  position: absolute;
-  bottom: -6vh;
-  width: min(28vw, 360px);
-  height: 82vh;
-  opacity: var(--bopacity, .92);
-  filter: drop-shadow(0 0 var(--bglow, 38px) rgba(90,166,255,var(--balpha, .18)));
-  transform: translateY(var(--bmove, 0px));
-  transition: transform .08s linear;
-}
-
-.building.left {
-  left: -4vw;
-}
-
-.building.right {
-  right: -4vw;
-  transform: translateY(var(--bmove, 0px)) scaleX(-1);
-}
-
-.tower {
-  position: absolute;
-  bottom: 0;
-  width: 42%;
-  border: 1px solid rgba(90,166,255,.16);
-  background:
-    linear-gradient(90deg, rgba(255,255,255,.08) 0 1px, transparent 1px 24px),
-    linear-gradient(0deg, rgba(90,166,255,.18) 0 1px, transparent 1px 34px),
-    linear-gradient(180deg, rgba(8,20,54,.88), rgba(1,3,8,.98));
-  box-shadow:
-    inset 0 0 40px rgba(90,166,255,.08),
-    0 0 70px rgba(31,107,219,var(--tower-alpha, .13));
-  clip-path: polygon(10% 0, 100% 6%, 92% 100%, 0 100%);
-}
-
-.tower::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, transparent 0 42%, rgba(90,166,255,.18) 43%, transparent 47% 100%);
-  opacity: .75;
-}
-
-.tower::after {
-  content: '';
-  position: absolute;
-  top: 10%;
-  left: 16%;
-  width: 58%;
-  height: 1px;
-  background: rgba(90,166,255,.75);
-  box-shadow:
-    0 60px rgba(90,166,255,.42),
-    0 120px rgba(90,166,255,.36),
-    0 180px rgba(90,166,255,.28),
-    0 240px rgba(90,166,255,.22),
-    0 300px rgba(90,166,255,.18);
-}
-
-.tower.t1 { left: 4%;  height: 82%; }
-.tower.t2 { left: 34%; height: 100%; width: 48%; }
-.tower.t3 { left: 70%; height: 62%; width: 34%; opacity: .76; }
-
-@media (max-width: 760px) {
-  .building {
-    width: 38vw;
-    height: 58vh;
-    opacity: .46;
-  }
-  .building.left { left: -18vw; }
-  .building.right { right: -18vw; }
-}
-
-/* ── PROGRESS SIDEBAR ────────────────────────────────────── */
-#progress-sidebar {
-  position: fixed;
-  left: 20px; top: 50%;
-  transform: translateY(-50%);
-  z-index: 30;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.pd {
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  border: 1px solid rgba(90,166,255,0.3);
-  transition: background .3s, box-shadow .3s, transform .3s;
-}
-.pd.on {
-  background: var(--blue);
-  box-shadow: 0 0 12px rgba(90,166,255,0.7);
-  transform: scale(1.3);
-}
-@media (max-width: 600px) { #progress-sidebar { display: none; } }
-
-/* ── RING PASS FLASH ────────────────────────────────────── */
-#ring-flash {
-  position: fixed;
-  inset: 0;
-  z-index: 5;
-  pointer-events: none;
-  background: radial-gradient(ellipse 60% 40% at 50% 50%, rgba(90,166,255,0.18), transparent 70%);
-  opacity: 0;
-  transition: opacity 0.1s ease;
-}
-
-  .cta-btn,
-.cta-btn:visited {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  padding: 22px 52px !important;
-  min-width: 280px !important;
-
-  background: linear-gradient(180deg, #ffffff, #dbeaff) !important;
-  color: #020711 !important;
-
-  border: 1px solid rgba(255,255,255,0.75) !important;
-  border-radius: 18px !important;
-
-  font-size: 20px !important;
-  font-weight: 800 !important;
-  text-decoration: none !important;
-  letter-spacing: 0.02em !important;
-
-  box-shadow:
-    0 0 30px rgba(90,166,255,0.55),
-    0 12px 40px rgba(0,0,0,0.45) !important;
-
-  animation: contactBreath 2.4s ease-in-out infinite !important;
-}
-
-.cta-btn:hover {
-  color: #020711 !important;
-  transform: scale(1.08) !important;
-}
-
-@keyframes contactBreath {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow:
-      0 0 30px rgba(90,166,255,0.55),
-      0 12px 40px rgba(0,0,0,0.45);
-  }
-
-  50% {
-    transform: scale(1.07);
-    box-shadow:
-      0 0 55px rgba(255,255,255,0.75),
-      0 0 80px rgba(90,166,255,0.75);
-  }
-}
-  
-</style>
-</head>
-<body>
-
-<!-- Loader -->
-<div id="loader">
-<div class="loader-logo">N<em>E</em>XAS</div>
-  <div class="loader-bar-wrap"><div class="loader-bar" id="lbar"></div></div>
-  <div class="loader-pct" id="lpct">0%</div>
-</div>
-
-<!-- Nav -->
-<nav id="nav">
-  <div class="nav-brand">NEX<em>A</em>S</div>
-  <div class="nav-links">
-    <a href="index.html">Prima Pagina</a>
-      <a href="index.html">Portofoliu</a>
-   <a href="contact.html">Contact</a>
-  </div>
-  <a href="tel:+40764639118" class="nav-cta">Contactează-ne</a>
-</nav>
-
-<!-- 3D Canvas -->
-<canvas id="scene"></canvas>
-
-<!-- Ring flash overlay -->
-<div id="ring-flash"></div>
-
-<!-- Futuristic side buildings -->
-<div id="side-buildings" aria-hidden="true">
-  <div class="building left">
-    <span class="tower t1"></span>
-    <span class="tower t2"></span>
-    <span class="tower t3"></span>
-  </div>
-  <div class="building right">
-    <span class="tower t1"></span>
-    <span class="tower t2"></span>
-    <span class="tower t3"></span>
-  </div>
-</div>
-
-
-<!-- ── SECTION 0: HERO ── -->
-<div class="sec" id="s0">
-  <div class="hero-wrap">
-    <div class="eyebrow"><span class="dot"></span>nexas.ro — Construiesc experiente digitala</div>
-    <div class="scroll-hint">
-      <span>scroll</span>
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-        <path d="M9 3v12M9 15l-4-4M9 15l4-4" stroke="#5aa6ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-  </div>
-</div>
-
-<!-- ── SECTION 1: CERC 1 ── -->
-<div class="sec" id="s1">
-  <div class="ring-card service-card left">
-    <h2>Creare si dezvoltare site-uri web de prezentare</h2>
-    <p>Construim site-uri moderne, rapide si responsive, potrivite pentru firme care vor sa inspire incredere.</p>
-  </div>
-  <div class="ring-card service-card right">
-    <h2>Integrari API intre sisteme software</h2>
-    <p>Conectam aplicatii, formulare, CRM-uri, baze de date si platforme externe pentru fluxuri automate.</p>
-  </div>
-</div>
-
-<!-- ── SECTION 2: CERC 2 ── -->
-<div class="sec" id="s2">
-  <div class="ring-card service-card left">
-    <h2>Optimizare SEO si performanta web</h2>
-    <p>Optimizam structura, viteza, meta datele si continutul pentru o prezenta mai buna in Google.</p>
-  </div>
-  <div class="ring-card service-card right">
-    <h2>Gestionare Social Media</h2>
-    <p>Pregatim idei, texte si directii vizuale pentru postari clare pe Facebook, Instagram, TikTok sau LinkedIn.</p>
-  </div>
-</div>
-
-<!-- ── SECTION 3: CERC 3 CONTACT ── -->
-<div class="sec" id="s3">
-  <div class="cta-wrap">
-   <div id="cta-btns">
-
-     
-  <a href="https://nexas.ro/contact.html" class="cta-btn">Contact</a>
-</div>
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-        <path d="M3 9h12M10 5l5 4-5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-  </div>
-</div>
-
-<!-- Progress sidebar -->
-<div id="progress-sidebar">
-  <div class="pd on" data-i="0"></div>
-  <div class="pd" data-i="1"></div>
-  <div class="pd" data-i="2"></div>
-  <div class="pd" data-i="3"></div>
-</div>
-
-<!-- Three.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-<script>
-(function () {
-  'use strict';
-
-  /* ── PAGE HEIGHT ────────────────────────────────────────── */
-  document.body.style.height = '480svh';
-
-  const isMobile = window.matchMedia('(max-width: 760px)').matches;
-  let stableW = window.innerWidth;
-  let stableH = window.innerHeight;
-
-  /* ── LOADER ─────────────────────────────────────────────── */
-  const loaderEl = document.getElementById('loader');
-  const lbar     = document.getElementById('lbar');
-  const lpct     = document.getElementById('lpct');
-  const nav      = document.getElementById('nav');
-  let pct = 0;
-  const tid = setInterval(() => {
-    pct += Math.floor(Math.random() * 11 + 5);
-    if (pct >= 100) {
-      pct = 100;
-      clearInterval(tid);
-      lbar.style.width = '100%';
-      lpct.textContent = '100%';
-      setTimeout(() => {
-        loaderEl.classList.add('out');
-        nav.classList.add('visible');
-      }, 420);
-    } else {
-      lbar.style.width = pct + '%';
-      lpct.textContent = pct + '%';
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preturi NEXAS</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-  }, 100);
 
-  /* ── THREE.JS SETUP ─────────────────────────────────────── */
-  const canvas   = document.getElementById('scene');
-  const renderer = new THREE.WebGLRenderer({
-    canvas,
-    antialias: !isMobile,
-    powerPreference: 'high-performance'
-  });
-  renderer.setPixelRatio(isMobile ? 1 : Math.min(window.devicePixelRatio, 2));
-  renderer.setSize(stableW, stableH, false);
-  renderer.toneMapping        = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.3;
-
-  const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x010308);
-  scene.fog = new THREE.FogExp2(0x010308, 0.028);
-
-  const camera = new THREE.PerspectiveCamera(
-    68, stableW / stableH, 0.1, 300
-  );
-  camera.position.set(0, 0, 9);
-
-  /* ── STARS ──────────────────────────────────────────────── */
-  function makeStars(count, spread, size, color) {
-    const geo = new THREE.BufferGeometry();
-    const pos = new Float32Array(count * 3);
-    for (let i = 0; i < count; i++) {
-      pos[i * 3]     = (Math.random() - 0.5) * spread;
-      pos[i * 3 + 1] = (Math.random() - 0.5) * spread;
-      pos[i * 3 + 2] = (Math.random() - 0.5) * spread * 0.5 - 10;
+    :root {
+      --bg: #010308;
+      --card: rgba(4, 10, 22, 0.78);
+      --border: rgba(90, 166, 255, 0.22);
+      --blue: #5aa6ff;
+      --blue-strong: #1473ff;
+      --text: #eef3fb;
+      --muted: #8b99ad;
+      --green: #00d084;
+      --red: #ff3158;
+      --purple: #a66cff;
     }
-    geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-    return new THREE.Points(geo, new THREE.PointsMaterial({
-      size, color, transparent: true, opacity: 0.85, sizeAttenuation: true
-    }));
-  }
 
-  const smallStars = makeStars(5000, 300, 0.14, 0xb0ccff);
-  const midStars   = makeStars(400,  200, 0.35, 0x8ec7ff);
-  const bigStars   = makeStars(80,   150, 0.7,  0xffeedd);
-  scene.add(smallStars, midStars, bigStars);
-
-  /* ── NEBULA CLOUDS ──────────────────────────────────────── */
-  const nebulaDefs = [
-    { x: 18,  y: -8,  z: -50, r: 30, c: 0x08155a, o: 0.14 },
-    { x: -22, y: -20, z: -60, r: 38, c: 0x130832, o: 0.11 },
-    { x: 8,   y: -40, z: -70, r: 42, c: 0x0a2040, o: 0.10 },
-    { x: -14, y: -55, z: -55, r: 35, c: 0x1a0855, o: 0.09 },
-  ];
-  nebulaDefs.forEach(d => {
-    const m = new THREE.Mesh(
-      new THREE.SphereGeometry(d.r, 12, 12),
-      new THREE.MeshBasicMaterial({ color: d.c, transparent: true, opacity: d.o, side: THREE.BackSide })
-    );
-    m.position.set(d.x, d.y, d.z);
-    scene.add(m);
-  });
-
-  /* ── ORB ────────────────────────────────────────────────── */
-  const orbGroup = new THREE.Group();
-
-  // Core
-  const orbCore = new THREE.Mesh(
-    new THREE.SphereGeometry(1.25, 64, 64),
-    new THREE.MeshPhongMaterial({
-      color: 0x163060,
-      emissive: 0x0a1840,
-      emissiveIntensity: 0.8,
-      specular: 0x6ab8ff,
-      shininess: 180,
-    })
-  );
-  orbGroup.add(orbCore);
-
-  // Inner bright spot
-  const orbInner = new THREE.Mesh(
-    new THREE.SphereGeometry(0.7, 32, 32),
-    new THREE.MeshBasicMaterial({ color: 0x3a80e0, transparent: true, opacity: 0.45 })
-  );
-  orbGroup.add(orbInner);
-
-
-  scene.add(orbGroup);
-
-  /* ── RINGS ──────────────────────────────────────────────── */
-  // y positions in 3D space — orb descends through each
-  const RING_Y = [-5.5, -11, -16.5];
-  const rings  = [];
-
-  RING_Y.forEach((y, i) => {
-    const baseRadius = 3.0 + i * 0.28;
-    const tube       = 0.052;
-
-    // Main torus
-    const mat = new THREE.MeshPhongMaterial({
-  color:            0xffffff,
-  emissive:         0xffffff,
-  emissiveIntensity: 0.8,
-  specular:         0xffffff,
-  shininess:        250,
-  transparent:      true,
-  opacity:          1,
-});
-    const torus = new THREE.Mesh(new THREE.TorusGeometry(baseRadius, tube, 22, 130), mat);
-    torus.position.y = y;
-    torus.rotation.x = (Math.random() - 0.5) * 0.22;
-    torus.rotation.z = (Math.random() - 0.5) * 0.12;
-    scene.add(torus);
-
-    // Glow aura (wide, very transparent)
-    const glowMat = { opacity: 0 };
-const glow = { rotation: torus.rotation };
-
-    // Particle ring (floating dots around each ring)
-    const pCount = 60;
-    const pGeo   = new THREE.BufferGeometry();
-    const pPos   = new Float32Array(pCount * 3);
-    for (let j = 0; j < pCount; j++) {
-      const angle = (j / pCount) * Math.PI * 2;
-      const r     = baseRadius + (Math.random() - 0.5) * 0.6;
-      pPos[j * 3]     = Math.cos(angle) * r;
-      pPos[j * 3 + 1] = (Math.random() - 0.5) * 0.4;
-      pPos[j * 3 + 2] = Math.sin(angle) * r;
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(20, 90, 255, 0.18), transparent 35%),
+        radial-gradient(circle at 80% 80%, rgba(166, 108, 255, 0.12), transparent 30%),
+        var(--bg);
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      padding: 80px 6%;
     }
-    pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
-    const particles = new THREE.Points(pGeo, new THREE.PointsMaterial({
-      size: 0.06, color: 0x8ec7ff, transparent: true, opacity: 0.5, sizeAttenuation: true
-    }));
-    particles.position.copy(torus.position);
-    particles.rotation.copy(torus.rotation);
-    scene.add(particles);
 
-    rings.push({ torus, glow, particles, mat, glowMat, y, baseRadius });
-  });
+    .pricing {
+      max-width: 1400px;
+      margin: auto;
+    }
 
-  /* ── LIGHTS ─────────────────────────────────────────────── */
-  scene.add(new THREE.AmbientLight(0x1a2a50, 1.4));
+    .pricing-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
 
-  const orbLight = new THREE.PointLight(0x5aa6ff, 4.0, 10);
-  scene.add(orbLight);
+    .pricing-kicker {
+      color: var(--blue);
+      letter-spacing: 0.28em;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
 
-  const rimLight = new THREE.DirectionalLight(0x4a8aff, 1.0);
-  rimLight.position.set(-6, 4, 4);
-  scene.add(rimLight);
+    .pricing-header h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
 
-  // Ring accent lights (one per ring)
-  const ringLights = RING_Y.map(y => {
-    const l = new THREE.PointLight(0x5aa6ff, 0.6, 12);
-    l.position.set(0, y, 0);
-    scene.add(l);
-    return l;
-  });
+    .pricing-header h1 span {
+      color: var(--blue-strong);
+    }
 
-  /* ── SECTION OVERLAY LOGIC ───────────────────────────────── */
-  const sections = [
-    document.getElementById('s0'),
-    document.getElementById('s1'),
-    document.getElementById('s2'),
-    document.getElementById('s3'),
-  ];
-  const dots = document.querySelectorAll('.pd');
-  const flashEl = document.getElementById('ring-flash');
-  const sideBuildings = document.getElementById('side-buildings');
+    .pricing-header p {
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
 
-  // Progress center for each section (0..1)
-  // Ring 1 = servicii 01/02, Ring 2 = servicii 03/04, Ring 3 = contact
-  const SEC_CENTERS = [0.05, 0.30, 0.58, 0.88];
-  const SEC_HALF    = 0.12;
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
 
-  function updateSections(p) {
-    let activeIdx = 0;
-    sections.forEach((sec, i) => {
-      const dist = Math.abs(p - SEC_CENTERS[i]);
-      const op   = Math.max(0, 1 - dist / SEC_HALF);
-      sec.style.opacity = op;
-      if (op > 0.3) { sec.classList.add('on'); activeIdx = i; }
-      else sec.classList.remove('on');
-    });
-    dots.forEach((d, i) => d.classList.toggle('on', i === activeIdx));
-  }
+    .plan {
+      position: relative;
+      background: linear-gradient(180deg, rgba(7, 16, 34, 0.9), rgba(2, 5, 12, 0.92));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 34px;
+      min-height: 620px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+    }
 
-  /* ── RING FLASH ─────────────────────────────────────────── */
-  let lastFlashRing = -1;
-  function checkRingFlash(orbY) {
-    rings.forEach((ring, i) => {
-      const dist = Math.abs(orbY - ring.y);
-      if (dist < 0.35 && lastFlashRing !== i) {
-        lastFlashRing = i;
-        flashEl.style.opacity = '1';
-        setTimeout(() => { flashEl.style.opacity = '0'; }, 180);
-        // Reset after leaving
-        setTimeout(() => { lastFlashRing = -1; }, 1500);
+    .plan.popular {
+      border-color: rgba(20, 115, 255, 0.85);
+      box-shadow:
+        0 0 0 1px rgba(20, 115, 255, 0.25),
+        0 0 55px rgba(20, 115, 255, 0.22);
+      transform: translateY(-14px);
+    }
+
+    .badge {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(90deg, #1473ff, #0b3aa8);
+      color: white;
+      padding: 8px 24px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      white-space: nowrap;
+    }
+
+    .icon {
+      width: 58px;
+      height: 58px;
+      border: 1px solid var(--blue-strong);
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      color: var(--blue);
+      margin-bottom: 28px;
+      font-size: 26px;
+    }
+
+    .plan h2 {
+      font-size: 20px;
+      letter-spacing: 0.18em;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      color: var(--muted);
+      line-height: 1.5;
+      min-height: 48px;
+      margin-bottom: 26px;
+    }
+
+    .type {
+      display: inline-block;
+      color: var(--blue);
+      border: 1px solid rgba(90, 166, 255, 0.45);
+      border-radius: 999px;
+      padding: 7px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    .discount {
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-weight: 800;
+      margin-right: 10px;
+    }
+
+    .old-price {
+      color: var(--muted);
+      text-decoration: line-through;
+      font-size: 22px;
+    }
+
+    .price {
+      margin: 12px 0 6px;
+      font-size: 46px;
+      font-weight: 800;
+    }
+
+    .price span {
+      color: var(--blue);
+      font-size: 22px;
+    }
+
+    .per {
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      gap: 15px;
+      margin-bottom: 34px;
+    }
+
+    li {
+      color: #d6deea;
+      line-height: 1.4;
+      font-size: 15px;
+    }
+
+    li::before {
+      content: "✓";
+      color: var(--blue);
+      margin-right: 10px;
+      font-weight: 900;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 52px;
+      border-radius: 999px;
+      border: 1px solid rgba(90, 166, 255, 0.55);
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 800;
+      margin-top: auto;
+    }
+
+    .popular .btn {
+      background: linear-gradient(90deg, #1473ff, #0b49d8);
+      color: white;
+      border: none;
+    }
+
+    .one-time {
+      border-color: rgba(166, 108, 255, 0.55);
+    }
+
+    .one-time .type,
+    .one-time .price span,
+    .one-time .btn {
+      color: var(--purple);
+      border-color: rgba(166, 108, 255, 0.65);
+    }
+
+    .bottom-box {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .fixed-card {
+      background: linear-gradient(180deg, rgba(7, 16, 34, 0.9), rgba(2, 5, 12, 0.92));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px 34px;
+    }
+
+    .fixed-card h3 {
+      color: var(--blue);
+      letter-spacing: 0.12em;
+      font-size: 14px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .fixed-card p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .fixed-card .price {
+      font-size: 38px;
+      margin: 0;
+    }
+
+    @media (max-width: 1100px) {
+      .plans {
+        grid-template-columns: repeat(2, 1fr);
       }
-    });
-  }
 
-  /* ── SCROLL STATE ────────────────────────────────────────── */
-  let scrollY     = 0;
-  let camYSmooth  = 0;
-  let time        = 0;
-
-  window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
-
-  function getProgress() {
-    const max = document.documentElement.scrollHeight - window.innerHeight;
-    return max > 0 ? Math.min(1, scrollY / max) : 0;
-  }
-
-  // Camera travels from y=0 to y=RING_Y.last - 4
-  const CAM_TRAVEL = Math.abs(RING_Y[RING_Y.length - 1]) + 4; // ~26
-
-  /* ── ANIMATION LOOP ──────────────────────────────────────── */
-  function animate() {
-    requestAnimationFrame(animate);
-    time += 0.008;
-
-    const p   = getProgress();
-    const targetScale = p > 0.72 ? 2 : 1;
-orbGroup.scale.lerp(
-  new THREE.Vector3(targetScale, targetScale, targetScale),
-  0.06
-);
-    const tCY = -p * CAM_TRAVEL;
-
-    // Side buildings move slightly upward while the orb goes down
-    if (sideBuildings) {
-      sideBuildings.style.setProperty('--bmove', (-p * 140).toFixed(1) + 'px');
+      .plan.popular {
+        transform: none;
+      }
     }
 
-    // Smooth camera descent
-    camYSmooth += (tCY - camYSmooth) * (isMobile ? 0.045 : 0.07);
-    camera.position.y  = camYSmooth;
+    @media (max-width: 650px) {
+      body {
+        padding: 50px 18px;
+      }
 
-    // Pe telefon eliminam miscarea laterala subtila.
-    // Aceasta da senzatia de ecran instabil cand utilizatorul da scroll.
-    camera.position.x  = isMobile ? 0 : Math.sin(time * 0.25) * 0.12;
-    camera.lookAt(0, camYSmooth - 0.3, 0);
+      .plans,
+      .bottom-box {
+        grid-template-columns: 1fr;
+      }
 
-    // Orb: matches camera Y with gentle hover bob
-    const orbY = camYSmooth + Math.sin(time * 0.9) * 0.09;
-
-    // Light up side buildings when the orb reaches a ring
-    if (sideBuildings) {
-      const closestRingDistance = Math.min(...rings.map(ring => Math.abs(orbY - ring.y)));
-      const buildingLight = Math.max(0, 1 - closestRingDistance / 3.0);
-      sideBuildings.style.setProperty('--bglow', (38 + buildingLight * 58).toFixed(1) + 'px');
-      sideBuildings.style.setProperty('--balpha', (.18 + buildingLight * .34).toFixed(3));
-      sideBuildings.style.setProperty('--tower-alpha', (.13 + buildingLight * .28).toFixed(3));
-      sideBuildings.style.setProperty('--bopacity', (.74 + buildingLight * .26).toFixed(3));
+      .plan {
+        min-height: auto;
+      }
     }
+  </style>
+</head>
 
-    orbGroup.position.y = orbY;
-    orbGroup.rotation.y += 0.006;
-    orbGroup.rotation.x  = Math.sin(time * 0.55) * 0.08;
+<body>
+  <section class="pricing">
+    <div class="pricing-header">
+      <div class="pricing-kicker">PRETURI</div>
+      <h1>Alege pachetul potrivit <span>pentru tine</span></h1>
+      <p>Primele 3 pachete sunt cu plata lunara. Pachetele fixe se platesc o singura data.</p>
+    </div>
 
-    // Orb light
-    orbLight.position.y = orbY;
+    <div class="plans">
 
-    // Ring glow proximity
-    rings.forEach((ring, i) => {
-      const dist  = Math.abs(orbY - ring.y);
-      const prox  = Math.max(0, 1 - dist / 3.2);
-      const pulse = 1 + Math.sin(time * 3.5 + i) * 0.12;
+      <article class="plan">
+        <div class="icon">⚡</div>
+        <h2>BASIC</h2>
+        <p class="desc">Pentru afaceri mici care vor prezenta online.</p>
+        <span class="type">PLATA LUNARA</span>
 
-      ring.mat.emissiveIntensity  = (0.7 + prox * 4.0) * pulse;
-      ring.glowMat.opacity        = 0.04 + prox * 0.28;
-      ring.torus.rotation.y      += 0.004;
-      ring.particles.rotation.y  -= 0.003;
-      ringLights[i].intensity     = 0.4 + prox * 3.5;
-    });
+        <div>
+          <span class="discount">-50%</span>
+          <span class="old-price">60 €</span>
+        </div>
 
-    // Ring pass flash
-    checkRingFlash(orbY);
+        <div class="price">30 <span>€</span></div>
+        <div class="per">/ luna</div>
 
-    // Star parallax (slow drift)
-    smallStars.position.y = -camYSmooth * 0.08;
-    smallStars.rotation.y  = time * 0.008;
-    midStars.position.y    = -camYSmooth * 0.05;
+        <ul>
+          <li>Pana la 3 pagini</li>
+          <li>Design modern si responsive</li>
+          <li>Optimizare SEO de baza</li>
+          <li>Certificat SSL HTTPS</li>
+          <li>Hosting inclus</li>
+          <li>Suport prin email</li>
+          <li>Raport lunar de activitate</li>
+        </ul>
 
-    // Section overlays
-    updateSections(p);
+        <a href="contact.html" class="btn">Alege Basic</a>
+      </article>
 
-    renderer.render(scene, camera);
-  }
+      <article class="plan popular">
+        <div class="badge">CEL MAI POPULAR</div>
+        <div class="icon">♕</div>
+        <h2>BUSINESS</h2>
+        <p class="desc">Pentru firme care vor imagine mai buna si crestere.</p>
+        <span class="type">PLATA LUNARA</span>
 
-  animate();
+        <div>
+          <span class="discount">-50%</span>
+          <span class="old-price">100 €</span>
+        </div>
 
-  /* ── RESIZE ─────────────────────────────────────────────── */
-  window.addEventListener('resize', () => {
-    // Pe mobil, bara browserului apare/dispare la scroll si declanseaza resize.
-    // Ignoram aceste resize-uri mici pe inaltime ca sa nu tremure scena.
-    const newW = window.innerWidth;
-    const newH = window.innerHeight;
-    const onlyMobileBarMoved = isMobile && newW === stableW && Math.abs(newH - stableH) < 140;
+        <div class="price">50 <span>€</span></div>
+        <div class="per">/ luna</div>
 
-    if (onlyMobileBarMoved) return;
+        <ul>
+          <li>Pana la 7 pagini</li>
+          <li>Design premium personalizat</li>
+          <li>Optimizare SEO avansata</li>
+          <li>Certificat SSL HTTPS</li>
+          <li>3 ore modificari pe saptamana</li>
+          <li>Hosting prioritar</li>
+          <li>Suport prioritar</li>
+          <li>Formular de contact avansat</li>
+        </ul>
 
-    stableW = newW;
-    stableH = newH;
+        <a href="contact.html" class="btn">Alege Business</a>
+      </article>
 
-    camera.aspect = stableW / stableH;
-    camera.updateProjectionMatrix();
-    renderer.setSize(stableW, stableH, false);
-    renderer.setPixelRatio(isMobile ? 1 : Math.min(window.devicePixelRatio, 2));
-  });
+      <article class="plan">
+        <div class="icon">🚀</div>
+        <h2>PROFESSIONAL</h2>
+        <p class="desc">Pentru afaceri cu continut schimbat frecvent.</p>
+        <span class="type">PLATA LUNARA</span>
 
-})();
-</script>
+        <div>
+          <span class="discount">-50%</span>
+          <span class="old-price">200 €</span>
+        </div>
+
+        <div class="price">100 <span>€</span></div>
+        <div class="per">/ luna</div>
+
+        <ul>
+          <li>Pagini nelimitate</li>
+          <li>CMS configurat pentru afacerea ta</li>
+          <li>Administrezi continutul singur</li>
+          <li>Design premium personalizat</li>
+          <li>Optimizare SEO avansata</li>
+          <li>Certificat SSL HTTPS</li>
+          <li>3 ore modificari tehnice pe saptamana</li>
+          <li>Raport prioritar</li>
+        </ul>
+
+        <a href="contact.html" class="btn">Alege Professional</a>
+      </article>
+
+      <article class="plan one-time">
+        <div class="icon">◆</div>
+        <h2>SITE FIX</h2>
+        <p class="desc">Solutie completa, platita o singura data.</p>
+        <span class="type">PLATA UNICA</span>
+
+        <div class="price">800 <span>€</span></div>
+        <div class="per">plata unica</div>
+
+        <ul>
+          <li>Design unic si personalizat</li>
+          <li>Structura completa pentru site</li>
+          <li>Optimizare SEO de baza</li>
+          <li>Certificat SSL HTTPS</li>
+          <li>Formular de contact</li>
+          <li>Configurare hosting</li>
+          <li>Predare site final</li>
+        </ul>
+
+        <a href="contact.html" class="btn">Alege Site Fix</a>
+      </article>
+
+    </div>
+
+    <div class="bottom-box">
+      <div class="fixed-card">
+        <h3>Site Static</h3>
+        <p>Potrivit pentru prezentare simpla, servicii, portofoliu sau landing page.</p>
+        <div class="price">800 <span>€</span></div>
+      </div>
+
+      <div class="fixed-card one-time">
+        <h3>Site Dinamic CMS</h3>
+        <p>Potrivit pentru site-uri cu administrare continut, pagini multiple si functii extra.</p>
+        <div class="price">1.200 <span>€</span></div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
