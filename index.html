@@ -185,6 +185,44 @@ nav.on { opacity: 1; }
 }
 
 /* ══════════════════════
+   EXPAND TEXT
+   ══════════════════════ */
+.expand-text {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+.expand-text.open {
+  max-height: 600px; opacity: 1;
+}
+.expand-text p {
+  margin-top: 12px !important;
+}
+.expand-text .section-title {
+  font-size: clamp(11px, 1vw, 13px);
+  font-weight: 700; letter-spacing: .12em;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase; margin-top: 16px;
+}
+.btn-mai-multe {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 20px; font-size: 12px; font-weight: 700;
+  color: #fff; letter-spacing: .1em; text-transform: uppercase;
+  pointer-events: auto; cursor: pointer; background: none; border: none;
+  padding: 0; font-family: 'Syne', sans-serif;
+}
+.btn-mai-multe .mm-icon {
+  width: 28px; height: 28px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.35);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; transition: background .25s, border-color .25s;
+  line-height: 1;
+}
+.btn-mai-multe:hover .mm-icon {
+  background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.6);
+}
+
+/* ══════════════════════
    CTA BUTTONS FINAL
    ══════════════════════ */
 #cta-btns {
@@ -284,13 +322,35 @@ nav.on { opacity: 1; }
   <div class="frame-text" data-frame="0">
     <h1>Construiesc
 experiențe digitale</h1>
+    <p>Oferim servicii complete de realizare site-uri, magazine online și optimizare SEO, concepute pentru a atrage vizitatori și a-i transforma în clienți fideli.</p>
+    <div class="expand-text" id="expand-0">
+      <p>Dezvoltăm funcționalități personalizate pe WordPress, direct din cod, pentru a adapta site-ul perfect nevoilor tale unice.</p>
+      <p>De asemenea, combinăm design-ul modern cu strategii avansate de promovare prin Google Ads și optimizare SEO.</p>
+    </div>
+    <button class="btn-mai-multe" onclick="toggleExpand('expand-0', this)">
+      <span class="mm-icon">+</span> Mai multe
+    </button>
   </div>
 
   <!-- FRAME 1 — Steel Blue -->
   <div class="frame-text" data-frame="1">
     <h1>Creativitate</h1>
-
-    
+    <p>Te ghidăm de la concept până la lansare și asigurăm mentenanță și actualizări pentru o experiență impecabilă a vizitatorilor.</p>
+    <div class="expand-text" id="expand-1">
+      <div class="section-title">Design Adaptat</div>
+      <p>Realizăm site-uri de prezentare personalizate și optimizate, adaptate nevoilor tale specifice.</p>
+      <div class="section-title">Accesibilitate Mobilă</div>
+      <p>Asigurăm că site-urile sunt ușor accesibile pe orice dispozitiv, oferind o experiență plăcută utilizatorilor.</p>
+      <div class="section-title">Formular de Contact</div>
+      <p>Integrarea unui formular de contact simplu și eficient pentru a facilita comunicarea cu clienții tăi.</p>
+      <div class="section-title">Harta Google Maps</div>
+      <p>Incorporăm Google Maps pentru a ajuta vizitatorii să găsească ușor locația ta.</p>
+      <div class="section-title">Buton de Chat</div>
+      <p>Oferim un buton de chat live, astfel încât clienții să poată obține răspunsuri rapide la întrebări.</p>
+    </div>
+    <button class="btn-mai-multe" onclick="toggleExpand('expand-1', this)">
+      <span class="mm-icon">+</span> Mai multe
+    </button>
   </div>
 
 <!-- FRAME 2 — Dusty Blue -->
@@ -308,7 +368,18 @@ experiențe digitale</h1>
   <!-- FRAME 4 — Ice Grey -->
   <div class="frame-text" data-frame="4">
     <h1>Impact</h1>
-    <p>Prezență care atrage și convertește</p>
+    <p>Optimizarea SEO oferă posibilitatea de a alege cuvinte și expresii cheie pentru căutările efectuate de potențialii clienți.</p>
+    <div class="expand-text" id="expand-4">
+      <div class="section-title">Creșterea Notorietății</div>
+      <p>Rezultatele afișate pe prima pagină în căutările Google sunt privite de utilizatori ca fiind cele mai de încredere.</p>
+      <div class="section-title">Generarea Traficului</div>
+      <p>În urma campaniilor de Optimizare SEO off-site și on-site, se vor observa creșteri treptate ale traficului organic și vânzărilor.</p>
+      <div class="section-title">Percepția Consumatorilor</div>
+      <p>Percepția consumatorilor este noul factor care influențează clasamentul în motorul de căutare Google.</p>
+    </div>
+    <button class="btn-mai-multe" onclick="toggleExpand('expand-4', this)">
+      <span class="mm-icon">+</span> Mai multe
+    </button>
   </div>
 
   <!-- FRAME 5 — Pearl White / Ardezie (final) -->
@@ -916,6 +987,18 @@ window.addEventListener('resize', () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 });
+
+/* ══════════════════════════════════════════════════════════════
+   [EXPAND] — Toggle text expand
+   ══════════════════════════════════════════════════════════════ */
+function toggleExpand(id, btn) {
+  const el = document.getElementById(id);
+  const icon = btn.querySelector('.mm-icon');
+  const isOpen = el.classList.contains('open');
+  el.classList.toggle('open', !isOpen);
+  icon.textContent = isOpen ? '+' : '−';
+  btn.childNodes[1].textContent = isOpen ? ' Mai multe' : ' Mai puțin';
+}
 
 </script>
 
