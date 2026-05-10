@@ -6,26 +6,7 @@
 <meta name="theme-color" content="#000000"/>
 <title>NEXAS — Prezență Digitală</title>
 
-<!--
-  ╔══════════════════════════════════════════════════════════╗
-  ║  NEXAS 3D — nexas.ro                                    ║
-  ║  STRUCTURA FIȘIERULUI:                                   ║
-  ║  1. <style>   — CSS: loader, nav, text, UI              ║
-  ║  2. <body>    — HTML: loader, nav, canvas, texte        ║
-  ║  3. <script>  — JavaScript Three.js                     ║
-  ║     [CONFIG]  — Editează texte și culori AICI           ║
-  ║     [LOADER]  — Animație 0→100%                         ║
-  ║     [SETUP]   — Renderer, Scenă, Cameră                 ║
-  ║     [ROOM]    — Platou 3D: podea, tavan, panouri ecran  ║
-  ║     [ORB]     — Forme geometrice 3D                     ║
-  ║     [LIGHTS]  — Iluminare scenă                         ║
-  ║     [SCROLL]  — Logica scroll + calcul progres          ║
-  ║     [ANIMATE] — Loop animație 60fps                     ║
-  ║     [RESIZE]  — Responsive                              ║
-  ╚══════════════════════════════════════════════════════════╝
--->
-
-<!-- Font Syne — local, fără Google, GDPR curat -->
+<!-- Font Syne -->
 <style>
 @font-face {
   font-family: 'Syne';
@@ -45,15 +26,11 @@
 </style>
 
 <style>
-/* ══════════════════════════════════════════════════════════
-   CSS — INTERFAȚA UTILIZATOR
-   ══════════════════════════════════════════════════════════ */
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: auto; }
 
 body {
-  background: #000;
+  background: linear-gradient(135deg, #0a0e1a 0%, #1a1e2e 100%);
   font-family: 'Syne', system-ui, sans-serif;
   color: #fff;
   overflow-x: hidden;
@@ -65,9 +42,7 @@ body {
   display: block; z-index: 0;
 }
 
-/* ══════════════════════
-   LOADER
-   ══════════════════════ */
+/* LOADER */
 #loader {
   position: fixed; inset: 0; z-index: 300;
   background: #000;
@@ -86,9 +61,7 @@ body {
 .ld-bar   { height: 100%; width: 0%; background: #fff; transition: width .1s ease; }
 .ld-pct   { font-size: 11px; letter-spacing: .35em; color: rgba(255,255,255,0.35); font-family: monospace; }
 
-/* ══════════════════════
-   NAV
-   ══════════════════════ */
+/* NAV */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 50;
   display: flex; align-items: center; justify-content: space-between;
@@ -112,9 +85,7 @@ nav.on { opacity: 1; }
   nav { justify-content: center; }
 }
 
-/* ══════════════════════
-   TEXT OVERLAY
-   ══════════════════════ */
+/* TEXT OVERLAY */
 #text-layer {
   position: fixed; top: 0; left: 0;
   width: 100%; height: 100dvh;
@@ -125,7 +96,7 @@ nav.on { opacity: 1; }
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 5%; /* DEFAULT - toate în stânga */
+  left: 5%;
   text-align: left;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -135,39 +106,24 @@ nav.on { opacity: 1; }
   z-index: 10;
   padding: 0 2rem;
 }
-
-/* Frame 2 - DREAPTA */
-.frame-text[data-frame="2"] {
-  left: auto;
-  right: 5%;
-  text-align: right;
-}
-
-/* Frame 4 - DREAPTA */
+.frame-text[data-frame="2"],
 .frame-text[data-frame="4"] {
   left: auto;
   right: 5%;
   text-align: right;
 }
-}
 .frame-text.on { pointer-events: auto; }
-
-/* Titlu principal */
 .frame-text h1 {
   font-size: clamp(38px, 5.8vw, 82px);
   font-weight: 800; line-height: 1.02;
   letter-spacing: -.03em; color: #fff; white-space: pre-line;
 }
-
-/* Subtext — ALB (nu mai e gri) */
-/* ► Schimbă opacity pentru mai transparent */
 .frame-text p {
   font-size: clamp(14px, 1.3vw, 17px);
-  color: rgba(255,255,255,0.92);  /* ← ALB */
+  color: rgba(255,255,255,0.92);
   margin-top: 18px; line-height: 1.65;
   font-weight: 400; max-width: 400px;
 }
-
 .read-more {
   display: inline-flex; align-items: center; gap: 12px;
   margin-top: 28px; font-size: 13px; font-weight: 600;
@@ -184,23 +140,55 @@ nav.on { opacity: 1; }
   background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.6);
 }
 
-/* ══════════════════════
-   CTA BUTTONS FINAL
-   ══════════════════════ */
+/* EXPAND TEXT */
+.expand-text {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+.expand-text.open {
+  max-height: 600px; opacity: 1;
+}
+.expand-text p {
+  margin-top: 12px !important;
+}
+.expand-text .section-title {
+  font-size: clamp(11px, 1vw, 13px);
+  font-weight: 700; letter-spacing: .12em;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase; margin-top: 16px;
+}
+.btn-mai-multe {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 20px; font-size: 12px; font-weight: 700;
+  color: #fff; letter-spacing: .1em; text-transform: uppercase;
+  pointer-events: auto; cursor: pointer; background: none; border: none;
+  padding: 0; font-family: 'Syne', sans-serif;
+}
+.btn-mai-multe .mm-icon {
+  width: 28px; height: 28px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.35);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; transition: background .25s, border-color .25s;
+  line-height: 1;
+}
+.btn-mai-multe:hover .mm-icon {
+  background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.6);
+}
+
+/* CTA BUTTONS */
 #cta-btns {
   position: fixed; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   z-index: 25;
   display: flex;
-  flex-direction: column;  /* ← una sub cealaltă */
-  gap: 14px;               /* ← spațiu între butoane */
-  align-items: center;     /* ← centrate */
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
   opacity: 0; pointer-events: none;
   transition: opacity 0.8s ease;
 }
-  
 #cta-btns.on { opacity: 1; pointer-events: auto; }
-
 .cta-btn {
   padding: 17px 36px; border-radius: 13px;
   font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700;
@@ -221,9 +209,7 @@ nav.on { opacity: 1; }
 }
 .cta-btn.secondary:hover { background: rgba(255,255,255,0.16); }
 
-/* ══════════════════════
-   UI BOTTOM
-   ══════════════════════ */
+/* UI BOTTOM */
 #scroll-hint {
   position: fixed; bottom: 26px; left: 32px; z-index: 30;
   font-size: 11px; letter-spacing: .22em; color: rgba(255,255,255,0.35);
@@ -238,9 +224,7 @@ nav.on { opacity: 1; }
 }
 #frame-counter.on { opacity: 1; }
 
-/* ══════════════════════
-   MOBILE
-   ══════════════════════ */
+/* MOBILE */
 @media (max-width: 768px) {
   nav { padding: 18px 20px; }
   .frame-text { max-width: 88%; left: 5vw; }
@@ -253,14 +237,14 @@ nav.on { opacity: 1; }
 
 <body>
 
-<!-- ════ LOADER ════ -->
+<!-- LOADER -->
 <div id="loader">
   <div class="ld-logo">N<em>E</em>X<em2>A</em2>S</div>
   <div class="ld-track"><div class="ld-bar" id="lbar"></div></div>
   <div class="ld-pct" id="lpct">0%</div>
 </div>
 
-<!-- ════ NAV ════ -->
+<!-- NAV -->
 <nav id="nav">
   <div class="nav-brand">
     N<em>E</em>XAS
@@ -274,164 +258,164 @@ nav.on { opacity: 1; }
   </div>
 </nav>
 
-<!-- ════ CANVAS 3D ════ -->
+<!-- CANVAS 3D -->
 <canvas id="canvas"></canvas>
 
-<!-- ════ TEXT OVERLAY ════ -->
+<!-- TEXT OVERLAY -->
 <div id="text-layer">
 
-  <!-- FRAME 0 — Navy Blue -->
   <div class="frame-text" data-frame="0">
-    <h1>Construiesc
-experiențe digitale</h1>
+    <h1>Construim
+prezențe digitale
+de impact</h1>
+    <p>Site-uri, magazine online și strategii SEO — totul gândit să atragă, să convingă și să convertească.</p>
+    <div class="expand-text" id="expand-0">
+      <p>Construim de la zero sau pe WordPress, adaptând fiecare linie de cod nevoilor reale ale afacerii tale.</p>
+      <p>Combinăm design modern cu Google Ads și SEO avansat — o prezență digitală care lucrează pentru tine 24/7.</p>
+    </div>
+    <button class="btn-mai-multe" onclick="toggleExpand('expand-0', this)">
+      <span class="mm-icon">+</span> Mai multe
+    </button>
   </div>
 
-  <!-- FRAME 1 — Steel Blue -->
   <div class="frame-text" data-frame="1">
-    <h1>Creativitate</h1>
-    <p>Design gândit să atragă</p>
+    <h1>Creativitate
+fără limite</h1>
+    <p>De la primul concept până la lansare — și mai departe. Suntem alături de tine la fiecare pas.</p>
+    <div class="expand-text" id="expand-1">
+      <div class="section-title">Design personalizat</div>
+      <p>Niciun template generic. Fiecare site e gândit și construit special pentru brandul tău.</p>
+      <div class="section-title">100% responsive</div>
+      <p>Arată impecabil pe orice ecran — telefon, tabletă sau desktop.</p>
+      <div class="section-title">Contact & Maps</div>
+      <p>Formulare de contact funcționale și integrare Google Maps pentru o comunicare fără bariere.</p>
+      <div class="section-title">Chat live</div>
+      <p>Buton de chat integrat — clienții tăi primesc răspunsuri rapide, tu câștigi încredere instant.</p>
+    </div>
+    <button class="btn-mai-multe" onclick="toggleExpand('expand-1', this)">
+      <span class="mm-icon">+</span> Mai multe
+    </button>
   </div>
 
-  <!-- FRAME 2 — Dusty Blue -->
   <div class="frame-text" data-frame="2">
-    <h1>Concept</h1>
-    <p>Ideea ta devine direcție digitală</p>
+    <h1>Site de
+prezentare</h1>
+    <p>Tehnologie modernă, cod curat — site-uri gândite să genereze lead-uri și să vândă.</p>
+    <div class="expand-text" id="expand-2">
+      <p>Nu lucrăm cu șabloane. Fiecare proiect e construit de la zero, cu suflet și cu strategie.</p>
+      <p>Experiența vizitatorului e prioritatea noastră — pentru ca tu să îți recuperezi investiția și să crești.</p>
+    </div>
+    <button class="btn-mai-multe" onclick="toggleExpand('expand-2', this)">
+      <span class="mm-icon">+</span> Mai multe
+    </button>
   </div>
 
-  <!-- FRAME 3 — Silver-Blue -->
   <div class="frame-text" data-frame="3">
-    <h1>Execuție</h1>
-    <p>Eleganță în detalii</p>
+    <h1>Execuție
+la superlativ</h1>
+    <p>Promitem ce livrăm — și livrăm mai mult decât promitem. Fiecare pixel contează.</p>
+    <div class="expand-text" id="expand-3">
+      <div class="section-title">Cod curat</div>
+      <p>Performanță maximă pe orice dispozitiv, fără compromisuri tehnice.</p>
+      <div class="section-title">Design unic</div>
+      <p>Gândit special pentru afacerea ta — nu pentru toată lumea.</p>
+      <div class="section-title">Suport real</div>
+      <p>Fără termene ambigue, fără scuze. Suntem acolo când ai nevoie.</p>
+    </div>
+    <button class="btn-mai-multe" onclick="toggleExpand('expand-3', this)">
+      <span class="mm-icon">+</span> Mai multe
+    </button>
   </div>
 
-  <!-- FRAME 4 — Ice Grey -->
   <div class="frame-text" data-frame="4">
-    <h1>Impact</h1>
-    <p>Prezență care atrage și convertește</p>
+    <h1>Impact
+măsurabil</h1>
+    <p>SEO strategic — cuvintele potrivite, la momentul potrivit, în fața oamenilor potriviți.</p>
+    <div class="expand-text" id="expand-4">
+      <div class="section-title">Vizibilitate Google</div>
+      <p>Prima pagină nu e un bonus — e standardul. Clienții tăi trebuie să te găsească primii.</p>
+      <div class="section-title">Trafic organic</div>
+      <p>Creșteri constante și sustenabile — nu sprinturi temporare. SEO on-site și off-site integrat.</p>
+      <div class="section-title">Autoritate de brand</div>
+      <p>Poziția în Google modelează percepția. Primul rezultat câștigă încrederea — automat.</p>
+    </div>
+    <button class="btn-mai-multe" onclick="toggleExpand('expand-4', this)">
+      <span class="mm-icon">+</span> Mai multe
+    </button>
   </div>
 
-  <!-- FRAME 5 — Pearl White / Ardezie (final) -->
   <div class="frame-text" data-frame="5">
-    <h1>Lansare</h1>
-    <p>Totul pregătit pentru vizibilitate reală</p>
+    <h1>Lansare
+fără erori</h1>
+    <p>Înainte de go-live, verificăm fiecare detaliu — pentru un start impecabil.</p>
+    <div class="expand-text" id="expand-5">
+      <div class="section-title">Testare completă</div>
+      <p>Desktop, tabletă, mobil — site-ul arată perfect pe orice dispozitiv.</p>
+      <div class="section-title">Formulare & link-uri</div>
+      <p>Fiecare formular, buton și link — verificat să funcționeze corect, fără erori 404.</p>
+      <div class="section-title">Viteză & SEO</div>
+      <p>Google PageSpeed Insights + audit final de conținut, gramatică și viteza de încărcare.</p>
+    </div>
+    <button class="btn-mai-multe" onclick="toggleExpand('expand-5', this)">
+      <span class="mm-icon">+</span> Mai multe
+    </button>
   </div>
 
 </div>
 
-<!-- ════ CTA BUTOANE FINALE ════ -->
+<!-- CTA BUTTONS -->
 <div id="cta-btns">
-  <!-- ► Schimbă href după nevoie -->
-  <a href="contact.html"     class="cta-btn primary">Contact</a>
-  <a href="portofoliu.html"  class="cta-btn secondary">Portofoliu</a>
+  <a href="contact.html" class="cta-btn primary">Contact</a>
+  <a href="portofoliu.html" class="cta-btn secondary">Portofoliu</a>
 </div>
 
-<!-- ════ UI ════ -->
+<!-- UI -->
 <div id="scroll-hint">scroll to explore</div>
 <div id="frame-counter">01 / 06</div>
 
-<!-- Three.js r128 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 <script>
-/* ══════════════════════════════════════════════════════════════
-   ██████████████████████████████████████████████████████████
-   [CONFIG] — EDITEAZĂ CULORILE ȘI TEXTELE NEXAS AICI
-   ██████████████████████████████████████████████████████████
-
-   Paletă: Navy Blue → Albastru Oțel → Dusty Blue →
-           Bleu-Argintiu → Gri-Gheață → Alb-Perlat / Ardezie
-
-   orbHex   → culoarea formei 3D         (#rrggbb)
-   emissHex → lumina interioară          (#rrggbb, mai închis)
-   gradA    → culoarea A a gradientului ecran
-   gradB    → culoarea B a gradientului ecran
-   ══════════════════════════════════════════════════════════════ */
 const FRAMES = [
-  /* 0 — NAVY BLUE (albastru marin profund) */
-  {
-    orbHex:  '#1e3a7a',
-    emissHex:'#080e22',
-    gradA:   '#0a1840',
-    gradB:   '#1e3a70',
-  },
-  /* 1 — ALBASTRU OȚEL (steel blue) */
-  {
-    orbHex:  '#4a82b8',
-    emissHex:'#182838',
-    gradA:   '#1e3858',
-    gradB:   '#5090c0',
-  },
-  /* 2 — DUSTY BLUE (albastru prăfuit, estompat) */
-  {
-    orbHex:  '#7898b0',
-    emissHex:'#263040',
-    gradA:   '#304858',
-    gradB:   '#7898b0',
-  },
-  /* 3 — BLEU ARGINTIU (silver-blue, metalic) */
-  {
-    orbHex:  '#9ab4c8',
-    emissHex:'#405060',
-    gradA:   '#4a6070',
-    gradB:   '#9ab4c8',
-  },
-  /* 4 — GRI GHEAȚĂ (ice grey, rece și transparent) */
-  {
-    orbHex:  '#c4d4de',
-    emissHex:'#586878',
-    gradA:   '#6a8090',
-    gradB:   '#c0d2de',
-  },
-  /* 5 — ALB PERLAT / ARDEZIE (pearl → slate pentru închidere) */
-  {
-orbHex:  '#e0eaf2',
-emissHex:'#4a5e6a',
-gradA:   '#546e7a',  /* ← ardezie (slate) */
-gradB:   '#fce4ec',  /* ← alb-roz mai intens */
-  },
+  { orbHex: '#1e3a7a', emissHex: '#080e22', gradA: '#0a1840', gradB: '#1e3a70' },
+  { orbHex: '#4a82b8', emissHex: '#182838', gradA: '#1e3858', gradB: '#5090c0' },
+  { orbHex: '#7898b0', emissHex: '#263040', gradA: '#304858', gradB: '#7898b0' },
+  { orbHex: '#9ab4c8', emissHex: '#405060', gradA: '#4a6070', gradB: '#9ab4c8' },
+  { orbHex: '#c4d4de', emissHex: '#586878', gradA: '#6a8090', gradB: '#c0d2de' },
+  { orbHex: '#e0eaf2', emissHex: '#4a5e6a', gradA: '#546e7a', gradB: '#fce4ec' },
 ];
 
-/* ══════════════════════════════════════════════════════════════
-   Dimensiunile formei geometrice
-   ► ORB_BIG  = scala când forma e singură (fără text)
-   ► ORB_SMALL= scala când e text vizibil
-   ══════════════════════════════════════════════════════════════ */
-const isMobile  = window.innerWidth < 768;
-const ORB_BIG   = isMobile ? 1.2  : 1.80;
+const isMobile = window.innerWidth < 768;
+const ORB_BIG = isMobile ? 1.2 : 1.80;
 const ORB_SMALL = isMobile ? 0.55 : 0.88;
 
-/* Poziții per frame (X = stânga/dreapta, Z = față/spate) */
 const xShift = isMobile ? 1.2 : 3.5;
 const zShift = isMobile ? 1.0 : 2.5;
 const ORB_POS_PER_FRAME = [
-  { x:  0.0,    z: 0.0    },  // Frame 0 — centru
-  { x:  xShift, z: 0.0    },  // Frame 1 — dreapta
-  { x: -xShift, z: zShift },  // Frame 2 — față stânga
-  { x:  xShift, z: zShift },  // Frame 3 — față dreapta
-  { x: -xShift, z: zShift },  // Frame 4 — față stânga
-  { x:  xShift, z: zShift },  // Frame 5 — față dreapta
+  { x: 0.0, z: 0.0 },
+  { x: xShift, z: 0.0 },
+  { x: -xShift, z: zShift },
+  { x: xShift, z: zShift },
+  { x: -xShift, z: zShift },
+  { x: xShift, z: zShift },
 ];
 
-/* Camera */
 const CAM_Z_START = isMobile ? 8.0 : 13.0;
-const CAM_Z_END   = isMobile ? 4.0 :  6.5;
+const CAM_Z_END = isMobile ? 4.0 : 6.5;
 
-
-/* ══════════════════════════════════════════════════════════════
-   [LOADER] — Animație 0→100%
-   ══════════════════════════════════════════════════════════════ */
-const loaderEl  = document.getElementById('loader');
-const lbarEl    = document.getElementById('lbar');
-const lpctEl    = document.getElementById('lpct');
-const navEl     = document.getElementById('nav');
-const hintEl    = document.getElementById('scroll-hint');
+/* LOADER */
+const loaderEl = document.getElementById('loader');
+const lbarEl = document.getElementById('lbar');
+const lpctEl = document.getElementById('lpct');
+const navEl = document.getElementById('nav');
+const hintEl = document.getElementById('scroll-hint');
 const counterEl = document.getElementById('frame-counter');
 
 let ldPct = 0;
 const ldTimer = setInterval(() => {
   ldPct = Math.min(100, ldPct + Math.floor(Math.random() * 11 + 5));
   lbarEl.style.width = ldPct + '%';
-  lpctEl.textContent  = ldPct + '%';
+  lpctEl.textContent = ldPct + '%';
   if (ldPct >= 100) {
     clearInterval(ldTimer);
     setTimeout(() => {
@@ -443,25 +427,19 @@ const ldTimer = setInterval(() => {
   }
 }, 80);
 
-
-/* ══════════════════════════════════════════════════════════════
-   [SETUP] — Three.js: Renderer, Scenă, Cameră
-   ══════════════════════════════════════════════════════════════ */
+/* THREE.JS SETUP */
 const canvas3d = document.getElementById('canvas');
-
-const renderer = new THREE.WebGLRenderer({ canvas: canvas3d, antialias: true });
+const renderer = new THREE.WebGLRenderer({ canvas: canvas3d, antialias: true, alpha: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
-renderer.shadowMap.type    = THREE.PCFSoftShadowMap;
-renderer.toneMapping       = THREE.ACESFilmicToneMapping;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.25;
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x000308);
-scene.fog        = new THREE.Fog(0x000308, 14, 40);
+scene.background = null; // Transparent
 
-/* ► FOV: mai mare pe mobil ca să se vadă toate 3 oglinzi */
 const camera = new THREE.PerspectiveCamera(
   isMobile ? 92 : 60,
   window.innerWidth / window.innerHeight,
@@ -470,49 +448,38 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.set(0, 0.8, CAM_Z_START);
 camera.lookAt(0, 0, 0);
 
-
-/* ══════════════════════════════════════════════════════════════
-   [ROOM] — Platoul 3D
-   Podea, tavan, pereți, 3 panouri egale, spoturi, logo
-   ══════════════════════════════════════════════════════════════ */
-
-/* ── Podea reflectivă ── */
-const floor = new THREE.Mesh(
-  new THREE.PlaneGeometry(32, 28),
-  new THREE.MeshStandardMaterial({ color: 0x040608, roughness: 0.72, metalness: 0.30 })
-);
-floor.rotation.x = -Math.PI / 2;
-floor.position.y = -3.1;
-floor.receiveShadow = true;
-scene.add(floor);
-
-
-
-/* ── Canvas texture pentru panouri (gradient animat blob/val) ──
-   Repictat la fiecare frame cu time pentru efect live
-   ► SCR_W / SCR_H = rezoluția texturii (mai mare = mai clar) */
+/* ECRAN LED CURBAT UNIC */
 const SCR_W = 512, SCR_H = 1024;
 const scrCanvas = document.createElement('canvas');
-scrCanvas.width  = SCR_W;
+scrCanvas.width = SCR_W;
 scrCanvas.height = SCR_H;
 const scrCtx = scrCanvas.getContext('2d');
 const scrTex = new THREE.CanvasTexture(scrCanvas);
 
-/* Funcție animată cu blob-uri radiale care se mișcă
-   ► Mărește multiplicatorii (1.2, 0.9 etc.) pentru mișcare mai rapidă */
-function paintScreen(gradA, gradB, t) {
-  t = t || 0;
+// Preload imagine
+const img0 = new Image();
+img0.src = 'POZA1.1.png';
 
-  /* Fond de bază */
+function paintScreen(gradA, gradB, t, frameIdx) {
+  t = t || 0;
+  frameIdx = frameIdx || 0;
+
   scrCtx.fillStyle = gradA;
   scrCtx.fillRect(0, 0, SCR_W, SCR_H);
 
-  /* 4 blob-uri radiale animate — creează efectul de val live */
+  // Frame 0: Afișează poza
+  if (frameIdx === 0 && img0.complete) {
+    scrCtx.drawImage(img0, 0, 0, SCR_W, SCR_H);
+    scrTex.needsUpdate = true;
+    return;
+  }
+
+  // Restul: gradient animat cu blob-uri
   const blobs = [
-    { x: SCR_W*(0.5 + Math.sin(t*1.2)*0.45), y: SCR_H*(0.3 + Math.cos(t*0.9)*0.30), r: SCR_W*0.75, col: gradB, op: 0.85 },
-    { x: SCR_W*(0.2 + Math.cos(t*0.8)*0.35), y: SCR_H*(0.6 + Math.sin(t*1.1)*0.25), r: SCR_W*0.60, col: gradA, op: 0.60 },
-    { x: SCR_W*(0.8 + Math.sin(t*1.5)*0.20), y: SCR_H*(0.2 + Math.cos(t*1.3)*0.35), r: SCR_W*0.50, col: gradB, op: 0.50 },
-    { x: SCR_W*(0.4 + Math.cos(t*0.6)*0.40), y: SCR_H*(0.8 + Math.sin(t*0.7)*0.15), r: SCR_W*0.65, col: gradA, op: 0.40 },
+    { x: SCR_W * (0.5 + Math.sin(t * 1.2) * 0.45), y: SCR_H * (0.3 + Math.cos(t * 0.9) * 0.30), r: SCR_W * 0.75, col: gradB, op: 0.85 },
+    { x: SCR_W * (0.2 + Math.cos(t * 0.8) * 0.35), y: SCR_H * (0.6 + Math.sin(t * 1.1) * 0.25), r: SCR_W * 0.60, col: gradA, op: 0.60 },
+    { x: SCR_W * (0.8 + Math.sin(t * 1.5) * 0.20), y: SCR_H * (0.2 + Math.cos(t * 1.3) * 0.35), r: SCR_W * 0.50, col: gradB, op: 0.50 },
+    { x: SCR_W * (0.4 + Math.cos(t * 0.6) * 0.40), y: SCR_H * (0.8 + Math.sin(t * 0.7) * 0.15), r: SCR_W * 0.65, col: gradA, op: 0.40 },
   ];
 
   blobs.forEach(b => {
@@ -524,9 +491,8 @@ function paintScreen(gradA, gradB, t) {
     scrCtx.fillRect(0, 0, SCR_W, SCR_H);
   });
 
-  /* Highlight alb în centru */
   scrCtx.globalAlpha = 0.13;
-  const hl = scrCtx.createRadialGradient(SCR_W*.5, SCR_H*.28, 0, SCR_W*.5, SCR_H*.28, SCR_W*.72);
+  const hl = scrCtx.createRadialGradient(SCR_W * .5, SCR_H * .28, 0, SCR_W * .5, SCR_H * .28, SCR_W * .72);
   hl.addColorStop(0, '#ffffff');
   hl.addColorStop(1, 'rgba(255,255,255,0)');
   scrCtx.fillStyle = hl;
@@ -536,142 +502,85 @@ function paintScreen(gradA, gradB, t) {
   scrTex.needsUpdate = true;
 }
 
-paintScreen(FRAMES[0].gradA, FRAMES[0].gradB, 0);
+paintScreen(FRAMES[0].gradA, FRAMES[0].gradB, 0, 0);
 
-const panelMat = new THREE.MeshBasicMaterial({ map: scrTex });
+// Ecran curbat mare - responsive
+const screenWidth = isMobile ? 16 : 24;
+const screenHeight = isMobile ? 10 : 14;
+const screenGeo = new THREE.CylinderGeometry(screenWidth / 1.5, screenWidth / 1.5, screenHeight, 64, 1, true, 0, Math.PI);
+const screenMat = new THREE.MeshBasicMaterial({ map: scrTex, side: THREE.DoubleSide });
+const screen = new THREE.Mesh(screenGeo, screenMat);
+screen.rotation.y = Math.PI;
+screen.position.set(0, 0, isMobile ? -4 : -6);
+scene.add(screen);
 
-/* ── Dimensiuni panouri — responsive ──
-   Desktop: mari și spectaculoase | Mobile: mici, toate 3 vizibile
-   ► PANEL_W / PANEL_H = ajustează după gust */
-const PANEL_W = isMobile ? 3.8  : 8.15;
-const PANEL_H = isMobile ? 8  : 12.0;
-const panelGeo = new THREE.PlaneGeometry(PANEL_W, PANEL_H);
-const frameGeo = new THREE.PlaneGeometry(PANEL_W + 0.18, PANEL_H + 0.18);
-const frameMat = new THREE.MeshBasicMaterial({ color: 0x030303 });
-
-/* Toate 3 panouri la ACEEAȘI adâncime z = -5.0 → dimensiuni egale
-   ► Ajustează x pentru spacing între panouri                      */
-const panelDefs = isMobile ? [
-  { x: -4.0, z: -3.5, ry:  0.10 },
-  { x:  0.0, z: -3.2, ry:  0.00 },
-  { x:  4.0, z: -3.5, ry: -0.10 },
-] : [
-  { x: -8.4, z: -5.0, ry:  0.11 },
-  { x:  0.0, z: -5.0, ry:  0.00 },
-  { x:  8.4, z: -5.0, ry: -0.11 },
-];
-  
-panelDefs.forEach(d => {
-  const fr = new THREE.Mesh(frameGeo, frameMat);
-  fr.position.set(d.x, 0.4, d.z - 0.02); fr.rotation.y = d.ry;
-  scene.add(fr);
-  const sc = new THREE.Mesh(panelGeo, panelMat);
-  sc.position.set(d.x, 0.4, d.z); sc.rotation.y = d.ry;
-  scene.add(sc);
-});
-
-
-
-
-/* ══════════════════════════════════════════════════════════════
-   [ORB] — FORME GEOMETRICE 3D
-   Se schimbă la fiecare frame cu swap-ul invizibil când forma e mică
-
-   Forme per frame:
-   0: Sferă         — simplă, pură, de start
-   1: Dodecahedron  — 12 fețe pentagonale
-   2: Octahedron    — 8 fețe, forma de diamant
-   3: Icosahedron   — 20 fețe triunghiulare
-   4: Merkaba/Stea  — 2 tetrahedre inversate (stea 3D)
-   5: Sferă         — revenire la origine
-   ══════════════════════════════════════════════════════════════ */
-
-/* Material comun pentru toate formele
-   ► shininess (0-300): mai mic = mat, mai mare = oglindă */
+/* ORB */
 const orbMat = new THREE.MeshPhongMaterial({
-  color:             new THREE.Color(FRAMES[0].orbHex),
-  emissive:          new THREE.Color(FRAMES[0].emissHex),
+  color: new THREE.Color(FRAMES[0].orbHex),
+  emissive: new THREE.Color(FRAMES[0].emissHex),
   emissiveIntensity: 0.60,
-  specular:          new THREE.Color(0xffffff),
-  shininess:         240,
+  specular: new THREE.Color(0xffffff),
+  shininess: 240,
 });
 
-/* Geometriile pentru fiecare frame (built-in Three.js, fără librării extra) */
 const SHAPES = [
-  new THREE.SphereGeometry(1, 64, 64),       /* Frame 0: Sferă */
-  new THREE.DodecahedronGeometry(1, 0),       /* Frame 1: Dodecahedron */
-  new THREE.OctahedronGeometry(1, 0),         /* Frame 2: Octahedron (diamant) */
-  new THREE.IcosahedronGeometry(1, 0),        /* Frame 3: Icosahedron */
-  new THREE.TetrahedronGeometry(1.1, 0),      /* Frame 4: Tetrahedron (baza Merkaba) */
-  new THREE.SphereGeometry(1, 64, 64),        /* Frame 5: Sferă */
+  new THREE.SphereGeometry(1, 64, 64),
+  new THREE.DodecahedronGeometry(1, 0),
+  new THREE.OctahedronGeometry(1, 0),
+  new THREE.IcosahedronGeometry(1, 0),
+  new THREE.TetrahedronGeometry(1.1, 0),
+  new THREE.SphereGeometry(1, 64, 64),
 ];
 
-/* Group principal — conține forma curentă + helper Merkaba */
 const orbGroup = new THREE.Group();
-
-/* Forma principală */
 const orb = new THREE.Mesh(SHAPES[0], orbMat);
 orb.castShadow = true;
 orbGroup.add(orb);
 
-/* Al doilea tetrahedron pentru efectul Merkaba (stea) — doar pe frame 4
-   Se rotește invers față de primul pentru efectul de stea 3D spinning */
-const starHelper = new THREE.Mesh(
-  new THREE.TetrahedronGeometry(1.1, 0),
-  orbMat
-);
-starHelper.rotation.x = Math.PI;   /* Rotit invers față de primul tetrahedron */
+const starHelper = new THREE.Mesh(new THREE.TetrahedronGeometry(1.1, 0), orbMat);
+starHelper.rotation.x = Math.PI;
 starHelper.visible = false;
 orbGroup.add(starHelper);
-
 scene.add(orbGroup);
 
-/* Lumina formei — urmărește poziția și culoarea */
 const orbPtLight = new THREE.PointLight(0x4a82b8, 4.0, 9.0);
 scene.add(orbPtLight);
 
-/* Variabile de stare (smooth interpolated) */
-let curOrbScale   = ORB_BIG;
-let curOrbX       = 0;
-let curOrbY       = 0;
-let curOrbZ       = 0;
-let shapeFrameIdx = -1;  /* Frame-ul pentru care s-a aplicat ultima formă */
+let curOrbScale = ORB_BIG;
+let curOrbX = 0;
+let curOrbY = 0;
+let curOrbZ = 0;
+let shapeFrameIdx = -1;
 
-
-/* ══════════════════════════════════════════════════════════════
-   [LIGHTS] — Iluminare scenă
-   ══════════════════════════════════════════════════════════════ */
+/* LIGHTS */
 scene.add(new THREE.AmbientLight(0x0d1520, 3.0));
-
 const keyLight = new THREE.DirectionalLight(0xffffff, 2.0);
-keyLight.position.set(4, 7, 6); keyLight.castShadow = true;
+keyLight.position.set(4, 7, 6);
+keyLight.castShadow = true;
 scene.add(keyLight);
 
 const fillLight = new THREE.DirectionalLight(0x7090cc, 0.7);
-fillLight.position.set(-6, 2, 4); scene.add(fillLight);
+fillLight.position.set(-6, 2, 4);
+scene.add(fillLight);
 
 const rimLight = new THREE.DirectionalLight(0xffffff, 1.1);
-rimLight.position.set(0, 4, -9); scene.add(rimLight);
+rimLight.position.set(0, 4, -9);
+scene.add(rimLight);
 
-
-/* ══════════════════════════════════════════════════════════════
-   [SCROLL] — Calcul progres și logica scroll
-   ══════════════════════════════════════════════════════════════ */
+/* SCROLL */
 document.body.style.height = '750vh';
-
-/* ► LOCK_DURATION = pauza în ms când apare textul (300-2000) */
 const LOCK_DURATION = 2000;
 
-let rawScrollY    = 0;
-let animScrollY   = 0;
-let scrollLocked  = false;
-let lockTimer     = null;
-let lastZone      = 'big';
+let rawScrollY = 0;
+let animScrollY = 0;
+let scrollLocked = false;
+let lockTimer = null;
+let lastZone = 'big';
 let lastLockFrame = -1;
 let autoScrolling = true;
 
 window.addEventListener('scroll', () => {
-  rawScrollY    = window.scrollY;
+  rawScrollY = window.scrollY;
   autoScrolling = false;
 }, { passive: true });
 
@@ -680,48 +589,46 @@ function getGlobalP() {
   return maxSY > 0 ? Math.min(1, animScrollY / maxSY) : 0;
 }
 
-/* ── Helper functions ── */
-function lerp(a, b, t)    { return a + (b - a) * t; }
+function lerp(a, b, t) { return a + (b - a) * t; }
 function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
-function smooth(t)         { t = clamp(t, 0, 1); return t * t * (3 - 2 * t); }
+function smooth(t) { t = clamp(t, 0, 1); return t * t * (3 - 2 * t); }
 
 function hexToRgb(hex) {
-  const h = hex.replace('#','');
-  return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)];
+  const h = hex.replace('#', '');
+  return [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)];
 }
 function lerpHex(h1, h2, t) {
-  const [r1,g1,b1] = hexToRgb(h1);
-  const [r2,g2,b2] = hexToRgb(h2);
-  return `rgb(${Math.round(lerp(r1,r2,t))},${Math.round(lerp(g1,g2,t))},${Math.round(lerp(b1,b2,t))})`;
+  const [r1, g1, b1] = hexToRgb(h1);
+  const [r2, g2, b2] = hexToRgb(h2);
+  return `rgb(${Math.round(lerp(r1, r2, t))},${Math.round(lerp(g1, g2, t))},${Math.round(lerp(b1, b2, t))})`;
 }
 
 function getOrbColor(gp) {
   const raw = gp * (FRAMES.length - 1);
-  const i   = Math.min(Math.floor(raw), FRAMES.length - 2);
-  const f   = smooth(raw - i);
-  const c1  = new THREE.Color(FRAMES[i].orbHex);
-  const c2  = new THREE.Color(FRAMES[i+1].orbHex);
-  return new THREE.Color(lerp(c1.r,c2.r,f), lerp(c1.g,c2.g,f), lerp(c1.b,c2.b,f));
+  const i = Math.min(Math.floor(raw), FRAMES.length - 2);
+  const f = smooth(raw - i);
+  const c1 = new THREE.Color(FRAMES[i].orbHex);
+  const c2 = new THREE.Color(FRAMES[i + 1].orbHex);
+  return new THREE.Color(lerp(c1.r, c2.r, f), lerp(c1.g, c2.g, f), lerp(c1.b, c2.b, f));
 }
 function getEmissColor(gp) {
   const raw = gp * (FRAMES.length - 1);
-  const i   = Math.min(Math.floor(raw), FRAMES.length - 2);
-  const f   = smooth(raw - i);
-  const c1  = new THREE.Color(FRAMES[i].emissHex);
-  const c2  = new THREE.Color(FRAMES[i+1].emissHex);
-  return new THREE.Color(lerp(c1.r,c2.r,f), lerp(c1.g,c2.g,f), lerp(c1.b,c2.b,f));
+  const i = Math.min(Math.floor(raw), FRAMES.length - 2);
+  const f = smooth(raw - i);
+  const c1 = new THREE.Color(FRAMES[i].emissHex);
+  const c2 = new THREE.Color(FRAMES[i + 1].emissHex);
+  return new THREE.Color(lerp(c1.r, c2.r, f), lerp(c1.g, c2.g, f), lerp(c1.b, c2.b, f));
 }
 function getScreenColors(gp) {
   const raw = gp * (FRAMES.length - 1);
-  const i   = Math.min(Math.floor(raw), FRAMES.length - 2);
-  const f   = smooth(raw - i);
+  const i = Math.min(Math.floor(raw), FRAMES.length - 2);
+  const f = smooth(raw - i);
   return {
-    gradA: lerpHex(FRAMES[i].gradA, FRAMES[i+1].gradA, f),
-    gradB: lerpHex(FRAMES[i].gradB, FRAMES[i+1].gradB, f),
+    gradA: lerpHex(FRAMES[i].gradA, FRAMES[i + 1].gradA, f),
+    gradB: lerpHex(FRAMES[i].gradB, FRAMES[i + 1].gradB, f),
   };
 }
 
-/* Text overlay */
 const frameTexts = document.querySelectorAll('.frame-text');
 function showText(idx, opacity) {
   frameTexts.forEach((el, i) => {
@@ -735,7 +642,6 @@ function computeTextOpacity(frameIdx, localP) {
     if (localP < 0.65) return 1.0;
     return smooth(clamp(1 - (localP - 0.65) / 0.35, 0, 1));
   } else if (frameIdx === N - 1) {
-    /* Ultimul frame: apare, rămâne, apoi dispare pentru butoane */
     if (localP < 0.50) return smooth(clamp((localP - 0.30) / 0.20, 0, 1));
     if (localP < 0.72) return 1.0;
     return smooth(clamp(1 - (localP - 0.72) / 0.22, 0, 1));
@@ -744,26 +650,17 @@ function computeTextOpacity(frameIdx, localP) {
   }
 }
 
-/* Variabile cameră */
 let camZ = CAM_Z_START;
 let camX = 0;
 let camY = 0.8;
 
-/* CTA buttons element */
 const ctaBtns = document.getElementById('cta-btns');
-
-
-/* ══════════════════════════════════════════════════════════════
-   [ANIMATE] — Loop principal 60fps
-   ══════════════════════════════════════════════════════════════ */
 const clock = new THREE.Clock();
 
 function animate() {
   requestAnimationFrame(animate);
 
-  /* Auto-scroll dacă userul nu a interacționat */
   if (autoScrolling) {
-    /* ► Viteza auto-scroll: 0.4 = lent, 0.6 = mediu, 1.2 = rapid */
     rawScrollY = Math.min(rawScrollY + 0.6, document.documentElement.scrollHeight - window.innerHeight);
     window.scrollTo(0, rawScrollY);
   }
@@ -771,84 +668,68 @@ function animate() {
     animScrollY += (rawScrollY - animScrollY) * 0.10;
   }
 
-  /* Detectează tranziția → blochează scroll */
-  const _gp  = getGlobalP();
-  const _fi  = Math.min(Math.floor(_gp * FRAMES.length), FRAMES.length - 1);
-  const _lp  = (_gp * FRAMES.length) - Math.floor(_gp * FRAMES.length);
-  const zone = (_fi === 0)
-    ? (_lp < 0.65 ? 'text' : 'big')
-    : (_lp > 0.75 ? 'text' : 'big');
+  const _gp = getGlobalP();
+  const _fi = Math.min(Math.floor(_gp * FRAMES.length), FRAMES.length - 1);
+  const _lp = (_gp * FRAMES.length) - Math.floor(_gp * FRAMES.length);
+  const zone = (_fi === 0) ? (_lp < 0.65 ? 'text' : 'big') : (_lp > 0.75 ? 'text' : 'big');
 
   if (zone === 'text' && lastZone === 'big' && lastLockFrame !== _fi) {
-    scrollLocked  = true;
+    scrollLocked = true;
     lastLockFrame = _fi;
     clearTimeout(lockTimer);
     lockTimer = setTimeout(() => { scrollLocked = false; }, LOCK_DURATION);
   }
   lastZone = zone;
 
-  const time     = clock.getElapsedTime();
-  const gp       = getGlobalP();
-  const N        = FRAMES.length;
+  const time = clock.getElapsedTime();
+  const gp = getGlobalP();
+  const N = FRAMES.length;
   const rawFrame = gp * N;
   const frameIdx = Math.min(Math.floor(rawFrame), N - 1);
-  const localP   = rawFrame - Math.floor(rawFrame);
+  const localP = rawFrame - Math.floor(rawFrame);
 
-  /* ── Text overlay ── */
   const textOp = computeTextOpacity(frameIdx, localP);
   showText(frameIdx, textOp);
 
-  /* ── CTA Butoane — apar la ultimul frame după ce textul dispare ── */
   const showCta = (frameIdx === N - 1) && (localP > 0.88);
   ctaBtns.classList.toggle('on', showCta);
 
-  /* ── Swap geometrie când forma e la minim (invizibil pentru user) ──
-     textOp > 0.85 = forma e foarte mică → swap imperceptibil            */
   if (frameIdx !== shapeFrameIdx && textOp > 0.85) {
-    orb.geometry     = SHAPES[Math.min(frameIdx, SHAPES.length - 1)];
+    orb.geometry = SHAPES[Math.min(frameIdx, SHAPES.length - 1)];
     starHelper.visible = (frameIdx === 4);
-    shapeFrameIdx    = frameIdx;
+    shapeFrameIdx = frameIdx;
   }
 
-  /* ── Target poziție + dimensiune formă ── */
   const orbScaleTarget = lerp(ORB_BIG, ORB_SMALL, textOp);
-  const orbXTarget     = lerp(0, ORB_POS_PER_FRAME[frameIdx].x, textOp);
-  const orbZTarget     = lerp(0, ORB_POS_PER_FRAME[frameIdx].z, textOp);
-  const orbYTarget     = Math.sin(time * 0.65) * 0.10;
+  const orbXTarget = lerp(0, ORB_POS_PER_FRAME[frameIdx].x, textOp);
+  const orbZTarget = lerp(0, ORB_POS_PER_FRAME[frameIdx].z, textOp);
+  const orbYTarget = Math.sin(time * 0.65) * 0.10;
 
-  /* Smooth lerp spre target */
   curOrbScale = lerp(curOrbScale, orbScaleTarget, 0.06);
-  curOrbX     = lerp(curOrbX,     orbXTarget,     0.06);
-  curOrbY     = lerp(curOrbY,     orbYTarget,     0.08);
-  curOrbZ     = lerp(curOrbZ,     orbZTarget,     0.06);
+  curOrbX = lerp(curOrbX, orbXTarget, 0.06);
+  curOrbY = lerp(curOrbY, orbYTarget, 0.08);
+  curOrbZ = lerp(curOrbZ, orbZTarget, 0.06);
 
-  /* ── Animație orbGroup ── */
-  /* Puls subtil — forma respiră */
   const pulse = 1 + Math.sin(time * 1.8) * 0.035;
   orbGroup.scale.setScalar(curOrbScale * pulse);
   orbGroup.position.set(curOrbX, curOrbY, curOrbZ);
-  /* Rotații pe toate axele pentru mai multă viață */
   orbGroup.rotation.y += 0.005;
-  orbGroup.rotation.x  = Math.sin(time * 0.5) * 0.06;
-  orbGroup.rotation.z  = Math.sin(time * 0.3) * 0.02;
+  orbGroup.rotation.x = Math.sin(time * 0.5) * 0.06;
+  orbGroup.rotation.z = Math.sin(time * 0.3) * 0.02;
 
-  /* StarHelper (Merkaba) se rotește invers pentru efectul de stea spinning */
   if (starHelper.visible) {
     starHelper.rotation.y = -orbGroup.rotation.y * 1.8;
   }
 
-  /* ── Culori formă ── */
   const orbCol = getOrbColor(gp);
-  const emCol  = getEmissColor(gp);
+  const emCol = getEmissColor(gp);
   orbMat.color.copy(orbCol);
   orbMat.emissive.copy(emCol);
 
-  /* Lumina urmărește forma */
   orbPtLight.color.copy(orbCol);
   orbPtLight.position.set(curOrbX, curOrbY + 0.5, curOrbZ + 1.5);
   orbPtLight.intensity = lerp(1.8, 4.5, 1 - textOp);
 
-  /* ── Camera zoom + pan ── */
   const camZTarget = lerp(CAM_Z_START, CAM_Z_END, smooth(gp));
   const camXTarget = Math.sin(gp * Math.PI * 2.2) * 0.9 - textOp * 0.8;
   const camYTarget = lerp(0.8, 0.2, smooth(gp));
@@ -860,15 +741,12 @@ function animate() {
   camera.position.set(camX, camY, camZ);
   camera.lookAt(curOrbX * 0.12, 0.15, 0);
 
-  /* ── Ecran gradient — repictat la fiecare frame (efect live) ── */
   const { gradA, gradB } = getScreenColors(gp);
-  paintScreen(gradA, gradB, time);
+  paintScreen(gradA, gradB, time, frameIdx);
 
-  /* ── Counter frame ── */
   const dispFrame = Math.min(frameIdx + 1, N);
-  counterEl.textContent = String(dispFrame).padStart(2,'0') + ' / ' + String(N).padStart(2,'0');
+  counterEl.textContent = String(dispFrame).padStart(2, '0') + ' / ' + String(N).padStart(2, '0');
 
-  /* ── Scroll hint dispare ── */
   hintEl.style.opacity = Math.max(0, 1 - gp * 14).toString();
 
   renderer.render(scene, camera);
@@ -876,10 +754,6 @@ function animate() {
 
 animate();
 
-
-/* ══════════════════════════════════════════════════════════════
-   [RESIZE] — Responsive
-   ══════════════════════════════════════════════════════════════ */
 window.addEventListener('resize', () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
@@ -887,9 +761,17 @@ window.addEventListener('resize', () => {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 });
 
+function toggleExpand(id, btn) {
+  const el = document.getElementById(id);
+  const icon = btn.querySelector('.mm-icon');
+  const isOpen = el.classList.contains('open');
+  el.classList.toggle('open', !isOpen);
+  icon.textContent = isOpen ? '+' : '−';
+  btn.childNodes[1].textContent = isOpen ? ' Mai multe' : ' Mai puțin';
+}
 </script>
 
-<!-- ════ BANNER COOKIES (GDPR) ════ -->
+<!-- BANNER COOKIES -->
 <div id="cookie-banner">
   <p>
     Folosim cookie-uri esențiale și, cu acordul tău, cookie-uri analitice.
@@ -904,40 +786,92 @@ window.addEventListener('resize', () => {
 
 <style>
 #cookie-banner {
-  position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
-  z-index:9999; width:min(600px,calc(100% - 32px));
-  background:rgba(6,8,15,0.97); border:1px solid rgba(255,255,255,0.1);
-  border-radius:14px; padding:16px 20px;
-  display:none; align-items:center; justify-content:space-between; gap:16px;
-  backdrop-filter:blur(20px); font-family:'Syne',sans-serif;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: min(600px, calc(100% - 32px));
+  background: rgba(6, 8, 15, 0.97);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 16px 20px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  backdrop-filter: blur(20px);
+  font-family: 'Syne', sans-serif;
 }
-#cookie-banner.show { display:flex; }
-#cookie-banner p { font-size:13px; color:rgba(255,255,255,0.6); margin:0; line-height:1.5; }
-#cookie-banner a { color:#5aaeff; text-decoration:underline; }
-.cb-btns { display:flex; gap:8px; flex-shrink:0; }
-.cb-btns button { padding:8px 18px; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; border:none; }
-#cb-accept { background:#5aaeff; color:#000; }
-#cb-reject { background:transparent; color:rgba(255,255,255,0.6); border:1px solid rgba(255,255,255,0.15) !important; }
-@media(max-width:520px){ #cookie-banner { flex-direction:column; } }
+#cookie-banner.show { display: flex; }
+#cookie-banner p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  line-height: 1.5;
+}
+#cookie-banner a {
+  color: #5aaeff;
+  text-decoration: underline;
+}
+.cb-btns {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.cb-btns button {
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+#cb-accept {
+  background: #5aaeff;
+  color: #000;
+}
+#cb-reject {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+@media (max-width: 520px) {
+  #cookie-banner {
+    flex-direction: column;
+  }
+}
 </style>
 
 <script>
-(function(){
-  var KEY='nexas_cookie_ok';
-  function get(n){var m=document.cookie.match('(^|;)\\s*'+n+'\\s*=\\s*([^;]+)');return m?m.pop():null;}
-  function set(n,v,d){var e=new Date(Date.now()+d*864e5).toUTCString();document.cookie=n+'='+v+';path=/;expires='+e+';SameSite=Lax';}
-  var b=document.getElementById('cookie-banner');
-  if(!get(KEY)) b.classList.add('show');
-  document.getElementById('cb-accept').onclick=function(){set(KEY,'1',365);b.classList.remove('show');};
-  document.getElementById('cb-reject').onclick=function(){set(KEY,'0',365);b.classList.remove('show');};
+(function () {
+  var KEY = 'nexas_cookie_ok';
+  function get(n) {
+    var m = document.cookie.match('(^|;)\\s*' + n + '\\s*=\\s*([^;]+)');
+    return m ? m.pop() : null;
+  }
+  function set(n, v, d) {
+    var e = new Date(Date.now() + d * 864e5).toUTCString();
+    document.cookie = n + '=' + v + ';path=/;expires=' + e + ';SameSite=Lax';
+  }
+  var b = document.getElementById('cookie-banner');
+  if (!get(KEY)) b.classList.add('show');
+  document.getElementById('cb-accept').onclick = function () {
+    set(KEY, '1', 365);
+    b.classList.remove('show');
+  };
+  document.getElementById('cb-reject').onclick = function () {
+    set(KEY, '0', 365);
+    b.classList.remove('show');
+  };
 })();
 </script>
 
 <footer style="position:fixed;bottom:0;left:0;right:0;z-index:25;padding:10px 32px;display:flex;justify-content:center;gap:24px;font-size:11px;font-family:'Syne',sans-serif;color:rgba(255,255,255,0.25);letter-spacing:.08em;">
-  <a href="privacy.html"  style="color:rgba(255,255,255,0.25);text-decoration:none;">Confidențialitate</a>
-  <a href="cookies.html"  style="color:rgba(255,255,255,0.25);text-decoration:none;">Cookies</a>
-  <a href="termeni.html"  style="color:rgba(255,255,255,0.25);text-decoration:none;">Termeni</a>
-  <a href="contact.html"  style="color:rgba(255,255,255,0.25);text-decoration:none;">Contact</a>
+  <a href="privacy.html" style="color:rgba(255,255,255,0.25);text-decoration:none;">Confidențialitate</a>
+  <a href="cookies.html" style="color:rgba(255,255,255,0.25);text-decoration:none;">Cookies</a>
+  <a href="termeni.html" style="color:rgba(255,255,255,0.25);text-decoration:none;">Termeni</a>
+  <a href="contact.html" style="color:rgba(255,255,255,0.25);text-decoration:none;">Contact</a>
 </footer>
 
 </body>
