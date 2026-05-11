@@ -261,12 +261,34 @@ def main():
         item["image"] = f"assets/generated/{svg_path.name}"
         clean_items.append(item)
 
-    payload = {
-        "updated_at": datetime.now(timezone.utc).isoformat(),
-        "items": clean_items
-    }
-    OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Wrote {OUT_JSON} with {len(clean_items)} items")
+    old_items = []
+
+if OUT_JSON.exists():
+    try:
+        old_payload = json.loads(OUT_JSON.read_text(encoding="utf-8"))
+        old_items = old_payload.get("items", [])
+    except Exception:
+        old_items = []
+
+merged = []
+seen_urls = set()
+
+for item in clean_items + old_items:
+    url = item.get("url", "")
+
+    if not url or url in seen_urls:
+        continue
+
+    seen_urls.add(url)
+    merged.append(item)
+
+payload = {
+    "updated_at": datetime.now(timezone.utc).isoformat(),
+    "items": merged[:60]
+}
+
+OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+print(f"Wrote {OUT_JSON} with {len(merged[:60])} items")
 
 
 if __name__ == "__main__":
