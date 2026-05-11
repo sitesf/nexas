@@ -362,6 +362,225 @@ h2{font-size:clamp(34px,5vw,72px);line-height:.98;letter-spacing:-.055em;max-wid
   background: rgba(0,0,0,.6);
   color: #fff;
 }
+
+  .alex-card-demo {
+  min-height: 430px;
+  border-radius: 32px;
+  border: 1px solid rgba(255,255,255,.14);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(93,215,255,.22), transparent 30%),
+    radial-gradient(circle at 85% 80%, rgba(255,79,216,.16), transparent 35%),
+    rgba(255,255,255,.045);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 30px 80px rgba(0,0,0,.35);
+  padding: 24px;
+}
+
+.cbox {
+  height: 100%;
+  min-height: 382px;
+  background: rgba(15,15,26,.97);
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,.08);
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0,0,0,.5), 0 0 0 1px rgba(108,99,255,.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chdr {
+  padding: 1.1rem 1.4rem;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  background: rgba(255,255,255,.02);
+}
+
+.cos {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #00D4FF, #6C63FF);
+  box-shadow: 0 0 10px rgba(108,99,255,.5);
+  flex-shrink: 0;
+}
+
+.chi h4 {
+  font-size: .88rem;
+  font-weight: 700;
+  margin: 0;
+  color: #F0F0FF;
+}
+
+.chi span {
+  font-size: .72rem;
+  color: #00ff88;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chi span::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #00ff88;
+  display: inline-block;
+}
+
+.cms {
+  padding: 1.25rem;
+  min-height: 260px;
+  max-height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  flex: 1;
+}
+
+.msg {
+  display: flex;
+  gap: .65rem;
+}
+
+.msg.user {
+  flex-direction: row-reverse;
+}
+
+.mav {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.mav.alex {
+  background: radial-gradient(circle at 35% 35%, #00D4FF, #6C63FF);
+  box-shadow: 0 0 8px rgba(108,99,255,.5);
+}
+
+.mav.user {
+  background: linear-gradient(135deg,#3a3a5a,#555);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .62rem;
+  color: #ccc;
+  font-weight: 700;
+}
+
+.mb {
+  max-width: 88%;
+  padding: .65rem .9rem;
+  border-radius: 14px;
+  font-size: .875rem;
+  line-height: 1.55;
+}
+
+.msg.alex .mb {
+  background: rgba(108,99,255,.1);
+  border: 1px solid rgba(108,99,255,.18);
+  color: #F0F0FF;
+  border-bottom-left-radius: 3px;
+}
+
+.msg.user .mb {
+  background: linear-gradient(135deg,#6C63FF,#00D4FF);
+  color: #fff;
+  border-bottom-right-radius: 3px;
+}
+
+.ti {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: .65rem .9rem;
+}
+
+.td {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #6C63FF;
+  animation: tb 1.2s ease-in-out infinite;
+}
+
+.td:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.td:nth-child(3) {
+  animation-delay: .4s;
+}
+
+@keyframes tb {
+  0%,100% { transform: scale(1); opacity: .5; }
+  50% { transform: scale(1.4); opacity: 1; }
+}
+
+.cir {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgba(255,255,255,.08);
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+}
+
+.cinp {
+  flex: 1;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 2rem;
+  padding: .65rem 1.1rem;
+  color: #F0F0FF;
+  font-size: .875rem;
+  outline: none;
+}
+
+.cinp::placeholder {
+  color: rgba(255,255,255,.45);
+}
+
+.csnd {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#6C63FF,#00D4FF);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.csnd svg {
+  width: 15px;
+  height: 15px;
+  fill: white;
+}
+
+@media(max-width:768px) {
+  .alex-card-demo {
+    min-height: auto;
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .cbox {
+    min-height: 360px;
+  }
+
+  .cms {
+    max-height: 280px;
+  }
+}
+  
 </style>
 </head>
 <body>
@@ -437,7 +656,28 @@ Noi construim site-ul care îl convinge să te aleagă.<span class="grad"></span
       <h2>Site-ul tau poate avea propriii angajati digitali</h2>
       <p class="big">Agenti AI integrati in site, pregatiti sa raspunda, sa publice, sa actualizeze si sa automatizeze sarcini repetitive.</p>
       <div class="showcase">
-       <img src="poze/3robotei.png" alt="Agenti digitali pentru site" class="preview-img">
+     <div class="alex-card-demo">
+  <div class="cbox">
+    <div class="chdr">
+      <div class="cos"></div>
+      <div class="chi">
+        <h4>Alex</h4>
+        <span>Online · Disponibil</span>
+      </div>
+    </div>
+
+    <div class="cms" id="cms"></div>
+
+    <div class="cir">
+      <input class="cinp" id="cinp" type="text" placeholder="Intreaba-l pe Alex orice..." autocomplete="off">
+      <button class="csnd" id="csnd">
+        <svg viewBox="0 0 24 24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
         <div class="mini-list">
           <div class="mini"><h3>ANI</h3><p>Preia stiri din surse alese, le reformuleaza, le organizeaza si le publica automat pe site-ul tau.</p></div>
          <a class="mini" href="https://nexas.ro/chatbot/alex.html" target="_blank" rel="noopener">
@@ -620,6 +860,91 @@ Noi construim site-ul care îl convinge să te aleagă.<span class="grad"></span
     renderer.setPixelRatio(Math.min(devicePixelRatio, innerWidth < 820 ? 1.45 : 2));
   });
 })();
+
+  <script>
+const msgs = document.getElementById('cms');
+const cinp = document.getElementById('cinp');
+const csnd = document.getElementById('csnd');
+
+const rep = [
+  'Pot sa iti explic serviciile si sa te ajut sa alegi varianta potrivita pentru afacerea ta.',
+  'Pentru o oferta, am nevoie de cateva detalii: tipul afacerii, numarul de pagini si ce vrei sa obtina site-ul.',
+  'Da, pot prelua intrebarile repetitive si pot ghida vizitatorii spre contact, oferta sau comanda.',
+  'Un site bun trebuie sa fie clar, rapid si usor de inteles din primele secunde.'
+];
+
+let ri = 0;
+
+function addTyp() {
+  const d = document.createElement('div');
+  d.className = 'msg alex';
+  d.id = 'tind';
+  d.innerHTML = `
+    <div class="mav alex"></div>
+    <div class="mb">
+      <div class="ti">
+        <div class="td"></div>
+        <div class="td"></div>
+        <div class="td"></div>
+      </div>
+    </div>
+  `;
+  msgs.appendChild(d);
+  msgs.scrollTop = msgs.scrollHeight;
+  return d;
+}
+
+function addMsg(role, text) {
+  const d = document.createElement('div');
+  d.className = `msg ${role}`;
+
+  const av = document.createElement('div');
+  av.className = `mav ${role}`;
+
+  if (role === 'user') {
+    av.textContent = 'TU';
+  }
+
+  const b = document.createElement('div');
+  b.className = 'mb';
+  b.innerHTML = text.replace(/\n/g, '<br>');
+
+  d.appendChild(av);
+  d.appendChild(b);
+  msgs.appendChild(d);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function alexReply() {
+  const typing = addTyp();
+
+  setTimeout(() => {
+    typing.remove();
+    addMsg('alex', rep[ri % rep.length]);
+    ri++;
+  }, 800);
+}
+
+function sendMessage() {
+  const v = cinp.value.trim();
+
+  if (!v) return;
+
+  cinp.value = '';
+  addMsg('user', v);
+  alexReply();
+}
+
+csnd.addEventListener('click', sendMessage);
+
+cinp.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') {
+    sendMessage();
+  }
+});
+
+addMsg('alex', 'Salut! Sunt Alex. Iti pot raspunde la intrebari si te pot ghida spre serviciul potrivit.');
+</script>
 </script>
 </body>
 </html>
