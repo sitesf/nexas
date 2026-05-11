@@ -6,7 +6,6 @@
 <meta name="theme-color" content="#000000"/>
 <title>NEXAS — Prezență Digitală</title>
 
-<!-- Font Syne -->
 <style>
 @font-face {
   font-family: 'Syne';
@@ -30,7 +29,7 @@
 html { scroll-behavior: auto; }
 
 body {
-  background: linear-gradient(135deg, #0a0e1a 0%, #1a1e2e 100%);
+  background: #000;
   font-family: 'Syne', system-ui, sans-serif;
   color: #fff;
   overflow-x: hidden;
@@ -42,7 +41,6 @@ body {
   display: block; z-index: 0;
 }
 
-/* LOADER */
 #loader {
   position: fixed; inset: 0; z-index: 300;
   background: #000;
@@ -61,7 +59,6 @@ body {
 .ld-bar   { height: 100%; width: 0%; background: #fff; transition: width .1s ease; }
 .ld-pct   { font-size: 11px; letter-spacing: .35em; color: rgba(255,255,255,0.35); font-family: monospace; }
 
-/* NAV */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 50;
   display: flex; align-items: center; justify-content: space-between;
@@ -85,7 +82,6 @@ nav.on { opacity: 1; }
   nav { justify-content: center; }
 }
 
-/* TEXT OVERLAY */
 #text-layer {
   position: fixed; top: 0; left: 0;
   width: 100%; height: 100dvh;
@@ -140,7 +136,6 @@ nav.on { opacity: 1; }
   background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.6);
 }
 
-/* EXPAND TEXT */
 .expand-text {
   max-height: 0; overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -176,7 +171,6 @@ nav.on { opacity: 1; }
   background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.6);
 }
 
-/* CTA BUTTONS */
 #cta-btns {
   position: fixed; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
@@ -209,7 +203,6 @@ nav.on { opacity: 1; }
 }
 .cta-btn.secondary:hover { background: rgba(255,255,255,0.16); }
 
-/* UI BOTTOM */
 #scroll-hint {
   position: fixed; bottom: 26px; left: 32px; z-index: 30;
   font-size: 11px; letter-spacing: .22em; color: rgba(255,255,255,0.35);
@@ -224,7 +217,6 @@ nav.on { opacity: 1; }
 }
 #frame-counter.on { opacity: 1; }
 
-/* MOBILE */
 @media (max-width: 768px) {
   nav { padding: 18px 20px; }
   .frame-text { max-width: 88%; left: 5vw; }
@@ -237,14 +229,12 @@ nav.on { opacity: 1; }
 
 <body>
 
-<!-- LOADER -->
 <div id="loader">
   <div class="ld-logo">N<em>E</em>X<em2>A</em2>S</div>
   <div class="ld-track"><div class="ld-bar" id="lbar"></div></div>
   <div class="ld-pct" id="lpct">0%</div>
 </div>
 
-<!-- NAV -->
 <nav id="nav">
   <div class="nav-brand">
     N<em>E</em>XAS
@@ -258,10 +248,8 @@ nav.on { opacity: 1; }
   </div>
 </nav>
 
-<!-- CANVAS 3D -->
 <canvas id="canvas"></canvas>
 
-<!-- TEXT OVERLAY -->
 <div id="text-layer">
 
   <div class="frame-text" data-frame="0">
@@ -270,7 +258,7 @@ prezențe digitale
 de impact</h1>
     <p>Site-uri, magazine online și strategii SEO — totul gândit să atragă, să convingă și să convertească.</p>
     <div class="expand-text" id="expand-0">
-      <p>Construim de la zero sau pe WordPress, adaptând fiecare linie de cod nevoilor reale ale afacerii tale.</p>
+      <p>Construim de la zero, adaptând fiecare linie de cod nevoilor reale ale afacerii tale.</p>
       <p>Combinăm design modern cu Google Ads și SEO avansat — o prezență digitală care lucrează pentru tine 24/7.</p>
     </div>
     <button class="btn-mai-multe" onclick="toggleExpand('expand-0', this)">
@@ -363,13 +351,11 @@ fără erori</h1>
 
 </div>
 
-<!-- CTA BUTTONS -->
 <div id="cta-btns">
   <a href="contact.html" class="cta-btn primary">Contact</a>
   <a href="portofoliu.html" class="cta-btn secondary">Portofoliu</a>
 </div>
 
-<!-- UI -->
 <div id="scroll-hint">scroll to explore</div>
 <div id="frame-counter">01 / 06</div>
 
@@ -377,33 +363,18 @@ fără erori</h1>
 
 <script>
 const FRAMES = [
-  { orbHex: '#1e3a7a', emissHex: '#080e22', gradA: '#0a1840', gradB: '#1e3a70' },
-  { orbHex: '#4a82b8', emissHex: '#182838', gradA: '#1e3858', gradB: '#5090c0' },
-  { orbHex: '#7898b0', emissHex: '#263040', gradA: '#304858', gradB: '#7898b0' },
-  { orbHex: '#9ab4c8', emissHex: '#405060', gradA: '#4a6070', gradB: '#9ab4c8' },
-  { orbHex: '#c4d4de', emissHex: '#586878', gradA: '#6a8090', gradB: '#c0d2de' },
-  { orbHex: '#e0eaf2', emissHex: '#4a5e6a', gradA: '#546e7a', gradB: '#fce4ec' },
+  { gradA: '#ff6b9d', gradB: '#c44569' }, // Roz vibrant
+  { gradA: '#a8e6cf', gradB: '#56ab91' }, // Verde mint
+  { gradA: '#ffd93d', gradB: '#f9a826' }, // Galben
+  { gradA: '#6a89cc', gradB: '#4a69bd' }, // Albastru
+  { gradA: '#f78fb3', gradB: '#d63031' }, // Roz-roșu
+  { gradA: '#a29bfe', gradB: '#6c5ce7' }, // Violet
 ];
 
 const isMobile = window.innerWidth < 768;
-const ORB_BIG = isMobile ? 1.2 : 1.80;
-const ORB_SMALL = isMobile ? 0.55 : 0.88;
+const CAM_Z_START = isMobile ? 6.5 : 10.0;
+const CAM_Z_END = isMobile ? 5.0 : 8.0;
 
-const xShift = isMobile ? 1.2 : 3.5;
-const zShift = isMobile ? 1.0 : 2.5;
-const ORB_POS_PER_FRAME = [
-  { x: 0.0, z: 0.0 },
-  { x: xShift, z: 0.0 },
-  { x: -xShift, z: zShift },
-  { x: xShift, z: zShift },
-  { x: -xShift, z: zShift },
-  { x: xShift, z: zShift },
-];
-
-const CAM_Z_START = isMobile ? 8.0 : 13.0;
-const CAM_Z_END = isMobile ? 4.0 : 6.5;
-
-/* LOADER */
 const loaderEl = document.getElementById('loader');
 const lbarEl = document.getElementById('lbar');
 const lpctEl = document.getElementById('lpct');
@@ -427,9 +398,8 @@ const ldTimer = setInterval(() => {
   }
 }, 80);
 
-/* THREE.JS SETUP */
 const canvas3d = document.getElementById('canvas');
-const renderer = new THREE.WebGLRenderer({ canvas: canvas3d, antialias: true, alpha: true });
+const renderer = new THREE.WebGLRenderer({ canvas: canvas3d, antialias: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
@@ -438,7 +408,8 @@ renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.25;
 
 const scene = new THREE.Scene();
-scene.background = null; // Transparent
+scene.background = new THREE.Color(0x000308);
+scene.fog = new THREE.Fog(0x000308, 14, 40);
 
 const camera = new THREE.PerspectiveCamera(
   isMobile ? 92 : 60,
@@ -448,7 +419,7 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.set(0, 0.8, CAM_Z_START);
 camera.lookAt(0, 0, 0);
 
-/* ECRAN LED CURBAT UNIC */
+/* ECRANE - MARI ca Passion */
 const SCR_W = 512, SCR_H = 1024;
 const scrCanvas = document.createElement('canvas');
 scrCanvas.width = SCR_W;
@@ -456,116 +427,89 @@ scrCanvas.height = SCR_H;
 const scrCtx = scrCanvas.getContext('2d');
 const scrTex = new THREE.CanvasTexture(scrCanvas);
 
-// Preload imagine
+// Preload imagine frame 0
 const img0 = new Image();
 img0.src = 'POZA1.1.png';
 
-function paintScreen(gradA, gradB, t, frameIdx) {
+function paintScreen(gradA, gradB, t, frameIdx, imageOpacity) {
   t = t || 0;
   frameIdx = frameIdx || 0;
+  imageOpacity = imageOpacity !== undefined ? imageOpacity : 1;
 
-  scrCtx.fillStyle = gradA;
+  // Gradient de bază
+  const grd = scrCtx.createLinearGradient(0, 0, SCR_W, SCR_H);
+  grd.addColorStop(0, gradA);
+  grd.addColorStop(1, gradB);
+  scrCtx.fillStyle = grd;
   scrCtx.fillRect(0, 0, SCR_W, SCR_H);
 
-  // Frame 0: Afișează poza
-  if (frameIdx === 0 && img0.complete) {
-    scrCtx.drawImage(img0, 0, 0, SCR_W, SCR_H);
-    scrTex.needsUpdate = true;
-    return;
-  }
-
-  // Restul: gradient animat cu blob-uri
+  // Blur/smooth effect
+  scrCtx.globalAlpha = 0.3;
   const blobs = [
-    { x: SCR_W * (0.5 + Math.sin(t * 1.2) * 0.45), y: SCR_H * (0.3 + Math.cos(t * 0.9) * 0.30), r: SCR_W * 0.75, col: gradB, op: 0.85 },
-    { x: SCR_W * (0.2 + Math.cos(t * 0.8) * 0.35), y: SCR_H * (0.6 + Math.sin(t * 1.1) * 0.25), r: SCR_W * 0.60, col: gradA, op: 0.60 },
-    { x: SCR_W * (0.8 + Math.sin(t * 1.5) * 0.20), y: SCR_H * (0.2 + Math.cos(t * 1.3) * 0.35), r: SCR_W * 0.50, col: gradB, op: 0.50 },
-    { x: SCR_W * (0.4 + Math.cos(t * 0.6) * 0.40), y: SCR_H * (0.8 + Math.sin(t * 0.7) * 0.15), r: SCR_W * 0.65, col: gradA, op: 0.40 },
+    { x: SCR_W * (0.5 + Math.sin(t * 0.8) * 0.3), y: SCR_H * (0.3 + Math.cos(t * 0.6) * 0.2), r: SCR_W * 0.6, col: gradB },
+    { x: SCR_W * (0.2 + Math.cos(t * 0.5) * 0.2), y: SCR_H * (0.7 + Math.sin(t * 0.7) * 0.15), r: SCR_W * 0.5, col: gradA },
   ];
-
   blobs.forEach(b => {
     const rg = scrCtx.createRadialGradient(b.x, b.y, 0, b.x, b.y, b.r);
     rg.addColorStop(0, b.col);
     rg.addColorStop(1, 'rgba(0,0,0,0)');
-    scrCtx.globalAlpha = b.op;
     scrCtx.fillStyle = rg;
     scrCtx.fillRect(0, 0, SCR_W, SCR_H);
   });
-
-  scrCtx.globalAlpha = 0.13;
-  const hl = scrCtx.createRadialGradient(SCR_W * .5, SCR_H * .28, 0, SCR_W * .5, SCR_H * .28, SCR_W * .72);
-  hl.addColorStop(0, '#ffffff');
-  hl.addColorStop(1, 'rgba(255,255,255,0)');
-  scrCtx.fillStyle = hl;
-  scrCtx.fillRect(0, 0, SCR_W, SCR_H);
-
   scrCtx.globalAlpha = 1.0;
+
+  // Frame 0: Poza cu fade
+  if (frameIdx === 0 && img0.complete && imageOpacity > 0) {
+    scrCtx.globalAlpha = imageOpacity;
+    scrCtx.drawImage(img0, 0, 0, SCR_W, SCR_H);
+    scrCtx.globalAlpha = 1.0;
+  }
+
   scrTex.needsUpdate = true;
 }
 
-paintScreen(FRAMES[0].gradA, FRAMES[0].gradB, 0, 0);
+paintScreen(FRAMES[0].gradA, FRAMES[0].gradB, 0, 0, 1);
 
-// Ecran curbat mare - responsive
-const screenWidth = isMobile ? 16 : 24;
-const screenHeight = isMobile ? 10 : 14;
-const screenGeo = new THREE.CylinderGeometry(screenWidth / 1.5, screenWidth / 1.5, screenHeight, 64, 1, true, 0, Math.PI);
-const screenMat = new THREE.MeshBasicMaterial({ map: scrTex, side: THREE.DoubleSide });
-const screen = new THREE.Mesh(screenGeo, screenMat);
-screen.rotation.y = Math.PI;
-screen.position.set(0, 0, isMobile ? -4 : -6);
-scene.add(screen);
+const panelMat = new THREE.MeshBasicMaterial({ map: scrTex });
 
-/* ORB */
-const orbMat = new THREE.MeshPhongMaterial({
-  color: new THREE.Color(FRAMES[0].orbHex),
-  emissive: new THREE.Color(FRAMES[0].emissHex),
-  emissiveIntensity: 0.60,
-  specular: new THREE.Color(0xffffff),
-  shininess: 240,
-});
+// Panouri MARI (ca Passion) - 70-80% din ecran
+const PANEL_W = isMobile ? 5.5 : 10.0;
+const PANEL_H = isMobile ? 11.0 : 16.0;
+const panelGeo = new THREE.PlaneGeometry(PANEL_W, PANEL_H);
+const frameGeo = new THREE.PlaneGeometry(PANEL_W + 0.12, PANEL_H + 0.12);
+const frameMat = new THREE.MeshBasicMaterial({ color: 0x111111 });
 
-const SHAPES = [
-  new THREE.SphereGeometry(1, 64, 64),
-  new THREE.DodecahedronGeometry(1, 0),
-  new THREE.OctahedronGeometry(1, 0),
-  new THREE.IcosahedronGeometry(1, 0),
-  new THREE.TetrahedronGeometry(1.1, 0),
-  new THREE.SphereGeometry(1, 64, 64),
+const panelDefs = isMobile ? [
+  { x: -5.8, z: -4.0, ry: 0.08 },
+  { x: 0.0, z: -3.8, ry: 0.00 },
+  { x: 5.8, z: -4.0, ry: -0.08 },
+] : [
+  { x: -10.5, z: -5.5, ry: 0.09 },
+  { x: 0.0, z: -5.2, ry: 0.00 },
+  { x: 10.5, z: -5.5, ry: -0.09 },
 ];
 
-const orbGroup = new THREE.Group();
-const orb = new THREE.Mesh(SHAPES[0], orbMat);
-orb.castShadow = true;
-orbGroup.add(orb);
-
-const starHelper = new THREE.Mesh(new THREE.TetrahedronGeometry(1.1, 0), orbMat);
-starHelper.rotation.x = Math.PI;
-starHelper.visible = false;
-orbGroup.add(starHelper);
-scene.add(orbGroup);
-
-const orbPtLight = new THREE.PointLight(0x4a82b8, 4.0, 9.0);
-scene.add(orbPtLight);
-
-let curOrbScale = ORB_BIG;
-let curOrbX = 0;
-let curOrbY = 0;
-let curOrbZ = 0;
-let shapeFrameIdx = -1;
+panelDefs.forEach(d => {
+  const fr = new THREE.Mesh(frameGeo, frameMat);
+  fr.position.set(d.x, 0.4, d.z - 0.02);
+  fr.rotation.y = d.ry;
+  scene.add(fr);
+  const sc = new THREE.Mesh(panelGeo, panelMat);
+  sc.position.set(d.x, 0.4, d.z);
+  sc.rotation.y = d.ry;
+  scene.add(sc);
+});
 
 /* LIGHTS */
-scene.add(new THREE.AmbientLight(0x0d1520, 3.0));
-const keyLight = new THREE.DirectionalLight(0xffffff, 2.0);
+scene.add(new THREE.AmbientLight(0x1a1a2e, 2.5));
+const keyLight = new THREE.DirectionalLight(0xffffff, 1.8);
 keyLight.position.set(4, 7, 6);
 keyLight.castShadow = true;
 scene.add(keyLight);
 
-const fillLight = new THREE.DirectionalLight(0x7090cc, 0.7);
+const fillLight = new THREE.DirectionalLight(0x7090cc, 0.6);
 fillLight.position.set(-6, 2, 4);
 scene.add(fillLight);
-
-const rimLight = new THREE.DirectionalLight(0xffffff, 1.1);
-rimLight.position.set(0, 4, -9);
-scene.add(rimLight);
 
 /* SCROLL */
 document.body.style.height = '750vh';
@@ -603,22 +547,6 @@ function lerpHex(h1, h2, t) {
   return `rgb(${Math.round(lerp(r1, r2, t))},${Math.round(lerp(g1, g2, t))},${Math.round(lerp(b1, b2, t))})`;
 }
 
-function getOrbColor(gp) {
-  const raw = gp * (FRAMES.length - 1);
-  const i = Math.min(Math.floor(raw), FRAMES.length - 2);
-  const f = smooth(raw - i);
-  const c1 = new THREE.Color(FRAMES[i].orbHex);
-  const c2 = new THREE.Color(FRAMES[i + 1].orbHex);
-  return new THREE.Color(lerp(c1.r, c2.r, f), lerp(c1.g, c2.g, f), lerp(c1.b, c2.b, f));
-}
-function getEmissColor(gp) {
-  const raw = gp * (FRAMES.length - 1);
-  const i = Math.min(Math.floor(raw), FRAMES.length - 2);
-  const f = smooth(raw - i);
-  const c1 = new THREE.Color(FRAMES[i].emissHex);
-  const c2 = new THREE.Color(FRAMES[i + 1].emissHex);
-  return new THREE.Color(lerp(c1.r, c2.r, f), lerp(c1.g, c2.g, f), lerp(c1.b, c2.b, f));
-}
 function getScreenColors(gp) {
   const raw = gp * (FRAMES.length - 1);
   const i = Math.min(Math.floor(raw), FRAMES.length - 2);
@@ -694,44 +622,15 @@ function animate() {
   const showCta = (frameIdx === N - 1) && (localP > 0.88);
   ctaBtns.classList.toggle('on', showCta);
 
-  if (frameIdx !== shapeFrameIdx && textOp > 0.85) {
-    orb.geometry = SHAPES[Math.min(frameIdx, SHAPES.length - 1)];
-    starHelper.visible = (frameIdx === 4);
-    shapeFrameIdx = frameIdx;
+  // Fade out poza când intră în frame 1
+  let imageOpacity = 0;
+  if (frameIdx === 0) {
+    imageOpacity = 1 - smooth(clamp(localP / 0.65, 0, 1));
   }
 
-  const orbScaleTarget = lerp(ORB_BIG, ORB_SMALL, textOp);
-  const orbXTarget = lerp(0, ORB_POS_PER_FRAME[frameIdx].x, textOp);
-  const orbZTarget = lerp(0, ORB_POS_PER_FRAME[frameIdx].z, textOp);
-  const orbYTarget = Math.sin(time * 0.65) * 0.10;
-
-  curOrbScale = lerp(curOrbScale, orbScaleTarget, 0.06);
-  curOrbX = lerp(curOrbX, orbXTarget, 0.06);
-  curOrbY = lerp(curOrbY, orbYTarget, 0.08);
-  curOrbZ = lerp(curOrbZ, orbZTarget, 0.06);
-
-  const pulse = 1 + Math.sin(time * 1.8) * 0.035;
-  orbGroup.scale.setScalar(curOrbScale * pulse);
-  orbGroup.position.set(curOrbX, curOrbY, curOrbZ);
-  orbGroup.rotation.y += 0.005;
-  orbGroup.rotation.x = Math.sin(time * 0.5) * 0.06;
-  orbGroup.rotation.z = Math.sin(time * 0.3) * 0.02;
-
-  if (starHelper.visible) {
-    starHelper.rotation.y = -orbGroup.rotation.y * 1.8;
-  }
-
-  const orbCol = getOrbColor(gp);
-  const emCol = getEmissColor(gp);
-  orbMat.color.copy(orbCol);
-  orbMat.emissive.copy(emCol);
-
-  orbPtLight.color.copy(orbCol);
-  orbPtLight.position.set(curOrbX, curOrbY + 0.5, curOrbZ + 1.5);
-  orbPtLight.intensity = lerp(1.8, 4.5, 1 - textOp);
-
+  // Cameră mișcare minimă: 5-10 grade
   const camZTarget = lerp(CAM_Z_START, CAM_Z_END, smooth(gp));
-  const camXTarget = Math.sin(gp * Math.PI * 2.2) * 0.9 - textOp * 0.8;
+  const camXTarget = Math.sin(gp * Math.PI * 2.2) * 0.10; // 0.10 = ~5-10 grade
   const camYTarget = lerp(0.8, 0.2, smooth(gp));
 
   camZ = lerp(camZ, camZTarget, 0.035);
@@ -739,10 +638,10 @@ function animate() {
   camY = lerp(camY, camYTarget, 0.030);
 
   camera.position.set(camX, camY, camZ);
-  camera.lookAt(curOrbX * 0.12, 0.15, 0);
+  camera.lookAt(0, 0.15, 0);
 
   const { gradA, gradB } = getScreenColors(gp);
-  paintScreen(gradA, gradB, time, frameIdx);
+  paintScreen(gradA, gradB, time, frameIdx, imageOpacity);
 
   const dispFrame = Math.min(frameIdx + 1, N);
   counterEl.textContent = String(dispFrame).padStart(2, '0') + ' / ' + String(N).padStart(2, '0');
@@ -771,7 +670,6 @@ function toggleExpand(id, btn) {
 }
 </script>
 
-<!-- BANNER COOKIES -->
 <div id="cookie-banner">
   <p>
     Folosim cookie-uri esențiale și, cu acordul tău, cookie-uri analitice.
@@ -786,84 +684,32 @@ function toggleExpand(id, btn) {
 
 <style>
 #cookie-banner {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-  width: min(600px, calc(100% - 32px));
-  background: rgba(6, 8, 15, 0.97);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 14px;
-  padding: 16px 20px;
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  backdrop-filter: blur(20px);
-  font-family: 'Syne', sans-serif;
+  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+  z-index: 9999; width: min(600px, calc(100% - 32px));
+  background: rgba(6, 8, 15, 0.97); border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px; padding: 16px 20px;
+  display: none; align-items: center; justify-content: space-between; gap: 16px;
+  backdrop-filter: blur(20px); font-family: 'Syne', sans-serif;
 }
 #cookie-banner.show { display: flex; }
-#cookie-banner p {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.6);
-  margin: 0;
-  line-height: 1.5;
-}
-#cookie-banner a {
-  color: #5aaeff;
-  text-decoration: underline;
-}
-.cb-btns {
-  display: flex;
-  gap: 8px;
-  flex-shrink: 0;
-}
-.cb-btns button {
-  padding: 8px 18px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  border: none;
-}
-#cb-accept {
-  background: #5aaeff;
-  color: #000;
-}
-#cb-reject {
-  background: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-}
-@media (max-width: 520px) {
-  #cookie-banner {
-    flex-direction: column;
-  }
-}
+#cookie-banner p { font-size: 13px; color: rgba(255, 255, 255, 0.6); margin: 0; line-height: 1.5; }
+#cookie-banner a { color: #5aaeff; text-decoration: underline; }
+.cb-btns { display: flex; gap: 8px; flex-shrink: 0; }
+.cb-btns button { padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; }
+#cb-accept { background: #5aaeff; color: #000; }
+#cb-reject { background: transparent; color: rgba(255, 255, 255, 0.6); border: 1px solid rgba(255, 255, 255, 0.15) !important; }
+@media (max-width: 520px) { #cookie-banner { flex-direction: column; } }
 </style>
 
 <script>
 (function () {
   var KEY = 'nexas_cookie_ok';
-  function get(n) {
-    var m = document.cookie.match('(^|;)\\s*' + n + '\\s*=\\s*([^;]+)');
-    return m ? m.pop() : null;
-  }
-  function set(n, v, d) {
-    var e = new Date(Date.now() + d * 864e5).toUTCString();
-    document.cookie = n + '=' + v + ';path=/;expires=' + e + ';SameSite=Lax';
-  }
+  function get(n) { var m = document.cookie.match('(^|;)\\s*' + n + '\\s*=\\s*([^;]+)'); return m ? m.pop() : null; }
+  function set(n, v, d) { var e = new Date(Date.now() + d * 864e5).toUTCString(); document.cookie = n + '=' + v + ';path=/;expires=' + e + ';SameSite=Lax'; }
   var b = document.getElementById('cookie-banner');
   if (!get(KEY)) b.classList.add('show');
-  document.getElementById('cb-accept').onclick = function () {
-    set(KEY, '1', 365);
-    b.classList.remove('show');
-  };
-  document.getElementById('cb-reject').onclick = function () {
-    set(KEY, '0', 365);
-    b.classList.remove('show');
-  };
+  document.getElementById('cb-accept').onclick = function () { set(KEY, '1', 365); b.classList.remove('show'); };
+  document.getElementById('cb-reject').onclick = function () { set(KEY, '0', 365); b.classList.remove('show'); };
 })();
 </script>
 
