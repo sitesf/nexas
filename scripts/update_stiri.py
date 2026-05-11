@@ -73,8 +73,7 @@ def relevance(text: str, weight: float, date: datetime) -> float:
     return (score + freshness) * weight
 
 
-def short_summary(title: str, raw_summary: str, source: str) -> str:
-    def romanian_title(title: str) -> str:
+def romanian_title(title: str) -> str:
     replacements = {
         "AI": "AI",
         "artificial intelligence": "inteligenta artificiala",
@@ -105,6 +104,18 @@ def short_summary(title: str, raw_summary: str, source: str) -> str:
         result = result.replace(old, new)
 
     return result
+
+
+def short_summary(title: str, raw_summary: str, source: str) -> str:
+    text = clean_text(raw_summary)
+
+    if not text:
+        text = title
+
+    if len(text) > 360:
+        text = text[:360].rsplit(" ", 1)[0] + "..."
+
+    return text
 
 
 def romanian_social_text(title: str, category: str) -> str:
