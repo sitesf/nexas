@@ -340,6 +340,28 @@ h2{font-size:clamp(34px,5vw,72px);line-height:.98;letter-spacing:-.055em;max-wid
   .section{width:min(100% - 24px, 720px);padding:104px 0 64px;align-items:flex-start;min-height:auto}.hero{min-height:100svh;align-items:center;padding-top:88px}.side-panel{display:none}.hero-proof{grid-template-columns:1fr;margin-top:28px}.split,.showcase{grid-template-columns:1fr;gap:24px}.cards{grid-template-columns:1fr}.card{min-height:unset}.step{grid-template-columns:1fr;gap:8px}.preview{min-height:330px}.preview .fake-title{font-size:38px}.footer{flex-direction:column}.footer a{margin-left:0;margin-right:14px}.cookie{flex-direction:column;align-items:flex-start}.cookie-actions{width:100%}.cookie button{flex:1}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.card,.btn{transition:none!important}#webgl{display:none}}
+
+  .btn.whatsapp {
+  background: #25D366;
+  color: #05060b;
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.btn.whatsapp:hover {
+  background: #1ebe5d;
+  color: #05060b;
+}
+
+.btn.phone {
+  background: rgba(0,0,0,.35);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.btn.phone:hover {
+  background: rgba(0,0,0,.6);
+  color: #fff;
+}
 </style>
 </head>
 <body>
@@ -359,7 +381,7 @@ h2{font-size:clamp(34px,5vw,72px);line-height:.98;letter-spacing:-.055em;max-wid
 <main class="site-shell" id="top">
   <section class="section hero" data-scene="0">
     <div class="hero-content reveal">
-      <div class="kicker">Web design premium, 3D si AI</div>
+      <div class="kicker">Web design</div>
       <h1>Clientul tău te caută online.
 Noi construim site-ul care îl convinge să te aleagă.<span class="grad"></span></h1>
       <p class="lead">Construiesc experiente digitale pentru branduri care vor sa fie vazute, intelese si alese. Design, cod, SEO si automatizare intr-o singura directie clara.</p>
@@ -428,17 +450,19 @@ Noi construim site-ul care îl convinge să te aleagă.<span class="grad"></span
   <section class="section cta-section" data-scene="4">
     <div class="cta-box reveal">
       <div class="eyebrow"></div>
-      <h2>Un site bun nu doar arata bine. Te ajuta sa fii ales.</h2>
-      <p>Spune-mi ce afacere ai, ce vinzi si ce vrei sa obtinem. Iti pot construi o directie vizuala care sa para a ta din prima secunda.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="contact.html">Cere oferta</a>
-        <a class="btn" href="portofoliu.html">Vezi portofoliu</a>
-      </div>
+     <h2>Un site bun nu doar arata bine. Te ajuta sa fii ales.</h2>
+<p>Spune-mi ce afacere ai, ce vinzi si ce vrei sa obtinem. Iti pot construi o directie vizuala care sa para a ta din prima secunda.</p>
+
+<div class="hero-actions">
+  <a class="btn primary" href="contact.html">EMAIL</a>
+  <a class="btn whatsapp" href="https://wa.me/40764639118" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn phone" href="tel:+40764639118">Telefon</a>
+</div>
     </div>
   </section>
 </main>
 <footer class="footer">
-  <div>NEXAS, web design, 3D si automatizari AI.</div>
+  <div>NEXAS, web design, 3D si agenti AI.</div>
   <div>
     <a href="privacy.html">Confidentialitate</a>
     <a href="cookies.html">Cookies</a>
