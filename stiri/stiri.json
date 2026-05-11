@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-11T18:58:55.995835+00:00",
+  "updated_at": "2026-05-11T19:19:51.665010+00:00",
   "items": [
     {
       "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
@@ -8,8 +8,8 @@
       "date": "2026-01-19T14:00:00+00:00",
       "category": "AI",
       "summary": "The artificial intelligence coding revolution comes with a catch: it's expensive. Claude Code , Anthropic's terminal-based AI agent that can write, debug, and deploy code autonomously, has captured the imagination of software developers worldwide. But its pricing — ranging from $20 to $200 per month depending on usage — has sparked a growing rebellion among...",
-      "why_it_matters": "Poate influenta modul in care companiile folosesc agenti AI, automatizari si modele generative.",
-      "instagram_caption": "Claude Code costs up to $200 a month. Goose does the same thing for free.\n\nPoate influenta modul in care companiile folosesc agenti AI, automatizari si modele generative.\n\nCiteste selectia pe nexas.ro/stiri/",
+      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
+      "instagram_caption": "Claude Code costs up to $200 a month. Goose does the same thing for free.\n\nCiteste selectia pe nexas.ro/stiri/",
       "hashtags": [
         "#NEXAS",
         "#AI",
@@ -17,18 +17,18 @@
         "#InteligentaArtificiala",
         "#AIAgents"
       ],
-      "image_prompt": "Premium futuristic editorial image about AI: Claude Code costs up to $200 a month. Goose does the same thing for free.. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos.",
-      "image": "assets/generated/news-7f96b809b58c.svg"
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: Claude Code costs up to $200 a month. Goose does the same thing for free.. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
     },
     {
-      "title": "Parloa builds service agenti customers want to talk to",
+      "title": "Parloa builds service agents customers want to talk to",
       "source": "OpenAI Blog",
       "url": "https://openai.com/index/parloa",
       "date": "2026-05-07T11:00:00+00:00",
       "category": "AI",
       "summary": "Parloa leverages OpenAI models to power scalable, voice-driven AI customer service agents, enabling enterprises to design, simulate, and deploy reliable, real-time interactions.",
-      "why_it_matters": "Poate influenta modul in care companiile folosesc agenti AI, automatizari si modele generative.",
-      "instagram_caption": "Parloa builds service agents customers want to talk to\n\nPoate influenta modul in care companiile folosesc agenti AI, automatizari si modele generative.\n\nCiteste selectia pe nexas.ro/stiri/",
+      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
+      "instagram_caption": "Parloa builds service agents customers want to talk to\n\nCiteste selectia pe nexas.ro/stiri/",
       "hashtags": [
         "#NEXAS",
         "#AI",
@@ -36,18 +36,18 @@
         "#InteligentaArtificiala",
         "#AIAgents"
       ],
-      "image_prompt": "Premium futuristic editorial image about AI: Parloa builds service agents customers want to talk to. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos.",
-      "image": "assets/generated/news-e41b9b9c2133.svg"
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: Parloa builds service agents customers want to talk to. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
     },
     {
-      "title": "OpenAI lanseaza DeployCo to help businesses build around intelligence",
+      "title": "OpenAI launches DeployCo to help businesses build around intelligence",
       "source": "OpenAI Blog",
       "url": "https://openai.com/index/openai-launches-the-deployment-company",
       "date": "2026-05-11T06:00:00+00:00",
       "category": "AI",
       "summary": "OpenAI launches DeployCo, a new enterprise deployment company built to help organizations bring frontier AI into production and turn it into measurable business impact.",
-      "why_it_matters": "Poate influenta modul in care companiile folosesc agenti AI, automatizari si modele generative.",
-      "instagram_caption": "OpenAI launches DeployCo to help businesses build around intelligence\n\nPoate influenta modul in care companiile folosesc agenti AI, automatizari si modele generative.\n\nCiteste selectia pe nexas.ro/stiri/",
+      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
+      "instagram_caption": "OpenAI launches DeployCo to help businesses build around intelligence\n\nCiteste selectia pe nexas.ro/stiri/",
       "hashtags": [
         "#NEXAS",
         "#AI",
@@ -55,8 +55,8 @@
         "#InteligentaArtificiala",
         "#AIAgents"
       ],
-      "image_prompt": "Premium futuristic editorial image about AI: OpenAI launches DeployCo to help businesses build around intelligence. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos.",
-      "image": "assets/generated/news-68e94ee2f13a.svg"
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: OpenAI launches DeployCo to help businesses build around intelligence. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
     }
   ]
 }
