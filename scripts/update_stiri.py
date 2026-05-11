@@ -74,6 +74,47 @@ def relevance(text: str, weight: float, date: datetime) -> float:
 
 
 def short_summary(title: str, raw_summary: str, source: str) -> str:
+    def romanian_title(title: str) -> str:
+    replacements = {
+        "AI": "AI",
+        "artificial intelligence": "inteligenta artificiala",
+        "Artificial intelligence": "Inteligenta artificiala",
+        "startup": "startup",
+        "launches": "lanseaza",
+        "launch": "lansare",
+        "new": "nou",
+        "New": "Nou",
+        "app": "aplicatie",
+        "robot": "robot",
+        "robots": "roboti",
+        "agent": "agent",
+        "agents": "agenti",
+        "model": "model",
+        "models": "modele",
+        "Google": "Google",
+        "OpenAI": "OpenAI",
+        "Anthropic": "Anthropic",
+        "Microsoft": "Microsoft",
+        "Apple": "Apple",
+        "Meta": "Meta",
+        "Nvidia": "Nvidia"
+    }
+
+    result = title
+    for old, new in replacements.items():
+        result = result.replace(old, new)
+
+    return result
+
+
+def romanian_social_text(title: str, category: str) -> str:
+    return (
+        f"{romanian_title(title)}\n\n"
+        f"Stire importanta din zona {category}. "
+        f"Aceasta noutate arata cum evolueaza tehnologia si cum poate influenta produsele digitale, "
+        f"automatizarile si agentii AI.\n\n"
+        f"Citeste selectia pe nexas.ro/stiri/"
+    )
     base = raw_summary or title
     base = clean_text(base)
     if len(base) > 260:
@@ -155,7 +196,7 @@ def collect_articles():
             if score < 2.5:
                 continue
             articles.append({
-                "title": title,
+             "title": romanian_title(title),
                 "source": feed["name"],
                 "url": url,
                 "date": date.isoformat(),
