@@ -2,16 +2,19 @@ import os
 import re
 import json
 import html
-import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
 import feedparser
 
+try:
+    from google import genai
+except Exception:
+    genai = None
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "stiri"
-ASSET_DIR = OUT_DIR / "assets" / "generated"
 OUT_JSON = OUT_DIR / "stiri.json"
 
 KEYWORDS = {
@@ -20,7 +23,7 @@ KEYWORDS = {
     "Cybersecurity": ["security", "cyber", "breach", "malware", "privacy", "hack", "ransomware"],
     "Startup": ["startup", "funding", "venture", "launch", "raises", "acquisition"],
     "Automatizare": ["automation", "robot", "robotics", "workflow", "enterprise", "productivity"],
-    "Tech": ["software", "platform", "cloud", "app", "internet", "developer", "api", "data"]
+    "Tech": ["software", "platform", "cloud", "app", "internet", "developer", "api", "data"],
 }
 
 FEEDS = [
@@ -33,10 +36,8 @@ FEEDS = [
     {"name": "Anthropic News", "url": "https://www.anthropic.com/news/rss.xml", "weight": 1.15},
     {"name": "Engadget", "url": "https://www.engadget.com/rss.xml", "weight": 0.95},
     {"name": "Ars Technica", "url": "https://feeds.arstechnica.com/arstechnica/index", "weight": 1.0},
-    {"name": "ZDNET", "url": "https://www.zdnet.com/news/rss.xml", "weight": 0.95}
+    {"name": "ZDNET", "url": "https://www.zdnet.com/news/rss.xml", "weight": 0.95},
 ]
-
-STOP_WORDS = {"the", "and", "with", "for", "this", "that", "from", "into", "your", "about", "after", "before", "new", "how", "are", "you"}
 
 
 def clean_text(value: str) -> str:
@@ -55,94 +56,35 @@ def parsed_date(entry):
 
 
 def detect_category(text: str) -> str:
-    t = text.lower()
-    scores = {cat: sum(1 for kw in kws if kw in t) for cat, kws in KEYWORDS.items()}
+    text_lower = text.lower()
+    scores = {
+        category: sum(1 for keyword in keywords if keyword in text_lower)
+        for category, keywords in KEYWORDS.items()
+    }
     best = max(scores, key=scores.get)
     return best if scores[best] else "Tech"
 
 
 def relevance(text: str, weight: float, date: datetime) -> float:
-    t = text.lower()
+    text_lower = text.lower()
     score = 0
-    for kws in KEYWORDS.values():
-        for kw in kws:
-            if kw in t:
-                score += 3 if kw in ["ai", "agent", "agents", "openai", "anthropic", "gemini", "robotics"] else 1
+
+    for keywords in KEYWORDS.values():
+        for keyword in keywords:
+            if keyword in text_lower:
+                score += 3 if keyword in ["ai", "agent", "agents", "openai", "anthropic", "gemini", "robotics"] else 1
+
     age_hours = max((datetime.now(timezone.utc) - date).total_seconds() / 3600, 1)
-    freshness = max(0, 48 - min(age_hours, 48)) / 12
+    freshness = max(0, 72 - min(age_hours, 72)) / 12
+
     return (score + freshness) * weight
 
 
-def romanian_title(title: str) -> str:
-    replacements = {
-        "AI": "AI",
-        "artificial intelligence": "inteligenta artificiala",
-        "Artificial intelligence": "Inteligenta artificiala",
-        "startup": "startup",
-        "launches": "lanseaza",
-        "launch": "lansare",
-        "new": "nou",
-        "New": "Nou",
-        "app": "aplicatie",
-        "robot": "robot",
-        "robots": "roboti",
-        "agent": "agent",
-        "agents": "agenti",
-        "model": "model",
-        "models": "modele",
-        "Google": "Google",
-        "OpenAI": "OpenAI",
-        "Anthropic": "Anthropic",
-        "Microsoft": "Microsoft",
-        "Apple": "Apple",
-        "Meta": "Meta",
-        "Nvidia": "Nvidia"
-    }
-
-    result = title
-    for old, new in replacements.items():
-        result = result.replace(old, new)
-
-    return result
-
-
 def short_summary(title: str, raw_summary: str, source: str) -> str:
-    text = clean_text(raw_summary)
-
-    if not text:
-        text = title
-
+    text = clean_text(raw_summary or title)
     if len(text) > 360:
         text = text[:360].rsplit(" ", 1)[0] + "..."
-
     return text
-
-
-def romanian_social_text(title: str, category: str) -> str:
-    return (
-        f"{romanian_title(title)}\n\n"
-        f"Stire importanta din zona {category}. "
-        f"Aceasta noutate arata cum evolueaza tehnologia si cum poate influenta produsele digitale, "
-        f"automatizarile si agentii AI.\n\n"
-        f"Citeste selectia pe nexas.ro/stiri/"
-    )
-    base = raw_summary or title
-    base = clean_text(base)
-    if len(base) > 260:
-        base = base[:257].rsplit(" ", 1)[0] + "..."
-    return f"{base} Sursa {source} indica o schimbare relevanta pentru zona AI si tehnologie."
-
-
-def why_it_matters(category: str) -> str:
-    messages = {
-        "AI": "Poate influenta modul in care companiile folosesc agenti AI, automatizari si modele generative.",
-        "Gadgeturi": "Arata directia in care merg dispozitivele folosite zilnic de utilizatori si firme.",
-        "Cybersecurity": "Afecteaza siguranta datelor, aplicatiilor si infrastructurii digitale.",
-        "Startup": "Poate semnala o piata noua, un produs nou sau o investitie importanta in tehnologie.",
-        "Automatizare": "Poate reduce munca manuala si poate schimba procesele din companii.",
-        "Tech": "Ajuta la intelegerea trendurilor care pot afecta produse, site-uri si servicii digitale."
-    }
-    return messages.get(category, messages["Tech"])
 
 
 def hashtags(category: str):
@@ -153,147 +95,250 @@ def hashtags(category: str):
         "Cybersecurity": ["#Cybersecurity", "#DataProtection"],
         "Startup": ["#Startup", "#Innovation"],
         "Automatizare": ["#Automatizare", "#Digitalizare"],
-        "Tech": ["#IT", "#ViitorDigital"]
+        "Tech": ["#IT", "#ViitorDigital"],
     }
     return base + extra.get(category, ["#IT"])
 
 
+def default_impact(category: str) -> str:
+    messages = {
+        "AI": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
+        "Gadgeturi": "Stirea arata directia in care merg dispozitivele si tehnologia folosita zilnic de utilizatori si companii.",
+        "Cybersecurity": "Stirea conteaza pentru ca securitatea datelor devine o parte importanta a infrastructurii digitale.",
+        "Startup": "Stirea poate indica o directie noua de investitii sau un produs care poate creste in piata tech.",
+        "Automatizare": "Stirea arata cum procesele digitale pot reduce munca manuala si pot schimba modul de lucru in companii.",
+        "Tech": "Stirea ajuta la intelegerea unui trend care poate influenta software-ul, site-urile si serviciile digitale.",
+    }
+    return messages.get(category, messages["Tech"])
+
+
 def image_prompt(title: str, category: str) -> str:
-    return f"Premium futuristic editorial image about {category}: {title}. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+    return (
+        f"Premium futuristic editorial image about {category}: {title}. "
+        "Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+    )
 
 
-def make_svg(article, path: Path):
-    safe_title = clean_text(article["title"])[:70]
-    category = article.get("category", "Tech")
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#5dd7ff"/><stop offset=".55" stop-color="#9b6cff"/><stop offset="1" stop-color="#ff4fd8"/></linearGradient>
-    <radialGradient id="r" cx="54%" cy="44%" r="54%"><stop stop-color="#5dd7ff" stop-opacity=".34"/><stop offset=".42" stop-color="#9b6cff" stop-opacity=".16"/><stop offset="1" stop-color="#05060b" stop-opacity="0"/></radialGradient>
-  </defs>
-  <rect width="1280" height="800" fill="#05060b"/>
-  <rect width="1280" height="800" fill="url(#r)"/>
-  <g opacity=".26" stroke="#fff"><path d="M0 620 C260 520 420 260 720 390 S1020 550 1280 240" fill="none"/><path d="M0 220 C300 360 420 510 720 400 S1040 130 1280 350" fill="none"/></g>
-  <circle cx="660" cy="394" r="190" fill="none" stroke="url(#g)" stroke-width="2" opacity=".88"/>
-  <circle cx="660" cy="394" r="116" fill="none" stroke="#5dd7ff" stroke-width="2" opacity=".55"/>
-  <circle cx="660" cy="394" r="54" fill="url(#g)" opacity=".8"/>
-  <g fill="#fff" opacity=".72"><circle cx="350" cy="520" r="5"/><circle cx="510" cy="314" r="4"/><circle cx="822" cy="518" r="5"/><circle cx="1015" cy="276" r="4"/></g>
-  <text x="70" y="95" fill="#fff" font-family="Arial, sans-serif" font-size="38" font-weight="800">NEXAS NEWS</text>
-  <text x="70" y="144" fill="#5dd7ff" font-family="Arial, sans-serif" font-size="24" font-weight="700">{html.escape(category.upper())}</text>
-  <text x="70" y="690" fill="#dfe7ff" font-family="Arial, sans-serif" font-size="30" font-weight="700">{html.escape(safe_title)}</text>
-</svg>'''
-    path.write_text(svg, encoding="utf-8")
+def parse_json_from_text(text: str) -> dict:
+    text = (text or "").strip()
+    text = re.sub(r"^```json\s*", "", text)
+    text = re.sub(r"^```\s*", "", text)
+    text = re.sub(r"\s*```$", "", text)
+
+    try:
+        return json.loads(text)
+    except Exception:
+        match = re.search(r"\{.*\}", text, re.DOTALL)
+        if not match:
+            raise
+        return json.loads(match.group(0))
+
+
+def gemini_rewrite_ro(item: dict) -> dict:
+    api_key = os.getenv("GEMINI_API_KEY")
+
+    if not api_key or genai is None:
+        print("Gemini skipped: GEMINI_API_KEY lipseste sau google-genai nu este instalat.")
+        item["why_it_matters"] = default_impact(item.get("category", "Tech"))
+        return item
+
+    prompt = f"""
+Rescrie stirea de mai jos in limba romana pentru site-ul NEXAS.
+
+Reguli stricte:
+- Nu copia articolul original.
+- Nu inventa date, cifre sau promisiuni.
+- Pastreaza sensul stirii.
+- Titlul trebuie sa fie in romana, clar, maximum 95 caractere.
+- Rezumatul trebuie sa fie in romana, maximum 420 caractere.
+- Impactul trebuie sa fie concret si legat direct de aceasta stire.
+- Captionul Instagram trebuie sa fie scurt, in romana, maximum 450 caractere.
+- Hashtagurile trebuie sa fie fara diacritice.
+- Raspunde strict JSON valid. Fara markdown. Fara explicatii.
+
+Stire:
+Titlu original: {item.get('title', '')}
+Rezumat original: {item.get('summary', '')}
+Sursa: {item.get('source', '')}
+Categorie: {item.get('category', '')}
+URL: {item.get('url', '')}
+
+Format JSON:
+{{
+  "title": "",
+  "summary": "",
+  "why_it_matters": "",
+  "instagram_caption": "",
+  "hashtags": []
+}}
+"""
+
+    try:
+        client = genai.Client(api_key=api_key)
+        response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=prompt,
+        )
+
+        data = parse_json_from_text(response.text)
+
+        item["title"] = clean_text(data.get("title") or item.get("title", ""))
+        item["summary"] = clean_text(data.get("summary") or item.get("summary", ""))
+        item["why_it_matters"] = clean_text(data.get("why_it_matters") or default_impact(item.get("category", "Tech")))
+        item["instagram_caption"] = clean_text(data.get("instagram_caption") or item.get("instagram_caption", ""))
+
+        new_hashtags = data.get("hashtags")
+        if isinstance(new_hashtags, list) and new_hashtags:
+            item["hashtags"] = [str(tag).strip() for tag in new_hashtags if str(tag).strip()]
+
+        return item
+
+    except Exception as error:
+        print(f"Gemini rewrite failed pentru {item.get('url', '')}: {error}")
+        item["why_it_matters"] = default_impact(item.get("category", "Tech"))
+        return item
 
 
 def collect_articles():
     articles = []
-    seen = set()
+    seen_urls = set()
+    seen_titles = set()
+
     for feed in FEEDS:
-        parsed = feedparser.parse(feed["url"])
-        for entry in parsed.entries[:12]:
+        try:
+            parsed = feedparser.parse(feed["url"])
+        except Exception as error:
+            print(f"Feed failed {feed['name']}: {error}")
+            continue
+
+        for entry in parsed.entries[:14]:
             title = clean_text(getattr(entry, "title", ""))
             url = getattr(entry, "link", "")
+
             if not title or not url:
                 continue
-            key = re.sub(r"\W+", "", title.lower())[:90]
+
             domain = urlparse(url).netloc.replace("www.", "")
-            if key in seen or domain in seen:
+            title_key = re.sub(r"\W+", "", title.lower())[:90]
+
+            if url in seen_urls or title_key in seen_titles:
                 continue
-            seen.add(key)
-            summary = clean_text(getattr(entry, "summary", "") or getattr(entry, "description", ""))
+
+            seen_urls.add(url)
+            seen_titles.add(title_key)
+
+            raw_summary = clean_text(getattr(entry, "summary", "") or getattr(entry, "description", ""))
             date = parsed_date(entry)
-            text = f"{title} {summary}"
-            cat = detect_category(text)
+            text = f"{title} {raw_summary}"
+            category = detect_category(text)
             score = relevance(text, feed.get("weight", 1), date)
+
             if score < 2.5:
                 continue
+
             articles.append({
-             "title": romanian_title(title),
+                "title": title,
                 "source": feed["name"],
                 "url": url,
+                "domain": domain,
                 "date": date.isoformat(),
-                "category": cat,
-                "summary": short_summary(title, summary, feed["name"]),
-                "why_it_matters": why_it_matters(cat),
-                "instagram_caption": f"{title}\n\n{why_it_matters(cat)}\n\nCiteste selectia pe nexas.ro/stiri/",
-                "hashtags": hashtags(cat),
-                "image_prompt": image_prompt(title, cat),
-                "_score": score
+                "category": category,
+                "summary": short_summary(title, raw_summary, feed["name"]),
+                "why_it_matters": default_impact(category),
+                "instagram_caption": f"{title}\n\nCiteste selectia pe nexas.ro/stiri/",
+                "hashtags": hashtags(category),
+                "image": "",
+                "image_prompt": image_prompt(title, category),
+                "_score": score,
             })
-    articles.sort(key=lambda x: x["_score"], reverse=True)
+
+    articles.sort(key=lambda item: item["_score"], reverse=True)
+
     selected = []
     used_sources = set()
+
     for article in articles:
         if article["source"] in used_sources and len(selected) < 2:
             continue
+
         selected.append(article)
         used_sources.add(article["source"])
+
         if len(selected) == 3:
             break
+
     return selected
 
 
 def fallback_items():
-    return [
-        {
-            "title": "Nu au fost gasite stiri noi la ultima rulare",
-            "source": "NEXAS Agent",
-            "url": "https://www.nexas.ro/stiri/",
-            "date": datetime.now(timezone.utc).isoformat(),
-            "category": "AI",
-            "summary": "Agentul a rulat, dar sursele nu au returnat suficiente rezultate relevante. Verifica logurile din GitHub Actions.",
-            "why_it_matters": "Fallback-ul pastreaza pagina functionala pana la urmatoarea rulare.",
-            "instagram_caption": "Agentul NEXAS nu a gasit suficiente stiri noi la ultima rulare.",
-            "hashtags": ["#NEXAS", "#AI", "#Tehnologie"],
-            "image_prompt": "Premium futuristic AI news control room, no readable text"
-        }
-    ]
+    return [{
+        "title": "Nu au fost gasite stiri noi la ultima rulare",
+        "source": "NEXAS Agent",
+        "url": "https://www.nexas.ro/stiri/",
+        "date": datetime.now(timezone.utc).isoformat(),
+        "category": "AI",
+        "summary": "Agentul a rulat, dar sursele nu au returnat suficiente rezultate relevante. Verifica logurile din GitHub Actions.",
+        "why_it_matters": "Fallback-ul pastreaza pagina functionala pana la urmatoarea rulare.",
+        "instagram_caption": "Agentul NEXAS nu a gasit suficiente stiri noi la ultima rulare.",
+        "hashtags": ["#NEXAS", "#AI", "#Tehnologie"],
+        "image": "",
+        "image_prompt": "Premium futuristic AI news control room, no readable text",
+    }]
+
+
+def load_old_items():
+    if not OUT_JSON.exists():
+        return []
+
+    try:
+        old_payload = json.loads(OUT_JSON.read_text(encoding="utf-8"))
+        if isinstance(old_payload, dict):
+            return old_payload.get("items", []) or []
+        if isinstance(old_payload, list):
+            return old_payload
+    except Exception as error:
+        print(f"Nu pot citi stirile vechi: {error}")
+
+    return []
+
+
+def merge_items(new_items, old_items, limit=60):
+    merged = []
+    seen_urls = set()
+
+    for item in new_items + old_items:
+        url = item.get("url", "")
+        if not url or url in seen_urls:
+            continue
+
+        seen_urls.add(url)
+        merged.append(item)
+
+    return merged[:limit]
 
 
 def main():
-    ASSET_DIR.mkdir(parents=True, exist_ok=True)
-    items = collect_articles() or fallback_items()
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    new_items = collect_articles() or fallback_items()
     clean_items = []
-    for item in items[:3]:
+
+    for item in new_items[:3]:
         item.pop("_score", None)
-        slug = hashlib.sha1(item["url"].encode("utf-8")).hexdigest()[:12]
-        svg_path = ASSET_DIR / f"news-{slug}.svg"
-        make_svg(item, svg_path)
-        item["image"] = f"assets/generated/{svg_path.name}"
+        item.pop("domain", None)
+        item = gemini_rewrite_ro(item)
         clean_items.append(item)
-clean_items = selected[:3]
 
-clean_items = [gemini_rewrite_ro(item) for item in clean_items]
+    old_items = load_old_items()
+    merged = merge_items(clean_items, old_items, limit=60)
 
-old_items = []
+    payload = {
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "items": merged,
+    }
 
-if OUT_JSON.exists():
-    try:
-        old_payload = json.loads(OUT_JSON.read_text(encoding="utf-8"))
-        old_items = old_payload.get("items", [])
-    except Exception:
-        old_items = []
-
-merged = []
-seen_urls = set()
-
-for item in clean_items + old_items:
-    url = item.get("url", "")
-
-    if not url or url in seen_urls:
-        continue
-
-    seen_urls.add(url)
-    merged.append(item)
-
-payload = {
-    "updated_at": datetime.now(timezone.utc).isoformat(),
-    "items": merged[:60]
-}
-
-OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-print(f"Wrote {OUT_JSON} with {len(merged[:60])} items")
-
-
+    OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Wrote {OUT_JSON} with {len(merged)} items. New items: {len(clean_items)}")
 
 
 if __name__ == "__main__":
