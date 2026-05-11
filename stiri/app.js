@@ -16,7 +16,6 @@ function card(item, index) {
   const hashtags = Array.isArray(item.hashtags) ? item.hashtags.join(' ') : '';
   return `
     <article class="news-card">
-      <img src="${escapeHtml(item.image || 'assets/generated/default.svg')}" alt="${escapeHtml(item.title)}" loading="lazy">
       <div class="card-body">
         <div class="card-top">
           <span class="badge">${escapeHtml(item.category || 'Tech')}</span>
@@ -24,7 +23,6 @@ function card(item, index) {
         </div>
         <h3>${escapeHtml(item.title || `Stire ${index + 1}`)}</h3>
         <p class="summary">${escapeHtml(item.summary || '')}</p>
-        <p class="why"><strong>De ce conteaza</strong>${escapeHtml(item.why_it_matters || '')}</p>
         <div class="actions">
           <a class="btn" href="${escapeHtml(item.url || '#')}" target="_blank" rel="noopener noreferrer">Citeste sursa</a>
           <a class="btn secondary" href="${escapeHtml(item.url || '#')}" target="_blank" rel="noopener noreferrer" aria-label="Deschide stirea ${index + 1}">Link</a>
