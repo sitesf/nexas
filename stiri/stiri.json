@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-05-11T00:00:00+03:00",
+  "items": [
+    {
+      "title": "Agentul de stiri NEXAS este pregatit",
+      "source": "NEXAS",
+      "url": "https://www.nexas.ro/stiri/",
+      "date": "2026-05-11T00:00:00+03:00",
+      "category": "AI",
+      "summary": "Aceasta este o stire demo. Dupa ce rulezi GitHub Actions, fisierul va fi inlocuit cu top 3 stiri reale din AI si tehnologie.",
+      "why_it_matters": "Pagina este deja conectata la JSON si poate afisa stirile automat.",
+      "instagram_caption": "NEXAS pregateste selectia zilnica de stiri AI si tech.",
+      "hashtags": ["#AI", "#Tehnologie", "#NEXAS"],
+      "image": "assets/generated/default.svg",
+      "image_prompt": "Premium futuristic AI news image, dark background, glowing data streams, no readable text"
+    }
+  ]
+}
