@@ -260,8 +260,11 @@ def main():
         make_svg(item, svg_path)
         item["image"] = f"assets/generated/{svg_path.name}"
         clean_items.append(item)
+clean_items = selected[:3]
 
-    old_items = []
+clean_items = [gemini_rewrite_ro(item) for item in clean_items]
+
+old_items = []
 
 if OUT_JSON.exists():
     try:
@@ -289,6 +292,8 @@ payload = {
 
 OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 print(f"Wrote {OUT_JSON} with {len(merged[:60])} items")
+}
+
 
 
 if __name__ == "__main__":
