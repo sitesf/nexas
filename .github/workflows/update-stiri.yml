@@ -1,0 +1,35 @@
+name: Actualizare stiri AI si Tech
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stiri:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate news JSON
+        run: python scripts/update_stiri.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add stiri/stiri.json stiri/assets/generated/*.svg
+          git diff --cached --quiet && echo "No changes" || git commit -m "Actualizeaza stirile AI si tech"
+          git push
