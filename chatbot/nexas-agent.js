@@ -202,7 +202,7 @@ REGULI:
       iconChat.style.display = open ? "none" : "block";
       iconClose.style.display = open ? "block" : "none";
       if (open && history.length === 0) {
-        addMessage("assistant", "Salut! Sunt Alex de la Agentia Nexas.  Te pot ajuta cu informații despre site-uri web, SEO sau social media. Ce te interesează?");
+        addMessage("assistant", "Salut! Sunt Alex de la Nexas.  Te pot ajuta cu informații despre site-uri web, SEO sau social media. Ce te interesează?");
         setTimeout(() => inputEl.focus(), 100);
       }
     }
