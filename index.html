@@ -476,10 +476,6 @@ Noi construim site-ul care îl convinge să te aleagă.<span class="grad"></span
     <a href="contact.html">Contact</a>
   </div>
 </footer>
-<div class="cookie" id="cookieBanner">
-  <p>Folosim cookie-uri esentiale si, cu acordul tau, cookie-uri analitice. <a href="cookies.html">Politica cookies</a></p>
-  <div class="cookie-actions"><button id="rejectCookies">Refuz</button><button class="accept" id="acceptCookies">Accept</button></div>
-</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function(){
@@ -497,12 +493,6 @@ Noi construim site-ul care îl convinge să te aleagă.<span class="grad"></span
   addEventListener('scroll', updateProgress, {passive:true});
   updateProgress();
 
-  const banner = document.getElementById('cookieBanner');
-  const key = 'nexas_cookie_choice_v2';
-  const setCookie = v => { document.cookie = key + '=' + v + ';path=/;max-age=31536000;SameSite=Lax'; banner.classList.remove('show'); };
-  if(!document.cookie.includes(key + '=')) setTimeout(()=>banner.classList.add('show'), 900);
-  document.getElementById('acceptCookies').onclick = () => setCookie('accept');
-  document.getElementById('rejectCookies').onclick = () => setCookie('reject');
 })();
 
 (function(){
@@ -625,8 +615,10 @@ Noi construim site-ul care îl convinge să te aleagă.<span class="grad"></span
 })();
 </script>
   
+  <script src="assets/nexas-consent.js"></script>
+
   <!-- Chatbot NEXAS — încărcat necondiționat (serviciu funcțional propriu, fără cookies terți) -->
-  <script src="/chatbot/nexas-agent.js"></script>
+  <script type="text/plain" data-consent-category="functional" src="/chatbot/nexas-agent.js"></script>
   
 </body>
 </html>

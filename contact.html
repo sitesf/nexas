@@ -636,15 +636,23 @@ window.addEventListener('resize', () => {
 });
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-emailjs.init('G-hhNeSiDqE6XRBLp');
+function loadEmailJS(){
+  return new Promise(function(resolve, reject){
+    if(window.emailjs){ resolve(window.emailjs); return; }
+    var script = document.createElement("script");
+    script.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
+    script.onload = function(){ emailjs.init("G-hhNeSiDqE6XRBLp"); resolve(window.emailjs); };
+    script.onerror = function(){ reject(new Error("EmailJS nu s-a incarcat.")); };
+    document.head.appendChild(script);
+  });
+}
 
 const form = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const statusEl = document.getElementById('status');
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', async function(e) {
   e.preventDefault();
 
   if (!document.getElementById('gdpr').checked) {
@@ -654,6 +662,16 @@ form.addEventListener('submit', function(e) {
 
   submitBtn.disabled = true;
   submitBtn.textContent = 'Se trimite...';
+
+  try {
+    await loadEmailJS();
+  } catch (err) {
+    console.error(err);
+    show('Eroare. Incearca WhatsApp sau email direct.', 'err');
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Trimite mesajul';
+    return;
+  }
 
   emailjs.send('service_r6h7o5j', 'template_zmwlkw5', {
     from_name: document.getElementById('from_name').value.trim(),
@@ -683,5 +701,6 @@ function show(msg, type) {
   setTimeout(() => { statusEl.style.display = 'none'; }, 6000);
 }
 </script>
+<script src="assets/nexas-consent.js"></script>
 </body>
 </html>
