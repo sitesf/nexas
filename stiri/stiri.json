@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-11T19:26:09.776279+00:00",
+  "updated_at": "2026-05-12T06:20:55.899365+00:00",
   "items": [
     {
       "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
@@ -19,6 +19,44 @@
       ],
       "image": "",
       "image_prompt": "Premium futuristic editorial image about AI: Claude Code costs up to $200 a month. Goose does the same thing for free.. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+    },
+    {
+      "title": "OpenAI just released its answer to Claude Mythos",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/928342/openai-daybreak-security-ai",
+      "date": "2026-05-11T23:05:01+00:00",
+      "category": "AI",
+      "summary": "OpenAI is launching Daybreak, an AI initiative focused on detecting and patching vulnerabilities before attackers find them. Daybreak uses the Codex Security AI agent that launched in March to create a threat model based on an organization's code and focus on possible attack paths, validate likely vulnerabilities, and then automate the detection of the...",
+      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
+      "instagram_caption": "OpenAI just released its answer to Claude Mythos\n\nCiteste selectia pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tehnologie",
+        "#InteligentaArtificiala",
+        "#AIAgents"
+      ],
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: OpenAI just released its answer to Claude Mythos. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+    },
+    {
+      "title": "GM just laid off hundreds of IT workers to hire those with stronger AI skills",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/",
+      "date": "2026-05-11T23:04:10+00:00",
+      "category": "AI",
+      "summary": "Some of the positions focus on AI-native development, data engineering and analytics, cloud-based engineering, and agent and model development as well as prompt engineering and new AI workflows.",
+      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
+      "instagram_caption": "GM just laid off hundreds of IT workers to hire those with stronger AI skills\n\nCiteste selectia pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tehnologie",
+        "#InteligentaArtificiala",
+        "#AIAgents"
+      ],
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: GM just laid off hundreds of IT workers to hire those with stronger AI skills. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
     },
     {
       "title": "Parloa builds service agents customers want to talk to",
