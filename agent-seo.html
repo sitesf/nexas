@@ -417,10 +417,11 @@ h1 span{color:var(--blue);}
 
 <script>
 // ── CONFIG ────────────────────────────────────────────────────────────────────
-// Adauga cheile tale mai jos SAU foloseste variabile de mediu intr-un backend
-// Pentru GitHub Pages (static), cheile se pun direct aici (doar PageSpeed e publica, Gemini nu)
-const GEMINI_KEY    = 'AIzaSyBCnBVoQTy_2XthsfuqGO_IewZyaV_3hX4'; // Cheia Gemini API
-const PAGESPEED_KEY = 'AIzaSyBCnBVoQTy_2XthsfuqGO_IewZyaV_3hX4'; // Aceeasi cheie pentru PageSpeed
+// Cheile API nu stau in HTML. Site-ul trimite cereri catre Google Apps Script.
+const GEMINI_API_URL = "https://script.google.com/macros/s/AKfycbxHH7rOcvXulGaoHuZdKodbOhsuYoBMCad1ZSc2wisFSWFzunY9R3q1ubq8bkKnaWknIw/exec";
+const PAGESPEED_API_URL = "https://script.google.com/macros/s/AKfycbyPbcfnc-WhYS1Qq7gU_u63tfhKbBa8opOXuOBd8UY45HoQqE8GxQInAF1ASwTP1D0S/exec";
+const GEMINI_KEY = "";
+const PAGESPEED_KEY = "";
 const EMAILJS_SVC   = ''; // EmailJS Service ID
 const EMAILJS_TPL   = ''; // EmailJS Template ID
 const EMAILJS_KEY   = ''; // EmailJS Public Key
@@ -464,13 +465,63 @@ function cleanUrl(raw) {
 
 // ── PAGESPEED API ─────────────────────────────────────────────────────────────
 async function fetchPageSpeed(url, strategy) {
-  const endpoint = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&strategy=${strategy}&category=performance&category=seo&category=accessibility&category=best-practices&key=${PAGESPEED_KEY}`;
-  const resp = await fetch(endpoint);
-  if (!resp.ok) throw new Error(`PageSpeed API eroare: HTTP ${resp.status}`);
-  return await resp.json();
+  const resp = await fetch(PAGESPEED_API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "text/plain;charset=utf-8"
+    },
+    body: JSON.stringify({
+      url: url,
+      strategy: strategy
+    })
+  });
+
+  if (!resp.ok) throw new Error(`PageSpeed Apps Script eroare: HTTP ${resp.status}`);
+
+  const data = await resp.json();
+
+  if (data.success === false) {
+    throw new Error(data.error || "Eroare PageSpeed Apps Script.");
+  }
+
+  // Accepta raspuns raw PageSpeed, daca Google Script il returneaza asa.
+  if (data.lighthouseResult) return data;
+  if (data.result?.lighthouseResult) return data.result;
+  if (data.pagespeed?.lighthouseResult) return data.pagespeed;
+
+  // Accepta raspuns deja procesat, daca Google Script returneaza scoruri calculate.
+  if (data.performance !== undefined || data.pagespeed?.performance !== undefined) {
+    return { __metrics: data.pagespeed || data, strategy };
+  }
+
+  throw new Error("Raspuns PageSpeed invalid din Apps Script.");
 }
 
 function extractMetrics(psData, strategy) {
+  if (psData.__metrics) {
+    const m = psData.__metrics;
+    return {
+      strategy,
+      performance:    Math.round(m.performance || 0),
+      seo:            Math.round(m.seo || 0),
+      accessibility:  Math.round(m.accessibility || 0),
+      best_practices: Math.round(m.bestPractices || m.best_practices || 0),
+      fcp:    m.audits?.firstContentfulPaint || m.firstContentfulPaint || '—',
+      lcp:    m.audits?.largestContentfulPaint || m.largestContentfulPaint || '—',
+      tbt:    m.audits?.totalBlockingTime || m.totalBlockingTime || '—',
+      cls:    m.audits?.cumulativeLayoutShift || m.cumulativeLayoutShift || '—',
+      speed_index: m.audits?.speedIndex || m.speedIndex || '—',
+      title:       'OK',
+      meta_desc:   'OK',
+      robots_txt:  'OK',
+      canonical:   'OK',
+      mobile_friendly: 'Da',
+      image_alt:   'OK',
+      https:       'Da',
+      issues: []
+    };
+  }
+
   const cats  = psData.lighthouseResult?.categories || {};
   const audits = psData.lighthouseResult?.audits || {};
 
@@ -501,11 +552,6 @@ function extractMetrics(psData, strategy) {
 
 // ── GEMINI INTERPRET ──────────────────────────────────────────────────────────
 async function geminiInterpret(url, mobile, desktop) {
-  if (!GEMINI_KEY) {
-    // Fallback fara Gemini — raport bazat doar pe scoruri
-    return generateFallbackReport(url, mobile, desktop);
-  }
-
   const prompt = `Esti NEO, agent expert SEO al agentiei Nexas Digital. Analizeaza datele PageSpeed si genereaza un raport profesional in romana.
 
 SITE: ${url}
@@ -542,23 +588,33 @@ Returneaza DOAR JSON valid:
   "urmatorii_pasi": ["pas 1", "pas 2", "pas 3"]
 }`;
 
-  const resp = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`,
-    {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        contents: [{parts: [{text: prompt}]}],
-        generationConfig: {temperature: 0.2, maxOutputTokens: 1500, responseMimeType: 'application/json'}
-      })
-    }
-  );
+  const resp = await fetch(GEMINI_API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "text/plain;charset=utf-8"
+    },
+    body: JSON.stringify({
+      prompt: prompt,
+      url: url,
+      mobile: mobile,
+      desktop: desktop
+    })
+  });
+
   if (!resp.ok) return generateFallbackReport(url, mobile, desktop);
+
   const data = await resp.json();
-  const raw  = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
-  try { return JSON.parse(raw); }
+
+  if (data.success === false) {
+    console.error("Eroare Gemini Apps Script:", data);
+    return generateFallbackReport(url, mobile, desktop);
+  }
+
+  const raw = data.result || data.text || data.response || '';
+
+  try { return typeof raw === 'string' ? JSON.parse(raw) : raw; }
   catch(e) {
-    const m = raw.match(/\{[\s\S]*\}/);
+    const m = String(raw).match(/\{[\s\S]*\}/);
     if (m) return JSON.parse(m[0]);
     return generateFallbackReport(url, mobile, desktop);
   }
