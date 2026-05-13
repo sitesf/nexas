@@ -1,40 +1,68 @@
 {
-  "updated_at": "2026-05-13T08:28:33.513177+00:00",
+  "updated_at": "2026-05-13T12:18:25.672714+00:00",
   "items": [
     {
-      "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+      "title": "Claude Code, agentul AI de codare plătit, față în față cu alternativa gratuită Goose",
       "source": "VentureBeat AI",
       "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
       "date": "2026-01-19T14:00:00+00:00",
       "category": "AI",
-      "summary": "The artificial intelligence coding revolution comes with a catch: it's expensive. Claude Code , Anthropic's terminal-based AI agent that can write, debug, and deploy code autonomously, has captured the imagination of software developers worldwide. But its pricing — ranging from $20 to $200 per month depending on usage — has sparked a growing rebellion among...",
-      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
-      "instagram_caption": "Claude Code costs up to $200 a month. Goose does the same thing for free.\n\nCiteste selectia pe nexas.ro/stiri/",
+      "summary": "Revoluția inteligenței artificiale în codare, deși promițătoare, vine cu un cost semnificativ. Claude Code, un agent AI dezvoltat de Anthropic capabil să scrie, să depaneze și să implementeze cod autonom, a captivat atenția dezvoltatorilor software. Însă, prețul său, care variază între 20 și 200 de dolari lunar în funcție de utilizare, a generat o nemulțumire crescândă. În acest context, soluția Goose se afirmă ca o alternativă gratuită, oferind aceleași funcționalități, răspunzând astfel cererii pentru instrumente AI accesibile.",
+      "why_it_matters": "Această știre subliniază o tendință crucială în piața instrumentelor AI pentru dezvoltatori: presiunea costurilor ridicate versus apariția alternativelor gratuite. Impactul este direct pentru profesioniștii din IT, care vor evalua cu atenție rentabilitatea soluțiilor plătite precum Claude Code în comparație cu opțiuni la fel de performante, dar accesibile fără costuri, precum Goose. Acest lucru ar putea stimula inovația în segmentul gratuit și ar putea forța furnizorii de servicii plătite să își justifice și mai bine valoarea.",
+      "instagram_caption": "Dezvoltatorii se confruntă cu o dilemă! 💡 Agenții AI pentru codare, precum Claude Code de la Anthropic, sunt incredibil de puternici, dar vin cu un preț de până la 200$/lună. Pe de altă parte, Goose promite aceleași capacități, însă gratuit! Este o revoluție accesibilă sau un semnal de alarmă pentru costurile AI? Ce părere ai? 💻",
       "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tehnologie",
-        "#InteligentaArtificiala",
-        "#AIAgents"
+        "AICoding",
+        "Dezvoltatori",
+        "TehnologieAI",
+        "SoftwareDevelopment",
+        "InovatieTehnologica",
+        "GooseAI",
+        "ClaudeCode",
+        "AI"
       ],
       "image": "",
       "image_prompt": "Premium futuristic editorial image about AI: Claude Code costs up to $200 a month. Goose does the same thing for free.. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
     },
     {
-      "title": "What Parameter Golf taught us about AI-assisted research",
+      "title": "Parloa lansează agenți de servicii clienți AI avansați, cu suport OpenAI",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/parloa",
+      "date": "2026-05-07T11:00:00+00:00",
+      "category": "AI",
+      "summary": "Parloa, o companie inovatoare, utilizează tehnologia avansată a modelelor OpenAI pentru a dezvolta agenți de servicii clienți bazați pe inteligență artificială. Acești agenți sunt concepuți pentru a oferi interacțiuni vocale scalabile și de încredere în timp real. Platforma Parloa permite companiilor să proiecteze, să simuleze și să implementeze soluții de asistență clienți bazate pe AI, transformând modul în care afacerile comunică cu publicul lor. Focusul este pe eficiență și experiență îmbunătățită pentru utilizatori.",
+      "why_it_matters": "Această inovație transformă serviciile de asistență clienți, permițând companiilor să implementeze agenți AI vocali scalabili și de încredere. Impactul direct este o îmbunătățire semnificativă a satisfacției clienților prin interacțiuni eficiente și rapide, reducerea costurilor operaționale și eliberarea resurselor umane pentru sarcini complexe, asigurând o disponibilitate constantă.",
+      "instagram_caption": "Parloa și OpenAI rescriu regulile serviciului clienți! 🚀 Acum, agenții AI vocali devin mai inteligenți și mai naturali ca niciodată. Companiile pot proiecta și implementa soluții de asistență clienți scalabile, oferind interacțiuni în timp real și de încredere. Pregătiți-vă pentru o experiență de suport superioară, 24/7! #AI #ServiciuClienti #OpenAI #Inovatie #Tehnologie",
+      "hashtags": [
+        "AI",
+        "ServiciuClienti",
+        "OpenAI",
+        "Tehnologie",
+        "Inovatie",
+        "AsistentaVocala",
+        "Digitalizare"
+      ],
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: Parloa builds service agents customers want to talk to. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+    },
+    {
+      "title": "Parameter Golf: OpenAI evidentiaza progrese in cercetarea asistata de AI",
       "source": "OpenAI Blog",
       "url": "https://openai.com/index/what-parameter-golf-taught-us",
       "date": "2026-05-12T00:00:00+00:00",
       "category": "AI",
-      "summary": "Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantization, and novel model design under strict constraints.",
-      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
-      "instagram_caption": "What Parameter Golf taught us about AI-assisted research\n\nCiteste selectia pe nexas.ro/stiri/",
+      "summary": "Competitia \"Parameter Golf\", organizata de OpenAI, a reunit peste 1.000 de participanti si a generat peste 2.000 de propuneri, oferind perspective esentiale asupra cercetarii in domeniul machine learning asistate de inteligenta artificiala. Evenimentul a explorat teme complexe precum dezvoltarea de agenti de codare, cuantificarea si designul inovator de modele, toate desfasurate sub restrictii stricte. Aceasta initiativa subliniaza potentialul colaborativ si accelerarea inovatiei in AI prin metode experimentale.",
+      "why_it_matters": "Evenimentul Parameter Golf demonstreaza cum abordările experimentale și colaborative pot accelera semnificativ inovația în cercetarea AI și Machine Learning. Prin adunarea unei comunități extinse de cercetători pentru a lucra sub constrângeri stricte, OpenAI a obținut perspective valoroase asupra metodelor eficiente de dezvoltare a modelelor AI, a agenților de codare și a tehnicilor de cuantificare, contribuind direct la progresul și optimizarea viitoarelor sisteme de inteligență artificială.",
+      "instagram_caption": "Parameter Golf, o inițiativă OpenAI, a adunat peste 1.000 de experți AI pentru a explora viitorul cercetării asistate de inteligență artificială! Cu peste 2.000 de propuneri, evenimentul a generat idei inovatoare în machine learning, agenți de codare și design de modele. O dovadă că inovația colaborativă este cheia pentru a impinge limitele AI. #AIFuture #OpenAIChat #TechInnovation",
       "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tehnologie",
-        "#InteligentaArtificiala",
-        "#AIAgents"
+        "AIFuture",
+        "InteligentaArtificiala",
+        "MachineLearning",
+        "OpenAI",
+        "CercetareAI",
+        "Inovatie",
+        "TechNews",
+        "ParameterGolf",
+        "DezvoltareAI"
       ],
       "image": "",
       "image_prompt": "Premium futuristic editorial image about AI: What Parameter Golf taught us about AI-assisted research. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
@@ -95,25 +123,6 @@
       ],
       "image": "",
       "image_prompt": "Premium futuristic editorial image about AI: GM just laid off hundreds of IT workers to hire those with stronger AI skills. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
-    },
-    {
-      "title": "Parloa builds service agents customers want to talk to",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/parloa",
-      "date": "2026-05-07T11:00:00+00:00",
-      "category": "AI",
-      "summary": "Parloa leverages OpenAI models to power scalable, voice-driven AI customer service agents, enabling enterprises to design, simulate, and deploy reliable, real-time interactions.",
-      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
-      "instagram_caption": "Parloa builds service agents customers want to talk to\n\nCiteste selectia pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tehnologie",
-        "#InteligentaArtificiala",
-        "#AIAgents"
-      ],
-      "image": "",
-      "image_prompt": "Premium futuristic editorial image about AI: Parloa builds service agents customers want to talk to. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
     },
     {
       "title": "OpenAI launches DeployCo to help businesses build around intelligence",
