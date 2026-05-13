@@ -4,8 +4,6 @@ import json
 import html
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
-
 import feedparser
 
 try:
@@ -17,336 +15,361 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "stiri"
 OUT_JSON = OUT_DIR / "stiri.json"
 
-KEYWORDS = {
-    "AI": ["ai", "artificial intelligence", "openai", "anthropic", "gemini", "llm", "chatgpt", "agent", "agents", "machine learning", "model"],
-    "Gadgeturi": ["gadget", "phone", "laptop", "device", "wearable", "chip", "nvidia", "apple", "samsung", "hardware"],
-    "Cybersecurity": ["security", "cyber", "breach", "malware", "privacy", "hack", "ransomware"],
-    "Startup": ["startup", "funding", "venture", "launch", "raises", "acquisition"],
-    "Automatizare": ["automation", "robot", "robotics", "workflow", "enterprise", "productivity"],
-    "Tech": ["software", "platform", "cloud", "app", "internet", "developer", "api", "data"],
+ARTICLES_PER_CATEGORY = 3
+MAX_PER_CATEGORY = 30
+
+# ============================================================
+# CATEGORII + SURSE RSS
+# ============================================================
+CATEGORY_FEEDS = {
+    "AI & Tech": {
+        "lang": "en",
+        "feeds": [
+            {"name": "TechCrunch",    "url": "https://techcrunch.com/feed/",                           "weight": 1.15},
+            {"name": "VentureBeat",   "url": "https://venturebeat.com/category/ai/feed/",              "weight": 1.18},
+            {"name": "The Verge",     "url": "https://www.theverge.com/rss/index.xml",                 "weight": 1.05},
+            {"name": "OpenAI Blog",   "url": "https://openai.com/news/rss.xml",                        "weight": 1.20},
+            {"name": "Anthropic",     "url": "https://www.anthropic.com/news/rss.xml",                 "weight": 1.15},
+            {"name": "Ars Technica",  "url": "https://feeds.arstechnica.com/arstechnica/index",        "weight": 1.00},
+        ],
+    },
+    "Sport": {
+        "lang": "ro",
+        "feeds": [
+            {"name": "ProSport",      "url": "https://www.prosport.ro/feed",                           "weight": 1.20},
+            {"name": "GSP",           "url": "https://www.gsp.ro/rss",                                 "weight": 1.15},
+            {"name": "DigiSport",     "url": "https://www.digisport.ro/rss",                           "weight": 1.10},
+            {"name": "Fanatik",       "url": "https://www.fanatik.ro/feed",                            "weight": 1.05},
+        ],
+    },
+    "Sanatate": {
+        "lang": "ro",
+        "feeds": [
+            {"name": "CSID",          "url": "https://www.csid.ro/rss",                                "weight": 1.15},
+            {"name": "Mediafax",      "url": "https://www.mediafax.ro/sanatate/rss",                   "weight": 1.10},
+            {"name": "Descopera",     "url": "https://descopera.ro/sanatate/feed",                     "weight": 1.00},
+            {"name": "WebMD",         "url": "https://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC", "weight": 0.90},
+        ],
+    },
+    "Business": {
+        "lang": "ro",
+        "feeds": [
+            {"name": "Ziarul Financiar", "url": "https://www.zf.ro/rss",                              "weight": 1.20},
+            {"name": "Profit.ro",        "url": "https://www.profit.ro/rss",                           "weight": 1.15},
+            {"name": "Business Magazin", "url": "https://www.businessmagazin.ro/rss",                  "weight": 1.00},
+            {"name": "Economica",        "url": "https://economica.net/rss",                            "weight": 1.05},
+        ],
+    },
+    "International": {
+        "lang": "en",
+        "feeds": [
+            {"name": "BBC World",     "url": "http://feeds.bbci.co.uk/news/world/rss.xml",             "weight": 1.20},
+            {"name": "Reuters",       "url": "https://feeds.reuters.com/reuters/topNews",              "weight": 1.15},
+            {"name": "DW News",       "url": "https://rss.dw.com/rdf/rss-en-world",                   "weight": 1.00},
+            {"name": "AP News",       "url": "https://rsshub.app/apnews/topics/apf-topnews",           "weight": 1.10},
+        ],
+    },
+    "Entertainment": {
+        "lang": "ro",
+        "feeds": [
+            {"name": "SpyNews",       "url": "https://spynews.ro/feed",                                "weight": 1.15},
+            {"name": "Viva",          "url": "https://www.viva.ro/rss",                                "weight": 1.10},
+            {"name": "OK Magazine",   "url": "https://okmagazine.ro/feed",                             "weight": 1.00},
+            {"name": "Unica",         "url": "https://unica.ro/feed",                                  "weight": 1.05},
+        ],
+    },
+    "Romania": {
+        "lang": "ro",
+        "feeds": [
+            {"name": "Digi24",        "url": "https://www.digi24.ro/rss",                              "weight": 1.20},
+            {"name": "G4Media",       "url": "https://www.g4media.ro/feed",                            "weight": 1.15},
+            {"name": "HotNews",       "url": "https://www.hotnews.ro/rss",                             "weight": 1.10},
+            {"name": "Libertatea",    "url": "https://www.libertatea.ro/rss",                          "weight": 1.05},
+        ],
+    },
+    "Stiinta": {
+        "lang": "en",
+        "feeds": [
+            {"name": "Science Daily", "url": "https://www.sciencedaily.com/rss/top.xml",               "weight": 1.15},
+            {"name": "NASA News",     "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",         "weight": 1.10},
+            {"name": "New Scientist", "url": "https://www.newscientist.com/feed/home/",                "weight": 1.05},
+            {"name": "Descopera Ro",  "url": "https://descopera.ro/stiinta/feed",                      "weight": 1.00},
+        ],
+    },
 }
 
-FEEDS = [
-    {"name": "TechCrunch", "url": "https://techcrunch.com/feed/", "weight": 1.15},
-    {"name": "The Verge", "url": "https://www.theverge.com/rss/index.xml", "weight": 1.05},
-    {"name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/", "weight": 1.18},
-    {"name": "MIT News AI", "url": "https://news.mit.edu/topic/artificial-intelligence2-rss.xml", "weight": 1.12},
-    {"name": "Google AI Blog", "url": "https://blog.google/technology/ai/rss/", "weight": 1.1},
-    {"name": "OpenAI Blog", "url": "https://openai.com/news/rss.xml", "weight": 1.2},
-    {"name": "Anthropic News", "url": "https://www.anthropic.com/news/rss.xml", "weight": 1.15},
-    {"name": "Engadget", "url": "https://www.engadget.com/rss.xml", "weight": 0.95},
-    {"name": "Ars Technica", "url": "https://feeds.arstechnica.com/arstechnica/index", "weight": 1.0},
-    {"name": "ZDNET", "url": "https://www.zdnet.com/news/rss.xml", "weight": 0.95},
-]
+CATEGORY_ICONS = {
+    "AI & Tech":     "🤖",
+    "Sport":         "⚽",
+    "Sanatate":      "💊",
+    "Business":      "💼",
+    "International": "🌍",
+    "Entertainment": "🎬",
+    "Romania":       "🏛️",
+    "Stiinta":       "🔬",
+}
 
+DEFAULT_HASHTAGS = {
+    "AI & Tech":     ["#NEXAS", "#AI", "#Tech", "#Tehnologie", "#InteligentaArtificiala"],
+    "Sport":         ["#NEXAS", "#Sport", "#Fotbal", "#Romania", "#Campionat"],
+    "Sanatate":      ["#NEXAS", "#Sanatate", "#Health", "#Medicina", "#Wellness"],
+    "Business":      ["#NEXAS", "#Business", "#Economie", "#Antreprenoriat", "#Finance"],
+    "International": ["#NEXAS", "#International", "#StiriMondiale", "#Lume", "#Breaking"],
+    "Entertainment": ["#NEXAS", "#Entertainment", "#Vedete", "#Divertisment", "#Lifestyle"],
+    "Romania":       ["#NEXAS", "#Romania", "#StiriRomania", "#Actualitate", "#Breaking"],
+    "Stiinta":       ["#NEXAS", "#Stiinta", "#Science", "#Descoperiri", "#Inovatie"],
+}
 
+# ============================================================
+# UTILITARE
+# ============================================================
 def clean_text(value: str) -> str:
     value = html.unescape(value or "")
     value = re.sub(r"<[^>]+>", " ", value)
     value = re.sub(r"\s+", " ", value).strip()
     return value
 
-
-def parsed_date(entry):
+def parsed_date(entry) -> datetime:
     if getattr(entry, "published_parsed", None):
         return datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
     if getattr(entry, "updated_parsed", None):
         return datetime(*entry.updated_parsed[:6], tzinfo=timezone.utc)
     return datetime.now(timezone.utc)
 
-
-def detect_category(text: str) -> str:
-    text_lower = text.lower()
-    scores = {
-        category: sum(1 for keyword in keywords if keyword in text_lower)
-        for category, keywords in KEYWORDS.items()
-    }
-    best = max(scores, key=scores.get)
-    return best if scores[best] else "Tech"
-
-
-def relevance(text: str, weight: float, date: datetime) -> float:
-    text_lower = text.lower()
-    score = 0
-
-    for keywords in KEYWORDS.values():
-        for keyword in keywords:
-            if keyword in text_lower:
-                score += 3 if keyword in ["ai", "agent", "agents", "openai", "anthropic", "gemini", "robotics"] else 1
-
+def freshness_score(date: datetime) -> float:
     age_hours = max((datetime.now(timezone.utc) - date).total_seconds() / 3600, 1)
-    freshness = max(0, 72 - min(age_hours, 72)) / 12
-
-    return (score + freshness) * weight
-
-
-def short_summary(title: str, raw_summary: str, source: str) -> str:
-    text = clean_text(raw_summary or title)
-    if len(text) > 360:
-        text = text[:360].rsplit(" ", 1)[0] + "..."
-    return text
-
-
-def hashtags(category: str):
-    base = ["#NEXAS", "#AI", "#Tehnologie"]
-    extra = {
-        "AI": ["#InteligentaArtificiala", "#AIAgents"],
-        "Gadgeturi": ["#Gadgeturi", "#TechNews"],
-        "Cybersecurity": ["#Cybersecurity", "#DataProtection"],
-        "Startup": ["#Startup", "#Innovation"],
-        "Automatizare": ["#Automatizare", "#Digitalizare"],
-        "Tech": ["#IT", "#ViitorDigital"],
-    }
-    return base + extra.get(category, ["#IT"])
-
-
-def default_impact(category: str) -> str:
-    messages = {
-        "AI": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
-        "Gadgeturi": "Stirea arata directia in care merg dispozitivele si tehnologia folosita zilnic de utilizatori si companii.",
-        "Cybersecurity": "Stirea conteaza pentru ca securitatea datelor devine o parte importanta a infrastructurii digitale.",
-        "Startup": "Stirea poate indica o directie noua de investitii sau un produs care poate creste in piata tech.",
-        "Automatizare": "Stirea arata cum procesele digitale pot reduce munca manuala si pot schimba modul de lucru in companii.",
-        "Tech": "Stirea ajuta la intelegerea unui trend care poate influenta software-ul, site-urile si serviciile digitale.",
-    }
-    return messages.get(category, messages["Tech"])
-
+    return max(0.0, 72.0 - min(age_hours, 72.0)) / 12.0
 
 def image_prompt(title: str, category: str) -> str:
     return (
-        f"Premium futuristic editorial image about {category}: {title}. "
-        "Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+        f"Premium editorial photograph for {category} news: {title[:100]}. "
+        "Professional photorealistic style. No text, no logos, no watermarks."
     )
 
-
-def parse_json_from_text(text: str) -> dict:
-    text = (text or "").strip()
-    text = re.sub(r"^```json\s*", "", text)
-    text = re.sub(r"^```\s*", "", text)
-    text = re.sub(r"\s*```$", "", text)
-
-    try:
-        return json.loads(text)
-    except Exception:
-        match = re.search(r"\{.*\}", text, re.DOTALL)
-        if not match:
-            raise
-        return json.loads(match.group(0))
-
-
-def gemini_rewrite_ro(item: dict) -> dict:
-    api_key = os.getenv("GEMINI_API_KEY")
-
-    if not api_key or genai is None:
-        print("Gemini skipped: GEMINI_API_KEY lipseste sau google-genai nu este instalat.")
-        item["why_it_matters"] = default_impact(item.get("category", "Tech"))
-        return item
-
-    prompt = f"""
-Rescrie stirea de mai jos in limba romana pentru site-ul NEXAS.
-
-Reguli stricte:
-- Nu copia articolul original.
-- Nu inventa date, cifre sau promisiuni.
-- Pastreaza sensul stirii.
-- Titlul trebuie sa fie in romana, clar, maximum 95 caractere.
-- Rezumatul trebuie sa fie in romana, maximum 420 caractere.
-- Impactul trebuie sa fie concret si legat direct de aceasta stire.
-- Captionul Instagram trebuie sa fie scurt, in romana, maximum 450 caractere.
-- Hashtagurile trebuie sa fie fara diacritice.
-- Raspunde strict JSON valid. Fara markdown. Fara explicatii.
-
-Stire:
-Titlu original: {item.get('title', '')}
-Rezumat original: {item.get('summary', '')}
-Sursa: {item.get('source', '')}
-Categorie: {item.get('category', '')}
-URL: {item.get('url', '')}
-
-Format JSON:
-{{
-  "title": "",
-  "summary": "",
-  "why_it_matters": "",
-  "instagram_caption": "",
-  "hashtags": []
-}}
-"""
-
-    models_to_try = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
-
-    for model_name in models_to_try:
-        try:
-            client = genai.Client(api_key=api_key)
-            response = client.models.generate_content(
-                model=model_name,
-                contents=prompt,
-            )
-
-            data = parse_json_from_text(response.text)
-
-            item["title"] = clean_text(data.get("title") or item.get("title", ""))
-            item["summary"] = clean_text(data.get("summary") or item.get("summary", ""))
-            item["why_it_matters"] = clean_text(data.get("why_it_matters") or default_impact(item.get("category", "Tech")))
-            item["instagram_caption"] = clean_text(data.get("instagram_caption") or item.get("instagram_caption", ""))
-
-            new_hashtags = data.get("hashtags")
-            if isinstance(new_hashtags, list) and new_hashtags:
-                item["hashtags"] = [str(tag).strip() for tag in new_hashtags if str(tag).strip()]
-
-            print(f"Gemini ({model_name}) rewrite OK: {item.get('title', '')[:60]}")
-            return item
-
-        except Exception as error:
-            print(f"Gemini {model_name} failed: {error}")
-            continue
-
-    print(f"Toate modelele Gemini au esuat pentru: {item.get('url', '')}")
-    item["why_it_matters"] = default_impact(item.get("category", "Tech"))
-    return item
-
-
-def collect_articles():
+# ============================================================
+# COLECTARE STIRI PER CATEGORIE
+# ============================================================
+def collect_for_category(category: str, config: dict, target: int = 3) -> list:
     articles = []
     seen_urls = set()
     seen_titles = set()
 
-    for feed in FEEDS:
+    for feed in config["feeds"]:
         try:
             parsed = feedparser.parse(feed["url"])
-        except Exception as error:
-            print(f"Feed failed {feed['name']}: {error}")
+        except Exception as e:
+            print(f"    Feed failed [{feed['name']}]: {e}")
             continue
 
-        for entry in parsed.entries[:14]:
+        for entry in parsed.entries[:12]:
             title = clean_text(getattr(entry, "title", ""))
             url = getattr(entry, "link", "")
 
-            if not title or not url:
+            if not title or not url or len(title) < 10:
                 continue
 
-            domain = urlparse(url).netloc.replace("www.", "")
-            title_key = re.sub(r"\W+", "", title.lower())[:90]
-
+            title_key = re.sub(r"\W+", "", title.lower())[:80]
             if url in seen_urls or title_key in seen_titles:
                 continue
 
             seen_urls.add(url)
             seen_titles.add(title_key)
 
-            raw_summary = clean_text(getattr(entry, "summary", "") or getattr(entry, "description", ""))
+            raw = clean_text(getattr(entry, "summary", "") or getattr(entry, "description", ""))
             date = parsed_date(entry)
-            text = f"{title} {raw_summary}"
-            category = detect_category(text)
-            score = relevance(text, feed.get("weight", 1), date)
-
-            if score < 2.5:
-                continue
+            score = freshness_score(date) * feed.get("weight", 1.0)
 
             articles.append({
                 "title": title,
                 "source": feed["name"],
                 "url": url,
-                "domain": domain,
                 "date": date.isoformat(),
                 "category": category,
-                "summary": short_summary(title, raw_summary, feed["name"]),
-                "why_it_matters": default_impact(category),
-                "instagram_caption": f"{title}\n\nCiteste selectia pe nexas.ro/stiri/",
-                "hashtags": hashtags(category),
+                "summary": raw[:420] if raw else title,
+                "instagram_caption": f"{title}\n\nCiteste pe nexas.ro/stiri/",
+                "hashtags": DEFAULT_HASHTAGS.get(category, ["#NEXAS"]),
                 "image": "",
                 "image_prompt": image_prompt(title, category),
                 "_score": score,
+                "_lang": config.get("lang", "en"),
             })
 
-    articles.sort(key=lambda item: item["_score"], reverse=True)
+    articles.sort(key=lambda x: x["_score"], reverse=True)
+    result = articles[:target * 2]  # extra pool for dedup
 
-    selected = []
+    # Deduplicate by picking from different sources where possible
+    final = []
     used_sources = set()
+    for a in result:
+        if len(final) >= target:
+            break
+        if a["source"] not in used_sources or len(final) < target:
+            final.append(a)
+            used_sources.add(a["source"])
 
-    for article in articles:
-        if article["source"] in used_sources and len(selected) < 2:
+    return final[:target]
+
+# ============================================================
+# GEMINI REWRITE
+# ============================================================
+def gemini_rewrite_ro(item: dict) -> dict:
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key or genai is None:
+        print("    Gemini skipped: GEMINI_API_KEY lipseste")
+        return item
+
+    is_ro = item.get("_lang") == "ro"
+
+    if is_ro:
+        prompt = f"""Rescrie si curata aceasta stire romaneasca pentru site-ul NEXAS.
+Pastreaza informatia reala, nu inventa nimic nou.
+Titlu: max 90 caractere, clar si atractiv.
+Rezumat: max 380 caractere, informativ si usor de citit.
+Caption Instagram: max 400 caractere, in romana, cu emoji.
+Raspunde STRICT JSON valid, fara markdown, fara explicatii.
+
+Stire:
+Titlu: {item.get('title','')}
+Rezumat: {item.get('summary','')}
+Sursa: {item.get('source','')}
+Categorie: {item.get('category','')}
+
+Format exact:
+{{"title":"","summary":"","instagram_caption":"","hashtags":[]}}"""
+    else:
+        prompt = f"""Traduce si rescrie aceasta stire in limba romana pentru site-ul NEXAS.
+Nu inventa date, cifre sau informatii. Pastreaza sensul original.
+Titlu: max 90 caractere, in romana, atractiv.
+Rezumat: max 380 caractere, in romana, clar si informativ.
+Caption Instagram: max 400 caractere, in romana, cu emoji.
+Raspunde STRICT JSON valid, fara markdown, fara explicatii.
+
+Stire originala:
+Titlu: {item.get('title','')}
+Rezumat: {item.get('summary','')}
+Sursa: {item.get('source','')}
+Categorie: {item.get('category','')}
+
+Format exact:
+{{"title":"","summary":"","instagram_caption":"","hashtags":[]}}"""
+
+    for model_name in ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]:
+        try:
+            client = genai.Client(api_key=api_key)
+            response = client.models.generate_content(model=model_name, contents=prompt)
+            text = (response.text or "").strip()
+            text = re.sub(r"^```json\s*", "", text)
+            text = re.sub(r"^```\s*", "", text)
+            text = re.sub(r"\s*```$", "", text)
+            data = json.loads(text)
+
+            item["title"] = clean_text(data.get("title") or item["title"])
+            item["summary"] = clean_text(data.get("summary") or item["summary"])
+            item["instagram_caption"] = clean_text(data.get("instagram_caption") or item["instagram_caption"])
+            new_tags = data.get("hashtags")
+            if isinstance(new_tags, list) and new_tags:
+                item["hashtags"] = [str(t).strip() for t in new_tags if str(t).strip()]
+
+            print(f"    ✓ Gemini ({model_name}): {item['title'][:55]}")
+            return item
+
+        except Exception as e:
+            print(f"    ✗ Gemini {model_name}: {e}")
             continue
 
-        selected.append(article)
-        used_sources.add(article["source"])
+    print(f"    Gemini esuat pentru: {item.get('url','')[:60]}")
+    return item
 
-        if len(selected) == 3:
-            break
-
-    return selected
-
-
-def fallback_items():
-    return [{
-        "title": "Nu au fost gasite stiri noi la ultima rulare",
-        "source": "NEXAS Agent",
-        "url": "https://www.nexas.ro/stiri/",
-        "date": datetime.now(timezone.utc).isoformat(),
-        "category": "AI",
-        "summary": "Agentul a rulat, dar sursele nu au returnat suficiente rezultate relevante. Verifica logurile din GitHub Actions.",
-        "why_it_matters": "Fallback-ul pastreaza pagina functionala pana la urmatoarea rulare.",
-        "instagram_caption": "Agentul NEXAS nu a gasit suficiente stiri noi la ultima rulare.",
-        "hashtags": ["#NEXAS", "#AI", "#Tehnologie"],
-        "image": "",
-        "image_prompt": "Premium futuristic AI news control room, no readable text",
-    }]
-
-
-def load_old_items():
+# ============================================================
+# MERGE + ARHIVA
+# ============================================================
+def load_old_items() -> list:
     if not OUT_JSON.exists():
         return []
-
     try:
-        old_payload = json.loads(OUT_JSON.read_text(encoding="utf-8"))
-        if isinstance(old_payload, dict):
-            return old_payload.get("items", []) or []
-        if isinstance(old_payload, list):
-            return old_payload
-    except Exception as error:
-        print(f"Nu pot citi stirile vechi: {error}")
+        data = json.loads(OUT_JSON.read_text(encoding="utf-8"))
+        if isinstance(data, dict):
+            return data.get("items", [])
+        return data if isinstance(data, list) else []
+    except Exception as e:
+        print(f"Nu pot citi stirile vechi: {e}")
+        return []
 
-    return []
+def merge_items(new_items: list, old_items: list, max_per_cat: int = 30) -> list:
+    seen_urls = set(item["url"] for item in new_items if item.get("url"))
+    merged = list(new_items)
 
+    cat_counts = {}
+    for item in new_items:
+        cat = item.get("category", "")
+        cat_counts[cat] = cat_counts.get(cat, 0) + 1
 
-def merge_items(new_items, old_items, limit=60):
-    merged = []
-    seen_urls = set()
-
-    for item in new_items + old_items:
+    for item in old_items:
         url = item.get("url", "")
+        cat = item.get("category", "")
         if not url or url in seen_urls:
             continue
-
+        if cat_counts.get(cat, 0) >= max_per_cat:
+            continue
         seen_urls.add(url)
         merged.append(item)
+        cat_counts[cat] = cat_counts.get(cat, 0) + 1
 
-    return merged[:limit]
+    merged.sort(key=lambda x: x.get("date", ""), reverse=True)
+    return merged
 
-
+# ============================================================
+# MAIN
+# ============================================================
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    run_log = {}
+    all_new_items = []
 
-    new_items = collect_articles() or fallback_items()
-    clean_items = []
+    print(f"\n{'='*50}")
+    print(f"NEXAS Stiri Agent — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"{'='*50}")
 
-    for item in new_items[:3]:
-        item.pop("_score", None)
-        item.pop("domain", None)
-        item = gemini_rewrite_ro(item)
-        clean_items.append(item)
+    for category, config in CATEGORY_FEEDS.items():
+        icon = CATEGORY_ICONS.get(category, "📰")
+        print(f"\n{icon} {category}")
+
+        items = collect_for_category(category, config, target=ARTICLES_PER_CATEGORY)
+
+        if len(items) < ARTICLES_PER_CATEGORY:
+            print(f"  ⚠ Insuficiente: {len(items)}/{ARTICLES_PER_CATEGORY} — categoria sarita")
+            run_log[category] = 0
+            continue
+
+        rewrote = []
+        for item in items:
+            item.pop("_score", None)
+            item.pop("_lang", None)
+            item = gemini_rewrite_ro(item)
+            rewrote.append(item)
+
+        all_new_items.extend(rewrote)
+        run_log[category] = len(rewrote)
+        print(f"  ✓ {len(rewrote)} stiri salvate")
 
     old_items = load_old_items()
-    merged = merge_items(clean_items, old_items, limit=60)
+    merged = merge_items(all_new_items, old_items, max_per_cat=MAX_PER_CATEGORY)
 
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
+        "run_log": run_log,
         "items": merged,
     }
 
     OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Wrote {OUT_JSON} with {len(merged)} items. New items: {len(clean_items)}")
 
+    total_new = sum(run_log.values())
+    cats_ok = sum(1 for v in run_log.values() if v > 0)
+    print(f"\n{'='*50}")
+    print(f"✓ Categorii active: {cats_ok}/{len(CATEGORY_FEEDS)}")
+    print(f"✓ Stiri noi: {total_new} | Total in JSON: {len(merged)}")
+    print(f"Run log: {run_log}")
+    print(f"{'='*50}\n")
 
 if __name__ == "__main__":
     main()
