@@ -173,30 +173,37 @@ Format JSON:
 }}
 """
 
-    try:
-        client = genai.Client(api_key=api_key)
-        response = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=prompt,
-        )
+    models_to_try = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
 
-        data = parse_json_from_text(response.text)
+    for model_name in models_to_try:
+        try:
+            client = genai.Client(api_key=api_key)
+            response = client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+            )
 
-        item["title"] = clean_text(data.get("title") or item.get("title", ""))
-        item["summary"] = clean_text(data.get("summary") or item.get("summary", ""))
-        item["why_it_matters"] = clean_text(data.get("why_it_matters") or default_impact(item.get("category", "Tech")))
-        item["instagram_caption"] = clean_text(data.get("instagram_caption") or item.get("instagram_caption", ""))
+            data = parse_json_from_text(response.text)
 
-        new_hashtags = data.get("hashtags")
-        if isinstance(new_hashtags, list) and new_hashtags:
-            item["hashtags"] = [str(tag).strip() for tag in new_hashtags if str(tag).strip()]
+            item["title"] = clean_text(data.get("title") or item.get("title", ""))
+            item["summary"] = clean_text(data.get("summary") or item.get("summary", ""))
+            item["why_it_matters"] = clean_text(data.get("why_it_matters") or default_impact(item.get("category", "Tech")))
+            item["instagram_caption"] = clean_text(data.get("instagram_caption") or item.get("instagram_caption", ""))
 
-        return item
+            new_hashtags = data.get("hashtags")
+            if isinstance(new_hashtags, list) and new_hashtags:
+                item["hashtags"] = [str(tag).strip() for tag in new_hashtags if str(tag).strip()]
 
-    except Exception as error:
-        print(f"Gemini rewrite failed pentru {item.get('url', '')}: {error}")
-        item["why_it_matters"] = default_impact(item.get("category", "Tech"))
-        return item
+            print(f"Gemini ({model_name}) rewrite OK: {item.get('title', '')[:60]}")
+            return item
+
+        except Exception as error:
+            print(f"Gemini {model_name} failed: {error}")
+            continue
+
+    print(f"Toate modelele Gemini au esuat pentru: {item.get('url', '')}")
+    item["why_it_matters"] = default_impact(item.get("category", "Tech"))
+    return item
 
 
 def collect_articles():
