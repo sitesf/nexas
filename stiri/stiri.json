@@ -1,48 +1,446 @@
 {
-  "updated_at": "2026-05-13T12:18:25.672714+00:00",
+  "updated_at": "2026-05-13T17:53:18.508939+00:00",
+  "run_log": {
+    "AI & Tech": 3,
+    "Sport": 3,
+    "Sanatate": 3,
+    "Business": 3,
+    "International": 3,
+    "Entertainment": 0,
+    "Romania": 3,
+    "Stiinta": 3
+  },
   "items": [
     {
-      "title": "Claude Code, agentul AI de codare plătit, față în față cu alternativa gratuită Goose",
-      "source": "VentureBeat AI",
-      "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
-      "date": "2026-01-19T14:00:00+00:00",
-      "category": "AI",
-      "summary": "Revoluția inteligenței artificiale în codare, deși promițătoare, vine cu un cost semnificativ. Claude Code, un agent AI dezvoltat de Anthropic capabil să scrie, să depaneze și să implementeze cod autonom, a captivat atenția dezvoltatorilor software. Însă, prețul său, care variază între 20 și 200 de dolari lunar în funcție de utilizare, a generat o nemulțumire crescândă. În acest context, soluția Goose se afirmă ca o alternativă gratuită, oferind aceleași funcționalități, răspunzând astfel cererii pentru instrumente AI accesibile.",
-      "why_it_matters": "Această știre subliniază o tendință crucială în piața instrumentelor AI pentru dezvoltatori: presiunea costurilor ridicate versus apariția alternativelor gratuite. Impactul este direct pentru profesioniștii din IT, care vor evalua cu atenție rentabilitatea soluțiilor plătite precum Claude Code în comparație cu opțiuni la fel de performante, dar accesibile fără costuri, precum Goose. Acest lucru ar putea stimula inovația în segmentul gratuit și ar putea forța furnizorii de servicii plătite să își justifice și mai bine valoarea.",
-      "instagram_caption": "Dezvoltatorii se confruntă cu o dilemă! 💡 Agenții AI pentru codare, precum Claude Code de la Anthropic, sunt incredibil de puternici, dar vin cu un preț de până la 200$/lună. Pe de altă parte, Goose promite aceleași capacități, însă gratuit! Este o revoluție accesibilă sau un semnal de alarmă pentru costurile AI? Ce părere ai? 💻",
+      "title": "Coleslaw de casă: Rețeta cremoasă ce taie pofta de dulce și e perfectă pentru siluetă",
+      "source": "CSID",
+      "url": "https://www.csid.ro/diete/retete-culinare/cum-faci-acasa-salata-coleslaw-reteta-de-salata-de-varza-cu-dressing-cremos-care-taie-instant-pofta-de-dulce-21186484/",
+      "date": "2026-05-13T17:51:05.084716+00:00",
+      "category": "Sanatate",
+      "summary": "Descoperă cum să prepari acasă o salată coleslaw delicioasă și sănătoasă! Această rețetă rapidă, pe bază de varză, morcov și măr, este perfectă pentru o masă gustoasă, prietenoasă cu silueta. Dressingul cremos nu doar că o face irezistibilă, dar are și un efect surprinzător: taie instant pofta de dulce. O alegere ideală pentru o alimentație echilibrată și plină de savoare.",
+      "instagram_caption": "🥗 Îți dorești o masă rapidă, gustoasă și prietenoasă cu silueta? Prepară acasă o salată coleslaw cremoasă, cu varză, morcov și măr! 🥕🍎 Nu doar că e delicioasă, dar dressingul său special te ajută să scapi de pofta de dulce. perfectă pentru un stil de viață sănătos! Descoperă rețeta completă pe NEXAS! 💖 #ColeslawDeCasa #RetetaSanatoasa #FaraPoftaDeDulce #MasaRapida #NEXAS",
       "hashtags": [
-        "AICoding",
-        "Dezvoltatori",
-        "TehnologieAI",
-        "SoftwareDevelopment",
-        "InovatieTehnologica",
-        "GooseAI",
-        "ClaudeCode",
-        "AI"
+        "ColeslawDeCasa",
+        "RetetaSanatoasa",
+        "FaraPoftaDeDulce",
+        "MasaRapida",
+        "SalataDeVarza",
+        "AlimentatieSanatoasa",
+        "GatesteAcasă",
+        "NEXAS"
       ],
       "image": "",
-      "image_prompt": "Premium futuristic editorial image about AI: Claude Code costs up to $200 a month. Goose does the same thing for free.. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+      "image_prompt": "Premium editorial photograph for Sanatate news: Cum faci acasă salată coleslaw! Rețeta de salată de varză cu dressing cremos, care taie instant poft. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Parloa lansează agenți de servicii clienți AI avansați, cu suport OpenAI",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/parloa",
-      "date": "2026-05-07T11:00:00+00:00",
-      "category": "AI",
-      "summary": "Parloa, o companie inovatoare, utilizează tehnologia avansată a modelelor OpenAI pentru a dezvolta agenți de servicii clienți bazați pe inteligență artificială. Acești agenți sunt concepuți pentru a oferi interacțiuni vocale scalabile și de încredere în timp real. Platforma Parloa permite companiilor să proiecteze, să simuleze și să implementeze soluții de asistență clienți bazate pe AI, transformând modul în care afacerile comunică cu publicul lor. Focusul este pe eficiență și experiență îmbunătățită pentru utilizatori.",
-      "why_it_matters": "Această inovație transformă serviciile de asistență clienți, permițând companiilor să implementeze agenți AI vocali scalabili și de încredere. Impactul direct este o îmbunătățire semnificativă a satisfacției clienților prin interacțiuni eficiente și rapide, reducerea costurilor operaționale și eliberarea resurselor umane pentru sarcini complexe, asigurând o disponibilitate constantă.",
-      "instagram_caption": "Parloa și OpenAI rescriu regulile serviciului clienți! 🚀 Acum, agenții AI vocali devin mai inteligenți și mai naturali ca niciodată. Companiile pot proiecta și implementa soluții de asistență clienți scalabile, oferind interacțiuni în timp real și de încredere. Pregătiți-vă pentru o experiență de suport superioară, 24/7! #AI #ServiciuClienti #OpenAI #Inovatie #Tehnologie",
+      "title": "Te simți mereu obosit? Află 5 cauze pe care cafeaua nu le rezolvă!",
+      "source": "CSID",
+      "url": "https://www.csid.ro/sanatate/sanatate-health/p-esti-mereu-obosit-5-cauze-ale-oboselii-pe-care-cafeaua-nu-le-poate-rezolva-21187494/",
+      "date": "2026-05-13T17:51:05.084640+00:00",
+      "category": "Sanatate",
+      "summary": "Oboseala persistentă este o problemă medicală frecventă în practica modernă, o stare de extenuare care nu dispare cu odihna. Aceasta afectează semnificativ calitatea vieții și productivitatea. Descoperă 5 cauze ascunse ale oboselii cronice pe care consumul de cafea nu le poate rezolva.",
+      "instagram_caption": "Te simți mereu epuizat, chiar și după o noapte de somn? 😴 Oboseala persistentă este mai mult decât o lipsă de energie, e o problemă care îți afectează calitatea vieții și randamentul zilnic. Cafeaua te mai ajută doar temporar, dar nu rezolvă rădăcina problemei. Descoperă în articolul nostru de pe NEXAS.ro cele 5 cauze surprinzătoare ale oboselii cronice pe care cafeaua nu le poate combate. Fii proactiv pentru sănătatea ta! ✨",
       "hashtags": [
-        "AI",
-        "ServiciuClienti",
-        "OpenAI",
-        "Tehnologie",
-        "Inovatie",
-        "AsistentaVocala",
-        "Digitalizare"
+        "#ObosealaCronica",
+        "#Sanatate",
+        "#Energie",
+        "#Cafea",
+        "#CauzeOboseala",
+        "#Wellbeing",
+        "#NEXAS"
       ],
       "image": "",
-      "image_prompt": "Premium futuristic editorial image about AI: Parloa builds service agents customers want to talk to. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+      "image_prompt": "Premium editorial photograph for Sanatate news: (P) Ești mereu obosit? 5 cauze ale oboselii pe care cafeaua nu le poate rezolva. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Metabolism rapid și digestie ușoară: Secretele fitoterapiei tradiționale",
+      "source": "CSID",
+      "url": "https://www.csid.ro/sanatate/medicina-alternativa/retete-medicinale-traditionale-folosite-de-sute-de-ani-pentru-un-metabolism-rapid-sunt-bune-si-pentru-digestie-21186712/",
+      "date": "2026-05-13T17:51:05.084543+00:00",
+      "category": "Sanatate",
+      "summary": "Descoperă cum fitoterapia tradițională, practicată de sute de ani, folosește plante și combinații naturale pentru a sprijini funcțiile digestive și a menține echilibrul organismului. Aceste remedii străvechi sunt recunoscute pentru capacitatea lor de a stimula un metabolism mai activ, contribuind astfel la o digestie eficientă și la o stare generală de bine.",
+      "instagram_caption": "Vrei un metabolism rapid și o digestie ușoară? 🌱 Descoperă cum fitoterapia tradițională, cu remedii folosite de sute de ani, îți poate îmbunătăți starea de bine! 🌿 Află secretele plantelor care susțin echilibrul corpului și accelerează metabolismul. ✨ Citește articolul complet pe NEXAS! 👇",
+      "hashtags": [
+        "Sanatate",
+        "MetabolismRapid",
+        "Digestie",
+        "Fitoterapie",
+        "RemediiNaturale",
+        "PlanteMedicinale",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Rețete medicinale tradiționale folosite de sute de ani pentru un metabolism rapid. Sunt bune și pent. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Inter Milano, mutare strategică înainte de finala Cupei Italiei! Acord cu un fundaș francez",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-extern/campionate-externe/italia/lovitura-pentru-chivu-au-batut-palma-inainte-de-finala-cupei-italiei-acord-cu-inter-20439343",
+      "date": "2026-05-13T17:46:14+00:00",
+      "category": "Sport",
+      "summary": "Inter Milano, clubul asociat cu legendarul Cristi Chivu (45 de ani), este aproape de a finaliza un transfer de marcă. Potrivit jurnaliștilor italieni, echipa din Serie A a ajuns la un acord cu fundașul francez Oumar Solet (26 de ani). Anunțul vine strategic, chiar înainte de mult așteptata finală a Cupei Italiei, sugerând o consolidare a lotului pentru viitoarele provocări. Această mutare este considerată o \"lovitură\" importantă pe piața transferurilor.",
+      "instagram_caption": "🚨 Super veste de la Milano! Inter, clubul lui Cristi Chivu, pregătește o mutare importantă pe piața transferurilor! 🤩 Chiar înainte de finala Cupei Italiei, jurnaliștii italieni anunță un acord cu fundașul francez Oumar Solet (26 de ani). ✍️ O lovitură strategică pentru Nerazzurri! Ce părere aveți despre această achiziție? 🤔 #InterMilano #SerieA #Mercato #TransferNews #Fotbal",
+      "hashtags": [
+        "#InterMilano",
+        "#SerieA",
+        "#Mercato",
+        "#TransferNews",
+        "#Fotbal",
+        "#CristiChivu"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Lovitură pentru Chivu. Au bătut palma înainte de finala Cupei Italiei: „Acord cu Inter”. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Eroul lui Alex. Mărturia lui Mihail Soare, salvatorul care l-a zărit pe copil cu coada ochiului, din elicopter: Nici nu putea să plângă",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/actualitate/marturia-salvatorului-care-l-a-gasit-pe-copilul-disparut-luni-in-sibiu-i-am-citit-pe-buze-nici-nu-putea-sa-planga-3768933",
+      "date": "2026-05-13T17:43:07+00:00",
+      "category": "Romania",
+      "summary": "Alex, copilul dispărut în pădurea din județul Sibiu și căutat ore întregi de sute de salvatori, a fost găsit în viață după ce un membru al echipajului elicopterului care survola zona a observat „cu coada ochiului” ceva albastru într-un luminiș. Mihail Soare, salvatorul care a participat la intervenție, a povestit într-un interviu acordat Digi24 cum o verificare făcută cu camera cu termoviziune a confirmat că este vor",
+      "instagram_caption": "Eroul lui Alex. Mărturia lui Mihail Soare, salvatorul care l-a zărit pe copil cu coada ochiului, din elicopter: Nici nu putea să plângă\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Eroul lui Alex. Mărturia lui Mihail Soare, salvatorul care l-a zărit pe copil cu coada ochiului, din. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Fervo Energy, debut spectaculos la bursă: +33% datorită cererii AI",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/geothermal-startup-fervo-energy-pops-33-in-ipo-debut-fueled-by-ai-data-center-demand/",
+      "date": "2026-05-13T17:42:20+00:00",
+      "category": "AI & Tech",
+      "summary": "Startup-ul Fervo Energy, specializat în energie geotermală avansată, a debutat la bursă cu o creștere de 33%. Oferta sa publică inițială (IPO) a fost majorată de mai multe ori, o decizie luată după ce investitorii potențiali au manifestat un interes puternic și au întrebat de ce startup-ul nu solicită mai multe fonduri. Cererea din partea centrelor de date AI a fost un motor important al acestei performanțe.",
+      "instagram_caption": "Fervo Energy a avut un debut exploziv la bursă! 🚀 Acest startup inovator în energie geotermală a înregistrat o creștere de 33% în ziua IPO-ului, impulsionat de cererea masivă a centrelor de date AI. 💡 Interesul investitorilor a fost atât de mare încât oferta inițială a fost majorată de mai multe ori. Un viitor verde și inteligent, alimentat de tehnologie! 🌍💻",
+      "hashtags": [
+        "FervoEnergy",
+        "Geotermal",
+        "EnergieVerde",
+        "AI",
+        "Tehnologie",
+        "IPO",
+        "Startup",
+        "DateCenter",
+        "Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Geothermal startup Fervo Energy pops 33% in IPO debut fueled by AI data center demand. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Dezvăluiri incendiare la FCSB: Pintilii demască strategia de pe bancă!",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-intern/superliga/mihai-pintilii-regulament-pacalit-fcsb-antrenor-interimar-filip-20439333",
+      "date": "2026-05-13T17:40:43+00:00",
+      "category": "Sport",
+      "summary": "Mihai Pintilii a dezvăluit detalii despre cum FCSB eludează regulamentul Superligii. Fostul antrenor secund a mărturisit că, în trecut, a fost trecut ca preparator fizic pentru a putea sta pe banca tehnică, exemplificând o strategie a clubului. Această situație survine în contextul în care campioana en-titre nu are un antrenor principal, Gigi Becali neputând găsi o soluție. Lucian Filip (35 de ani) ocupă acum poziția de antrenor interimar.",
+      "instagram_caption": "Mihai Pintilii rupe tăcerea și dezvăluie detalii șocante despre modul în care FCSB ocolește regulamentul Superligii! 🚨 Fostul jucător a mărturisit că el, și alții, erau trecuți ca preparatori fizici pentru a putea fi pe bancă. 😬 Această strategie vine pe fondul problemelor de antrenor la campioana en-titre, unde Lucian Filip (35 de ani) este acum interimar. ⚽️ Ce părere aveți despre aceste dezvăluiri? Lăsați-ne un comentariu! 👇",
+      "hashtags": [
+        "FCSB",
+        "Superliga",
+        "Fotbal",
+        "Dezvaluiri",
+        "MihaiPintilii",
+        "Controversa"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: S-a aflat cum este păcălit regulamentul la FCSB! Mihai Pintilii dă tot din casă: „A fost trecut prep. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Nicușor Dan și Zelenski: Parteneriat strategic pentru apărare și sprijin UE",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/actualitate/politica/nicusor-dan-intalnire-cu-volodimir-zelenski-ne-dorim-ca-industria-noastra-de-aparare-sa-beneficieze-de-expertiza-ucraineana-3768957",
+      "date": "2026-05-13T17:38:42+00:00",
+      "category": "Romania",
+      "summary": "Președintele Nicușor Dan a avut miercuri o întrevedere bilaterală cu Volodimir Zelenski, în marja Summitului B9. El a subliniat dorința României ca industria națională de apărare să beneficieze de expertiza ucraineană în dezvoltarea și producerea de noi tehnologii. De asemenea, Nicușor Dan a reiterat sprijinul ferm al României pentru parcursul european al Ucrainei, consolidând relațiile bilaterale în context regional și european.",
+      "instagram_caption": "O întâlnire crucială miercuri, în marja Summitului B9, între Președintele Nicușor Dan și Volodimir Zelenski! 🇷🇴🤝🇺🇦 Am discutat despre consolidarea industriei noastre de apărare prin expertiza ucraineană și am reafirmat sprijinul ferm al României pentru parcursul european al Ucrainei. Continuăm să construim o colaborare solidă! 💪 #NicușorDan #VolodimirZelenski #SummitB9 #Romania #Ucraina #Apărare #Colaborare #UE",
+      "hashtags": [
+        "#NicușorDan",
+        "#VolodimirZelenski",
+        "#SummitB9",
+        "#Romania",
+        "#Ucraina",
+        "#Apărare",
+        "#Colaborare",
+        "#UE"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Nicuşor Dan, întâlnire cu Volodimir Zelenski: Ne dorim ca industria noastră de apărare să beneficiez. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Tensiune în Finala Cupei României: U Cluj vs. U Craiova, scor 0-0! Ocazie mare Băluță.",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/cupa-romaniei/u-cluj-universitatea-craiova-live-text-online-in-finala-din-cupa-romaniei-20439040",
+      "date": "2026-05-13T17:34:35+00:00",
+      "category": "Sport",
+      "summary": "Meciul dintre U Cluj și Universitatea Craiova, finala Cupei României, sezonul 2025-2026, se joacă live pe Stadionul Municipal Sibiu. Scorul este momentan 0-0, după o primă ocazie importantă ratată de Băluță. Fanii pot urmări partida Live Text Online pe www.prosport.ro, dar și în direct la televizor pe Digi Sport 1 și Prima Sport 1. O confruntare plină de suspans pentru prestigiosul trofeu!",
+      "instagram_caption": "⚽️ Finala Cupei României 2025-2026 este LIVE! 🔥 U Cluj și Universitatea Craiova se duelează pentru trofeu pe Stadionul Municipal Sibiu, cu scorul de 0-0. 🥅 O ocazie mare, semnată Băluță, a aprins spiritele! 👀 Nu rata nicio fază: urmărește Live Text Online pe ProSport.ro sau la TV pe Digi Sport 1 și Prima Sport 1. Cine crezi că va câștiga Cupa? 🏆 Lasă un comentariu! 👇 #CupaRomaniei #UCluj #UniversitateaCraiova #FotbalLive #Finala",
+      "hashtags": [
+        "CupaRomaniei",
+        "UCluj",
+        "UniversitateaCraiova",
+        "FotbalLive",
+        "Finala"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: LIVE U Cluj – Universitatea Craiova 0-0, Live Text Online, în finala din Cupa României. Ocazie mare . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Rusia îl vrea pe Ben Wallace, fostul șef al Apărării UK. Cazul \"podului blestemat\"?",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/externe/rusia-l-a-dat-in-urmarire-pe-fostul-ministru-britanic-al-apararii-ben-wallace-e-cel-care-a-spus-trebuie-sa-zdrobim-podul-blestemat-3768945",
+      "date": "2026-05-13T17:32:44+00:00",
+      "category": "Romania",
+      "summary": "Rusia l-a inclus pe fostul ministru britanic al apărării, Ben Wallace, pe lista persoanelor date în urmărire. Această decizie este legată de o investigație penală nespecificată, conform anunțului făcut miercuri de presa de stat rusă, care citează baza de date a Ministerului de Interne. Informația a fost preluată de Reuters.",
+      "instagram_caption": "🚨Breaking News: Fostul ministru britanic al Apărării, Ben Wallace, a fost dat în urmărire de Rusia! 🇷🇺🇬🇧 Decizia vine în contextul unei investigații penale nespecificate. 🔎 Wallace este cunoscut pentru declarația sa controversată despre \"podul blestemat\". Ce impact va avea această mișcare asupra relațiilor internaționale? #Rusia #BenWallace #MareaBritanie #UrmarireGenerala #StiriInternationale",
+      "hashtags": [
+        "Rusia",
+        "BenWallace",
+        "MareaBritanie",
+        "UrmarireGenerala",
+        "StiriInternationale"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Rusia l-a dat în urmărire pe fostul ministru britanic al Apărării, Ben Wallace. E cel care a spus: „. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Producția auto scade drastic în aprilie: 31.450 mașini, aproape 30% sub anul trecut",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/zf-24/scadere-importanta-a-numarului-de-masini-produse-in-aprilie-in-23151003",
+      "date": "2026-05-13T17:32:15+00:00",
+      "category": "Business",
+      "summary": "Producția de autoturisme din România a înregistrat o scădere semnificativă în luna aprilie a acestui an. Conform datelor, au fost fabricate un total de 31.450 de unități, ceea ce reprezintă o diminuare de aproape 30% comparativ cu numărul de vehicule produse în aceeași lună a anului precedent. Această contracție subliniază o tendință îngrijorătoare în sectorul auto.",
+      "instagram_caption": "Scădere majoră în industria auto românească! 📉 În aprilie, producția de autoturisme a ajuns la doar 31.450 de unități, cu aproape 30% mai puțin decât anul trecut. 😬 Ce impact crezi că va avea această tendință asupra economiei? 🚗🏗️ #ProducțieAuto #IndustriaAuto #Economie #România #Scădere",
+      "hashtags": [
+        "ProducțieAuto",
+        "IndustriaAuto",
+        "Economie",
+        "România",
+        "Scădere"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Scădere importantă a numărului de maşini produse în aprilie: În aprilie au fost fabricate 31.450 de . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Israeli strikes on cars in southern Lebanon kill 12, health ministry says",
+      "source": "BBC World",
+      "url": "https://www.bbc.com/news/articles/c1k2zekj8y9o?at_medium=RSS&at_campaign=rss",
+      "date": "2026-05-13T17:22:49+00:00",
+      "category": "International",
+      "summary": "Two children are among those reported dead after seven cars were struck in separate attacks south of Beirut.",
+      "instagram_caption": "Israeli strikes on cars in southern Lebanon kill 12, health ministry says\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Israeli strikes on cars in southern Lebanon kill 12, health ministry says. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "X lansează fila Istoric: Marcaje, Aprecieri și Conținut, toate la un loc!",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/x-launches-a-history-tab-for-bookmarks-likes-videos-and-articles/",
+      "date": "2026-05-13T17:16:32+00:00",
+      "category": "AI & Tech",
+      "summary": "Noua filă Istoric de la X integrează marcajele, aprecierile, videoclipurile vizionate și articolele citite într-un singur loc. Această funcționalitate extinde rolul aplicației ca un instrument esențial pentru salvarea conținutului de interes, transformând-o într-o soluție completă 'salvează pentru mai târziu' și simplificând organizarea datelor tale digitale.",
+      "instagram_caption": "X simplifică modul în care îți organizezi conținutul favorit! 🤩 Noua filă Istoric adună la un loc toate marcajele, aprecierile, videoclipurile și articolele citite. 📚 Un adevărat centru de control pentru tot ce vrei să revizitezi mai târziu! Ce părere ai? 🤔",
+      "hashtags": [
+        "#XApp",
+        "#FilaIstoric",
+        "#OrganizatorDigital",
+        "#SalvatPentruMaiTarziu",
+        "#TechNews",
+        "#InovatieTech",
+        "#Aplicatii"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: X launches a History tab for bookmarks, likes, videos, and articles. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "ANAF schimbă jocul: 4 reguli noi pentru dividende și împrumuturi la firme",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/zf-24/anaf-anunta-patru-reguli-noi-pentru-societati-la-distribuirea-de-23150969",
+      "date": "2026-05-13T17:11:44+00:00",
+      "category": "Business",
+      "summary": "ANAF a anunțat recent implementarea a patru noi reguli esențiale care vor afecta modul în care societățile comerciale distribuie dividendele și acordă împrumuturi. Aceste modificări legislative sunt cruciale pentru conformitatea financiară a firmelor și necesită o atenție sporită din partea antreprenorilor și contabililor. Este imperativ ca societățile să se familiarizeze cu noile prevederi pentru a evita eventualele sancțiuni și a asigura o gestionare corectă a fondurilor.",
+      "instagram_caption": "🚨 Atenție, antreprenori! ANAF vine cu vești importante! Patru reguli noi au fost anunțate, ce vor influența direct modul în care companiile distribuie dividendele și acordă împrumuturi. Fii la curent cu ultimele modificări legislative pentru a-ți proteja afacerea și a asigura conformitatea. Nu rata detalii esențiale! 👇 #ANAF #ReguliNoi #Dividende #Imprumuturi #Business #Romania",
+      "hashtags": [
+        "ANAF",
+        "ReguliNoi",
+        "Dividende",
+        "Imprumuturi",
+        "Business",
+        "Romania",
+        "Antreprenoriat",
+        "Firme",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: ANAF anunţă patru reguli noi pentru societăţi la distribuirea de dividende şi acordarea împrumuturil. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Trump sosește în China pentru discuții cruciale cu Xi: Comerț, Iran și Taiwan pe agendă",
+      "source": "BBC World",
+      "url": "https://www.bbc.com/news/articles/c1w28qw1e0xo?at_medium=RSS&at_campaign=rss",
+      "date": "2026-05-13T17:00:12+00:00",
+      "category": "International",
+      "summary": "Președintele SUA, Donald Trump, a ajuns în China pentru discuții de înalt nivel cu omologul său, Xi Jinping. Pe agenda negocierilor se află subiecte sensibile precum comerțul, problema Iranului și statutul Taiwanului. Trump a declarat că prima sa cerere către Xi va fi legată de \"deschiderea\" Chinei, în timp ce Beijingul este pregătit să pună presiune asupra președintelui american privind statutul Taiwanului.",
+      "instagram_caption": "Președintele Donald Trump a ajuns în China pentru negocieri cruciale cu președintele Xi Jinping! 🌍 Agenda e plină de subiecte fierbinți: comerțul internațional 📈, situația din Iran 🇮🇷 și delicatul statut al Taiwanului 🇹🇼. Trump vrea ca Beijingul să \"se deschidă\", în timp ce Xi va presa pe tema Taiwanului. Miza e mare pentru relațiile sino-americane! 🤝 Urmărește NEXAS pentru toate detaliile! #TrumpInChina #XiJinping #RelatiiInternationale #Comert #Iran #Taiwan #NEXAS",
+      "hashtags": [
+        "TrumpInChina",
+        "XiJinping",
+        "RelatiiInternationale",
+        "Comert",
+        "Iran",
+        "Taiwan",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Trade, Iran and Taiwan on the agenda as Trump arrives in China for high-stakes talks with Xi. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Instagram lansează 'Instants': Un mix exploziv între Snapchat și BeReal",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/instagrams-new-instants-feature-combines-elements-from-snapchat-and-bereal/",
+      "date": "2026-05-13T16:57:40+00:00",
+      "category": "AI & Tech",
+      "summary": "Instagram introduce 'Instants', o nouă funcție inspirată de Snapchat și BeReal. Aceasta permite utilizatorilor să partajeze fotografii efemere, care dispar după vizualizare și sunt accesibile doar pentru 24 de ore. Conținutul poate fi distribuit către lista de Prieteni Apropiați sau către urmăritorii comuni, oferind o experiență de partajare unică și intimă.",
+      "instagram_caption": "🚨 Noutate pe Instagram! 🚨 Descoperă 'Instants', funcția care îmbină ce-i mai bun din Snapchat și BeReal. Acum poți partaja fotografii efemere cu Prietenii Apropiați sau urmăritorii comuni, vizibile o singură dată și disponibile doar 24 de ore! ✨ E timpul pentru momente autentice și spontane. Ce părere ai? #InstagramInstants #NoutatiInstagram #SocialMedia #DisappearingPhotos #TechNews",
+      "hashtags": [
+        "InstagramInstants",
+        "NoutatiInstagram",
+        "SocialMedia",
+        "Aplicatii",
+        "TechNews",
+        "Instagram"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Instagram’s new ‘Instants’ feature combines elements from Snapchat and BeReal. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Croazieră de coșmar: Epidemie de boală gastrointestinală blochează peste 1.000 de pasageri",
+      "source": "BBC World",
+      "url": "https://www.bbc.com/news/articles/cn5pe4yel1ko?at_medium=RSS&at_campaign=rss",
+      "date": "2026-05-13T16:43:40+00:00",
+      "category": "International",
+      "summary": "Peste 1.000 de pasageri sunt reținuți la bordul unei nave de croazieră, aflată în prezent în portul Bordeaux, Franța, în urma unei epidemii de boală gastrointestinală. Nava, care a plecat vineri din Belfast, Marea Britanie, a înregistrat 49 de cazuri de îmbolnăvire printre pasageri, forțând oprirea călătoriei. Autoritățile monitorizează situația pentru a gestiona focarul și a asigura siguranța tuturor persoanelor aflate la bord.",
+      "instagram_caption": "O croazieră s-a transformat într-un coșmar! 🚢 Peste 1.000 de pasageri sunt blocați la bordul navei în portul Bordeaux, Franța, din cauza unei epidemii de boală gastrointestinală. 🤢 49 de persoane s-au îmbolnăvit după ce nava a plecat din Belfast. O situație delicată, monitorizată de autorități pentru a asigura sănătatea și siguranța tuturor. Rămâi informat cu NEXAS! 👇",
+      "hashtags": [
+        "#Croaziera",
+        "#Epidemie",
+        "#Bordeaux",
+        "#Belfast",
+        "#StiriInternationale",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: More than 1,000 passengers held on cruise after gastrointestinal illness outbreak. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Scăderi pe piața chiriilor: Cât costă acum un apartament în marile orașe din România?",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/zf-24/scaderi-in-piata-chiriilor-cat-te-costa-acum-sa-inchiriezi-un-23150918",
+      "date": "2026-05-13T16:10:06+00:00",
+      "category": "Business",
+      "summary": "Piața chiriilor din România înregistrează scăderi semnificative. Descoperă în acest material cât te costă acum să închiriezi un apartament într-unul dintre cele mai mari orașe ale țării, conform celor mai recente analize de piață. Informațiile sunt esențiale pentru oricine caută o locuință sau dorește să înțeleagă dinamica actuală a prețurilor.",
+      "instagram_caption": "Veste bună pentru chiriași! 📉 Piața chiriilor din România arată scăderi. Ești curios cât te costă acum să închiriezi un apartament în București, Cluj-Napoca, Timișoara sau alte mari orașe? 🏙️ Noi am analizat ultimele tendințe și îți aducem toate detaliile! Află cum te afectează aceste schimbări și unde găsești cele mai bune oferte. #ChiriiRomania #PiataImobiliara #Locuinte #NEXAS",
+      "hashtags": [
+        "#ChiriiRomania",
+        "#PiataImobiliara",
+        "#ScaderiChirii",
+        "#Locuinte",
+        "#NEXAS",
+        "#Business"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Scăderi în piaţa chiriilor. Cât te costă acum să închiriezi un apartament în cele mai mari oraşe ale. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cafeaua, aliatul creierului: 2-3 cești reduc riscul de demență cu 35%",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260512202350.htm",
+      "date": "2026-05-13T14:29:59+00:00",
+      "category": "Stiinta",
+      "summary": "Un studiu amplu pe termen lung indică faptul că un consum de două-trei cești de cafea pe zi poate reduce semnificativ riscul de demență cu până la 35%, în special înainte de vârsta de 75 de ani. Cercetătorii sugerează că cofeina menține celulele creierului active, reducând inflamația și acumularea de placă dăunătoare asociată cu boala Alzheimer. Efectul protector se stabilizează însă la un consum moderat; mai multă cafea nu aduce beneficii suplimentare.",
+      "instagram_caption": "Știai că obiceiul tău zilnic de a bea cafea ar putea fi secretul pentru un creier sănătos? ☕ Un studiu vast arată că 2-3 cești de cafea pe zi pot reduce riscul de demență cu până la 35%, mai ales înainte de 75 de ani! Cofeina ajută la menținerea celulelor cerebrale active și combate inflamația. Atenție, moderația e cheia! Mai multă cafea nu înseamnă beneficii sporite. Tu câte cești bei zilnic? 🤔 #CafeaSiSanatate #Dementa #Stiinta #CreierSanatos #NEXAS",
+      "hashtags": [
+        "CafeaSiSanatate",
+        "Dementa",
+        "Stiinta",
+        "CreierSanatos",
+        "NEXAS",
+        "Cofeina",
+        "Sanatate",
+        "Alzheimer",
+        "StudiuStiintific"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: This daily habit could lower dementia risk by 35%, scientists say. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Un călugăr medieval, posibilul pionier al descoperirii Cometei Halley?",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260512202329.htm",
+      "date": "2026-05-13T12:59:21+00:00",
+      "category": "Stiinta",
+      "summary": "Un călugăr medieval ar fi anticipat una dintre cele mai mari descoperiri astronomice cu aproape 700 de ani înainte de Edmond Halley. Cercetătorii sugerează că Eilmer de Malmesbury a recunoscut că celebra cometă din 1066 era aceeași pe care o văzuse în 989. Pe atunci, cometele erau considerate prevestiri terifiante, legate de războaie și moartea regilor, amplificând misterul evenimentului ceresc ilustrat în Tapiseria de la Bayeux. Această descoperire contestă paternitatea.",
+      "instagram_caption": "Cometa Halley, o poveste rescrisă? ☄️ Un călugăr medieval, Eilmer de Malmesbury, ar fi recunoscut cometa cu 700 de ani înaintea lui Edmond Halley! Descoperirea sa, din 989 și 1066, pune sub semnul întrebării paternitatea uneia dintre cele mai mari realizări astronomice. Pe atunci, cometele erau considerate prevestiri sumbre, legate de războaie și destine regale. Ce crezi despre această revizuire istorică? 🤔 #CometaHalley #Astronomie #Istorie #Descoperire",
+      "hashtags": [
+        "#CometaHalley",
+        "#Astronomie",
+        "#Istorie",
+        "#DescoperireStiintifica",
+        "#EilmerDeMalmesbury",
+        "#MisterCosmic"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Halley’s comet may be named after the wrong person. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Marea Britanie: Oamenii au revenit cu 500 de ani mai devreme după ultima eră glaciară",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260511213158.htm",
+      "date": "2026-05-13T12:46:52+00:00",
+      "category": "Stiinta",
+      "summary": "Noi dovezi sugerează că oamenii s-au întors în Marea Britanie cu mult mai devreme decât se credea inițial, la scurt timp după retragerea ultimului strat de gheață. Se pare că prezența umană în Insulele Britanice datează de acum aproximativ 15.200 de ani. Aceștia urmăreau turme de reni și cai printr-un peisaj care devenea rapid mai cald și mai verde, rescriind astfel o parte importantă a istoriei umane în regiune.",
+      "instagram_caption": "O descoperire uimitoare rescrie istoria Marii Britanii! 🤯 Noi dovezi arată că oamenii au revenit pe aceste meleaguri cu aproximativ 15.200 de ani în urmă, cu 500 de ani mai devreme decât se credea! 🏞️ Urmărind turme de reni și cai într-un peisaj ce devenea mai cald și mai verde după era glaciară. Fascinant! 🐴🦌",
+      "hashtags": [
+        "#Arheologie",
+        "#Istorie",
+        "#MareaBritanie",
+        "#EraGlaciara",
+        "#Stiinta",
+        "#Descoperire",
+        "#Preistorie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Humans returned to Britain 500 years earlier than scientists thought after the last ice age. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/12/everything-google-announced-at-its-android-show-from-googlebooks-to-vibe-coded-widgets/",
+      "date": "2026-05-12T17:01:00+00:00",
+      "category": "AI",
+      "summary": "Google unveiled its new AI-first Googlebooks laptops, more agentic Gemini features, vibe-coded Android widgets, Gemini in Chrome, refreshed Android Auto, and more ahead of I/O.",
+      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
+      "instagram_caption": "Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets\n\nCiteste selectia pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tehnologie",
+        "#InteligentaArtificiala",
+        "#AIAgents"
+      ],
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
     },
     {
       "title": "Parameter Golf: OpenAI evidentiaza progrese in cercetarea asistata de AI",
@@ -66,25 +464,6 @@
       ],
       "image": "",
       "image_prompt": "Premium futuristic editorial image about AI: What Parameter Golf taught us about AI-assisted research. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
-    },
-    {
-      "title": "Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/05/12/everything-google-announced-at-its-android-show-from-googlebooks-to-vibe-coded-widgets/",
-      "date": "2026-05-12T17:01:00+00:00",
-      "category": "AI",
-      "summary": "Google unveiled its new AI-first Googlebooks laptops, more agentic Gemini features, vibe-coded Android widgets, Gemini in Chrome, refreshed Android Auto, and more ahead of I/O.",
-      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
-      "instagram_caption": "Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets\n\nCiteste selectia pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tehnologie",
-        "#InteligentaArtificiala",
-        "#AIAgents"
-      ],
-      "image": "",
-      "image_prompt": "Premium futuristic editorial image about AI: Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
     },
     {
       "title": "OpenAI just released its answer to Claude Mythos",
@@ -142,6 +521,49 @@
       ],
       "image": "",
       "image_prompt": "Premium futuristic editorial image about AI: OpenAI launches DeployCo to help businesses build around intelligence. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+    },
+    {
+      "title": "Parloa lansează agenți de servicii clienți AI avansați, cu suport OpenAI",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/parloa",
+      "date": "2026-05-07T11:00:00+00:00",
+      "category": "AI",
+      "summary": "Parloa, o companie inovatoare, utilizează tehnologia avansată a modelelor OpenAI pentru a dezvolta agenți de servicii clienți bazați pe inteligență artificială. Acești agenți sunt concepuți pentru a oferi interacțiuni vocale scalabile și de încredere în timp real. Platforma Parloa permite companiilor să proiecteze, să simuleze și să implementeze soluții de asistență clienți bazate pe AI, transformând modul în care afacerile comunică cu publicul lor. Focusul este pe eficiență și experiență îmbunătățită pentru utilizatori.",
+      "why_it_matters": "Această inovație transformă serviciile de asistență clienți, permițând companiilor să implementeze agenți AI vocali scalabili și de încredere. Impactul direct este o îmbunătățire semnificativă a satisfacției clienților prin interacțiuni eficiente și rapide, reducerea costurilor operaționale și eliberarea resurselor umane pentru sarcini complexe, asigurând o disponibilitate constantă.",
+      "instagram_caption": "Parloa și OpenAI rescriu regulile serviciului clienți! 🚀 Acum, agenții AI vocali devin mai inteligenți și mai naturali ca niciodată. Companiile pot proiecta și implementa soluții de asistență clienți scalabile, oferind interacțiuni în timp real și de încredere. Pregătiți-vă pentru o experiență de suport superioară, 24/7! #AI #ServiciuClienti #OpenAI #Inovatie #Tehnologie",
+      "hashtags": [
+        "AI",
+        "ServiciuClienti",
+        "OpenAI",
+        "Tehnologie",
+        "Inovatie",
+        "AsistentaVocala",
+        "Digitalizare"
+      ],
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: Parloa builds service agents customers want to talk to. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+    },
+    {
+      "title": "Claude Code, agentul AI de codare plătit, față în față cu alternativa gratuită Goose",
+      "source": "VentureBeat AI",
+      "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+      "date": "2026-01-19T14:00:00+00:00",
+      "category": "AI",
+      "summary": "Revoluția inteligenței artificiale în codare, deși promițătoare, vine cu un cost semnificativ. Claude Code, un agent AI dezvoltat de Anthropic capabil să scrie, să depaneze și să implementeze cod autonom, a captivat atenția dezvoltatorilor software. Însă, prețul său, care variază între 20 și 200 de dolari lunar în funcție de utilizare, a generat o nemulțumire crescândă. În acest context, soluția Goose se afirmă ca o alternativă gratuită, oferind aceleași funcționalități, răspunzând astfel cererii pentru instrumente AI accesibile.",
+      "why_it_matters": "Această știre subliniază o tendință crucială în piața instrumentelor AI pentru dezvoltatori: presiunea costurilor ridicate versus apariția alternativelor gratuite. Impactul este direct pentru profesioniștii din IT, care vor evalua cu atenție rentabilitatea soluțiilor plătite precum Claude Code în comparație cu opțiuni la fel de performante, dar accesibile fără costuri, precum Goose. Acest lucru ar putea stimula inovația în segmentul gratuit și ar putea forța furnizorii de servicii plătite să își justifice și mai bine valoarea.",
+      "instagram_caption": "Dezvoltatorii se confruntă cu o dilemă! 💡 Agenții AI pentru codare, precum Claude Code de la Anthropic, sunt incredibil de puternici, dar vin cu un preț de până la 200$/lună. Pe de altă parte, Goose promite aceleași capacități, însă gratuit! Este o revoluție accesibilă sau un semnal de alarmă pentru costurile AI? Ce părere ai? 💻",
+      "hashtags": [
+        "AICoding",
+        "Dezvoltatori",
+        "TehnologieAI",
+        "SoftwareDevelopment",
+        "InovatieTehnologica",
+        "GooseAI",
+        "ClaudeCode",
+        "AI"
+      ],
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: Claude Code costs up to $200 a month. Goose does the same thing for free.. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
     }
   ]
 }
