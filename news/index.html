@@ -862,11 +862,6 @@ body {
 // ============================================================
 // CONFIG & STATE
 // ============================================================
-const CORS_PROXIES = [
-  'https://api.allorigins.win/raw?url=',
-  'https://corsproxy.io/?'
-];
-
 const SOURCES = [
   { category: 'General',       icon: '🔴', rss: 'https://www.digi24.ro/rss' },
   { category: 'Politică',      icon: '🏛️', rss: 'https://www.g4media.ro/feed' },
@@ -964,22 +959,48 @@ function saveSettings() {
 }
 
 // ============================================================
-// RSS FETCHING
+// RSS FETCHING — folosim rss2json.com (mai fiabil)
 // ============================================================
-async function fetchRSS(url, proxyIndex = 0) {
-  if (proxyIndex >= CORS_PROXIES.length) return null;
+async function fetchRSS(source) {
+  const proxies = [
+    `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(source.rss)}&count=5`,
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(source.rss)}`,
+    `https://corsproxy.io/?${encodeURIComponent(source.rss)}`
+  ];
+
+  // Try rss2json first (returns JSON directly)
   try {
-    const proxyUrl = CORS_PROXIES[proxyIndex] + encodeURIComponent(url);
-    const res = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000) });
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const text = await res.text();
-    return text;
-  } catch(e) {
-    return fetchRSS(url, proxyIndex + 1);
+    const res = await fetch(proxies[0], { signal: AbortSignal.timeout(10000) });
+    if (res.ok) {
+      const data = await res.json();
+      if (data.status === 'ok' && data.items?.length > 0) {
+        return data.items.slice(0,5).map(item => ({
+          title: (item.title || '').trim(),
+          desc: (item.description || '').replace(/<[^>]*>/g,'').trim().substring(0,300),
+          pubDate: item.pubDate || '',
+          link: item.link || '',
+          source: source.category,
+          icon: source.icon,
+          category: source.category
+        })).filter(i => i.title.length > 10);
+      }
+    }
+  } catch(e) {}
+
+  // Fallback: allorigins + XML parse
+  for (let i = 1; i < proxies.length; i++) {
+    try {
+      const res = await fetch(proxies[i], { signal: AbortSignal.timeout(8000) });
+      if (!res.ok) continue;
+      const text = await res.text();
+      const parsed = parseRSSXML(text, source);
+      if (parsed.length > 0) return parsed;
+    } catch(e) {}
   }
+  return [];
 }
 
-function parseRSS(xml, source) {
+function parseRSSXML(xml, source) {
   try {
     const parser = new DOMParser();
     const doc = parser.parseFromString(xml, 'text/xml');
@@ -1028,7 +1049,7 @@ async function fetchAllNews() {
   if (settings.customRSS1) sources[7] = { ...sources[7], rss: settings.customRSS1 };
   if (settings.customRSS2) sources[6] = { ...sources[6], rss: settings.customRSS2 };
 
-  const results = await Promise.allSettled(sources.map(s => fetchRSS(s.rss).then(xml => xml ? parseRSS(xml, s) : [])));
+  const results = await Promise.allSettled(sources.map(s => fetchRSS(s)));
   const allNews = [];
   const topNews = [];
 
