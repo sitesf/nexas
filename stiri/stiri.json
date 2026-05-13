@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-13T18:08:19.264214+00:00",
+  "updated_at": "2026-05-13T18:58:36.457924+00:00",
   "run_log": {
     "AI & Tech": 3,
     "Sport": 3,
@@ -13,10 +13,28 @@
   },
   "items": [
     {
+      "title": "Building a safe, effective sandbox to enable Codex on Windows",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/building-codex-windows-sandbox",
+      "date": "2026-05-15T00:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restrictions.",
+      "instagram_caption": "Building a safe, effective sandbox to enable Codex on Windows\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tech",
+        "#Tehnologie",
+        "#InteligentaArtificiala"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Building a safe, effective sandbox to enable Codex on Windows. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
       "title": "PCOS Is Now PMOS: Doctors Say Name Change Will Improve Diagnosis, Care",
       "source": "Healthline",
       "url": "https://www.healthline.com/health-news/pcos-renamed-pmos-improve-diagnosis-care-multisystem-disease",
-      "date": "2026-05-13T18:07:24.120770+00:00",
+      "date": "2026-05-13T18:57:46.566670+00:00",
       "category": "Sanatate",
       "summary": "After years of debate, global experts announced that PCOS will now be called PMOS to better reflect the multisystem effects it has on the body. Image Credit: ruizluquepaz/GettyImages Global experts have officially announced a change in name for polycystic ovary syndrome (PCOS). The condition will now be known as polyendocrine metabolic ovarian syndrome (PMOS). This name change was made to reflect the multisystem effe",
       "instagram_caption": "PCOS Is Now PMOS: Doctors Say Name Change Will Improve Diagnosis, Care\n\nCiteste pe nexas.ro/stiri/",
@@ -31,22 +49,221 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: PCOS Is Now PMOS: Doctors Say Name Change Will Improve Diagnosis, Care. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Rețete tradiționale de sute de ani pentru metabolism și digestie eficientă",
+      "title": "Rețete medicinale tradiționale folosite de sute de ani pentru un metabolism rapid. Sunt bune și pentru digestie",
       "source": "CSID",
       "url": "https://www.csid.ro/sanatate/medicina-alternativa/retete-medicinale-traditionale-folosite-de-sute-de-ani-pentru-un-metabolism-rapid-sunt-bune-si-pentru-digestie-21186712/",
-      "date": "2026-05-13T18:07:19.703518+00:00",
+      "date": "2026-05-13T18:57:33.048060+00:00",
       "category": "Sanatate",
-      "summary": "În fitoterapia tradițională, anumite plante și combinații naturale sunt utilizate de sute de ani pentru a sprijini procesele digestive și echilibrul general al organismului. Aceste remedii sunt adesea asociate cu susținerea unui metabolism mai activ, oferind o abordare naturală pentru îmbunătățirea digestiei și a funcțiilor metabolice esențiale. Descoperă cum aceste rețete străvechi pot contribui la starea ta de bine.",
-      "instagram_caption": "Descoperă secretele fitoterapiei tradiționale! 🌿 Sute de ani de înțelepciune se regăsesc în rețete naturale care sprijină un metabolism rapid și o digestie eficientă. 💪 Vrei să te simți mai energic și să îți optimizezi sănătatea digestivă? Află cum plantele medicinale pot face minuni! ✨ Citește mai multe pe site-ul NEXAS. #MetabolismRapid #DigestieSănătoasă #RețeteNaturale #Fitoterapie #Sănătate",
+      "summary": "În fitoterapia tradițională, anumite plante și combinații naturale sunt utilizate pentru a sprijini procesele digestive și echilibrul general al organismului, fiind adesea asociate cu susținerea unui metabolism mai activ. Articolul Rețete medicinale tradiționale folosite de sute de ani pentru un metabolism rapid. Sunt bune și pentru digestie apare prima dată în CSID: Ce se întâmplă Doctore? .",
+      "instagram_caption": "Rețete medicinale tradiționale folosite de sute de ani pentru un metabolism rapid. Sunt bune și pentru digestie\n\nCiteste pe nexas.ro/stiri/",
       "hashtags": [
-        "MetabolismRapid",
-        "DigestieSănătoasă",
-        "RețeteNaturale",
-        "Fitoterapie",
-        "Sănătate"
+        "#NEXAS",
+        "#Sanatate",
+        "#Health",
+        "#Medicina",
+        "#Wellness"
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Sanatate news: Rețete medicinale tradiționale folosite de sute de ani pentru un metabolism rapid. Sunt bune și pent. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "„România nu rezistă 72 de ore unei invazii rusești”, crede Traian Băsescu. Lipsurile pe care le invocă fostul președinte",
+      "source": "HotNews",
+      "url": "https://hotnews.ro/romania-nu-rezista-72-de-ore-unei-invazii-rusesti-crede-traian-basescu-lipsurile-pe-care-le-invoca-fostul-presedinte-2244908",
+      "date": "2026-05-13T18:57:13+00:00",
+      "category": "Romania",
+      "summary": "Fostul președinte Traian Băsescu a afirmat, la TVR Info, că România nu are capacitatea militară de a rezista unei invazii pe scară largă timp de 72 de ore, perioadă care este necesară pentru desfășurarea unei forțe rapide de reacție a NATO. Întrebat dacă armata română poate rezista unei agresiuni rusești suficient timp încât forțele NATO …",
+      "instagram_caption": "„România nu rezistă 72 de ore unei invazii rusești”, crede Traian Băsescu. Lipsurile pe care le invocă fostul președinte\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: „România nu rezistă 72 de ore unei invazii rusești”, crede Traian Băsescu. Lipsurile pe care le invo. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Traian Băsescu: „Ce avem acum e rezultatul organizării ticăloase a alegerilor. N-au dat nicio şansă românilor să înţeleagă ce votează”",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/actualitate/politica/traian-basescu-ce-avem-acum-e-rezultatul-organizarii-ticaloase-a-alegerilor-n-au-dat-nicio-sansa-romanilor-sa-inteleaga-ce-voteaza-3769051",
+      "date": "2026-05-13T18:55:50+00:00",
+      "category": "Romania",
+      "summary": "Fostul preşedinte Traian Băsescu este de părere că actuala criză politică este rezultatul „organizării ticăloase a alegerilor”, având în vedere că au existat foarte multe rânduri de alegeri, iar românii nu au priceput ce votează.",
+      "instagram_caption": "Traian Băsescu: „Ce avem acum e rezultatul organizării ticăloase a alegerilor. N-au dat nicio şansă românilor să înţeleagă ce votează”\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Traian Băsescu: „Ce avem acum e rezultatul organizării ticăloase a alegerilor. N-au dat nicio şansă . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "U Cluj – Universitatea Craiova 0-0, live video în finala Cupei României Betano. Avem prelungiri la Sibiu!",
+      "source": "Fanatik",
+      "url": "https://www.fanatik.ro/u-cluj-universitatea-craiova-live-video-in-finala-cupei-romaniei-betano-toate-detaliile-despre-meciul-de-la-sibiu-21467825",
+      "date": "2026-05-13T18:55:28+00:00",
+      "category": "Sport",
+      "summary": "Finala Cupei României Betano dintre U Cluj și Universitatea Craiova se joacă acum la Sibiu! Actualizări în timp real cu cele mai importante faze, fotografii și informații esențiale de la fața locului",
+      "instagram_caption": "U Cluj – Universitatea Craiova 0-0, live video în finala Cupei României Betano. Avem prelungiri la Sibiu!\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sport",
+        "#Fotbal",
+        "#Romania",
+        "#Campionat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: U Cluj – Universitatea Craiova 0-0, live video în finala Cupei României Betano. Avem prelungiri la S. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Băsescu, despre concluzia summitului B9: Groenlanda nu-i de dat",
+      "source": "G4Media",
+      "url": "https://www.g4media.ro/basescu-despre-concluzia-summitului-b9-groenlanda-nu-i-de-dat.html",
+      "date": "2026-05-13T18:53:13+00:00",
+      "category": "Romania",
+      "summary": "Fostul președinte Traian Băsescu spune că declarația de la finalul summitului B9 desfășurat miercuri la București este un semnal clar că europenii sunt strânși în jurul zonei arctice și nordice, transmite MEDIAFAX. „Concluziile summit-ului reflectă dezbatele de până la summit, deci nimic nou sub soare. Mi s-a părut și aș vrea să citez lucrul extrem […] © G4Media.ro .",
+      "instagram_caption": "Băsescu, despre concluzia summitului B9: Groenlanda nu-i de dat\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Băsescu, despre concluzia summitului B9: Groenlanda nu-i de dat. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "LIVE U Cluj – Universitatea Craiova 0-0, Live Text Online, în finala din Cupa României. Se vor juca două reprize suplimentare de prelungiri",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/cupa-romaniei/u-cluj-universitatea-craiova-live-text-online-in-finala-din-cupa-romaniei-20439040",
+      "date": "2026-05-13T18:51:35+00:00",
+      "category": "Sport",
+      "summary": "Meciul U Cluj – Universitatea Craiova are loc în finala din Cupa României, sezonul 2025-2026, iar partida este Live Text Online pe www.prosport.ro. De asemenea, duelul de pe Stadionul Municipal Sibiu poate fi urmărit și la televizor pe posturile Digi Sport 1 și Prima Sport 1. U Cluj – Universitatea Craiova Live Text Online în […] The post LIVE U Cluj – Universitatea Craiova 0-0, Live Text Online, în finala din Cupa R",
+      "instagram_caption": "LIVE U Cluj – Universitatea Craiova 0-0, Live Text Online, în finala din Cupa României. Se vor juca două reprize suplimentare de prelungiri\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sport",
+        "#Fotbal",
+        "#Romania",
+        "#Campionat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: LIVE U Cluj – Universitatea Craiova 0-0, Live Text Online, în finala din Cupa României. Se vor juca . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Netflix’s ad ambitions just keep growing",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/streaming/929627/netflix-ads-plan-upfront-2026",
+      "date": "2026-05-13T18:45:32+00:00",
+      "category": "AI & Tech",
+      "summary": "For the second year in a row, Netflix's ad-supported tier more than doubled its monthly viewerbase. During its 2026 upfront presentation, Netflix revealed that its $8.99-per-month plan reaches more than 250 million people around the globe, a significant leap from 94 million users reported last year. The streaming service reported earning $1.5 billion from ads […]",
+      "instagram_caption": "Netflix’s ad ambitions just keep growing\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tech",
+        "#Tehnologie",
+        "#InteligentaArtificiala"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Netflix’s ad ambitions just keep growing. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Alaves - Barcelona, Live Video, 22:30, pe DGS 2. Catalanii sunt deja campioni! Gazdele mai speră la salvare. ECHIPELE",
+      "source": "DigiSport",
+      "url": "https://www.digisport.ro/fotbal/la-liga/alaves-barcelona-live-video-2230-pe-dgs-2-catalanii-sunt-deja-campioni-gazdele-mai-spera-la-salvarea-de-la-retrogradare-4252159",
+      "date": "2026-05-13T18:44:55+00:00",
+      "category": "Sport",
+      "summary": "Alaves - Barcelona, Live Video, 22:30, pe DGS 2. Catalanii sunt deja campioni! Gazdele mai speră la salvare. ECHIPELE",
+      "instagram_caption": "Alaves - Barcelona, Live Video, 22:30, pe DGS 2. Catalanii sunt deja campioni! Gazdele mai speră la salvare. ECHIPELE\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sport",
+        "#Fotbal",
+        "#Romania",
+        "#Campionat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Alaves - Barcelona, Live Video, 22:30, pe DGS 2. Catalanii sunt deja campioni! Gazdele mai speră la . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Leapmotor vinde rivalul lui VW ID.3 mai scump cu 10.000 de euro față de China",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/leapmotor-vinde-rivalul-lui-vw-id-3-mai-scump-cu-10-000-de-euro-fata-de-china-22443406?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-05-13T18:40:00+00:00",
+      "category": "Business",
+      "summary": "Cel mai nou model lansat de Leapmotor în Europa, hatchbackul B05, și-a deschis comenzile pe piața din Franța, unde au fost anunțate și primele prețuri. Mașina rivalizează direct cu VW ID.3, Opel Astra electric sau Peugeot e-308.",
+      "instagram_caption": "Leapmotor vinde rivalul lui VW ID.3 mai scump cu 10.000 de euro față de China\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Leapmotor vinde rivalul lui VW ID.3 mai scump cu 10.000 de euro față de China. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "How US donor bodies were sold for Israeli military training",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/the-take-2/2026/5/13/aje-onl-tt_usa_israelcadavers_v4-130526?traffic_source=rss",
+      "date": "2026-05-13T18:30:35+00:00",
+      "category": "International",
+      "summary": "How donated cadavers from US universities ended up in Israeli military surgical training.",
+      "instagram_caption": "How US donor bodies were sold for Israeli military training\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: How US donor bodies were sold for Israeli military training. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Brazil Real Falls on Report Bolsonaro Negotiated With Master CEO",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-13/brazil-real-falls-on-report-bolsonaro-negotiated-with-master-ceo",
+      "date": "2026-05-13T18:29:30+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Brazil’s currency slumped Wednesday after a news website linked right-wing presidential candidate Flavio Bolsonaro to Daniel Vorcaro, the former chief executive of a failed bank at the center of a massive fraud probe.",
+      "instagram_caption": "Brazil Real Falls on Report Bolsonaro Negotiated With Master CEO\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Brazil Real Falls on Report Bolsonaro Negotiated With Master CEO. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "This is what some the world’s largest banks of malware look like stacked as hard drives",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/this-is-what-some-the-worlds-largest-banks-of-malware-look-like-stacked-as-hard-drives/",
+      "date": "2026-05-13T18:12:29+00:00",
+      "category": "AI & Tech",
+      "summary": "What would some of the world's largest repositories of malware look like if they were stacked as hard drives, one on top of the other?",
+      "instagram_caption": "This is what some the world’s largest banks of malware look like stacked as hard drives\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tech",
+        "#Tehnologie",
+        "#InteligentaArtificiala"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: This is what some the world’s largest banks of malware look like stacked as hard drives. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Olena Zelenska și Mirabela Grădinaru au discutat la Cotroceni despre protejarea copiilor și adolescenților și sănătatea lor mintală",
@@ -83,6 +300,25 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Business news: Fabrică de tradiție salvată. Anunț al ministrului: Uzina Mecanică Sadu va produce muniție, în baza p. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Market Update: CVS, ETN, KMB, KO, PSX",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/research/reports/ARGUS_47016_MarketUpdate_1778695464000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+      "date": "2026-05-13T18:04:24+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Market Update: CVS, ETN, KMB, KO, PSX",
+      "instagram_caption": "Market Update: CVS, ETN, KMB, KO, PSX\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Market Update: CVS, ETN, KMB, KO, PSX. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Au condus cu 1-0, dar a urmat ”măcelul”! Nimeni nu se aștepta la o diferență atât de mare",
@@ -176,6 +412,24 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Sport news: Lazio – Inter, live video în finala Cupei Italiei. Cristi Chivu, surprize în primul ”11”. Cum arată . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Arctic fires are releasing carbon stored for thousands of years",
+      "source": "New Scientist",
+      "url": "https://www.newscientist.com/article/2526362-arctic-fires-are-releasing-carbon-stored-for-thousands-of-years/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home",
+      "date": "2026-05-13T18:00:20+00:00",
+      "category": "Stiinta",
+      "summary": "A study of soils around the Arctic and boreal forests has found that some wildfires are releasing carbon stored over millennia, meaning higher CO2 emissions than assumed",
+      "instagram_caption": "Arctic fires are releasing carbon stored for thousands of years\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Arctic fires are releasing carbon stored for thousands of years. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "PMB anunță prelungirea metroului de la Păcii / Preciziei spre Centură, Chiajna și Cartierul Latin. Protocol aprobat de CGMB",
@@ -405,22 +659,22 @@
       "image_prompt": "Premium editorial photograph for Romania news: Nicolas Sarkozy, din nou în fața instanței. Procurorii cer o pedeapsă de șapte ani de închisoare. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Tensiune în Finala Cupei României: U Cluj vs. U Craiova, scor 0-0! Ocazie mare Băluță.",
-      "source": "ProSport",
-      "url": "https://www.prosport.ro/cupa-romaniei/u-cluj-universitatea-craiova-live-text-online-in-finala-din-cupa-romaniei-20439040",
-      "date": "2026-05-13T17:34:35+00:00",
-      "category": "Sport",
-      "summary": "Meciul dintre U Cluj și Universitatea Craiova, finala Cupei României, sezonul 2025-2026, se joacă live pe Stadionul Municipal Sibiu. Scorul este momentan 0-0, după o primă ocazie importantă ratată de Băluță. Fanii pot urmări partida Live Text Online pe www.prosport.ro, dar și în direct la televizor pe Digi Sport 1 și Prima Sport 1. O confruntare plină de suspans pentru prestigiosul trofeu!",
-      "instagram_caption": "⚽️ Finala Cupei României 2025-2026 este LIVE! 🔥 U Cluj și Universitatea Craiova se duelează pentru trofeu pe Stadionul Municipal Sibiu, cu scorul de 0-0. 🥅 O ocazie mare, semnată Băluță, a aprins spiritele! 👀 Nu rata nicio fază: urmărește Live Text Online pe ProSport.ro sau la TV pe Digi Sport 1 și Prima Sport 1. Cine crezi că va câștiga Cupa? 🏆 Lasă un comentariu! 👇 #CupaRomaniei #UCluj #UniversitateaCraiova #FotbalLive #Finala",
+      "title": "Înaltul oficial britanic care a spus „Trebuie să distrugem blestematul ăla de pod”, pus pe lista persoanelor căutate de Rusia - HotNews.ro",
+      "source": "Google Intl",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQmJFNXV0VXp3SlZLMmNWazBmZl8wZVl6bDBWZUpwdzJsN1pQVk1xZ09uU1NGeW5fWXRtZThRMGptZXFDUnFQUnVDcjdtazNNaHk3LW8zUU9YN0dtOGRabTQwRUZxYWRVRGJXbkhraFFPaU5yRzV4SnRpdHF0b3BoX0NJSVZwRDVlcXAzUHNqZE4tTmswdFl3bDhncmJTRTVxZjZ6WlNKYjlGdkZ3RVoyck93?oc=5",
+      "date": "2026-05-13T17:35:55+00:00",
+      "category": "International",
+      "summary": "Înaltul oficial britanic care a spus „Trebuie să distrugem blestematul ăla de pod”, pus pe lista persoanelor căutate de Rusia HotNews.ro Rusia l-a inclus pe fostul ministru britanic Ben Wallace pe lista „Most Wanted”. De ce a fost dat în urmărire de ruși Stirile ProTV Fostul ministru britanic al Apărării, Ben Wallace, dat în urmărire de Kremlin. „O nouă farsă a Rusiei” Adevarul Autorităţile din Rusia l-au plasat pe f",
+      "instagram_caption": "Înaltul oficial britanic care a spus „Trebuie să distrugem blestematul ăla de pod”, pus pe lista persoanelor căutate de Rusia - HotNews.ro\n\nCiteste pe nexas.ro/stiri/",
       "hashtags": [
-        "CupaRomaniei",
-        "UCluj",
-        "UniversitateaCraiova",
-        "FotbalLive",
-        "Finala"
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
       ],
       "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: LIVE U Cluj – Universitatea Craiova 0-0, Live Text Online, în finala din Cupa României. Ocazie mare . Professional photorealistic style. No text, no logos, no watermarks."
+      "image_prompt": "Premium editorial photograph for International news: Înaltul oficial britanic care a spus „Trebuie să distrugem blestematul ăla de pod”, pus pe lista per. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Rusia îl vrea pe Ben Wallace, fostul șef al Apărării UK. Cazul \"podului blestemat\"?",
@@ -613,19 +867,21 @@
       "image_prompt": "Premium editorial photograph for AI & Tech news: Instagram’s new ‘Instants’ feature combines elements from Snapchat and BeReal. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Loredana Groza, de nerecunoscut cu păr scurt negru și ținută provocatoare. Apariția artistei a stârnit controverse printre fani - ProFM.ro",
+      "title": "Loredana Groza, apariție șocantă! Păr scurt negru și ținută provocatoare stârnesc controverse.",
       "source": "Google Ent",
       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPV21KdDh2T0Q0Ym9nODZyNFhQeVVvWlNveGVLNW5oaHY0S1hRSmhmcnVWVlZ3NzdwTjlJZ01pRkN2bWhZcGRRTTVMak1zTmkzY1hEY0F2VllZTW5uREpYaDJvMTROazA2NEZ6TTVSUUQxbHV4Wnc1TWE4a2F0cThqcWlvYl9SdTBHbno0allxSXdkYmJCVHU0TjRjWkRMRGtNX0dfX2htemdrT2hkU1JhWXJPeGJ6bU9pLTZJUzNKSWE2Z0F5RzhBTFliLUFwdFVOdjVWczdVYXc1YnlvMUwxbVV3ai1TbktLb1psQkxKLUo?oc=5",
       "date": "2026-05-13T16:47:30+00:00",
       "category": "Entertainment",
-      "summary": "Loredana Groza, de nerecunoscut cu păr scurt negru și ținută provocatoare. Apariția artistei a stârnit controverse printre fani ProFM.ro",
-      "instagram_caption": "Loredana Groza, de nerecunoscut cu păr scurt negru și ținută provocatoare. Apariția artistei a stârnit controverse printre fani - ProFM.ro\n\nCiteste pe nexas.ro/stiri/",
+      "summary": "Loredana Groza a surprins din nou! Artista a apărut într-o ipostază complet neașteptată, cu păr scurt, negru, și o ținută deosebit de provocatoare. Această transformare radicală a generat numeroase discuții și controverse aprinse în rândul fanilor și în mediul online, mulți fiind de părere că este de nerecunoscut.",
+      "instagram_caption": "Loredana Groza, de nerecunoscut! 😱 Artista a șocat cu o apariție inedită: păr scurt, negru și o ținută super provocatoare. Fanii sunt împărțiți! 🔥 Tu ce părere ai despre noua ei transformare? Lasă un comentariu! 👇 #LoredanaGroza #NouLook #Controversa #Entertainment #StiriMondene",
       "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
+        "#LoredanaGroza",
+        "#NouLook",
+        "#Transformare",
+        "#Controversa",
         "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
+        "#Entertainment",
+        "#StiriMondene"
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Entertainment news: Loredana Groza, de nerecunoscut cu păr scurt negru și ținută provocatoare. Apariția artistei a stârn. Professional photorealistic style. No text, no logos, no watermarks."
@@ -692,16 +948,14 @@
       "url": "https://www.forbes.ro/penny-romania-estimeaza-investitii-in-valoare-de-3-miliarde-de-euro-pana-in-2035-501158",
       "date": "2026-05-13T14:47:26+00:00",
       "category": "Business",
-      "summary": "Retailerul Penny România, parte a grupului german Rewe, își menține planurile ambițioase de expansiune. Compania estimează investiții de 3 miliarde de euro și vizează atingerea unui număr de 1.000 de magazine pe piața locală până în anul 2035. Această strategie este confirmată în ciuda unui context economic tot mai fragil, subliniind angajamentul pe termen lung al Penny în România.",
-      "instagram_caption": "Investiții masive în retailul românesc! 🚀 Penny România, parte a grupului Rewe, anunță planuri ambițioase: 3 miliarde de euro și 1.000 de magazine până în 2035. O strategie de expansiune pe termen lung, confirmată chiar și într-un context economic volatil. Ce părere aveți despre această viziune de creștere? 🤔 #PennyRomania #Investitii #Retail #Expansiune #Economie #Business #Rewe",
+      "summary": "În ciuda unui context economic tot mai fragil, retailerul Penny România, parte a grupului german Rewe, anunță menținerea planurilor de expansiune pe termen lung. Oficialii retailerului estimează investiții în valoare de 3 miliarde de euro și atingerea numărului de 1.000 de magazine până în anul 2035. Până la sfârșitul lui 2025, compania a ajuns să ... The post Penny România estimează investiții în valoare de 3 miliar",
+      "instagram_caption": "Penny România estimează investiții în valoare de 3 miliarde de euro până în 2035\n\nCiteste pe nexas.ro/stiri/",
       "hashtags": [
-        "PennyRomania",
-        "Investitii",
-        "Retail",
-        "Expansiune",
-        "Economie",
-        "Business",
-        "Rewe"
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Business news: Penny România estimează investiții în valoare de 3 miliarde de euro până în 2035. Professional photorealistic style. No text, no logos, no watermarks."
@@ -816,6 +1070,24 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Stiinta news: Humans returned to Britain 500 years earlier than scientists thought after the last ice age. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Răzvan Fodor a început numărătoarea inversă: „Sunt un fătălău” - Click!",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZkhmMHRVaFoteFlkZUItdlJ6STY4dmNqYjhDMFZZOHhGS01jVnVKb1NSMDM2eV8yQ0dvd0RJVV9fMUM1OHVVZFpBdGE3b1pJdldwMG5qcERjX0ZqLThDM2hjVWtpLWJBUS1hRjkweFgzVEJBMF9yOXBPRTNXUVpBbjVPMEliMDZBcmdnMWFXNzBHRm12S1dSWjRnQlNLVVdmQzZ4cA?oc=5",
+      "date": "2026-05-13T11:44:01+00:00",
+      "category": "Entertainment",
+      "summary": "Răzvan Fodor a început numărătoarea inversă: „Sunt un fătălău” Click!",
+      "instagram_caption": "Răzvan Fodor a început numărătoarea inversă: „Sunt un fătălău” - Click!\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Entertainment",
+        "#Vedete",
+        "#Divertisment",
+        "#Lifestyle"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Răzvan Fodor a început numărătoarea inversă: „Sunt un fătălău” - Click!. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "O figurină realizată de Constantin Brâncuși are un preț de pornire de 3.000 de Euro în Licitația de Artă Contemporană de la Artmark - HotNews.ro",
