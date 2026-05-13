@@ -19,81 +19,120 @@ ARTICLES_PER_CATEGORY = 3
 MAX_PER_CATEGORY = 30
 
 # ============================================================
-# CATEGORII + SURSE RSS
+# 9 CATEGORII — 68 SURSE RSS
 # ============================================================
 CATEGORY_FEEDS = {
     "AI & Tech": {
         "lang": "en",
         "feeds": [
-            {"name": "TechCrunch",    "url": "https://techcrunch.com/feed/",                           "weight": 1.15},
-            {"name": "VentureBeat",   "url": "https://venturebeat.com/category/ai/feed/",              "weight": 1.18},
-            {"name": "The Verge",     "url": "https://www.theverge.com/rss/index.xml",                 "weight": 1.05},
-            {"name": "OpenAI Blog",   "url": "https://openai.com/news/rss.xml",                        "weight": 1.20},
-            {"name": "Anthropic",     "url": "https://www.anthropic.com/news/rss.xml",                 "weight": 1.15},
-            {"name": "Ars Technica",  "url": "https://feeds.arstechnica.com/arstechnica/index",        "weight": 1.00},
+            {"name": "TechCrunch",       "url": "https://techcrunch.com/feed/",                                                             "weight": 1.15},
+            {"name": "VentureBeat AI",   "url": "https://venturebeat.com/category/ai/feed/",                                                "weight": 1.18},
+            {"name": "The Verge",        "url": "https://www.theverge.com/rss/index.xml",                                                   "weight": 1.05},
+            {"name": "OpenAI Blog",      "url": "https://openai.com/news/rss.xml",                                                          "weight": 1.25},
+            {"name": "Anthropic Blog",   "url": "https://www.anthropic.com/news/rss.xml",                                                   "weight": 1.25},
+            {"name": "Google DeepMind",  "url": "https://deepmind.google/blog/rss.xml",                                                     "weight": 1.20},
+            {"name": "Meta AI Blog",     "url": "https://ai.meta.com/blog/rss/",                                                            "weight": 1.18},
+            {"name": "Microsoft AI",     "url": "https://blogs.microsoft.com/ai/feed/",                                                     "weight": 1.15},
+            {"name": "Mistral AI",       "url": "https://mistral.ai/news/rss.xml",                                                          "weight": 1.10},
+            {"name": "Ars Technica",     "url": "https://feeds.arstechnica.com/arstechnica/index",                                          "weight": 1.00},
+            {"name": "Wired AI",         "url": "https://www.wired.com/feed/category/artificial-intelligence/latest/rss",                   "weight": 1.10},
+            {"name": "Google News Tech", "url": "https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=ro&gl=RO&ceid=RO:ro",    "weight": 1.05},
         ],
     },
     "Sport": {
         "lang": "ro",
         "feeds": [
-            {"name": "ProSport",      "url": "https://www.prosport.ro/feed",                           "weight": 1.20},
-            {"name": "GSP",           "url": "https://www.gsp.ro/rss",                                 "weight": 1.15},
-            {"name": "DigiSport",     "url": "https://www.digisport.ro/rss",                           "weight": 1.10},
-            {"name": "Fanatik",       "url": "https://www.fanatik.ro/feed",                            "weight": 1.05},
+            {"name": "ProSport",         "url": "https://www.prosport.ro/feed",                                                             "weight": 1.20},
+            {"name": "GSP",              "url": "https://www.gsp.ro/rss",                                                                   "weight": 1.18},
+            {"name": "DigiSport",        "url": "https://www.digisport.ro/rss",                                                             "weight": 1.15},
+            {"name": "Fanatik",          "url": "https://www.fanatik.ro/feed",                                                              "weight": 1.10},
+            {"name": "BBC Sport",        "url": "http://feeds.bbci.co.uk/sport/rss.xml",                                                    "weight": 1.05},
+            {"name": "ESPN",             "url": "https://www.espn.com/espn/rss/news",                                                       "weight": 1.00},
+            {"name": "Google Sport",     "url": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=ro&gl=RO&ceid=RO:ro",        "weight": 1.10},
+            {"name": "Yahoo Sport",      "url": "https://sports.yahoo.com/rss/",                                                            "weight": 1.00},
         ],
     },
     "Sanatate": {
         "lang": "ro",
         "feeds": [
-            {"name": "CSID",          "url": "https://www.csid.ro/rss",                                "weight": 1.15},
-            {"name": "Mediafax",      "url": "https://www.mediafax.ro/sanatate/rss",                   "weight": 1.10},
-            {"name": "Descopera",     "url": "https://descopera.ro/sanatate/feed",                     "weight": 1.00},
-            {"name": "WebMD",         "url": "https://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC", "weight": 0.90},
+            {"name": "CSID",             "url": "https://www.csid.ro/rss",                                                                  "weight": 1.15},
+            {"name": "Mediafax",         "url": "https://www.mediafax.ro/sanatate/rss",                                                     "weight": 1.10},
+            {"name": "Descopera",        "url": "https://descopera.ro/sanatate/feed",                                                       "weight": 1.05},
+            {"name": "WebMD",            "url": "https://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC",                             "weight": 0.95},
+            {"name": "Medical News",     "url": "https://www.medicalnewstoday.com/rss/news",                                                "weight": 1.00},
+            {"name": "Healthline",       "url": "https://www.healthline.com/rss/health-news",                                               "weight": 0.95},
+            {"name": "Google Sanatate",  "url": "https://news.google.com/rss/headlines/section/topic/HEALTH?hl=ro&gl=RO&ceid=RO:ro",        "weight": 1.10},
         ],
     },
     "Business": {
         "lang": "ro",
         "feeds": [
-            {"name": "Ziarul Financiar", "url": "https://www.zf.ro/rss",                              "weight": 1.20},
-            {"name": "Profit.ro",        "url": "https://www.profit.ro/rss",                           "weight": 1.15},
-            {"name": "Business Magazin", "url": "https://www.businessmagazin.ro/rss",                  "weight": 1.00},
-            {"name": "Economica",        "url": "https://economica.net/rss",                            "weight": 1.05},
+            {"name": "Ziarul Financiar", "url": "https://www.zf.ro/rss",                                                                    "weight": 1.20},
+            {"name": "Profit.ro",        "url": "https://www.profit.ro/rss",                                                                "weight": 1.18},
+            {"name": "Business Magazin", "url": "https://www.businessmagazin.ro/rss",                                                       "weight": 1.05},
+            {"name": "Economica",        "url": "https://economica.net/rss",                                                                 "weight": 1.05},
+            {"name": "Forbes Romania",   "url": "https://www.forbes.ro/feed",                                                               "weight": 1.10},
+            {"name": "Reuters Business", "url": "https://feeds.reuters.com/reuters/businessNews",                                           "weight": 1.10},
+            {"name": "Google Business",  "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ro&gl=RO&ceid=RO:ro",      "weight": 1.08},
+            {"name": "Yahoo Finance",    "url": "https://finance.yahoo.com/news/rssindex",                                                  "weight": 1.00},
         ],
     },
     "International": {
         "lang": "en",
         "feeds": [
-            {"name": "BBC World",     "url": "http://feeds.bbci.co.uk/news/world/rss.xml",             "weight": 1.20},
-            {"name": "Reuters",       "url": "https://feeds.reuters.com/reuters/topNews",              "weight": 1.15},
-            {"name": "DW News",       "url": "https://rss.dw.com/rdf/rss-en-world",                   "weight": 1.00},
-            {"name": "AP News",       "url": "https://rsshub.app/apnews/topics/apf-topnews",           "weight": 1.10},
+            {"name": "BBC World",        "url": "http://feeds.bbci.co.uk/news/world/rss.xml",                                               "weight": 1.20},
+            {"name": "Reuters Top",      "url": "https://feeds.reuters.com/reuters/topNews",                                                "weight": 1.18},
+            {"name": "DW News",          "url": "https://rss.dw.com/rdf/rss-en-world",                                                     "weight": 1.05},
+            {"name": "Al Jazeera",       "url": "https://www.aljazeera.com/xml/rss/all.xml",                                               "weight": 1.10},
+            {"name": "Yahoo News",       "url": "https://news.yahoo.com/rss/",                                                              "weight": 1.00},
+            {"name": "Google Intl",      "url": "https://news.google.com/rss/headlines/section/topic/WORLD?hl=ro&gl=RO&ceid=RO:ro",         "weight": 1.10},
+            {"name": "AP News",          "url": "https://rsshub.app/apnews/topics/apf-topnews",                                             "weight": 1.05},
         ],
     },
     "Entertainment": {
         "lang": "ro",
         "feeds": [
-            {"name": "SpyNews",       "url": "https://spynews.ro/feed",                                "weight": 1.15},
-            {"name": "Viva",          "url": "https://www.viva.ro/rss",                                "weight": 1.10},
-            {"name": "OK Magazine",   "url": "https://okmagazine.ro/feed",                             "weight": 1.00},
-            {"name": "Unica",         "url": "https://unica.ro/feed",                                  "weight": 1.05},
+            {"name": "SpyNews",          "url": "https://spynews.ro/feed",                                                                  "weight": 1.15},
+            {"name": "Viva",             "url": "https://www.viva.ro/rss",                                                                  "weight": 1.10},
+            {"name": "OK Magazine",      "url": "https://okmagazine.ro/feed",                                                               "weight": 1.05},
+            {"name": "Unica",            "url": "https://unica.ro/feed",                                                                    "weight": 1.05},
+            {"name": "Google Ent",       "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=ro&gl=RO&ceid=RO:ro", "weight": 1.10},
+            {"name": "Yahoo Ent",        "url": "https://www.yahoo.com/entertainment/rss",                                                  "weight": 1.00},
         ],
     },
     "Romania": {
         "lang": "ro",
         "feeds": [
-            {"name": "Digi24",        "url": "https://www.digi24.ro/rss",                              "weight": 1.20},
-            {"name": "G4Media",       "url": "https://www.g4media.ro/feed",                            "weight": 1.15},
-            {"name": "HotNews",       "url": "https://www.hotnews.ro/rss",                             "weight": 1.10},
-            {"name": "Libertatea",    "url": "https://www.libertatea.ro/rss",                          "weight": 1.05},
+            {"name": "Digi24",           "url": "https://www.digi24.ro/rss",                                                                "weight": 1.20},
+            {"name": "G4Media",          "url": "https://www.g4media.ro/feed",                                                              "weight": 1.18},
+            {"name": "HotNews",          "url": "https://www.hotnews.ro/rss",                                                               "weight": 1.15},
+            {"name": "Libertatea",       "url": "https://www.libertatea.ro/rss",                                                            "weight": 1.10},
+            {"name": "ProTV Stiri",      "url": "https://stirileprotv.ro/rss",                                                              "weight": 1.15},
+            {"name": "Antena3",          "url": "https://www.antena3.ro/rss",                                                               "weight": 1.05},
+            {"name": "Google Romania",   "url": "https://news.google.com/rss?hl=ro&gl=RO&ceid=RO:ro",                                       "weight": 1.12},
         ],
     },
     "Stiinta": {
         "lang": "en",
         "feeds": [
-            {"name": "Science Daily", "url": "https://www.sciencedaily.com/rss/top.xml",               "weight": 1.15},
-            {"name": "NASA News",     "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",         "weight": 1.10},
-            {"name": "New Scientist", "url": "https://www.newscientist.com/feed/home/",                "weight": 1.05},
-            {"name": "Descopera Ro",  "url": "https://descopera.ro/stiinta/feed",                      "weight": 1.00},
+            {"name": "Science Daily",    "url": "https://www.sciencedaily.com/rss/top.xml",                                                 "weight": 1.15},
+            {"name": "NASA News",        "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",                                           "weight": 1.10},
+            {"name": "New Scientist",    "url": "https://www.newscientist.com/feed/home/",                                                  "weight": 1.08},
+            {"name": "Descopera Ro",     "url": "https://descopera.ro/stiinta/feed",                                                        "weight": 1.10},
+            {"name": "Space.com",        "url": "https://www.space.com/feeds/all",                                                          "weight": 1.05},
+            {"name": "Live Science",     "url": "https://www.livescience.com/feeds/all",                                                    "weight": 1.00},
+            {"name": "Google Stiinta",   "url": "https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=ro&gl=RO&ceid=RO:ro",       "weight": 1.08},
+        ],
+    },
+    "Bursa & Piete": {
+        "lang": "ro",
+        "feeds": [
+            {"name": "Ziarul Financiar", "url": "https://www.zf.ro/rss",                                                                    "weight": 1.20},
+            {"name": "Yahoo Finance",    "url": "https://finance.yahoo.com/news/rssindex",                                                  "weight": 1.18},
+            {"name": "Reuters Markets",  "url": "https://feeds.reuters.com/reuters/businessNews",                                           "weight": 1.15},
+            {"name": "Investing.com",    "url": "https://ro.investing.com/rss/news.rss",                                                    "weight": 1.15},
+            {"name": "Bloomberg",        "url": "https://feeds.bloomberg.com/markets/news.rss",                                             "weight": 1.20},
+            {"name": "Profit.ro",        "url": "https://www.profit.ro/rss",                                                                "weight": 1.10},
         ],
     },
 }
@@ -107,6 +146,7 @@ CATEGORY_ICONS = {
     "Entertainment": "🎬",
     "Romania":       "🏛️",
     "Stiinta":       "🔬",
+    "Bursa & Piete": "📈",
 }
 
 DEFAULT_HASHTAGS = {
@@ -118,6 +158,7 @@ DEFAULT_HASHTAGS = {
     "Entertainment": ["#NEXAS", "#Entertainment", "#Vedete", "#Divertisment", "#Lifestyle"],
     "Romania":       ["#NEXAS", "#Romania", "#StiriRomania", "#Actualitate", "#Breaking"],
     "Stiinta":       ["#NEXAS", "#Stiinta", "#Science", "#Descoperiri", "#Inovatie"],
+    "Bursa & Piete": ["#NEXAS", "#Bursa", "#Piete", "#Investitii", "#Finance", "#BVB"],
 }
 
 # ============================================================
@@ -147,7 +188,7 @@ def image_prompt(title: str, category: str) -> str:
     )
 
 # ============================================================
-# COLECTARE STIRI PER CATEGORIE
+# COLECTARE
 # ============================================================
 def collect_for_category(category: str, config: dict, target: int = 3) -> list:
     articles = []
@@ -158,20 +199,17 @@ def collect_for_category(category: str, config: dict, target: int = 3) -> list:
         try:
             parsed = feedparser.parse(feed["url"])
         except Exception as e:
-            print(f"    Feed failed [{feed['name']}]: {e}")
+            print(f"    ✗ [{feed['name']}]: {e}")
             continue
 
         for entry in parsed.entries[:12]:
             title = clean_text(getattr(entry, "title", ""))
             url = getattr(entry, "link", "")
-
             if not title or not url or len(title) < 10:
                 continue
-
             title_key = re.sub(r"\W+", "", title.lower())[:80]
             if url in seen_urls or title_key in seen_titles:
                 continue
-
             seen_urls.add(url)
             seen_titles.add(title_key)
 
@@ -195,17 +233,21 @@ def collect_for_category(category: str, config: dict, target: int = 3) -> list:
             })
 
     articles.sort(key=lambda x: x["_score"], reverse=True)
-    result = articles[:target * 2]  # extra pool for dedup
 
-    # Deduplicate by picking from different sources where possible
-    final = []
-    used_sources = set()
-    for a in result:
+    final, used_sources = [], set()
+    for a in articles:
         if len(final) >= target:
             break
-        if a["source"] not in used_sources or len(final) < target:
+        if a["source"] not in used_sources:
             final.append(a)
             used_sources.add(a["source"])
+
+    if len(final) < target:
+        for a in articles:
+            if len(final) >= target:
+                break
+            if a not in final:
+                final.append(a)
 
     return final[:target]
 
@@ -219,102 +261,71 @@ def gemini_rewrite_ro(item: dict) -> dict:
         return item
 
     is_ro = item.get("_lang") == "ro"
-
     if is_ro:
         prompt = f"""Rescrie si curata aceasta stire romaneasca pentru site-ul NEXAS.
 Pastreaza informatia reala, nu inventa nimic nou.
-Titlu: max 90 caractere, clar si atractiv.
-Rezumat: max 380 caractere, informativ si usor de citit.
-Caption Instagram: max 400 caractere, in romana, cu emoji.
-Raspunde STRICT JSON valid, fara markdown, fara explicatii.
-
-Stire:
+Titlu: max 90 caractere. Rezumat: max 380 caractere. Caption Instagram: max 400 caractere cu emoji.
+Raspunde STRICT JSON valid, fara markdown.
 Titlu: {item.get('title','')}
 Rezumat: {item.get('summary','')}
 Sursa: {item.get('source','')}
-Categorie: {item.get('category','')}
-
-Format exact:
-{{"title":"","summary":"","instagram_caption":"","hashtags":[]}}"""
+Format: {{"title":"","summary":"","instagram_caption":"","hashtags":[]}}"""
     else:
-        prompt = f"""Traduce si rescrie aceasta stire in limba romana pentru site-ul NEXAS.
-Nu inventa date, cifre sau informatii. Pastreaza sensul original.
-Titlu: max 90 caractere, in romana, atractiv.
-Rezumat: max 380 caractere, in romana, clar si informativ.
-Caption Instagram: max 400 caractere, in romana, cu emoji.
-Raspunde STRICT JSON valid, fara markdown, fara explicatii.
-
-Stire originala:
+        prompt = f"""Traduce si rescrie in romana pentru site-ul NEXAS. Nu inventa nimic.
+Titlu: max 90 caractere in romana. Rezumat: max 380 caractere in romana. Caption Instagram: max 400 caractere cu emoji.
+Raspunde STRICT JSON valid, fara markdown.
 Titlu: {item.get('title','')}
 Rezumat: {item.get('summary','')}
 Sursa: {item.get('source','')}
 Categorie: {item.get('category','')}
+Format: {{"title":"","summary":"","instagram_caption":"","hashtags":[]}}"""
 
-Format exact:
-{{"title":"","summary":"","instagram_caption":"","hashtags":[]}}"""
-
-    for model_name in ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]:
+    for model in ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]:
         try:
             client = genai.Client(api_key=api_key)
-            response = client.models.generate_content(model=model_name, contents=prompt)
-            text = (response.text or "").strip()
-            text = re.sub(r"^```json\s*", "", text)
-            text = re.sub(r"^```\s*", "", text)
-            text = re.sub(r"\s*```$", "", text)
+            response = client.models.generate_content(model=model, contents=prompt)
+            text = re.sub(r"^```json\s*|^```\s*|\s*```$", "", (response.text or "").strip())
             data = json.loads(text)
-
             item["title"] = clean_text(data.get("title") or item["title"])
             item["summary"] = clean_text(data.get("summary") or item["summary"])
             item["instagram_caption"] = clean_text(data.get("instagram_caption") or item["instagram_caption"])
-            new_tags = data.get("hashtags")
-            if isinstance(new_tags, list) and new_tags:
-                item["hashtags"] = [str(t).strip() for t in new_tags if str(t).strip()]
-
-            print(f"    ✓ Gemini ({model_name}): {item['title'][:55]}")
+            tags = data.get("hashtags")
+            if isinstance(tags, list) and tags:
+                item["hashtags"] = [str(t).strip() for t in tags if str(t).strip()]
+            print(f"    ✓ ({model}): {item['title'][:55]}")
             return item
-
         except Exception as e:
-            print(f"    ✗ Gemini {model_name}: {e}")
+            print(f"    ✗ {model}: {e}")
             continue
 
-    print(f"    Gemini esuat pentru: {item.get('url','')[:60]}")
     return item
 
 # ============================================================
-# MERGE + ARHIVA
+# MERGE
 # ============================================================
 def load_old_items() -> list:
     if not OUT_JSON.exists():
         return []
     try:
         data = json.loads(OUT_JSON.read_text(encoding="utf-8"))
-        if isinstance(data, dict):
-            return data.get("items", [])
-        return data if isinstance(data, list) else []
-    except Exception as e:
-        print(f"Nu pot citi stirile vechi: {e}")
+        return data.get("items", []) if isinstance(data, dict) else (data if isinstance(data, list) else [])
+    except:
         return []
 
 def merge_items(new_items: list, old_items: list, max_per_cat: int = 30) -> list:
-    seen_urls = set(item["url"] for item in new_items if item.get("url"))
+    seen = set(i["url"] for i in new_items if i.get("url"))
     merged = list(new_items)
-
-    cat_counts = {}
-    for item in new_items:
-        cat = item.get("category", "")
-        cat_counts[cat] = cat_counts.get(cat, 0) + 1
-
-    for item in old_items:
-        url = item.get("url", "")
-        cat = item.get("category", "")
-        if not url or url in seen_urls:
+    counts = {}
+    for i in new_items:
+        c = i.get("category", "")
+        counts[c] = counts.get(c, 0) + 1
+    for i in old_items:
+        url, cat = i.get("url", ""), i.get("category", "")
+        if not url or url in seen or counts.get(cat, 0) >= max_per_cat:
             continue
-        if cat_counts.get(cat, 0) >= max_per_cat:
-            continue
-        seen_urls.add(url)
-        merged.append(item)
-        cat_counts[cat] = cat_counts.get(cat, 0) + 1
-
+        seen.add(url)
+        merged.append(i)
+        counts[cat] = counts.get(cat, 0) + 1
     merged.sort(key=lambda x: x.get("date", ""), reverse=True)
     return merged
 
@@ -324,20 +335,21 @@ def merge_items(new_items: list, old_items: list, max_per_cat: int = 30) -> list
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     run_log = {}
-    all_new_items = []
+    all_new = []
+    total_feeds = sum(len(c["feeds"]) for c in CATEGORY_FEEDS.values())
 
-    print(f"\n{'='*50}")
-    print(f"NEXAS Stiri Agent — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
-    print(f"{'='*50}")
+    print(f"\n{'='*55}")
+    print(f"NEXAS News Agent — {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
+    print(f"{len(CATEGORY_FEEDS)} categorii | {total_feeds} surse RSS")
+    print(f"{'='*55}")
 
     for category, config in CATEGORY_FEEDS.items():
         icon = CATEGORY_ICONS.get(category, "📰")
-        print(f"\n{icon} {category}")
-
+        print(f"\n{icon}  {category}")
         items = collect_for_category(category, config, target=ARTICLES_PER_CATEGORY)
 
         if len(items) < ARTICLES_PER_CATEGORY:
-            print(f"  ⚠ Insuficiente: {len(items)}/{ARTICLES_PER_CATEGORY} — categoria sarita")
+            print(f"   ⚠ Insuficiente: {len(items)}/{ARTICLES_PER_CATEGORY} — sarita")
             run_log[category] = 0
             continue
 
@@ -345,31 +357,27 @@ def main():
         for item in items:
             item.pop("_score", None)
             item.pop("_lang", None)
-            item = gemini_rewrite_ro(item)
-            rewrote.append(item)
+            rewrote.append(gemini_rewrite_ro(item))
 
-        all_new_items.extend(rewrote)
+        all_new.extend(rewrote)
         run_log[category] = len(rewrote)
-        print(f"  ✓ {len(rewrote)} stiri salvate")
+        print(f"   ✓ {len(rewrote)} stiri salvate")
 
-    old_items = load_old_items()
-    merged = merge_items(all_new_items, old_items, max_per_cat=MAX_PER_CATEGORY)
+    merged = merge_items(all_new, load_old_items(), max_per_cat=MAX_PER_CATEGORY)
 
-    payload = {
+    OUT_JSON.write_text(json.dumps({
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "run_log": run_log,
         "items": merged,
-    }
-
-    OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
 
     total_new = sum(run_log.values())
     cats_ok = sum(1 for v in run_log.values() if v > 0)
-    print(f"\n{'='*50}")
+    print(f"\n{'='*55}")
     print(f"✓ Categorii active: {cats_ok}/{len(CATEGORY_FEEDS)}")
-    print(f"✓ Stiri noi: {total_new} | Total in JSON: {len(merged)}")
-    print(f"Run log: {run_log}")
-    print(f"{'='*50}\n")
+    print(f"✓ Stiri noi: {total_new} | Total JSON: {len(merged)}")
+    print(f"Run log: {json.dumps(run_log, ensure_ascii=False)}")
+    print(f"{'='*55}\n")
 
 if __name__ == "__main__":
     main()
