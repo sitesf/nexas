@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-12T08:16:07.322358+00:00",
+  "updated_at": "2026-05-13T08:28:33.513177+00:00",
   "items": [
     {
       "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
@@ -19,6 +19,44 @@
       ],
       "image": "",
       "image_prompt": "Premium futuristic editorial image about AI: Claude Code costs up to $200 a month. Goose does the same thing for free.. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+    },
+    {
+      "title": "What Parameter Golf taught us about AI-assisted research",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/what-parameter-golf-taught-us",
+      "date": "2026-05-12T00:00:00+00:00",
+      "category": "AI",
+      "summary": "Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantization, and novel model design under strict constraints.",
+      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
+      "instagram_caption": "What Parameter Golf taught us about AI-assisted research\n\nCiteste selectia pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tehnologie",
+        "#InteligentaArtificiala",
+        "#AIAgents"
+      ],
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: What Parameter Golf taught us about AI-assisted research. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
+    },
+    {
+      "title": "Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/12/everything-google-announced-at-its-android-show-from-googlebooks-to-vibe-coded-widgets/",
+      "date": "2026-05-12T17:01:00+00:00",
+      "category": "AI",
+      "summary": "Google unveiled its new AI-first Googlebooks laptops, more agentic Gemini features, vibe-coded Android widgets, Gemini in Chrome, refreshed Android Auto, and more ahead of I/O.",
+      "why_it_matters": "Stirea arata o schimbare concreta in zona AI, cu impact posibil asupra produselor digitale si a modului in care companiile folosesc automatizarea.",
+      "instagram_caption": "Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets\n\nCiteste selectia pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tehnologie",
+        "#InteligentaArtificiala",
+        "#AIAgents"
+      ],
+      "image": "",
+      "image_prompt": "Premium futuristic editorial image about AI: Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets. Dark technology atmosphere, glass interface, neon blue and violet accents, no readable text, no logos."
     },
     {
       "title": "OpenAI just released its answer to Claude Mythos",
