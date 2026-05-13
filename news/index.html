@@ -1253,7 +1253,7 @@ STRUCTURA JSON EXACTĂ:
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
     body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-sonnet-4-6',
       max_tokens: 2000,
       system: [{ type: 'text', text: prompt, cache_control: { type: 'ephemeral' } }],
       messages: [{ role: 'user', content: `Generează conținut pentru: "${newsItem.title}"` }]
@@ -1566,7 +1566,7 @@ async function generateWeeklySummary() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-api-key': settings.anthropicKey, 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 1000,
         messages: [{ role: 'user', content: `Ești expert social media. Creează un post "Top Știri ale Săptămânii" pentru Instagram și Facebook în română, bazat pe aceste știri:\n${histText}\n\nReturnează DOAR JSON: {"instagram":"postare instagram cu emoji și hook","facebook":"postare facebook narrativa","hashtags":"#hashtag1 #hashtag2 ... 20 hashtag-uri"}` }]
       })
