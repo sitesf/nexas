@@ -208,6 +208,53 @@ def is_low_quality(title: str) -> bool:
             return True
     return False
 
+# ============================================================
+# TRADUCERE FALLBACK (Google Translate gratuit, fara cheie)
+# ============================================================
+
+import requests as _requests
+
+CATEGORY_GLOSSARY = {
+    "AI & Tech":     {"machine learning": "învățare automată", "deep learning": "învățare profundă", "model": "model AI", "chip": "procesor"},
+    "Business":      {"revenue": "venituri", "earnings": "câștiguri", "market": "piață", "shares": "acțiuni", "CEO": "director general"},
+    "International": {"ceasefire": "încetare a focului", "sanctions": "sancțiuni", "summit": "summit", "treaty": "tratat"},
+    "Stiinta":       {"researchers": "cercetătorii", "study": "studiu", "discovery": "descoperire", "species": "specie"},
+    "Sanatate":      {"vaccine": "vaccin", "treatment": "tratament", "clinical trial": "studiu clinic", "patients": "pacienți"},
+    "Sport":         {"manager": "antrenor", "draw": "egal", "goalkeeper": "portar", "transfer": "transfer", "match": "meci"},
+    "Bursa & Piete": {"stock": "acțiune", "index": "indice", "rally": "revenire", "bond": "obligațiune"},
+}
+
+def google_translate_free(text: str, target: str = "ro", source: str = "en") -> str:
+    """Traducere prin endpoint-ul public Google Translate. Fara cheie, fara cost."""
+    if not text:
+        return text
+    try:
+        url = "https://translate.googleapis.com/translate_a/single"
+        params = {"client": "gtx", "sl": source, "tl": target, "dt": "t", "q": text[:5000]}
+        response = _requests.get(url, params=params, timeout=15)
+        response.raise_for_status()
+        data = response.json()
+        translated = "".join([seg[0] for seg in data[0] if seg[0]])
+        return translated.strip() or text
+    except Exception as exc:
+        print(f"    [google-translate] esec: {exc}")
+        return text
+
+def apply_glossary(text: str, category: str = "") -> str:
+    """Corecteaza termeni specifici categoriei dupa traducerea Google."""
+    result = text
+    for en, ro in CATEGORY_GLOSSARY.get(category, {}).items():
+        result = result.replace(en, ro)
+    return result
+
+def translate_to_romanian(text: str, category: str = "") -> str:
+    """Traduce text EN->RO cu Google Translate gratuit + corecteaza glosarul."""
+    if not text or not text.strip():
+        return text
+    translated = google_translate_free(text, target="ro", source="en")
+    return apply_glossary(translated, category)
+
+
 def is_english(text: str) -> bool:
     en_words = ['the','and','for','that','with','this','from','have','are','was',
                 'will','been','they','their','said','more','about','which','when','also']
@@ -219,6 +266,11 @@ def is_english(text: str) -> bool:
 
 def force_translate(item: dict, api_key: str) -> dict:
     if not api_key or genai is None:
+        # Fallback direct la Google Translate gratuit
+        category = item.get("category", "")
+        item["title"] = translate_to_romanian(item.get("title", ""), category)
+        item["summary"] = translate_to_romanian(item.get("summary", ""), category)
+        print(f"    ↺ Google Translate (no key): {item['title'][:55]}")
         return item
     prompt = f"""Traduce URGENT in romana. Raspunde STRICT JSON fara markdown.
 Titlu EN: {item.get('title','')}
@@ -235,7 +287,11 @@ Format: {{"title":"","summary":""}}"""
             item["summary"] = clean_text(data["summary"])
         print(f"    ↺ Re-tradus: {item['title'][:55]}")
     except Exception as e:
-        print(f"    ✗ Force translate failed: {e}")
+        print(f"    ✗ Force translate Gemini esuat: {e} — fallback Google Translate")
+        category = item.get("category", "")
+        item["title"] = translate_to_romanian(item.get("title", ""), category)
+        item["summary"] = translate_to_romanian(item.get("summary", ""), category)
+        print(f"    ↺ Google Translate fallback: {item['title'][:55]}")
     return item
 
 # ============================================================
@@ -357,7 +413,13 @@ Format: {{"title":"","summary":"","instagram_caption":"","hashtags":[]}}"""
             time.sleep(4)
             continue
 
-    print(f"    ✗ Gemini esuat: {item.get('url','')[:60]}")
+    # Toate modelele Gemini au esuat — fallback la Google Translate gratuit
+    print(f"    ✗ Gemini esuat total: {item.get('url','')[:60]} — fallback Google Translate")
+    if item.get("_lang") != "ro":
+        category = item.get("category", "")
+        item["title"] = translate_to_romanian(item.get("title", ""), category)
+        item["summary"] = translate_to_romanian(item.get("summary", ""), category)
+        print(f"    ↺ Google Translate fallback: {item['title'][:55]}")
     return item
 
 # ============================================================
