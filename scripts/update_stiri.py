@@ -2,6 +2,7 @@ import os
 import re
 import json
 import html
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 import feedparser
@@ -137,7 +138,56 @@ CATEGORY_FEEDS = {
     },
 }
 
-CATEGORY_ICONS = {
+SKIP_PATTERNS = [
+    r"^market update:",
+    r"^stock market today:",
+    r"^markets:",
+    r"^\d+ stocks",
+    r"^top \d+",
+    r"^here('s| is) what",
+    r"^what to know",
+    r"^live updates?:",
+    r"^breaking:",
+]
+
+def is_english(text: str) -> bool:
+    """Detecteaza daca textul e predominant in engleza."""
+    en_words = ['the','and','for','that','with','this','from','have','are','was',
+                'will','been','they','their','said','more','about','which','when','also']
+    words = text.lower().split()
+    if not words:
+        return False
+    en_count = sum(1 for w in words if w in en_words)
+    return en_count / len(words) > 0.08
+
+def force_translate(item: dict, api_key: str) -> dict:
+    """Traduce fortat un item care a ramas in engleza."""
+    if not api_key or genai is None:
+        return item
+    prompt = f"""Traduce URGENT in romana. Raspunde STRICT JSON fara markdown.
+Titlu EN: {item.get('title','')}
+Rezumat EN: {item.get('summary','')[:200]}
+Format: {{"title":"","summary":""}}"""
+    try:
+        client = genai.Client(api_key=api_key)
+        response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
+        text = re.sub(r"^```json\s*|^```\s*|\s*```$", "", (response.text or "").strip())
+        data = json.loads(text)
+        if data.get("title"):
+            item["title"] = clean_text(data["title"])
+        if data.get("summary"):
+            item["summary"] = clean_text(data["summary"])
+        print(f"    ↺ Re-tradus: {item['title'][:55]}")
+    except Exception as e:
+        print(f"    ✗ Force translate failed: {e}")
+    return item
+    t = title.lower().strip()
+    if len(t) < 20:
+        return True
+    for pattern in SKIP_PATTERNS:
+        if re.match(pattern, t):
+            return True
+    return False
     "AI & Tech":     "🤖",
     "Sport":         "⚽",
     "Sanatate":      "💊",
@@ -206,6 +256,8 @@ def collect_for_category(category: str, config: dict, target: int = 3) -> list:
             title = clean_text(getattr(entry, "title", ""))
             url = getattr(entry, "link", "")
             if not title or not url or len(title) < 10:
+                continue
+            if is_low_quality(title):
                 continue
             title_key = re.sub(r"\W+", "", title.lower())[:80]
             if url in seen_urls or title_key in seen_titles:
@@ -280,8 +332,10 @@ Sursa: {item.get('source','')}
 Categorie: {item.get('category','')}
 Format: {{"title":"","summary":"","instagram_caption":"","hashtags":[]}}"""
 
-    for model in ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]:
+    for attempt, model in enumerate(["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]):
         try:
+            if attempt > 0:
+                time.sleep(3)
             client = genai.Client(api_key=api_key)
             response = client.models.generate_content(model=model, contents=prompt)
             text = re.sub(r"^```json\s*|^```\s*|\s*```$", "", (response.text or "").strip())
@@ -293,9 +347,11 @@ Format: {{"title":"","summary":"","instagram_caption":"","hashtags":[]}}"""
             if isinstance(tags, list) and tags:
                 item["hashtags"] = [str(t).strip() for t in tags if str(t).strip()]
             print(f"    ✓ ({model}): {item['title'][:55]}")
+            time.sleep(1)  # pauza intre apeluri
             return item
         except Exception as e:
             print(f"    ✗ {model}: {e}")
+            time.sleep(4)  # pauza mai mare dupa eroare
             continue
 
     return item
@@ -348,16 +404,25 @@ def main():
         print(f"\n{icon}  {category}")
         items = collect_for_category(category, config, target=ARTICLES_PER_CATEGORY)
 
-        if len(items) < ARTICLES_PER_CATEGORY:
-            print(f"   ⚠ Insuficiente: {len(items)}/{ARTICLES_PER_CATEGORY} — sarita")
+        if len(items) == 0:
+            print(f"   ⚠ Nicio stire gasita — categoria sarita")
             run_log[category] = 0
             continue
 
         rewrote = []
         for item in items:
             item.pop("_score", None)
+            lang = item.pop("_lang", "en")
+            item["_lang"] = lang
+            item = gemini_rewrite_ro(item)
             item.pop("_lang", None)
-            rewrote.append(gemini_rewrite_ro(item))
+            # Verifica daca a ramas in engleza
+            api_key = os.getenv("GEMINI_API_KEY")
+            if is_english(item.get("title", "")) and api_key:
+                print(f"    ⚠ Inca in engleza, retraducere...")
+                time.sleep(2)
+                item = force_translate(item, api_key)
+            rewrote.append(item)
 
         all_new.extend(rewrote)
         run_log[category] = len(rewrote)
