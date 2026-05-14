@@ -93,12 +93,12 @@ CATEGORY_FEEDS = {
     "Entertainment": {
         "lang": "ro",
         "feeds": [
-            {"name": "SpyNews",          "url": "https://spynews.ro/feed",                                                                  "weight": 1.15},
-            {"name": "Viva",             "url": "https://www.viva.ro/rss",                                                                  "weight": 1.10},
-            {"name": "OK Magazine",      "url": "https://okmagazine.ro/feed",                                                               "weight": 1.05},
-            {"name": "Unica",            "url": "https://unica.ro/feed",                                                                    "weight": 1.05},
-            {"name": "Google Ent",       "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=ro&gl=RO&ceid=RO:ro", "weight": 1.10},
-            {"name": "Yahoo Ent",        "url": "https://www.yahoo.com/entertainment/rss",                                                  "weight": 1.00},
+            {"name": "SpyNews",          "url": "https://spynews.ro/feed",                                                                  "weight": 1.15, "lang": "ro"},
+            {"name": "Viva",             "url": "https://www.viva.ro/rss",                                                                  "weight": 1.10, "lang": "ro"},
+            {"name": "OK Magazine",      "url": "https://okmagazine.ro/feed",                                                               "weight": 1.05, "lang": "ro"},
+            {"name": "Unica",            "url": "https://unica.ro/feed",                                                                    "weight": 1.05, "lang": "ro"},
+            {"name": "Google Ent",       "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=ro&gl=RO&ceid=RO:ro", "weight": 1.10, "lang": "ro"},
+            {"name": "Yahoo Ent",        "url": "https://www.yahoo.com/entertainment/rss",                                                  "weight": 1.00, "lang": "en"},
         ],
     },
     "Romania": {
@@ -119,10 +119,10 @@ CATEGORY_FEEDS = {
             {"name": "Science Daily",    "url": "https://www.sciencedaily.com/rss/top.xml",                                                 "weight": 1.15},
             {"name": "NASA News",        "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",                                           "weight": 1.10},
             {"name": "New Scientist",    "url": "https://www.newscientist.com/feed/home/",                                                  "weight": 1.08},
-            {"name": "Descopera Ro",     "url": "https://descopera.ro/stiinta/feed",                                                        "weight": 1.10},
+            {"name": "Descopera Ro",     "url": "https://descopera.ro/stiinta/feed",                                                        "weight": 1.10, "lang": "ro"},
             {"name": "Space.com",        "url": "https://www.space.com/feeds/all",                                                          "weight": 1.05},
             {"name": "Live Science",     "url": "https://www.livescience.com/feeds/all",                                                    "weight": 1.00},
-            {"name": "Google Stiinta",   "url": "https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=ro&gl=RO&ceid=RO:ro",       "weight": 1.08},
+            {"name": "Google Stiinta",   "url": "https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=ro&gl=RO&ceid=RO:ro",       "weight": 1.08, "lang": "ro"},
         ],
     },
     "Bursa & Piete": {
@@ -138,56 +138,7 @@ CATEGORY_FEEDS = {
     },
 }
 
-SKIP_PATTERNS = [
-    r"^market update:",
-    r"^stock market today:",
-    r"^markets:",
-    r"^\d+ stocks",
-    r"^top \d+",
-    r"^here('s| is) what",
-    r"^what to know",
-    r"^live updates?:",
-    r"^breaking:",
-]
-
-def is_english(text: str) -> bool:
-    """Detecteaza daca textul e predominant in engleza."""
-    en_words = ['the','and','for','that','with','this','from','have','are','was',
-                'will','been','they','their','said','more','about','which','when','also']
-    words = text.lower().split()
-    if not words:
-        return False
-    en_count = sum(1 for w in words if w in en_words)
-    return en_count / len(words) > 0.08
-
-def force_translate(item: dict, api_key: str) -> dict:
-    """Traduce fortat un item care a ramas in engleza."""
-    if not api_key or genai is None:
-        return item
-    prompt = f"""Traduce URGENT in romana. Raspunde STRICT JSON fara markdown.
-Titlu EN: {item.get('title','')}
-Rezumat EN: {item.get('summary','')[:200]}
-Format: {{"title":"","summary":""}}"""
-    try:
-        client = genai.Client(api_key=api_key)
-        response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
-        text = re.sub(r"^```json\s*|^```\s*|\s*```$", "", (response.text or "").strip())
-        data = json.loads(text)
-        if data.get("title"):
-            item["title"] = clean_text(data["title"])
-        if data.get("summary"):
-            item["summary"] = clean_text(data["summary"])
-        print(f"    ↺ Re-tradus: {item['title'][:55]}")
-    except Exception as e:
-        print(f"    ✗ Force translate failed: {e}")
-    return item
-    t = title.lower().strip()
-    if len(t) < 20:
-        return True
-    for pattern in SKIP_PATTERNS:
-        if re.match(pattern, t):
-            return True
-    return False
+CATEGORY_ICONS = {
     "AI & Tech":     "🤖",
     "Sport":         "⚽",
     "Sanatate":      "💊",
@@ -210,6 +161,17 @@ DEFAULT_HASHTAGS = {
     "Stiinta":       ["#NEXAS", "#Stiinta", "#Science", "#Descoperiri", "#Inovatie"],
     "Bursa & Piete": ["#NEXAS", "#Bursa", "#Piete", "#Investitii", "#Finance", "#BVB"],
 }
+
+SKIP_PATTERNS = [
+    r"^market update:",
+    r"^stock market today:",
+    r"^markets:",
+    r"^\d+ stocks",
+    r"^top \d+",
+    r"^here('s| is) what",
+    r"^what to know",
+    r"^live updates?:",
+]
 
 # ============================================================
 # UTILITARE
@@ -236,6 +198,45 @@ def image_prompt(title: str, category: str) -> str:
         f"Premium editorial photograph for {category} news: {title[:100]}. "
         "Professional photorealistic style. No text, no logos, no watermarks."
     )
+
+def is_low_quality(title: str) -> bool:
+    t = title.lower().strip()
+    if len(t) < 20:
+        return True
+    for pattern in SKIP_PATTERNS:
+        if re.match(pattern, t):
+            return True
+    return False
+
+def is_english(text: str) -> bool:
+    en_words = ['the','and','for','that','with','this','from','have','are','was',
+                'will','been','they','their','said','more','about','which','when','also']
+    words = text.lower().split()
+    if not words:
+        return False
+    en_count = sum(1 for w in words if w in en_words)
+    return en_count / len(words) > 0.08
+
+def force_translate(item: dict, api_key: str) -> dict:
+    if not api_key or genai is None:
+        return item
+    prompt = f"""Traduce URGENT in romana. Raspunde STRICT JSON fara markdown.
+Titlu EN: {item.get('title','')}
+Rezumat EN: {item.get('summary','')[:200]}
+Format: {{"title":"","summary":""}}"""
+    try:
+        client = genai.Client(api_key=api_key)
+        response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
+        text = re.sub(r"^```json\s*|^```\s*|\s*```$", "", (response.text or "").strip())
+        data = json.loads(text)
+        if data.get("title"):
+            item["title"] = clean_text(data["title"])
+        if data.get("summary"):
+            item["summary"] = clean_text(data["summary"])
+        print(f"    ↺ Re-tradus: {item['title'][:55]}")
+    except Exception as e:
+        print(f"    ✗ Force translate failed: {e}")
+    return item
 
 # ============================================================
 # COLECTARE
@@ -268,6 +269,7 @@ def collect_for_category(category: str, config: dict, target: int = 3) -> list:
             raw = clean_text(getattr(entry, "summary", "") or getattr(entry, "description", ""))
             date = parsed_date(entry)
             score = freshness_score(date) * feed.get("weight", 1.0)
+            item_lang = feed.get("lang", config.get("lang", "en"))
 
             articles.append({
                 "title": title,
@@ -281,7 +283,7 @@ def collect_for_category(category: str, config: dict, target: int = 3) -> list:
                 "image": "",
                 "image_prompt": image_prompt(title, category),
                 "_score": score,
-                "_lang": feed.get("lang", config.get("lang", "en")),
+                "_lang": item_lang,
             })
 
     articles.sort(key=lambda x: x["_score"], reverse=True)
@@ -313,6 +315,7 @@ def gemini_rewrite_ro(item: dict) -> dict:
         return item
 
     is_ro = item.get("_lang") == "ro"
+
     if is_ro:
         prompt = f"""Rescrie si curata aceasta stire romaneasca pentru site-ul NEXAS.
 Pastreaza informatia reala, nu inventa nimic nou.
@@ -347,17 +350,18 @@ Format: {{"title":"","summary":"","instagram_caption":"","hashtags":[]}}"""
             if isinstance(tags, list) and tags:
                 item["hashtags"] = [str(t).strip() for t in tags if str(t).strip()]
             print(f"    ✓ ({model}): {item['title'][:55]}")
-            time.sleep(1)  # pauza intre apeluri
+            time.sleep(1)
             return item
         except Exception as e:
             print(f"    ✗ {model}: {e}")
-            time.sleep(4)  # pauza mai mare dupa eroare
+            time.sleep(4)
             continue
 
+    print(f"    ✗ Gemini esuat: {item.get('url','')[:60]}")
     return item
 
 # ============================================================
-# MERGE
+# MERGE + ARHIVA
 # ============================================================
 def load_old_items() -> list:
     if not OUT_JSON.exists():
@@ -410,16 +414,16 @@ def main():
             continue
 
         rewrote = []
+        api_key = os.getenv("GEMINI_API_KEY")
         for item in items:
             item.pop("_score", None)
             lang = item.pop("_lang", "en")
             item["_lang"] = lang
             item = gemini_rewrite_ro(item)
             item.pop("_lang", None)
-            # Verifica daca a ramas in engleza
-            api_key = os.getenv("GEMINI_API_KEY")
+            # Verifica daca a ramas in engleza si reincearca
             if is_english(item.get("title", "")) and api_key:
-                print(f"    ⚠ Inca in engleza, retraducere...")
+                print(f"   ⚠ Inca in engleza — retraducere...")
                 time.sleep(2)
                 item = force_translate(item, api_key)
             rewrote.append(item)
