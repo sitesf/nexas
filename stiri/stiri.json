@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-13T19:04:49.033915+00:00",
+  "updated_at": "2026-05-14T04:21:08.996384+00:00",
   "run_log": {
     "AI & Tech": 3,
     "Sport": 3,
@@ -13,37 +13,21 @@
   },
   "items": [
     {
-      "title": "Building a safe, effective sandbox to enable Codex on Windows",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/building-codex-windows-sandbox",
-      "date": "2026-05-15T00:00:00+00:00",
-      "category": "AI & Tech",
-      "summary": "Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restrictions.",
-      "instagram_caption": "Building a safe, effective sandbox to enable Codex on Windows\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tech",
-        "#Tehnologie",
-        "#InteligentaArtificiala"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Building a safe, effective sandbox to enable Codex on Windows. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "PCOS Is Now PMOS: Doctors Say Name Change Will Improve Diagnosis, Care",
+      "title": "PCOS devine PMOS: O schimbare de nume care va îmbunătăți diagnosticul și îngrijirea",
       "source": "Healthline",
       "url": "https://www.healthline.com/health-news/pcos-renamed-pmos-improve-diagnosis-care-multisystem-disease",
-      "date": "2026-05-13T19:04:17.553482+00:00",
+      "date": "2026-05-14T04:20:30.320657+00:00",
       "category": "Sanatate",
-      "summary": "After years of debate, global experts announced that PCOS will now be called PMOS to better reflect the multisystem effects it has on the body. Image Credit: ruizluquepaz/GettyImages Global experts have officially announced a change in name for polycystic ovary syndrome (PCOS). The condition will now be known as polyendocrine metabolic ovarian syndrome (PMOS). This name change was made to reflect the multisystem effe",
-      "instagram_caption": "PCOS Is Now PMOS: Doctors Say Name Change Will Improve Diagnosis, Care\n\nCiteste pe nexas.ro/stiri/",
+      "summary": "După ani de dezbateri, experții la nivel mondial au anunțat o schimbare semnificativă în denumirea sindromului ovarelor polichistice (PCOS). Acum, afecțiunea va fi cunoscută sub numele de sindrom ovarelor polimetabolice endocrine (PMOS). Această modificare reflectă mai bine efectele multisistemice pe care le are asupra corpului, depășind simpla denumire legată de ovare și evidențiind natura sa complexă, metabolică și endocrină. Scopul este de a îmbunătăți diagnosticul și îngrijirea pacienților.",
+      "instagram_caption": "O știre majoră în sănătate! 📢 Sindromul Ovarelor Polichistice (PCOS) își schimbă numele oficial în Sindromul Ovarelor Polimetabolice Endocrine (PMOS). 🧬 Această decizie, luată de experți globali, reflectă mai bine impactul complex, multisistemic, al afecțiunii asupra corpului, nu doar la nivel ovarian. Scopul? Un diagnostic mai bun și îngrijire îmbunătățită pentru milioane de femei! ✨ Rămâi informat(ă) pe NEXAS.ro pentru detalii! #NEXAS #Sanatate #PCOS #PMOS #SchimbareDeNume #Femei",
       "hashtags": [
         "#NEXAS",
         "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
+        "#PCOS",
+        "#PMOS",
+        "#SindromOvarePolichistice",
+        "#SanatateaFemeii",
+        "#Endocrinologie"
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Sanatate news: PCOS Is Now PMOS: Doctors Say Name Change Will Improve Diagnosis, Care. Professional photorealistic style. No text, no logos, no watermarks."
@@ -52,7 +36,7 @@
       "title": "Rețete medicinale tradiționale folosite de sute de ani pentru un metabolism rapid. Sunt bune și pentru digestie",
       "source": "CSID",
       "url": "https://www.csid.ro/sanatate/medicina-alternativa/retete-medicinale-traditionale-folosite-de-sute-de-ani-pentru-un-metabolism-rapid-sunt-bune-si-pentru-digestie-21186712/",
-      "date": "2026-05-13T19:04:13.687005+00:00",
+      "date": "2026-05-14T04:20:27.737547+00:00",
       "category": "Sanatate",
       "summary": "În fitoterapia tradițională, anumite plante și combinații naturale sunt utilizate pentru a sprijini procesele digestive și echilibrul general al organismului, fiind adesea asociate cu susținerea unui metabolism mai activ. Articolul Rețete medicinale tradiționale folosite de sute de ani pentru un metabolism rapid. Sunt bune și pentru digestie apare prima dată în CSID: Ce se întâmplă Doctore? .",
       "instagram_caption": "Rețete medicinale tradiționale folosite de sute de ani pentru un metabolism rapid. Sunt bune și pentru digestie\n\nCiteste pe nexas.ro/stiri/",
@@ -65,6 +49,391 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Sanatate news: Rețete medicinale tradiționale folosite de sute de ani pentru un metabolism rapid. Sunt bune și pent. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Jackpot! Câți bani a câștigat Universitatea Craiova, după ce a pus mâna pe Cupa României",
+      "source": "DigiSport",
+      "url": "https://www.digisport.ro/fotbal/cupa-romaniei/jackpot-cati-bani-a-castigat-universitatea-craiova-dupa-ce-a-pus-mana-pe-cupa-romaniei-4253827",
+      "date": "2026-05-14T04:17:19+00:00",
+      "category": "Sport",
+      "summary": "Victoria Universității Craiova în finala Cupei României nu este doar o performanță sportivă remarcabilă, ci și un triumf cu o amplă rezonanță financiară. Echipa olteană a pus mâna pe trofeul râvnit, o realizare care, pe lângă prestigiul adus clubului și suporterilor, se traduce și printr-o recompensă financiară considerabilă. Această infuzie de capital reprezintă un impuls important pentru dezvoltarea viitoare a echipei, consolidându-i poziția în fotbalul românesc și oferind resurse esențiale pentru investiții.",
+      "instagram_caption": "JACKPOT pentru Universitatea Craiova! 🏆🔵⚪️ Oltenii nu doar că au pus mâna pe mult râvnitul trofeu al Cupei României, dar și pe o sumă considerabilă! 💰 O victorie cu dublă însemnătate: prestigiu și un impuls financiar major pentru viitorul clubului. Felicitări, Leii din Bănie! 🎉 #UniversitateaCraiova #CupaRomaniei #FotbalRomanesc #Jackpot #Stiinta #Craiova",
+      "hashtags": [
+        "#UniversitateaCraiova",
+        "#CupaRomaniei",
+        "#FotbalRomanesc",
+        "#Jackpot",
+        "#Stiinta",
+        "#Craiova"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Jackpot! Câți bani a câștigat Universitatea Craiova, după ce a pus mâna pe Cupa României. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Mai mulți jucători de la U Craiova, urmăriți de oameni din La Liga la finala Cupei! Au fost propuși de Gică Craioveanu: „Au văzut ceva, acum trebuie să urce prețul”",
+      "source": "Fanatik",
+      "url": "https://www.fanatik.ro/mai-multi-jucatori-de-la-u-craiova-urmariti-de-oameni-din-la-liga-la-finala-cupei-au-fost-propusi-de-gica-craioveanu-au-vazut-ceva-acum-trebuie-sa-urce-pretul-21470066",
+      "date": "2026-05-14T04:15:10+00:00",
+      "category": "Sport",
+      "summary": "Gică Craioveanu, exigent după ce Universitatea Craiova a câștigat Cupa României: „Vreau mai mult”. Ce jucători a propus în Spania: reprezentanții clubului au fost la finala de la Sibiu",
+      "instagram_caption": "Mai mulți jucători de la U Craiova, urmăriți de oameni din La Liga la finala Cupei! Au fost propuși de Gică Craioveanu: „Au văzut ceva, acum trebuie să urce prețul”\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sport",
+        "#Fotbal",
+        "#Romania",
+        "#Campionat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Mai mulți jucători de la U Craiova, urmăriți de oameni din La Liga la finala Cupei! Au fost propuși . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "FOTO Chat Incognito cu AI pe WhatsApp. “O modalitate complet privată de a interacționa cu AI.”",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/romania-conectata/foto-chat-incognito-cu-ai-pe-whatsapp-o-modalitate-complet-privata-de-a-interactiona-cu-ai-22443453?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-05-14T04:15:00+00:00",
+      "category": "Business",
+      "summary": "Meta Platforms lansează Chat Incognito cu Meta AI pe WhatsApp și aplicația Meta AI, oferind utilizatorilor posibilitatea de a purta conversații criptate cu inteligența artificială, pe care susține că nu le poate accesa nimeni altcineva.",
+      "instagram_caption": "FOTO Chat Incognito cu AI pe WhatsApp. “O modalitate complet privată de a interacționa cu AI.”\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: FOTO Chat Incognito cu AI pe WhatsApp. “O modalitate complet privată de a interacționa cu AI.”. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "FOTO Chat Incognito cu AI pe WhatsApp. “O modalitate complet privată de a interacționa cu AI.”",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/romania-conectata/foto-chat-incognito-cu-ai-pe-whatsapp-o-modalitate-complet-privata-de-a-interactiona-cu-ai-22443453?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-05-14T04:15:00+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Meta Platforms lansează Chat Incognito cu Meta AI pe WhatsApp și aplicația Meta AI, oferind utilizatorilor posibilitatea de a purta conversații criptate cu inteligența artificială, pe care susține că nu le poate accesa nimeni altcineva.",
+      "instagram_caption": "FOTO Chat Incognito cu AI pe WhatsApp. “O modalitate complet privată de a interacționa cu AI.”\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: FOTO Chat Incognito cu AI pe WhatsApp. “O modalitate complet privată de a interacționa cu AI.”. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ceasul floral din Timișoara intră în reabilitare completă după mai bine de 50 de ani / Construit în anii ’70, ceasul nu a fost nereabilitat niciodată capital",
+      "source": "G4Media",
+      "url": "https://www.g4media.ro/ceasul-floral-din-timisoara-intra-in-reabilitare-completa-dupa-mai-bine-de-50-de-ani-construit-in-anii-70-ceasul-nu-a-fost-nereabilitat-niciodata-capital.html",
+      "date": "2026-05-14T04:12:22+00:00",
+      "category": "Romania",
+      "summary": "Proiectul prevede modernizarea clădirii, refacerea cadranului vegetal și reamenajarea întregii zone din jur, anunță Agenția de presă Rador, care citează Radio Timișoara. Primăria Timișoara începe procesul de reabilitare completă a ceasului floral, unul dintre simbolurile orașului, construit în anii ’70 și nereabilitat niciodată capital până acum. Municipalitatea a semnat contractul pentru realizarea documentației teh",
+      "instagram_caption": "Ceasul floral din Timișoara intră în reabilitare completă după mai bine de 50 de ani / Construit în anii ’70, ceasul nu a fost nereabilitat niciodată capital\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Ceasul floral din Timișoara intră în reabilitare completă după mai bine de 50 de ani / Construit în . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "BNR trebuie să aleagă: salvează economia sau oprește inflația. Ca în politică, va alege răul cel mai mic",
+      "source": "HotNews",
+      "url": "https://hotnews.ro/bnr-trebuie-sa-aleaga-salveaza-economia-sau-opreste-inflatia-ca-in-politica-va-alege-raul-cel-mai-mic-2244716",
+      "date": "2026-05-14T04:10:52+00:00",
+      "category": "Romania",
+      "summary": "Astăzi, cei 9 membri ai boardului BNR se întâlnesc înaintea prânzului cu experții Comitetului de Politică Monetară (CPM) și cu alți câțiva directori din Banca Națională, pentru a discuta ce decizie să ia vineri: vor crește dobânda, o vor scădea sau o vor lăsa la actualul nivel, de 6,5%? De decizia lor depinde rata ta …",
+      "instagram_caption": "BNR trebuie să aleagă: salvează economia sau oprește inflația. Ca în politică, va alege răul cel mai mic\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: BNR trebuie să aleagă: salvează economia sau oprește inflația. Ca în politică, va alege răul cel mai. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Summitul Trump-Xi provoacă panică în Europa. Bruxelles-ul se teme că va deveni „victimă colaterală”",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/externe/summitul-trump-xi-provoaca-panica-in-europa-bruxelles-ul-se-teme-ca-va-deveni-victima-colaterala-3768895",
+      "date": "2026-05-14T04:00:52+00:00",
+      "category": "Romania",
+      "summary": "Europa privește cu îngrijorare summitul dintre președintele american Donald Trump și liderul chinez Xi Jinping, desfășurat la Beijing, de teama unui acord bilateral care ar putea afecta grav economia și industria Uniunii Europene. Oficialii europeni se tem că eventuale înțelegeri între Washington și Beijing privind comerțul, tehnologia, energia sau accesul la pământurile rare chinezești ar putea lăsa UE într-o poziți",
+      "instagram_caption": "Summitul Trump-Xi provoacă panică în Europa. Bruxelles-ul se teme că va deveni „victimă colaterală”\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Summitul Trump-Xi provoacă panică în Europa. Bruxelles-ul se teme că va deveni „victimă colaterală”. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Students in Caracas to demand release of political prisoners",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/5/14/aje-onl-nf_clip-students-in-caracas-political-prisoners-130526?traffic_source=rss",
+      "date": "2026-05-14T03:41:23+00:00",
+      "category": "International",
+      "summary": "Students from Venezuela’s leading universities blocked the main highway in Caracas to demand the immediate release of po",
+      "instagram_caption": "Students in Caracas to demand release of political prisoners\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Students in Caracas to demand release of political prisoners. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Japan’s 30-Year Bond Sale Draws Firmer Demand on Higher Yields",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-14/japan-s-30-year-bond-sale-demand-stronger-than-12-month-average",
+      "date": "2026-05-14T03:41:09+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Japan’s 30-year government bond auction Thursday saw slightly stronger demand than the 12-month average as higher yields underpinned buying.",
+      "instagram_caption": "Japan’s 30-Year Bond Sale Draws Firmer Demand on Higher Yields\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Japan’s 30-Year Bond Sale Draws Firmer Demand on Higher Yields. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Court overturns Alex Murdaugh's murder convictions and orders new trial",
+      "source": "BBC World",
+      "url": "https://www.bbc.com/news/articles/cedpvnq7wn1o?at_medium=RSS&at_campaign=rss",
+      "date": "2026-05-14T00:38:56+00:00",
+      "category": "International",
+      "summary": "The court has ordered a new trial over the June 2021 killings of Paul and Maggie Murdaugh.",
+      "instagram_caption": "Court overturns Alex Murdaugh's murder convictions and orders new trial\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Court overturns Alex Murdaugh's murder convictions and orders new trial. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Peste 1.700 de pasageri, izolați pe un vas la Bordeaux, într-o presupusă epidemie de gastroenterită. Un bărbat a murit - Stirile ProTV",
+      "source": "Google Intl",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPM2JPdWF4a2dsdV9oSlNNMzhkaGFDQnNVRHFMRDVVT1dfclg5S1hRamdPZTh4VEdwd1NIZmdoeXRyaDVnWEd5aG5PLVU0VTRPUE9Bbmloc0xCQkhTWTBpNGFCU29yWkJaX3FfNmVlX0Y2NzFTeWlrYXlXaEVHUFhGTW5nQVB6QXV6a1k1VzcxNUpzN0ozM3Q0b1lRSTY2elMtSjhpNTJibHZkMXlaMWFHVnpEcjh0bkEwOTEtWTJKX1VQSzhoZ2liNU9maXNjc3JBaU1hRmx5aDRRM0NtRnJuX2VvZ1NVNlR6dEFhZDV1WEJiNVNXQjNr?oc=5",
+      "date": "2026-05-13T22:56:27+00:00",
+      "category": "International",
+      "summary": "Peste 1.700 de pasageri, izolați pe un vas la Bordeaux, într-o presupusă epidemie de gastroenterită. Un bărbat a murit Stirile ProTV 1.700 de oameni, izolați pe un vas de croazieră care a sosit la Bordeaux, în urma unui presupus focar de norovirus. Un pasager a murit HotNews.ro 1.700 de persoane izolate pe un vas de croazieră în Bordeaux, după ce s-a înregistrat un deces. Posibil... Digi24 Franța a confirmat un focar",
+      "instagram_caption": "Peste 1.700 de pasageri, izolați pe un vas la Bordeaux, într-o presupusă epidemie de gastroenterită. Un bărbat a murit - Stirile ProTV\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Peste 1.700 de pasageri, izolați pe un vas la Bordeaux, într-o presupusă epidemie de gastroenterită.. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cristi Chivu, imaginea serii: le-a îmbrățișat, cu foc, pe soție și pe fiicele sale, direct pe teren",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-extern/cristi-chivu-imaginea-serii-imbratisare-sotie-adelina-chivu-fiice-20439775",
+      "date": "2026-05-13T22:43:07+00:00",
+      "category": "Sport",
+      "summary": "Imediat după ce a câștigat și Cupa Italiei, Cristi Chivu le-a îmbrățișat, chiar pe teren, pe soția Adelina și fiicele lor. Inter s-a impus cu 2-0 în finala Cupei Italiei, în fața lui Lazio, chiar la Roma, la 10 zile după ce a devenit, matematic, campioană. După meci, Chivu a oferit imaginea serii. Înaintea să […] The post Cristi Chivu, imaginea serii: le-a îmbrățișat, cu foc, pe soție și pe fiicele sale, direct pe te",
+      "instagram_caption": "Cristi Chivu, imaginea serii: le-a îmbrățișat, cu foc, pe soție și pe fiicele sale, direct pe teren\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sport",
+        "#Fotbal",
+        "#Romania",
+        "#Campionat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Cristi Chivu, imaginea serii: le-a îmbrățișat, cu foc, pe soție și pe fiicele sale, direct pe teren. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Microsoft’s Edge Copilot update uses AI to pull information from across your tabs",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/930188/microsoft-edge-copilot-ai-tabs",
+      "date": "2026-05-13T22:04:28+00:00",
+      "category": "AI & Tech",
+      "summary": "Microsoft Edge is adding a new feature that will allow its Copilot AI chatbot to gather information from all of your open tabs. When you start a conversation with Copilot, you can ask the chatbot questions about what's in your tabs, compare the products you're looking at, summarize your open articles, and more. In its […]",
+      "instagram_caption": "Microsoft’s Edge Copilot update uses AI to pull information from across your tabs\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tech",
+        "#Tehnologie",
+        "#InteligentaArtificiala"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Microsoft’s Edge Copilot update uses AI to pull information from across your tabs. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Notion transformă spațiul de lucru într-un hub central pentru agenți AI",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/",
+      "date": "2026-05-13T21:45:09+00:00",
+      "category": "AI & Tech",
+      "summary": "Noua platformă pentru dezvoltatori de la Notion permite echipelor să conecteze agenți AI, surse externe de date și cod personalizat direct în spațiul lor de lucru, pe măsură ce compania avansează tot mai mult în segmentul software-ului de productivitate agentică.",
+      "instagram_caption": "Notion își transformă spațiul de lucru într-un adevărat hub pentru agenți AI! 🚀 Noua platformă pentru dezvoltatori permite echipelor să integreze agenți AI, surse de date externe și cod personalizat direct în ecosistemul Notion. O inovație care redefinește productivitatea și munca inteligentă. Ești pregătit să vezi cum inteligența artificială îți eficientizează munca? 🧠💻",
+      "hashtags": [
+        "#NotionAI",
+        "#AgentiAI",
+        "#Productivitate",
+        "#Tehnologie",
+        "#Inovatie",
+        "#SoftwareAgentic",
+        "#AIinBusiness",
+        "#WorkspaceAI"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Notion just turned its workspace into a hub for AI agents. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Demi Moore, strălucitoare pe covorul roșu al Festivalului de la Cannes 2026 - Agerpres",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMHlpZXRRaEstUXhHU2dBMnJIYXpkSGZhRlp4VEFiUWNWQ2lCa1FqNGVJMVdwelBrckRoSGxBVGpIVlpfQ3hidUJTZ1h4alRBWk9ZR0xjU1JfbWVuZTRJcWNkWHFSZXVBSzAtT3lOR1VlcF9lckh2bW9EVm55bUp4bGdyLU5vWFNpaFdYa01xNzNoSDU1b0hGUk1GTUFZcXlsRE4zUkhjbWFNdC02eFhUeHZ0eXc3RGtEYnF6MXZn?oc=5",
+      "date": "2026-05-13T21:30:33+00:00",
+      "category": "Entertainment",
+      "summary": "Demi Moore, strălucitoare pe covorul roșu al Festivalului de la Cannes 2026 Agerpres Ediția 79 a Festivalului de Film de la Cannes, deschisă de Jane Fonda și Gong Li: regizorul Peter Jackson... Digi24 România intră în cursa pentru marele trofeu la Cannes, cu filmul „Fjord” al lui Mungiu și cu alte trei... Adevarul Gândul vă prezintă imagini exclusive cu vedetele de la Cannes, realizate de cineastul Cristian Radu… Gân",
+      "instagram_caption": "Demi Moore, strălucitoare pe covorul roșu al Festivalului de la Cannes 2026 - Agerpres\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Entertainment",
+        "#Vedete",
+        "#Divertisment",
+        "#Lifestyle"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Demi Moore, strălucitoare pe covorul roșu al Festivalului de la Cannes 2026 - Agerpres. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Austeritatea se vede în creşterea economică: economia a scăzut în primul trimestru cu 1,7% an/an. Consumul scade, industria scade, inflaţia a sărit de 10%, salariile cresc pe hârtie, dar veniturile reale sunt mai mici decât anul trecut. Uniunea Europeană creşte, chiar dacă timid, doar România scade",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/eveniment/austeritatea-vede-cresterea-economica-economia-scazut-primul-23151080",
+      "date": "2026-05-13T21:08:00+00:00",
+      "category": "Business",
+      "summary": "Economia României a scăzut în primul trimestru al anului cu 1,7% pe serie brută faţă de perioada similară din 2025, şi cu 1,5% pe seria ajustată, arată datele publicate miercuri de INS.",
+      "instagram_caption": "Austeritatea se vede în creşterea economică: economia a scăzut în primul trimestru cu 1,7% an/an. Consumul scade, industria scade, inflaţia a sărit de 10%, salariile cresc pe hârtie, dar veniturile reale sunt mai mici decât anul trecut. Uniunea Europeană creşte, chiar dacă timid, doar România scade\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Austeritatea se vede în creşterea economică: economia a scăzut în primul trimestru cu 1,7% an/an. Co. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Austeritatea se vede în creşterea economică: economia a scăzut în primul trimestru cu 1,7% an/an. Consumul scade, industria scade, inflaţia a sărit de 10%, salariile cresc pe hârtie, dar veniturile reale sunt mai mici decât anul trecut. Uniunea Europeană creşte, chiar dacă timid, doar România scade",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/eveniment/austeritatea-vede-cresterea-economica-economia-scazut-primul-23151080",
+      "date": "2026-05-13T21:08:00+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Economia României a scăzut în primul trimestru al anului cu 1,7% pe serie brută faţă de perioada similară din 2025, şi cu 1,5% pe seria ajustată, arată datele publicate miercuri de INS.",
+      "instagram_caption": "Austeritatea se vede în creşterea economică: economia a scăzut în primul trimestru cu 1,7% an/an. Consumul scade, industria scade, inflaţia a sărit de 10%, salariile cresc pe hârtie, dar veniturile reale sunt mai mici decât anul trecut. Uniunea Europeană creşte, chiar dacă timid, doar România scade\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Austeritatea se vede în creşterea economică: economia a scăzut în primul trimestru cu 1,7% an/an. Co. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Remember 'Choose Your Own Adventure' books? Now there's a gorgeous graphic novel version heading to 'Space and Beyond' (exclusive)",
+      "source": "Space.com",
+      "url": "https://www.space.com/entertainment/space-books/remember-choose-your-own-adventure-books-now-theres-a-gorgeous-graphic-novel-version-heading-to-space-and-beyond-exclusive",
+      "date": "2026-05-13T21:00:00+00:00",
+      "category": "Stiinta",
+      "summary": "The 1980's kids classic 'Space and Beyond' is back as a stunning interactive comic.",
+      "instagram_caption": "Remember 'Choose Your Own Adventure' books? Now there's a gorgeous graphic novel version heading to 'Space and Beyond' (exclusive)\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Remember 'Choose Your Own Adventure' books? Now there's a gorgeous graphic novel version heading to . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Moartea lui Matthew Perry: Un fost producător de la Hollywood a fost condamnat la doi ani de închisoare - Digi24",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOb2lOWVJQTDJfajdUTmxVOWhzNmt2TkFUeHVHUGxkMmdDazR5Q3RjYTYxT0dGQzdiZVRzQkRQZmxMaUNydXF3OVpHVFFVWGljWHpwZEdxUTY4N0NPa1NXd2VuaUtUNUhxbGozRXRPLTJxdnFaT0FVMTkzZ1djUi11alVyN011YS1HNkpva2xUcTRvVDMxN1h0OGFQTHRadDQ2X21fdmR5anYtbDFpdUdLaXp4NHlJQnRBRmhfd0tPQU80V05VNXpwTE0xeUJzakd5XzR5NnBnRmtTampsTmYzRzZ0NEhvbDlMTlNz0gH2AUFVX3lxTE4zcFVRczhlQVNkcW5SM25oQ2F2ZDZXb2FnQXBRbndtMjAzaEVIS2dISkhZNVdFT3liNng4U1phazRHQmFpdkNLZGJnVk9INFFURFlwSkdSakpqQjdtVy1MRklFYjZSSUlDa2VJU3BsSm9rXzVtZXc4MHhLTmJlcjA0c2k3Q1FBZjA1VGhCVThPNmVVdGo3aHg4cWYwcUVqWlA4d3htLVlrYkZxTl9XcHh3UnAtMml2MHBfeGJWV3B3ODNWVlhlTjZEUXhXRUlQRlc5THI5eGJ5QTdUNWZuSlY3MElUdXE2MjNmMXVFUFhDUjJyMU1DZw?oc=5",
+      "date": "2026-05-13T20:34:08+00:00",
+      "category": "Entertainment",
+      "summary": "Moartea lui Matthew Perry: Un fost producător de la Hollywood a fost condamnat la doi ani de închisoare Digi24 Consilierul care i-a livrat droguri actorului Matthew Perry, condamnat la 2 ani de închisoare Mediafax",
+      "instagram_caption": "Moartea lui Matthew Perry: Un fost producător de la Hollywood a fost condamnat la doi ani de închisoare - Digi24\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Entertainment",
+        "#Vedete",
+        "#Divertisment",
+        "#Lifestyle"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Moartea lui Matthew Perry: Un fost producător de la Hollywood a fost condamnat la doi ani de închiso. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "NASA-Supported Space Tech Advances Earthly Construction",
+      "source": "NASA News",
+      "url": "https://www.nasa.gov/technology/tech-transfer-spinoffs/nasa-supported-space-tech-advances-earthly-construction/",
+      "date": "2026-05-13T19:47:08+00:00",
+      "category": "Stiinta",
+      "summary": "An innovative 3D printing process that advanced NASA’s approach to outfitting a lunar habitat is making buildings on Earth beautiful, efficient, and strong. Instead of building structures layer by layer, Branch Technology Inc. of Chattanooga, Tennessee, has developed a process the company calls Freeform 3D Printing, which creates shapes with lightweight lattice structures that can be filled or covered. The company us",
+      "instagram_caption": "NASA-Supported Space Tech Advances Earthly Construction\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: NASA-Supported Space Tech Advances Earthly Construction. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Parc nou în București. Decizie a Consiliului General",
+      "source": "Economica",
+      "url": "https://www.economica.net/parc-nou-in-bucuresti-decizie-a-consiliului-general_941346.html",
+      "date": "2026-05-13T19:38:52+00:00",
+      "category": "Business",
+      "summary": "Consiliul General al Municipiului Bucureşti (CGMB) a aprobat, în şedinţa de miercuri, mai multe proiecte importante pentru Sectorul 1 care vizează un parc nou în cartierul Aviaţiei, extinderea locurilor în grădiniţe, noi spaţii verzi în zone centrale şi investiţii în infrastructura medicală.",
+      "instagram_caption": "Parc nou în București. Decizie a Consiliului General\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Parc nou în București. Decizie a Consiliului General. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Lazio - Inter 0-0. ACUM, în finala Cupei Italiei. Cristi Chivu poate face eventul",
@@ -137,6 +506,24 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Sport news: Gigi Becali stă în genunchi și plânge pentru bunica lui: „Aș muri doar s-o mai văd pe ea o dată!”. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Neanderthals treated a dental cavity by drilling into the tooth",
+      "source": "New Scientist",
+      "url": "https://www.newscientist.com/article/2526440-neanderthals-treated-a-dental-cavity-by-drilling-into-the-tooth/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home",
+      "date": "2026-05-13T19:00:51+00:00",
+      "category": "Stiinta",
+      "summary": "A Neanderthal tooth shows clear signs of human intervention to treat bacterial decay, showing that the earliest dentistry began at least 59,000 years ago",
+      "instagram_caption": "Neanderthals treated a dental cavity by drilling into the tooth\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Neanderthals treated a dental cavity by drilling into the tooth. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Economia României a ajuns la capătul puterilor: Nu mai suportă alte majorări de taxe. Ultimele cifre arată că economia reală e pe perfuzii",
@@ -481,25 +868,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Business news: Cum arată companiile de marketing într-o lume din ce în ce mai digitală, cucerită de AI? Urmăriţi ZF. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cum arată companiile de marketing într-o lume din ce în ce mai digitală, cucerită de AI? Urmăriţi ZF Live joi, 14 mai, ora 12.30, o discuţie cu Ioana Filip, fondator şi creative officer, International Waters",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/zf-live/arata-companiile-marketing-intr-lume-digitala-cucerita-urmariti-zf-23151037",
-      "date": "2026-05-13T18:02:26+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Cum arată companiile de marketing într-o lume din ce în ce mai digitală, cucerită de AI? Urmăriţi ZF Live joi, 14 mai, ora 12.30, o discuţie cu Ioana Filip, fondator şi creative officer, International Waters",
-      "instagram_caption": "Cum arată companiile de marketing într-o lume din ce în ce mai digitală, cucerită de AI? Urmăriţi ZF Live joi, 14 mai, ora 12.30, o discuţie cu Ioana Filip, fondator şi creative officer, International Waters\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Cum arată companiile de marketing într-o lume din ce în ce mai digitală, cucerită de AI? Urmăriţi ZF. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Lazio – Inter: Finala Cupei Italiei live. Chivu pregătește surprize în primul 11. Echipele de start",
@@ -896,6 +1264,24 @@
       "image_prompt": "Premium editorial photograph for AI & Tech news: X launches a History tab for bookmarks, likes, videos, and articles. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
+      "title": "Eurovision 2026, accesibil și în limba semnelor române pe TVR+: o premieră pentru televiziunile din România - TVR 1",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPLUE5RU5sNEVUWDQ3dG9rQnc4alJNQjRVZm53RjJUTkg4UjhWa0Q2OF9BX1lFbzFmbkE4NWZXVm1tRHdlQVMtdmR5WDVwMWRUaTJPYmdJLXphNHhUMjg0R3ZXcEMtdm4zYXh3Zi1ZMk94RFlENXZ2eTgtTDBvQ1RYQ0tWN0xKeGxQVFYyNmM0bmlrbmZFT1J4UE9wN3NQU0tBZDdjekhfU2dqUFVDTm5ra2lnNTlKVXlZTHB4M0lnMUZjRFN4bUhyNVNnTHR2Zw?oc=5",
+      "date": "2026-05-13T17:12:00+00:00",
+      "category": "Entertainment",
+      "summary": "Eurovision 2026, accesibil și în limba semnelor române pe TVR+: o premieră pentru televiziunile din România TVR 1",
+      "instagram_caption": "Eurovision 2026, accesibil și în limba semnelor române pe TVR+: o premieră pentru televiziunile din România - TVR 1\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Entertainment",
+        "#Vedete",
+        "#Divertisment",
+        "#Lifestyle"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Eurovision 2026, accesibil și în limba semnelor române pe TVR+: o premieră pentru televiziunile din . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
       "title": "ANAF schimbă jocul: 4 reguli noi pentru dividende și împrumuturi la firme",
       "source": "Ziarul Financiar",
       "url": "https://www.zf.ro/zf-24/anaf-anunta-patru-reguli-noi-pentru-societati-la-distribuirea-de-23150969",
@@ -1194,6 +1580,27 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Entertainment news: Răzvan Fodor a început numărătoarea inversă: „Sunt un fătălău” - Click!. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Construirea unui sandbox sigur și eficient pentru Codex pe Windows",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/building-codex-windows-sandbox",
+      "date": "2026-05-13T11:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "Descoperă cum OpenAI a construit un sandbox securizat pentru Codex pe Windows, permițând agenților de codare siguri și eficienți să funcționeze cu acces controlat la fișiere și restricții de rețea bine definite.",
+      "instagram_caption": "OpenAI a creat un sandbox sigur și eficient pentru Codex pe Windows! 🔒 Descoperă cum această inovație permite agenților de codare să funcționeze în siguranță, având acces controlat la fișiere și restricții stricte de rețea. 💻 Este un pas important pentru dezvoltarea AI în mediul Windows, asigurând eficiență și securitate maximă! ✨ Află toate detaliile pe blogul OpenAI.",
+      "hashtags": [
+        "NEXAS",
+        "OpenAI",
+        "Codex",
+        "Windows",
+        "AI",
+        "Tech",
+        "SecuritateIT",
+        "Programare"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Building a safe, effective sandbox to enable Codex on Windows. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "O figurină realizată de Constantin Brâncuși are un preț de pornire de 3.000 de Euro în Licitația de Artă Contemporană de la Artmark - HotNews.ro",
