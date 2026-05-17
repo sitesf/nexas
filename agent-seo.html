@@ -309,6 +309,23 @@ h1 span{color:var(--blue);}
 .neo-footer a{color:var(--muted2);text-decoration:none;}
 .neo-footer a:hover{color:var(--text);}
 
+  .neo-footer .legal-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:12px;
+}
+
+.neo-footer .legal-links a{
+  color:var(--muted2);
+  text-decoration:none;
+}
+
+.neo-footer .legal-links a:hover{
+  color:var(--text);
+}
+
 @media(max-width:640px){
   .url-row{flex-direction:column;}
   .extra-row{grid-template-columns:1fr;}
@@ -414,10 +431,17 @@ h1 span{color:var(--blue);}
 
   </div>
 
-  <div class="neo-footer">
-    <a href="index.html">Nexas.Ro</a> &nbsp;|&nbsp;
-    Agent NEO — Audit SEO &nbsp;|&nbsp;
+<div class="neo-footer">
+  <a href="/index.html">Nexas.Ro</a> &nbsp;|&nbsp;
+  Agent NEO - Audit SEO
+
+  <div class="legal-links">
+    <a href="/privacy.html">Confidentialitate</a>
+    <a href="/cookies.html">Cookies</a>
+    <a href="/termeni.html">Termeni si conditii</a>
+    <a href="/contact.html">Contact</a>
   </div>
+</div>
 
 </div>
 
