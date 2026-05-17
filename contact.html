@@ -191,29 +191,30 @@ nav{
 .robot-wrap{
   position:relative;
   width:100%;
-  max-width:360px;
-  border-radius:28px;
+  height:260px;
+  border-radius:20px;
   overflow:hidden;
   background:linear-gradient(145deg,#c04080,#8B2FC9,#6C63FF);
   box-shadow:
     0 0 60px rgba(108,99,255,.25),
     0 0 120px rgba(192,64,128,.15),
     inset 0 0 30px rgba(0,0,0,.2);
-  align-self:flex-end;
+  flex-shrink:0;
 }
 .robot-wrap::after{
   content:"";
   position:absolute;inset:0;
   background:
-    linear-gradient(to bottom,transparent 70%,rgba(10,10,15,.9) 100%),
-    linear-gradient(to right,rgba(10,10,15,.15),transparent 30%,transparent 70%,rgba(10,10,15,.15));
+    linear-gradient(to bottom,transparent 55%,rgba(10,10,15,.85) 100%),
+    linear-gradient(to right,rgba(10,10,15,.3),transparent 25%,transparent 75%,rgba(10,10,15,.3));
   pointer-events:none;
 }
 .robot-wrap img{
   width:100%;
-  height:auto;
+  height:100%;
   display:block;
   object-fit:cover;
+  object-position:center 15%;
 }
 
 /* RIGHT COLUMN - FORM */
@@ -354,20 +355,18 @@ footer{
     padding-bottom:2rem;
   }
   .contact-left{
-    flex-direction:row;
-    flex-wrap:wrap;
+    flex-direction:column;
     gap:0;
-    align-items:flex-start;
   }
   .contact-text{
     flex:1;min-width:240px;
   }
   .robot-wrap{
-    width:clamp(140px,38vw,220px);
-    max-width:220px;
-    margin-left:auto;
-    align-self:flex-end;
-    border-radius:20px;
+    width:100%;
+    max-width:100%;
+    height:220px;
+    border-radius:16px;
+    margin:0;
   }
   .nlinks{display:none;}
   footer{flex-direction:column;gap:1rem;text-align:center;}
@@ -380,13 +379,16 @@ footer{
   .contact-left{flex-direction:column;}
   .robot-wrap{
     width:100%;
-    max-width:280px;
-    align-self:center;
-    margin:0 auto;
+    max-width:100%;
+    height:280px;
+    border-radius:16px;
     order:3;
   }
+  .robot-wrap img{
+    object-position:center 8%;
+  }
   .contact-text{order:1;}
-  .quick-btns{order:2;}
+  .quick-btns{order:2;margin-bottom:0;}
   .form-card{padding:1.5rem 1.25rem;border-radius:20px;}
   .form-head{flex-direction:column;}
   .form-head p{text-align:left;max-width:100%;}
