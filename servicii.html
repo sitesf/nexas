@@ -27,6 +27,30 @@ nav{position:sticky;top:14px;z-index:50;width:min(1120px,calc(100% - 32px));marg
 .contact{padding-bottom:80px}.contact-card{text-align:center;padding:42px 24px;border-radius:26px;background:linear-gradient(180deg,rgba(7,16,34,.88),rgba(2,5,12,.9));border:1px solid var(--line);box-shadow:0 24px 80px rgba(0,0,0,.38)}.contact-card p{color:var(--muted);margin:12px auto 24px;max-width:560px;line-height:1.6}
 @media(max-width:1100px){.services,.plans{grid-template-columns:repeat(2,1fr)}.back-block{opacity:.28}.back-block.left{left:-15vw}.back-block.right{right:-15vw}}
 @media(max-width:720px){nav{top:10px;width:calc(100% - 20px);padding:10px 12px}.nav-links{display:none}.nav-brand{font-size:13px}.hero{min-height:auto;padding:70px 18px 34px}.services,.plans,.fixed-row{grid-template-columns:1fr}.section{width:calc(100% - 28px);padding:38px 0}.service{min-height:auto}.fixed{align-items:flex-start;flex-direction:column}.plans{gap:16px}.plan{padding:23px}.price{font-size:36px}.back-block{width:42vw;height:58vh;opacity:.22}.back-block.left{left:-28vw}.back-block.right{right:-28vw}}
+
+.site-legal-footer{
+  padding:28px 16px;
+  text-align:center;
+  background:#08080d;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.legal-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.legal-links a{
+  color:rgba(255,255,255,.70);
+  text-decoration:none;
+  font-size:14px;
+}
+
+.legal-links a:hover{
+  color:#fff;
+}
 </style>
 </head>
 <body>
@@ -73,5 +97,14 @@ nav{position:sticky;top:14px;z-index:50;width:min(1120px,calc(100% - 32px));marg
   animateBackBlocks();
 })();
 </script>
+  
+  <footer class="site-legal-footer">
+  <div class="legal-links">
+    <a href="/privacy.html">Confidentialitate</a>
+    <a href="/cookies.html">Cookies</a>
+    <a href="/termeni.html">Termeni si conditii</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+</footer>
 </body>
 </html>
