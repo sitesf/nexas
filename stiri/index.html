@@ -44,6 +44,29 @@
     font-style: normal;
     font-display: swap;
   }
+  .site-legal-footer{
+  padding:28px 16px;
+  text-align:center;
+  background:#08080d;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.legal-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.legal-links a{
+  color:rgba(255,255,255,.70);
+  text-decoration:none;
+  font-size:14px;
+}
+
+.legal-links a:hover{
+  color:#fff;
+}
 </style>
 </head>
 <body>
@@ -126,5 +149,13 @@
   </footer>
 
   <script src="app.js"></script>
+  <footer class="site-legal-footer">
+  <div class="legal-links">
+    <a href="/privacy.html">Confidentialitate</a>
+    <a href="/cookies.html">Cookies</a>
+    <a href="/termeni.html">Termeni si conditii</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+</footer>
 </body>
 </html>
