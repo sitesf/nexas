@@ -824,13 +824,19 @@ function renderReport(url, mobile, desktop, report) {
 
 // ── MAIN ──────────────────────────────────────────────────────────────────────
 async function startAudit() {
+  const neoGdpr = document.getElementById("neoGdpr");
+
+  if (!neoGdpr || !neoGdpr.checked) {
+    alert("Trebuie sa accepti Politica de confidentialitate pentru a rula auditul.");
+    return;
+  }
+
   const rawUrl     = document.getElementById('urlInput').value.trim();
   const clientName = document.getElementById('clientName').value.trim();
   const clientEmail= document.getElementById('clientEmail').value.trim();
 
   const url = cleanUrl(rawUrl);
   if (!url) { showErr('Introdu un URL valid. Exemplu: https://site-ul-tau.ro'); return; }
-
   hideErr();
   document.getElementById('successBanner').classList.remove('vis');
   document.getElementById('reportSection').classList.remove('vis');
