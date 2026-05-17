@@ -7,415 +7,475 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-YTY08X40FV');
 </script>
-  
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#050912" />
+
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#0A0A0F"/>
 <title>Contact | NEXAS Web Design</title>
-<meta name="description" content="Contact NEXAS pentru site-uri de prezentare, web design, automatizari AI si solutii digitale pentru afacerea ta." />
+<meta name="description" content="Contact NEXAS pentru site-uri de prezentare, web design, automatizari AI si solutii digitale pentru afacerea ta."/>
 
 <style>
-@font-face {
-  font-family: 'Syne';
-  src: url('fonts/syne-latin-400-normal.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Syne';
-  src: url('fonts/syne-latin-700-normal.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Syne';
-  src: url('fonts/syne-latin-800-normal.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+@font-face{font-family:'Syne';src:url('fonts/syne-700.woff2') format('woff2');font-weight:700;font-display:swap;}
+@font-face{font-family:'Syne';src:url('fonts/syne-800.woff2') format('woff2');font-weight:800;font-display:swap;}
+@font-face{font-family:'DM Sans';src:url('fonts/dm-sans-400.woff2') format('woff2');font-weight:400;font-display:swap;}
+@font-face{font-family:'DM Sans';src:url('fonts/dm-sans-500.woff2') format('woff2');font-weight:500;font-display:swap;}
+@font-face{font-family:'DM Sans';src:url('fonts/dm-sans-600.woff2') format('woff2');font-weight:600;font-display:swap;}
+@font-face{font-family:'JetBrains Mono';src:url('fonts/jetbrains-mono-400.woff2') format('woff2');font-weight:400;font-display:swap;}
+
+:root{
+  --bg:#0A0A0F;
+  --nav-bg:#0d1021;
+  --accent:#6C63FF;
+  --cyan:#00D4FF;
+  --coral:#FF6B6B;
+  --text:#F0F0FF;
+  --muted:#8888AA;
+  --glass:rgba(255,255,255,0.04);
+  --gb:rgba(255,255,255,0.08);
+  --r:16px;
 }
 
-:root {
-  --bg: #03060b;
-  --room: #111923;
-  --panel: #547797;
-  --panel-dark: #233f5b;
-  --text: #ffffff;
-  --muted: rgba(255,255,255,.52);
-  --soft: rgba(255,255,255,.25);
-  --line: rgba(255,255,255,.10);
-  --blue: #8ec8ff;
-  --blue-2: #355b80;
-  --black: #000000;
-  --card: rgba(4, 9, 15, .62);
-  --sans: 'Syne', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'DM Sans',sans-serif;
+  font-size:16px;
+  line-height:1.75;
+  overflow-x:hidden;
+  min-height:100vh;
+  cursor:none;
 }
+body *{cursor:none;}
+a{color:inherit;text-decoration:none;}
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { min-height: 100%; }
-body {
-  font-family: var(--sans);
-  color: var(--text);
-  background: radial-gradient(circle at 50% 0%, #102033 0%, #03060b 42%, #000 100%);
-  overflow: hidden;
-  -webkit-font-smoothing: antialiased;
-}
+/* CURSOR */
+#cursor{position:fixed;top:0;left:0;z-index:9999;pointer-events:none;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent),0 0 24px rgba(108,99,255,.4);transform:translate(-50%,-50%);transition:width .2s,height .2s,background .2s;}
+#cursor.ex{width:32px;height:32px;background:transparent;border:1.5px solid var(--cyan);}
+#ctrail{position:fixed;top:0;left:0;z-index:9998;pointer-events:none;width:6px;height:6px;border-radius:50%;background:rgba(108,99,255,.35);transform:translate(-50%,-50%);transition:left .08s ease,top .08s ease;}
 
-#canvas {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100dvh;
-  display: block;
-  z-index: 0;
-}
+/* PARTICLES CANVAS */
+#pc{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;}
 
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
+/* GRADIENT BG OVERLAY */
+.bg-glow{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(circle at 50% 42%, rgba(142,200,255,.08), transparent 24%),
-    linear-gradient(90deg, rgba(0,0,0,.78) 0%, transparent 24%, transparent 76%, rgba(0,0,0,.82) 100%),
-    linear-gradient(180deg, rgba(0,0,0,.55) 0%, transparent 34%, rgba(0,0,0,.70) 100%);
+    radial-gradient(ellipse 80% 50% at 20% 30%,rgba(108,99,255,.12),transparent),
+    radial-gradient(ellipse 60% 40% at 80% 70%,rgba(0,212,255,.07),transparent);
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 26px 34px;
-  color: #fff;
-}
-.nav-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: .05em;
-}
-.nav-brand span {
-  color: rgba(255,255,255,.28);
-  font-weight: 400;
-}
-.nav-links {
-  display: flex;
-  gap: 34px;
-  align-items: center;
-}
-.nav-links a {
-  color: rgba(255,255,255,.58);
-  text-decoration: none;
-  font-size: 13px;
-  transition: color .2s ease;
-}
-.nav-links a:hover,
-.nav-links a.active { color: #fff; }
+/* UTILS */
+.fd{font-family:'Syne',sans-serif;}
+.fm{font-family:'JetBrains Mono',monospace;}
+.gt{background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1);}
+.rv.vis{opacity:1;transform:translateY(0);}
 
-.page-code {
-  position: fixed;
-  right: 34px;
-  bottom: 26px;
-  z-index: 20;
-  color: rgba(255,255,255,.36);
-  font: 700 11px/1 monospace;
-  letter-spacing: .18em;
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.9rem 2.5rem;
+  background:var(--nav-bg);
+  border-bottom:1px solid rgba(255,255,255,.06);
 }
-.bottom-links {
-  position: fixed;
-  left: 50%;
-  bottom: 24px;
-  transform: translateX(-50%);
-  z-index: 20;
-  display: flex;
-  gap: 34px;
+.nlogo{display:flex;align-items:center;gap:.7rem;}
+.nicon{
+  width:38px;height:38px;border-radius:50%;
+  border:1.5px solid rgba(108,99,255,.5);
+  background:rgba(108,99,255,.08);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
 }
-.bottom-links a {
-  color: rgba(255,255,255,.34);
-  text-decoration: none;
-  font-size: 12px;
-  transition: color .2s ease;
+.nicon svg{width:18px;height:18px;}
+.ntxt{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:800;letter-spacing:.08em;color:var(--text);}
+.ntxt .ac{color:var(--accent);}
+.nlinks{display:flex;gap:2.25rem;}
+.nlinks a{font-size:.9rem;color:var(--muted);transition:color .2s;font-weight:500;}
+.nlinks a:hover,.nlinks a.active{color:var(--text);}
+.ncta{
+  background:transparent;color:var(--text);
+  border:1.5px solid rgba(255,255,255,.18);
+  border-radius:2rem;padding:.55rem 1.4rem;
+  font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:600;
+  cursor:none;transition:border-color .2s,background .2s,box-shadow .2s;
+  display:flex;align-items:center;gap:.4rem;white-space:nowrap;
 }
-.bottom-links a:hover { color: #fff; }
+.ncta:hover{border-color:var(--accent);background:rgba(108,99,255,.1);box-shadow:0 0 20px rgba(108,99,255,.2);}
 
-.contact-shell {
-  position: relative;
-  z-index: 10;
-  min-height: 100dvh;
-  width: min(1180px, calc(100% - 56px));
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0, .95fr) minmax(390px, 470px);
-  gap: 52px;
-  align-items: center;
-  padding-top: 82px;
+/* PAGE WRAPPER */
+.page{
+  position:relative;z-index:10;
+  min-height:100vh;
+  max-width:1160px;
+  margin:0 auto;
+  padding:0 2rem;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:3rem;
+  align-items:center;
+  padding-top:80px;
+  padding-bottom:3rem;
 }
 
-.contact-copy {
-  align-self: end;
-  padding-bottom: 102px;
-  max-width: 560px;
-}
-.kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  padding: 7px 12px;
-  border: 1px solid rgba(142,200,255,.16);
-  border-radius: 999px;
-  background: rgba(142,200,255,.055);
-  color: rgba(196,225,255,.78);
-  font: 700 10px/1 monospace;
-  letter-spacing: .24em;
-  text-transform: uppercase;
-  margin-bottom: 18px;
-}
-.kicker i {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--blue);
-  box-shadow: 0 0 20px var(--blue);
-}
-.contact-copy h1 {
-  font-size: clamp(36px, 5vw, 76px);
-  line-height: .88;
-  letter-spacing: -.065em;
-  font-weight: 800;
-  max-width: 520px;
-}
-.contact-copy p {
-  max-width: 420px;
-  margin-top: 22px;
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 1.65;
-}
-.quick-contact {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 26px;
-}
-.quick-contact a {
-  color: #fff;
-  text-decoration: none;
-  border: 1px solid rgba(255,255,255,.11);
-  background: rgba(255,255,255,.045);
-  border-radius: 999px;
-  padding: 10px 14px;
-  font-size: 12px;
-  backdrop-filter: blur(16px);
-  transition: transform .2s ease, border-color .2s ease, background .2s ease;
-}
-.quick-contact a:hover {
-  transform: translateY(-2px);
-  border-color: rgba(142,200,255,.42);
-  background: rgba(142,200,255,.09);
+/* LEFT COLUMN */
+.contact-left{
+  display:flex;
+  flex-direction:column;
+  gap:0;
 }
 
-.form-card {
-  position: relative;
-  width: 100%;
-  padding: 30px;
-  border: 1px solid rgba(255,255,255,.11);
-  border-radius: 28px;
-  background:
-    linear-gradient(145deg, rgba(10,18,28,.82), rgba(4,8,14,.58)),
-    radial-gradient(circle at 15% 0%, rgba(142,200,255,.16), transparent 32%);
+.kicker{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:7px 14px;
+  border:1px solid rgba(108,99,255,.28);
+  border-radius:999px;
+  background:rgba(108,99,255,.07);
+  font-family:'JetBrains Mono',monospace;
+  font-size:.68rem;letter-spacing:.22em;
+  color:var(--accent);text-transform:uppercase;
+  margin-bottom:1.25rem;
+  width:fit-content;
+}
+.kicker-dot{
+  width:5px;height:5px;border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 10px var(--accent);
+  animation:blink 1.8s ease-in-out infinite;
+}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:.3;}}
+
+.contact-left h1{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(2.2rem,4.5vw,3.4rem);
+  font-weight:800;
+  line-height:1.05;
+  letter-spacing:-.03em;
+  margin-bottom:1rem;
+}
+
+.contact-left .sub{
+  color:var(--muted);
+  font-size:.95rem;
+  line-height:1.7;
+  max-width:440px;
+  margin-bottom:1.75rem;
+}
+
+/* QUICK CONTACT BUTTONS */
+.quick-btns{
+  display:flex;gap:.75rem;flex-wrap:wrap;
+  margin-bottom:2.5rem;
+}
+.qbtn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.7rem 1.3rem;
+  border:1px solid var(--gb);
+  border-radius:2rem;
+  background:var(--glass);
+  color:var(--text);
+  font-family:'DM Sans',sans-serif;
+  font-size:.85rem;font-weight:500;
+  cursor:none;
+  backdrop-filter:blur(12px);
+  transition:border-color .2s,background .2s,transform .2s;
+}
+.qbtn:hover{border-color:rgba(108,99,255,.45);background:rgba(108,99,255,.08);transform:translateY(-2px);}
+.qbtn.wa{border-color:rgba(37,211,102,.3);color:#25D366;}
+.qbtn.wa:hover{background:rgba(37,211,102,.07);border-color:rgba(37,211,102,.6);}
+
+/* ROBOT CONTAINER */
+.robot-wrap{
+  position:relative;
+  width:100%;
+  max-width:360px;
+  border-radius:28px;
+  overflow:hidden;
+  background:linear-gradient(145deg,#c04080,#8B2FC9,#6C63FF);
   box-shadow:
-    0 50px 110px rgba(0,0,0,.68),
-    inset 0 1px 0 rgba(255,255,255,.07),
-    0 0 90px rgba(57,100,145,.16);
-  backdrop-filter: blur(26px) saturate(135%);
+    0 0 60px rgba(108,99,255,.25),
+    0 0 120px rgba(192,64,128,.15),
+    inset 0 0 30px rgba(0,0,0,.2);
+  align-self:flex-end;
 }
-.form-card::before {
-  content: "";
-  position: absolute;
-  inset: 12px;
-  border-radius: 22px;
-  border: 1px solid rgba(255,255,255,.045);
-  pointer-events: none;
+.robot-wrap::after{
+  content:"";
+  position:absolute;inset:0;
+  background:
+    linear-gradient(to bottom,transparent 70%,rgba(10,10,15,.9) 100%),
+    linear-gradient(to right,rgba(10,10,15,.15),transparent 30%,transparent 70%,rgba(10,10,15,.15));
+  pointer-events:none;
 }
-.form-top {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: flex-start;
-  margin-bottom: 24px;
+.robot-wrap img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:cover;
 }
-.form-top h2 {
-  font-size: clamp(25px, 3vw, 34px);
-  line-height: 1;
-  letter-spacing: -.04em;
-}
-.form-top p {
-  color: rgba(255,255,255,.46);
-  font-size: 12px;
-  line-height: 1.5;
-  max-width: 160px;
-  text-align: right;
-}
-.fields {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.field-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-.field label {
-  display: block;
-  margin-bottom: 8px;
-  color: rgba(255,255,255,.38);
-  font: 700 10px/1 monospace;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-}
-.field input,
-.field textarea {
-  width: 100%;
-  border: 1px solid rgba(255,255,255,.10);
-  border-radius: 14px;
-  background: rgba(0,0,0,.26);
-  color: #fff;
-  outline: none;
-  padding: 14px 15px;
-  font-family: var(--sans);
-  font-size: 13px;
-  transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
-}
-.field textarea { resize: none; min-height: 116px; }
-.field input::placeholder,
-.field textarea::placeholder { color: rgba(255,255,255,.22); }
-.field input:focus,
-.field textarea:focus {
-  border-color: rgba(142,200,255,.42);
-  background: rgba(142,200,255,.055);
-  box-shadow: 0 0 0 4px rgba(142,200,255,.04);
-}
-.gdpr-row {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  margin-top: 2px;
-}
-.gdpr-row input {
-  width: 15px;
-  height: 15px;
-  margin-top: 3px;
-  accent-color: var(--blue);
-  flex-shrink: 0;
-}
-.gdpr-row label {
-  color: rgba(255,255,255,.38);
-  font-size: 11px;
-  line-height: 1.55;
-}
-.gdpr-row a { color: rgba(142,200,255,.76); }
-.submit-btn {
-  margin-top: 4px;
-  width: 100%;
-  border: 0;
-  border-radius: 16px;
-  padding: 15px 18px;
-  color: #07101a;
-  background: linear-gradient(135deg, #ffffff, #b7dfff);
-  font-family: var(--sans);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  cursor: pointer;
-  box-shadow: 0 18px 42px rgba(142,200,255,.18);
-  transition: transform .18s ease, opacity .18s ease;
-}
-.submit-btn:hover { transform: translateY(-2px); }
-.submit-btn:disabled { opacity: .45; cursor: not-allowed; transform: none; }
-#status {
-  display: none;
-  margin-top: 12px;
-  border-radius: 14px;
-  padding: 12px 14px;
-  font-size: 12px;
-  line-height: 1.5;
-}
-#status.ok { color: #9ff2bd; background: rgba(37,211,102,.09); border: 1px solid rgba(37,211,102,.18); }
-#status.err { color: #ff8c8c; background: rgba(255,80,80,.09); border: 1px solid rgba(255,80,80,.18); }
 
-@media (max-width: 920px) {
-  body { overflow: auto; }
-  #canvas { height: 100%; }
-  .contact-shell {
-    min-height: auto;
-    grid-template-columns: 1fr;
-    padding: 112px 0 96px;
-    gap: 26px;
-  }
-  .contact-copy {
-    align-self: auto;
-    padding-bottom: 0;
-  }
-  .contact-copy h1 { font-size: clamp(48px, 15vw, 76px); }
-  .nav-links { display: none; }
-  .bottom-links { display: none; }
-  .page-code { display: none; }
+/* RIGHT COLUMN - FORM */
+.form-card{
+  position:relative;
+  width:100%;
+  padding:2rem;
+  border:1px solid rgba(108,99,255,.22);
+  border-radius:24px;
+  background:linear-gradient(145deg,rgba(13,16,33,.92),rgba(6,8,18,.88));
+  box-shadow:0 40px 100px rgba(0,0,0,.5),0 0 0 1px rgba(108,99,255,.08),inset 0 1px 0 rgba(255,255,255,.06);
+  backdrop-filter:blur(24px);
 }
-@media (max-width: 560px) {
-  nav { padding: 20px; }
-  .contact-shell { width: min(100% - 32px, 1180px); }
-  .field-row { grid-template-columns: 1fr; }
-  .form-card { padding: 22px; border-radius: 22px; }
-  .form-top { flex-direction: column; }
-  .form-top p { text-align: left; max-width: 100%; }
+.form-card::before{
+  content:"";
+  position:absolute;inset:-1px;border-radius:25px;z-index:-1;
+  background:linear-gradient(135deg,rgba(108,99,255,.3),transparent 50%,rgba(0,212,255,.1));
+  pointer-events:none;
+}
+
+.form-head{
+  display:flex;justify-content:space-between;align-items:flex-start;
+  gap:1rem;margin-bottom:1.5rem;
+}
+.form-head h2{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(1.4rem,2.5vw,1.9rem);
+  font-weight:800;letter-spacing:-.03em;
+  line-height:1.1;
+}
+.form-head p{
+  font-family:'JetBrains Mono',monospace;
+  color:var(--muted);font-size:.7rem;
+  line-height:1.5;max-width:140px;text-align:right;opacity:.75;
+}
+
+/* FIELDS */
+.fields{display:flex;flex-direction:column;gap:.85rem;}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;}
+
+.field label{
+  display:block;margin-bottom:.45rem;
+  font-family:'JetBrains Mono',monospace;
+  font-size:.68rem;letter-spacing:.14em;
+  color:var(--muted);text-transform:uppercase;
+}
+.field input,.field textarea{
+  width:100%;
+  border:1px solid var(--gb);
+  border-radius:12px;
+  background:rgba(255,255,255,.035);
+  color:var(--text);
+  outline:none;
+  padding:13px 15px;
+  font-family:'DM Sans',sans-serif;
+  font-size:.875rem;
+  transition:border-color .2s,background .2s,box-shadow .2s;
+}
+.field textarea{resize:none;min-height:108px;}
+.field input::placeholder,.field textarea::placeholder{color:var(--muted);opacity:.6;}
+.field input:focus,.field textarea:focus{
+  border-color:rgba(108,99,255,.55);
+  background:rgba(108,99,255,.06);
+  box-shadow:0 0 0 3px rgba(108,99,255,.1);
+}
+
+/* GDPR */
+.gdpr-row{
+  display:flex;gap:.65rem;align-items:flex-start;
+  margin-top:.1rem;
+}
+.gdpr-row input{
+  width:15px;height:15px;margin-top:3px;
+  accent-color:var(--accent);flex-shrink:0;
+}
+.gdpr-row label{
+  color:var(--muted);font-size:.78rem;line-height:1.55;
+}
+.gdpr-row a{color:rgba(108,99,255,.85);}
+.gdpr-row a:hover{color:var(--cyan);}
+
+/* SUBMIT */
+.submit-btn{
+  margin-top:.35rem;
+  width:100%;border:none;
+  border-radius:14px;
+  padding:14px 18px;
+  background:linear-gradient(135deg,var(--accent),var(--cyan));
+  color:#fff;
+  font-family:'DM Sans',sans-serif;
+  font-size:.9rem;font-weight:700;
+  letter-spacing:.04em;
+  cursor:none;
+  box-shadow:0 12px 32px rgba(108,99,255,.3);
+  transition:transform .2s,box-shadow .2s,opacity .2s;
+}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(108,99,255,.42);}
+.submit-btn:disabled{opacity:.45;cursor:not-allowed;transform:none;}
+
+/* STATUS */
+#status{
+  display:none;margin-top:.85rem;
+  border-radius:12px;padding:11px 14px;
+  font-size:.82rem;line-height:1.5;
+}
+#status.ok{color:#9ff2bd;background:rgba(37,211,102,.09);border:1px solid rgba(37,211,102,.18);}
+#status.err{color:#ff8c8c;background:rgba(255,80,80,.09);border:1px solid rgba(255,80,80,.18);}
+
+/* FOOTER */
+footer{
+  position:relative;z-index:10;
+  padding:1.5rem 2rem;
+  border-top:1px solid var(--gb);
+  display:flex;justify-content:space-between;align-items:center;
+  color:var(--muted);font-size:.82rem;
+  max-width:1160px;margin:0 auto;
+}
+.flogo{display:flex;align-items:center;gap:.6rem;}
+.ficon{
+  width:30px;height:30px;border-radius:50%;
+  border:1.5px solid rgba(108,99,255,.4);
+  background:rgba(108,99,255,.07);
+  display:flex;align-items:center;justify-content:center;
+}
+.ficon svg{width:14px;height:14px;}
+.ftxt{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;letter-spacing:.07em;}
+.ftxt .ac{color:var(--accent);}
+.flinks{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.flinks a{transition:color .2s;color:var(--muted);}
+.flinks a:hover{color:var(--text);}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+  .page{
+    grid-template-columns:1fr;
+    gap:2rem;
+    padding-top:88px;
+    padding-bottom:2rem;
+  }
+  .contact-left{
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:0;
+    align-items:flex-start;
+  }
+  .contact-text{
+    flex:1;min-width:240px;
+  }
+  .robot-wrap{
+    width:clamp(140px,38vw,220px);
+    max-width:220px;
+    margin-left:auto;
+    align-self:flex-end;
+    border-radius:20px;
+  }
+  .nlinks{display:none;}
+  footer{flex-direction:column;gap:1rem;text-align:center;}
+  .flinks{justify-content:center;}
+}
+
+@media(max-width:600px){
+  nav{padding:.85rem 1.25rem;}
+  .ncta{display:none;}
+  .contact-left{flex-direction:column;}
+  .robot-wrap{
+    width:100%;
+    max-width:280px;
+    align-self:center;
+    margin:0 auto;
+    order:3;
+  }
+  .contact-text{order:1;}
+  .quick-btns{order:2;}
+  .form-card{padding:1.5rem 1.25rem;border-radius:20px;}
+  .form-head{flex-direction:column;}
+  .form-head p{text-align:left;max-width:100%;}
+  .field-row{grid-template-columns:1fr;}
+  body{cursor:auto;}
+  body *{cursor:auto;}
+  #cursor,#ctrail{display:none;}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}
 }
 </style>
 </head>
 <body>
 
-<canvas id="canvas"></canvas>
+<div id="cursor"></div>
+<div id="ctrail"></div>
+<canvas id="pc"></canvas>
+<div class="bg-glow"></div>
 
+<!-- ═══ NAV ═══ -->
 <nav>
-  <a href="index.html" class="nav-brand">NEXAS <span>/ Web Design</span></a>
-  <div class="nav-links">
-    <a href="index.html">Prima pagina</a>
-    <a href="index.html">Portofoliu</a>
+  <div class="nlogo">
+    <div class="nicon">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="url(#ng)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs><linearGradient id="ng" x1="3" y1="2" x2="21" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient></defs>
+      </svg>
+    </div>
+    <span class="ntxt">N<span class="ac">E</span>XAS</span>
+  </div>
+  <div class="nlinks">
+    <a href="index.html">Prima Pagina</a>
+    <a href="servicii.html">Preturi</a>
     <a href="contact.html" class="active">Contact</a>
   </div>
+  <a href="https://wa.me/40764639118" target="_blank" class="ncta">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
 </nav>
 
-<main class="contact-shell">
-  <section class="contact-copy" aria-label="Introducere contact">
-    <div class="kicker"><i></i> Contact NEXAS</div>
-    <h1>Hai sa construim ceva memorabil.</h1>
-    <p>Spune-mi ce vrei sa lansezi. Iti pot raspunde cu o idee clara pentru site, structura, design si urmatorii pasi.</p>
-    <div class="quick-contact">
-      <a href="https://wa.me/40764639118" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="tel:+40764639118">Telefon</a>
-    </div>
-  </section>
+<!-- ═══ MAIN ═══ -->
+<main class="page">
 
-  <section class="form-card" aria-label="Formular contact">
-    <div class="form-top">
-      <h2>Trimite mesajul</h2>
-      <p>Raspund in cateva ore. Discutia initiala este gratuita.</p>
+  <!-- LEFT COLUMN -->
+  <div class="contact-left rv">
+
+    <div class="contact-text">
+      <div class="kicker"><span class="kicker-dot"></span> Contact NEXAS</div>
+
+      <h1 class="fd">
+        Hai sa construim<br>
+        ceva <span class="gt">memorabil.</span>
+      </h1>
+
+      <p class="sub">
+        Spune-mi ce vrei sa lansezi. Iti pot raspunde cu o idee clara pentru site, structura, design si urmatorii pasi.
+      </p>
+
+      <div class="quick-btns">
+        <a href="https://wa.me/40764639118?text=Salut%2C%20vreau%20sa%20discutam%20un%20proiect" target="_blank" rel="noopener" class="qbtn wa">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="tel:+40764639118" class="qbtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.64A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.36-.36a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Telefon
+        </a>
+        <a href="mailto:contact@nexas.ro" class="qbtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+
+    <!-- ROBOT -->
+    <div class="robot-wrap">
+      <img src="poze/robot-nexas.png" alt="Robotel NEXAS AI" width="360" height="440" loading="lazy"/>
+    </div>
+
+  </div>
+
+  <!-- RIGHT COLUMN - FORM -->
+  <div class="form-card rv" style="transition-delay:.15s">
+    <div class="form-head">
+      <h2 class="fd">Trimite mesajul</h2>
+      <p class="fm">Raspund in cateva ore.<br>Discutia initiala<br>este gratuita.</p>
     </div>
 
     <form id="contactForm">
@@ -423,17 +483,17 @@ nav {
         <div class="field-row">
           <div class="field">
             <label for="from_name">Nume *</label>
-            <input type="text" id="from_name" name="from_name" placeholder="Numele tau" required />
+            <input type="text" id="from_name" name="from_name" placeholder="Numele tau" required/>
           </div>
           <div class="field">
             <label for="from_email">Email *</label>
-            <input type="email" id="from_email" name="from_email" placeholder="email@nexas.ro" required />
+            <input type="email" id="from_email" name="from_email" placeholder="email@nexas.ro" required/>
           </div>
         </div>
 
         <div class="field">
           <label for="phone">Telefon</label>
-          <input type="tel" id="phone" name="phone" placeholder="+40 7xx xxx xxx" />
+          <input type="tel" id="phone" name="phone" placeholder="+40 7xx xxx xxx"/>
         </div>
 
         <div class="field">
@@ -442,10 +502,10 @@ nav {
         </div>
 
         <div class="gdpr-row">
-          <input type="checkbox" id="gdpr" required />
+          <input type="checkbox" id="gdpr" required/>
           <label for="gdpr">
             Accept prelucrarea datelor de catre NEXAS conform
-            <a href="/privacy.html"" target="_blank" rel="noopener">Politicii de confidentialitate</a>. *
+            <a href="/privacy.html" target="_blank" rel="noopener">Politicii de confidentialitate</a>. *
           </label>
         </div>
 
@@ -453,262 +513,106 @@ nav {
         <div id="status"></div>
       </div>
     </form>
-  </section>
+  </div>
+
 </main>
 
-<div class="bottom-links">
-  <a href="privacy.html">Confidentialitate</a>
-  <a href="cookies.html">Cookies</a>
-  <a href="termeni.html">Termeni</a>
-  <a href="contact.html">Contact</a>
-</div>
-<div class="page-code">02 / 06</div>
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="flogo">
+    <div class="ficon">
+      <svg viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="4" fill="rgba(108,99,255,.7)"/>
+        <circle cx="12" cy="12" r="8" stroke="rgba(108,99,255,.35)" stroke-width="1.5" fill="none"/>
+      </svg>
+    </div>
+    <span class="ftxt">N<span class="ac">E</span>XAS</span>
+  </div>
+  <div style="font-family:'JetBrains Mono',monospace;font-size:.7rem;">© 2025 Nexas Digital</div>
+  <div class="flinks">
+    <a href="/privacy.html" style="font-size:.82rem;">Confidentialitate</a>
+    <a href="/cookies.html" style="font-size:.82rem;">Cookies</a>
+    <a href="/termeni.html" style="font-size:.82rem;">Termeni</a>
+    <a href="contact.html" style="font-size:.82rem;">Contact</a>
+  </div>
+</footer>
 
-<script src="/vendor/three.min.js"></script>
 <script>
-const canvas = document.getElementById('canvas');
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
-renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.05;
+/* CURSOR */
+const cursor=document.getElementById('cursor'),trail=document.getElementById('ctrail');
+let mx=0,my=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX;my=e.clientY;
+  cursor.style.left=mx+'px';cursor.style.top=my+'px';
+  setTimeout(()=>{trail.style.left=mx+'px';trail.style.top=my+'px';},80);
+});
+document.querySelectorAll('a,button,input,textarea,.qbtn').forEach(el=>{
+  el.addEventListener('mouseenter',()=>cursor.classList.add('ex'));
+  el.addEventListener('mouseleave',()=>cursor.classList.remove('ex'));
+});
 
-const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x020509);
-scene.fog = new THREE.FogExp2(0x020509, 0.034);
-
-const camera = new THREE.PerspectiveCamera(58, window.innerWidth / window.innerHeight, 0.1, 90);
-camera.position.set(0, 1.2, 11.2);
-camera.lookAt(0, 0.3, -2.5);
-
-const floorMat = new THREE.MeshStandardMaterial({ color: 0x18222d, roughness: .72, metalness: .06 });
-const floor = new THREE.Mesh(new THREE.PlaneGeometry(36, 28), floorMat);
-floor.rotation.x = -Math.PI / 2;
-floor.position.y = -3.05;
-floor.receiveShadow = true;
-scene.add(floor);
-
-const wallMat = new THREE.MeshStandardMaterial({ color: 0x030507, roughness: .95 });
-const backWall = new THREE.Mesh(new THREE.PlaneGeometry(26, 14), wallMat);
-backWall.position.set(0, 2, -8.5);
-scene.add(backWall);
-const leftWall = new THREE.Mesh(new THREE.PlaneGeometry(24, 14), wallMat);
-leftWall.position.set(-12, 2, -1.8);
-leftWall.rotation.y = Math.PI / 2;
-scene.add(leftWall);
-const rightWall = new THREE.Mesh(new THREE.PlaneGeometry(24, 14), wallMat);
-rightWall.position.set(12, 2, -1.8);
-rightWall.rotation.y = -Math.PI / 2;
-scene.add(rightWall);
-
-function createPanelTexture(seed) {
-  const cv = document.createElement('canvas');
-  cv.width = 768;
-  cv.height = 1024;
-  const ctx = cv.getContext('2d');
-  const g = ctx.createLinearGradient(0, 0, cv.width, cv.height);
-  g.addColorStop(0, '#6f91ad');
-  g.addColorStop(.48, '#3f6689');
-  g.addColorStop(1, '#1b3955');
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, cv.width, cv.height);
-  for (let i = 0; i < 7; i++) {
-    const x = (Math.sin(seed + i * 1.7) * .5 + .5) * cv.width;
-    const y = (Math.cos(seed + i * 1.1) * .5 + .5) * cv.height;
-    const r = 160 + i * 30;
-    const rg = ctx.createRadialGradient(x, y, 0, x, y, r);
-    rg.addColorStop(0, 'rgba(255,255,255,.10)');
-    rg.addColorStop(1, 'rgba(255,255,255,0)');
-    ctx.fillStyle = rg;
-    ctx.fillRect(0, 0, cv.width, cv.height);
+/* PARTICLES */
+const canvas=document.getElementById('pc'),ctx=canvas.getContext('2d');
+let W,H;
+function rsz(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}
+rsz();window.addEventListener('resize',rsz);
+class Pt{
+  constructor(){this.rst();this.x=Math.random()*W;this.y=Math.random()*H;}
+  rst(){this.vx=(Math.random()-.5)*.3;this.vy=(Math.random()-.5)*.3;this.r=Math.random()*1.6+.6;this.op=Math.random()*.35+.06;}
+  upd(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>W||this.y<0||this.y>H){this.x=Math.random()*W;this.y=Math.random()*H;}}
+  drw(){ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);ctx.fillStyle=`rgba(108,99,255,${this.op})`;ctx.fill();}
+}
+const pts=Array.from({length:60},()=>new Pt());
+function dln(){
+  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+    const d=Math.hypot(pts[i].x-pts[j].x,pts[i].y-pts[j].y);
+    if(d<100){ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.strokeStyle=`rgba(108,99,255,${(1-d/100)*.07})`;ctx.lineWidth=.5;ctx.stroke();}
   }
-  return new THREE.CanvasTexture(cv);
 }
+(function an(){ctx.clearRect(0,0,W,H);pts.forEach(p=>{p.upd();p.drw();});dln();requestAnimationFrame(an);})();
 
-const panelGeo = new THREE.PlaneGeometry(3.75, 6.2);
-const frameGeo = new THREE.PlaneGeometry(3.9, 6.35);
-const frameMat = new THREE.MeshBasicMaterial({ color: 0x000000 });
-const panelPositions = [
-  { x: -3.8, y: .7, z: -6.4, ry: .06 },
-  { x: 0, y: .72, z: -6.55, ry: 0 },
-  { x: 3.8, y: .7, z: -6.4, ry: -.06 }
-];
-const panels = [];
-panelPositions.forEach((p, i) => {
-  const frame = new THREE.Mesh(frameGeo, frameMat);
-  frame.position.set(p.x, p.y, p.z - .04);
-  frame.rotation.y = p.ry;
-  scene.add(frame);
-
-  const mat = new THREE.MeshStandardMaterial({
-    map: createPanelTexture(i + 1),
-    roughness: .48,
-    metalness: .08,
-    emissive: new THREE.Color(0x0d2032),
-    emissiveIntensity: .12
-  });
-  const panel = new THREE.Mesh(panelGeo, mat);
-  panel.position.set(p.x, p.y, p.z);
-  panel.rotation.y = p.ry;
-  panel.castShadow = true;
-  panel.receiveShadow = true;
-  scene.add(panel);
-  panels.push(panel);
-});
-
-const sphereGeo = new THREE.SphereGeometry(1.35, 64, 64);
-const sphereMat = new THREE.MeshPhysicalMaterial({
-  color: 0xbdd8ea,
-  roughness: .22,
-  metalness: .02,
-  clearcoat: .8,
-  clearcoatRoughness: .25,
-  emissive: new THREE.Color(0x193d62),
-  emissiveIntensity: .10
-});
-const sphere = new THREE.Mesh(sphereGeo, sphereMat);
-sphere.position.set(0, -.05, -4.15);
-sphere.castShadow = true;
-scene.add(sphere);
-
-const shadow = new THREE.Mesh(
-  new THREE.CircleGeometry(1.45, 64),
-  new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: .26, depthWrite: false })
-);
-shadow.rotation.x = -Math.PI / 2;
-shadow.position.set(-.55, -3.035, -4.1);
-shadow.scale.set(1.5, .46, 1);
-scene.add(shadow);
-
-function addBulb(x, y, z, intensity) {
-  const light = new THREE.PointLight(0xeaf6ff, intensity, 15, 2);
-  light.position.set(x, y, z);
-  scene.add(light);
-  const bulb = new THREE.Mesh(
-    new THREE.SphereGeometry(.045, 12, 12),
-    new THREE.MeshBasicMaterial({ color: 0xf7fbff })
-  );
-  bulb.position.set(x, y, z);
-  scene.add(bulb);
-  return bulb;
-}
-const bulbs = [];
-[-3.7, -1.9, 0, 1.9, 3.7].forEach((x, i) => bulbs.push(addBulb(x, 5.45 + Math.sin(i) * .13, -4.2 + (i % 2) * .35, .65)));
-[-4.1, -2.2, .2, 2.4, 4.3].forEach((x, i) => bulbs.push(addBulb(x, 4.7 + Math.cos(i) * .12, -3.5 + (i % 2) * .38, .38)));
-
-const spot = new THREE.SpotLight(0xeaf6ff, 4.2, 24, .48, .42, 1.5);
-spot.position.set(0, 5.6, -.8);
-spot.target.position.set(0, -.1, -4.15);
-spot.castShadow = true;
-spot.shadow.mapSize.width = 1024;
-spot.shadow.mapSize.height = 1024;
-scene.add(spot);
-scene.add(spot.target);
-
-const blueFill = new THREE.PointLight(0x75bfff, 1.15, 20, 2);
-blueFill.position.set(0, 1.5, -5.0);
-scene.add(blueFill);
-scene.add(new THREE.AmbientLight(0x17283a, 1.6));
-
-const clock = new THREE.Clock();
-let mx = 0, my = 0;
-window.addEventListener('pointermove', (e) => {
-  mx = (e.clientX / window.innerWidth - .5) * 2;
-  my = (e.clientY / window.innerHeight - .5) * 2;
-});
-
-function animate() {
-  requestAnimationFrame(animate);
-  const t = clock.getElapsedTime();
-  sphere.position.y = -.05 + Math.sin(t * .9) * .08;
-  sphere.rotation.y += .004;
-  shadow.material.opacity = .22 + Math.sin(t * .9) * .035;
-  panels.forEach((p, i) => {
-    p.position.y = panelPositions[i].y + Math.sin(t * .45 + i) * .025;
-  });
-  bulbs.forEach((b, i) => {
-    b.material.opacity = .82 + Math.sin(t * 1.3 + i) * .18;
-  });
-  camera.position.x += (mx * .18 - camera.position.x) * .025;
-  camera.position.y += (1.2 - my * .05 - camera.position.y) * .025;
-  camera.lookAt(0, 0.25, -3.2);
-  renderer.render(scene, camera);
-}
-animate();
-
-window.addEventListener('resize', () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-});
+/* SCROLL REVEAL */
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
 </script>
 
+<!-- EMAIL JS -->
 <script>
 function loadEmailJS(){
-  return new Promise(function(resolve, reject){
-    if(window.emailjs){ resolve(window.emailjs); return; }
-    var script = document.createElement("script");
-    script.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
-    script.onload = function(){ emailjs.init("G-hhNeSiDqE6XRBLp"); resolve(window.emailjs); };
-    script.onerror = function(){ reject(new Error("EmailJS nu s-a incarcat.")); };
-    document.head.appendChild(script);
+  return new Promise(function(resolve,reject){
+    if(window.emailjs){resolve(window.emailjs);return;}
+    var s=document.createElement('script');
+    s.src='https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+    s.onload=function(){emailjs.init('G-hhNeSiDqE6XRBLp');resolve(window.emailjs);};
+    s.onerror=function(){reject(new Error('EmailJS nu s-a incarcat.'));};
+    document.head.appendChild(s);
   });
 }
-
-const form = document.getElementById('contactForm');
-const submitBtn = document.getElementById('submitBtn');
-const statusEl = document.getElementById('status');
-
-form.addEventListener('submit', async function(e) {
+const form=document.getElementById('contactForm');
+const submitBtn=document.getElementById('submitBtn');
+const statusEl=document.getElementById('status');
+form.addEventListener('submit',async function(e){
   e.preventDefault();
-
-  if (!document.getElementById('gdpr').checked) {
-    show('Te rugam sa accepti politica de confidentialitate.', 'err');
-    return;
+  if(!document.getElementById('gdpr').checked){show('Te rugam sa accepti politica de confidentialitate.','err');return;}
+  submitBtn.disabled=true;submitBtn.textContent='Se trimite...';
+  try{await loadEmailJS();}catch(err){
+    show('Eroare. Incearca WhatsApp sau email direct.','err');
+    submitBtn.disabled=false;submitBtn.textContent='Trimite mesajul';return;
   }
-
-  submitBtn.disabled = true;
-  submitBtn.textContent = 'Se trimite...';
-
-  try {
-    await loadEmailJS();
-  } catch (err) {
-    console.error(err);
-    show('Eroare. Incearca WhatsApp sau email direct.', 'err');
-    submitBtn.disabled = false;
-    submitBtn.textContent = 'Trimite mesajul';
-    return;
-  }
-
-  emailjs.send('service_r6h7o5j', 'template_zmwlkw5', {
-    from_name: document.getElementById('from_name').value.trim(),
-    from_email: document.getElementById('from_email').value.trim(),
-    phone: document.getElementById('phone').value.trim() || '-',
-    message: document.getElementById('message').value.trim(),
-    reply_to: document.getElementById('from_email').value.trim()
+  emailjs.send('service_r6h7o5j','template_zmwlkw5',{
+    from_name:document.getElementById('from_name').value.trim(),
+    from_email:document.getElementById('from_email').value.trim(),
+    phone:document.getElementById('phone').value.trim()||'-',
+    message:document.getElementById('message').value.trim(),
+    reply_to:document.getElementById('from_email').value.trim()
   })
-  .then(() => {
-    show('Mesaj trimis. Iti raspund in cateva ore.', 'ok');
-    form.reset();
-  })
-  .catch((err) => {
-    console.error(err);
-    show('Eroare. Incearca WhatsApp sau email direct.', 'err');
-  })
-  .finally(() => {
-    submitBtn.disabled = false;
-    submitBtn.textContent = 'Trimite mesajul';
-  });
+  .then(()=>{show('Mesaj trimis. Iti raspund in cateva ore.','ok');form.reset();})
+  .catch(()=>{show('Eroare. Incearca WhatsApp sau email direct.','err');})
+  .finally(()=>{submitBtn.disabled=false;submitBtn.textContent='Trimite mesajul';});
 });
-
-function show(msg, type) {
-  statusEl.textContent = msg;
-  statusEl.className = type;
-  statusEl.style.display = 'block';
-  setTimeout(() => { statusEl.style.display = 'none'; }, 6000);
+function show(msg,type){
+  statusEl.textContent=msg;statusEl.className=type;statusEl.style.display='block';
+  setTimeout(()=>{statusEl.style.display='none';},6000);
 }
 </script>
 <script src="assets/nexas-consent.js"></script>
