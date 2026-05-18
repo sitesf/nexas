@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-18T05:43:49.621327+00:00",
+  "updated_at": "2026-05-18T09:40:20.321965+00:00",
   "run_log": {
     "AI & Tech": 3,
     "Sport": 3,
@@ -12,6 +12,477 @@
     "Bursa & Piete": 3
   },
   "items": [
+    {
+      "title": "România se află pe ultimul loc în UE la procentul de copii înscriși în învățământul preșcolar",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/auxiliar/romania-ranks-last-in-the-eu-in-the-percentage-of-children-enrolled-23153774",
+      "date": "2026-05-18T09:36:25+00:00",
+      "category": "Bursa & Piete",
+      "summary": "România se află pe ultimul loc în Uniunea Europeană în ceea ce privește procentul de copii de peste 3 ani care sunt înscriși în învățământul preșcolar. În timp ce media europeană este de 95%, în România procentul ajunge la doar 76,5%.",
+      "instagram_caption": "O veste îngrijorătoare din educație! 📉 România se află pe ultimul loc în Uniunea Europeană la procentul copiilor de peste 3 ani înscriși în învățământul preșcolar. Media europeană este de 95%, în timp ce la noi atingem doar 76.5%. Un decalaj semnificativ care subliniază nevoia urgentă de investiții și strategii pentru accesul la educația timpurie! #EducatieRomania #Prescolar #UE #Invatamant #ViitorulCopiilor",
+      "hashtags": [
+        "#EducatieRomania",
+        "#Prescolar",
+        "#UE",
+        "#Invatamant",
+        "#ViitorulCopiilor"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Romania ranks last in the EU in the percentage of children enrolled in preschool education. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Imobiliare: Cumpărătorii nu mai cred în scăderea prețurilor. HILS Development: Piața s-a educat.",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/povesti-cu-profit/real-estate-constructii/video-cumparatorii-cred-scaderea-preturilor-bogdan-balasa-general-manager-hils-development-piata-s-educat-isi-dau-seama-anumite-realitati-vor-intampla-conferinta-profit-imobiliare-22448442?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-05-18T09:35:00+00:00",
+      "category": "Business",
+      "summary": "Potrivit lui Bogdan Bălașa, GM HILS Development, majoritatea cumpărătorilor de locuințe nu mai anticipează scăderi de prețuri pe piața rezidențială. Această tendință, observată de acum doi ani, s-a consolidat semnificativ. Bălașa a subliniat la Conferința Profit.ro Imobiliare că \"piața s-a educat\", cumpărătorii înțelegând realitățile economice.",
+      "instagram_caption": "🏠 Piața imobiliară s-a \"educat\"! Cumpărătorii de locuințe nu mai așteaptă scăderi de prețuri, conform lui Bogdan Bălașa, General Manager HILS Development. 📈 Această percepție s-a consolidat puternic în ultimii doi ani. E momentul să acționezi? Sau crezi că prețurile vor mai scădea? 🤔 Spune-ne părerea ta!",
+      "hashtags": [
+        "#Imobiliare",
+        "#PiataImobiliara",
+        "#PreturiLocuinte",
+        "#HILSDevelopment",
+        "#BogdanBalasa",
+        "#RealEstateRomania",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: VIDEO Cumpărătorii nu mai cred în scăderea prețurilor .Bogdan Bălașa, General Manager HILS Developme. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Oboseala persistentă chiar și după somn: Explicațiile Lidiei Fecioru",
+      "source": "CSID",
+      "url": "https://www.csid.ro/stiri/de-ce-apare-oboseala-care-nu-trece-nici-dupa-somn-conform-lidiei-fecioru-21189737/",
+      "date": "2026-05-18T09:34:40.416730+00:00",
+      "category": "Sanatate",
+      "summary": "Tot mai multe persoane acuză o stare de oboseală cronică, o senzație de epuizare care nu dispare nici chiar după un somn suficient și odihnitor. Această senzație, care apare adesea imediat după trezire, poate fi un semnal de alarmă al corpului. Lidia Fecioru, cunoscută pentru abordările sale holistice în sănătate, aduce în discuție cauzele posibile, de la dezechilibre energetice și stres, la aspecte legate de stilul de viață sau posibile afecțiuni ascunse.",
+      "instagram_caption": "Ești mereu obosit, chiar și după ce ai dormit suficient? 😴 Mulți se confruntă cu o senzație de epuizare persistentă care nu dispare nici după ore bune de somn. 😩 Lidia Fecioru, bioenergoterapeut, oferă o nouă perspectivă asupra cauzelor ascunse ale acestei oboseli cronice. Află ce dezechilibre energetice sau stiluri de viață ar putea contribui și cum poți regăsi energia! ✨",
+      "hashtags": [
+        "ObosealaCronica",
+        "LidiaFecioru",
+        "SanatateHolistica",
+        "StareDeBine",
+        "Energie",
+        "Somn",
+        "CauzeOboseala",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: De ce apare oboseala care „nu trece nici după somn”, conform Lidiei Fecioru. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "PNL prin Bolojan: Fără guvern cu PSD, nici măcar tehnocrat, după consultările de la Cotroceni.",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/actualitate/politica/consultari-la-cotroceni-ilie-bolojan-nu-vom-sustine-un-guvern-cu-premier-tehnocrat-in-care-se-va-regasi-si-psd-3774225",
+      "date": "2026-05-18T09:34:21+00:00",
+      "category": "Romania",
+      "summary": "Liderul PNL, Ilie Bolojan, a declarat luni, în urma consultărilor cu președintele Nicușor Dan privind desemnarea unui nou premier, că Partidul Național Liberal nu va susține și nu va participa la niciun guvern care va include PSD. Poziția fermă a PNL se menține inclusiv în situația în care executivul ar fi condus de un premier tehnocrat.",
+      "instagram_caption": "Decizie fermă a PNL! 🏛️ Liderul Ilie Bolojan a anunțat, după consultările de la Cotroceni cu președintele Nicușor Dan, că PNL nu va susține și nu va participa la niciun guvern care va include PSD, indiferent dacă este condus de un premier politic sau unul tehnocrat. O nouă etapă în scena politică românească? 🤔 #PNL #Politica #Romania #Guvern #IlieBolojan #FaraPSD #ConsultariCotroceni",
+      "hashtags": [
+        "#PNL",
+        "#Politica",
+        "#Romania",
+        "#Guvern",
+        "#IlieBolojan",
+        "#FaraPSD",
+        "#ConsultariCotroceni"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Consultări la Cotroceni. Ilie Bolojan: Nu vom susţine un guvern cu premier tehnocrat în care se va r. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Negocieri la Cotroceni: Premier tehnocrat sau guvern PSD? „Grindeanu aberează” aprinde spiritele",
+      "source": "Fanatik",
+      "url": "https://www.fanatik.ro/ce-se-discuta-de-fapt-la-cotroceni-dupa-plecarea-lui-bolojan-premier-tehnocrat-sau-guvern-psd-culisele-negocierilor-grindeanu-abereaza-21472941",
+      "date": "2026-05-18T09:33:03+00:00",
+      "category": "Sport",
+      "summary": "Negocierile cruciale pentru formarea noului Guvern ating un punct de maximă tensiune. Scenariile dezbătute la Cotroceni sunt întâmpinate cu scepticism și critici acerbe din partea analiștilor politici, care resping atât varianta unui premier tehnocrat, cât și ipoteza unui guvern condus de PSD. Situația rămâne incertă.",
+      "instagram_caption": "Tensiune maximă la Cotroceni! 🏛️ Negocierile pentru noul Guvern sunt pe muchie de cuțit, iar scenariile propuse stârnesc critici dure. Analiștii politici resping vehement atât ideea unui premier tehnocrat, cât și varianta unui guvern PSD. Cine va prelua frâiele țării? ⚔️ Rămâneți la curent cu cele mai noi evoluții!",
+      "hashtags": [
+        "NegocieriGuvern",
+        "Cotroceni",
+        "PoliticaRomania",
+        "GuvernNou",
+        "CrizaPolitica",
+        "PSD",
+        "Tehnocrat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Ce se discută, de fapt, la Cotroceni după plecarea lui Bolojan. Premier tehnocrat sau guvern PSD? Cu. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Parteneriat de 3 mil. de euro: WattRO Energy devine distribuitor oficial Chisage ESS în România",
+      "source": "Forbes Romania",
+      "url": "https://www.forbes.ro/parteneriat-de-3-mil-de-euro-wattro-energy-devine-distribuitor-oficial-chisage-ess-in-romania-501894",
+      "date": "2026-05-18T09:32:53+00:00",
+      "category": "Business",
+      "summary": "WattRO Energy, un distribuitor român de echipamente fotovoltaice și sisteme de stocare a energiei, a semnat un parteneriat strategic cu Chisage ESS. Aceasta din urmă este subsidiara de energie regenerabilă a puternicului grup chinez Chisage Holding Group. Prin acest acord, WattRO Energy devine distribuitor oficial al produselor Chisage ESS pe piața din România. Contractul, valabil până în 2026, vizează o valoare de 3 milioane de euro. Acest pas strategic consolidează poziția WattRO Energy și extinde oferta de soluții fotovoltaice avansate în țară, contribuind la dezvoltarea sectorului energiei verzi.",
+      "instagram_caption": "O veste excelentă pentru sectorul energiei regenerabile din România! 🇷🇴 WattRO Energy a semnat un parteneriat strategic de 3 milioane de euro cu Chisage ESS, devenind distribuitor oficial al soluțiilor lor avansate în țară. 💡 Această colaborare marchează un pas important în extinderea ofertei de echipamente fotovoltaice și sisteme de stocare a energiei, consolidând angajamentul nostru pentru un viitor mai verde. 🌱 Suntem mândri să aducem tehnologie de top pe piața românească!",
+      "hashtags": [
+        "#EnergieVerde",
+        "#ParteneriatStrategic",
+        "#WattROEnergy",
+        "#ChisageESS",
+        "#Fotovoltaice",
+        "#Romania",
+        "#EnergieRegenerabila"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Parteneriat de 3 mil. de euro: WattRO Energy devine distribuitor oficial Chisage ESS în România. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Shakira a obținut o mare victorie în instanță: Fiscul spaniol trebuie să-i plătească peste 55 de milioane de euro",
+      "source": "HotNews",
+      "url": "https://hotnews.ro/shakira-a-obtinut-o-mare-victorie-in-instanta-fiscul-spaniol-trebuie-sa-i-plateasca-peste-60-de-milioane-de-euro-2248895",
+      "date": "2026-05-18T09:28:34+00:00",
+      "category": "Romania",
+      "summary": "Justiția spaniolă a dispus ca autoritățile fiscale să îi achite cântăreței columbiene Shakira peste 55 de milioane de euro pentru sume încasate în mod nejustificat, anulând un litigiu fiscal referitor la anul 2011, potrivit documentelor judiciare citate de AFP și Reuters. Tribunalul înaltei curți spaniole, instanța specializată în cazurile importante, a ordonat la jumătatea lunii …",
+      "instagram_caption": "Shakira a obținut o mare victorie în instanță: Fiscul spaniol trebuie să-i plătească peste 55 de milioane de euro\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Shakira a obținut o mare victorie în instanță: Fiscul spaniol trebuie să-i plătească peste 55 de mil. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "UniCredit Bank: programul de beneficii ShopSmart a ajuns 500.000 de utilizatori înrolaţi în aplicaţia de mobile banking. „Este un ecosistem dinamic, care evoluează constant”",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/banci-si-asigurari/unicredit-bank-programul-de-beneficii-shopsmart-a-ajuns-500-000-de-23153766",
+      "date": "2026-05-18T09:28:14+00:00",
+      "category": "Business",
+      "summary": "UniCredit Bank: programul de beneficii ShopSmart a ajuns 500.000 de utilizatori înrolaţi în aplicaţia de mobile banking. „Este un ecosistem dinamic, care evoluează constant”",
+      "instagram_caption": "UniCredit Bank: programul de beneficii ShopSmart a ajuns 500.000 de utilizatori înrolaţi în aplicaţia de mobile banking. „Este un ecosistem dinamic, care evoluează constant”\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: UniCredit Bank: programul de beneficii ShopSmart a ajuns 500.000 de utilizatori înrolaţi în aplicaţi. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Municipiul Iași rămâne pentru o săptămână întreagă fără apă caldă / Lucrări majore la rețeaua de termoficare",
+      "source": "G4Media",
+      "url": "https://www.g4media.ro/municipiul-iasi-ramane-pentru-o-saptamana-intreaga-fara-apa-calda-lucrari-majore-la-reteaua-de-termoficare.html",
+      "date": "2026-05-18T09:25:22+00:00",
+      "category": "Romania",
+      "summary": "Ieșenii vor rămâne fără apă caldă timp de aproape o săptămână, în contextul unor lucrări ample de modernizare a rețelei de termoficare din municipiu. Furnizarea apei calde va fi întreruptă în perioada 18 mai, ora 00:00 – 24 mai 2026, ora 24:00, anunță Ziarul de Iași. Este pentru prima dată când întrerupere de o săptămână […] © G4Media.ro .",
+      "instagram_caption": "Municipiul Iași rămâne pentru o săptămână întreagă fără apă caldă / Lucrări majore la rețeaua de termoficare\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Municipiul Iași rămâne pentru o săptămână întreagă fără apă caldă / Lucrări majore la rețeaua de ter. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Shein achizitioneaza Everlane printr-o afacere de 100 de milioane de dolari pe fondul crizei datoriilor – raport",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/shein-acquires-everlane-100m-deal-092313925.html",
+      "date": "2026-05-18T09:23:13+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Shein achizitioneaza Everlane printr-o afacere de 100 de milioane de dolari pe fondul crizei datoriilor – raport",
+      "instagram_caption": "Shein acquires Everlane in $100m deal amid debt crisis – report\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Shein acquires Everlane in $100m deal amid debt crisis – report. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cristian vs. Kessler LIVE: Românca are bilanț pozitiv! Strasbourg, 13:00, Digi Sport 2.",
+      "source": "DigiSport",
+      "url": "https://www.digisport.ro/tenis/jaqueline-cristian-mccartney-kessler-live-video-1300-digi-sport-2-la-strasbourg-romanca-bilant-pozitiv-cu-adversara-4262411",
+      "date": "2026-05-18T09:20:23+00:00",
+      "category": "Sport",
+      "summary": "Tenismena româncă Jaqueline Cristian o va întâlni pe McCartney Kessler într-un meci transmis LIVE VIDEO. Partida va fi difuzată începând cu ora 13:00, pe Digi Sport 2, direct de la Strasbourg. Jaqueline Cristian are un bilanț pozitiv în confruntările directe cu adversara sa.",
+      "instagram_caption": "🎾 Pregătește-te pentru tenis de calitate! Românca Jaqueline Cristian o înfruntă pe McCartney Kessler LIVE la Strasbourg! ⏰ Urmărește partida de la ora 13:00 pe Digi Sport 2. Jaqueline are un bilanț pozitiv cu adversara sa, deci avem motive de optimism! Hai, Jaqueline! 💪 #Tenis #JaquelineCristian #Strasbourg #LiveTenis #DigiSport",
+      "hashtags": [
+        "#Tenis",
+        "#JaquelineCristian",
+        "#Strasbourg",
+        "#LiveTenis",
+        "#DigiSport"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Jaqueline Cristian - McCartney Kessler, LIVE VIDEO, 13:00, Digi Sport 2, la Strasbourg. Românca, bil. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Insula Kharg din Iran: Record de tancuri petroliere după blocadă",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-18/tanker-tally-at-iran-s-kharg-island-hits-post-blockade-peak",
+      "date": "2026-05-18T09:19:08+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Aproximativ 23 de tancuri petroliere au fost observate în jurul principalului nod iranian de export de petrol, Insula Kharg. Acesta este cel mai mare număr de nave adunate în zonă de la începutul blocadei impuse de Marina SUA acum o lună, acțiune ce a implicat interceptarea și confiscarea de nave.",
+      "instagram_caption": "Un număr record de 23 de tancuri petroliere au fost observate în jurul Insulei Kharg din Iran, principalul său nod de export de petrol! 🚢 Acesta este cel mai mare număr de nave adunate în zonă de la blocada impusă de Marina SUA acum o lună, care a dus la interceptări și confiscări de nave. 🚨 Ce impact va avea asupra pieței petroliere? 🤔 Sursa: Bloomberg",
+      "hashtags": [
+        "#NEXAS",
+        "#BursaPiete",
+        "#Iran",
+        "#Petrol",
+        "#TancuriPetroliere",
+        "#BlocadaSUA",
+        "#Geopolitica"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Tanker Tally at Iran’s Kharg Island Hits Post-Blockade Peak. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cisiordania: Coloniști israelieni lovesc animalele unui cioban palestinian",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/5/18/israeli-settlers-run-over-livestock-in-occupied-west-bank?traffic_source=rss",
+      "date": "2026-05-18T09:09:18+00:00",
+      "category": "International",
+      "summary": "Coloniști israelieni au intrat cu vehiculele într-o turmă de animale aparținând unui cioban palestinian, în Cisiordania ocupată. Incidentul subliniază tensiunile persistente din regiune.",
+      "instagram_caption": "Un incident alarmant a avut loc în Cisiordania ocupată, unde coloniști israelieni au lovit cu vehiculele o turmă de animale 🐑 aparținând unui cioban palestinian. 🚨 Acest eveniment subliniază complexitatea și tensiunile continue din regiune. Sursa: Al Jazeera. #Cisiordania #Palestina #Israel #Conflict #StiriInternationale #NEXAS",
+      "hashtags": [
+        "Cisiordania",
+        "Palestina",
+        "Israel",
+        "Conflict",
+        "StiriInternationale",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Israeli settlers run over livestock in occupied West Bank. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "S-a aprobat! Cristi Chivu a fost numit cetățean de onoare al județului Caraș-Severin",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-extern/campionate-externe/italia/cristi-chivu-cetatean-de-onoare-caras-severin-20442675",
+      "date": "2026-05-18T08:58:39+00:00",
+      "category": "Sport",
+      "summary": "Cristi Chivu, fostul căpitan al naționalei, a fost numit cetățean de onoare al județului Caraș-Severin, locul său natal. Decizia vine în urma performanțelor sale remarcabile ca antrenor al echipei Inter Milano. În sezonul 2025-2026, sub conducerea sa, nerazzurrii au bifat o „dublă” istorică, cucerind titlul în Serie A și câștigând Cupa Italiei. Această distincție onorează contribuția sa în fotbal.",
+      "instagram_caption": "Felicitări, Cristi Chivu! 🎉 Fostul căpitan al naționalei a fost numit cetățean de onoare al județului Caraș-Severin, locul său natal. O recunoaștere meritată pentru performanțele sale excepționale, inclusiv \"dubla\" istorică reușită ca antrenor la Inter Milano în sezonul 2025-2026, când a cucerit Serie A și Cupa Italiei! 🏆⚽ Suntem mândri de o așa legendă!",
+      "hashtags": [
+        "#CristiChivu",
+        "#CetateanDeOnoare",
+        "#CarasSeverin",
+        "#InterMilano",
+        "#SerieA",
+        "#CoppaItalia",
+        "#FotbalRomanesc",
+        "#Legenda"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: S-a aprobat! Cristi Chivu a fost numit cetățean de onoare al județului Caraș-Severin. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "O plantă dispărută de 60 de ani a fost redescoperită",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260517211447.htm",
+      "date": "2026-05-18T08:51:42+00:00",
+      "category": "Stiinta",
+      "summary": "O fotografie aleatorie realizată în zona aridă a Australiei a dus la redescoperirea unei plante considerate dispărute de aproape 60 de ani. Acest fapt demonstrează că oamenii obișnuiți, înarmați cu smartphone-uri, transformă în liniște știința. După ce Aaron Bean, un specialist în inelarea păsărilor, a încărcat pe iNaturalist imagini cu un arbust ciudat, botanistul Anthony Bean l-a recunoscut imediat ca fiind Ptilotus senarius, o specie rară văzută ultima dată în 1967.",
+      "instagram_caption": "Incredibil! 🌿 O plantă considerată dispărută de 60 de ani a reapărut în Australia! O simplă fotografie făcută cu telefonul, încărcată pe iNaturalist de Aaron Bean, a condus la redescoperirea speciei Ptilotus senarius de către botanistul Anthony Bean. O dovadă că oricine, cu un smartphone, poate contribui la știință. ✨ Ești gata să descoperi și tu? #Stiinta #Descoperire #Natura #Australia #iNaturalist #PtilotusSenarius",
+      "hashtags": [
+        "Stiinta",
+        "Descoperire",
+        "Natura",
+        "Australia",
+        "iNaturalist",
+        "Botanica"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Plant believed extinct for 60 years suddenly reappears. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Tigrul evadat, împușcat de poliția germană după ce a atacat un bărbat",
+      "source": "BBC World",
+      "url": "https://www.bbc.com/news/articles/cwy217yw7nxo?at_medium=RSS&at_campaign=rss",
+      "date": "2026-05-18T08:12:30+00:00",
+      "category": "International",
+      "summary": "Tigrul a evadat dintr-o facilitate deținută de antrenoarea locală Carmen Zander, cunoscută și sub numele de „Regina Tigrilor” din Germania, conform rapoartelor presei locale.",
+      "instagram_caption": "Un tigru a evadat dintr-o facilitate deținută de Carmen Zander, „Regina Tigrilor” din Germania, și a fost împușcat de poliția germană după ce a atacat un bărbat. 🚨🐅 Un incident alarmant care ridică întrebări despre siguranța animalelor sălbatice în captivitate. Ce părere aveți? #TigruEvadat #Germania #Poliție #IncidentȘocant #AnimaleSălbatice",
+      "hashtags": [
+        "TigruEvadat",
+        "Germania",
+        "Poliție",
+        "IncidentȘocant",
+        "AnimaleSălbatice",
+        "CarmenZander",
+        "ReginaTigrilor",
+        "NEXASStiri"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Escaped tiger shot by German police after attacking man. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Test de cultură generală. Câte săptămâni are un an?",
+      "source": "Descopera Ro",
+      "url": "https://www.descopera.ro/stiinta/21070318-test-de-cultura-generala-cate-saptamani-are-un-an",
+      "date": "2026-05-18T08:00:36+00:00",
+      "category": "Stiinta",
+      "summary": "La prima vedere, am spus că un este simplu de calcul. 12 luni, 365 de zile și gata. Dar atunci când începem să numărăm săptămânile, situația se complică. Mulți oameni ar spune că un […] Articolul Test de cultură generală. Câte săptămâni are un an? apare prima dată în Descopera .",
+      "instagram_caption": "Test de cultură generală. Câte săptămâni are un an?\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Test de cultură generală. Câte săptămâni are un an?. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ryan Gosling, concediat dintr-un film după ce s-a îngrășat, a primit explicații de la regizor",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQVklZSkdqRWFyRGhUZlczZmpiRXVtSW9NMkxTa2tTbXR1U2t5bzh4X0tjOG9uS3V5emUzRGZfeUxBY19YRkRETUoxZGg5Z3JjeHMwWUdpeml4ZUpIQk5VMGd1eVVzNU5XMEVfdzNoM1ZfQ1JqREtyTUhzQldVaEN1WU1HblNuQk03NmMyc3pIdUlleWZEMkZnai1NWEJZWU1XNzRXR05kaWpPeFFEUlk5ckxVZEo0Y1dEb2xzcmtUVmZqTU5LY20yYkVqM2VuZjFES3VPcUE0MkNGYjF5VUhiemozZlFqODJJOXhtc09wTQ?oc=5",
+      "date": "2026-05-18T07:59:13+00:00",
+      "category": "Entertainment",
+      "summary": "Actorul Ryan Gosling a fost concediat dintr-un proiect cinematografic important după ce a acumulat semnificativ în greutate, o decizie luată chiar înainte de începerea filmărilor. Incidentul a stârnit discuții, iar acum, la o perioadă de timp, celebrul regizor responsabil de acea hotărâre a oferit lămuriri detaliate cu privire la motivele care au stat la baza înlocuirii actorului. Gosling a primit, în cele din urmă, o explicație directă de la cineast.",
+      "instagram_caption": "O poveste mai puțin cunoscută din culisele Hollywood-ului! 🎬 Ryan Gosling a fost concediat dintr-un film important după ce s-a îngrășat considerabil înainte de filmări. 😲 Decizia drastică a venit de la un regizor celebru, care, în cele din urmă, i-a oferit actorului explicații detaliate. Ce crezi că i-a spus? 🤔 Află toate detaliile pe NEXAS! 🔗 #RyanGosling #Hollywood #BehindTheScenes #FilmNews #Drama #ActorLife #NEXAS",
+      "hashtags": [
+        "#RyanGosling",
+        "#Hollywood",
+        "#BehindTheScenes",
+        "#FilmNews",
+        "#Drama",
+        "#ActorLife",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Concediat după ce s-a îngrășat mult înaintea unui film, Ryan Gosling a primit explicații de la regiz. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "„Bangaranga”: Dara câștigă Eurovision 2026, prima victorie pentru Bulgaria",
+      "source": "Google Intl",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxON0x6SmZMeVM2RlpuMWlYOW9wenNHelVmOTVUbXhOZTRHUXF3N201dTFpQUpUSkw0ZHZfdzYyV2N3V3k0aU9IeDZxeWZ2ZzY3SzkwN3h4N3JfQkpOZDYtWlJ5c2k5Y2NMVzQxeUpnZEdya2hXRmRJVktHVnFIcXk5ZW01LVZ6Ul85dXB3QnRyVHNnVTVCa1lfNXpxQktVYWZUdEM4NElESm5KcmFxQUR1bEVJdktocjNMZHhpSXFfUVh1RUdRbkpkSWRoOW9XOE5jUUdjcWdpVzNuWlNoYzFtMVNrYzRKajdOX1U0emVnZ3RsUdIB_AFBVV95cUxPTG1pOVVUTWRPeXBvQ0FZaGtTRUVhZlcwNHYwUVE4Vk9Gc2dNVkZYajRrNnp0RG1XLTlYVkhzaUE3V2xMS1pHN3RPd3JNT1c3MXJXTFNSWVplR2RudVdtY2pKSWx0SXFoUE94dVB5MVVSQ0hhRkxfWHhWbHUtVDVULUM3emJhRDI0U3AzaVZGWmgxNGVaNFhlRHIyVXpSejhnZS1tZVFuZXVwX3F1R29vWEZTS1kzVmQ5emx3OTlubFJlNG5ieENkbXRPR2RUZ1ZYWDJCX1N1bEl2d2lGRUNLckprX2ZnYm5YUnRMM2dxSTBtWVFEYW9EWU1UenY?oc=5",
+      "date": "2026-05-18T07:38:52+00:00",
+      "category": "International",
+      "summary": "Cântăreața Dara a adus Bulgariei prima victorie la Eurovision 2026 cu piesa „Bangaranga”. Succesul istoric a stârnit o adevărată euforie în țară, unde artista a fost primită cu ovații de mii de fani și autorități. Mass-media internațională a subliniat că Bulgaria este „o națiune excepțional de talentată”. Victoria a generat o „febră Eurovision” la nivel național, marcând un moment de mândrie și sărbătoare.",
+      "instagram_caption": "🎉 Istorie scrisă la Eurovision 2026! Bulgaria câștigă pentru prima dată concursul, datorită talentatei Dara și piesei sale contagioase, „Bangaranga”! 🇧🇬 O națiune întreagă e în sărbătoare, iar Dara a fost primită ca o adevărată eroină la întoarcerea acasă. O victorie care confirmă „o națiune excepțional de talentată”! Bravo, Dara! 🎶✨ #Eurovision2026 #Dara #Bangaranga #Bulgaria #VictorieIstorica #Muzica #EurovisionWinner #PrimaVictorie",
+      "hashtags": [
+        "#Eurovision2026",
+        "#Dara",
+        "#Bangaranga",
+        "#Bulgaria",
+        "#VictorieIstorica",
+        "#Muzica",
+        "#EurovisionWinner",
+        "#PrimaVictorie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Ce înseamnă „Bangaranga”: piesa Darei a câștigat concursul Eurovision 2026, o premieră pentru Bulgar. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ștefan Bănică și Lavinia Pîrva, momente romantice în Mykonos. Fanii, cuceriți!",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQVmRzU056bURoaDNKa3ltdjhuajd6OGdCaUpMM1RjWmRWU2NlOWluR2RYRWIydTFCblJrUjFvYm81Z29pTkRJdUtLSVBYRkJGaWFKMXNLczhBWG1Ba2lLMFpaYzVtdm5TaENHajZoS3NhSUhtMWhwR0JmaFo5TG9nZjd5eFFKN1IxWDVfeGJUc3FXaDJZZUU2UjYyT0hXdnh0b1Z2N0pGQ3pVLV9LNzVGTTJlbGZZRk0zMHl3LVhRVnJUVC1PZFhMamRKUXZsNVFTeE04T0hfTHBPLVN5R1Z0U1BGanJwWlY1M3J1V1pocXlQQzQ?oc=5",
+      "date": "2026-05-18T07:04:41+00:00",
+      "category": "Entertainment",
+      "summary": "Ștefan Bănică și Lavinia Pîrva au fost surprinși în ipostaze tandre sub soarele fierbinte din Mykonos. Cuplul, recunoscut pentru discreția sa, a lăsat la vedere afecțiunea profundă ce îi leagă. Imaginile romantice, în care cei doi artiști se bucură de momente de relaxare și iubire, au cucerit rapid inimile fanilor, care au apreciat sinceritatea și frumusețea relației lor, confirmând încă o dată soliditatea legăturii lor.",
+      "instagram_caption": "Iubirea plutește în aer! ❤️ Ștefan Bănică și Lavinia Pîrva ne-au topit inimile cu cele mai noi imagini din vacanța lor de vis în Mykonos. 😍 Sub soarele grecesc, tandrețea și conexiunea lor sunt evidente, iar fanii nu au întârziat să reacționeze la aceste momente pline de afecțiune! Un cuplu superb care inspiră! ✨",
+      "hashtags": [
+        "#StefanBanica",
+        "#LaviniaPirva",
+        "#Mykonos",
+        "#Iubire",
+        "#Cuplu",
+        "#Vedete",
+        "#Vacanta",
+        "#Romania"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Ștefan Bănică și Lavinia Pîrva, tandrețe sub soarele din Mykonos. Iubirea lor se vede, iar Imaginile. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Bianca Censori, o nouă apariție „transparentă” alături de Kanye West. De data aceasta, cei doi soți au mers la cinema în LA - ProFM.ro",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOWXBnQ0pUNTB5eTYxblRjaTk4c0VYREVxaTVhZGNPeFIwWWxSWGVtMjJudzlZTko4cHY5cE0zQUdBQ1c1ZE9LNUNzTlZybnVPa1BuOHBsdnQzU0Z2OVhrd2RUekF4UUZFcHRtRHFvUk9qdW5xdi0tZjFNVEtkamV0aGhqRlBCS1RsQllxeGxXQkpia01JVjJudS1nWWpDQXZTZjVaSENKcUVmTGdWYXNMSUtITWNpdVpRWkZoZEE0RGQwRHQ1QzRicDFBTmhoTWNuNEhaQmhUaGhlR2Y3M0ZTTFpvVHRFaDQ?oc=5",
+      "date": "2026-05-18T07:04:41+00:00",
+      "category": "Entertainment",
+      "summary": "Bianca Censori, o nouă apariție „transparentă” alături de Kanye West. De data aceasta, cei doi soți au mers la cinema în LA ProFM.ro Val de reacții după ce Bianca Censori a apărut într-o nouă ținută provocatoare. Topul nu i-a acoperit bustul generos ProFM.ro",
+      "instagram_caption": "Bianca Censori, o nouă apariție „transparentă” alături de Kanye West. De data aceasta, cei doi soți au mers la cinema în LA - ProFM.ro\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Entertainment",
+        "#Vedete",
+        "#Divertisment",
+        "#Lifestyle"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Bianca Censori, o nouă apariție „transparentă” alături de Kanye West. De data aceasta, cei doi soți . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Persoanele peste 50 de ani au nevoie de mai multe proteine. Noi recomandări",
+      "source": "Mediafax",
+      "url": "https://www.mediafax.ro/life-inedit/persoanele-in-varsta-de-peste-50-de-ani-au-nevoie-de-mai-multe-proteine-decat-se-stia-noile-recomandari-ale-expertilor-23738722",
+      "date": "2026-05-18T06:54:27+00:00",
+      "category": "Sanatate",
+      "summary": "Studiile recente și experții în nutriție subliniază că persoanele cu vârsta de peste 50 de ani ar trebui să consume o cantitate mai mare de proteine decât cea sugerată de ghidurile tradiționale. Această cerință sporită este crucială pentru menținerea masei musculare, a forței și a sănătății generale pe măsură ce înaintăm în vârstă. Noile recomandări elaborate de specialiști nu doar că actualizează dozele necesare, ci oferă și sfaturi practice și modalități eficiente pentru integrarea acestor proteine în dieta zilnică, asigurând o nutriție optimă.",
+      "instagram_caption": "Știai că...? 🤔 Pe măsură ce înaintăm în vârstă, nevoile noastre nutriționale se schimbă! 🍎🥦 Noile studii arată că persoanele de peste 50 de ani au nevoie de MAI MULTE proteine decât se credea inițial. 💪 Aceasta este cheia pentru menținerea masei musculare, a energiei și a unei vieți active. Experții vin cu recomandări clare și soluții practice pentru a te asigura că primești aportul optim! ✨ Ce surse de proteine preferi? Spune-ne în comentarii! 👇",
+      "hashtags": [
+        "#Proteine",
+        "Nutritie",
+        "#Sanatate",
+        "#Seniori",
+        "#Peste50ani",
+        "#DietaSanatoasa",
+        "#RecomandariNoi",
+        "#StilDeViataSanatos",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Persoanele în vârstă de peste 50 de ani au nevoie de mai multe proteine decât se știa. Noile recoman. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Angioplastie reușită: Un membru salvat de la amputație de Dr. Sabiescu",
+      "source": "Google Sanatate",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQcXZ5cWV3dFdEYk8tLXRnM2FyNnVwY2VOMGFIYkJiS01ocUJnc21COEt2ZmdTc0lNOExmelRpY01iV20xbVc2SUlvdGtuNDE1aWllcHlnWFlBeGF3bnZiOGpoRWY4aldiaE5LVDVnMzBoMWRQVkpUc1ZiNEFsMFRIVWRXTWtacl9PdFJ2c2FXNWR3QXVOaG5VSVdUcC1ENGhIdmJZLXEyOS1naUJlR2F4SDdtd0lqTEppYWFQM1A3ZlVVT0IzT2UxeGxhOXhvc1RILURsRGh1T0tIMHZGdktyS3RmTWNOLXc?oc=5",
+      "date": "2026-05-18T06:34:54+00:00",
+      "category": "Sanatate",
+      "summary": "Un pacient care primise indicație de amputație de coapsă a fost salvat printr-o intervenție de angioplastie realizată de Dr. Bogdan Sabiescu. Cazul, considerat o reușită medicală semnificativă, demonstrează capacitatea medicilor de a oferi soluții minim invazive chiar și în situații critice. Pacientul a evitat o operație majoră și și-a putut păstra membrul, recuperarea fiind una rapidă și eficientă. Această poveste subliniază importanța diagnosticării și intervenției corecte pentru a preveni amputațiile.",
+      "instagram_caption": "De la un diagnostic dureros la o speranță renăscută! 💖 Un pacient, care se confrunta cu indicația de amputație de coapsă, a avut parte de o intervenție medicală salvatoare. 🙏 Datorită angioplastiei realizate de Dr. Bogdan Sabiescu, membrul său a fost salvat, iar amputația a fost evitată! ✨ O poveste emoționantă despre curaj, expertiză medicală și a doua șansă. Suntem mândri de performanțele medicilor români! 🩺",
+      "hashtags": [
+        "#NEXAS",
+        "#Sanatate",
+        "#Angioplastie",
+        "#SalvareDeMembru",
+        "#DrSabiescu",
+        "#MedicinaRomaneasca",
+        "#Speranta"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: De la verdict de amputare la salvarea membrului prin angioplastie. Dr. Sabiescu Bogdan: „Primise ind. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "NASA lansează Psyche: Misiune spre un asteroid metalic, miez de planetă antică",
+      "source": "Google Stiinta",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSXh5dmRQZWRITDNXdV9iUWdYc1BKbEpxeTJGakFiUHdoSTNpUTdteU16VnZuZnlaWUpoLWZyUXh0a2VLMkVDSldVSlJPVGN1bWlWU3k5VHlIM3pUTnJwM09uaWhFRTlLb1N0eGZIc0xmV0FNLTVnRzcwNTc2dnY3ck5DakttR2w4OUxocXByVXFBUU5YS3N0Tlo1ZlNvSUs3TUHSAacBQVVfeXFMTUYwaUdzVTRTMUZ6eTBvT0tONzc4TU90N0hwbXo3RlhvWDYxR0xpdnEyQTBTaFhKek1tSWNDNXZGUXN1TUs5UFFpS2Q2QUR2THhoWktSQ2xoaGFjelRZMVluNjcxdTRmZTRxV3J0LVBvTWdsX3lGcEg5V2lCVHZYR0ZuVjJUcDl1bUJJSEVHWUU5OFgtcVpjVnNNN0M5NWZrN0lFc0YtdGM?oc=5",
+      "date": "2026-05-18T06:18:11+00:00",
+      "category": "Stiinta",
+      "summary": "NASA a lansat misiunea Psyche pentru a explora un asteroid unic, bogat în metale prețioase, despre care se crede că ar fi nucleul rămas al unei planete antice din Sistemul Solar. Nava spațială Psyche a efectuat recent o manevră de asistență gravitațională în jurul planetei Marte, folosindu-se de gravitația acesteia pentru a-și accelera călătoria spre destinația sa îndepărtată, aducând-o mai aproape de descoperiri revoluționare.",
+      "instagram_caption": "🚀 NASA a lansat misiunea Psyche, o călătorie extraordinară către un asteroid misterios, bogat în metale prețioase! 💎 Se crede că acest corp ceresc ar putea fi nucleul rămas al unei planete antice. Nava spațială a efectuat recent o manevră ingenioasă de asistență gravitațională în jurul lui Marte, accelerând-și drumul spre descoperiri epocale. Ce secrete ascunde spațiul? ✨",
+      "hashtags": [
+        "#NASA",
+        "#PsycheMission",
+        "#Asteroid",
+        "#Spatiu",
+        "#Descoperiri",
+        "#MetaleRare",
+        "#SistemulSolar",
+        "#Stiinta"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: NASA vânează un asteroid plin cu metale rare, posibil nucleul rămas al unei planete antice din Siste. Professional photorealistic style. No text, no logos, no watermarks."
+    },
     {
       "title": "VIDEO Două avioane s-au ciocnit în zbor la un show aviatic în SUA",
       "source": "Profit.ro",
@@ -328,74 +799,59 @@
       "image_prompt": "Premium editorial photograph for Business news: Problema nu este că vicepremierul Oana Gheorghiu a fost agent de vânzări pentru Schwarz Digits, ci c. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Problema nu este că vicepremierul Oana Gheorghiu a fost agent de vânzări pentru Schwarz Digits, ci că Nicuşor Dan, premierul Bolojan, sau oricare alt oficial al statului român nu sunt agenţi de vânzări pentru gemurile Topoloveni/Răzvan Idicel sau pentru trenurile Softronic sau Leon sau pentru capitalul românesc",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/opinii/problema-vicepremierul-oana-gheorghiu-agent-vanzari-schwarz-digits-23153493",
-      "date": "2026-05-17T21:51:00+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Problema nu este că vicepremierul Oana Gheorghiu a fost agent de vânzări pentru Schwarz Digits, ci că Nicuşor Dan, premierul Bolojan, sau oricare alt oficial al statului român nu sunt agenţi de vânzări pentru gemurile Topoloveni/Răzvan Idicel sau pentru trenurile Softronic sau Leon sau pentru capitalul românesc",
-      "instagram_caption": "Problema nu este că vicepremierul Oana Gheorghiu a fost agent de vânzări pentru Schwarz Digits, ci că Nicuşor Dan, premierul Bolojan, sau oricare alt oficial al statului român nu sunt agenţi de vânzări pentru gemurile Topoloveni/Răzvan Idicel sau pentru trenurile Softronic sau Leon sau pentru capitalul românesc\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Problema nu este că vicepremierul Oana Gheorghiu a fost agent de vânzări pentru Schwarz Digits, ci c. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Microsoft retrage modul Teams’ Together",
+      "title": "Microsoft retrage modul Together din Teams",
       "source": "The Verge",
       "url": "https://www.theverge.com/tech/932215/microsoft-teams-together-mode",
       "date": "2026-05-17T21:15:28+00:00",
       "category": "AI & Tech",
-      "summary": "Microsoft a lansat Teams' Together Mode în timpul pandemiei pentru a da iluzia că o grămadă de oameni stau împreună într-o sală de conferințe, chiar dacă chiar stăteau acasă fără pantaloni. Dar vremurile s-au schimbat și acum este retras în favoarea unei experiențe mai simplificate Teams. Caracteristica a folosit AI […]",
-      "instagram_caption": "Microsoft is retiring Teams’ Together Mode\n\nCiteste pe nexas.ro/stiri/",
+      "summary": "Microsoft a lansat modul Together din Teams în timpul pandemiei pentru a crea iluzia că participanții la o ședință se află fizic într-o sală de conferințe, chiar dacă, în realitate, aceștia lucrau de acasă. Însă, odată cu schimbarea contextului actual, această funcționalitate este acum retrasă în favoarea unei experiențe Teams mai simplificate. Modul Together, care utiliza inteligența artificială (AI) pentru a genera imaginile, își încheie parcursul.",
+      "instagram_caption": "Îți amintești de modul Together din Microsoft Teams? 😟 Lansat în pandemie pentru a simula prezența fizică într-o sală de conferințe, acum își ia adio! 👥🔄 Microsoft simplifică experiența Teams, iar această funcționalitate bazată pe AI, menită să ne aducă mai aproape virtual, este acum retrasă. Timpurile se schimbă, iar focusul este pe o experiență mai curată. 💻✨ Ce părere ai? Detalii pe NEXAS.ro, sursa The Verge. #MicrosoftTeams #TogetherMode #AI #TechNews #NEXAS",
       "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tech",
-        "#Tehnologie",
-        "#InteligentaArtificiala"
+        "MicrosoftTeams",
+        "TogetherMode",
+        "AI",
+        "TechNews",
+        "NEXAS"
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for AI & Tech news: Microsoft is retiring Teams’ Together Mode. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Noul Siri de la Apple ar putea șterge automat conversațiile pentru mai multă confidențialitate",
+      "title": "Noua Siri Apple: Conversații cu ștergere automată pentru confidențialitate",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/",
       "date": "2026-05-17T20:15:00+00:00",
       "category": "AI & Tech",
-      "summary": "Confidențialitatea va fi un subiect central la lansarea noii versiuni Siri de către Apple. Se anticipează că aceasta va include funcționalități inovatoare, cum ar fi ștergerea automată a conversațiilor, consolidând angajamentul Apple față de protecția datelor utilizatorilor și experiențe digitale sigure. Această schimbare subliniază importanța sporită acordată vieții private în era inteligenței artificiale.",
-      "instagram_caption": "Apple își reinventează asistentul Siri! 🤖 O funcție mult așteptată ar putea fi ștergerea automată a conversațiilor, transformând confidențialitatea într-o prioritate absolută. 🔒 Cum va schimba asta modul în care interacționăm cu Siri? Află mai multe despre inovațiile Apple și angajamentul lor pentru protecția datelor! #Apple #Siri #Confidentialitate #TechNews #AI #NEXAS",
+      "summary": "Confidențialitatea va fi un aspect central la lansarea noii versiuni Siri de către Apple. Una dintre inovațiile anticipate este introducerea opțiunii de ștergere automată a conversațiilor, menită să îmbunătățească protecția datelor utilizatorilor. Această direcție subliniază angajamentul Apple de a oferi un control sporit asupra informațiilor personale în interacțiunile cu asistentul AI.",
+      "instagram_caption": "🔒 Apple pregătește o transformare majoră pentru Siri! 🤖 Noua versiune a asistentului AI ar putea include o funcționalitate inedită: ștergerea automată a conversațiilor. Această inovație vine ca răspuns la preocupările legate de confidențialitate, oferind utilizatorilor un control sporit asupra datelor lor personale. 🤫 Un pas important pentru protejarea intimității în era AI! #Siri #Apple #AI #Confidentialitate #TechNews #Inovatie",
       "hashtags": [
-        "#Apple",
-        "#Siri",
-        "#Confidentialitate",
-        "#AI",
-        "#Tehnologie"
+        "Siri",
+        "Apple",
+        "AI",
+        "Confidentialitate",
+        "TechNews",
+        "Inovatie",
+        "ProtectiaDatelor",
+        "AsistentAI",
+        "Tehnologie"
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for AI & Tech news: Apple’s Siri revamp could include auto-deleting chats. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "One UI 9 aduce mai multă personalizare pe telefoanele Samsung. Ce funcții noi sunt pregătite - Ziare.com",
+      "title": "One UI 9 aduce mai multă personalizare pe telefoanele Samsung. Ce funcții noi sunt pregătite?",
       "source": "Google News Tech",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9DeHQ5VjBWaTBCRTVOcXdDaGZSTmRCR1BpS1VWdFVFZ0dnQzlCaTZZZW9aQ24taHUtcWhOSFFtSnNrZ1NWSHA0bHIwTVM5NnZ5a3Zqcjl6dGk1TjdSQkVPTW0yb0h2dXBYYm1qZ1FR0gF2QVVfeXFMTWhmSkxYYS1QZG9SSEgwc3JZdk1Yd21ySVhvdlVDbklTOWRpZXNhUzV6aDVLbFlKLXZLblVPWUJ5NnVrdTBzTHZBMVg4Y3lMMjN1a0RfbmZHTVBvTEdjRi1WSk96WG55bk85aUNudjZTRklBN2Ffdw?oc=5",
       "date": "2026-05-17T20:11:29+00:00",
       "category": "AI & Tech",
-      "summary": "One UI 9 aduce mai multă personalizare pe telefoanele Samsung. Ce funcții nu sunt pregătite Ziare.com Ce device-uri Samsung vor fi eligibile pentru actualizarea interfeței One UI 9 bazată pe Android 17? Gadget.ro Samsung lansează o nouă actualizare Android gratuită. Ce funcții inedite includ UseIT.ro Obișnuiam să critic One UI-ul numindu-l „gunoi”, dar acum sunt fan Samsung. Vietnam.vn Îți găsești Samsung-ul pe a",
-      "instagram_caption": "One UI 9 aduce mai multă personalizare pe telefoanele Samsung. Ce funcții noi sunt pregătite - Ziare.com\n\nCiteste pe nexas.ro/stiri/",
+      "summary": "Noua interfață One UI 9 de la Samsung promite mai multă personalizare și funcții inedite, bazate pe Android 17. Utilizatorii se întreabă deja ce dispozitive Samsung vor fi eligibile pentru această actualizare. Deși în trecut One UI a fost criticat, mulți își schimbă acum părerea, devenind fani ai sistemului. Această lansare gratuită aduce inovații și o experiență îmbunătățită pentru telefoanele Samsung.",
+      "instagram_caption": "Pregătește-te pentru o experiență Samsung reimaginată! 🚀 One UI 9, bazat pe Android 17, aduce mai multă personalizare și o mulțime de funcții noi pe telefonul tău. Curios să afli dacă dispozitivul tău este eligibil? 🤔 Unii chiar spun că vechiul One UI \"gunoi\" a devenit acum o interfață preferată! Descoperă inovațiile care transformă modul în care interacționezi cu Samsung-ul tău. Ce funcție aștepți cel mai mult? ✨",
       "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tech",
-        "#Tehnologie",
-        "#InteligentaArtificiala"
+        "#OneUI9",
+        "#Samsung",
+        "#Android17",
+        "#Personalizare",
+        "#TechUpdate"
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for AI & Tech news: One UI 9 aduce mai multă personalizare pe telefoanele Samsung. Ce funcții noi sunt pregătite - Ziare. Professional photorealistic style. No text, no logos, no watermarks."
@@ -4015,24 +4471,6 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: Eyewear cu identitate: Noul mod de a alege ochelarii premium (P). Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Eurovision 2026. România intră astăzi în cea de-a două semifinală a concursului",
-      "source": "HotNews",
-      "url": "https://hotnews.ro/eurovision-2026-romania-intra-astazi-in-cea-de-a-doua-semifinala-a-concursului-2245122",
-      "date": "2026-05-14T05:11:49+00:00",
-      "category": "Romania",
-      "summary": "România urcă pe scena de la Viena joi, 14 mai, în cea de-a doua semifinală a concursului Eurovision Song Contest 2026. Țara noastră este pe poziția 3, în ordinea intrării în concurs. Semfinala este transmisă în direct de TVR. Prima semifinală a Eurovision 2026 a avut loc marți, iar zece țări s-au calificat pentru finala concursului …",
-      "instagram_caption": "Eurovision 2026. România intră astăzi în cea de-a două semifinală a concursului\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Eurovision 2026. România intră astăzi în cea de-a două semifinală a concursului. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Icre mănăstirești. Cum le prepară Maica Marina de la Mănăstirea Saon",
       "source": "CSID",
       "url": "https://www.csid.ro/diete/retete-culinare/icre-manastiresti-cum-le-prepara-maica-marina-de-la-manastirea-saon-21187565/",
@@ -4049,24 +4487,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Sanatate news: Icre mănăstirești. Cum le prepară Maica Marina de la Mănăstirea Saon. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cristi Chivu a amintit de Nadia Comăneci, imediat după ce a făcut eventul în Italia",
-      "source": "DigiSport",
-      "url": "https://www.digisport.ro/fotbal/serie-a/cristi-chivu-a-amintit-de-nadia-comaneci-imediat-dupa-ce-afacut-eventul-in-italia-4254005",
-      "date": "2026-05-14T05:08:06+00:00",
-      "category": "Sport",
-      "summary": "Cristi Chivu a amintit de Nadia Comăneci, imediat după ce a făcut eventul în Italia",
-      "instagram_caption": "Cristi Chivu a amintit de Nadia Comăneci, imediat după ce a făcut eventul în Italia\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Cristi Chivu a amintit de Nadia Comăneci, imediat după ce a făcut eventul în Italia. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Șase alimente considerate nesănătoase pe care cardiologii le consumă în continuare",
@@ -4105,42 +4525,6 @@
       "image_prompt": "Premium editorial photograph for Business news: Câtă energie mai e în piaţa de energie?. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Ucraina, pe punctul să întoarcă războiul în favoarea sa. Avans tehnologic în creștere față de Rusia",
-      "source": "Fanatik",
-      "url": "https://www.fanatik.ro/ucraina-pe-punctul-sa-intoarca-razboiul-in-favoarea-sa-avans-tehnologic-in-crestere-fata-de-rusia-21468917",
-      "date": "2026-05-14T05:04:51+00:00",
-      "category": "Sport",
-      "summary": "Ucraina a obținut, în luna aprilie, câștiguri teritoriale nete în fața armatei ruse pentru prima dată după multă vreme, însă Moscova are mult mai multe motive să se îngrijoreze.",
-      "instagram_caption": "Ucraina, pe punctul să întoarcă războiul în favoarea sa. Avans tehnologic în creștere față de Rusia\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Ucraina, pe punctul să întoarcă războiul în favoarea sa. Avans tehnologic în creștere față de Rusia. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "EXCLUSIV Fostul condamnat în dosarul mituirii arbitrilor ar putea fi dat jos din funcție chiar în sediul FRF!",
-      "source": "ProSport",
-      "url": "https://www.prosport.ro/fotbal-intern/claudiu-baboia-condamnat-in-dosarul-mituirii-arbitrilor-amfb-secretar-general-alegeri-frf-20439472",
-      "date": "2026-05-14T05:03:22+00:00",
-      "category": "Sport",
-      "summary": "Pe 18 martie 2026, cluburile afiliate la Federația Română de Fotbal l-au votat pentru al patrulea mandat consecutiv de președinte pe Răzvan Burleanu. Singurul său adversar a fost Ilie Drăgan, care, însă, n-a primit decât 5 voturi, față de cele 258 oferite lui Burleanu. Acum, pe 28 mai, urmează alegeri la AMFB. Asociația Municipală de […] The post EXCLUSIV Fostul condamnat în dosarul mituirii arbitrilor ar putea fi da",
-      "instagram_caption": "EXCLUSIV Fostul condamnat în dosarul mituirii arbitrilor ar putea fi dat jos din funcție chiar în sediul FRF!\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: EXCLUSIV Fostul condamnat în dosarul mituirii arbitrilor ar putea fi dat jos din funcție chiar în se. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Who are the Japanese? Huge DNA discovery rewrites history",
       "source": "Science Daily",
       "url": "https://www.sciencedaily.com/releases/2026/05/260514003314.htm",
@@ -4157,78 +4541,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Stiinta news: Who are the Japanese? Huge DNA discovery rewrites history. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Un nou mod de a cumpăra: AI devine asistent personal pentru experiențe de shopping mai simple și mai sigure",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/povesti-cu-profit/financiar/un-nou-mod-de-a-cumpara-ai-devine-asistent-personal-pentru-experiente-de-shopping-mai-simple-si-mai-sigure-22443162?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-05-14T05:00:00+00:00",
-      "category": "Business",
-      "summary": "Transformările din comerțul online au intrat într-o nouă etapă, în care inteligența artificială nu mai este doar un instrument de suport, ci un participant activ în procesul de cumpărare.",
-      "instagram_caption": "Un nou mod de a cumpăra: AI devine asistent personal pentru experiențe de shopping mai simple și mai sigure\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Un nou mod de a cumpăra: AI devine asistent personal pentru experiențe de shopping mai simple și mai. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Locuitorii unui cartier din Mangalia apelează la instanță ca să oblige autoritățile locale să le asfalteze străzile / „Suntem sufocați de gropile care ne distrug mașinile” / Primarul ales e acuzat de luare de mită și e suspendat din funcție",
-      "source": "G4Media",
-      "url": "https://www.g4media.ro/locuitorii-unui-cartier-din-mangalia-apeleaza-la-instanta-ca-sa-oblige-autoritatile-locale-sa-le-asfalteze-strazile-suntem-sufocati-de-gropile-care-ne-distrug-masinile-primarul-a.html",
-      "date": "2026-05-14T04:59:55+00:00",
-      "category": "Romania",
-      "summary": "Locuitorii unui cartier din Mangalia apelează la instanță ca să oblige autoritățile locale să le asfalteze străzile, anunță Agenția de presă Rador, care citează Radio Constanța. Dosarul a fost înregistrat miercuri, pe rolul Tribunalului Constanța, Secția Contencios Administrativ și Fiscal. Reclamanți sunt 33 de locuitori ai cartierului Dobrogea I, unde există străzi care n-au văzut […] © G4Media.ro .",
-      "instagram_caption": "Locuitorii unui cartier din Mangalia apelează la instanță ca să oblige autoritățile locale să le asfalteze străzile / „Suntem sufocați de gropile care ne distrug mașinile” / Primarul ales e acuzat de luare de mită și e suspendat din funcție\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Locuitorii unui cartier din Mangalia apelează la instanță ca să oblige autoritățile locale să le asf. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Festivalul Internațional Shakespeare 2026 transformă Craiova într-o scenă deschisă: spectacole gratuite în piețe, cartiere și localitățile din jur",
-      "source": "Forbes Romania",
-      "url": "https://www.forbes.ro/festivalul-international-shakespeare-2026-transforma-craiova-intr-o-scena-deschisa-spectacole-gratuite-in-piete-cartiere-si-localitatile-din-jur-501190",
-      "date": "2026-05-14T04:58:10+00:00",
-      "category": "Business",
-      "summary": "Festivalul Internațional Shakespeare Craiova 2026 prezintă secțiunile care duc teatrul în mijlocul orașului și al comunităților sale: Shakespeare Squares și Shakespeare Metropolitan. Între 21 și 31 mai, Shakespeare iese din sălile de spectacol și ajunge în piețe, în cartiere, în localitățile din zona metropolitană și la Promenada Mall Craiova, prin spectacole și evenimente cu acces ... The post Festivalul Internațion",
-      "instagram_caption": "Festivalul Internațional Shakespeare 2026 transformă Craiova într-o scenă deschisă: spectacole gratuite în piețe, cartiere și localitățile din jur\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Festivalul Internațional Shakespeare 2026 transformă Craiova într-o scenă deschisă: spectacole gratu. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Incendiu de amploare la un depozit din Chiajna. Pompierii au reuşit localizarea focului",
-      "source": "Digi24",
-      "url": "https://www.digi24.ro/stiri/actualitate/incendiu-de-amploare-la-un-depozit-din-chiajna-pompierii-au-reusit-localizarea-focului-3769283",
-      "date": "2026-05-14T04:46:59+00:00",
-      "category": "Romania",
-      "summary": "Pompierii au reuşit localizarea unui incendiu de proporţii care a izbucnit, joi dimineaţa, la un depozit din Chiajna, pe o suprafaţă de 4.000 de metri pătraţi, informează Agerpres.",
-      "instagram_caption": "Incendiu de amploare la un depozit din Chiajna. Pompierii au reuşit localizarea focului\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Incendiu de amploare la un depozit din Chiajna. Pompierii au reuşit localizarea focului. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Duma de Stat a adoptat o lege prin care Putin poate invada țări străine - Ziare.com",
