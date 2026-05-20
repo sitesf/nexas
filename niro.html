@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIRO Agent | Programări WhatsApp pentru Service Auto</title>
+  <meta name="description" content="NIRO este agentul AI pentru service auto. Preia clienți pe WhatsApp, răspunde instant și gestionează programări automat.">
+  <link rel="canonical" href="https://nexas.ro/niro.html">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NIRO Agent | Programări WhatsApp pentru Service Auto">
+  <meta property="og:description" content="NIRO răspunde pe WhatsApp, preia cereri și ajută service-urile auto să gestioneze programările mai rapid.">
+  <meta property="og:url" content="https://nexas.ro/niro.html">
+  <meta property="og:site_name" content="NEXAS">
+  <meta name="theme-color" content="#06070c">
+
+  <style>
+    @font-face{
+      font-family:"Geist";
+      src:url("/fonts/geist-latin-400-normal.woff2") format("woff2");
+      font-weight:400;
+      font-style:normal;
+      font-display:swap;
+    }
+
+    @font-face{
+      font-family:"Geist";
+      src:url("/fonts/geist-latin-600-normal.woff2") format("woff2");
+      font-weight:600;
+      font-style:normal;
+      font-display:swap;
+    }
+
+    @font-face{
+      font-family:"Geist";
+      src:url("/fonts/geist-latin-700-normal.woff2") format("woff2");
+      font-weight:700;
+      font-style:normal;
+      font-display:swap;
+    }
+
+    @font-face{
+      font-family:"Geist";
+      src:url("/fonts/geist-latin-700-normal.woff2") format("woff2");
+      font-weight:800 900;
+      font-style:normal;
+      font-display:swap;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    :root{
+      --bg:#06070c;
+      --card:#11131b;
+      --line:rgba(255,255,255,.08);
+      --text:#f5f7ff;
+      --muted:#9ea6c4;
+      --purple:#8f5cff;
+      --purple2:#5c6bff;
+      --green:#00d98b;
+    }
+
+    body{
+      font-family:'Geist',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+
+    .bg{
+      position:fixed;
+      inset:0;
+      background:
+      radial-gradient(circle at top left, rgba(143,92,255,.18), transparent 30%),
+      radial-gradient(circle at bottom right, rgba(92,107,255,.14), transparent 30%),
+      #06070c;
+      z-index:-2;
+    }
+
+    .grid{
+      position:fixed;
+      inset:0;
+      background-image:
+      linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+      background-size:70px 70px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.6), transparent);
+      z-index:-1;
+    }
+
+    header{
+      width:100%;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:100;
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(255,255,255,.05);
+      background:rgba(6,7,12,.55);
+    }
+
+    .nav{
+      width:min(1180px,92%);
+      margin:auto;
+      height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .logo{
+      font-size:1.2rem;
+      font-weight:900;
+      letter-spacing:.15em;
+    }
+
+    .logo span{
+      color:var(--purple);
+    }
+
+    .nav a{
+      color:#fff;
+      text-decoration:none;
+      margin-left:18px;
+      opacity:.85;
+      font-size:.94rem;
+    }
+
+    .cta{
+      padding:13px 22px;
+      border-radius:14px;
+      background:linear-gradient(135deg,var(--purple),var(--purple2));
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      box-shadow:0 12px 40px rgba(143,92,255,.3);
+    }
+
+    .hero{
+      width:min(1220px,92%);
+      margin:auto;
+      min-height:100vh;
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      align-items:center;
+      gap:70px;
+      padding-top:120px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 16px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:999px;
+      color:#c8cff7;
+      margin-bottom:28px;
+      background:rgba(255,255,255,.03);
+    }
+
+    .pulse{
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:var(--green);
+      box-shadow:0 0 14px var(--green);
+    }
+
+    h1{
+      font-size:clamp(58px,8vw,108px);
+      line-height:.92;
+      letter-spacing:-.06em;
+      font-weight:900;
+      max-width:720px;
+    }
+
+    h1 span{
+      background:linear-gradient(135deg,#fff,var(--purple));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{
+      margin-top:28px;
+      color:var(--muted);
+      font-size:1.12rem;
+      line-height:1.8;
+      max-width:620px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:18px;
+      margin-top:36px;
+      flex-wrap:wrap;
+    }
+
+    .btn-secondary{
+      padding:13px 22px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.08);
+      text-decoration:none;
+      color:#fff;
+      font-weight:600;
+      background:rgba(255,255,255,.03);
+    }
+
+    .phone{
+      position:relative;
+      width:390px;
+      margin:auto;
+      border-radius:42px;
+      background:#0d1117;
+      padding:18px;
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow:0 40px 120px rgba(0,0,0,.55);
+    }
+
+    .screen{
+      border-radius:30px;
+      overflow:hidden;
+      background:#0a0f14;
+      border:1px solid rgba(255,255,255,.05);
+    }
+
+    .wh-header{
+      height:76px;
+      background:#161f28;
+      display:flex;
+      align-items:center;
+      padding:0 18px;
+      gap:14px;
+      border-bottom:1px solid rgba(255,255,255,.05);
+    }
+
+    .avatar{
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--purple),var(--purple2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+    }
+
+    .chat{
+      padding:24px 18px 34px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      min-height:520px;
+      background:
+      radial-gradient(circle at top left, rgba(143,92,255,.16), transparent 34%),
+      linear-gradient(180deg, rgba(11,18,26,.96), rgba(7,12,18,.98));
+      background-size:cover;
+      background-position:center;
+    }
+
+    .msg{
+      max-width:82%;
+      padding:14px 16px;
+      border-radius:18px;
+      line-height:1.6;
+      font-size:.95rem;
+      animation:fade .5s ease;
+    }
+
+    .left{
+      background:#1d2733;
+      border-top-left-radius:6px;
+      color:#f0f3ff;
+    }
+
+    .right{
+      background:#005c4b;
+      margin-left:auto;
+      border-top-right-radius:6px;
+    }
+
+    @keyframes fade{
+      from{
+        opacity:0;
+        transform:translateY(10px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    section{
+      width:min(1180px,92%);
+      margin:auto;
+      padding:120px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    .section-title span{
+      color:var(--purple);
+      font-weight:700;
+      letter-spacing:.12em;
+      font-size:.85rem;
+    }
+
+    .section-title h2{
+      margin-top:16px;
+      font-size:clamp(34px,5vw,64px);
+      line-height:1;
+      letter-spacing:-.05em;
+    }
+
+    .section-title p{
+      margin:20px auto 0;
+      max-width:720px;
+      color:var(--muted);
+      line-height:1.8;
+    }
+
+    .grid-cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+
+    .card{
+      border-radius:30px;
+      padding:42px;
+      border:1px solid rgba(255,255,255,.08);
+      background:rgba(255,255,255,.03);
+      position:relative;
+      overflow:hidden;
+      transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease, background .35s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:rgba(143,92,255,.55);
+      box-shadow:0 28px 90px rgba(143,92,255,.22);
+      background:linear-gradient(180deg, rgba(143,92,255,.11), rgba(255,255,255,.035));
+    }
+
+    .card::before{
+      content:'';
+      position:absolute;
+      width:180px;
+      height:180px;
+      background:rgba(143,92,255,.12);
+      border-radius:50%;
+      top:-60px;
+      right:-60px;
+      filter:blur(20px);
+    }
+
+    .card h3{
+      font-size:1.35rem;
+      margin-bottom:14px;
+    }
+
+    .card p{
+      color:var(--muted);
+      line-height:1.8;
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:22px;
+    }
+
+    .step{
+      border-radius:30px;
+      padding:42px;
+      border:1px solid rgba(255,255,255,.08);
+      background:rgba(255,255,255,.03);
+      position:relative;
+      overflow:hidden;
+      transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease, background .35s ease;
+    }
+
+    .step:hover{
+      transform:translateY(-10px);
+      border-color:rgba(143,92,255,.55);
+      box-shadow:0 28px 90px rgba(143,92,255,.22);
+      background:linear-gradient(180deg, rgba(143,92,255,.11), rgba(255,255,255,.035));
+    }
+
+    .step-number{
+      font-size:3rem;
+      font-weight:900;
+      color:rgba(255,255,255,.08);
+      position:absolute;
+      right:20px;
+      top:12px;
+    }
+
+    .step h4{
+      margin-bottom:14px;
+      font-size:1.35rem;
+    }
+
+    .step p{
+      color:var(--muted);
+      line-height:1.8;
+      font-size:.96rem;
+    }
+
+    .pricing{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+
+    .price-card{
+      border-radius:30px;
+      padding:42px;
+      border:1px solid rgba(255,255,255,.08);
+      background:rgba(255,255,255,.03);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .price-card.featured{
+      border-color:rgba(143,92,255,.5);
+      transform:scale(1.03);
+      box-shadow:0 20px 80px rgba(143,92,255,.18);
+    }
+
+    .price-card h3{
+      font-size:1.5rem;
+      margin-bottom:16px;
+    }
+
+    .price{
+      display:flex;
+      align-items:flex-end;
+      gap:10px;
+      flex-wrap:wrap;
+      font-size:5rem;
+      font-weight:900;
+      letter-spacing:-.08em;
+      margin-bottom:18px;
+      line-height:.9;
+    }
+
+    .price span{
+      font-size:1.3rem;
+      opacity:.75;
+      margin-bottom:10px;
+      letter-spacing:0;
+    }
+
+    .price-card p{
+      color:var(--muted);
+      margin-bottom:26px;
+      line-height:1.8;
+    }
+
+    .features{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .features div{
+      color:#dfe4ff;
+      opacity:.9;
+    }
+
+    footer{
+      padding:70px 20px;
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,.05);
+      color:#9ba3c0;
+    }
+
+
+    .price-card{
+      transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease, background .35s ease;
+    }
+
+    .price-card:hover{
+      transform:translateY(-10px);
+      border-color:rgba(143,92,255,.55);
+      box-shadow:0 28px 90px rgba(143,92,255,.22);
+      background:linear-gradient(180deg, rgba(143,92,255,.11), rgba(255,255,255,.035));
+    }
+
+    .price-card.featured:hover{
+      transform:translateY(-10px) scale(1.03);
+    }
+
+    .features div{
+      position:relative;
+      padding-left:18px;
+    }
+
+    .features div::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:.7em;
+      width:6px;
+      height:6px;
+      border-radius:999px;
+      background:var(--purple);
+      box-shadow:0 0 12px rgba(143,92,255,.55);
+    }
+
+    .legal-links{
+      margin-top:26px;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .legal-links a{
+      color:#c8cff7;
+      text-decoration:none;
+      font-size:.9rem;
+      opacity:.78;
+    }
+
+    .legal-links a:hover{
+      opacity:1;
+      color:#fff;
+    }
+
+    @media(max-width:1080px){
+      .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .hero p,
+      h1{
+        margin-inline:auto;
+      }
+
+      .hero-buttons{
+        justify-content:center;
+      }
+
+      .grid-cards,
+      .steps,
+      .pricing{
+        grid-template-columns:1fr;
+      }
+
+      .phone{
+        width:100%;
+        max-width:420px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="grid"></div>
+
+<header>
+  <div class="nav">
+    <div class="logo">N<span>I</span>RO AGENT</div>
+
+    <div>
+      <a href="/index.html">Prima pagină</a>
+      <a href="#proces">Proces</a>
+      <a href="#preturi">Prețuri</a>
+      <a href="/contact.html" class="cta">Solicită demo</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+
+  <div>
+    <div class="badge">
+      <div class="pulse"></div>
+      NIRO Agent activ 24/7 pe WhatsApp
+    </div>
+
+    <h1>
+      Agentul NIRO care face <span>programări automat</span>
+    </h1>
+
+    <p>
+      NIRO răspunde instant clienților pe WhatsApp, explică serviciile, preia cereri de programare și salvează automat toate datele în Google Sheets. Fără apeluri pierdute. Fără timp pierdut.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="cta">Testează agentul</a>
+      <a href="#functii" class="btn-secondary">Vezi funcțiile</a>
+    </div>
+  </div>
+
+  <div class="phone">
+    <div class="screen">
+
+      <div class="wh-header">
+        <div class="avatar">NIRO</div>
+
+        <div>
+          <strong>NIRO Agent</strong>
+          <div style="color:#8ee5be;font-size:.88rem;margin-top:4px;">online acum</div>
+        </div>
+      </div>
+
+      <div class="chat">
+
+        <div class="msg left">
+          Bună, sunt NIRO, consultantul virtual al service-ului. Cu ce te pot ajuta?
+        </div>
+
+        <div class="msg right">
+          Bună. Vreau o programare pentru schimb plăcuțe.
+        </div>
+
+        <div class="msg left">
+          Sigur. Pentru ce mașină doriți programarea?
+        </div>
+
+        <div class="msg right">
+          BMW Seria 3, 2019.
+        </div>
+
+        <div class="msg left">
+          Perfect. Vă pot programa mâine la 11:00 sau 14:30. Ce variantă alegeți?
+        </div>
+
+        <div class="msg right">
+          11:00.
+        </div>
+
+        <div class="msg left">
+          Programarea a fost salvată. Vă așteptăm mâine la service.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="functii">
+
+  <div class="section-title">
+    <span>FUNCȚII</span>
+    <h2>Automatizare completă pentru service-ul tău</h2>
+    <p>
+      NIRO funcționează nonstop și gestionează conversațiile cu clienții în mod natural.
+    </p>
+  </div>
+
+  <div class="grid-cards">
+
+    <div class="card">
+      <h3>Răspuns instant</h3>
+      <p>
+        Clienții primesc răspuns imediat pe WhatsApp, indiferent de oră.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Programări automate</h3>
+      <p>
+        Agentul colectează datele clientului și pregătește programarea automat.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Salvare în Google Sheets</h3>
+      <p>
+        Toate programările sunt salvate automat într-un dashboard centralizat.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Conversații naturale</h3>
+      <p>
+        NIRO folosește AI pentru a răspunde natural și profesionist.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Reducere timp pierdut</h3>
+      <p>
+        Echipa nu mai pierde timp cu apeluri repetitive și mesaje.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Integrare WhatsApp</h3>
+      <p>
+        Clienții comunică direct pe aplicația pe care deja o folosesc.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="proces">
+
+  <div class="section-title">
+    <span>PROCES</span>
+    <h2>Cum funcționează NIRO</h2>
+  </div>
+
+  <div class="steps">
+
+    <div class="step">
+      <h4>Clientul scrie pe WhatsApp</h4>
+      <p>
+        NIRO preia automat conversația imediat după primul mesaj.
+      </p>
+    </div>
+
+    <div class="step">
+      <h4>Agentul colectează date</h4>
+      <p>
+        Nume, marcă, problemă, data dorită și alte detalii importante, în funcție de nevoile clientului.
+      </p>
+    </div>
+
+    <div class="step">
+      <h4>Programarea este salvată</h4>
+      <p>
+        Informațiile ajung automat în Google Sheets sau CRM.
+      </p>
+    </div>
+
+    <div class="step">
+      <h4>Service-ul confirmă rapid</h4>
+      <p>
+        Echipa vede instant toate programările într-un singur loc.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="preturi">
+
+  <div class="section-title">
+    <span>PREȚURI</span>
+    <h2>Pachete pentru service-uri auto</h2>
+  </div>
+
+  <div class="pricing">
+
+    <div class="price-card">
+      <h3>STARTER</h3>
+      <div class="price">500 <span>RON / lună</span></div>
+      <p>
+        Ideal pentru service-uri care vor un agent AI de bază, clar și rapid de implementat.
+      </p>
+
+      <div class="features">
+        <div>WhatsApp AI</div>
+        <div>Programări automate</div>
+        <div>Google Sheets</div>
+        <div>Suport tehnic</div>
+      </div>
+    </div>
+
+    <div class="price-card featured">
+      <h3>PRO</h3>
+      <div class="price">1000 <span>RON / lună</span></div>
+      <p>
+        Soluția potrivită pentru service-uri care vor fluxuri personalizate și răspunsuri mai avansate.
+      </p>
+
+      <div class="features">
+        <div>AI avansat</div>
+        <div>Flux personalizat</div>
+        <div>Rapoarte automate</div>
+        <div>Suport prioritar</div>
+      </div>
+    </div>
+
+    <div class="price-card">
+      <h3>PREMIUM</h3>
+      <div class="price">5000 <span>RON / lună</span></div>
+      <p>
+        Pentru service-uri care vor automatizare completă, integrare avansată și scalare.
+      </p>
+
+      <div class="features">
+        <div>CRM integrat</div>
+        <div>API personalizat</div>
+        <div>Dashboard dedicat</div>
+        <div>Scalare completă</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<footer id="contact">
+  <h2 style="font-size:2.4rem;margin-bottom:18px;">Construiește propriul recepționer AI</h2>
+  <p style="max-width:720px;margin:auto;line-height:1.8;color:#a4abc6;">
+    Automatizează programările pe WhatsApp și transformă modul în care interacționezi cu clienții.
+  </p>
+
+  <div style="margin-top:34px;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;">
+    <a href="/contact.html" class="cta">Solicită demo</a>
+    <a href="https://wa.me/40764639118?text=Salut%2C%20vreau%20sa%20testez%20NIRO%20Agent" class="btn-secondary" target="_blank" rel="noopener">WhatsApp Demo</a>
+  </div>
+
+  <div class="legal-links" aria-label="Linkuri legale">
+    <a href="/privacy.html">Confidențialitate</a>
+    <a href="/cookies.html">Cookies</a>
+    <a href="/termeni.html">Termeni și condiții</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+
+  <div style="margin-top:30px;font-size:.92rem;opacity:.6;">
+    © 2026 NIRO Agent. Powered by NEXAS.
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"NIRO Agent",
+  "applicationCategory":"BusinessApplication",
+  "operatingSystem":"Web, WhatsApp",
+  "description":"NIRO este un agent AI pentru service-uri auto, creat pentru răspunsuri pe WhatsApp și gestionarea programărilor.",
+  "brand":{
+    "@type":"Brand",
+    "name":"NEXAS"
+  },
+  "offers":[
+    {
+      "@type":"Offer",
+      "name":"NIRO Starter",
+      "price":"500",
+      "priceCurrency":"RON",
+      "availability":"https://schema.org/InStock"
+    },
+    {
+      "@type":"Offer",
+      "name":"NIRO Pro",
+      "price":"1000",
+      "priceCurrency":"RON",
+      "availability":"https://schema.org/InStock"
+    },
+    {
+      "@type":"Offer",
+      "name":"NIRO Premium",
+      "price":"5000",
+      "priceCurrency":"RON",
+      "availability":"https://schema.org/InStock"
+    }
+  ]
+}
+</script>
+
+<script src="/assets/nexas-consent.js"></script>
+
+</body>
+</html>
