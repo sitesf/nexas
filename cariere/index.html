@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cariere | NEXAS HR</title>
+  <meta name="description" content="Pagina de cariere NEXAS HR. Vezi posturile disponibile si aplica rapid online." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.nexas.ro/cariere/" />
+
+  <meta property="og:title" content="Cariere | NEXAS HR" />
+  <meta property="og:description" content="Vezi posturile disponibile si aplica rapid prin platforma NEXAS HR." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.nexas.ro/cariere/" />
+
+  <meta name="theme-color" content="#09090f" />
+
+  <meta http-equiv="refresh" content="1; url=https://hr-g66k.onrender.com/cariere" />
+
+  <style>
+    :root {
+      --bg: #09090f;
+      --card: rgba(255, 255, 255, 0.07);
+      --text: #ffffff;
+      --muted: #b8b8c8;
+      --accent: #8b5cf6;
+      --accent-2: #c084fc;
+      --border: rgba(255, 255, 255, 0.13);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(139, 92, 246, 0.25), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(192, 132, 252, 0.18), transparent 32%),
+        var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(560px, 100%);
+      padding: 34px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--card);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(18px);
+      text-align: center;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 22px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    .brand span:nth-child(2) {
+      color: var(--accent-2);
+    }
+
+    h1 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 26px;
+    }
+
+    .loader {
+      width: 52px;
+      height: 52px;
+      border: 4px solid rgba(255, 255, 255, 0.15);
+      border-top-color: var(--accent-2);
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      animation: spin 0.9s linear infinite;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(139, 92, 246, 0.35);
+    }
+
+    .small {
+      margin-top: 18px;
+      margin-bottom: 0;
+      font-size: 13px;
+      color: #8f8fa3;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      const targetUrl = "https://hr-g66k.onrender.com/cariere";
+      setTimeout(function () {
+        window.location.replace(targetUrl);
+      }, 700);
+    });
+  </script>
+</head>
+<body>
+  <main class="card">
+    <div class="brand" aria-label="NEXAS">
+      <span>N</span><span>E</span><span>XAS</span>
+    </div>
+
+    <div class="loader" aria-hidden="true"></div>
+
+    <h1>Te redirectionam catre NEXAS HR</h1>
+    <p>Pagina de cariere se deschide imediat. Acolo poti vedea posturile disponibile si poti incarca CV-ul.</p>
+
+    <a class="btn" href="https://hr-g66k.onrender.com/cariere">Deschide pagina de cariere</a>
+    <p class="small">Daca redirectarea nu porneste automat, apasa pe buton.</p>
+  </main>
+</body>
+</html>
