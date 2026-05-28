@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXAS HR — Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700;9..40,800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+/* ─── RESET ─── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:'DM Sans',sans-serif;font-size:14px;overflow:hidden}
+
+/* ─── DESIGN TOKENS ─── */
+:root{
+  --bg:#141b2d;
+  --s1:#1a2238;--s2:#202a44;
+  --line:rgba(255,255,255,.09);--line2:rgba(255,255,255,.14);
+  --txt:#fff;--soft:rgba(255,255,255,.82);--muted:rgba(255,255,255,.50);
+  --blue:#5da9ff;--blue2:#7cc4ff;--bsoft:rgba(93,169,255,.13);--bline:rgba(93,169,255,.26);
+  --teal:#22c7b8;--teal2:#5ee6da;--tsoft:rgba(34,199,184,.13);--tline:rgba(34,199,184,.26);
+  --yellow:#f59e0b;--ysoft:rgba(245,158,11,.13);--yline:rgba(245,158,11,.26);
+  --red:#ff6b70;--rsoft:rgba(255,107,112,.13);--rline:rgba(255,107,112,.26);
+  --r:12px;--rl:18px;--rxl:22px;
+}
+
+/* ─── ROOT LAYOUT ─── */
+body{
+  background:
+    radial-gradient(circle at 10% 10%,rgba(93,169,255,.14),transparent 35%),
+    radial-gradient(circle at 90% 85%,rgba(34,199,184,.07),transparent 30%),
+    linear-gradient(135deg,#121827,#171f33 50%,#1d263d);
+  color:var(--txt);
+}
+.app{display:flex;height:100vh;overflow:hidden}
+
+/* ─── SIDEBAR ─── */
+.sidebar{
+  width:216px;flex-shrink:0;
+  background:linear-gradient(180deg,#101825 0%,#141b2d 100%);
+  border-right:1px solid var(--line);
+  display:flex;flex-direction:column;
+}
+.brand{padding:26px 20px 22px;border-bottom:1px solid var(--line)}
+.brand-name{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:#fff;letter-spacing:-.3px}
+.brand-name em{color:var(--blue2);font-style:normal}
+.brand-tag{font-size:10px;color:var(--muted);letter-spacing:2.2px;text-transform:uppercase;margin-top:4px}
+.nav{display:flex;flex-direction:column;gap:2px;padding:14px 10px;flex:1}
+.nav-link{
+  display:flex;align-items:center;gap:9px;
+  padding:10px 12px;border-radius:10px;
+  font-size:13px;font-weight:700;color:var(--muted);
+  cursor:pointer;transition:.16s;position:relative;user-select:none;
+}
+.nav-link svg{width:15px;height:15px;opacity:.65;flex-shrink:0;transition:.16s}
+.nav-link:hover{color:#fff;background:rgba(255,255,255,.05)}
+.nav-link:hover svg{opacity:1}
+.nav-link.on{color:#fff;background:rgba(93,169,255,.14)}
+.nav-link.on svg{opacity:1;color:var(--blue2)}
+.nav-link.on::before{
+  content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:3px;height:55%;border-radius:0 3px 3px 0;background:var(--blue2);
+}
+.nav-link.logout{margin-top:auto;color:rgba(252,165,165,.7)}
+.nav-link.logout:hover{color:#fca5a5;background:rgba(248,113,113,.07)}
+
+/* ─── PAGES WRAPPER ─── */
+.pages{flex:1;overflow:hidden;position:relative}
+.pg{position:absolute;inset:0;overflow-y:auto;padding:28px 30px 40px;display:none}
+.pg.on{display:block}
+#pg-calendar{padding:0;display:none;flex-direction:column}
+#pg-calendar.on{display:flex}
+
+/* ─── SHARED ─── */
+.eyebrow{font-size:10px;font-weight:900;color:var(--blue2);text-transform:uppercase;letter-spacing:.16em;margin-bottom:8px}
+.h1{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:#fff;letter-spacing:-.5px;line-height:1.1;margin-bottom:6px}
+.sub{font-size:13px;color:var(--soft);line-height:1.55}
+.pill{display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;font-size:12px;font-weight:800;background:var(--bsoft);border:1px solid var(--bline);color:var(--blue2)}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+.kpi{background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);padding:18px 20px;position:relative;overflow:hidden;transition:.2s}
+.kpi:hover{border-color:var(--bline)}
+.kpi::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(93,169,255,.06),transparent 55%);pointer-events:none}
+.kpi-lbl{font-size:10px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-bottom:9px}
+.kpi-val{font-family:'Syne',sans-serif;font-size:30px;font-weight:800;color:#fff;line-height:1}
+.kpi-val span{font-size:13px;font-weight:700;color:var(--blue2);font-family:'DM Sans',sans-serif}
+.kpi-note{font-size:11px;color:var(--muted);margin-top:5px}
+
+.card{background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);padding:22px}
+.card-title{font-size:11px;font-weight:900;color:var(--blue2);text-transform:uppercase;letter-spacing:.14em;margin-bottom:16px}
+.card-title span{color:var(--muted);font-weight:600;font-size:11px;text-transform:none;letter-spacing:0;margin-left:6px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;border-radius:10px;font-size:12px;font-weight:800;border:none;cursor:pointer;transition:.16s;font-family:'DM Sans',sans-serif;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-blue{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#07111f;box-shadow:0 5px 16px rgba(93,169,255,.22)}
+.btn-blue:hover{box-shadow:0 9px 22px rgba(93,169,255,.32)}
+.btn-teal{background:linear-gradient(135deg,var(--teal),var(--blue));color:#07111f;box-shadow:0 5px 16px rgba(34,199,184,.22)}
+.btn-teal:hover{box-shadow:0 9px 22px rgba(34,199,184,.32)}
+.btn-ghost{background:rgba(255,255,255,.06);border:1px solid var(--line2);color:var(--soft)}
+.btn-ghost:hover{color:#fff;border-color:var(--bline);background:var(--bsoft)}
+.btn-red{background:var(--rsoft);border:1px solid var(--rline);color:#ffb4b7}
+.btn-red:hover{background:rgba(255,107,112,.22)}
+.btn-sm{padding:6px 11px;font-size:11px;border-radius:8px}
+
+.tag{display:inline-flex;align-items:center;padding:3px 9px;border-radius:999px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.07em}
+.tg{background:var(--tsoft);border:1px solid var(--tline);color:var(--teal2)}
+.ty{background:var(--ysoft);border:1px solid var(--yline);color:#fcd38a}
+.tr{background:var(--rsoft);border:1px solid var(--rline);color:#ffb4b7}
+.tb{background:var(--bsoft);border:1px solid var(--bline);color:var(--blue2)}
+.tm{background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--soft)}
+
+.sn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;font-family:'Syne',sans-serif;font-size:13px;font-weight:800}
+.sn-g{background:var(--teal);color:#07111f}
+.sn-y{background:var(--yellow);color:#07111f}
+.sn-r{background:var(--red);color:#fff}
+
+.av{display:flex;align-items:center;justify-content:center;border-radius:50%;font-family:'Syne',sans-serif;font-weight:800;color:#07111f;flex-shrink:0;background:linear-gradient(135deg,var(--teal),var(--blue))}
+
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.bar-lbl{font-size:12px;font-weight:700;color:var(--soft);min-width:150px}
+.bar-lbl small{display:block;font-size:10px;color:var(--muted);font-weight:600;margin-top:1px}
+.bar-track{flex:1;height:7px;background:rgba(255,255,255,.07);border-radius:999px;overflow:hidden}
+.bar-fill{height:100%;border-radius:999px}
+.bf-t{background:var(--teal)}
+.bf-b{background:var(--blue)}
+.bf-y{background:var(--yellow)}
+.bf-r{background:var(--red)}
+.bar-n{font-size:12px;font-weight:800;color:#fff;min-width:24px;text-align:right}
+
+.inp{width:100%;padding:9px 13px;border-radius:10px;border:1px solid var(--line2);background:rgba(255,255,255,.06);color:#fff;font-size:13px;font-weight:600;outline:none;transition:.18s;font-family:'DM Sans',sans-serif}
+.inp:focus{border-color:var(--bline);box-shadow:0 0 0 3px rgba(93,169,255,.10)}
+.inp::placeholder{color:rgba(255,255,255,.28)}
+select.inp option{background:#1a2238;color:#fff}
+textarea.inp{min-height:78px;resize:vertical;line-height:1.5}
+.lbl{font-size:10px;font-weight:900;color:var(--blue2);text-transform:uppercase;letter-spacing:.12em;display:block;margin-bottom:6px}
+.field{margin-bottom:12px}
+.fg2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.full{grid-column:1/-1}
+
+.toast-el{position:fixed;bottom:22px;right:22px;z-index:9999;padding:12px 18px;border-radius:12px;font-size:13px;font-weight:700;background:var(--s2);border:1px solid var(--tline);color:var(--teal2);box-shadow:0 10px 28px rgba(0,0,0,.38);transform:translateY(18px);opacity:0;transition:.24s;pointer-events:none}
+.toast-el.on{transform:translateY(0);opacity:1}
+.toast-el.err{border-color:var(--rline);color:#ffb4b7}
+
+/* ══ PAGE: DASHBOARD ══ */
+.dash-hero{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-bottom:20px}
+.dash-left{background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);padding:26px;position:relative;overflow:hidden}
+.dash-left::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(93,169,255,.10),transparent 50%);pointer-events:none}
+.dash-right{background:linear-gradient(145deg,#1a2844,#151f38);border:1px solid var(--line2);border-radius:var(--rxl);padding:22px}
+.ai-hdr{display:flex;align-items:center;gap:7px;font-size:11px;font-weight:900;color:var(--teal2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}
+.ai-dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 7px rgba(34,199,184,.6);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.ai-wave{width:100%;height:56px}
+.ai-status{font-size:11px;color:var(--blue2);font-weight:700;text-align:center;margin:10px 0}
+.ai-nums{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.ai-num{text-align:center;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:9px 4px}
+.ai-num-v{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:#fff}
+.ai-num-l{font-size:9px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-top:2px}
+
+.mini-recs{display:grid;gap:8px;margin-top:16px}
+.mini-rec{display:flex;align-items:center;gap:10px;padding:9px 12px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:11px}
+.mini-rec-info{flex:1;min-width:0}
+.mini-rec-info strong{display:block;font-size:13px;font-weight:800;color:#fff}
+.mini-rec-info small{font-size:11px;color:var(--muted)}
+.mini-rec-score{font-family:'Syne',sans-serif;font-size:15px;font-weight:800;color:var(--teal2)}
+
+.src-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.src-card{background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);padding:18px;display:flex;gap:13px;transition:.18s}
+.src-card:hover{border-color:var(--bline)}
+.src-ico{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;flex-shrink:0}
+.src-ico.b{background:var(--bsoft);border:1px solid var(--bline);color:var(--blue2)}
+.src-ico.t{background:var(--tsoft);border:1px solid var(--tline);color:var(--teal2)}
+.src-card h3{font-size:14px;font-weight:800;color:#fff;margin-bottom:4px}
+.src-card p{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:10px}
+.row-inp{display:flex;gap:7px}
+.row-inp .inp{flex:1}
+
+.match-box{background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);padding:18px;margin-bottom:12px}
+.match-box h3{font-size:14px;font-weight:800;color:#fff;margin-bottom:3px}
+.match-box p{font-size:12px;color:var(--muted);margin-bottom:10px}
+
+.section-hd{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px}
+.section-hd-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:800;color:#fff}
+.section-hd-sub{font-size:12px;color:var(--muted);margin-top:2px}
+
+.acc-hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);cursor:pointer;transition:.16s;user-select:none;margin-bottom:0}
+.acc-hdr:hover{border-color:var(--bline);background:var(--s2)}
+.acc-hdr.open{border-radius:var(--rxl) var(--rxl) 0 0;margin-bottom:0}
+.acc-left{display:flex;align-items:center;gap:12px}
+.acc-ico{width:34px;height:34px;border-radius:9px;background:var(--bsoft);border:1px solid var(--bline);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;color:var(--blue2);flex-shrink:0}
+.acc-kick{font-size:9px;font-weight:900;color:var(--blue2);text-transform:uppercase;letter-spacing:.11em}
+.acc-name{font-family:'Syne',sans-serif;font-size:15px;font-weight:800;color:#fff}
+.acc-sub{font-size:10px;color:var(--muted)}
+.acc-right{display:flex;align-items:center;gap:10px}
+.acc-cnt{padding:4px 11px;border-radius:999px;background:var(--tsoft);border:1px solid var(--tline);color:var(--teal2);font-size:11px;font-weight:800}
+.acc-chev{width:15px;height:15px;color:var(--muted);transition:transform .22s}
+.acc-hdr.open .acc-chev{transform:rotate(180deg)}
+
+.acc-body{display:none;background:var(--s1);border:1px solid var(--line);border-top:none;border-radius:0 0 var(--rxl) var(--rxl);overflow:hidden;margin-bottom:10px}
+.acc-body.open{display:block}
+.ct{width:100%;border-collapse:collapse}
+.ct th{padding:10px 14px;font-size:10px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;text-align:left;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
+.ct td{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:middle}
+.ct tr:last-child td{border-bottom:none}
+.ct tr:hover td{background:rgba(93,169,255,.04)}
+.ra{display:flex;align-items:center;gap:9px}
+.rn{font-size:13px;font-weight:800;color:#fff}
+.rs{font-size:11px;color:var(--muted);margin-top:1px}
+.score-col{display:flex;flex-direction:column;gap:5px;min-width:64px}
+.score-bar{height:4px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden}
+.score-bar-fill{height:100%;border-radius:999px}
+.sum-td{font-size:12px;color:var(--soft);line-height:1.5;max-width:260px}
+.act-td{display:flex;gap:6px}
+
+/* ══ PAGE: CANDIDATI ══ */
+.pg-hd{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:18px}
+.filters{background:var(--s1);border:1px solid var(--line);border-radius:var(--rl);padding:14px 18px;margin-bottom:18px;display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.filters .inp{width:auto;flex:1;min-width:160px}
+.clist{display:grid;gap:10px}
+.ccard{background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);padding:17px 20px;transition:.18s;cursor:default}
+.ccard:hover{border-color:var(--bline);transform:translateY(-1px);box-shadow:0 8px 26px rgba(0,0,0,.18)}
+.ccard-grid{display:grid;grid-template-columns:200px 1fr auto;gap:14px;align-items:center}
+.cmain{display:flex;align-items:center;gap:11px}
+.cmatches{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.cmatch{display:flex;align-items:center;gap:8px;padding:5px 11px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
+.cmatch-job{font-size:12px;font-weight:700;color:var(--soft)}
+.cmatch-sc{font-family:'Syne',sans-serif;font-size:13px;font-weight:800}
+.sc-t{color:var(--teal2)} .sc-y{color:#fcd38a} .sc-r{color:#ffb4b7}
+.cacts{display:flex;gap:7px;flex-shrink:0}
+
+/* ══ PAGE: STATISTICI ══ */
+.ana-hero{background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);padding:24px;margin-bottom:18px;position:relative;overflow:hidden}
+.ana-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(93,169,255,.09),transparent 50%);pointer-events:none}
+.ana-chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.chip{display:flex;align-items:center;gap:9px;padding:9px 15px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid var(--line)}
+.chip strong{font-family:'Syne',sans-serif;font-size:21px;font-weight:800;color:#fff}
+.chip span{font-size:12px;color:var(--muted)}
+.ana-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:14px}
+.qbox{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:11px;padding:11px;text-align:center}
+.qbox strong{display:block;font-family:'Syne',sans-serif;font-size:21px;font-weight:800;color:#fff;margin-bottom:2px}
+.qbox span{font-size:10px;color:var(--muted)}
+.top-table-wrap{background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);padding:22px}
+.top-table-wrap h2{font-family:'Syne',sans-serif;font-size:16px;font-weight:800;color:#fff;margin-bottom:3px}
+.top-table-wrap p{font-size:12px;color:var(--muted);margin-bottom:14px}
+.tt{width:100%;border-collapse:collapse}
+.tt th{padding:9px 13px;font-size:10px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;text-align:left;border-bottom:1px solid var(--line)}
+.tt td{padding:11px 13px;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:middle}
+.tt tr:last-child td{border-bottom:none}
+.tt tr:hover td{background:rgba(93,169,255,.04)}
+.sc-cell{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;font-family:'Syne',sans-serif;font-size:12px;font-weight:800}
+
+/* ══ PAGE: POSTURI ══ */
+.posturi-hero{background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);padding:24px;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between}
+.p-stats{display:flex;gap:22px}
+.pstat-n{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:#fff;line-height:1}
+.pstat-l{font-size:10px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-top:3px}
+.link-bar{background:var(--bsoft);border:1px solid var(--bline);border-radius:11px;padding:10px 15px;margin-bottom:16px;font-size:12px;font-weight:700;color:var(--blue2);display:flex;align-items:center;gap:7px}
+.two-col{display:grid;grid-template-columns:360px 1fr;gap:18px}
+.jlist{display:grid;gap:10px}
+.jcard{background:var(--s1);border:1px solid var(--line);border-radius:var(--rxl);padding:19px;transition:.18s}
+.jcard:hover{border-color:var(--bline)}
+.jcard.off{opacity:.6}
+.jcard-hdr{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:9px}
+.jcard-kick{font-size:9px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px}
+.jcard-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:800;color:#fff}
+.jcard-right{display:flex;gap:5px;align-items:center;flex-shrink:0}
+.mc{padding:3px 9px;border-radius:999px;font-size:10px;font-weight:800;background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--soft)}
+.mc.b{background:var(--bsoft);border-color:var(--bline);color:var(--blue2)}
+.mc.t{background:var(--tsoft);border-color:var(--tline);color:var(--teal2)}
+.mc.y{background:var(--ysoft);border-color:var(--yline);color:#fcd38a}
+.jcard-meta{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:9px}
+.jcard-desc{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:11px}
+.jcard-acts{display:flex;gap:6px;flex-wrap:wrap}
+
+/* ══ PAGE: CALENDAR ══ */
+.cal-bar{height:62px;flex-shrink:0;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 26px;gap:14px;background:rgba(20,27,45,.94);backdrop-filter:blur(16px)}
+.cal-bar-info .cal-bar-title{font-family:'Syne',sans-serif;font-size:17px;font-weight:800;color:#fff;letter-spacing:-.3px;line-height:1.1}
+.cal-bar-info .cal-bar-sub{font-size:11px;color:var(--soft);margin-top:2px}
+.wnav{display:flex;align-items:center;gap:7px;margin-left:auto}
+.wbtn{width:31px;height:31px;border-radius:8px;border:1px solid var(--line2);background:rgba(255,255,255,.05);color:var(--soft);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.16s}
+.wbtn:hover{color:#fff;border-color:var(--bline);background:var(--bsoft)}
+.wbtn svg{width:13px;height:13px}
+.wlbl{font-size:13px;font-weight:800;color:#fff;min-width:172px;text-align:center}
+.wbtn-today{padding:7px 13px;border-radius:9px;font-size:12px;font-weight:800;background:var(--bsoft);border:1px solid var(--bline);color:var(--blue2);cursor:pointer;transition:.16s;font-family:'DM Sans',sans-serif}
+.wbtn-today:hover{background:rgba(93,169,255,.22);color:#fff}
+.wbtn-new{display:flex;align-items:center;gap:7px;padding:8px 15px;border-radius:11px;font-size:12px;font-weight:800;background:linear-gradient(135deg,var(--teal),var(--blue));color:#07111f;border:none;cursor:pointer;transition:.16s;box-shadow:0 5px 16px rgba(34,199,184,.22);font-family:'DM Sans',sans-serif}
+.wbtn-new:hover{transform:translateY(-1px);box-shadow:0 9px 22px rgba(34,199,184,.30)}
+.wbtn-new svg{width:13px;height:13px}
+
+.cal-outer{flex:1;overflow-y:auto}
+.cal-cont{min-width:680px}
+.cal-hdr{display:grid;grid-template-columns:58px repeat(7,1fr);border-bottom:1px solid var(--line);background:rgba(20,27,45,.98);position:sticky;top:0;z-index:9}
+.cal-hdr-empty{border-right:1px solid var(--line)}
+.cal-dh{padding:12px 8px 10px;text-align:center;border-right:1px solid var(--line)}
+.cal-dh:last-child{border-right:none}
+.cal-dh-n{font-size:9px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.14em}
+.cal-dh-d{font-family:'Syne',sans-serif;font-size:21px;font-weight:800;color:var(--soft);margin-top:3px;line-height:1}
+.cal-dh.tod .cal-dh-n{color:var(--teal2)}
+.cal-dh.tod .cal-dh-d{color:#07111f;background:linear-gradient(135deg,var(--teal),var(--blue));width:33px;height:33px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:3px auto 0;font-size:15px}
+
+.cal-body{display:grid;grid-template-columns:58px repeat(7,1fr)}
+.cal-hrs{border-right:1px solid var(--line)}
+.cal-hl{height:64px;display:flex;align-items:flex-start;justify-content:flex-end;padding:7px 9px 0 0;font-size:10px;font-weight:700;color:var(--muted);border-bottom:1px solid var(--line)}
+.cal-dc{position:relative;border-right:1px solid var(--line);cursor:pointer}
+.cal-dc:last-child{border-right:none}
+.cal-dc.tod{background:rgba(93,169,255,.022)}
+.cal-slot{height:64px;border-bottom:1px solid var(--line);position:relative;transition:background .1s}
+.cal-slot:last-child{border-bottom:none}
+.cal-slot:hover{background:rgba(93,169,255,.06)}
+.cal-slot::after{content:'';position:absolute;left:7px;right:7px;top:50%;border-top:1px dashed rgba(255,255,255,.045);pointer-events:none}
+
+.ivc{position:absolute;z-index:3;border-radius:9px;padding:5px 8px;overflow:hidden;cursor:pointer;transition:transform .14s,filter .14s;min-height:24px}
+.ivc:hover{transform:translateY(-1px) scale(1.02);z-index:5;filter:brightness(1.09)}
+.ivc.ct{background:linear-gradient(135deg,rgba(34,199,184,.88),rgba(74,149,246,.78));border:1px solid rgba(34,199,184,.36);box-shadow:0 4px 13px rgba(34,199,184,.17)}
+.ivc.cb{background:linear-gradient(135deg,rgba(74,149,246,.88),rgba(120,138,255,.78));border:1px solid rgba(74,149,246,.36);box-shadow:0 4px 13px rgba(74,149,246,.17)}
+.ivc.cp{background:linear-gradient(135deg,rgba(168,85,247,.80),rgba(74,149,246,.70));border:1px solid rgba(168,85,247,.36)}
+.ivc.cd{background:linear-gradient(135deg,rgba(55,70,105,.80),rgba(40,55,85,.75));border:1px solid rgba(255,255,255,.09)}
+.ct .ivt,.cb .ivt,.cp .ivt{color:rgba(7,17,31,.72)}
+.ct .ivn,.cb .ivn,.cp .ivn{color:#07111f}
+.ct .ivj,.cb .ivj,.cp .ivj{color:rgba(7,17,31,.56)}
+.cd .ivt,.cd .ivn,.cd .ivj{color:var(--soft)}
+.ivt{font-size:9px;font-weight:900;line-height:1;margin-bottom:2px}
+.ivn{font-size:10px;font-weight:800;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ivj{font-size:9px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+.tln{position:absolute;left:0;right:0;height:2px;z-index:4;pointer-events:none;background:linear-gradient(90deg,transparent,var(--teal),transparent)}
+.tln::before{content:'';position:absolute;left:-1px;top:50%;transform:translateY(-50%);width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 6px rgba(34,199,184,.55)}
+
+/* CALENDAR MODAL */
+.cmo{position:fixed;inset:0;z-index:100;background:rgba(7,17,31,.78);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s}
+.cmo.on{opacity:1;pointer-events:all}
+.cm{background:linear-gradient(145deg,#1a2540,#131c30);border:1px solid var(--line2);border-radius:22px;padding:28px;width:100%;max-width:480px;box-shadow:0 38px 90px rgba(0,0,0,.52);transform:translateY(16px) scale(.96);transition:transform .22s cubic-bezier(.16,1,.3,1);position:relative}
+.cmo.on .cm{transform:translateY(0) scale(1)}
+.cm-x{position:absolute;top:13px;right:13px;width:27px;height:27px;border-radius:50%;border:1px solid var(--line2);background:rgba(255,255,255,.06);color:var(--soft);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:13px;transition:.16s}
+.cm-x:hover{color:#fff;background:rgba(255,255,255,.12)}
+.cm-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:999px;background:var(--tsoft);border:1px solid var(--tline);color:var(--teal2);font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.cm-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--teal)}
+.cm-title{font-family:'Syne',sans-serif;font-size:19px;font-weight:800;color:#fff;margin-bottom:4px}
+.cm-sub{font-size:12px;color:var(--soft);margin-bottom:20px}
+.cm-acts{display:flex;gap:9px;margin-top:20px}
+.cm-cancel{flex:1;padding:10px;border-radius:11px;font-size:12px;font-weight:800;background:rgba(255,255,255,.06);border:1px solid var(--line2);color:var(--soft);cursor:pointer;transition:.16s;font-family:'DM Sans',sans-serif}
+.cm-cancel:hover{color:#fff;background:rgba(255,255,255,.11)}
+.cm-save{flex:2;padding:10px;border-radius:11px;font-size:12px;font-weight:800;background:linear-gradient(135deg,var(--teal),var(--blue));border:none;color:#07111f;cursor:pointer;transition:.16s;box-shadow:0 5px 16px rgba(34,199,184,.20);font-family:'DM Sans',sans-serif}
+.cm-save:hover{transform:translateY(-1px);box-shadow:0 9px 22px rgba(34,199,184,.30)}
+
+/* DETAIL POPUP */
+.dpop{position:fixed;z-index:200;background:#182036;border:1px solid var(--line2);border-radius:16px;padding:17px;min-width:234px;max-width:290px;box-shadow:0 22px 55px rgba(0,0,0,.48);display:none}
+.dpop.on{display:block;animation:dpIn .17s cubic-bezier(.16,1,.3,1)}
+@keyframes dpIn{from{opacity:0;transform:scale(.93) translateY(5px)}to{opacity:1;transform:scale(1)}}
+.dp-hdr{display:flex;gap:9px;align-items:flex-start;margin-bottom:11px}
+.dp-name{font-size:14px;font-weight:800;color:#fff;line-height:1.2}
+.dp-job{font-size:11px;color:var(--teal2);font-weight:700;margin-top:2px}
+.dp-rows{display:grid;gap:6px;margin-bottom:11px}
+.dp-row{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--soft);font-weight:600}
+.dp-row svg{width:12px;height:12px;color:var(--blue2);flex-shrink:0}
+.dp-div{height:1px;background:var(--line);margin-bottom:11px}
+.dp-acts{display:flex;gap:6px}
+.dp-main{flex:1;padding:7px;border-radius:8px;font-size:11px;font-weight:800;background:var(--bsoft);border:1px solid var(--bline);color:var(--blue2);cursor:pointer;transition:.14s;font-family:'DM Sans',sans-serif;text-align:center}
+.dp-main:hover{background:rgba(93,169,255,.22)}
+.dp-del{padding:7px 10px;border-radius:8px;font-size:11px;font-weight:800;background:var(--rsoft);border:1px solid var(--rline);color:#ffb4b7;cursor:pointer;display:flex;align-items:center;gap:4px;transition:.14s;font-family:'DM Sans',sans-serif}
+.dp-del:hover{background:rgba(255,107,112,.20)}
+.dp-del svg{width:11px;height:11px}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-name">NEXAS <em>HR</em></div>
+    <div class="brand-tag">HR Platform</div>
+  </div>
+  <nav class="nav">
+    <div class="nav-link on" onclick="go('dashboard')" data-p="dashboard">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      Panou principal
+    </div>
+    <div class="nav-link" onclick="go('candidati')" data-p="candidati">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      Candidati
+    </div>
+    <div class="nav-link" onclick="go('statistici')" data-p="statistici">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      Statistici
+    </div>
+    <div class="nav-link" onclick="go('posturi')" data-p="posturi">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+      Posturi vacante
+    </div>
+    <div class="nav-link" onclick="go('calendar')" data-p="calendar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Calendar
+    </div>
+    <div class="nav-link logout" onclick="t('Demo: deconectare simulata.')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+      Deconectare
+    </div>
+  </nav>
+</aside>
+
+<div class="pages">
+
+<!-- ════════════ DASHBOARD ════════════ -->
+<div class="pg on" id="pg-dashboard">
+  <div style="display:flex;justify-content:flex-end;margin-bottom:18px">
+    <div class="pill">✦ AI analizeaza. Tu recrutezi.</div>
+  </div>
+  <div class="dash-hero">
+    <div class="dash-left">
+      <div class="eyebrow">Dashboard recrutare AI</div>
+      <div class="h1" style="margin-bottom:7px">NEXAS <span style="color:var(--blue2)">HR</span></div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:16px">Incarci CV-uri din Gmail sau manual. Alegi postul. Agentul iti arata candidatii potriviti.</p>
+      <div class="mini-recs">
+        <div class="mini-rec"><div class="av" style="width:30px;height:30px;font-size:11px">ES</div><div class="mini-rec-info"><strong>Elena Stan</strong><small>Vânzător</small></div><span class="mini-rec-score">78</span></div>
+        <div class="mini-rec"><div class="av" style="width:30px;height:30px;font-size:11px">RC</div><div class="mini-rec-info"><strong>Radu Constantin</strong><small>Manager Vânzări</small></div><span class="mini-rec-score">85</span></div>
+        <div class="mini-rec"><div class="av" style="width:30px;height:30px;font-size:11px">CS</div><div class="mini-rec-info"><strong>Cristian Stoica</strong><small>Developer Frontend</small></div><span class="mini-rec-score">91</span></div>
+      </div>
+    </div>
+    <div class="dash-right">
+      <div class="ai-hdr"><span class="ai-dot"></span>Agent AI activ</div>
+      <canvas class="ai-wave" id="wave"></canvas>
+      <div class="ai-status" id="aiSt">Analizez CV-uri noi...</div>
+      <div class="ai-nums">
+        <div class="ai-num"><div class="ai-num-v">28</div><div class="ai-num-l">CV analizate</div></div>
+        <div class="ai-num"><div class="ai-num-v">5</div><div class="ai-num-l">Posturi active</div></div>
+        <div class="ai-num"><div class="ai-num-v">AI</div><div class="ai-num-l">Mod analiza</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><div class="kpi-lbl">Total candidati</div><div class="kpi-val">28</div></div>
+    <div class="kpi"><div class="kpi-lbl">Posturi active</div><div class="kpi-val">5</div></div>
+    <div class="kpi"><div class="kpi-lbl">Surse CV</div><div class="kpi-val">2 <span>Gmail + Upload</span></div></div>
+    <div class="kpi"><div class="kpi-lbl">Mod analiza</div><div class="kpi-val">AI <span>multi-job</span></div></div>
+  </div>
+  <div class="section-hd" style="margin-bottom:14px"><div><div class="section-hd-title">Adauga CV-uri in platforma</div><div class="section-hd-sub">Gmail si upload manual, intr-un singur flux.</div></div></div>
+  <div class="src-grid">
+    <div class="src-card">
+      <div class="src-ico b">M</div>
+      <div><h3>Import din Gmail</h3><p>Agentul cauta CV-uri noi si le analizeaza pentru posturile selectate.</p>
+      <div class="row-inp"><input class="inp" placeholder="Ex: Casier, Sofer TIR"><button class="btn btn-blue btn-sm" onclick="t('Demo: Gmail analizat! 3 CV-uri noi.')">Importa</button></div></div>
+    </div>
+    <div class="src-card">
+      <div class="src-ico t">⇪</div>
+      <div><h3>Incarcare manuala CV</h3><p>Incarci rapid fisierele primite din alte surse.</p>
+      <div class="row-inp"><input type="file" class="inp" accept=".pdf,.doc,.docx" style="font-size:11px"><button class="btn btn-ghost btn-sm" onclick="t('Demo: 2 CV-uri incarcate.')">Incarca</button></div></div>
+    </div>
+  </div>
+  <div class="match-box">
+    <h3>Analiza pe posturi</h3><p>Introduci unul sau mai multe posturi iar agentul analizeaza CV-urile existente.</p>
+    <div class="row-inp"><input class="inp" placeholder="Sofer TIR, Casier, Coordonator logistica"><button class="btn btn-ghost btn-sm" onclick="t('Demo: Analiza pornita.')">Analizeaza CV-uri</button></div>
+  </div>
+  <div style="display:flex;gap:9px;margin-bottom:22px">
+    <button class="btn btn-red btn-sm" onclick="t('Demo: in productie ar reseta dashboard-ul.',1)">Resetare dashboard</button>
+    <button class="btn btn-red btn-sm" onclick="t('Demo: in productie ar sterge baza.',1)">Sterge definitiv baza</button>
+  </div>
+  <div id="accs"></div>
+</div>
+
+<!-- ════════════ CANDIDATI ════════════ -->
+<div class="pg" id="pg-candidati">
+  <div class="pg-hd">
+    <div><div class="eyebrow">Baza de candidati</div><div class="h1">Candidati</div><p class="sub">Candidati unici, cu rolurile pentru care se potrivesc si scorul AI.</p></div>
+    <div class="pill">19 candidati unici afisati</div>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><div class="kpi-lbl">Analize totale</div><div class="kpi-val">28</div></div>
+    <div class="kpi"><div class="kpi-lbl">Candidati unici</div><div class="kpi-val">19</div></div>
+    <div class="kpi"><div class="kpi-lbl">Interviu</div><div class="kpi-val">6</div></div>
+    <div class="kpi"><div class="kpi-lbl">Angajati</div><div class="kpi-val">2</div></div>
+  </div>
+  <div class="filters">
+    <input class="inp" placeholder="Cauta dupa nume, email, skills..." style="flex:2">
+    <select class="inp"><option>Toate statusurile</option><option>NOU</option><option>INTERVIU</option><option>ANGAJAT</option><option>REFUZAT</option></select>
+    <select class="inp"><option>Toate posturile</option><option>Vânzător</option><option>Manager Vânzări</option><option>Contabil</option><option>HR Specialist</option><option>Developer Frontend</option></select>
+    <button class="btn btn-blue btn-sm" onclick="t('Demo: filtre aplicate.')">Filtreaza</button>
+    <button class="btn btn-ghost btn-sm" onclick="t('Demo: filtre resetate.')">Reseteaza</button>
+    <button class="btn btn-ghost btn-sm" onclick="t('Demo: export Excel generat.')">Export Excel</button>
+  </div>
+  <div class="clist" id="clist"></div>
+</div>
+
+<!-- ════════════ STATISTICI ════════════ -->
+<div class="pg" id="pg-statistici">
+  <div style="display:flex;justify-content:flex-end;margin-bottom:16px"><div class="pill">✦ Raport AI pentru recrutare</div></div>
+  <div class="ana-hero">
+    <div class="eyebrow">Raport recrutare</div>
+    <div class="h1">Imagine clara asupra candidatilor si scorurilor.</div>
+    <p class="sub">Pagina iti arata cati candidati ai analizat, cati merita verificati si unde se afla in procesul de recrutare.</p>
+    <div class="ana-chips">
+      <div class="chip"><strong>28</strong><span>candidati analizati</span></div>
+      <div class="chip"><strong>18</strong><span>candidati care merita verificati</span></div>
+      <div class="chip"><strong>67</strong><span>scor mediu in arhiva</span></div>
+    </div>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><div class="kpi-lbl">Candidati analizati</div><div class="kpi-val">28</div><div class="kpi-note">Total CV-uri procesate.</div></div>
+    <div class="kpi"><div class="kpi-lbl">Recomandati</div><div class="kpi-val">18</div><div class="kpi-note">Scor peste 45.</div></div>
+    <div class="kpi"><div class="kpi-lbl">Pentru interviu</div><div class="kpi-val">6</div><div class="kpi-note">In stadiul activ.</div></div>
+    <div class="kpi"><div class="kpi-lbl">Angajari</div><div class="kpi-val">2</div><div class="kpi-note">Marcati ca angajati.</div></div>
+  </div>
+  <div class="ana-grid">
+    <div class="card">
+      <div class="card-title">Flux candidati</div>
+      <div class="bar-row"><div class="bar-lbl">Nou<small>36% din total</small></div><div class="bar-track"><div class="bar-fill bf-b" style="width:36%"></div></div><div class="bar-n">10</div></div>
+      <div class="bar-row"><div class="bar-lbl">De analizat<small>14% din total</small></div><div class="bar-track"><div class="bar-fill bf-y" style="width:14%"></div></div><div class="bar-n">4</div></div>
+      <div class="bar-row"><div class="bar-lbl">Selectat<small>11% din total</small></div><div class="bar-track"><div class="bar-fill bf-y" style="width:11%"></div></div><div class="bar-n">3</div></div>
+      <div class="bar-row"><div class="bar-lbl">Interviu<small>21% din total</small></div><div class="bar-track"><div class="bar-fill bf-t" style="width:21%"></div></div><div class="bar-n">6</div></div>
+      <div class="bar-row"><div class="bar-lbl">Angajat<small>7% din total</small></div><div class="bar-track"><div class="bar-fill bf-t" style="width:7%"></div></div><div class="bar-n">2</div></div>
+      <div class="bar-row"><div class="bar-lbl">Refuzat<small>11% din total</small></div><div class="bar-track"><div class="bar-fill bf-r" style="width:11%"></div></div><div class="bar-n">3</div></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Calitatea potrivirilor</div>
+      <div class="bar-row"><div class="bar-lbl">Potrivire buna<small>70–100</small></div><div class="bar-track"><div class="bar-fill bf-t" style="width:43%"></div></div><div class="bar-n">12</div></div>
+      <div class="bar-row"><div class="bar-lbl">Merita verificati<small>45–69</small></div><div class="bar-track"><div class="bar-fill bf-y" style="width:21%"></div></div><div class="bar-n">6</div></div>
+      <div class="bar-row"><div class="bar-lbl">Nepotriviti<small>0–44</small></div><div class="bar-track"><div class="bar-fill bf-r" style="width:36%"></div></div><div class="bar-n">10</div></div>
+      <div class="qgrid">
+        <div class="qbox"><strong>43%</strong><span>potrivire buna</span></div>
+        <div class="qbox"><strong>21%</strong><span>necesita verificare</span></div>
+        <div class="qbox"><strong>36%</strong><span>slab potriviti</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="top-table-wrap">
+    <h2>Candidati cu cel mai bun scor</h2>
+    <p>Lista scurta pentru verificare rapida si actiune.</p>
+    <table class="tt"><thead><tr><th>Candidat</th><th>Post analizat</th><th>Scor</th><th>Recomandare AI</th><th>Actiune</th></tr></thead><tbody id="toptbl"></tbody></table>
+  </div>
+</div>
+
+<!-- ════════════ POSTURI ════════════ -->
+<div class="pg" id="pg-posturi">
+  <div class="posturi-hero">
+    <div><div class="eyebrow">Management posturi</div><div class="h1">Posturi vacante</div><p class="sub">Creaza si gestioneaza posturile afisate pe pagina publica de cariere.</p></div>
+    <div class="p-stats">
+      <div><div class="pstat-n">5</div><div class="pstat-l">posturi create</div></div>
+      <div><div class="pstat-n">4</div><div class="pstat-l">posturi active</div></div>
+      <div><div class="pstat-n">28</div><div class="pstat-l">aplicatii totale</div></div>
+    </div>
+  </div>
+  <div class="link-bar">🌐 Pagina publica cariere: <span style="cursor:pointer;text-decoration:underline" onclick="t('Demo: ar deschide pagina publica.')">nexas.ro/cariere →</span></div>
+  <div class="two-col">
+    <div class="card">
+      <div class="card-title">Adauga post nou <span>vizibil in pagina publica</span></div>
+      <div class="fg2">
+        <div class="full"><label class="lbl">Titlu post *</label><input id="np-t" class="inp" placeholder="Ex: Sofer TIR, Casier, Contabil"></div>
+        <div><label class="lbl">Departament</label><input id="np-d" class="inp" placeholder="Ex: Logistica"></div>
+        <div><label class="lbl">Locatie</label><input id="np-l" class="inp" placeholder="Ex: Bucuresti"></div>
+        <div><label class="lbl">Tip contract</label><select id="np-c" class="inp"><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Sezonier</option></select></div>
+        <div class="full"><label class="lbl">Descriere scurta</label><textarea id="np-desc" class="inp" placeholder="Descrie pe scurt rolul si profilul cautat."></textarea></div>
+      </div>
+      <button class="btn btn-blue" style="width:100%;margin-top:4px" onclick="addJob()">Adauga post</button>
+    </div>
+    <div class="jlist" id="jlist"></div>
+  </div>
+</div>
+
+<!-- ════════════ CALENDAR ════════════ -->
+<div class="pg" id="pg-calendar">
+  <div class="cal-bar">
+    <div class="cal-bar-info">
+      <div class="cal-bar-title">Calendar Interviuri</div>
+      <div class="cal-bar-sub" id="calSub"></div>
+    </div>
+    <div class="wnav">
+      <button class="wbtn" onclick="cw(-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <span class="wlbl" id="wlbl"></span>
+      <button class="wbtn" onclick="cw(1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+      <button class="wbtn-today" onclick="gotoday()">Azi</button>
+      <button class="wbtn-new" onclick="openCM()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Programează interviu</button>
+    </div>
+  </div>
+  <div class="cal-outer"><div class="cal-cont" id="calgrid"></div></div>
+</div>
+
+</div><!-- /pages -->
+</div><!-- /app -->
+
+<!-- CALENDAR MODAL -->
+<div class="cmo" id="cmo" onclick="cmoClick(event)">
+  <div class="cm">
+    <button class="cm-x" onclick="closeCM()">✕</button>
+    <div class="cm-badge">Interviu nou</div>
+    <div class="cm-title">Programează interviu</div>
+    <div class="cm-sub">Completează detaliile. Email-ul va fi trimis automat candidatului.</div>
+    <div class="fg2">
+      <div class="full"><label class="lbl">Candidat</label><input id="cm-c" class="inp" placeholder="Nume candidat"></div>
+      <div class="full"><label class="lbl">Post</label><input id="cm-j" class="inp" placeholder="ex: Vânzător"></div>
+      <div><label class="lbl">Data</label><input id="cm-d" type="date" class="inp"></div>
+      <div><label class="lbl">Ora</label><input id="cm-o" type="time" class="inp" step="900"></div>
+      <div class="full"><label class="lbl">Locație / Link Meet</label><input id="cm-l" class="inp" placeholder="ex: Str. Eminescu 10 sau meet.google.com/…"></div>
+      <div><label class="lbl">Durată</label><select id="cm-dur" class="inp"><option value="30">30 min</option><option value="45">45 min</option><option value="60" selected>60 min</option><option value="90">90 min</option><option value="120">120 min</option></select></div>
+      <div><label class="lbl">Email candidat</label><input id="cm-e" type="email" class="inp" placeholder="candidat@email.com"></div>
+    </div>
+    <div class="cm-acts">
+      <button class="cm-cancel" onclick="closeCM()">Anulează</button>
+      <button class="cm-save" onclick="saveCM()">Salvează &amp; trimite email</button>
+    </div>
+  </div>
+</div>
+
+<!-- DETAIL POPUP -->
+<div class="dpop" id="dpop">
+  <div class="dp-hdr"><div class="av" id="dp-av" style="width:34px;height:34px;font-size:12px"></div><div><div class="dp-name" id="dp-n"></div><div class="dp-job" id="dp-j"></div></div></div>
+  <div class="dp-rows">
+    <div class="dp-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span id="dp-d"></span></div>
+    <div class="dp-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span id="dp-o"></span></div>
+    <div class="dp-row" id="dp-lr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span id="dp-l"></span></div>
+    <div class="dp-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span id="dp-e"></span></div>
+  </div>
+  <div class="dp-div"></div>
+  <div class="dp-acts">
+    <button class="dp-main" onclick="t('Demo: ar deschide pagina candidatului.')">Vezi candidat</button>
+    <button class="dp-del" onclick="delIv()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/></svg>Șterge</button>
+  </div>
+</div>
+
+<div class="toast-el" id="toast"></div>
+
+<script>
+// ── DATA ──────────────────────────────
+const NOW=new Date();
+function ds(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)}
+function ad(d,n){const r=new Date(d);r.setDate(r.getDate()+n);return r}
+const ML=['Ianuarie','Februarie','Martie','Aprilie','Mai','Iunie','Iulie','August','Septembrie','Octombrie','Noiembrie','Decembrie'];
+const MS=['Ian','Feb','Mar','Apr','Mai','Iun','Iul','Aug','Sep','Oct','Nov','Dec'];
+const DA=['Lun','Mar','Mie','Joi','Vin','Sâm','Dum'];
+
+const CANDS=[
+  {id:1,n:'Elena Stan',e:'elena.stan@gmail.com',ph:'0722 111 222',j:'Vânzător',sc:78,st:'INTERVIU',co:'Fashion Store SRL, Home Deco Retail',sum:'Candidata cu experienta demonstrata in vanzari in domeniul fashion si retail, avand abilitati solide de consiliere si gestionare a relatiilor cu clientii.'},
+  {id:2,n:'Andrei Popescu',e:'andrei.popescu@gmail.com',ph:'0744 333 444',j:'Vânzător',sc:75,st:'INTERVIU',co:'Retail Market SRL, Magazin Urban',sum:'Candidat cu experienta relevanta in domeniul vanzarilor, avand activitati in aprovizionare si gestionarea relatiilor cu clientii.'},
+  {id:3,n:'Maria Ionescu',e:'maria.ionescu@yahoo.com',ph:'0733 555 666',j:'Vânzător',sc:71,st:'NOU',co:'Mega Image, Carrefour',sum:'Candidata cu experienta in retail de masa. Cunoasterea tehnicilor de vanzare si a produselor din portofoliu.'},
+  {id:4,n:'Bogdan Rusu',e:'bogdan.r@gmail.com',ph:'0722 777 888',j:'Vânzător',sc:62,st:'NOU',co:'Penny Market',sum:'Candidat in curs de acumulare experienta. Motivat si dispus sa invete.'},
+  {id:5,n:'Simona Vlad',e:'simona.v@gmail.com',ph:'0744 999 000',j:'Vânzător',sc:45,st:'DE ANALIZAT',co:'Lidl Romania',sum:'Profil de entry-level. Necesita verificare manuala a experientei declarate.'},
+  {id:6,n:'Radu Constantin',e:'radu.c@gmail.com',ph:'0722 100 200',j:'Manager Vânzări',sc:85,st:'INTERVIU',co:'Procter & Gamble, Heinz Romania',sum:'Candidat cu background solid in managementul echipelor de vanzari si experienta in FMCG.'},
+  {id:7,n:'Larisa Popa',e:'larisa.p@gmail.com',ph:'0744 300 400',j:'Manager Vânzări',sc:80,st:'SELECTAT',co:'Billa Romania, Cora',sum:'Manageriala, orientata spre rezultate, cu experienta in retail modern.'},
+  {id:8,n:'Tudor Marin',e:'tudor.m@gmail.com',ph:'0733 500 600',j:'Manager Vânzări',sc:68,st:'NOU',co:'Altex Romania',sum:'Experienta in coordonarea departamentelor de vanzari in electronice.'},
+  {id:9,n:'Ioana Dumitru',e:'ioana.d@gmail.com',ph:'0722 700 800',j:'Contabil',sc:88,st:'ANGAJAT',co:'Deloitte Romania, BDO',sum:'Contabil senior cu experienta extinsa in audit si contabilitate corporativa. CECCAR.'},
+  {id:10,n:'Mihai Georgescu',e:'mihai.g@outlook.com',ph:'0744 900 100',j:'HR Specialist',sc:82,st:'INTERVIU',co:'Accenture, Capgemini',sum:'Specialist HR cu background in recrutare si employer branding. Mediu multinational.'},
+  {id:11,n:'Ana Popa',e:'ana.popa@gmail.com',ph:'0733 200 300',j:'Manager Vânzări',sc:79,st:'INTERVIU',co:"L'Oreal Romania, Avon",sum:'Candidata cu background in vanzari B2C si managementul echipelor.'},
+  {id:12,n:'Cristian Stoica',e:'cristian.s@gmail.com',ph:'0722 400 500',j:'Developer Frontend',sc:91,st:'ANGAJAT',co:'Adobe Systems, Tremend Software',sum:'Frontend developer senior cu experienta in React, Vue si TypeScript.'},
+  {id:13,n:'Laura Neagu',e:'laura.n@yahoo.com',ph:'0744 600 700',j:'Contabil',sc:74,st:'DE ANALIZAT',co:'Ernst & Young, KPMG',sum:'Candidata cu experienta in contabilitate si audit. ACCA in curs.'},
+  {id:14,n:'Dan Marin',e:'dan.m@gmail.com',ph:'0733 800 900',j:'HR Specialist',sc:65,st:'NOU',co:'Randstad Romania',sum:'Recrutor cu experienta in headhunting si volume hiring pentru retail.'},
+  {id:15,n:'Vlad Ionescu',e:'vlad.i@gmail.com',ph:'0722 000 111',j:'Developer Frontend',sc:87,st:'INTERVIU',co:'Endava, ING Bank',sum:'Frontend developer cu experienta in Angular si React. Pasionat de UX.'},
+  {id:16,n:'Oana Constantin',e:'oana.c@gmail.com',ph:'0744 111 222',j:'Developer Frontend',sc:76,st:'NOU',co:'Cognizant Softvision',sum:'Developer cu 3 ani experienta in React si TypeScript. Proiecte in fintech.'},
+  {id:17,n:'Robert Popa',e:'robert.p@gmail.com',ph:'0733 333 444',j:'Contabil',sc:55,st:'NOU',co:'Alfa Contab SRL',sum:'Contabil junior cu experienta in contabilitate de firma mica.'},
+  {id:18,n:'Madalina Dumitrescu',e:'madalina.d@gmail.com',ph:'0722 555 666',j:'HR Specialist',sc:70,st:'DE ANALIZAT',co:'Adecco Romania, Lugera',sum:'Specialist HR cu background in recrutare si administrare de personal.'},
+  {id:19,n:'George Florescu',e:'george.f@gmail.com',ph:'0744 777 888',j:'Developer Frontend',sc:60,st:'NOU',co:'Freelancer',sum:'Frontend developer junior cu experienta in proiecte personale si freelancing.'},
+];
+
+let JOBS=[
+  {id:1,t:'Vânzător',d:'Retail',l:'București',c:'Full-time',desc:'Cautam un vanzator dinamic pentru magazinele noastre. Experienta in retail constituie un avantaj.',activ:true,ap:10},
+  {id:2,t:'Manager Vânzări',d:'Retail Management',l:'Cluj-Napoca',c:'Full-time',desc:'Rol de conducere pentru o echipa de 8 vanzatori. Experienta in management retail de minim 3 ani.',activ:true,ap:5},
+  {id:3,t:'Contabil',d:'Financiar',l:'București',c:'Full-time',desc:'Cautam un contabil cu experienta de minim 2 ani. Cunoasterea Saga reprezinta un avantaj.',activ:true,ap:4},
+  {id:4,t:'HR Specialist',d:'Resurse Umane',l:'Remote',c:'Full-time',desc:'Specialist HR cu experienta in recrutare si administrare personal.',activ:false,ap:3},
+  {id:5,t:'Developer Frontend',d:'IT',l:'Remote',c:'Full-time',desc:'Cautam un frontend developer cu experienta in React sau Vue.js.',activ:true,ap:6},
+];
+let nextJid=6,nextIid=20;
+
+let IVS=[
+  {id:1,c:'Elena Stan',j:'Vânzător',data:ds(NOW),o:'09:00',dur:60,l:'Str. Mihai Eminescu 10, et.2',e:'elena.stan@gmail.com',st:'programat',cl:'ct'},
+  {id:2,c:'Andrei Popescu',j:'Vânzător',data:ds(NOW),o:'09:00',dur:60,l:'Str. Mihai Eminescu 10, et.2',e:'andrei.popescu@gmail.com',st:'programat',cl:'cb'},
+  {id:3,c:'Maria Ionescu',j:'Vânzător',data:ds(NOW),o:'09:00',dur:60,l:'Str. Mihai Eminescu 10, et.2',e:'maria.ionescu@yahoo.com',st:'programat',cl:'cp'},
+  {id:4,c:'Radu Constantin',j:'Manager Vânzări',data:ds(NOW),o:'11:00',dur:90,l:'meet.google.com/abc-defg',e:'radu.c@gmail.com',st:'programat',cl:'ct'},
+  {id:5,c:'Ioana Dumitru',j:'Contabil',data:ds(ad(NOW,1)),o:'10:00',dur:60,l:'Bd. Unirii 45, birou 301',e:'ioana.d@gmail.com',st:'programat',cl:'cb'},
+  {id:6,c:'Mihai Georgescu',j:'HR Specialist',data:ds(ad(NOW,1)),o:'14:00',dur:45,l:'meet.google.com/xyz-1234',e:'mihai.g@outlook.com',st:'programat',cl:'ct'},
+  {id:7,c:'Ana Popa',j:'Manager Vânzări',data:ds(ad(NOW,2)),o:'09:30',dur:60,l:'Calea Victoriei 22',e:'ana.popa@gmail.com',st:'programat',cl:'cp'},
+  {id:8,c:'Cristian Stoica',j:'Developer Frontend',data:ds(ad(NOW,-1)),o:'10:00',dur:60,l:'Remote',e:'cristian.s@gmail.com',st:'finalizat',cl:'cd'},
+  {id:9,c:'Vlad Ionescu',j:'Developer Frontend',data:ds(ad(NOW,3)),o:'11:00',dur:90,l:'meet.google.com/dev-123',e:'vlad.i@gmail.com',st:'programat',cl:'cb'},
+];
+let selIv=null;
+
+// ── HELPERS ──────────────────────────
+function ini(n){return n.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase()}
+function scCls(s){return s>=75?'sc-t':s>=50?'sc-y':'sc-r'}
+function scCell(s){return s>=75?'sn-g':s>=50?'sn-y':'sn-r'}
+function stCls(s){return['ANGAJAT','TOP CANDIDAT'].includes(s)?'tg':['INTERVIU','SELECTAT','DE ANALIZAT'].includes(s)?'ty':['REFUZAT','RESPINS','EXCLUS'].includes(s)?'tr':'tb'}
+function stLbl(s){return{NOU:'Nou',INTERVIU:'Interviu',ANGAJAT:'Angajat',REFUZAT:'Refuzat',SELECTAT:'Selectat','DE ANALIZAT':'De analizat',RESPINS:'Respins',EXCLUS:'Exclus'}[s]||s}
+function fmtDate(s){const[y,m,d]=s.split('-').map(Number);return `${d} ${ML[m-1]} ${y}`}
+function tMin(o){const[h,m]=o.split(':').map(Number);return h*60+m}
+
+// ── NAVIGATION ───────────────────────
+function go(pg){
+  document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.nav-link').forEach(a=>a.classList.remove('on'));
+  document.getElementById('pg-'+pg).classList.add('on');
+  document.querySelector(`[data-p="${pg}"]`).classList.add('on');
+  if(pg==='calendar')renderCal();
+}
+
+// ── TOAST ─────────────────────────────
+function t(msg,err){
+  const el=document.getElementById('toast');
+  el.textContent=msg;el.className='toast-el on'+(err?' err':'');
+  setTimeout(()=>el.className='toast-el',3200);
+}
+
+// ── AI WAVE ───────────────────────────
+function initWave(){
+  const cv=document.getElementById('wave');if(!cv)return;
+  const ctx=cv.getContext('2d');cv.width=cv.offsetWidth||290;cv.height=56;
+  let ti=0;
+  const sts=['Analizez CV-uri noi...','Potrivesc profiluri cu posturile...','Generez scoruri AI...','Identific candidati top...'];
+  let si=0;setInterval(()=>{document.getElementById('aiSt').textContent=sts[si=(si+1)%sts.length]},2200);
+  (function draw(){
+    ctx.clearRect(0,0,cv.width,cv.height);
+    ctx.beginPath();
+    for(let x=0;x<cv.width;x++){const y=28+Math.sin(x*.032+ti)*9+Math.sin(x*.072+ti*1.3)*4+Math.sin(x*.016+ti*.7)*6;x?ctx.lineTo(x,y):ctx.moveTo(x,y)}
+    ctx.strokeStyle='rgba(34,199,184,.72)';ctx.lineWidth=2;ctx.stroke();
+    ctx.beginPath();
+    for(let x=0;x<cv.width;x++){const y=28+Math.sin(x*.044+ti*1.1+1)*6+Math.sin(x*.064+ti*.9)*3;x?ctx.lineTo(x,y):ctx.moveTo(x,y)}
+    ctx.strokeStyle='rgba(93,169,255,.40)';ctx.lineWidth=1.5;ctx.stroke();
+    ti+=.024;requestAnimationFrame(draw);
+  })();
+}
+
+// ── DASHBOARD ACCORDIONS ──────────────
+function buildAccs(){
+  const jobs=['Vânzător','Manager Vânzări','Contabil','HR Specialist','Developer Frontend'];
+  const wrap=document.getElementById('accs');wrap.innerHTML='';
+  jobs.forEach(job=>{
+    const cs=CANDS.filter(c=>c.j===job&&c.sc>=50);
+    const el=document.createElement('div');el.style.marginBottom='10px';
+    el.innerHTML=`
+      <div class="acc-hdr" onclick="toggleAcc(this)">
+        <div class="acc-left"><div class="acc-ico">AI</div><div><div class="acc-kick">Recomandari AI</div><div class="acc-name">${job}</div><div class="acc-sub">Candidati recomandati pentru acest post</div></div></div>
+        <div class="acc-right"><div class="acc-cnt">${cs.length} recomandati</div><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+      </div>
+      <div class="acc-body">
+        <table class="ct"><thead><tr><th>Candidat</th><th>Post recomandat</th><th>Scor</th><th>Status</th><th>Rezumat</th><th>Actiuni</th></tr></thead><tbody>
+        ${cs.map(c=>`<tr>
+          <td><div class="ra"><div class="av" style="width:30px;height:30px;font-size:11px">${ini(c.n)}</div><div><div class="rn">${c.n}</div><div class="rs">${c.e}</div></div></div></td>
+          <td><div class="rn" style="font-size:13px;font-weight:700;color:var(--soft)">${c.j}</div><div class="rs">${c.co.split(',')[0].trim()}</div></td>
+          <td><div class="score-col"><div class="sn ${scCell(c.sc)}" style="font-family:'Syne',sans-serif;font-size:15px;font-weight:800">${c.sc}</div><div class="score-bar"><div class="score-bar-fill ${c.sc>=75?'bf-t':c.sc>=50?'bf-y':'bf-r'}" style="width:${c.sc}%"></div></div></div></td>
+          <td><span class="tag ${stCls(c.st)}">${stLbl(c.st)}</span></td>
+          <td><div class="sum-td">${c.sum.slice(0,120)}...</div></td>
+          <td><div class="act-td"><button class="btn btn-blue btn-sm" onclick="t('Demo: ar deschide pagina ${c.n}.')">Detalii</button><button class="btn btn-ghost btn-sm" onclick="t('Demo: ar deschide CV.')">CV</button></div></td>
+        </tr>`).join('')}
+        </tbody></table>
+      </div>`;
+    wrap.appendChild(el);
+  });
+}
+function toggleAcc(el){el.classList.toggle('open');el.nextElementSibling.classList.toggle('open')}
+
+// ── CANDIDATI ─────────────────────────
+function buildCList(){
+  document.getElementById('clist').innerHTML=CANDS.map(c=>`
+    <div class="ccard">
+      <div class="ccard-grid">
+        <div class="cmain">
+          <div class="av" style="width:40px;height:40px;font-size:14px">${ini(c.n)}</div>
+          <div>
+            <div style="font-size:14px;font-weight:800;color:#fff">${c.n}</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px">${c.e}</div>
+            <div style="font-size:11px;color:var(--muted)">${c.ph}</div>
+            <span class="tag ${stCls(c.st)}" style="margin-top:5px">${stLbl(c.st)}</span>
+          </div>
+        </div>
+        <div class="cmatches">
+          <div class="cmatch"><span class="cmatch-job">${c.j}</span><span class="cmatch-sc ${scCls(c.sc)}">${c.sc}</span></div>
+          <div style="font-size:11px;color:var(--muted)">${c.co}</div>
+        </div>
+        <div class="cacts">
+          <button class="btn btn-ghost btn-sm" onclick="t('Demo: ar deschide pagina ${c.n}.')">Detalii</button>
+          <button class="btn btn-ghost btn-sm" onclick="go('calendar');setTimeout(()=>{openCM();document.getElementById('cm-c').value='${c.n}';document.getElementById('cm-j').value='${c.j}';document.getElementById('cm-e').value='${c.e}'},100)">Invită interviu</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+// ── STATISTICI ────────────────────────
+function buildTop(){
+  document.getElementById('toptbl').innerHTML=
+    CANDS.filter(c=>c.sc>=70).sort((a,b)=>b.sc-a.sc).slice(0,8).map(c=>`<tr>
+      <td><div style="font-size:13px;font-weight:800;color:#fff">${c.n}</div><div style="font-size:11px;color:var(--muted)">${c.e}</div></td>
+      <td style="font-size:13px;font-weight:700;color:var(--soft)">${c.j}</td>
+      <td><span class="sc-cell ${scCell(c.sc)}">${c.sc}</span></td>
+      <td><span class="tag ${stCls(c.st)}">${stLbl(c.st)}</span></td>
+      <td><button class="btn btn-blue btn-sm" onclick="t('Demo: ar deschide pagina ${c.n}.')">Detalii</button></td>
+    </tr>`).join('');
+}
+
+// ── POSTURI ───────────────────────────
+function buildJList(){
+  document.getElementById('jlist').innerHTML=JOBS.map(j=>`
+    <div class="jcard ${j.activ?'':'off'}">
+      <div class="jcard-hdr">
+        <div><div class="jcard-kick">Rol de recrutare</div><div class="jcard-title">${j.t}</div></div>
+        <div class="jcard-right"><span class="mc b">${j.ap} aplicatii</span><span class="mc ${j.activ?'t':'y'}">${j.activ?'Activ':'Inactiv'}</span></div>
+      </div>
+      <div class="jcard-meta"><span class="mc">${j.d}</span><span class="mc">${j.l}</span><span class="mc">${j.c}</span></div>
+      <div class="jcard-desc">${j.desc}</div>
+      <div class="jcard-acts">
+        <button class="btn btn-ghost btn-sm" onclick="toggleJob(${j.id})">${j.activ?'Dezactiveaza':'Activeaza'}</button>
+        <button class="btn btn-ghost btn-sm" onclick="t('Demo: ar deschide previzualizarea.')">Previzualizeaza</button>
+        <button class="btn btn-red btn-sm" onclick="delJob(${j.id})">Sterge</button>
+      </div>
+    </div>`).join('');
+}
+function addJob(){
+  const titlu=document.getElementById('np-t').value.trim();
+  if(!titlu){t('Titlul postului este obligatoriu.',1);return}
+  JOBS.push({id:nextJid++,t:titlu,d:document.getElementById('np-d').value||'Nespecificat',l:document.getElementById('np-l').value||'Nespecificata',c:document.getElementById('np-c').value,desc:'Post adaugat prin demo.',activ:true,ap:0});
+  ['np-t','np-d','np-l'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('np-desc').value='';
+  buildJList();t(`Postul "${titlu}" a fost adaugat.`);
+}
+function toggleJob(id){const j=JOBS.find(x=>x.id===id);if(j){j.activ=!j.activ;buildJList();t(`Postul "${j.t}" ${j.activ?'activat':'dezactivat'}.`)}}
+function delJob(id){const j=JOBS.find(x=>x.id===id);if(j&&confirm(`Stergi postul "${j.t}"?`)){JOBS=JOBS.filter(x=>x.id!==id);buildJList();t(`Postul "${j.t}" sters.`)}}
+
+// ── CALENDAR ─────────────────────────
+const HS=8,HE=20,HPX=64;
+let wkStart=getMon(NOW);
+
+function getMon(d){const r=new Date(d);const day=r.getDay();r.setDate(r.getDate()+(day===0?-6:1-day));r.setHours(0,0,0,0);return r}
+function isTod(d){return d.getDate()===NOW.getDate()&&d.getMonth()===NOW.getMonth()&&d.getFullYear()===NOW.getFullYear()}
+
+function olLayout(ivs){
+  const sorted=[...ivs].sort((a,b)=>a.o.localeCompare(b.o));
+  const cols=[];const asn=new Map();
+  for(const iv of sorted){
+    const s=tMin(iv.o),e=s+(iv.dur||60);let placed=false;
+    for(let c=0;c<cols.length;c++){if(cols[c]<=s){cols[c]=e;asn.set(iv.id,c);placed=true;break}}
+    if(!placed){asn.set(iv.id,cols.length);cols.push(e)}
+  }
+  const lay=new Map();
+  for(const iv of sorted){
+    const s=tMin(iv.o),e=s+(iv.dur||60);
+    const con=sorted.filter(o=>{const os=tMin(o.o),oe=os+(o.dur||60);return os<e&&oe>s});
+    lay.set(iv.id,{col:asn.get(iv.id),tot:Math.max(...con.map(o=>asn.get(o.id)))+1});
+  }
+  return lay;
+}
+
+function renderCal(){
+  const g=document.getElementById('calgrid');g.innerHTML='';
+  // header
+  const hdr=document.createElement('div');hdr.className='cal-hdr';
+  hdr.appendChild(Object.assign(document.createElement('div'),{className:'cal-hl cal-hdr-empty'}));
+  for(let i=0;i<7;i++){
+    const day=ad(wkStart,i);
+    const dh=document.createElement('div');dh.className='cal-dh'+(isTod(day)?' tod':'');
+    dh.innerHTML=`<div class="cal-dh-n">${DA[i]}</div><div class="cal-dh-d">${day.getDate()}</div>`;
+    hdr.appendChild(dh);
+  }
+  g.appendChild(hdr);
+  // body
+  const body=document.createElement('div');body.className='cal-body';
+  const hcol=document.createElement('div');hcol.className='cal-hrs';
+  for(let h=HS;h<HE;h++){const l=document.createElement('div');l.className='cal-hl';l.textContent=('0'+h).slice(-2)+':00';hcol.appendChild(l)}
+  body.appendChild(hcol);
+  for(let i=0;i<7;i++){
+    const day=ad(wkStart,i);const dayStr=ds(day);
+    const col=document.createElement('div');col.className='cal-dc'+(isTod(day)?' tod':'');
+    for(let h=HS;h<HE;h++){
+      const sl=document.createElement('div');sl.className='cal-slot';
+      sl.addEventListener('click',e=>{if(e.target.closest('.ivc'))return;closeDP();openCM(dayStr,('0'+h).slice(-2)+':00')});
+      col.appendChild(sl);
+    }
+    const divs=IVS.filter(iv=>iv.data===dayStr);
+    const lay=olLayout(divs);
+    for(const iv of divs){col.appendChild(mkCard(iv,lay.get(iv.id)))}
+    if(isTod(day)){
+      const m=NOW.getHours()*60+NOW.getMinutes();
+      if(m>=HS*60&&m<=HE*60){const ln=document.createElement('div');ln.className='tln';ln.style.top=((m-HS*60)/60*HPX)+'px';col.appendChild(ln)}
+    }
+    body.appendChild(col);
+  }
+  g.appendChild(body);
+  updWLbl();
+}
+
+function mkCard(iv,pos){
+  const col=pos?.col||0,tot=pos?.tot||1,G=3;
+  const top=((tMin(iv.o)-HS*60)/60*HPX);
+  const h=Math.max(24,((iv.dur||60)/60*HPX)-3);
+  const c=document.createElement('div');
+  c.className=`ivc ${iv.st==='finalizat'?'cd':iv.cl}`;
+  c.style.top=top+'px';c.style.height=h+'px';
+  c.style.left=`calc(${col*(100/tot)}% + ${G/2}px)`;
+  c.style.width=`calc(${100/tot}% - ${G}px)`;c.style.right='auto';
+  c.innerHTML=`<div class="ivt">${iv.o}</div><div class="ivn">${iv.c}</div>${h>42?`<div class="ivj">${iv.j}</div>`:''}`;
+  c.addEventListener('click',e=>{e.stopPropagation();showDP(iv,e)});
+  return c;
+}
+
+function updWLbl(){
+  const end=ad(wkStart,6);const s=wkStart,e=end;
+  const lbl=s.getMonth()===e.getMonth()?`${s.getDate()} – ${e.getDate()} ${MS[s.getMonth()]} ${s.getFullYear()}`:`${s.getDate()} ${MS[s.getMonth()]} – ${e.getDate()} ${MS[e.getMonth()]} ${s.getFullYear()}`;
+  document.getElementById('wlbl').textContent=lbl;
+  document.getElementById('calSub').textContent=`Săptămâna ${s.getDate()} – ${e.getDate()} ${MS[s.getMonth()]} ${s.getFullYear()}`;
+}
+function cw(d){wkStart=ad(wkStart,d*7);renderCal()}
+function gotoday(){wkStart=getMon(NOW);renderCal()}
+
+function openCM(date,time){
+  document.getElementById('cm-c').value='';document.getElementById('cm-j').value='';
+  document.getElementById('cm-d').value=date||ds(NOW);
+  document.getElementById('cm-o').value=time||'09:00';
+  document.getElementById('cm-l').value='Str. Mihai Eminescu 10, et. 2';
+  document.getElementById('cm-e').value='';document.getElementById('cm-dur').value='60';
+  document.getElementById('cmo').classList.add('on');
+}
+function closeCM(){document.getElementById('cmo').classList.remove('on')}
+function cmoClick(e){if(e.target===document.getElementById('cmo'))closeCM()}
+function saveCM(){
+  const c=document.getElementById('cm-c').value.trim(),j=document.getElementById('cm-j').value.trim();
+  const d=document.getElementById('cm-d').value,o=document.getElementById('cm-o').value;
+  if(!c||!j||!d||!o){t('Completează candidatul, postul, data și ora.',1);return}
+  IVS.push({id:nextIid++,c,j,data:d,o,dur:parseInt(document.getElementById('cm-dur').value),l:document.getElementById('cm-l').value,e:document.getElementById('cm-e').value,st:'programat',cl:['ct','cb','cp'][Math.floor(Math.random()*3)]});
+  renderCal();closeCM();t(`Interviu programat cu ${c}! Email trimis automat.`);
+}
+
+function showDP(iv,e){
+  selIv=iv;
+  document.getElementById('dp-av').textContent=ini(iv.c);
+  document.getElementById('dp-n').textContent=iv.c;
+  document.getElementById('dp-j').textContent=iv.j;
+  document.getElementById('dp-d').textContent=fmtDate(iv.data);
+  document.getElementById('dp-o').textContent=`${iv.o} · ${iv.dur||60} min`;
+  if(iv.l){document.getElementById('dp-l').textContent=iv.l;document.getElementById('dp-lr').style.display='flex'}
+  else document.getElementById('dp-lr').style.display='none';
+  document.getElementById('dp-e').textContent=iv.e||'—';
+  const dp=document.getElementById('dpop');dp.className='dpop on';
+  const r=e.currentTarget.getBoundingClientRect();
+  dp.style.display='block';
+  const pw=dp.offsetWidth,ph=dp.offsetHeight,vw=window.innerWidth,vh=window.innerHeight;
+  let left=r.right+10;if(left+pw>vw-8)left=r.left-pw-10;
+  let top=r.top;if(top+ph>vh-8)top=vh-ph-8;
+  dp.style.left=Math.max(6,left)+'px';dp.style.top=Math.max(6,top)+'px';
+}
+function closeDP(){document.getElementById('dpop').className='dpop';selIv=null}
+function delIv(){
+  if(!selIv)return;
+  if(!confirm(`Ștergi interviul cu ${selIv.c}?`))return;
+  IVS=IVS.filter(iv=>iv.id!==selIv.id);renderCal();closeDP();t('Interviul a fost șters.');
+}
+document.addEventListener('click',e=>{if(!e.target.closest('.dpop')&&!e.target.closest('.ivc'))closeDP()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeCM();closeDP()}});
+
+// ── INIT ──────────────────────────────
+document.addEventListener('DOMContentLoaded',()=>{
+  initWave();
+  buildAccs();
+  buildCList();
+  buildTop();
+  buildJList();
+  setInterval(renderCal,60000);
+});
+</script>
+</body>
+</html>
