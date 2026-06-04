@@ -318,7 +318,26 @@ h2{font-size:clamp(34px,5vw,72px);line-height:.98;letter-spacing:-.055em;max-wid
   object-fit:cover;
   border-radius:32px;
 }
-.mini-list{display:grid;gap:18px}.mini{padding:22px;border-radius:26px;border:1px solid var(--line);background:rgba(255,255,255,.05);backdrop-filter:blur(16px)}.mini h3{font-size:22px;margin-bottom:8px}.mini p{color:var(--muted);font-size:14px;line-height:1.55}
+.mini-list{display:grid;gap:14px}
+.mini{
+  padding:22px 24px;border-radius:26px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+  backdrop-filter:blur(16px);
+  text-decoration:none;color:inherit;
+  display:block;position:relative;overflow:hidden;
+  transition:.22s ease;
+}
+.mini:hover{transform:translateY(-4px);border-color:var(--mini-accent,var(--blue));box-shadow:0 18px 60px rgba(0,0,0,.32)}
+.mini::before{content:'';position:absolute;inset:-1px;background:radial-gradient(circle at 0% 0%, var(--mini-accent,var(--blue)), transparent 40%);opacity:0;transition:.22s ease;border-radius:inherit}
+.mini:hover::before{opacity:.1}
+.mini-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.mini h3{font-size:20px;letter-spacing:-.02em;position:relative;z-index:1}
+.mini p{color:var(--muted);font-size:13px;line-height:1.55;position:relative;z-index:1}
+.mini-badge{font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid currentColor;position:relative;z-index:1;flex-shrink:0}
+.badge-live{color:#7cffc7;border-color:rgba(124,255,199,.35);background:rgba(124,255,199,.08)}
+.badge-beta{color:var(--gold);border-color:rgba(255,223,139,.35);background:rgba(255,223,139,.08)}
+.mini-bar{height:2px;border-radius:2px;margin-top:14px;background:var(--mini-accent,var(--blue));opacity:.35;position:relative;z-index:1}
 .cta-section{min-height:90svh;text-align:center;justify-content:center}.cta-box{width:min(900px,100%);margin:auto;padding:54px 28px;border:1px solid rgba(255,255,255,.16);border-radius:36px;background:linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.035));backdrop-filter:blur(22px);box-shadow:var(--shadow)}.cta-box h2{margin:auto}.cta-box p{margin:20px auto 0;color:var(--muted);font-size:18px;line-height:1.6;max-width:620px}.cta-box .hero-actions{justify-content:center}
 .footer{position:relative;z-index:8;width:min(1180px,calc(100% - 32px));margin:0 auto;padding:40px 0 48px;display:flex;justify-content:space-between;gap:18px;color:rgba(255,255,255,.48);font-size:13px;border-top:1px solid var(--line)}.footer a{margin-left:16px}.footer a:hover{color:#fff}
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .75s ease, transform .75s ease}.reveal.visible{opacity:1;transform:none}
@@ -386,7 +405,40 @@ h2{font-size:clamp(34px,5vw,72px);line-height:.98;letter-spacing:-.055em;max-wid
   </div>
 </nav>
 <main class="site-shell" id="top">
-  <section class="section hero" data-scene="0">
+  <section class="section" id="concept" data-scene="0">
+    <div class="block reveal">
+      <div class="eyebrow"></div>
+      <h2>Site-ul tau poate avea propriii angajati digitali</h2>
+      <p class="big">Agenti AI integrati in site, pregatiti sa raspunda, sa publice, sa actualizeze si sa automatizeze sarcini repetitive.</p>
+      <div class="showcase">
+       <img src="poze/3robotei.png" alt="Agenti digitali pentru site" class="preview-img">
+        <div class="mini-list">
+          <a class="mini" href="https://nexas.ro/stiri" target="_blank" rel="noopener" style="--mini-accent:var(--blue)">
+            <div class="mini-top"><h3>INA</h3><span class="mini-badge badge-live">Live</span></div>
+            <p>Preia stiri din surse alese, le reformuleaza, le organizeaza si le publica automat pe site-ul tau.</p>
+            <div class="mini-bar"></div>
+          </a>
+          <a class="mini" href="https://nexas.ro/chatbot/alex.html" target="_blank" rel="noopener" style="--mini-accent:var(--violet)">
+            <div class="mini-top"><h3>ALEX</h3><span class="mini-badge badge-live">Live</span></div>
+            <p>Raspunde pe site, explica serviciile si ajuta vizitatorii sa ia mai repede o decizie.</p>
+            <div class="mini-bar"></div>
+          </a>
+          <a class="mini" href="https://nexas.ro/niro" target="_blank" rel="noopener" style="--mini-accent:var(--green)">
+            <div class="mini-top"><h3>NIRO</h3><span class="mini-badge badge-live">Live</span></div>
+            <p>Răspunde automat clienților pe WhatsApp, preia programări și ajută firmele să economisească timp și să răspundă mai rapid.</p>
+            <div class="mini-bar"></div>
+          </a>
+          <a class="mini" href="https://nexas.ro/demo" target="_blank" rel="noopener" style="--mini-accent:var(--gold)">
+            <div class="mini-top"><h3>HR</h3><span class="mini-badge badge-beta">Beta</span></div>
+            <p>Platforma HR — automatizari in procese repetitive de recrutare si management.</p>
+            <div class="mini-bar"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero" data-scene="1">
     <div class="hero-content reveal">
       <div class="kicker">Web design</div>
       <h1>Clientul tău te caută online.
@@ -410,7 +462,6 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
           <div class="proof-card"><strong>AI</strong><span>Angajati digitali 24/7 pentru afacerea ta.</span></div>
         <div class="proof-card"><strong>SEO</strong><span>Structura facuta pentru Google si conversie.</span></div>
         <div class="proof-card"><strong>Design</strong><span>Site-uri clare, moderne si usor de folosit.</span></div>
-      
       </div>
     </div>
     <aside class="side-panel reveal" aria-label="Preview concept digital">
@@ -420,7 +471,7 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
     </aside>
   </section>
 
-  <section class="section" id="servicii" data-scene="1">
+  <section class="section" id="servicii" data-scene="2">
     <div class="block reveal">
       <div class="eyebrow"></div>
       <h2>Construiesc experiente care iti cresc increderea.</h2>
@@ -433,7 +484,7 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
     </div>
   </section>
 
-  <section class="section" id="proces" data-scene="2">
+  <section class="section" id="proces" data-scene="3">
     <div class="split">
       <div class="reveal">
         <div class="eyebrow"></div>
@@ -444,37 +495,6 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
         <div class="step"><strong></strong><div><h3>Directie si mesaj</h3><p>Stabilim publicul, oferta si mesajul principal, ca vizitatorul sa inteleaga rapid de ce sa te aleaga.</p></div></div>
         <div class="step"><strong></strong><div><h3>Design si experienta</h3><p>Cream structura, vizualul si animatiile care tin vizitatorul pe pagina.</p></div></div>
         <div class="step"><strong></strong><div><h3>SEO si lansare</h3><p>Optimizam viteza, structura SEO, afisarea pe mobil, formularele si linkurile importante.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="concept" data-scene="3">
-    <div class="block reveal">
-      <div class="eyebrow"></div>
-      <h2>Site-ul tau poate avea propriii angajati digitali</h2>
-      <p class="big">Agenti AI integrati in site, pregatiti sa raspunda, sa publice, sa actualizeze si sa automatizeze sarcini repetitive.</p>
-      <div class="showcase">
-       <img src="poze/3robotei.png" alt="Agenti digitali pentru site" class="preview-img">
-        <div class="mini-list">
-            <a class="mini" href="https://nexas.ro/stiri" target="_blank" rel="noopener">
-  <h3>INA</h3>
-  <p>Preia stiri din surse alese, le reformuleaza, le organizeaza si le publica automat pe site-ul tau.</p>
-</a>
-         <a class="mini" href="https://nexas.ro/chatbot/alex.html" target="_blank" rel="noopener">
-  <h3>ALEX</h3>
-  <p>Raspunde pe site, explica serviciile si ajuta vizitatorii sa ia mai repede o decizie.</p>
-</a>
-            <a class="mini" href="https://nexas.ro/niro" target="_blank" rel="noopener">
-  <h3>NIRO</h3>
-  <p>Răspunde automat clienților pe WhatsApp, preia programări și ajută firmele să economisească timp și să răspundă mai rapid.</p>
-</a>
-
-                      <a class="mini" href="https://nexas.ro/demo" target="_blank" rel="noopener">
-  <h3>HR</h3>
-  <p>PLATFORMA HR - AUTOMATIZARI IN PROCESE REPETITIVE.</p>
-</a>
-        
-        </div>
       </div>
     </div>
   </section>
