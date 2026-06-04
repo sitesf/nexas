@@ -413,6 +413,93 @@ h2{font-size:clamp(34px,5vw,72px);line-height:.98;letter-spacing:-.055em;max-wid
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.card,.btn{transition:none!important}#webgl{display:none}}
 
+/* ═══ ENHANCED EFFECTS ═══ */
+
+/* Cursor */
+@media(hover:hover){body,a,button,.card,.ac{cursor:none}}
+#nx-cur{position:fixed;width:8px;height:8px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;will-change:transform;transition:width .15s,height .15s}
+#nx-ring{position:fixed;width:38px;height:38px;border:1px solid rgba(255,255,255,.32);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);will-change:transform;transition:width .2s ease,height .2s ease,border-color .2s ease}
+#nx-ring.big{width:56px;height:56px;border-color:rgba(93,215,255,.55)}
+
+/* H1 physics words */
+.h1-word{display:inline-block;will-change:transform,opacity;backface-visibility:hidden}
+
+/* Service cards 3D tilt */
+.card{transform-style:preserve-3d;transition:box-shadow .24s ease,border-color .24s ease,transform .4s cubic-bezier(.34,1.3,.64,1)}
+.card:hover{transform:none}
+.card{--cx:50%;--cy:0%}
+.card::before{background:radial-gradient(circle at var(--cx) var(--cy),rgba(93,215,255,.24),transparent 40%)}
+
+/* Agent cards holo */
+.ac{--mx:50;--my:50}
+.ac::after{
+  content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;
+  mix-blend-mode:screen;opacity:0;transition:opacity .35s;
+  background:conic-gradient(
+    from calc(var(--mx) * 3.6deg) at calc(var(--mx) * 1%) calc(var(--my) * 1%),
+    rgba(93,215,255,.08) 0deg,rgba(155,108,255,.11) 90deg,
+    rgba(255,79,216,.08) 180deg,rgba(124,255,199,.07) 270deg,rgba(93,215,255,.08) 360deg
+  );
+}
+.ac:hover::after{opacity:1}
+
+/* CTA aurora */
+.cta-section{position:relative;overflow:hidden}
+.cta-aurora{
+  position:absolute;inset:-60%;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 55% 45% at 15% 50%,rgba(93,215,255,.07),transparent 60%),
+    radial-gradient(ellipse 45% 55% at 85% 25%,rgba(155,108,255,.06),transparent 55%),
+    radial-gradient(ellipse 35% 45% at 55% 85%,rgba(255,79,216,.05),transparent 50%);
+  animation:aurora 10s ease-in-out infinite alternate;
+}
+@keyframes aurora{
+  0%{transform:translate(0,0) rotate(0deg)}
+  33%{transform:translate(4%,-3%) rotate(1.5deg)}
+  66%{transform:translate(-3%,4%) rotate(-1deg)}
+  100%{transform:translate(2%,-2%) rotate(.8deg)}
+}
+.cta-box{position:relative;z-index:2}
+
+/* Process step numbers */
+.step{transition:.5s ease;opacity:1;transform:none}
+.step strong{
+  width:48px;height:48px;border-radius:50%;flex-shrink:0;align-self:flex-start;
+  display:flex;align-items:center;justify-content:center;
+  font-size:15px;font-weight:900;letter-spacing:0;
+  color:var(--blue);border:1.5px solid rgba(93,215,255,.25);
+  background:rgba(93,215,255,.06);
+  transition:.5s ease;
+}
+.step.lit strong{border-color:rgba(93,215,255,.7);box-shadow:0 0 22px rgba(93,215,255,.22),inset 0 0 10px rgba(93,215,255,.1)}
+
+/* Stagger */
+.cards .card:nth-child(1){transition-delay:.04s}
+.cards .card:nth-child(2){transition-delay:.13s}
+.cards .card:nth-child(3){transition-delay:.24s}
+.process .step:nth-child(1){transition-delay:.06s}
+.process .step:nth-child(2){transition-delay:.18s}
+.process .step:nth-child(3){transition-delay:.30s}
+
+/* Agent cards — smaller */
+.agent-grid{gap:16px}
+.ac{padding:20px 22px}
+.ac-name{font-size:clamp(34px,3.8vw,50px);margin-bottom:8px}
+.ac-desc{font-size:13px;margin-bottom:14px}
+.ac-status{margin-bottom:12px;font-size:10px}
+.ac-feed{height:54px;margin-bottom:14px;padding:8px 12px}
+.ac-feed-line{font-size:10.5px;padding:2px 0}
+.ac-stats{gap:6px}
+.ac-stat{padding:7px 6px}
+.ac-stat-val{font-size:17px}
+.ac-stat-lbl{font-size:9px}
+@media(max-width:900px){.agent-grid{grid-template-columns:1fr}.ac-name{font-size:42px}}
+
+/* Proof cards */
+.proof-card{transition:.28s ease;cursor:default}
+.proof-card:hover{transform:translateY(-4px);border-color:rgba(93,215,255,.32);background:rgba(93,215,255,.07)}
+.proof-card strong{background:linear-gradient(120deg,var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+
   .btn.whatsapp {
   background: #25D366;
   color: #05060b;
@@ -561,10 +648,10 @@ h2{font-size:clamp(34px,5vw,72px);line-height:.98;letter-spacing:-.055em;max-wid
 
   <section class="section hero" data-scene="1">
     <div class="hero-content reveal">
-      <div class="kicker">Web design</div>
+      <div class="kicker">nexas.build()</div>
       <h1>Clientul tău te caută online.
 Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span></h1>
-      <p class="lead">Construiesc experiente digitale pentru branduri care vor sa fie vazute, intelese si alese. Design, cod, SEO si automatizare intr-o singura directie clara.</p>
+      <p class="lead">Design, cod, SEO și agenți AI — o singură direcție clară pentru brandul tău.</p>
      <a class="btn primary" href="contact.html">
     Solicita demo
     <span style="display:block;font-size:11px;font-weight:500;opacity:0.8;letter-spacing:0.05em">contact@nexas.ro</span>
@@ -595,8 +682,8 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
   <section class="section" id="servicii" data-scene="2">
     <div class="block reveal">
       <div class="eyebrow"></div>
-      <h2>Construiesc experiente care iti cresc increderea.</h2>
-      <p class="big">Fiecare sectiune are un rol clar, atrage atentia, explica valoarea si duce vizitatorul spre contact.</p>
+      <h2>Construiesc site-uri care îți aduc clienți, nu doar vizitatori.</h2>
+      <p class="big">Fiecare secțiune are un rol clar — atrage atenția, explică valoarea și duce vizitatorul spre contact.</p>
       <div class="cards">
         <article class="card"><div class="card-num"></div><div class="icon">3D</div><h3>Site-uri 3D interactive</h3><p>Hero cinematic, miscare pe scroll, lumini, profunzime si efecte care se simt premium.</p></article>
         <article class="card"><div class="card-num"></div><div class="icon">WEB</div><h3>Site-uri de prezentare</h3><p>Structura clara, design curat, texte convingatoare si pagini pregatite pentru conversie.</p></article>
@@ -609,18 +696,19 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
     <div class="split">
       <div class="reveal">
         <div class="eyebrow"></div>
-        <h2>Transformam ideea ta intr-un site clar si functional</h2>
-        <p class="big">Lucrez simplu. Inteleg afacerea, construiesc directia vizuala, dezvolt pagina si testez tot inainte de publicare.</p>
+        <h2>Transform ideea ta într-un site care lucrează pentru tine.</h2>
+        <p class="big">Înțeleg afacerea, construiesc direcția vizuală, dezvolt pagina și testez tot înainte de publicare.</p>
       </div>
       <div class="process reveal">
-        <div class="step"><strong></strong><div><h3>Directie si mesaj</h3><p>Stabilim publicul, oferta si mesajul principal, ca vizitatorul sa inteleaga rapid de ce sa te aleaga.</p></div></div>
-        <div class="step"><strong></strong><div><h3>Design si experienta</h3><p>Cream structura, vizualul si animatiile care tin vizitatorul pe pagina.</p></div></div>
-        <div class="step"><strong></strong><div><h3>SEO si lansare</h3><p>Optimizam viteza, structura SEO, afisarea pe mobil, formularele si linkurile importante.</p></div></div>
+        <div class="step"><strong>01</strong><div><h3>Direcție și mesaj</h3><p>Stabilesc publicul, oferta și mesajul principal — ca vizitatorul să înțeleagă rapid de ce să te aleagă.</p></div></div>
+        <div class="step"><strong>02</strong><div><h3>Design și experiență</h3><p>Creez structura, vizualul și animațiile care țin vizitatorul pe pagină și îl conving.</p></div></div>
+        <div class="step"><strong>03</strong><div><h3>SEO și lansare</h3><p>Optimizez viteza, structura SEO, afișarea pe mobil, formularele și linkurile importante.</p></div></div>
       </div>
     </div>
   </section>
 
   <section class="section cta-section" data-scene="4">
+    <div class="cta-aurora"></div>
     <div class="cta-box reveal">
       <div class="eyebrow"></div>
      <h2>Un site bun nu doar arata bine. Te ajuta sa fii ales.</h2>
@@ -937,24 +1025,111 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
   
   <script>
 (function(){
-  const vals = document.querySelectorAll('.ac-stat-val[data-count]');
-  if(!vals.length) return;
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if(!e.isIntersecting) return;
-      io.unobserve(e.target);
-      const target = +e.target.dataset.count;
-      const duration = 1400, step = 18, steps = duration / step;
-      let cur = 0;
-      const tick = () => {
-        cur = Math.min(target, Math.round(cur + target / steps));
-        e.target.textContent = cur;
-        if(cur < target) setTimeout(tick, step);
-      };
-      tick();
+
+  /* ── 1. CUSTOM CURSOR ── */
+  if(window.matchMedia('(hover:hover)').matches){
+    const dot = document.createElement('div'); dot.id='nx-cur';
+    const ring = document.createElement('div'); ring.id='nx-ring';
+    document.body.append(dot, ring);
+    let mx=0,my=0,rx=0,ry=0;
+    document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
+    (function tick(){
+      rx+=(mx-rx)*.15; ry+=(my-ry)*.15;
+      dot.style.left=mx+'px'; dot.style.top=my+'px';
+      ring.style.left=rx+'px'; ring.style.top=ry+'px';
+      requestAnimationFrame(tick);
+    })();
+    document.querySelectorAll('a,button,.card,.ac,.proof-card').forEach(el=>{
+      el.addEventListener('mouseenter',()=>ring.classList.add('big'));
+      el.addEventListener('mouseleave',()=>ring.classList.remove('big'));
     });
-  }, {threshold:.6});
-  vals.forEach(v => io.observe(v));
+  }
+
+  /* ── 2. H1 PHYSICS TEXT ── */
+  const h1 = document.querySelector('h1');
+  if(h1){
+    const words=[];
+    Array.from(h1.childNodes).forEach(node=>{
+      if(node.nodeType!==3) return;
+      const frag=document.createDocumentFragment();
+      node.textContent.split(/(\s+|\n)/).forEach(part=>{
+        if(!part.trim()){frag.appendChild(document.createTextNode(part.replace(/\n/,' ')));return;}
+        const s=document.createElement('span');
+        s.className='h1-word';s.textContent=part;
+        frag.appendChild(s);words.push(s);
+      });
+      node.replaceWith(frag);
+    });
+    let played=false;
+    const play=()=>{
+      if(played) return; played=true;
+      words.forEach((w,i)=>{
+        const dx=(Math.random()-.5)*200, dy=-70-Math.random()*110, rot=(Math.random()-.5)*20;
+        w.style.cssText=`opacity:0;transform:translate(${dx}px,${dy}px) rotate(${rot}deg);transition:none;display:inline-block`;
+        setTimeout(()=>{
+          w.style.cssText=`opacity:1;transform:none;transition:opacity .55s ease,transform .8s cubic-bezier(.34,1.45,.64,1);display:inline-block`;
+        }, 80 + i*60);
+      });
+    };
+    const hio=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting)play()});},{threshold:.15});
+    hio.observe(h1.closest('.section')||h1);
+  }
+
+  /* ── 3. 3D CARD TILT ── */
+  document.querySelectorAll('.card').forEach(card=>{
+    card.addEventListener('mousemove',e=>{
+      const r=card.getBoundingClientRect();
+      const x=(e.clientX-r.left)/r.width-.5;
+      const y=(e.clientY-r.top)/r.height-.5;
+      card.style.transform=`perspective(700px) rotateX(${-y*11}deg) rotateY(${x*11}deg) translateY(-8px) scale(1.015)`;
+      card.style.setProperty('--cx',((x+.5)*100)+'%');
+      card.style.setProperty('--cy',((y+.5)*100)+'%');
+    });
+    card.addEventListener('mouseleave',()=>{ card.style.transform=''; });
+  });
+
+  /* ── 4. MAGNETIC BUTTONS ── */
+  document.querySelectorAll('.btn').forEach(btn=>{
+    btn.addEventListener('mousemove',e=>{
+      const r=btn.getBoundingClientRect();
+      const x=(e.clientX-r.left-r.width/2)*.24;
+      const y=(e.clientY-r.top-r.height/2)*.24;
+      btn.style.transform=`translate(${x}px,${y}px) translateY(-3px)`;
+    });
+    btn.addEventListener('mouseleave',()=>{ btn.style.transform=''; });
+  });
+
+  /* ── 5. AGENT HOLO TRACKING ── */
+  document.querySelectorAll('.ac').forEach(ac=>{
+    ac.addEventListener('mousemove',e=>{
+      const r=ac.getBoundingClientRect();
+      ac.style.setProperty('--mx',(((e.clientX-r.left)/r.width)*100).toFixed(1));
+      ac.style.setProperty('--my',(((e.clientY-r.top)/r.height)*100).toFixed(1));
+    });
+  });
+
+  /* ── 6. STAT COUNTERS ── */
+  const vals=document.querySelectorAll('.ac-stat-val[data-count]');
+  if(vals.length){
+    const sio=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(!e.isIntersecting) return;
+        sio.unobserve(e.target);
+        const target=+e.target.dataset.count, steps=78;
+        let cur=0;
+        const tick=()=>{cur=Math.min(target,Math.round(cur+target/steps));e.target.textContent=cur;if(cur<target)setTimeout(tick,18);};
+        tick();
+      });
+    },{threshold:.6});
+    vals.forEach(v=>sio.observe(v));
+  }
+
+  /* ── 7. STEP RING LIGHT ── */
+  const lio=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('lit')});
+  },{threshold:.4});
+  document.querySelectorAll('.step').forEach(s=>lio.observe(s));
+
 })();
   </script>
   <script src="assets/nexas-consent.js"></script>
