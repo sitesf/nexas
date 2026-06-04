@@ -422,8 +422,8 @@ h2{max-width:760px}
 #nx-ring.big{width:56px;height:56px;border-color:rgba(93,215,255,.55)}
 
 /* ══ TEXT REVEAL SYSTEM ══ */
-.tx-wrap{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.22em;margin-bottom:-.16em;line-height:inherit}
-.tx-inner{display:inline-block;transform:translateY(110%);will-change:transform;transition:transform .82s cubic-bezier(.16,1,.3,1)}
+.tx-wrap{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.2em;line-height:inherit}
+.tx-inner{display:inline-block;transform:translateY(200%);will-change:transform;transition:transform .82s cubic-bezier(.16,1,.3,1)}
 h1 .tx-inner{transition-duration:1.05s}
 h3 .tx-inner{transition-duration:.6s}
 .tx-revealed .tx-inner{transform:translateY(0)}
@@ -1167,9 +1167,6 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
         mo.observe(parent, { attributes: true, attributeFilter: ['class'] });
       }
     }
-
-    /* proof-card strong — same treatment */
-    document.querySelectorAll('.proof-card strong').forEach(s => { wrapWords(s, 28); watchRevealParent(s, 80); });
 
     const h1 = document.querySelector('h1');
     if (h1) { wrapWords(h1, 40); watchRevealParent(h1, 0); }
