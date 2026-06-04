@@ -679,13 +679,14 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(reduce || !window.THREE){ return; }
   const isMobile = innerWidth < 820;
+  const isLowEnd = isMobile && (navigator.hardwareConcurrency || 4) <= 4;
   const scene = new THREE.Scene();
   scene.fog = new THREE.Fog(0x05060b, 12, 34);
   const camera = new THREE.PerspectiveCamera(isMobile ? 70 : 58, innerWidth / innerHeight, .1, 100);
   camera.position.set(0, 0.8, isMobile ? 8.2 : 7.2);
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias:true, alpha:true, powerPreference:'high-performance' });
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: !isMobile, alpha:true, powerPreference: isMobile ? 'low-power' : 'high-performance' });
   renderer.setSize(innerWidth, innerHeight);
-  renderer.setPixelRatio(Math.min(devicePixelRatio, isMobile ? 1.45 : 2));
+  renderer.setPixelRatio(Math.min(devicePixelRatio, isLowEnd ? 1 : isMobile ? 1.45 : 2));
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.18;
 
@@ -714,7 +715,7 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
     group.add(ring);
   }
 
-  const particlesCount = isMobile ? 650 : 1450;
+  const particlesCount = isLowEnd ? 200 : isMobile ? 350 : 1450;
   const pos = new Float32Array(particlesCount * 3);
   for(let i=0;i<particlesCount;i++){
     const r = 6 + Math.random() * 12;

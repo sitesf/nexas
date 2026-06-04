@@ -2,9 +2,11 @@
 
   const CONFIG = {
     PROXY_URL: "https://script.google.com/macros/s/AKfycby5w9eJSZ55_L3FuYfGMI1882-mXDlppiS0veWtSB9uY4sKDZg9GnHibOe8d8L45zD8oA/exec",
-    WHATSAPP: "40764639118",
+    WHATSAPP: "40730858640",
     AGENT_NAME: "Alex",
     AGENCY_NAME: "Nexas",
+    RATE_LIMIT_MS: 2000,
+    REQUEST_TIMEOUT_MS: 15000,
   };
 
   const SYSTEM_PROMPT = `Ești Alex, asistentul virtual al agenției Nexas — o agenție digitală din România specializată în crearea de site-uri web profesionale, optimizare SEO și managementul social media.
@@ -23,7 +25,7 @@ SERVICIILE NEXAS:
 REGULI:
 - La întrebări despre prețuri → dai prețul de pornire și trimiți la WhatsApp
 - Nu promite ce nu oferim
-- Dacă nu știi → trimiți la WhatsApp: +40764639118`;
+- Dacă nu știi → trimiți la WhatsApp: +40730858640`;
 
   const CSS = `
     #nexas-widget*{box-sizing:border-box;margin:0;padding:0}
@@ -116,7 +118,7 @@ REGULI:
     const iconChat  = document.getElementById("nx-icon-chat");
     const iconClose = document.getElementById("nx-icon-close");
 
-    let open = false, loading = false, history = [];
+    let open = false, loading = false, history = [], lastSentAt = 0;
 
     function waUrl() {
       return "https://wa.me/" + CONFIG.WHATSAPP + "?text=Salut%2C%20am%20o%20intrebare%20despre%20Nexas";
@@ -162,6 +164,9 @@ REGULI:
     async function sendMessage() {
       const text = inputEl.value.trim();
       if (!text || loading) return;
+      const now = Date.now();
+      if (now - lastSentAt < CONFIG.RATE_LIMIT_MS) return;
+      lastSentAt = now;
       inputEl.value = "";
       sendBtn.disabled = true;
       loading = true;
@@ -169,18 +174,20 @@ REGULI:
       addMessage("user", text);
       showTyping();
       try {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), CONFIG.REQUEST_TIMEOUT_MS);
         const res = await fetch(CONFIG.PROXY_URL, {
           method: "POST",
-          headers: {
-            "Content-Type": "text/plain"
-          },
+          headers: { "Content-Type": "text/plain" },
           body: JSON.stringify({
             model: "claude-haiku-4-5-20251001",
             max_tokens: 400,
             system: SYSTEM_PROMPT,
             messages: history
-          })
+          }),
+          signal: controller.signal
         });
+        clearTimeout(timer);
         const data = await res.json();
         const reply = (data.content && data.content[0] && data.content[0].text)
           ? data.content[0].text
@@ -190,7 +197,10 @@ REGULI:
         addMessage("assistant", reply);
       } catch(e) {
         removeTyping();
-        addMessage("assistant", "A apărut o problemă tehnică. Scrie-ne pe WhatsApp 👇");
+        const msg = e.name === "AbortError"
+          ? "Răspunsul a durat prea mult. Încearcă din nou sau scrie-ne pe WhatsApp 👇"
+          : "A apărut o problemă tehnică. Scrie-ne pe WhatsApp 👇";
+        addMessage("assistant", msg);
       }
       loading = false;
     }
