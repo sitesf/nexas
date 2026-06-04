@@ -206,7 +206,7 @@ h1,h2,h3{
   background:rgba(255,255,255,.045);
   backdrop-filter:blur(16px);
 }
-.proof-card strong{display:block;font-size:22px;margin-bottom:4px}
+.proof-card strong{display:block;font-size:clamp(34px,3.8vw,50px);font-weight:900;letter-spacing:-.055em;line-height:.98;margin-bottom:8px}
 .proof-card span{font-size:12px;color:var(--muted);line-height:1.45}
 .side-panel{
   position:absolute;
@@ -1146,18 +1146,35 @@ Construiesc site-ul care îl convinge să te aleagă.<span class="grad"></span><
       walk(el);
     }
 
-    const txIO = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (!e.isIntersecting) return;
-        e.target.classList.add('tx-revealed');
-        txIO.unobserve(e.target);
-      });
-    }, { threshold: 0.12 });
+    function fireReveal(el, delay) {
+      setTimeout(() => el.classList.add('tx-revealed'), delay || 0);
+    }
+
+    function watchRevealParent(el, delay) {
+      const parent = el.closest('.reveal');
+      if (!parent) {
+        /* no .reveal ancestor — use IntersectionObserver directly */
+        const io = new IntersectionObserver(entries => {
+          entries.forEach(e => { if (e.isIntersecting) { fireReveal(el, 0); io.disconnect(); }});
+        }, { threshold: 0.12 });
+        io.observe(el);
+      } else {
+        /* wait for parent to become .visible before revealing words */
+        if (parent.classList.contains('visible')) { fireReveal(el, 80); return; }
+        const mo = new MutationObserver(() => {
+          if (parent.classList.contains('visible')) { fireReveal(el, 80); mo.disconnect(); }
+        });
+        mo.observe(parent, { attributes: true, attributeFilter: ['class'] });
+      }
+    }
+
+    /* proof-card strong — same treatment */
+    document.querySelectorAll('.proof-card strong').forEach(s => { wrapWords(s, 28); watchRevealParent(s, 80); });
 
     const h1 = document.querySelector('h1');
-    if (h1) { wrapWords(h1, 40); txIO.observe(h1); }
-    document.querySelectorAll('h2').forEach(h => { wrapWords(h, 33); txIO.observe(h); });
-    document.querySelectorAll('h3').forEach(h => { wrapWords(h, 20); txIO.observe(h); });
+    if (h1) { wrapWords(h1, 40); watchRevealParent(h1, 0); }
+    document.querySelectorAll('h2').forEach(h => { wrapWords(h, 33); watchRevealParent(h, 0); });
+    document.querySelectorAll('h3').forEach(h => { wrapWords(h, 20); watchRevealParent(h, 0); });
   })();
 
   /* ── 3. 3D CARD TILT + HOLO + COLOR ── */
