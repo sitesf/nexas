@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexas Reparații | Service Laptop & Calculator Cluj-Napoca</title>
+  <meta name="description" content="Service profesional reparații laptop și calculator. Diagnosticare gratuită, reparații în 24h, garanție 12 luni. Nexas — când tehnologia cedează, noi intervenim." />
+  <meta name="keywords" content="reparatii laptop, reparatii calculator, service IT, windows, mentenanta IT, Cluj, Romania" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <style>
+    :root {
+      --bg-primary: #030712;
+      --bg-secondary: #0a0f1e;
+      --bg-card: rgba(15, 23, 42, 0.8);
+      --accent-blue: #3b82f6;
+      --accent-cyan: #06b6d4;
+      --accent-green: #10b981;
+      --accent-purple: #8b5cf6;
+      --accent-orange: #f59e0b;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #475569;
+      --border: rgba(59, 130, 246, 0.15);
+      --glow-blue: 0 0 40px rgba(59, 130, 246, 0.3);
+      --glow-cyan: 0 0 40px rgba(6, 182, 212, 0.3);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ── CANVAS BACKGROUND ── */
+    #canvas-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(20px);
+      background: rgba(3, 7, 18, 0.7);
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: var(--text-primary);
+    }
+
+    .nav-logo-icon {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .nav-logo span { color: var(--accent-cyan); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.3s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0; right: 0;
+      height: 2px;
+      background: var(--accent-cyan);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      color: #fff !important;
+      padding: 0.6rem 1.4rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: opacity 0.3s, transform 0.3s !important;
+    }
+
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { opacity: 0.9; transform: translateY(-1px) !important; color: #fff !important; }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8rem 2rem 4rem;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      max-width: 1200px;
+      width: 100%;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      border-radius: 50px;
+      padding: 0.4rem 1rem;
+      font-size: 0.8rem;
+      color: var(--accent-cyan);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      animation: fadeInUp 0.6s ease both;
+    }
+
+    .hero-badge-dot {
+      width: 6px; height: 6px;
+      background: var(--accent-green);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      animation: fadeInUp 0.7s ease 0.1s both;
+    }
+
+    .hero-title .line-gradient {
+      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-cyan) 50%, var(--accent-green) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.5rem;
+      max-width: 500px;
+      animation: fadeInUp 0.8s ease 0.2s both;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.9s ease 0.3s both;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      color: #fff;
+      padding: 0.9rem 2rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: var(--glow-blue);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 60px rgba(59, 130, 246, 0.5);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 0.9rem 2rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s;
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+      background: rgba(6, 182, 212, 0.05);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 3rem;
+      animation: fadeInUp 1s ease 0.4s both;
+    }
+
+    .hero-stat {
+      text-align: center;
+    }
+
+    .hero-stat-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.2rem;
+    }
+
+    /* Hero visual */
+    .hero-visual {
+      position: relative;
+      animation: fadeInRight 1s ease 0.2s both;
+    }
+
+    .hero-device-mockup {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: var(--bg-card);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      backdrop-filter: blur(20px);
+      box-shadow: var(--glow-blue), 0 40px 80px rgba(0,0,0,0.5);
+    }
+
+    .mockup-topbar {
+      padding: 1rem 1.2rem;
+      background: rgba(15, 23, 42, 0.9);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mockup-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+    }
+
+    .mockup-dot:nth-child(1) { background: #ef4444; }
+    .mockup-dot:nth-child(2) { background: #f59e0b; }
+    .mockup-dot:nth-child(3) { background: #10b981; }
+
+    .mockup-content {
+      padding: 1.5rem;
+      height: calc(100% - 44px);
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .diag-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      background: rgba(59, 130, 246, 0.05);
+      border: 1px solid rgba(59, 130, 246, 0.1);
+      border-radius: 10px;
+      font-size: 0.85rem;
+      animation: scanIn 0.5s ease both;
+    }
+
+    .diag-icon {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .diag-icon.ok { background: rgba(16, 185, 129, 0.2); color: var(--accent-green); }
+    .diag-icon.warn { background: rgba(245, 158, 11, 0.2); color: var(--accent-orange); }
+    .diag-icon.fix { background: rgba(59, 130, 246, 0.2); color: var(--accent-blue); }
+
+    .diag-text { flex: 1; }
+    .diag-title { font-weight: 600; color: var(--text-primary); font-size: 0.8rem; }
+    .diag-sub { color: var(--text-muted); font-size: 0.72rem; }
+
+    .diag-status {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+    }
+
+    .diag-status.ok { background: rgba(16, 185, 129, 0.15); color: var(--accent-green); }
+    .diag-status.warn { background: rgba(245, 158, 11, 0.15); color: var(--accent-orange); }
+    .diag-status.scanning { background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); }
+
+    .progress-bar-wrap {
+      background: rgba(59, 130, 246, 0.1);
+      border-radius: 4px;
+      height: 6px;
+      margin-top: 0.3rem;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+      border-radius: 4px;
+      animation: progressFill 2s ease 1s both;
+    }
+
+    /* Floating badges */
+    .float-badge {
+      position: absolute;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.75rem 1rem;
+      backdrop-filter: blur(20px);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      animation: float 3s ease-in-out infinite;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .float-badge.top-right { top: -1.5rem; right: -2rem; animation-delay: 0s; }
+    .float-badge.bottom-left { bottom: -1.5rem; left: -2rem; animation-delay: 1.5s; }
+    .float-badge-icon { font-size: 1.2rem; }
+
+    /* ── SECTIONS ── */
+    section { position: relative; z-index: 1; }
+
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      color: var(--accent-blue);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .section-title .accent { color: var(--accent-cyan); }
+
+    .section-desc {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      backdrop-filter: blur(20px);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(59, 130, 246, 0.3);
+      box-shadow: var(--glow-blue);
+    }
+
+    .service-card-glow {
+      position: absolute;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+      filter: blur(60px);
+    }
+
+    .service-card:hover .service-card-glow { opacity: 0.15; }
+
+    .service-icon-wrap {
+      width: 60px; height: 60px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .service-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-desc {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-price {
+      font-size: 0.85rem;
+      color: var(--accent-green);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 1rem;
+    }
+
+    .service-tag {
+      background: rgba(59, 130, 246, 0.08);
+      border: 1px solid rgba(59, 130, 246, 0.15);
+      color: var(--text-muted);
+      font-size: 0.72rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+    }
+
+    /* ── PROCESS ── */
+    .process-section {
+      background: linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.03), transparent);
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      position: relative;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 2.5rem;
+      left: 12.5%;
+      right: 12.5%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-blue), var(--accent-cyan), var(--accent-blue), transparent);
+    }
+
+    .process-step {
+      text-align: center;
+      position: relative;
+    }
+
+    .process-step-num {
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--accent-blue);
+      margin: 0 auto 1.5rem;
+      position: relative;
+      z-index: 1;
+      transition: all 0.3s ease;
+    }
+
+    .process-step:hover .process-step-num {
+      background: var(--accent-blue);
+      color: #fff;
+      box-shadow: var(--glow-blue);
+      transform: scale(1.1);
+    }
+
+    .process-step-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .process-step-title {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .process-step-desc {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+
+    /* ── PRICING ── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .pricing-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2.5rem;
+      backdrop-filter: blur(20px);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .pricing-card:hover { transform: translateY(-8px); }
+
+    .pricing-card.featured {
+      border-color: var(--accent-blue);
+      box-shadow: var(--glow-blue);
+      background: linear-gradient(180deg, rgba(59, 130, 246, 0.08), var(--bg-card));
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: 1.5rem; right: 1.5rem;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .pricing-plan {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+    }
+
+    .pricing-price {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    .pricing-price sup { font-size: 1.5rem; }
+    .pricing-price-note { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+
+    .pricing-desc { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2rem; }
+
+    .pricing-features { list-style: none; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem; }
+
+    .pricing-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .pricing-features li span {
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      flex-shrink: 0;
+    }
+
+    .pricing-features li span.check {
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--accent-green);
+    }
+
+    .pricing-features li span.cross {
+      background: rgba(71, 85, 105, 0.15);
+      color: var(--text-muted);
+    }
+
+    .btn-pricing {
+      display: block;
+      text-align: center;
+      padding: 0.9rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-pricing.primary {
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      color: #fff;
+      box-shadow: var(--glow-blue);
+    }
+
+    .btn-pricing.primary:hover { box-shadow: 0 0 60px rgba(59,130,246,0.5); transform: translateY(-2px); }
+
+    .btn-pricing.outline {
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+
+    .btn-pricing.outline:hover { border-color: var(--accent-blue); color: var(--accent-blue); }
+
+    /* ── WHY US ── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .why-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .why-item {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .why-item:hover {
+      border-color: rgba(59, 130, 246, 0.3);
+      transform: translateX(8px);
+    }
+
+    .why-item-icon {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+    }
+
+    .why-item-title {
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .why-item-desc { color: var(--text-secondary); font-size: 0.88rem; line-height: 1.7; }
+
+    .why-stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .why-stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      backdrop-filter: blur(20px);
+      transition: all 0.3s ease;
+    }
+
+    .why-stat-card:hover {
+      box-shadow: var(--glow-cyan);
+      border-color: rgba(6, 182, 212, 0.3);
+    }
+
+    .why-stat-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .why-stat-label { color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.3rem; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-section {
+      background: linear-gradient(180deg, transparent, rgba(6,182,212,0.02), transparent);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      backdrop-filter: blur(20px);
+      transition: all 0.4s ease;
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 1rem; right: 1.5rem;
+      font-size: 5rem;
+      color: rgba(59, 130, 246, 0.1);
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .testimonial-card:hover {
+      border-color: rgba(59, 130, 246, 0.25);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .stars { color: #f59e0b; font-size: 1.1rem; margin-bottom: 1rem; letter-spacing: 0.1em; }
+
+    .testimonial-text {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .testimonial-avatar {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .testimonial-name { font-weight: 700; font-size: 0.9rem; }
+    .testimonial-city { color: var(--text-muted); font-size: 0.78rem; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      transition: border-color 0.3s;
+    }
+
+    .faq-item.open { border-color: rgba(59, 130, 246, 0.3); }
+
+    .faq-question {
+      padding: 1.25rem 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.95rem;
+      user-select: none;
+      transition: color 0.3s;
+    }
+
+    .faq-item.open .faq-question { color: var(--accent-cyan); }
+
+    .faq-icon {
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      background: rgba(59,130,246,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: transform 0.3s ease, background 0.3s;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--accent-blue); }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s;
+      padding: 0 1.5rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+
+    .faq-answer.open { max-height: 200px; padding: 0 1.5rem 1.25rem; }
+
+    /* ── CONTACT ── */
+    .contact-section { background: linear-gradient(180deg, transparent, rgba(59,130,246,0.03)); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 4rem;
+    }
+
+    .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: all 0.3s ease;
+    }
+
+    .contact-card:hover { border-color: var(--accent-blue); transform: translateX(6px); }
+
+    .contact-icon {
+      width: 48px; height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .contact-label { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .contact-value { font-weight: 600; font-size: 0.95rem; }
+
+    .contact-form {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2.5rem;
+      backdrop-filter: blur(20px);
+    }
+
+    .form-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .form-subtitle { color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 2rem; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .form-group { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+
+    .form-label { font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); }
+
+    .form-input, .form-select, .form-textarea {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      outline: none;
+      width: 100%;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    .form-select { appearance: none; cursor: pointer; }
+    .form-textarea { resize: vertical; min-height: 100px; }
+
+    .form-submit {
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: var(--glow-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .form-submit:hover { transform: translateY(-2px); box-shadow: 0 0 60px rgba(59,130,246,0.5); }
+
+    /* ── FOOTER ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 4rem 2rem 2rem;
+      background: rgba(3,7,18,0.95);
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand p { color: var(--text-secondary); font-size: 0.88rem; line-height: 1.8; margin-top: 1rem; max-width: 280px; }
+
+    .footer-col-title { font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem; color: var(--text-primary); }
+
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+
+    .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.88rem; transition: color 0.3s; }
+    .footer-links a:hover { color: var(--accent-cyan); }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copy { color: var(--text-muted); font-size: 0.82rem; }
+
+    .footer-social { display: flex; gap: 0.75rem; }
+
+    .social-btn {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      background: rgba(59,130,246,0.1);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-btn:hover { background: var(--accent-blue); border-color: var(--accent-blue); transform: translateY(-3px); }
+
+    /* ── TICKER ── */
+    .ticker-wrap {
+      overflow: hidden;
+      background: rgba(59, 130, 246, 0.05);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ticker-track {
+      display: flex;
+      gap: 3rem;
+      animation: ticker 25s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+
+    .ticker-dot { color: var(--accent-cyan); }
+
+    /* ── SCROLL ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+    /* ── KEYFRAMES ── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes scanIn {
+      from { opacity: 0; transform: translateX(-10px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes progressFill {
+      from { width: 0; }
+      to { width: 78%; }
+    }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    @keyframes rotate360 {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .process-steps::before { display: none; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+
+    /* ── TYPEWRITER ── */
+    .typewriter-wrap { display: inline; }
+    .typewriter-text { border-right: 3px solid var(--accent-cyan); animation: blink 1s step-end infinite; }
+    @keyframes blink { 0%, 100% { border-color: var(--accent-cyan); } 50% { border-color: transparent; } }
+
+    /* ── CURSOR GLOW ── */
+    .cursor-glow {
+      position: fixed;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease;
+    }
+
+    /* Live chat button */
+    .chat-fab {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 200;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 8px 32px rgba(59,130,246,0.4);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .chat-fab:hover { transform: scale(1.1) translateY(-3px); box-shadow: 0 12px 40px rgba(59,130,246,0.6); }
+
+    .chat-fab-ping {
+      position: absolute;
+      top: -2px; right: -2px;
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      border: 2px solid var(--bg-primary);
+      animation: pulse 2s infinite;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- Three.js canvas -->
+<canvas id="canvas-bg"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">⚡</div>
+    Nexas<span>.ro</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#servicii">Servicii</a></li>
+    <li><a href="#process">Cum lucrăm</a></li>
+    <li><a href="#preturi">Prețuri</a></li>
+    <li><a href="#despre">Despre noi</a></li>
+    <li><a href="#testimoniale">Recenzii</a></li>
+    <li><a href="#contact" class="nav-cta">Programează-te</a></li>
+  </ul>
+</nav>
+
+<!-- TICKER -->
+<div class="ticker-wrap" style="margin-top: 72px;">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="ticker-dot">●</span> Diagnosticare GRATUITĂ</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Reparații în 24H</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Garanție 12 luni</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Service autorizat</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Intervenție la domiciliu</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Windows / macOS / Linux</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 2500+ clienți mulțumiți</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Diagnosticare GRATUITĂ</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Reparații în 24H</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Garanție 12 luni</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Service autorizat</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Intervenție la domiciliu</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> Windows / macOS / Linux</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 2500+ clienți mulțumiți</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Service IT Activ — Timp estimat: ~24H
+      </div>
+      <h1 class="hero-title">
+        Laptopul tău<br>
+        <span class="line-gradient typewriter-wrap">
+          <span class="typewriter-text" id="typewriter"></span>
+        </span><br>
+        în mâini sigure.
+      </h1>
+      <p class="hero-subtitle">
+        Nu oferim promisiuni vagi — oferim diagnosticare transparentă, reparații corecte și garanție reală. De la schimb de display până la recuperare date, noi rezolvăm.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          ⚡ Programează acum
+        </a>
+        <a href="#servicii" class="btn-outline">
+          🔍 Vezi serviciile
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="2500">0</div>
+          <div class="hero-stat-label">Clienți mulțumiți</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="98">0</div>
+          <div class="hero-stat-label">% Rată de succes</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="8">0</div>
+          <div class="hero-stat-label">Ani de experiență</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-device-mockup">
+        <div class="mockup-topbar">
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <span style="margin-left: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">Nexas Diagnostic Suite v3.1</span>
+        </div>
+        <div class="mockup-content">
+          <div class="diag-item" style="animation-delay: 0.2s">
+            <div class="diag-icon ok">✓</div>
+            <div class="diag-text">
+              <div class="diag-title">Hardware Check</div>
+              <div class="diag-sub">CPU, RAM, SSD — toate funcționale</div>
+            </div>
+            <div class="diag-status ok">OK</div>
+          </div>
+          <div class="diag-item" style="animation-delay: 0.4s">
+            <div class="diag-icon warn">⚠</div>
+            <div class="diag-text">
+              <div class="diag-title">Temperaturi</div>
+              <div class="diag-sub">Pasta termică necesită înlocuire</div>
+            </div>
+            <div class="diag-status warn">Atenție</div>
+          </div>
+          <div class="diag-item" style="animation-delay: 0.6s">
+            <div class="diag-icon fix">🔧</div>
+            <div class="diag-text">
+              <div class="diag-title">Windows Update</div>
+              <div class="diag-sub">Optimizare în curs...</div>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill"></div>
+              </div>
+            </div>
+            <div class="diag-status scanning">78%</div>
+          </div>
+          <div class="diag-item" style="animation-delay: 0.8s">
+            <div class="diag-icon ok">✓</div>
+            <div class="diag-text">
+              <div class="diag-title">Display</div>
+              <div class="diag-sub">Backlight și pixel check — perfect</div>
+            </div>
+            <div class="diag-status ok">OK</div>
+          </div>
+        </div>
+      </div>
+      <div class="float-badge top-right">
+        <span class="float-badge-icon">🔋</span>
+        <div>
+          <div style="font-size: 0.7rem; color: var(--text-muted)">Baterie identificată</div>
+          <div style="color: var(--accent-green); font-size: 0.82rem">Înlocuire recomandată</div>
+        </div>
+      </div>
+      <div class="float-badge bottom-left">
+        <span class="float-badge-icon">⏱</span>
+        <div>
+          <div style="font-size: 0.7rem; color: var(--text-muted)">Timp estimat</div>
+          <div style="color: var(--accent-cyan); font-size: 0.82rem">2 ore · 150 RON</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="servicii">
+  <div class="section-container">
+    <div class="section-header reveal">
+      <div class="section-tag">Servicii complete</div>
+      <h2 class="section-title">Tot ce are nevoie <span class="accent">dispozitivul tău</span></h2>
+      <p class="section-desc">De la diagnosticare software la schimb de componente fizice — avem soluția pentru orice problemă tehnică.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal" style="transition-delay: 0.05s">
+        <div class="service-card-glow" style="background: #3b82f6; top: 0; left: 0;"></div>
+        <div class="service-icon-wrap" style="background: rgba(59,130,246,0.12);">💻</div>
+        <h3 class="service-title">Reparații Hardware</h3>
+        <p class="service-desc">Schimb display, tastatură, baterie, balamale, mufe de alimentare, plăci de bază. Componente originale sau certificare OEM.</p>
+        <div class="service-price">✓ De la 80 RON · Diagnosticare gratuită</div>
+        <div class="service-tags">
+          <span class="service-tag">Display LCD/OLED</span>
+          <span class="service-tag">Tastatură</span>
+          <span class="service-tag">Baterie</span>
+          <span class="service-tag">Plăcuță video</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal" style="transition-delay: 0.1s">
+        <div class="service-card-glow" style="background: #06b6d4; top: 0; right: 0;"></div>
+        <div class="service-icon-wrap" style="background: rgba(6,182,212,0.12);">🪟</div>
+        <h3 class="service-title">Windows & Software</h3>
+        <p class="service-desc">Instalare Windows 10/11 licențiat, optimizare sistem, eliminare viruși, configurare Office și programe esențiale.</p>
+        <div class="service-price">✓ De la 100 RON · Windows licențiat inclus</div>
+        <div class="service-tags">
+          <span class="service-tag">Windows 11</span>
+          <span class="service-tag">Office 365</span>
+          <span class="service-tag">Antivirus</span>
+          <span class="service-tag">Drivere</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal" style="transition-delay: 0.15s">
+        <div class="service-card-glow" style="background: #10b981; top: 0; left: 0;"></div>
+        <div class="service-icon-wrap" style="background: rgba(16,185,129,0.12);">🦠</div>
+        <h3 class="service-title">Dezinfectare & Viruși</h3>
+        <p class="service-desc">Eliminare completă malware, ransomware, spyware. Audit de securitate și configurare protecție avansată pentru viitor.</p>
+        <div class="service-price">✓ De la 120 RON · Garanție fără reinfectare</div>
+        <div class="service-tags">
+          <span class="service-tag">Malware</span>
+          <span class="service-tag">Ransomware</span>
+          <span class="service-tag">Spyware</span>
+          <span class="service-tag">Rootkit</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal" style="transition-delay: 0.2s">
+        <div class="service-card-glow" style="background: #8b5cf6; top: 0; right: 0;"></div>
+        <div class="service-icon-wrap" style="background: rgba(139,92,246,0.12);">💾</div>
+        <h3 class="service-title">Recuperare Date</h3>
+        <p class="service-desc">Recuperăm fișiere de pe HDD-uri căzute, SSD-uri corupte, partiții șterse accidental sau dispozitive formatate.</p>
+        <div class="service-price">✓ Plata doar dacă recuperăm datele</div>
+        <div class="service-tags">
+          <span class="service-tag">HDD defect</span>
+          <span class="service-tag">SSD corupt</span>
+          <span class="service-tag">Partiție ștearsă</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal" style="transition-delay: 0.25s">
+        <div class="service-card-glow" style="background: #f59e0b; top: 0; left: 0;"></div>
+        <div class="service-icon-wrap" style="background: rgba(245,158,11,0.12);">🔥</div>
+        <h3 class="service-title">Curățare & Răcire</h3>
+        <p class="service-desc">Curățare praf interior, schimb pastă termică profesională (Thermal Grizzly), verificare ventilatoare. Laptop-ul tău respiră din nou.</p>
+        <div class="service-price">✓ De la 60 RON · Reduce temperatura cu 20°C</div>
+        <div class="service-tags">
+          <span class="service-tag">Pastă termică</span>
+          <span class="service-tag">Ventilator</span>
+          <span class="service-tag">Curățare internă</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal" style="transition-delay: 0.3s">
+        <div class="service-card-glow" style="background: #3b82f6; bottom: 0; right: 0;"></div>
+        <div class="service-icon-wrap" style="background: rgba(59,130,246,0.12);">🚀</div>
+        <h3 class="service-title">Upgrade & Optimizare</h3>
+        <p class="service-desc">Upgrade RAM, înlocuire HDD cu SSD NVMe, curățare registry, optimizare startup. Laptopul vechi devine rapid ca nou.</p>
+        <div class="service-price">✓ De la 150 RON · SSD inclus disponibil</div>
+        <div class="service-tags">
+          <span class="service-tag">SSD NVMe</span>
+          <span class="service-tag">RAM 16GB</span>
+          <span class="service-tag">Optimizare OS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="process-section">
+  <div class="section-container">
+    <div class="section-header reveal">
+      <div class="section-tag">Transparent de la primul pas</div>
+      <h2 class="section-title">Cum funcționează <span class="accent">procesul nostru</span></h2>
+      <p class="section-desc">Fără surprize. Fără costuri ascunse. Știi exact ce se întâmplă cu dispozitivul tău în fiecare etapă.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step reveal" style="transition-delay: 0.0s">
+        <div class="process-step-num">01</div>
+        <div class="process-step-icon">📞</div>
+        <div class="process-step-title">Contactezi</div>
+        <div class="process-step-desc">Descrii problema pe WhatsApp, telefon sau prin formularul online. Răspundem în maxim 30 minute.</div>
+      </div>
+      <div class="process-step reveal" style="transition-delay: 0.1s">
+        <div class="process-step-num">02</div>
+        <div class="process-step-icon">🔍</div>
+        <div class="process-step-title">Diagnosticăm</div>
+        <div class="process-step-desc">Identificăm problema în detaliu. Diagnosticare GRATUITĂ. Îți comunicăm costul exact înainte de orice reparație.</div>
+      </div>
+      <div class="process-step reveal" style="transition-delay: 0.2s">
+        <div class="process-step-num">03</div>
+        <div class="process-step-icon">🔧</div>
+        <div class="process-step-title">Reparăm</div>
+        <div class="process-step-desc">Lucrăm cu componente originale. Urmărești statusul în timp real. Majoritatea reparațiilor sunt gata în 24 ore.</div>
+      </div>
+      <div class="process-step reveal" style="transition-delay: 0.3s">
+        <div class="process-step-num">04</div>
+        <div class="process-step-icon">✅</div>
+        <div class="process-step-title">Predăm & Garantăm</div>
+        <div class="process-step-desc">Testăm totul împreună. Primești garanție scrisă 12 luni. Dacă ai probleme — revenim gratuit.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="despre">
+  <div class="section-container">
+    <div class="why-grid">
+      <div class="reveal-left">
+        <div class="section-tag" style="margin-bottom: 1rem;">De ce Nexas?</div>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
+          Nu suntem<br>
+          <span class="accent">un service oarecare</span>
+        </h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2.5rem; line-height: 1.8;">
+          În România sunt sute de service-uri IT. Noi ne diferențiem prin transparență absolută, comunicare clară și prin faptul că nu ascundem niciun cost. Vorbim pe față — atât despre problemă, cât și despre soluție.
+        </p>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-item-icon">🔐</div>
+            <div>
+              <div class="why-item-title">Date 100% private</div>
+              <div class="why-item-desc">Nu accesăm fișierele tale personale. Putem lucra cu BIOS-ul blocat dacă vrei să fii sigur.</div>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">📋</div>
+            <div>
+              <div class="why-item-title">Deviz înainte de reparație</div>
+              <div class="why-item-desc">Niciodată nu începem lucrul fără acordul tău scris. Prețul final = prețul comunicat.</div>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">🏆</div>
+            <div>
+              <div class="why-item-title">Tehnicieni certificați</div>
+              <div class="why-item-desc">Echipa noastră are certificări Microsoft, CompTIA A+ și experiență în service autorizat.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <div class="why-stats-grid">
+          <div class="why-stat-card">
+            <div class="why-stat-num" data-count="2500">0</div>
+            <div class="why-stat-label">Dispozitive reparate</div>
+          </div>
+          <div class="why-stat-card">
+            <div class="why-stat-num" data-count="98">0</div>
+            <div class="why-stat-label">% Clienți care revin</div>
+          </div>
+          <div class="why-stat-card">
+            <div class="why-stat-num" data-count="24">0</div>
+            <div class="why-stat-label">Ore timp mediu reparație</div>
+          </div>
+          <div class="why-stat-card">
+            <div class="why-stat-num" data-count="12">0</div>
+            <div class="why-stat-label">Luni garanție</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 1.5rem; backdrop-filter: blur(20px); display: flex; align-items: center; gap: 1rem;">
+          <div style="font-size: 2.5rem;">🛡️</div>
+          <div>
+            <div style="font-weight: 700; margin-bottom: 0.25rem;">Garanție No-Fix, No-Pay</div>
+            <div style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">Dacă nu putem repara, nu plătești nimic — nici măcar diagnosticarea.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="preturi" style="background: linear-gradient(180deg, transparent, rgba(139,92,246,0.03), transparent);">
+  <div class="section-container">
+    <div class="section-header reveal">
+      <div class="section-tag">Prețuri corecte</div>
+      <h2 class="section-title">Simplu și <span class="accent">transparent</span></h2>
+      <p class="section-desc">Alegem pachetul potrivit pentru nevoile tale. Fără costuri ascunse, fără surprize la final.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card reveal" style="transition-delay: 0.05s">
+        <div class="pricing-plan">Basic</div>
+        <div class="pricing-price"><sup>de la </sup>60<sup> RON</sup></div>
+        <div class="pricing-price-note">per intervenție · diagnosticare gratuită</div>
+        <p class="pricing-desc">Ideal pentru probleme simple: curățare, drivere, optimizare Windows.</p>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Diagnosticare gratuită</li>
+          <li><span class="check">✓</span> Curățare sistem</li>
+          <li><span class="check">✓</span> Update drivere</li>
+          <li><span class="check">✓</span> Garanție 3 luni</li>
+          <li><span class="cross">✗</span> Intervenție la domiciliu</li>
+          <li><span class="cross">✗</span> Suport prioritar</li>
+        </ul>
+        <a href="#contact" class="btn-pricing outline">Solicită serviciul</a>
+      </div>
+
+      <div class="pricing-card featured reveal" style="transition-delay: 0.1s">
+        <div class="pricing-badge">Cel mai ales</div>
+        <div class="pricing-plan">Pro</div>
+        <div class="pricing-price"><sup>de la </sup>150<sup> RON</sup></div>
+        <div class="pricing-price-note">per intervenție · include piese standard</div>
+        <p class="pricing-desc">Reparații hardware și software complete. Upgrade SSD sau RAM inclus.</p>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Diagnosticare gratuită</li>
+          <li><span class="check">✓</span> Reparație hardware/software</li>
+          <li><span class="check">✓</span> Windows licențiat inclus</li>
+          <li><span class="check">✓</span> Garanție 12 luni</li>
+          <li><span class="check">✓</span> Suport post-reparație 30 zile</li>
+          <li><span class="cross">✗</span> Intervenție la domiciliu</li>
+        </ul>
+        <a href="#contact" class="btn-pricing primary">Programează-te acum</a>
+      </div>
+
+      <div class="pricing-card reveal" style="transition-delay: 0.15s">
+        <div class="pricing-plan">Business</div>
+        <div class="pricing-price"><sup></sup>La cerere</div>
+        <div class="pricing-price-note">contract lunar · suport dedicat</div>
+        <p class="pricing-desc">Mentenanță IT completă pentru firme: rețea, servere, workstations, helpdesk.</p>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Mentenanță lunară</li>
+          <li><span class="check">✓</span> Intervenție la sediu</li>
+          <li><span class="check">✓</span> Helpdesk telefonic/remote</li>
+          <li><span class="check">✓</span> Backup & securitate</li>
+          <li><span class="check">✓</span> Raport lunar</li>
+          <li><span class="check">✓</span> SLA garantat 4H</li>
+        </ul>
+        <a href="#contact" class="btn-pricing outline">Solicită ofertă</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimoniale" class="testimonials-section">
+  <div class="section-container">
+    <div class="section-header reveal">
+      <div class="section-tag">Ce spun clienții</div>
+      <h2 class="section-title">Peste <span class="accent">2500 de povești</span> de succes</h2>
+      <p class="section-desc">Nu ne lăudăm singuri. Iată ce spun oamenii care au trecut prin mâinile noastre.</p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card reveal" style="transition-delay: 0.05s">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Am vărsat cafea pe laptop. Am sunat în panică la Nexas și în 2 ore l-am dus. Nu mi-am crezut ochilor — totul funcționa perfect a doua zi. Prețul corect, fără surprize."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);">AM</div>
+          <div>
+            <div class="testimonial-name">Alexandru M.</div>
+            <div class="testimonial-city">Cluj-Napoca · Designer grafic</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" style="transition-delay: 0.1s">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Firma noastră are contract cu Nexas de 3 ani. 12 calculatoare, zero probleme. Vin când cheamă, rezolvă rapid și documentează totul. Exact ce trebuie pentru o firmă serioasă."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background: linear-gradient(135deg, #10b981, #06b6d4);">IC</div>
+          <div>
+            <div class="testimonial-name">Ioana C.</div>
+            <div class="testimonial-city">Cluj · Director operațional</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" style="transition-delay: 0.15s">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"SSD-ul vechi s-a defectat cu 5 ani de fotografii. Crezusem că am pierdut totul. Nexas a recuperat 98% din date. Am plâns de bucurie. Nu am cuvinte să mulțumesc destul."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background: linear-gradient(135deg, #8b5cf6, #3b82f6);">RP</div>
+          <div>
+            <div class="testimonial-name">Raluca P.</div>
+            <div class="testimonial-city">Cluj · Fotograf</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Rating summary -->
+    <div class="reveal" style="margin-top: 3rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; backdrop-filter: blur(20px);">
+      <div style="text-align: center;">
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 800; color: var(--accent-orange);">4.9</div>
+        <div style="color: var(--accent-orange); font-size: 1.2rem; margin: 0.3rem 0;">★★★★★</div>
+        <div style="color: var(--text-muted); font-size: 0.82rem;">Rating mediu Google</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 800; color: var(--accent-blue);">187</div>
+        <div style="color: var(--accent-orange); font-size: 1.2rem; margin: 0.3rem 0;">★★★★★</div>
+        <div style="color: var(--text-muted); font-size: 0.82rem;">Recenzii verificate Google</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 800; color: var(--accent-green);">100%</div>
+        <div style="color: var(--accent-green); font-size: 0.9rem; margin: 0.3rem 0; font-weight: 600;">Garanție No-Fix No-Pay</div>
+        <div style="color: var(--text-muted); font-size: 0.82rem;">Nu plătești dacă nu reparăm</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-container">
+    <div class="section-header reveal">
+      <div class="section-tag">Întrebări frecvente</div>
+      <h2 class="section-title">Răspundem la <span class="accent">orice întrebare</span></h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">Cât costă diagnosticarea laptopului meu? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Diagnosticarea este complet gratuită, indiferent de problemă sau decizie. Nu plătești nimic dacă nu dorești să continui reparația după ce afli problema și costul.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Cât timp durează o reparație obișnuită? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Majoritatea reparațiilor software sunt gata în aceeași zi (2-4 ore). Reparațiile hardware durează 24-48 ore, în funcție de disponibilitatea pieselor. Te anunțăm de la început cu un termen estimat.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Ce se întâmplă dacă nu puteți repara dispozitivul meu? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Aplicăm politica No-Fix, No-Pay. Dacă nu reușim să rezolvăm problema, nu plătești absolut nimic — nici diagnosticarea, nici manopera. Îți returnăm dispozitivul exact cum l-ai adus.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Folosiți piese originale sau compatibile? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Folosim în principal piese originale (OEM) sau piese certificate de calitate echivalentă. Întotdeauna îți prezentăm opțiunile și diferențele de preț înainte de reparație — tu decizi.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Oferiți intervenție la domiciliu sau birou? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Da, oferim servicii la domiciliu/birou pentru clienți din Cluj-Napoca și împrejurimi. Disponibilă pentru intervenții software, configurare rețea, setup echipamente. Se adaugă o taxă de deplasare.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Datele mele sunt în siguranță în timpul reparației? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Absolut. Nu accesăm fișierele tale personale decât dacă ne ceri explicit. Poți bloca contul Windows cu parolă și noi lucrăm la nivel BIOS/hardware. Confidențialitatea ta este prioritatea noastră.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="section-container">
+    <div class="section-header reveal">
+      <div class="section-tag">Contactează-ne</div>
+      <h2 class="section-title">Haide să <span class="accent">rezolvăm problema</span></h2>
+      <p class="section-desc">Descrie-ne situația și te contactăm în mai puțin de 30 de minute în orele de program.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <a href="tel:+40700000000" class="contact-card">
+          <div class="contact-icon" style="background: rgba(59,130,246,0.12);">📞</div>
+          <div>
+            <div class="contact-label">Telefon / WhatsApp</div>
+            <div class="contact-value">+40 700 000 000</div>
+          </div>
+        </a>
+        <a href="mailto:contact@nexas.ro" class="contact-card">
+          <div class="contact-icon" style="background: rgba(6,182,212,0.12);">📧</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">contact@nexas.ro</div>
+          </div>
+        </a>
+        <a href="#" class="contact-card">
+          <div class="contact-icon" style="background: rgba(16,185,129,0.12);">📍</div>
+          <div>
+            <div class="contact-label">Adresă service</div>
+            <div class="contact-value">Str. Exemplu nr. 1, Cluj-Napoca</div>
+          </div>
+        </a>
+        <div class="contact-card" style="cursor: default;">
+          <div class="contact-icon" style="background: rgba(245,158,11,0.12);">🕐</div>
+          <div>
+            <div class="contact-label">Program</div>
+            <div class="contact-value">Lun–Vin: 9:00–18:00 · Sâm: 10:00–14:00</div>
+          </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(6,182,212,0.1)); border: 1px solid rgba(59,130,246,0.2); border-radius: 16px; padding: 1.5rem;">
+          <div style="font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>⚡</span> Intervenție de urgență
+          </div>
+          <div style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem;">
+            Ai o urgență? Laptop stricat înainte de o prezentare importantă? Sună acum pentru intervenție prioritară.
+          </div>
+          <a href="tel:+40700000000" class="btn-primary" style="display: inline-flex; font-size: 0.9rem; padding: 0.75rem 1.5rem;">
+            📞 Sună acum
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal-right">
+        <h3 class="form-title">Programează o reparație</h3>
+        <p class="form-subtitle">Completează formularul și te contactăm în 30 minute.</p>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nume complet *</label>
+              <input type="text" class="form-input" placeholder="Ion Popescu" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Telefon *</label>
+              <input type="tel" class="form-input" placeholder="07XX XXX XXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tip dispozitiv *</label>
+            <select class="form-select" required>
+              <option value="">Selectează...</option>
+              <option>Laptop</option>
+              <option>Calculator Desktop</option>
+              <option>MacBook</option>
+              <option>Server</option>
+              <option>Alt dispozitiv</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tip problemă *</label>
+            <select class="form-select" required>
+              <option value="">Selectează...</option>
+              <option>Hardware defect (display, tastatură, etc.)</option>
+              <option>Software / Windows / Viruși</option>
+              <option>Recuperare date</option>
+              <option>Curățare / Supraîncălzire</option>
+              <option>Upgrade (SSD, RAM)</option>
+              <option>Mentenanță generală</option>
+              <option>Altceva</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Descrie problema</label>
+            <textarea class="form-textarea" placeholder="Spune-ne ce se întâmplă cu dispozitivul tău..."></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn">
+            <span id="submitText">⚡ Trimite cererea</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" style="display: inline-flex; margin-bottom: 0.5rem;">
+          <div class="nav-logo-icon">⚡</div>
+          Nexas<span>.ro</span>
+        </a>
+        <p>Service IT profesional pentru laptop și calculator. Transparență, corectitudine și garanție reală — în inima Clujului.</p>
+        <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
+          <a href="#" class="social-btn">📘</a>
+          <a href="#" class="social-btn">📸</a>
+          <a href="#" class="social-btn">💬</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Servicii</div>
+        <ul class="footer-links">
+          <li><a href="#servicii">Reparații Hardware</a></li>
+          <li><a href="#servicii">Windows & Software</a></li>
+          <li><a href="#servicii">Recuperare Date</a></li>
+          <li><a href="#servicii">Curățare Laptop</a></li>
+          <li><a href="#servicii">Upgrade SSD/RAM</a></li>
+          <li><a href="#servicii">Mentenanță IT Firme</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Informații</div>
+        <ul class="footer-links">
+          <li><a href="#despre">Despre noi</a></li>
+          <li><a href="#preturi">Prețuri</a></li>
+          <li><a href="#testimoniale">Recenzii</a></li>
+          <li><a href="#faq">Întrebări frecvente</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal</div>
+        <ul class="footer-links">
+          <li><a href="#">Termeni & Condiții</a></li>
+          <li><a href="#">Politica de Confidențialitate</a></li>
+          <li><a href="#">GDPR</a></li>
+          <li><a href="#">Politica Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Nexas.ro — Toate drepturile rezervate. CUI: RO00000000</div>
+      <div style="color: var(--text-muted); font-size: 0.82rem;">Construit cu ❤️ în Cluj-Napoca, România</div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/40700000000" class="chat-fab" target="_blank" rel="noopener" title="Chat WhatsApp">
+  💬
+  <div class="chat-fab-ping"></div>
+</a>
+
+<script>
+// ═══════════════════════════════════
+// THREE.JS PARTICLE BACKGROUND
+// ═══════════════════════════════════
+(function() {
+  const canvas = document.getElementById('canvas-bg');
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+  camera.position.z = 80;
+
+  // Particles
+  const particleCount = 1500;
+  const positions = new Float32Array(particleCount * 3);
+  const colors = new Float32Array(particleCount * 3);
+
+  const palette = [
+    new THREE.Color('#3b82f6'),
+    new THREE.Color('#06b6d4'),
+    new THREE.Color('#8b5cf6'),
+    new THREE.Color('#10b981'),
+  ];
+
+  for (let i = 0; i < particleCount; i++) {
+    positions[i * 3]     = (Math.random() - 0.5) * 200;
+    positions[i * 3 + 1] = (Math.random() - 0.5) * 200;
+    positions[i * 3 + 2] = (Math.random() - 0.5) * 100;
+
+    const color = palette[Math.floor(Math.random() * palette.length)];
+    colors[i * 3]     = color.r;
+    colors[i * 3 + 1] = color.g;
+    colors[i * 3 + 2] = color.b;
+  }
+
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+  const mat = new THREE.PointsMaterial({
+    size: 0.6,
+    vertexColors: true,
+    transparent: true,
+    opacity: 0.7,
+    sizeAttenuation: true,
+  });
+
+  const particles = new THREE.Points(geo, mat);
+  scene.add(particles);
+
+  // Connection lines
+  const lineMat = new THREE.LineBasicMaterial({ color: 0x3b82f6, transparent: true, opacity: 0.05 });
+  const lineGeo = new THREE.BufferGeometry();
+  const linePositions = [];
+  for (let i = 0; i < 200; i++) {
+    const ax = (Math.random() - 0.5) * 200;
+    const ay = (Math.random() - 0.5) * 200;
+    const az = (Math.random() - 0.5) * 100;
+    const bx = ax + (Math.random() - 0.5) * 20;
+    const by = ay + (Math.random() - 0.5) * 20;
+    const bz = az + (Math.random() - 0.5) * 20;
+    linePositions.push(ax, ay, az, bx, by, bz);
+  }
+  lineGeo.setAttribute('position', new THREE.Float32BufferAttribute(linePositions, 3));
+  scene.add(new THREE.LineSegments(lineGeo, lineMat));
+
+  let mouseX = 0, mouseY = 0;
+  document.addEventListener('mousemove', e => {
+    mouseX = (e.clientX / window.innerWidth - 0.5) * 0.5;
+    mouseY = (e.clientY / window.innerHeight - 0.5) * 0.5;
+  });
+
+  function animate() {
+    requestAnimationFrame(animate);
+    const t = Date.now() * 0.00008;
+    particles.rotation.y = t + mouseX * 0.3;
+    particles.rotation.x = mouseY * 0.2;
+    renderer.render(scene, camera);
+  }
+  animate();
+
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+})();
+
+// ═══════════════════════════════════
+// CURSOR GLOW
+// ═══════════════════════════════════
+const cursorGlow = document.getElementById('cursorGlow');
+document.addEventListener('mousemove', e => {
+  cursorGlow.style.left = e.clientX + 'px';
+  cursorGlow.style.top = e.clientY + 'px';
+});
+
+// ═══════════════════════════════════
+// TYPEWRITER
+// ═══════════════════════════════════
+const words = ['reparat rapid', 'diagnosticat corect', 'protejat serios', 'actualizat profesionist'];
+let wordIndex = 0, charIndex = 0, isDeleting = false;
+const tw = document.getElementById('typewriter');
+
+function typeWrite() {
+  const word = words[wordIndex];
+  if (isDeleting) {
+    tw.textContent = word.substring(0, charIndex--);
+  } else {
+    tw.textContent = word.substring(0, charIndex++);
+  }
+  let delay = isDeleting ? 60 : 100;
+  if (!isDeleting && charIndex > word.length) {
+    delay = 2000;
+    isDeleting = true;
+  } else if (isDeleting && charIndex < 0) {
+    isDeleting = false;
+    wordIndex = (wordIndex + 1) % words.length;
+    delay = 400;
+  }
+  setTimeout(typeWrite, delay);
+}
+typeWrite();
+
+// ═══════════════════════════════════
+// SCROLL REVEAL
+// ═══════════════════════════════════
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const delay = parseFloat(el.style.transitionDelay || 0);
+      setTimeout(() => el.classList.add('visible'), delay * 1000);
+      observer.unobserve(el);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+// ═══════════════════════════════════
+// COUNTER ANIMATION
+// ═══════════════════════════════════
+function animateCounter(el, target, suffix = '') {
+  let current = 0;
+  const step = target / 60;
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      el.textContent = target + suffix;
+      clearInterval(timer);
+    } else {
+      el.textContent = Math.floor(current) + suffix;
+    }
+  }, 25);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.dataset.count);
+      const suffix = el.textContent.includes('%') || el.dataset.count <= 100 && el.parentElement.querySelector('.hero-stat-label')?.textContent.includes('%') ? '+' : '+';
+      animateCounter(el, target, '');
+      counterObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+// ═══════════════════════════════════
+// FAQ ACCORDION
+// ═══════════════════════════════════
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelector('.faq-question').addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').classList.remove('open');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      item.querySelector('.faq-answer').classList.add('open');
+    }
+  });
+});
+
+// ═══════════════════════════════════
+// FORM SUBMIT
+// ═══════════════════════════════════
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const txt = document.getElementById('submitText');
+  btn.disabled = true;
+  txt.textContent = '⏳ Se trimite...';
+  setTimeout(() => {
+    txt.textContent = '✅ Cerere trimisă! Te contactăm în 30 min.';
+    btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+    setTimeout(() => {
+      txt.textContent = '⚡ Trimite cererea';
+      btn.disabled = false;
+      btn.style.background = '';
+      e.target.reset();
+    }, 4000);
+  }, 1500);
+}
+
+// ═══════════════════════════════════
+// SERVICE CARD GLOW ON HOVER
+// ═══════════════════════════════════
+document.querySelectorAll('.service-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const glow = card.querySelector('.service-card-glow');
+    if (glow) {
+      glow.style.left = x - 100 + 'px';
+      glow.style.top = y - 100 + 'px';
+    }
+  });
+});
+
+// ═══════════════════════════════════
+// NAVBAR SCROLL EFFECT
+// ═══════════════════════════════════
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    nav.style.background = 'rgba(3, 7, 18, 0.95)';
+  } else {
+    nav.style.background = 'rgba(3, 7, 18, 0.7)';
+  }
+});
+</script>
+</body>
+</html>
