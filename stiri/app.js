@@ -210,19 +210,32 @@ function populateDropdown() {
 }
 
 // ============================================================
-// LOAD
+// LOAD (with retry)
 // ============================================================
+async function fetchWithRetry(url, retries = 3, delayMs = 1500) {
+  for (let i = 0; i <= retries; i++) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 10000);
+      const res = await fetch(url, { cache: 'no-store', signal: controller.signal });
+      clearTimeout(timer);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res;
+    } catch (err) {
+      if (i === retries) throw err;
+      await new Promise(r => setTimeout(r, delayMs * (i + 1)));
+    }
+  }
+}
+
 async function loadNews() {
   try {
-    const res = await fetch('stiri.json?v=' + Date.now(), { cache: 'no-store' });
-    if (!res.ok) throw new Error('Nu pot încărca stiri.json');
-
+    const res = await fetchWithRetry('stiri.json?v=' + Date.now());
     const data = await res.json();
     allNews = Array.isArray(data.items) ? data.items
             : Array.isArray(data) ? data
             : [];
 
-    // Sort newest first
     allNews.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     const updated = data.updated_at || new Date().toISOString();
@@ -231,8 +244,7 @@ async function loadNews() {
     });
 
     if (data.run_log) {
-      const cats = Object.entries(data.run_log).filter(([,v]) => v > 0).map(([k]) => k).join(', ');
-      console.log(`NEXAS Agent | Categorii active: ${cats}`);
+      // run_log available for debugging purposes
     }
 
     populateDropdown();
@@ -245,10 +257,10 @@ async function loadNews() {
       <article class="news-card">
         <div class="card-body">
           <h3>Nu pot încărca știrile</h3>
-          <p class="summary">Verifică dacă fișierul stiri.json există în folderul /stiri și că workflow-ul GitHub Actions a rulat cel puțin o dată.</p>
+          <p class="summary">A apărut o problemă temporară. Reîncarcă pagina sau revino în câteva minute.</p>
+          <div class="actions"><button class="btn" onclick="location.reload()">Reîncearcă</button></div>
         </div>
       </article>`;
-    console.error(err);
   }
 }
 

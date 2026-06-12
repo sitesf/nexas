@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexas — Preview Concept Nou</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #05060b;
+    --bg2: #0a0a14;
+    --cyan: #5dd7ff;
+    --purple: #9b6cff;
+    --pink: #ff4fd8;
+    --text: #e8eaf0;
+    --muted: #8892a4;
+    --card: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.08);
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, sans-serif; overflow-x: hidden; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 5%;
+    background: rgba(5,6,11,0.85); backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo { font-size: 1.35rem; font-weight: 800; background: linear-gradient(90deg, var(--cyan), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: .92rem; transition: color .2s; }
+  .nav-links a:hover { color: #fff; }
+  .nav-cta { background: linear-gradient(135deg, var(--purple), #4f46e5); color: #fff; border: none; padding: .55rem 1.2rem; border-radius: 8px; font-size: .88rem; font-weight: 600; cursor: pointer; text-decoration: none; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    flex-direction: column; text-align: center; padding: 120px 5% 80px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 30%, rgba(93,215,255,.07) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 40% at 80% 60%, rgba(155,108,255,.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: .5rem;
+    background: rgba(93,215,255,.08); border: 1px solid rgba(93,215,255,.2);
+    border-radius: 100px; padding: .4rem 1rem; font-size: .82rem; color: var(--cyan);
+    margin-bottom: 1.8rem;
+  }
+  .hero-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+  h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); font-weight: 900; line-height: 1.1; max-width: 820px; margin-bottom: 1.4rem; }
+  h1 span { background: linear-gradient(90deg, var(--cyan), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 1.15rem; color: var(--muted); max-width: 540px; line-height: 1.65; margin-bottom: 2.4rem; }
+  .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+  .btn-primary { background: linear-gradient(135deg, var(--purple), #4f46e5); color: #fff; padding: .85rem 2rem; border-radius: 10px; font-size: 1rem; font-weight: 700; border: none; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: .5rem; transition: transform .2s, box-shadow .2s; }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(155,108,255,.4); }
+  .btn-secondary { background: transparent; color: #fff; padding: .85rem 2rem; border-radius: 10px; font-size: 1rem; font-weight: 600; border: 1px solid var(--border); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: .5rem; transition: border-color .2s, background .2s; }
+  .btn-secondary:hover { border-color: var(--cyan); background: rgba(93,215,255,.05); }
+  .hero-stats { display: flex; gap: 3rem; margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--border); flex-wrap: wrap; justify-content: center; }
+  .stat-num { font-size: 2rem; font-weight: 800; background: linear-gradient(90deg, var(--cyan), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .stat-label { font-size: .82rem; color: var(--muted); margin-top: .2rem; }
+
+  /* ── DEMO LIVE ── */
+  .section { padding: 100px 5%; }
+  .section-label { display: inline-block; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--cyan); margin-bottom: 1rem; }
+  .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem; }
+  .section-sub { color: var(--muted); font-size: 1.05rem; line-height: 1.65; max-width: 560px; }
+  .center { text-align: center; display: flex; flex-direction: column; align-items: center; }
+
+  /* Agent tabs */
+  .agent-tabs { display: flex; gap: .5rem; margin: 2.5rem 0 2rem; flex-wrap: wrap; justify-content: center; }
+  .agent-tab {
+    padding: .6rem 1.3rem; border-radius: 100px; font-size: .9rem; font-weight: 600;
+    border: 1px solid var(--border); background: var(--card); color: var(--muted);
+    cursor: pointer; transition: all .2s;
+  }
+  .agent-tab.active, .agent-tab:hover { border-color: var(--purple); color: #fff; background: rgba(155,108,255,.12); }
+
+  .agent-demo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1100px; margin: 0 auto; }
+  @media (max-width: 768px) { .agent-demo-grid { grid-template-columns: 1fr; } }
+
+  /* Agent info card */
+  .agent-info {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 20px; padding: 2rem;
+    display: flex; flex-direction: column; gap: 1.2rem;
+  }
+  .agent-header { display: flex; align-items: center; gap: 1rem; }
+  .agent-avatar {
+    width: 56px; height: 56px; border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem;
+  }
+  .av-purple { background: linear-gradient(135deg, #7c3aed, #4f46e5); }
+  .av-cyan   { background: linear-gradient(135deg, #0891b2, #0e7490); }
+  .av-pink   { background: linear-gradient(135deg, #be185d, #9d174d); }
+  .agent-name { font-size: 1.3rem; font-weight: 800; }
+  .agent-role { font-size: .85rem; color: var(--muted); margin-top: .1rem; }
+  .online-dot { display: inline-flex; align-items: center; gap: .4rem; font-size: .78rem; color: #10b981; }
+  .online-dot::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #10b981; display: inline-block; }
+  .agent-desc { color: var(--muted); font-size: .95rem; line-height: 1.6; }
+  .agent-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .tag { background: rgba(255,255,255,.06); border: 1px solid var(--border); border-radius: 6px; padding: .3rem .7rem; font-size: .78rem; color: var(--muted); }
+  .agent-metric { background: rgba(93,215,255,.06); border: 1px solid rgba(93,215,255,.15); border-radius: 12px; padding: 1rem; }
+  .metric-val { font-size: 1.6rem; font-weight: 800; color: var(--cyan); }
+  .metric-label { font-size: .8rem; color: var(--muted); margin-top: .2rem; }
+
+  /* Chat demo */
+  .chat-demo {
+    background: #111118; border: 1px solid rgba(139,92,246,.2);
+    border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;
+    height: 480px;
+  }
+  .chat-header {
+    background: linear-gradient(135deg, #1a1025, #150f2a);
+    padding: 14px 18px; display: flex; align-items: center; gap: 10px;
+    border-bottom: 1px solid rgba(139,92,246,.15);
+  }
+  .chat-avatar { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg,#7c3aed,#4f46e5); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:#fff; }
+  .chat-name { font-size: .9rem; font-weight: 700; }
+  .chat-status { font-size: .75rem; color: #10b981; display: flex; align-items: center; gap: 4px; margin-top: 2px; }
+  .chat-status::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: #10b981; display: inline-block; }
+  .chat-msgs { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .msg-a .bubble { background: #1e1b2e; border: 1px solid rgba(139,92,246,.15); color: #e5e7eb; border-radius: 16px 16px 16px 4px; padding: 10px 14px; font-size: .85rem; line-height: 1.55; max-width: 85%; display: inline-block; }
+  .msg-u { display: flex; justify-content: flex-end; }
+  .msg-u .bubble { background: linear-gradient(135deg,#7c3aed,#4f46e5); color: #fff; border-radius: 16px 16px 4px 16px; padding: 10px 14px; font-size: .85rem; line-height: 1.55; max-width: 85%; display: inline-block; }
+  .chat-input-area { padding: 10px 12px; border-top: 1px solid rgba(139,92,246,.12); display: flex; gap: 8px; align-items: center; background: #0e0e18; }
+  .chat-input { flex: 1; background: #1a1a2e; border: 1px solid rgba(139,92,246,.2); border-radius: 10px; padding: 9px 13px; color: #f5f3ff; font-size: .85rem; outline: none; }
+  .chat-input::placeholder { color: #4b5563; }
+  .chat-send { width: 38px; height: 38px; background: linear-gradient(135deg,#7c3aed,#4f46e5); border: none; border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+
+  /* Typing dots */
+  @keyframes bounce { 0%,80%,100%{transform:scale(.6);opacity:.4} 40%{transform:scale(1);opacity:1} }
+  .typing-dots { display: flex; gap: 4px; padding: 8px 12px; }
+  .typing-dots span { width: 7px; height: 7px; border-radius: 50%; background: #a78bfa; animation: bounce 1.2s infinite; }
+  .typing-dots span:nth-child(2) { animation-delay: .2s; }
+  .typing-dots span:nth-child(3) { animation-delay: .4s; }
+
+  /* ── AGENTS GRID ── */
+  .agents-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 3rem auto 0; }
+  .agent-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 20px; padding: 2rem; cursor: pointer;
+    transition: border-color .25s, transform .25s, box-shadow .25s;
+    position: relative; overflow: hidden;
+  }
+  .agent-card::before {
+    content: ''; position: absolute; inset: 0; opacity: 0;
+    transition: opacity .25s;
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(155,108,255,.08), transparent);
+  }
+  .agent-card:hover { border-color: rgba(155,108,255,.4); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,.4); }
+  .agent-card:hover::before { opacity: 1; }
+  .ac-icon { font-size: 2.2rem; margin-bottom: 1rem; }
+  .ac-title { font-size: 1.1rem; font-weight: 800; margin-bottom: .5rem; }
+  .ac-desc { color: var(--muted); font-size: .9rem; line-height: 1.6; margin-bottom: 1.2rem; }
+  .ac-metric { font-size: .82rem; color: var(--cyan); display: flex; align-items: center; gap: .4rem; }
+  .ac-try { display: inline-flex; align-items: center; gap: .4rem; font-size: .82rem; color: var(--purple); margin-top: 1rem; font-weight: 600; }
+
+  /* ── HOW IT WORKS ── */
+  .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 900px; margin: 3rem auto 0; }
+  @media(max-width:600px) { .how-grid { grid-template-columns: 1fr; } }
+  .how-step { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 1.8rem; text-align: center; }
+  .how-num { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg,var(--purple),#4f46e5); display: flex; align-items: center; justify-content: center; font-weight: 800; margin: 0 auto 1rem; }
+  .how-title { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+  .how-desc { color: var(--muted); font-size: .88rem; line-height: 1.55; }
+
+  /* ── NEXAS BRAND ── */
+  .brand-section {
+    padding: 80px 5%;
+    background: linear-gradient(135deg, rgba(155,108,255,.05), rgba(93,215,255,.03));
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  }
+  .brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto; align-items: center; }
+  @media(max-width:768px) { .brand-grid { grid-template-columns: 1fr; } .nav-links { display: none; } }
+  .brand-tag { background: rgba(155,108,255,.1); border: 1px solid rgba(155,108,255,.25); border-radius: 8px; padding: .4rem .8rem; font-size: .78rem; color: var(--purple); font-weight: 700; display: inline-block; margin-bottom: 1rem; }
+  .brand-title { font-size: 2rem; font-weight: 800; line-height: 1.25; margin-bottom: 1rem; }
+  .brand-desc { color: var(--muted); line-height: 1.7; margin-bottom: 1.5rem; }
+  .brand-list { list-style: none; display: flex; flex-direction: column; gap: .7rem; }
+  .brand-list li { display: flex; align-items: center; gap: .7rem; color: var(--muted); font-size: .92rem; }
+  .brand-list li::before { content: '✓'; color: var(--cyan); font-weight: 800; }
+  .brand-visual { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; }
+  .bv-row { display: flex; align-items: center; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid var(--border); }
+  .bv-row:last-child { border: none; }
+  .bv-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+  .bv-label { font-size: .88rem; font-weight: 600; }
+  .bv-sub { font-size: .78rem; color: var(--muted); }
+  .bv-badge { margin-left: auto; font-size: .75rem; padding: .2rem .6rem; border-radius: 6px; font-weight: 700; }
+  .badge-live { background: rgba(16,185,129,.15); color: #10b981; }
+  .badge-incl { background: rgba(93,215,255,.1); color: var(--cyan); }
+
+  /* ── PRICING ── */
+  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 3rem auto 0; }
+  .price-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; position: relative; }
+  .price-card.featured { border-color: var(--purple); background: rgba(155,108,255,.06); }
+  .price-tag { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg,var(--purple),#4f46e5); color:#fff; font-size:.75rem; font-weight:700; padding:.3rem .9rem; border-radius:100px; white-space:nowrap; }
+  .price-agent { font-size: .85rem; color: var(--muted); margin-bottom: .5rem; }
+  .price-name { font-size: 1.2rem; font-weight: 800; margin-bottom: 1.2rem; }
+  .price-val { font-size: 2.2rem; font-weight: 900; }
+  .price-val span { font-size: 1rem; font-weight: 400; color: var(--muted); }
+  .price-features { list-style: none; margin: 1.5rem 0; display: flex; flex-direction: column; gap: .6rem; }
+  .price-features li { font-size: .88rem; color: var(--muted); display: flex; gap: .5rem; }
+  .price-features li::before { content: '→'; color: var(--cyan); flex-shrink: 0; }
+  .btn-price { display: block; text-align: center; padding: .8rem; border-radius: 10px; font-weight: 700; font-size: .92rem; text-decoration: none; transition: all .2s; margin-top: 1rem; }
+  .btn-price-primary { background: linear-gradient(135deg,var(--purple),#4f46e5); color: #fff; }
+  .btn-price-secondary { background: transparent; border: 1px solid var(--border); color: #fff; }
+  .btn-price:hover { transform: translateY(-2px); }
+
+  /* ── CTA FINAL ── */
+  .cta-section { padding: 100px 5%; text-align: center; }
+  .cta-box { background: linear-gradient(135deg, rgba(155,108,255,.1), rgba(93,215,255,.05)); border: 1px solid rgba(155,108,255,.2); border-radius: 28px; padding: 60px 40px; max-width: 700px; margin: 0 auto; }
+  .cta-title { font-size: clamp(1.6rem,3.5vw,2.4rem); font-weight: 900; margin-bottom: 1rem; }
+  .cta-sub { color: var(--muted); margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.6; }
+  .btn-wa { display: inline-flex; align-items: center; gap: .7rem; background: #25d366; color: #fff; padding: 1rem 2rem; border-radius: 12px; font-size: 1rem; font-weight: 700; text-decoration: none; transition: all .2s; }
+  .btn-wa:hover { background: #22c55e; transform: translateY(-2px); box-shadow: 0 12px 40px rgba(37,211,102,.35); }
+
+  /* ── FOOTER ── */
+  footer { padding: 40px 5%; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; color: var(--muted); font-size: .85rem; flex-wrap: wrap; gap: 1rem; }
+  .footer-logo { font-weight: 800; font-size: 1.1rem; background: linear-gradient(90deg,var(--cyan),var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+  /* ── PREVIEW BANNER ── */
+  .preview-banner {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    color: #fff; text-align: center; padding: .7rem 1rem; font-size: .88rem; font-weight: 600;
+  }
+  .preview-banner span { opacity: .75; margin-left: .5rem; font-weight: 400; }
+</style>
+</head>
+<body>
+
+<div class="preview-banner">
+  🎨 PREVIEW CONCEPT — Nexas Agenți
+  <span>Acesta este un mockup static, nu site-ul live</span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">nexas</div>
+  <div class="nav-links">
+    <a href="#agenti">Agenții</a>
+    <a href="#cum-functioneaza">Cum funcționează</a>
+    <a href="#pricing">Prețuri</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-cta">Vreau un agent →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">
+    <div class="hero-badge-dot"></div>
+    3 agenți AI activi acum
+  </div>
+  <h1>Agentul tău AI răspunde.<br><span>Tu te ocupi de business.</span></h1>
+  <p class="hero-sub">Creăm agenți AI care preiau clienți, răspund pe WhatsApp, fac SEO și automatizează procesele repetitive — 24/7, fără pauze.</p>
+  <div class="hero-btns">
+    <a href="#agenti" class="btn-primary">
+      <span>Cunoaște agenții</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="#cum-functioneaza" class="btn-secondary">Cum funcționează</a>
+  </div>
+  <div class="hero-stats">
+    <div>
+      <div class="stat-num">3,400+</div>
+      <div class="stat-label">Mesaje procesate / lună</div>
+    </div>
+    <div>
+      <div class="stat-num">98%</div>
+      <div class="stat-label">Uptime agenți</div>
+    </div>
+    <div>
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Disponibil non-stop</div>
+    </div>
+    <div>
+      <div class="stat-num">7 zile</div>
+      <div class="stat-label">Livrare medie</div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO LIVE -->
+<section class="section center" id="agenti">
+  <div class="section-label">Demo live</div>
+  <h2 class="section-title">Testează agenții direct aici</h2>
+  <p class="section-sub">Nu e un video. Nu e o simulare. Scrie ceva și vezi cum răspunde agentul.</p>
+
+  <div class="agent-tabs">
+    <div class="agent-tab active" onclick="switchAgent('alex', this)">🤖 Alex — Vânzări</div>
+    <div class="agent-tab" onclick="switchAgent('niro', this)">🚗 Niro — Service Auto</div>
+    <div class="agent-tab" onclick="switchAgent('seo', this)">📈 Neo — SEO</div>
+  </div>
+
+  <div class="agent-demo-grid">
+    <!-- Info card -->
+    <div class="agent-info" id="agentInfo">
+      <div class="agent-header">
+        <div class="agent-avatar av-purple" id="agentAvatar">🤖</div>
+        <div>
+          <div class="agent-name" id="agentName">Alex</div>
+          <div class="agent-role" id="agentRole">Agent vânzări & suport Nexas</div>
+          <div class="online-dot">Online acum</div>
+        </div>
+      </div>
+      <p class="agent-desc" id="agentDesc">
+        Alex răspunde clienților tăi în timp real — pe site, 24/7. Prezintă servicii, preia cereri și trimite lead-urile direct la tine.
+      </p>
+      <div class="agent-tags" id="agentTags">
+        <span class="tag">Site web</span>
+        <span class="tag">WhatsApp</span>
+        <span class="tag">Română + Engleză</span>
+        <span class="tag">Claude AI</span>
+      </div>
+      <div class="agent-metric">
+        <div class="metric-val" id="agentMetricVal">~2 sec</div>
+        <div class="metric-label" id="agentMetricLabel">timp mediu de răspuns</div>
+      </div>
+    </div>
+
+    <!-- Chat window -->
+    <div class="chat-demo">
+      <div class="chat-header">
+        <div class="chat-avatar" id="chatAvatar">A</div>
+        <div>
+          <div class="chat-name" id="chatName">Alex — Nexas</div>
+          <div class="chat-status">Online acum</div>
+        </div>
+      </div>
+      <div class="chat-msgs" id="chatMsgs">
+        <div class="msg-a"><div class="bubble">Salut! Sunt Alex de la Nexas 👋 Te pot ajuta cu informații despre agenții noștri AI sau servicii. Ce te interesează?</div></div>
+      </div>
+      <div class="chat-input-area">
+        <input class="chat-input" id="chatInput" placeholder="Scrie un mesaj..." onkeydown="if(event.key==='Enter')sendDemo()">
+        <button class="chat-send" onclick="sendDemo()">
+          <svg width="16" height="16" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENTS GRID -->
+<section class="section" style="padding-top: 0;">
+  <div class="agents-grid">
+    <div class="agent-card" onclick="switchAgentFromCard('alex')">
+      <div class="ac-icon">🤖</div>
+      <div class="ac-title">Alex — Agent Vânzări</div>
+      <div class="ac-desc">Prezintă serviciile tale, răspunde la întrebări și captează lead-uri direct pe site-ul tău. Disponibil 24/7.</div>
+      <div class="ac-metric">↗ 180+ conversații / lună în medie</div>
+      <div class="ac-try">Testează mai sus →</div>
+    </div>
+    <div class="agent-card" onclick="switchAgentFromCard('niro')">
+      <div class="ac-icon">🚗</div>
+      <div class="ac-title">Niro — Agent Service Auto</div>
+      <div class="ac-desc">Preia programări pe WhatsApp, răspunde clienților service-ului, salvează datele automat în Google Sheets.</div>
+      <div class="ac-metric">↗ Reduce 90% din apelurile de programare</div>
+      <div class="ac-try">Testează mai sus →</div>
+    </div>
+    <div class="agent-card" onclick="switchAgentFromCard('seo')">
+      <div class="ac-icon">📈</div>
+      <div class="ac-title">Neo — Agent SEO</div>
+      <div class="ac-desc">Analizează orice site și generează un raport SEO complet cu recomandări concrete în câteva secunde.</div>
+      <div class="ac-metric">↗ Audit complet în sub 30 secunde</div>
+      <div class="ac-try">Testează mai sus →</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section center" id="cum-functioneaza">
+  <div class="section-label">Proces</div>
+  <h2 class="section-title">De la idee la agent live<br>în 3 pași</h2>
+  <div class="how-grid">
+    <div class="how-step">
+      <div class="how-num">1</div>
+      <div class="how-title">Alegi agentul</div>
+      <div class="how-desc">Selectezi agentul potrivit nevoilor tale — vânzări, programări, SEO sau un agent custom.</div>
+    </div>
+    <div class="how-step">
+      <div class="how-num">2</div>
+      <div class="how-title">Îl personalizăm</div>
+      <div class="how-desc">Configurăm agentul cu datele firmei tale, tonul de voce, servicii și prețuri. Testăm împreună.</div>
+    </div>
+    <div class="how-step">
+      <div class="how-num">3</div>
+      <div class="how-title">Merge live</div>
+      <div class="how-desc">Instalăm agentul pe site-ul tău sau pe WhatsApp. Monitorizăm și optimizăm lunar.</div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXAS BRAND -->
+<section class="brand-section">
+  <div class="brand-grid">
+    <div>
+      <div class="brand-tag">Cine suntem</div>
+      <h2 class="brand-title">Nexas construiește<br>agenții. Tu culegi<br>rezultatele.</h2>
+      <p class="brand-desc">Suntem echipa tehnică din spate — proiectăm, construim și întreținem agenți AI personalizați pentru business-uri românești.</p>
+      <ul class="brand-list">
+        <li>Agenți construiți pe Claude AI (Anthropic)</li>
+        <li>Integrare cu WhatsApp, site web, email</li>
+        <li>Rapoarte lunare de performanță</li>
+        <li>Suport tehnic inclus în abonament</li>
+      </ul>
+    </div>
+    <div class="brand-visual">
+      <div class="bv-row">
+        <div class="bv-icon" style="background:rgba(93,215,255,.1)">🤖</div>
+        <div><div class="bv-label">Alex Agent</div><div class="bv-sub">Site nexas.ro</div></div>
+        <div class="bv-badge badge-live">LIVE</div>
+      </div>
+      <div class="bv-row">
+        <div class="bv-icon" style="background:rgba(155,108,255,.1)">🚗</div>
+        <div><div class="bv-label">Niro Agent</div><div class="bv-sub">Service auto demo</div></div>
+        <div class="bv-badge badge-live">LIVE</div>
+      </div>
+      <div class="bv-row">
+        <div class="bv-icon" style="background:rgba(255,79,216,.1)">📈</div>
+        <div><div class="bv-label">Neo SEO Agent</div><div class="bv-sub">Audit automat</div></div>
+        <div class="bv-badge badge-live">LIVE</div>
+      </div>
+      <div class="bv-row">
+        <div class="bv-icon" style="background:rgba(16,185,129,.1)">📰</div>
+        <div><div class="bv-label">News Agent</div><div class="bv-sub">68 surse RSS / zi</div></div>
+        <div class="bv-badge badge-incl">AUTO</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section center" id="pricing">
+  <div class="section-label">Prețuri</div>
+  <h2 class="section-title">Un agent pentru fiecare business</h2>
+  <p class="section-sub">Prețuri clare, fără surprize. Fiecare plan include configurare, instalare și suport lunar.</p>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-agent">🤖 Alex / Niro</div>
+      <div class="price-name">Starter</div>
+      <div class="price-val">200€ <span>/ lună</span></div>
+      <ul class="price-features">
+        <li>1 agent AI pe site sau WhatsApp</li>
+        <li>Până la 500 conversații/lună</li>
+        <li>Configurare inițială inclusă</li>
+        <li>Raport lunar de performanță</li>
+        <li>Suport email</li>
+      </ul>
+      <a href="#contact" class="btn-price btn-price-secondary">Începe →</a>
+    </div>
+    <div class="price-card featured">
+      <div class="price-tag">⭐ Cel mai popular</div>
+      <div class="price-agent">🤖 + 🚗 + 📈</div>
+      <div class="price-name">Pro</div>
+      <div class="price-val">450€ <span>/ lună</span></div>
+      <ul class="price-features">
+        <li>2 agenți AI (site + WhatsApp)</li>
+        <li>Conversații nelimitate</li>
+        <li>Integrare Google Sheets / CRM</li>
+        <li>Rapoarte săptămânale</li>
+        <li>Suport prioritar WhatsApp</li>
+      </ul>
+      <a href="#contact" class="btn-price btn-price-primary">Vreau planul Pro →</a>
+    </div>
+    <div class="price-card">
+      <div class="price-agent">Custom</div>
+      <div class="price-name">Enterprise</div>
+      <div class="price-val">La cerere</div>
+      <ul class="price-features">
+        <li>Agenți custom pentru orice industrie</li>
+        <li>Integrări avansate (ERP, CRM)</li>
+        <li>SLA garantat 99.9% uptime</li>
+        <li>Manager de cont dedicat</li>
+        <li>Training echipă internă</li>
+      </ul>
+      <a href="#contact" class="btn-price btn-price-secondary">Discutăm →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="cta-box">
+    <h2 class="cta-title">Gata să automatizezi<br>primul proces?</h2>
+    <p class="cta-sub">Scrie-ne pe WhatsApp și în 24 de ore ai o propunere concretă cu agentul potrivit pentru business-ul tău.</p>
+    <a href="https://wa.me/40730858640?text=Salut%2C%20am%20vazut%20site-ul%20si%20vreau%20un%20agent%20AI" target="_blank" class="btn-wa">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Scrie-ne pe WhatsApp
+    </a>
+    <p style="color:var(--muted);font-size:.82rem;margin-top:1.2rem">+40 730 858 640 · contact@nexas.ro</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">nexas</div>
+  <div style="color:var(--muted);font-size:.82rem">© 2025 Nexas Digital. Toată lumea doarme. Agenții tăi nu.</div>
+  <div style="display:flex;gap:1.5rem">
+    <a href="#" style="color:var(--muted);text-decoration:none;font-size:.82rem">Confidențialitate</a>
+    <a href="#" style="color:var(--muted);text-decoration:none;font-size:.82rem">Termeni</a>
+  </div>
+</footer>
+
+<script>
+const agents = {
+  alex: {
+    name: 'Alex', role: 'Agent vânzări & suport Nexas', avatar: '🤖', avatarClass: 'av-purple', chatInitial: 'A',
+    desc: 'Alex răspunde clienților tăi în timp real — pe site, 24/7. Prezintă servicii, preia cereri și trimite lead-urile direct la tine.',
+    tags: ['Site web', 'WhatsApp', 'Română + Engleză', 'Claude AI'],
+    metricVal: '~2 sec', metricLabel: 'timp mediu de răspuns',
+    greeting: 'Salut! Sunt Alex de la Nexas 👋 Te pot ajuta cu informații despre agenții noștri AI sau servicii. Ce te interesează?',
+    replies: {
+      'pret': 'Agenții noștri pornesc de la 200€/lună pentru planul Starter — include configurare, instalare și suport. Planul Pro (450€/lună) include 2 agenți și integrări avansate. Vrei să discutăm ce potrivire ai?',
+      'site': 'Creăm site-uri de prezentare, magazine online și landing page-uri — de la 500€, livrate în 7-21 zile. Dar specialitatea noastră sunt agenții AI care merg pe site. Combinația e imbatabilă.',
+      'default': 'Bună întrebare! Pentru detalii complete recomand să ne contactezi direct pe WhatsApp — răspundem în câteva minute. Numărul nostru: +40 730 858 640 🚀'
+    }
+  },
+  niro: {
+    name: 'Niro', role: 'Agent programări service auto', avatar: '🚗', avatarClass: 'av-cyan', chatInitial: 'N',
+    desc: 'Niro preia programări pe WhatsApp, răspunde clienților service-ului și salvează automat toate datele în Google Sheets. Fără apeluri pierdute.',
+    tags: ['WhatsApp', 'Google Sheets', 'Programări', '24/7'],
+    metricVal: '90%', metricLabel: 'din apeluri eliminate',
+    greeting: 'Salut! Sunt Niro, agentul de la service 🚗 Vreau să fac o programare sau ai o întrebare despre serviciile noastre?',
+    replies: {
+      'programare': 'Super! Să facem programarea. Spune-mi: ce problemă are mașina, ce marcă/model este și în ce zi preferi să vii. Salvez totul automat.',
+      'pret': 'Prețurile variază în funcție de manoperă și piese. Spune-mi ce problemă ai și îți dau o estimare rapidă.',
+      'default': 'Înțeleg! Pentru asta vă rog să ne contactați direct sau lăsați datele de contact — vă sun eu în 10 minute. Număr direct: +40 730 858 640'
+    }
+  },
+  seo: {
+    name: 'Neo', role: 'Agent analiză SEO', avatar: '📈', avatarClass: 'av-pink', chatInitial: 'N',
+    desc: 'Neo analizează orice site și generează un raport SEO complet cu recomandări concrete în câteva secunde. Identifică probleme tehnice, on-page și oportunități.',
+    tags: ['Audit SEO', 'On-page', 'Tehnic', 'Automat'],
+    metricVal: '<30 sec', metricLabel: 'per audit complet',
+    greeting: 'Salut! Sunt Neo, agentul SEO 📈 Trimite-mi URL-ul site-ului tău și îți fac un audit rapid — sau pune-mi o întrebare despre SEO.',
+    replies: {
+      'default': 'Bună întrebare de SEO! Cel mai important factor tehnic acum este Core Web Vitals — mai ales LCP (Largest Contentful Paint). Recomanzi să fie sub 2.5 secunde. Vrei un audit complet al site-ului tău?'
+    }
+  }
+};
+
+let currentAgent = 'alex';
+let chatHistory = { alex: [], niro: [], seo: [] };
+
+function switchAgent(id, tab) {
+  currentAgent = id;
+  document.querySelectorAll('.agent-tab').forEach(t => t.classList.remove('active'));
+  if (tab) tab.classList.add('active');
+  const a = agents[id];
+  document.getElementById('agentName').textContent = a.name;
+  document.getElementById('agentRole').textContent = a.role;
+  document.getElementById('agentAvatar').textContent = a.avatar;
+  document.getElementById('agentAvatar').className = 'agent-avatar ' + a.avatarClass;
+  document.getElementById('agentDesc').textContent = a.desc;
+  document.getElementById('agentMetricVal').textContent = a.metricVal;
+  document.getElementById('agentMetricLabel').textContent = a.metricLabel;
+  document.getElementById('chatName').textContent = a.name + ' — Nexas';
+  document.getElementById('chatAvatar').textContent = a.chatInitial;
+  const tagsEl = document.getElementById('agentTags');
+  tagsEl.innerHTML = a.tags.map(t => `<span class="tag">${t}</span>`).join('');
+  const msgsEl = document.getElementById('chatMsgs');
+  if (chatHistory[id].length === 0) {
+    msgsEl.innerHTML = `<div class="msg-a"><div class="bubble">${a.greeting}</div></div>`;
+  } else {
+    msgsEl.innerHTML = chatHistory[id].join('');
+  }
+}
+
+function switchAgentFromCard(id) {
+  const tabs = document.querySelectorAll('.agent-tab');
+  const idx = ['alex','niro','seo'].indexOf(id);
+  switchAgent(id, tabs[idx]);
+  document.getElementById('agenti').scrollIntoView({ behavior: 'smooth' });
+}
+
+function sendDemo() {
+  const input = document.getElementById('chatInput');
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = '';
+  const msgsEl = document.getElementById('chatMsgs');
+  const a = agents[currentAgent];
+  const userMsg = `<div class="msg-u"><div class="bubble">${text}</div></div>`;
+  msgsEl.innerHTML += userMsg;
+  const typingId = 'typing-' + Date.now();
+  msgsEl.innerHTML += `<div id="${typingId}" class="msg-a"><div class="bubble" style="padding:0"><div class="typing-dots"><span></span><span></span><span></span></div></div></div>`;
+  msgsEl.scrollTop = msgsEl.scrollHeight;
+  setTimeout(() => {
+    const t = document.getElementById(typingId);
+    if (t) t.remove();
+    let reply = a.replies.default;
+    const lower = text.toLowerCase();
+    for (const [key, val] of Object.entries(a.replies)) {
+      if (key !== 'default' && lower.includes(key)) { reply = val; break; }
+    }
+    const agentMsg = `<div class="msg-a"><div class="bubble">${reply}</div></div>`;
+    msgsEl.innerHTML += agentMsg;
+    msgsEl.scrollTop = msgsEl.scrollHeight;
+    chatHistory[currentAgent].push(userMsg, agentMsg);
+  }, 1200 + Math.random() * 600);
+}
+</script>
+</body>
+</html>

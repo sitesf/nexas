@@ -533,18 +533,24 @@ footer{
 </footer>
 
 <script>
-/* CURSOR */
+/* CURSOR — only on non-touch devices */
 const cursor=document.getElementById('cursor'),trail=document.getElementById('ctrail');
-let mx=0,my=0;
-document.addEventListener('mousemove',e=>{
-  mx=e.clientX;my=e.clientY;
-  cursor.style.left=mx+'px';cursor.style.top=my+'px';
-  setTimeout(()=>{trail.style.left=mx+'px';trail.style.top=my+'px';},80);
-});
-document.querySelectorAll('a,button,input,textarea,.qbtn').forEach(el=>{
-  el.addEventListener('mouseenter',()=>cursor.classList.add('ex'));
-  el.addEventListener('mouseleave',()=>cursor.classList.remove('ex'));
-});
+const isTouch = window.matchMedia('(hover: none)').matches;
+if (!isTouch) {
+  let mx=0,my=0;
+  document.addEventListener('mousemove',e=>{
+    mx=e.clientX;my=e.clientY;
+    cursor.style.left=mx+'px';cursor.style.top=my+'px';
+    setTimeout(()=>{trail.style.left=mx+'px';trail.style.top=my+'px';},80);
+  });
+  document.querySelectorAll('a,button,input,textarea,.qbtn').forEach(el=>{
+    el.addEventListener('mouseenter',()=>cursor.classList.add('ex'));
+    el.addEventListener('mouseleave',()=>cursor.classList.remove('ex'));
+  });
+} else {
+  if (cursor) cursor.style.display='none';
+  if (trail) trail.style.display='none';
+}
 
 /* PARTICLES */
 const canvas=document.getElementById('pc'),ctx=canvas.getContext('2d');
@@ -586,9 +592,19 @@ function loadEmailJS(){
 const form=document.getElementById('contactForm');
 const submitBtn=document.getElementById('submitBtn');
 const statusEl=document.getElementById('status');
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+let lastSubmitAt = 0;
 form.addEventListener('submit',async function(e){
   e.preventDefault();
   if(!document.getElementById('gdpr').checked){show('Te rugam sa accepti politica de confidentialitate.','err');return;}
+  const emailVal = document.getElementById('from_email').value.trim();
+  if(!EMAIL_RE.test(emailVal)){show('Adresa de email nu este validă.','err');return;}
+  const msgVal = document.getElementById('message').value.trim();
+  if(msgVal.length < 10){show('Mesajul este prea scurt (minim 10 caractere).','err');return;}
+  if(msgVal.length > 3000){show('Mesajul este prea lung (maxim 3000 caractere).','err');return;}
+  const now = Date.now();
+  if(now - lastSubmitAt < 30000){show('Asteapta putin inainte sa trimiti un alt mesaj.','err');return;}
+  lastSubmitAt = now;
   submitBtn.disabled=true;submitBtn.textContent='Se trimite...';
   try{await loadEmailJS();}catch(err){
     show('Eroare. Incearca WhatsApp sau email direct.','err');
@@ -596,10 +612,10 @@ form.addEventListener('submit',async function(e){
   }
   emailjs.send('service_r6h7o5j','template_zmwlkw5',{
     from_name:document.getElementById('from_name').value.trim(),
-    from_email:document.getElementById('from_email').value.trim(),
+    from_email:emailVal,
     phone:document.getElementById('phone').value.trim()||'-',
-    message:document.getElementById('message').value.trim(),
-    reply_to:document.getElementById('from_email').value.trim()
+    message:msgVal,
+    reply_to:emailVal
   })
   .then(()=>{show('Mesaj trimis. Iti raspund in cateva ore.','ok');form.reset();})
   .catch(()=>{show('Eroare. Incearca WhatsApp sau email direct.','err');})
