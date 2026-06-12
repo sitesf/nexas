@@ -2,6 +2,8 @@
 <html lang="ro">
 <head>
 <meta charset="UTF-8"/>
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Politică Cookies — NEXAS</title>
 <meta name="robots" content="noindex"/>
@@ -166,7 +168,12 @@ nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-con
   <h2>3. Cum îți gestionezi cookie-urile</h2>
 
   <h3>3.1 Prin bannerul nostru</h3>
-<p>La prima vizita pe site, afisam un banner prin care poti accepta sau refuza cookie-urile non-esentiale. Poti schimba preferinta oricand stergand datele site-ului din browser sau cheia <strong>nexas_cookie_consent</strong> din localStorage.</p>
+<p>La prima vizita pe site, afisam un banner prin care poti accepta, refuza sau seta individual cookie-urile non-esentiale. Iti poti schimba sau retrage consimtamantul oricand, la fel de usor cum l-ai acordat, folosind butoanele de mai jos:</p>
+<p>
+  <a href="#" data-cookie-settings style="display:inline-block;background:rgba(90,174,255,.12);border:1px solid rgba(90,174,255,.3);color:#5aaeff;padding:10px 20px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px;margin-right:10px;">⚙ Modifică setările cookie</a>
+  <a href="#" onclick="event.preventDefault();if(window.nexasWithdrawConsent){window.nexasWithdrawConsent();this.textContent='✓ Consimțământ retras';}" style="display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:var(--dim);padding:10px 20px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px;">Retrage consimțământul</a>
+</p>
+<p>La retragere, Google Analytics este dezactivat imediat și cookie-urile sale (<strong>_ga</strong>, <strong>_gid</strong>) sunt șterse. Alternativ, poți șterge manual cheia <strong>nexas_cookie_consent</strong> din localStorage.</p>
 
   <h3>3.2 Prin setările browserului</h3>
   <ul>
@@ -189,5 +196,6 @@ nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-con
   </div>
 
 </div>
+<script src="/assets/nexas-consent.js"></script>
 </body>
 </html>

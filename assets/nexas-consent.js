@@ -1,10 +1,44 @@
 (function () {
   const STORAGE_KEY = "nexas_cookie_consent";
   const GA_ID = "G-YTY08X40FV";
+  const CONSENT_VERSION = 2;
+
+  /* ── Stocare consimtamant ──
+     Format nou: {"v":2,"analytics":true|false,"ts":"ISO date"}
+     Format vechi (compatibilitate): "accepted" / "rejected"            */
+
+  function readConsent() {
+    let raw = null;
+    try {
+      raw = localStorage.getItem(STORAGE_KEY);
+    } catch (e) {
+      return null;
+    }
+    if (!raw) return null;
+    if (raw === "accepted") return { v: 1, analytics: true };
+    if (raw === "rejected") return { v: 1, analytics: false };
+    try {
+      const data = JSON.parse(raw);
+      if (data && typeof data.analytics === "boolean") return data;
+    } catch (e) {}
+    return null;
+  }
+
+  function saveConsent(analytics) {
+    try {
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({ v: CONSENT_VERSION, analytics: !!analytics, ts: new Date().toISOString() })
+      );
+    } catch (e) {}
+  }
+
+  /* ── Google Analytics: incarcat DOAR dupa consimtamant ── */
 
   function loadGoogleAnalytics() {
     if (window.__nexasAnalyticsLoaded) return;
     window.__nexasAnalyticsLoaded = true;
+    window["ga-disable-" + GA_ID] = false;
 
     const script = document.createElement("script");
     script.async = true;
@@ -24,32 +58,82 @@
     });
   }
 
-  function createBanner() {
-    if (document.getElementById("nexas-cookie-banner")) return;
+  /* ── Retragere consimtamant: opreste GA si sterge cookie-urile lui ── */
+
+  function disableAnalytics() {
+    window["ga-disable-" + GA_ID] = true;
+    const domains = ["", location.hostname, "." + location.hostname.replace(/^www\./, "")];
+    document.cookie.split(";").forEach(function (c) {
+      const name = c.split("=")[0].trim();
+      if (/^(_ga|_gid|_gat)/.test(name)) {
+        domains.forEach(function (d) {
+          document.cookie =
+            name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + (d ? "; domain=" + d : "");
+        });
+      }
+    });
+  }
+
+  function applyConsent(analytics) {
+    saveConsent(analytics);
+    if (analytics) {
+      loadGoogleAnalytics();
+    } else {
+      disableAnalytics();
+    }
+  }
+
+  /* ── Banner ── */
+
+  function removeBanner() {
+    const el = document.getElementById("nexas-cookie-banner");
+    if (el) el.remove();
+  }
+
+  function createBanner(opts) {
+    opts = opts || {};
+    removeBanner();
+
+    const existing = readConsent();
+    const analyticsChecked = existing ? !!existing.analytics : false;
 
     const banner = document.createElement("div");
     banner.id = "nexas-cookie-banner";
 
     banner.innerHTML = `
-      <div class="nexas-cookie-box">
+      <div class="nexas-cookie-box" role="dialog" aria-modal="false" aria-label="Setari cookie-uri">
         <div class="nexas-cookie-text">
           <strong>Folosim cookie-uri</strong>
           <p>
             Folosim cookie-uri esentiale pentru functionarea site-ului si, doar cu acordul tau,
-            cookie-uri de analiza pentru imbunatatirea experientei.
+            cookie-uri de analiza pentru imbunatatirea experientei. Iti poti retrage acordul oricand.
           </p>
           <a href="/cookies.html">Politica de cookies</a>
+
+          <div class="nexas-cookie-prefs" id="nexas-cookie-prefs" hidden>
+            <label class="nexas-cookie-pref">
+              <input type="checkbox" checked disabled />
+              <span><strong>Esentiale</strong> — necesare functionarii site-ului (mereu active)</span>
+            </label>
+            <label class="nexas-cookie-pref">
+              <input type="checkbox" id="nexas-pref-analytics" ${analyticsChecked ? "checked" : ""} />
+              <span><strong>Analiza</strong> — Google Analytics (trafic anonimizat)</span>
+            </label>
+          </div>
         </div>
 
         <div class="nexas-cookie-actions">
+          <button type="button" id="nexas-cookie-settings">Setari</button>
           <button type="button" id="nexas-cookie-reject">Respinge</button>
           <button type="button" id="nexas-cookie-accept">Accepta</button>
         </div>
       </div>
     `;
 
-    const style = document.createElement("style");
-    style.innerHTML = `
+    if (!document.getElementById("nexas-cookie-style")) {
+      const style = document.createElement("style");
+      style.id = "nexas-cookie-style";
+      style.innerHTML = `
       #nexas-cookie-banner {
         position: fixed;
         left: 16px;
@@ -94,6 +178,36 @@
         text-decoration: none;
       }
 
+      .nexas-cookie-prefs {
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(255,255,255,.12);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .nexas-cookie-pref {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        font-size: 13px;
+        line-height: 1.45;
+        color: rgba(255,255,255,.78);
+        cursor: pointer;
+      }
+
+      .nexas-cookie-pref strong {
+        display: inline;
+        font-size: 13px;
+        margin: 0;
+      }
+
+      .nexas-cookie-pref input {
+        margin-top: 2px;
+        accent-color: #7c3cff;
+      }
+
       .nexas-cookie-actions {
         display: flex;
         gap: 10px;
@@ -107,6 +221,12 @@
         padding: 11px 18px;
         font-weight: 700;
         font-size: 14px;
+      }
+
+      #nexas-cookie-settings {
+        background: transparent;
+        color: rgba(255,255,255,.75);
+        border: 1px solid rgba(255,255,255,.18);
       }
 
       #nexas-cookie-reject {
@@ -133,36 +253,73 @@
           width: 100%;
         }
       }
-    `;
+      `;
+      document.head.appendChild(style);
+    }
 
-    document.head.appendChild(style);
     document.body.appendChild(banner);
 
+    const prefs = document.getElementById("nexas-cookie-prefs");
+    if (opts.openSettings) prefs.hidden = false;
+
+    document.getElementById("nexas-cookie-settings").addEventListener("click", function () {
+      prefs.hidden = !prefs.hidden;
+    });
+
     document.getElementById("nexas-cookie-accept").addEventListener("click", function () {
-      localStorage.setItem(STORAGE_KEY, "accepted");
-      banner.remove();
-      loadGoogleAnalytics();
+      // Daca panoul de setari e deschis, "Accepta" salveaza alegerea din panou;
+      // altfel accepta tot.
+      const analytics = prefs.hidden
+        ? true
+        : document.getElementById("nexas-pref-analytics").checked;
+      applyConsent(analytics);
+      removeBanner();
     });
 
     document.getElementById("nexas-cookie-reject").addEventListener("click", function () {
-      localStorage.setItem(STORAGE_KEY, "rejected");
-      banner.remove();
+      applyConsent(false);
+      removeBanner();
     });
   }
 
+  /* ── API public: redeschide setarile de oriunde (ex. pagina de cookies) ── */
+
+  window.nexasCookieSettings = function () {
+    createBanner({ openSettings: true });
+  };
+
+  window.nexasWithdrawConsent = function () {
+    applyConsent(false);
+    removeBanner();
+  };
+
   function initConsent() {
-    const consent = localStorage.getItem(STORAGE_KEY);
+    const consent = readConsent();
 
-    if (consent === "accepted") {
-      loadGoogleAnalytics();
-      return;
-    }
-
-    if (consent === "rejected") {
+    if (consent) {
+      if (consent.analytics) {
+        loadGoogleAnalytics();
+      } else {
+        disableAnalytics();
+      }
+      // Lega automat orice element cu data-cookie-settings de panoul de setari
+      bindSettingsLinks();
       return;
     }
 
     createBanner();
+    bindSettingsLinks();
+  }
+
+  function bindSettingsLinks() {
+    document.querySelectorAll("[data-cookie-settings]").forEach(function (el) {
+      if (el.__nexasBound) return;
+      el.__nexasBound = true;
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.nexasCookieSettings();
+      });
+    });
   }
 
   if (document.readyState === "loading") {

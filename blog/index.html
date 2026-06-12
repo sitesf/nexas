@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#05060b" />
+<title>Noutăți & Blog | NEXAS</title>
+<meta name="description" content="Noutăți, anunțuri și articole publicate de echipa NEXAS." />
+<link rel="canonical" href="https://nexas.ro/blog/" />
+<style>
+@font-face {
+  font-family: 'Syne';
+  src: url('/fonts/syne-latin-400-normal.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url('/fonts/syne-latin-700-normal.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url('/fonts/syne-latin-800-normal.woff2') format('woff2');
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+:root {
+  --bg:#000005; --bg2:#06080f; --border:rgba(255,255,255,0.08);
+  --blue:#5aaeff; --violet:#b784ff; --text:#fff; --dim:rgba(255,255,255,0.65);
+  --mute:rgba(255,255,255,0.35); --sans:'Syne',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;}
+nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;background:rgba(0,0,5,.92);border-bottom:1px solid var(--border);backdrop-filter:blur(16px);}
+.nav-brand{font-size:14px;font-weight:700;text-decoration:none;color:var(--text);letter-spacing:.04em;}
+.nav-brand .slash{color:var(--mute);margin:0 5px;}
+.nav-brand .sub{color:var(--mute);font-weight:400;}
+.nav-back{font-size:12px;color:var(--dim);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;transition:color .2s;}
+.nav-back:hover{color:#fff;}
+.wrap{max-width:780px;margin:0 auto;padding:60px 24px 80px;width:100%;flex:1;}
+.tag{display:inline-flex;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(90,174,255,.2);padding:4px 13px;border-radius:100px;margin-bottom:24px;font-family:monospace;}
+h1{font-size:clamp(30px,4vw,48px);font-weight:800;letter-spacing:-.03em;line-height:1.05;margin-bottom:10px;}
+.sub-line{font-size:14px;color:var(--dim);margin-bottom:48px;}
+.post{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:30px;margin-bottom:26px;}
+.post h2{font-size:22px;font-weight:800;letter-spacing:-.02em;margin-bottom:6px;}
+.post .date{font-size:11px;color:var(--mute);font-family:monospace;letter-spacing:.1em;margin-bottom:16px;}
+.post img{max-width:100%;border-radius:12px;margin-bottom:16px;display:block;}
+.post .desc{font-size:14px;color:var(--violet);margin-bottom:14px;line-height:1.6;}
+.post p{font-size:14px;color:var(--dim);line-height:1.8;margin-bottom:14px;}
+.post p:last-child{margin-bottom:0;}
+.empty{color:var(--mute);font-size:14px;padding:40px 0;text-align:center;}
+footer.site-legal-footer{border-top:1px solid var(--border);padding:26px 24px;display:flex;justify-content:center;}
+.legal-links{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;}
+.legal-links a{color:var(--mute);font-size:12px;text-decoration:none;letter-spacing:.06em;}
+.legal-links a:hover{color:var(--dim);}
+@media(max-width:640px){nav{padding:16px 20px;}.post{padding:22px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/index.html" class="nav-brand">NEXAS <span class="slash">/</span><span class="sub">blog</span></a>
+  <a href="/index.html" class="nav-back">← Înapoi</a>
+</nav>
+
+<div class="wrap">
+  <div class="tag">Noutăți</div>
+  <h1>Blog &amp; anunțuri</h1>
+  <p class="sub-line">Articole și noutăți publicate de echipa NEXAS.</p>
+  <div id="posts"><p class="empty">Se încarcă…</p></div>
+</div>
+
+<footer class="site-legal-footer">
+  <div class="legal-links">
+    <a href="/privacy.html">Confidentialitate</a>
+    <a href="/cookies.html">Cookies</a>
+    <a href="/termeni.html">Termeni si conditii</a>
+    <a href="/contact.html">Contact</a>
+    <a href="#" data-cookie-settings>Setări cookie-uri</a>
+  </div>
+</footer>
+
+<script src="/blog/app.js"></script>
+<script src="/assets/nexas-consent.js"></script>
+</body>
+</html>

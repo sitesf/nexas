@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "id": "exemplu-1",
+      "title": "Bun venit pe blogul NEXAS",
+      "description": "Aici publicăm noutăți, anunțuri și articole despre proiectele noastre.",
+      "content": "Aceasta este o postare de exemplu, creată automat la configurarea panoului de administrare.\n\nPoți să o editezi sau să o ștergi din panoul de admin (/admin/), după autentificare.\n\nPostările sunt salvate în fișierul blog/posts.json din repository și sunt publicate automat de GitHub Pages.",
+      "image": "",
+      "date": "2026-06-12",
+      "published": true,
+      "created": "2026-06-12T00:00:00.000Z",
+      "updated": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}
