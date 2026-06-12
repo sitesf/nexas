@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://api.github.com; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+<meta name="referrer" content="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Admin — NEXAS</title>
+<style>
+@font-face {
+  font-family: 'Syne';
+  src: url('/fonts/syne-latin-400-normal.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url('/fonts/syne-latin-700-normal.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url('/fonts/syne-latin-800-normal.woff2') format('woff2');
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+:root {
+  --bg:#000005; --bg2:#06080f; --border:rgba(255,255,255,0.1);
+  --blue:#5aaeff; --violet:#b784ff; --text:#fff; --dim:rgba(255,255,255,0.65);
+  --mute:rgba(255,255,255,0.38); --ok:#25D366; --err:#ff6b6b; --warn:#ffb450;
+  --sans:'Syne',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;min-height:100vh;}
+nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;background:rgba(0,0,5,.92);border-bottom:1px solid var(--border);backdrop-filter:blur(16px);}
+.nav-brand{font-size:14px;font-weight:700;text-decoration:none;color:var(--text);letter-spacing:.04em;}
+.nav-brand .slash{color:var(--mute);margin:0 5px;}
+.nav-brand .sub{color:var(--mute);font-weight:400;}
+.wrap{max-width:860px;margin:0 auto;padding:50px 24px 100px;}
+h1{font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-.03em;margin-bottom:8px;}
+.tag{display:inline-flex;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(90,174,255,.2);padding:4px 13px;border-radius:100px;margin-bottom:20px;font-family:monospace;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:28px;margin-bottom:22px;}
+.card h2{font-size:17px;font-weight:700;margin-bottom:16px;}
+label{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin:14px 0 6px;}
+input[type=text],input[type=password],input[type=date],textarea,select{
+  width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:10px;
+  padding:12px 14px;color:var(--text);font-family:var(--sans);font-size:14px;outline:none;
+}
+input:focus,textarea:focus,select:focus{border-color:rgba(90,174,255,.5);}
+textarea{min-height:120px;resize:vertical;line-height:1.6;}
+textarea#f-content{min-height:240px;}
+button{font-family:var(--sans);border:0;cursor:pointer;border-radius:999px;padding:12px 22px;font-weight:700;font-size:14px;}
+.btn-primary{background:linear-gradient(135deg,#7c3cff,#c084fc);color:#fff;}
+.btn-ghost{background:rgba(255,255,255,.07);color:var(--text);border:1px solid var(--border);}
+.btn-danger{background:rgba(255,107,107,.12);color:var(--err);border:1px solid rgba(255,107,107,.3);}
+.btn-sm{padding:7px 14px;font-size:12px;}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:18px;}
+.msg{margin-top:14px;font-size:13px;line-height:1.5;border-radius:10px;padding:11px 14px;display:none;}
+.msg.show{display:block;}
+.msg.ok{background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.25);color:var(--ok);}
+.msg.err{background:rgba(255,107,107,.08);border:1px solid rgba(255,107,107,.25);color:var(--err);}
+.msg.warn{background:rgba(255,180,80,.08);border:1px solid rgba(255,180,80,.25);color:var(--warn);}
+.hidden{display:none !important;}
+.post-item{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+.post-item:last-child{border-bottom:none;}
+.post-title{font-size:14px;font-weight:700;}
+.post-meta{font-size:11px;color:var(--mute);font-family:monospace;margin-top:3px;}
+.badge{display:inline-block;padding:2px 9px;border-radius:100px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-family:monospace;margin-left:8px;}
+.badge.pub{background:rgba(37,211,102,.1);color:var(--ok);border:1px solid rgba(37,211,102,.2);}
+.badge.draft{background:rgba(255,180,80,.1);color:var(--warn);border:1px solid rgba(255,180,80,.2);}
+.post-actions{display:flex;gap:8px;flex-shrink:0;}
+.note{font-size:12px;color:var(--mute);line-height:1.6;margin-top:8px;}
+.note a{color:var(--blue);}
+.checkline{display:flex;align-items:center;gap:9px;margin-top:14px;font-size:13px;color:var(--dim);}
+.checkline input{accent-color:#7c3cff;}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:24px;}
+@media(max-width:640px){nav{padding:16px 20px;}.card{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/index.html" class="nav-brand">NEXAS <span class="slash">/</span><span class="sub">admin</span></a>
+  <button type="button" id="btn-logout" class="btn-ghost btn-sm hidden">Logout</button>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════ LOGIN ══════════ -->
+  <section id="view-login">
+    <div class="tag">Zonă restricționată</div>
+    <h1>Autentificare</h1>
+    <div class="card" style="max-width:460px;">
+      <form id="login-form" autocomplete="off">
+        <label for="login-user">Utilizator</label>
+        <input type="text" id="login-user" autocomplete="username" required />
+        <label for="login-pass">Parolă</label>
+        <input type="password" id="login-pass" autocomplete="current-password" required />
+        <div class="row">
+          <button type="submit" class="btn-primary" id="btn-login">Intră în cont</button>
+        </div>
+        <div class="msg" id="login-msg"></div>
+      </form>
+      <p class="note">⚠ Acest panou rulează pe un site static (GitHub Pages). Autentificarea protejează interfața și deblochează token-ul de publicare; securitatea reală a publicării este dată de token-ul GitHub, care nu este stocat niciodată în site.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ DASHBOARD ══════════ -->
+  <section id="view-dash" class="hidden">
+    <div class="topbar">
+      <div>
+        <div class="tag">Panou administrare</div>
+        <h1>Postări</h1>
+      </div>
+      <button type="button" class="btn-primary" id="btn-new">+ Postare nouă</button>
+    </div>
+
+    <!-- Token GitHub -->
+    <div class="card" id="token-card">
+      <h2>Token GitHub (necesar pentru salvare)</h2>
+      <p class="note">Pentru a publica modificări, ai nevoie de un <strong>fine-grained personal access token</strong> cu permisiunea <strong>Contents: Read &amp; Write</strong> doar pe repo-ul site-ului. Îl creezi din GitHub → Settings → Developer settings → Fine-grained tokens. Token-ul rămâne doar în acest browser.</p>
+      <label for="gh-token">Token</label>
+      <input type="password" id="gh-token" placeholder="github_pat_..." autocomplete="off" />
+      <div class="checkline">
+        <input type="checkbox" id="remember-token" />
+        <label for="remember-token" style="margin:0;text-transform:none;letter-spacing:0;font-size:13px;color:var(--dim);">Ține minte token-ul pe acest dispozitiv (criptat cu parola ta)</label>
+      </div>
+      <div class="row">
+        <button type="button" class="btn-ghost btn-sm" id="btn-save-token">Salvează token</button>
+        <button type="button" class="btn-danger btn-sm" id="btn-clear-token">Uită token-ul</button>
+      </div>
+      <div class="msg" id="token-msg"></div>
+    </div>
+
+    <!-- Lista postari -->
+    <div class="card">
+      <h2>Lista postărilor</h2>
+      <div id="posts-list"><p class="note">Se încarcă…</p></div>
+      <div class="msg" id="list-msg"></div>
+    </div>
+
+    <!-- Editor -->
+    <div class="card hidden" id="editor-card">
+      <h2 id="editor-title">Postare nouă</h2>
+      <form id="post-form">
+        <input type="hidden" id="f-id" />
+        <label for="f-title">Titlu *</label>
+        <input type="text" id="f-title" required maxlength="200" />
+        <label for="f-desc">Descriere scurtă *</label>
+        <textarea id="f-desc" required maxlength="500"></textarea>
+        <label for="f-content">Conținut * <span style="text-transform:none;letter-spacing:0;">(text simplu; paragrafele se separă cu o linie goală)</span></label>
+        <textarea id="f-content" required></textarea>
+        <label for="f-image">Imagine (opțional, max 2 MB: png / jpg / webp / gif)</label>
+        <input type="file" id="f-image" accept=".png,.jpg,.jpeg,.webp,.gif" />
+        <div class="note" id="f-image-current"></div>
+        <label for="f-date">Data</label>
+        <input type="date" id="f-date" />
+        <label for="f-status">Status</label>
+        <select id="f-status">
+          <option value="published">Publicat</option>
+          <option value="draft">Nepublicat (ciornă)</option>
+        </select>
+        <div class="row">
+          <button type="submit" class="btn-primary" id="btn-save-post">Salvează postarea</button>
+          <button type="button" class="btn-ghost" id="btn-cancel-edit">Renunță</button>
+        </div>
+        <div class="msg" id="editor-msg"></div>
+      </form>
+    </div>
+
+    <!-- Schimbare parola -->
+    <div class="card">
+      <h2>Schimbă parola</h2>
+      <form id="pass-form" autocomplete="off">
+        <label for="p-old">Parola actuală</label>
+        <input type="password" id="p-old" autocomplete="current-password" required />
+        <label for="p-new">Parola nouă (min. 12 caractere, litere mari/mici, cifră, simbol)</label>
+        <input type="password" id="p-new" autocomplete="new-password" required />
+        <label for="p-new2">Repetă parola nouă</label>
+        <input type="password" id="p-new2" autocomplete="new-password" required />
+        <div class="row">
+          <button type="submit" class="btn-ghost">Actualizează parola</button>
+        </div>
+        <div class="msg" id="pass-msg"></div>
+      </form>
+    </div>
+  </section>
+
+</div>
+
+<script src="/admin/admin.js"></script>
+</body>
+</html>

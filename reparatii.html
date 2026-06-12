@@ -2,6 +2,8 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nexas Reparații | Service Laptop & Calculator Cluj-Napoca</title>
   <meta name="description" content="Service profesional reparații laptop și calculator. Diagnosticare gratuită, reparații în 24h, garanție 12 luni. Nexas — când tehnologia cedează, noi intervenim." />
@@ -1909,10 +1911,11 @@
       <div>
         <div class="footer-col-title">Legal</div>
         <ul class="footer-links">
-          <li><a href="#">Termeni & Condiții</a></li>
-          <li><a href="#">Politica de Confidențialitate</a></li>
-          <li><a href="#">GDPR</a></li>
-          <li><a href="#">Politica Cookies</a></li>
+          <li><a href="/termeni.html">Termeni & Condiții</a></li>
+          <li><a href="/privacy.html">Politica de Confidențialitate</a></li>
+          <li><a href="/privacy.html">GDPR</a></li>
+          <li><a href="/cookies.html">Politica Cookies</a></li>
+          <li><a href="#" data-cookie-settings>Setări cookie-uri</a></li>
         </ul>
       </div>
     </div>
@@ -2168,5 +2171,6 @@ window.addEventListener('scroll', () => {
   }
 });
 </script>
+<script src="/assets/nexas-consent.js"></script>
 </body>
 </html>

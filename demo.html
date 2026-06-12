@@ -2,6 +2,8 @@
 <html lang="ro">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>NEXAS HR — Demo</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700;9..40,800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
@@ -689,5 +691,6 @@ document.addEventListener('keydown',ev=>{if(ev.key==='Escape'){closeCM();closeDP
 window.addEventListener('resize',()=>{if(document.getElementById('pg-cal').classList.contains('on'))renderCal()});
 document.addEventListener('DOMContentLoaded',()=>{initWave();buildAccs();buildCList();buildTop();buildJList();setInterval(()=>{if(document.getElementById('pg-cal').classList.contains('on'))renderCal()},60000)});
 </script>
+<script src="/assets/nexas-consent.js"></script>
 </body>
 </html>
