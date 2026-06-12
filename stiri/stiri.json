@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T17:42:41.447966+00:00",
+  "updated_at": "2026-06-12T09:56:07.299630+00:00",
   "run_log": {
     "AI & Tech": 3,
     "Sport": 3,
@@ -12,6 +12,541 @@
     "Bursa & Piete": 3
   },
   "items": [
+    {
+      "title": "Un nou vaccin conceput de AI, testat în siguranță pe oameni",
+      "source": "Healthline",
+      "url": "https://www.healthline.com/health-news/first-vaccine-designed-artificial-intelligence-tested-humans",
+      "date": "2026-06-12T09:50:54.362461+00:00",
+      "category": "Sanatate",
+      "summary": "Un nou vaccin, conceput cu ajutorul inteligenței artificiale (AI), este primul de acest gen testat pe oameni și ar putea oferi protecție împotriva unei game largi de coronavirusuri, inclusiv cele înrudite cu SARS și COVID-19. Cercetătorii au testat acest vaccin inovator, denumit pEVAC-PS, care a fost primul creat de AI și evaluat pe subiecți umani. Acesta are potențialul de a oferi protecție și împotriva mutațiilor viitoare ale virusului.",
+      "instagram_caption": "O inovație majoră în medicină! 🚀 Primul vaccin conceput de Inteligența Artificială (AI) a fost testat cu succes pe oameni. Acest vaccin avansat, pEVAC-PS, ar putea oferi protecție împotriva unei game largi de coronavirusuri, inclusiv SARS și COVID-19, și are potențialul de a ne apăra și de mutațiile viitoare. Un pas uriaș pentru sănătatea globală! 💡 Este uimitor să vedem cum AI revoluționează medicina.",
+      "hashtags": [
+        "#AI",
+        "#Vaccin",
+        "#Sanatate",
+        "#Inovatie",
+        "#Coronavirus",
+        "#Medicina",
+        "#Viitor",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: A New Vaccine Was Designed by AI and Safey Tested on Humans. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Un medic urolog avertizează: Apa băută zilnic de români poate crește riscul de cancer",
+      "source": "CSID",
+      "url": "https://www.csid.ro/stiri/apa-pe-care-multi-romani-o-beau-zilnic-poate-creste-riscul-unor-forme-de-cancer-avertismentul-unui-medic-urolog-21215326/",
+      "date": "2026-06-12T09:50:50.763599+00:00",
+      "category": "Sanatate",
+      "summary": "Apa este esențială pentru viață, reprezentând 60% din greutatea corpului și jucând un rol vital în reglarea temperaturii, eliminarea toxinelor și buna funcționare a rinichilor. Cu toate acestea, un medic urolog atrage atenția că apa consumată zilnic de mulți români ar putea fi asociată cu un risc crescut de apariție a anumitor forme de cancer. Avertismentul subliniază importanța calității apei potabile pentru sănătate.",
+      "instagram_caption": "⚠️ Avertisment serios pentru sănătatea ta! Un medic urolog trage un semnal de alarmă: apa pe care mulți români o beau zilnic ar putea crește riscul de cancer. 💧 Știm cu toții că apa e vitală (reglează temperatura, elimină toxine, ajută rinichii), dar CALITATEA ei e esențială. Nu subestimați importanța apei pure pentru un corp sănătos! Fii informat și protejează-te! #ApaPotabila #Sanatate #RiscDeCancer #MedicUrolog #Avertisment #NEXAS",
+      "hashtags": [
+        "ApaPotabila",
+        "Sanatate",
+        "RiscDeCancer",
+        "MedicUrolog",
+        "Avertisment",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Apa pe care mulți români o beau zilnic poate crește riscul unor forme de cancer. Avertismentul unui . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Final de An Școlar: Cum se Calculează Mediile și Calificativele Elevilor",
+      "source": "HotNews",
+      "url": "https://hotnews.ro/cum-se-calculeaza-media-generala-in-gimnaziu-si-liceu-si-calificativul-anual-in-clasele-i-iv-2271736",
+      "date": "2026-06-12T09:50:28+00:00",
+      "category": "Romania",
+      "summary": "Cu finalul anului școlar la orizont, peste două milioane de elevi își așteaptă situația școlară. Deși calculul mediilor generale la gimnaziu și liceu urmează reguli matematice precise, acordarea calificativelor în învățământul primar ridică adesea semne de întrebare pentru părinți. Regulamentul ROFUIP 2024, emis de Ministerul Educației, clarifică exact aceste proceduri, de la modul în care se stabilesc calificativele anuale până la calculul mediilor generale.",
+      "instagram_caption": "Vacanta e aproape, dar situația școlară e prioritară! 📚 Peste 2 milioane de elevi își încheie anul, iar mediile și calificativele sunt în centrul atenției. Știai de diferențele de calcul între gimnaziu/liceu și ciclul primar? 🧐 Mulți părinți caută clarificări! ROFUIP 2024 oferă toate detaliile. Fii informat! 👇",
+      "hashtags": [
+        "AnScolar",
+        "MediiScolare",
+        "Calificative",
+        "ROFUIP",
+        "Educatie",
+        "Invatamant"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Cum se calculează media generală (în gimnaziu și liceu) și calificativul anual (în clasele I-IV). Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "ANPC: Nereguli la 121 tone de legume pe o platformă en-gros București-Ilfov, amenzi 80.000 lei",
+      "source": "G4Media",
+      "url": "https://www.g4media.ro/anpc-nereguli-la-121-de-tone-de-legume-intr-o-singura-platforma-en-gros-din-bucuresti-ilfov-probleme-legate-de-clasificare-prezentare-si-comercializare.html",
+      "date": "2026-06-12T09:49:47+00:00",
+      "category": "Romania",
+      "summary": "Inspectorii ANPC au descoperit nereguli majore la peste 121 de tone de legume, reprezentând mai mult de jumătate din produsele verificate pe o singură platformă en-gros din regiunea București-Ilfov. Problemele identificate au vizat clasificarea, calitatea, prezentarea și comercializarea mărfurilor. Ca urmare a acestor constatări, s-au aplicat amenzi în valoare totală de peste 80.000 de lei.",
+      "instagram_caption": "🚨 ANPC a descoperit nereguli majore la peste 121 de tone de legume pe o platformă en-gros din București-Ilfov! 😱 Probleme: clasificare, calitate, prezentare și comercializare necorespunzătoare. S-au aplicat amenzi de peste 80.000 lei! Fii informat, cere calitate! 🍎🥕🥦",
+      "hashtags": [
+        "#ANPC",
+        "#Nereguli",
+        "#Legume",
+        "#BucurestiIlfov",
+        "#Calitate",
+        "#Amenzi",
+        "#Stiri"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: ANPC: nereguli la 121 de tone de legume într-o singură platformă en-gros din București-Ilfov / Probl. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ofertă oficială pentru Răzvan Lucescu! Ce spun grecii despre plecarea antrenorului de la PAOK: „O sumă mare”",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-extern/oferta-razvan-lucescu-grecii-plecare-antrenor-paok-suma-20459351",
+      "date": "2026-06-12T09:48:32+00:00",
+      "category": "Sport",
+      "summary": "Presa greacă dezvăluie că formația qatareză Al-Sadd a înaintat o propunere oficială către PAOK Salonic pentru a activa clauza de reziliere a lui Răzvan Lucescu (57 de ani). Tehnicianul român refuză însă să forțeze plecarea, dorind să evite o nouă ruptură tensionată cu fanii greci și lăsând decizia finală în mâinile patronului Ivan Savvidis (67). […] The post Ofertă oficială pentru Răzvan Lucescu! Ce spun grecii despr",
+      "instagram_caption": "Ofertă oficială pentru Răzvan Lucescu! Ce spun grecii despre plecarea antrenorului de la PAOK: „O sumă mare”\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sport",
+        "#Fotbal",
+        "#Romania",
+        "#Campionat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Ofertă oficială pentru Răzvan Lucescu! Ce spun grecii despre plecarea antrenorului de la PAOK: „O su. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Guvernul Tomac: Poate implementa reformele refuzate de partide?",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/opinii/intrebarea-saptamanii/intrebarea-saptamanii-poate-guvernul-tomac-sa-faca-reformele-pe-care-partidele-au-refuzat-sa-le-faca-3812415",
+      "date": "2026-06-12T09:47:19+00:00",
+      "category": "Romania",
+      "summary": "Problema nu este dacă Guvernul Tomac trece de Parlament, ci ce poate face după aceea. Florin Negruțiu afirmă că un guvern tehnocrat minoritar este un alibi pentru PSD, permițându-i să rămână la putere fără a plăti prețul guvernării. Claudiu Pândaru avertizează că există riscul de a compromite din nou ideea profesionistului în administrație, prin numirea de oameni competenți într-un guvern care s-ar putea prăbuși.",
+      "instagram_caption": "Guvernul Tomac poate aduce reformele mult așteptate? 🤔 Experții sunt sceptici! Florin Negruțiu vede un guvern tehnocrat minoritar ca un alibi pentru PSD, permițându-i să rămână la putere fără costuri. Claudiu Pândaru avertizează că riscăm să compromitem imaginea profesioniștilor în administrație, plasându-i într-un guvern instabil. Oare e o șansă reală sau doar o strategie politică? 🇷🇴",
+      "hashtags": [
+        "#GuvernTomac",
+        "#PoliticaRomania",
+        "#Reformele",
+        "#PSD",
+        "#GuvernTehnocrat",
+        "#AnalizaPolitica",
+        "#NEXAS",
+        "#Romania"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: ÎNTREBAREA SĂPTĂMÂNII: Poate Guvernul Tomac să facă reformele pe care partidele au refuzat să le fac. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Theo Corbeanu: A refuzat România pentru Canada la Mondial, dar visul i s-a spulberat!",
+      "source": "Fanatik",
+      "url": "https://www.fanatik.ro/el-este-fotbalistul-care-a-refuzat-romania-ca-sa-joace-pentru-canada-la-mondial-insa-visul-i-s-a-spulberat-de-ce-n-a-fost-convocat-21487683",
+      "date": "2026-06-12T09:45:56+00:00",
+      "category": "Sport",
+      "summary": "Theo Corbeanu, considerat unul dintre cei mai promițători fotbaliști canadieni, a trăit o mare dezamăgire. După ce a refuzat convocarea la naționala României pentru a reprezenta Canada, visul său de a juca la Campionatul Mondial s-a spulberat. Talentatul jucător nu a fost inclus în lotul final, ratând astfel cea mai importantă competiție din fotbal.",
+      "instagram_caption": "Visul spulberat al lui Theo Corbeanu! 💔 Talentatul fotbalist, considerat unul dintre cei mai promițători jucători canadieni, a luat o decizie importantă: a refuzat naționala României pentru a juca sub steagul Canadei. Însă, surpriză! 🇨🇦 Deși se pregătea intens, Theo nu a fost inclus în lotul final pentru Campionatul Mondial. O mare dezamăgire pentru sportiv! 😢 Ce părere aveți?",
+      "hashtags": [
+        "TheoCorbeanu",
+        "Fotbal",
+        "CampionatulMondial",
+        "Canada",
+        "Romania",
+        "VisSpulberat",
+        "Dezamagire",
+        "NEXASsport"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: El este fotbalistul care a refuzat România ca să joace pentru Canada la Mondial, însă visul i s-a sp. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "FlixBus își extinde semnificativ rețeaua de rute în România",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/flixbus-lanseaza-noi-curse-in-romania-22477481?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-06-12T09:42:00+00:00",
+      "category": "Business",
+      "summary": "Compania de transport FlixBus își consolidează prezența în România printr-o extindere majoră a rețelei sale. Aceasta include noi destinații interne, conexiuni internaționale sezoniere și frecvențe suplimentare către unele dintre cele mai căutate zone turistice. Inițiativa vizează îmbunătățirea conectivității și oferirea de opțiuni de călătorie mai flexibile pentru pasagerii români.",
+      "instagram_caption": "🚌 FlixBus își extinde semnificativ rețeaua în România! 🎉 Acum ai mai multe opțiuni de călătorie cu noi destinații interne, conexiuni internaționale sezoniere și frecvențe sporite către cele mai populare zone turistice. Pregătește-ți bagajele pentru o vară plină de aventuri! ☀️ Descoperă România și Europa la prețuri accesibile. #FlixBusRomania #Calatorii #TurismRomania #Vacanta #Autocar #DestinatiiNoi #TravelRomania #GreenTravel",
+      "hashtags": [
+        "FlixBusRomania",
+        "Calatorii",
+        "TurismRomania",
+        "Vacanta",
+        "Autocar",
+        "DestinatiiNoi",
+        "TravelRomania",
+        "GreenTravel"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: FlixBus lansează noi curse în România. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "FlixBus lansează noi curse în România",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/flixbus-lanseaza-noi-curse-in-romania-22477481?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-06-12T09:42:00+00:00",
+      "category": "Bursa & Piete",
+      "summary": "FlixBus își extinde rețeaua din România prin noi destinații interne, conexiuni internaționale sezoniere și frecvențe suplimentare către unele dintre cele mai căutate zone turistice.",
+      "instagram_caption": "FlixBus lansează noi curse în România\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: FlixBus lansează noi curse în România. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Windows 11 Shared Audio: Redă sunetul în două căști sau boxe simultan",
+      "source": "Google News Tech",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcFhsSV92NEFURWZINXpnSUcxTDZBQVpNb1FJZEF6ZjZHODNHd1Zta1ZteEIyOHprMXkxTDhDWm9ad1hPZWxldG90Y3NFb3A1eExkbDc1WVZHVjAxYTZ4M2t3X2lDbGt1SWRoZmhCejdxZlE2QXZtT19zOVRXNHl0MVduZERFbVI4dG1UOFRKamplVk0xQV9OWEF4cDBoLW80SFM4SGlxNFczbEZpUV9Mb3ZMTdIBuAFBVV95cUxPSW9jVWtjdGZBYU9STHBOMEpHdm9kQlBpaXQtZHM2VjV4NWU4MjdpZGFHQmx5b0Y0TUtXZ2NoeHZFRzlsXzdtc1lhVUtwamxLSTZ2UzhMOVdvNnJEbzZzdmJTODBHWlVSbC1JdVVYTGhpOW90SmJYc213OHVVeHBXVVlmcUJLRHRTREMzNEpkWEZfSG1jNHRQM29ocG1uMUdIckdSOGFieUh3WUV1clY2OGNnLVpyNUtP?oc=5",
+      "date": "2026-06-12T09:40:28+00:00",
+      "category": "AI & Tech",
+      "summary": "Descoperă noua funcționalitate Windows 11 Shared Audio, care permite redarea simultană a sunetului către două perechi de căști sau boxe. Această inovație, raportată de connect România, transformă modul în care partajați experiența audio, permițându-vă să ascultați muzică, podcasturi sau filme împreună cu o altă persoană, fiecare folosind propriul dispozitiv audio. Este o soluție ideală pentru momentele în doi, fără a compromite calitatea sunetului sau intimitatea ascultării.",
+      "instagram_caption": "🎧🔊 Noutăți entuziasmante de la Windows 11! Cu funcția Shared Audio, poți acum să redai sunetul simultan în două perechi de căști sau boxe. Perfect pentru a partaja muzica preferată sau a urmări un film cu cineva drag, fiecare cu propriul dispozitiv audio! 🤩 Nu mai e nevoie să împarți căștile! Un feature genial pentru momentele voastre speciale. Aflați mai multe pe site-ul NEXAS!",
+      "hashtags": [
+        "Windows11",
+        "SharedAudio",
+        "TechNoutati",
+        "Gadgets",
+        "Audio",
+        "PartajareSunet",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Windows 11 Shared Audio: sunetul poate fi redat în două căști sau boxe simultan - connect România. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Mihai Rotaru îl bagă \"în corzi\" pe Gigi Becali: \"Îmi place un jucător de la FCSB\"",
+      "source": "DigiSport",
+      "url": "https://www.digisport.ro/fotbal/liga-1/mihai-rotaru-vrea-sa-i-dea-lovitura-lui-gigi-becali-imi-place-un-jucator-de-la-fcsb-4308227",
+      "date": "2026-06-12T09:39:46+00:00",
+      "category": "Sport",
+      "summary": "Mihai Rotaru, patronul Universității Craiova, a făcut o declarație surprinzătoare la DigiSport, afirmând că îi place un jucător de la marea rivală FCSB. Această afirmație este interpretată ca o modalitate de a-l pune \"în corzi\" pe Gigi Becali, patronul FCSB, adăugând tensiune rivalității deja acerbe dintre cele două cluburi și contribuind la un nou episod în \"războiul\" declarațiilor dintre cei doi finanțatori din fotbalul românesc.",
+      "instagram_caption": "🔥 Declarație incendiară de la Mihai Rotaru, patronul Universității Craiova! 🗣️ \"Îmi place un jucător de la FCSB\" - a spus Rotaru, punându-l direct \"în corzi\" pe Gigi Becali! ⚔️ Oare despre cine e vorba și ce urmează în lupta dintre cei doi finanțatori? 🤔 Tensiunea crește în Liga 1! #FCSB #UniversitateaCraiova #MihaiRotaru #GigiBecali #Liga1 #FotbalRomania #Transferuri",
+      "hashtags": [
+        "#FCSB",
+        "#UniversitateaCraiova",
+        "#MihaiRotaru",
+        "#GigiBecali",
+        "#Liga1",
+        "#FotbalRomania",
+        "#Transferuri"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Mihai Rotaru îl bagă \"în corzi\" pe Gigi Becali: \"Îmi place un jucător de la FCSB\". Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Zona Tampon a Israelului în Liban: O Acaparare de Gaze sau Securitate?",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/features/2026/6/12/is-israels-buffer-zone-inside-lebanon-an-attempt-to-grab-gas-reserves?traffic_source=rss",
+      "date": "2026-06-12T09:35:08+00:00",
+      "category": "International",
+      "summary": "Disputa privind zona maritimă dintre Israel și Liban se intensifică. O zonă definită de Israel ca 'tampon' se extinde adânc în teritoriul maritim libanez. Această incursiune a stârnit îngrijorări majore, alimentând speculațiile că ar putea reprezenta o tentativă pe termen lung de a acapara resurse strategice de gaze naturale, și nu doar o măsură de securitate. Situația tensionată riscă să destabilizeze și mai mult regiunea.",
+      "instagram_caption": "Tensiuni în Orientul Mijlociu! 💥 O zonă \"tampon\" israeliană se extinde adânc în teritoriul maritim al Libanului, alimentând speculații despre o potențială acaparare a resurselor de gaze naturale. 🌊 Al Jazeera relatează despre temerile că această zonă ar putea deveni o \"acaparare de resurse\" pe termen lung. Este o chestiune de securitate sau o strategie energetică? 🤔 Află mai multe despre implicațiile geopolitice ale acestei situații delicate. #Israel #Liban #GazeNaturale #Geopolitică #OrientulMijlociu #Conflict #Resurse",
+      "hashtags": [
+        "Israel",
+        "Liban",
+        "GazeNaturale",
+        "Geopolitică",
+        "OrientulMijlociu",
+        "Conflict",
+        "Resurse"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Is Israel’s ‘buffer zone’ inside Lebanon an attempt to grab gas reserves?. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Teatrul Național Craiova, ambasadorul României la Festivalul Shakespeare din Hong Kong",
+      "source": "Forbes Romania",
+      "url": "https://www.forbes.ro/teatrul-national-marin-sorescu-din-craiova-reprezinta-romania-la-festivalul-international-shakespeare-din-hong-kong-506082",
+      "date": "2026-06-12T09:27:06+00:00",
+      "category": "Business",
+      "summary": "Teatrul Național „Marin Sorescu” din Craiova va reprezenta România la a doua ediție a Festivalului Internațional Shakespeare din Hong Kong. Considerat unul dintre cele mai prestigioase evenimente dedicate operei shakespeariene din Asia, festivalul va găzdui spectacolul „Hamlet” în regia britanicului Declan Donnellan, cu scenografia semnată de Nick Ormerod. Reprezentațiile sunt programate în zilele de 16 și 17, marcând o prezență românească de calibru pe scena internațională.",
+      "instagram_caption": "🎉 Vești excelente pentru cultura românească! Teatrul Național „Marin Sorescu” din Craiova duce piesa „Hamlet” de Shakespeare la Festivalul Internațional din Hong Kong. Spectacolul, regizat de britanicul Declan Donnellan, va reprezenta România pe una dintre cele mai importante scene asiatice, în zilele de 16 și 17. O mândrie națională! 🎭🇷🇴 #TeatrulNationalCraiova #Hamlet #Shakespeare #HongKong #CulturaRomaneasca #Arta",
+      "hashtags": [
+        "#TeatrulNationalCraiova",
+        "#Hamlet",
+        "#Shakespeare",
+        "#HongKong",
+        "#CulturaRomaneasca",
+        "#Arta"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Teatrul Național Marin Sorescu din Craiova reprezintă România la Festivalul Internațional „Shakespea. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "InfoCons alertează: Calitatea lăptișorului de matcă, sub lupa protecției consumatorilor",
+      "source": "Google Sanatate",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVUJjLUlxQWtJZHNLZHRjdGRQUkc4aTRsS29lUHNIUVNGSlZSVjhiZ1ROMnZ4QmxzdWtiZTZLclFxbEpjakJEQXNjYnNhZVZwVWlHVTVicEVPMmhMY3JsdGlySk53enNTS0llOFk5M1AwS0o5MGU5QXRJZy1FWjYtTDN3dFdpZ2hYLVJ5ZnVwaHRPR2JWZGtVNWc2R1FQclZqUVhCNTk0czM?oc=5",
+      "date": "2026-06-12T09:00:56+00:00",
+      "category": "Sanatate",
+      "summary": "InfoCons intensifică eforturile pentru protecția consumatorilor de produse apicole, punând accent pe calitatea lăptișorului de matcă. Având în vedere popularitatea sa și beneficiile atribuite sănătății, este esențial ca acest produs să respecte standardele de calitate. Organizația monitorizează piața pentru a asigura transparența și conformitatea, protejând publicul de produse neconforme sau falsificate.",
+      "instagram_caption": "Știai cât de importantă este calitatea lăptișorului de matcă pe care îl consumi? 🐝 InfoCons trage un semnal de alarmă și monitorizează atent produsele apicole, în special lăptișorului de matcă, pentru a-ți garanta siguranța și respectarea standardelor. Nu lăsa sănătatea la voia întâmplării! Alege informat, verifică eticheta și susține produsele de calitate. 💯 InfoCons e alături de tine pentru o piață corectă! #InfoCons #CalitateLaptisorMatca #ProtectiaConsumatorilor #ProduseApicol",
+      "hashtags": [
+        "InfoCons",
+        "ProtectiaConsumatorilor",
+        "LaptisorDeMatca",
+        "CalitateProduse",
+        "ProduseApicole",
+        "Sanatate",
+        "ConsumatorInformat",
+        "Romania"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: InfoCons protectia consumatorilor de produse apicole : CALITATEA LĂPTIŞORULUI DE MATCĂ - InfoCons. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Un studiu dezvăluie că oamenii au o preferință inerentă pentru mișcarea în sens antiorar",
+      "source": "Descopera Ro",
+      "url": "https://www.descopera.ro/stiinta/21085736-un-studiu-dezvaluie-ca-oamenii-au-o-preferinta-inerenta-pentru-miscarea-in-sens-antiorar",
+      "date": "2026-06-12T09:00:28+00:00",
+      "category": "Stiinta",
+      "summary": "Cercetătorii din Spania și Japonia au analizat comportamentul pietonilor în grupuri de dimensiuni diferite. Ei au descoperit o preferință inerentă a oamenilor pentru mișcarea în sens antiorar. Studiul a urmărit identificarea unor tipare în modul în care indivizii se deplasează, indicând o tendință naturală spre această direcție.",
+      "instagram_caption": "Știați că avem o preferință naturală pentru mișcarea în sens antiorar? 🔄 Un nou studiu fascinant din Spania și Japonia a analizat comportamentul pietonilor și a descoperit această tendință surprinzătoare. 🤔 De la felul în care ne deplasăm în aglomerații până la dinamica grupurilor, se pare că o forță invizibilă ne ghidează! Privește în jurul tău - observi și tu? #ComportamentUman #StudiuNou #Psihologie #SensAntiorar #DescopeririȘtiințifice #NEXAS",
+      "hashtags": [
+        "#ComportamentUman",
+        "#StudiuNou",
+        "#Psihologie",
+        "#SensAntiorar",
+        "#DescopeririȘtiințifice",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Un studiu dezvăluie că oamenii au o preferință inerentă pentru mișcarea în sens antiorar. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "SpaceX se pregătește pentru debut în timp ce IPO de 75 de miliarde de dolari bate record",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-12/spacex-ipo-spcx-prepares-for-debut-after-75-billion-ipo-smashes-record",
+      "date": "2026-06-12T09:00:21+00:00",
+      "category": "Bursa & Piete",
+      "summary": "SpaceX a făcut istorie cu o IPO de 75 de miliarde de dolari, care a transformat-o instantaneu într-una dintre cele mai mari companii publice din lume. Acum trebuie să câștige piața.",
+      "instagram_caption": "SpaceX Prepares for Debut as $75 Billion IPO Breaks Record\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: SpaceX Prepares for Debut as $75 Billion IPO Breaks Record. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Piața T&L în România: Nearshoring, Autostrăzi și Provocarea Electrificării",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/anuar-logistica-transporturi-2026/analiza-piata-transporturilor-si-logisticii-din-romania-intre-23171619",
+      "date": "2026-06-12T09:00:00+00:00",
+      "category": "Business",
+      "summary": "Piața de transport și logistică din România traversează o perioadă complexă, marcată de dinamica nearshoring-ului, care aduce noi oportunități, dar și presiuni. Dezvoltarea infrastructurii rutiere, în special ritmul lent al construcției de autostrăzi, rămâne o piedică semnificativă. În paralel, sectorul se confruntă cu provocarea majoră a electrificării flotei de transport, o tranziție esențială pentru sustenabilitate și conformitatea cu normele europene. Această analiză explorează intersecția acestor factori cheie.",
+      "instagram_caption": "Cum arată viitorul transporturilor și logisticii în România? 🚚🇷🇴 Piața noastră se află la răscruce de drumuri, influențată de tendința de nearshoring care aduce investiții, dar și de provocările persistente. Autostrăzile întârziate continuă să frâneze creșterea 🚧, iar tranziția către electrificare devine imperativă, dar și costisitoare. ⚡️ Descoperă o analiză detaliată a acestor factori cruciali și impactul lor asupra economiei locale. Link în bio pentru articolul complet! 👇",
+      "hashtags": [
+        "#TransportRomania",
+        "#LogisticaRomania",
+        "#Nearshoring",
+        "#Electrificare",
+        "#Autostrazi",
+        "#EconomieRomania",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Analiză. Piaţa transporturilor şi logisticii din România: între nearshoring, autostrăzi întârziate ş. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Piața T&L România: Nearshoring, autostrăzi și electrificare - analize și perspective",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/anuar-logistica-transporturi-2026/analiza-piata-transporturilor-si-logisticii-din-romania-intre-23171619",
+      "date": "2026-06-12T09:00:00+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Piața românească de transport și logistică este într-un moment cheie, influențată de multiple forțe. Această analiză detaliază impactul fenomenului nearshoring, care aduce oportunități semnificative și crește cererea de servicii logistice. Pe de altă parte, sectorul se confruntă cu obstacole majore din cauza infrastructurii rutiere subdezvoltate și a autostrăzilor întârziate. O altă provocare crucială este tranziția spre electrificare, care necesită investiții și adaptări substanțiale.",
+      "instagram_caption": "Cum arată viitorul pieței de Transporturi și Logistică din România? 🤔 Suntem la intersecția unor factori puternici: oportunități aduse de #nearshoring, lupta cu autostrăzile întârziate 🚧 și provocarea electrificării. ⚡️ Descoperă o analiză profundă a situației actuale și a perspectivelor. Intră pe NEXAS.ro pentru detalii! #TransportRomania #Logistica #Infrastructura #Electrificare #Economie #NEXAS",
+      "hashtags": [
+        "TransportRomania",
+        "Logistica",
+        "Infrastructura",
+        "Electrificare",
+        "Economie",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Analiză. Piaţa transporturilor şi logisticii din România: între nearshoring, autostrăzi întârziate ş. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Teheranul: „Nimic” finalizat, după ce Trump anunță acord pentru pacea din Iran",
+      "source": "BBC World",
+      "url": "https://www.bbc.com/news/articles/c78y6w78828o?at_medium=RSS&at_campaign=rss",
+      "date": "2026-06-12T08:09:37+00:00",
+      "category": "International",
+      "summary": "Autoritățile iraniene califică drept „speculative” informațiile privind un potențial acord, în contextul în care președintele american a anunțat atingerea unei „mari înțelegeri” menite să pună capăt conflictului din regiune.",
+      "instagram_caption": "Teheranul infirmă vehement finalizarea unui acord de pace, deși președintele Trump a declarat recent că o \"mare înțelegere\" pentru a pune capăt conflictului din Iran este aproape! 🗣️ Autoritățile iraniene califică rapoartele drept \"speculative\", subliniind că nimic nu este bătut în cuie. Rămâneți conectați pentru ultimele actualizări din Orientul Mijlociu! 🌍",
+      "hashtags": [
+        "#Iran",
+        "#SUA",
+        "#Trump",
+        "#AcordPace",
+        "#ConflictIran",
+        "#OrientulMijlociu",
+        "#PoliticaInternationala",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Tehran says 'nothing' finalised after Trump claims deal to end Iran war near. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Noma, „cel mai bun restaurant din lume”, se redeschide după un scandal uriaș",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPaHdDbEhPd2RPVHFNQkpxS2VZS0k4bEJ4NDU0d0tmLWtoQW1DV1NmYWxpX3MyZkhMTHplZHlLWk4xcFJGYWRMQTVsM2x6Qnl1QzREN3pMd2oyeUtiMkZmR2NXcWY1aGgtSVA2NHJ1MjVOSUpPQzF0c21URUlNY3Y3eXFDWWMxdGlzZG5mNnRPNzBCbm96eHJiSlRkenhQMGFONVNqV0g0QXZhTmhQX2NrOUhpWGJuWXFEVTZEeUFJSDZMajNSbGdYNUF3QVFSb2pWd0RXcnZKR3h5eVVsWi1j?oc=5",
+      "date": "2026-06-12T07:24:10+00:00",
+      "category": "Entertainment",
+      "summary": "Noma, restaurantul danez recunoscut ani la rând drept cel mai bun din lume, își redeschide porțile în luna august. Revenirea sa vine după un scandal amplu legat de condițiile de muncă precare și reputația pătată. Deși a fost un „templu” al gastronomiei, acuzațiile au forțat o reevaluare. Publicul este curios de noul concept și, desigur, de prețul unui meniu în noua sa formă.",
+      "instagram_caption": "Noma, restaurantul legendar considerat ani la rând cel mai bun din lume, își pregătește redeschiderea în luna august! 🍽️ După un scandal uriaș legat de condițiile de muncă și reputația pătată, „templul” gastronomiei promite o revenire spectaculoasă. Ești curios să afli ce surprize ne așteaptă și cât va costa un meniu? 😮 Urmărește NEXAS pentru toate detaliile!",
+      "hashtags": [
+        "#Noma",
+        "#Gastronomie",
+        "#Restaurant",
+        "#FineDining",
+        "#Scandal",
+        "#Redeschidere",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Restaurantul considerat ani la rând cel mai bun din lume se redeschide: a fost în mijlocul unui scan. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Kate Hudson, declarație de dragoste pentru logodnicul ei de ziua lui: „Cel mai bun partener!”",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNNUxGb2l1QnlTb1JDX3B0YTd0RXBiWklvRXpMTEVLYzdKQ0c5V3FaUU00bFc3dGhPTmMtcXNUYUJLdXNJMjBTQlZUVzlFbE1IUmhITUJOVmdZUGN3dGYxZU55bUpSVTBSUGN1Tmx6QklscTFHSnUycDY1UnU4el91MlUwNW1jUDI5X2xPcHdwWUtoWm9LZENmV3UtTWhsZGxSRXVKVVZTdDFhNnlEemR5RkE3MjFINlNYekNtOG43N2txbFVlY3JZdUdmVHhwQUVRcjlXdDFfNDEtZU1ndFBtT3VfZU0zcE0?oc=5",
+      "date": "2026-06-12T07:00:58+00:00",
+      "category": "Entertainment",
+      "summary": "Actrița Kate Hudson i-a dedicat o postare emoționantă logodnicului său cu ocazia zilei sale de naștere. Vedeta de la Hollywood și-a exprimat public admirația și afecțiunea, numindu-l „cel mai bun partener”. Această declarație dulce vine în contextul aniversării partenerului ei de viață, oferind o perspectivă asupra legăturii puternice dintre ei. Descoperă cine este bărbatul care i-a cucerit inima actriței și mai multe detalii despre relația lor.",
+      "instagram_caption": "Kate Hudson are motive de sărbătoare! 🎉 Actrița i-a făcut o dedicație emoționantă logodnicului său de ziua lui, numindu-l „cel mai bun partener” și împărtășind momente dulci cu fanii. ❤️ Cine este norocosul bărbat care i-a cucerit inima? Descoperă toate detaliile pe NEXAS! ✨",
+      "hashtags": [
+        "#KateHudson",
+        "#Logodnic",
+        "#Dragoste",
+        "#Aniversare",
+        "#Hollywood",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Cine este logodnicul lui Kate Hudson. Actrița i-a dedicat o postare dulce de ziua lui de naștere: „C. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Au găsit veriga lipsă? Cercetătorii propun o explicație radicală pentru apariția vieții pe Pământ - Digi-world.tv",
+      "source": "Google Stiinta",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQVzlRVzZfcGdQckU1SE1WNm50Rm0xQjl2cDdiNjFlTDdqZk5ZU21DNHl1Y3ZUenYySmRBS3dYdGQtLUtYQnJSdktucnFyWGR3Znp4OXJQWmtVZWhTR0pNS3hDM2ctUGM2ZkpRZkFHb1B4X2FRWDY4dmwzVVF6bjN2NG5OdDIzbXlxb0pxRzZaUDFlMW5BNHIwV1VRVUNuWHVtQnBQZl9KbWRzNXVsOUQzWnVqQXZPWE1QX3poMGwwNEVSLWdLX1VjeGZ6dmxSYkE?oc=5",
+      "date": "2026-06-12T06:51:40+00:00",
+      "category": "Stiinta",
+      "summary": "Au găsit veriga lipsă? Cercetătorii propun o explicație radicală pentru apariția vieții pe Pământ Digi-world.tv",
+      "instagram_caption": "Au găsit veriga lipsă? Cercetătorii propun o explicație radicală pentru apariția vieții pe Pământ - Digi-world.tv\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Au găsit veriga lipsă? Cercetătorii propun o explicație radicală pentru apariția vieții pe Pământ - . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cutremur la Volkswagen: Cel mai mare constructor european elimină 19.000 de posturi într-un timp record",
+      "source": "Google Intl",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRkEteFR2bld5a2libWtiOWV1ZXRKX0xwUEpQWlI2a1ByeDh6VVlfeDBJUTl6WF85NmdHQ25DOGRNR2RpRk0xckx3emhaQVp5Ty15dG1aUXc1T1h4dExyQ3BlT0o0S0ZWSHpmeHdnSDU0eHdsZVNCVnBFUlVmZ0twa3dJYw?oc=5",
+      "date": "2026-06-12T06:43:00+00:00",
+      "category": "International",
+      "summary": "Volkswagen, cel mai mare constructor auto european, continuă un amplu val de concedieri. Compania a anunțat eliminarea a 19.000 de posturi, o măsură ce va fi implementată până la finalul anului curent. Majoritatea acestor reduceri de personal sunt preconizate în Germania, unde compania își are sediul principal. Această mișcare marchează o accelerare a procesului de restructurare la nivelul gigantului auto.",
+      "instagram_caption": "Cutremur la Volkswagen! 😱 Cel mai mare constructor auto european a anunțat concedieri masive. Până la finalul anului, 19.000 de angajați își vor pierde locurile de muncă, majoritatea în Germania. O veste șocantă care subliniază provocările uriașe din industria auto la nivel global. Ce părere aveți despre această decizie radicală? 💼📉 #Volkswagen #Concedieri #IndustrieAuto #Germania #LocuriDeMuncă #Economie #NEXAS",
+      "hashtags": [
+        "#Volkswagen",
+        "#Concedieri",
+        "#IndustrieAuto",
+        "#Germania",
+        "#LocuriDeMuncă",
+        "#Economie",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Cutremur la Volkswagen: Cel mai mare constructor european elimină 19.000 de posturi într-un timp rec. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Horoscop 15-21 Iunie: Renunți la confort pentru a-ți redefini limitele",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWExFa25lV19DZ3lZVVB3Um5DOG1DZlkwamlIOFlBcUxQQ2lvU1dkdTAyMDl2MnVMdFBGQzdiTXFMNnk0dUZGc2U3bWl6SXRicGNOY0dSYllwYmJXaGs5S0wtQjd2QWM5TV9MNlI5V0tQNjFxcm5VRTltS05xWEo0SC1fMW9pandPQ2VrSThTTnBaVjJybkVva1dDLUwxR0VvSFB1Tk5FSGhlLUplb0RBZWlhWDFSaEZ3Qmt4b25rMNIBuAFBVV95cUxNYVV1a0NQVlA3aklXQU1BNUg3dDhpNE5XWGpxc2EwSWx6bkhfUnZ1THRrdklORXB1RGE4Qk9zc1lpemZ5SWEyaUFuVjV2QUtoOS1xOWd5Qks2SDN2ZncxeTl1R09IN1YxeUhsc3VuOVNvbW95ZmVhMUw1eVdzc1RwUWFEVFNYM0tTeUpXOXpxcHRad0lXZm9zNDllbUI2Y1gyZU9PV253QU5MeFkxcjJjcUp5dGlyVmx6?oc=5",
+      "date": "2026-06-12T06:00:01+00:00",
+      "category": "Entertainment",
+      "summary": "Pregătește-te pentru o săptămână intensă! Horoscopul pentru 15-21 iunie 2026 indică o perioadă de transformare profundă. Zodiile sunt chemate să își reevalueze granițele personale și să facă alegeri curajoase. S-ar putea să simți nevoia de a renunța la vechi tipare sau situații confortabile pentru a te dezvolta. Această etapă te va ajuta să îți redefinești identitatea și aspirațiile. Descoperă ce te așteaptă!",
+      "instagram_caption": "✨ Horoscop Săptămânal NEXAS ✨ Ești pregătit/ă să faci un pas în afara zonei de confort? Săptămâna 15-21 iunie 2026 aduce provocări și oportunități de creștere! Este momentul să îți reevaluezi limitele personale și să renunți la ceea ce nu te mai servește. Uneori, avem nevoie de puțin \"deranj\" pentru a ne regăsi calea. Ce surprize îți rezervă astrele? 🌟 Descoperă mai multe pe site-ul NEXAS!",
+      "hashtags": [
+        "#HoroscopNEXAS",
+        "#Horoscop",
+        "#Astre",
+        "#Zodii",
+        "#CresterePersonala",
+        "#Redefinire",
+        "#Astrologie",
+        "#Saptamana15Iunie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Horoscop săptămânal, 15 - 21 iunie 2026: Renunți la pace pentru a-ți redefini limitele personale - J. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cât antrenament de forță îți trebuie pentru o viață mai lungă? Răspunsul oamenilor de știință",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260611024609.htm",
+      "date": "2026-06-12T04:46:24+00:00",
+      "category": "Stiinta",
+      "summary": "Doar 90-120 de minute de antrenament de forță pe săptămână pot oferi unele dintre cele mai mari beneficii pe termen lung pentru sănătate, conform unui studiu care a urmărit peste 147.000 de persoane timp de 30 de ani. Această durată a fost legată de riscuri mai mici de deces în general, în special din cauza bolilor cardiovasculare și neurologice. Combinarea antrenamentelor de forță cu exercițiile aerobice a produs beneficii și mai puternice.",
+      "instagram_caption": "Știai că doar 90-120 de minute de antrenament de forță pe săptămână pot schimba jocul pentru sănătatea ta pe termen lung? 💪 Un studiu amplu, ce a urmărit peste 147.000 de oameni timp de 30 de ani, arată că acest interval reduce semnificativ riscul de deces, în special din cauza bolilor cardiovasculare și neurologice. Combinează-l cu exerciții aerobice și vei amplifica beneficiile! 🚀 #NEXAS #AntrenamentDeForta #Sanatate #Longevivitate #Fitness",
+      "hashtags": [
+        "#AntrenamentDeForta",
+        "#Sanatate",
+        "#Longevivitate",
+        "#Fitness",
+        "#Stiinta",
+        "#NEXAS",
+        "#ViataLunga"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Scientists found the strength training sweet spot for a longer life. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "AI-ul video Avataar: Mai ieftin, rapid și adaptat cultural, construit pentru scara Indiei",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/11/cheaper-faster-and-culturally-aware-avataars-video-ai-is-built-for-indias-scale/",
+      "date": "2026-06-12T04:30:00+00:00",
+      "category": "AI & Tech",
+      "summary": "Modelul video optimizat al Avataar AI este disponibil la un preț de doar 0,005 USD pentru fiecare secundă de generare. Această abordare permite o accesibilitate sporită și demonstrează angajamentul companiei de a oferi soluții AI scalabile și eficiente, special concepute pentru piețe vaste, unde costul și viteza sunt critice.",
+      "instagram_caption": "Avataar AI revoluționează crearea video! 🚀 Descoperă tehnologia lor care generează conținut la doar 0,005 USD pe secundă. Mai rapid, mai ieftin și adaptat cultural, este soluția perfectă pentru scalarea în piețe uriașe, cum ar fi India. Vezi cum AI-ul video devine accesibil și eficient! ✨ #AvataarAI #VideoAI #Tehnologie #Inovație #NEXAS",
+      "hashtags": [
+        "#AvataarAI",
+        "#VideoAI",
+        "#Tehnologie",
+        "#Inovație",
+        "#AI",
+        "#Scalabilitate",
+        "#Digitalizare",
+        "#TechNews"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Cheaper, faster, and culturally aware, Avataar’s video AI is built for India’s scale. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Preply: Învățare Personalizată cu AI și Suport Uman Expert",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/preply",
+      "date": "2026-06-12T00:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "Preply, o platformă de învățare a limbilor străine, a integrat tehnologia OpenAI pentru a revoluționa experiența educațională. Prin utilizarea inteligenței artificiale, Preply generează rezumate personalizate ale lecțiilor, oferind feedback țintit și exerciții interactive adaptate nevoilor fiecărui student. Această abordare hibridă, ce combină puterea AI cu expertiza tutorilor umani, maximizează eficiența învățării și accelerează progresul lingvistic.",
+      "instagram_caption": "Descoperă cum Preply redefinește învățarea limbilor! 🚀 Combinând AI de la OpenAI cu tutori umani, Preply oferă rezumate personalizate ale lecțiilor, feedback și exerciții captivante. ✨ O abordare hibridă ce accelerează progresul și face învățarea mai eficientă și personală! Ești gata să-ți îmbunătățești limba? 📈",
+      "hashtags": [
+        "#PreplyAI",
+        "#ÎnvățarePersonalizată",
+        "#AIînEducație",
+        "#LimbiStrăine",
+        "#OpenAI",
+        "#Tehnologie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: How Preply combines AI and human tutors to personalize learning. Professional photorealistic style. No text, no logos, no watermarks."
+    },
     {
       "title": "Așa se prepară cea mai bună limonadă cu mentă. Băutura răcoritoare perfectă pentru zilele toride",
       "source": "CSID",
@@ -221,25 +756,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Business news: ​De ce ne este tot mai greu să plecăm de la job? Cum se vede fenomenul „job hugging” în România. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "​De ce ne este tot mai greu să plecăm de la job? Cum se vede fenomenul „job hugging” în România",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/well-wealth/de-ce-ne-este-tot-mai-greu-sa-plecam-de-la-job-cum-se-vede-fenomenul-23172935",
-      "date": "2026-06-11T17:16:37+00:00",
-      "category": "Bursa & Piete",
-      "summary": "​De ce ne este tot mai greu să plecăm de la job? Cum se vede fenomenul „job hugging” în România",
-      "instagram_caption": "​De ce ne este tot mai greu să plecăm de la job? Cum se vede fenomenul „job hugging” în România\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: ​De ce ne este tot mai greu să plecăm de la job? Cum se vede fenomenul „job hugging” în România. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Schimbare pe piața muncii din România - Tot mai mulți tineri vor să se angajeze înainte de vârsta majoratului",
@@ -4346,162 +4862,6 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: Secretul trandafirilor care înfloresc toată vara. Cele șase reguli simple recomandate de specialiști. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "SUA: Active iraniene, redirecționate către state din Golf după atacuri",
-      "source": "Digi24",
-      "url": "https://www.digi24.ro/stiri/externe/sua/sua-analizeaza-redirectionarea-activelor-iraniene-plan-pentru-reconstructia-statelor-din-golf-afectate-de-atacuri-3804339",
-      "date": "2026-06-07T08:41:42+00:00",
-      "category": "Romania",
-      "summary": "SUA intenționează să redirecționeze activele iraniene către statele din Golf pentru a finanța reconstrucția și repararea pagubelor cauzate de atacurile Iranului, conform unei surse Reuters. Acest demers vine după ce Teheranul a lansat noi atacuri cu drone împotriva Kuweitului și Bahrainului. Secretarul Trezoreriei, Scott Bessent, a mandatat o echipă să evalueze costurile daunelor provocate.",
-      "instagram_caption": "SUA iau măsuri decisive! 🇺🇸 Activele iraniene ar putea fi redirecționate către statele din Golf, precum Kuweit și Bahrain, pentru a finanța reconstrucția pagubelor cauzate de atacurile recente cu drone ale Iranului. O sursă Reuters confirmă planul, iar Secretarul Trezoreriei, Scott Bessent, a însărcinat deja o echipă să evalueze costurile. O mișcare strategică importantă pentru regiune! 🌍✈️",
-      "hashtags": [
-        "SUA",
-        "Iran",
-        "Golf",
-        "Reconstructie",
-        "Drone",
-        "Geopolitica",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: SUA analizează redirecționarea activelor iraniene: plan pentru reconstrucția statelor din Golf afect. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Nicolescu, după plecarea lui Kopic de la Dinamo și venirea lui Campos: „Cine a avut urechi să audă, a înțeles!”",
-      "source": "DigiSport",
-      "url": "https://www.digisport.ro/fotbal/liga-1/andrei-nicolescu-dupa-ce-kopic-a-plecat-de-la-dinamo-si-a-venit-campos-cine-a-avut-urechi-sa-auda-a-inteles-4298691",
-      "date": "2026-06-07T08:39:48+00:00",
-      "category": "Sport",
-      "summary": "Andrei Nicolescu, oficial al clubului Dinamo, a reacționat în urma recentei schimbări de antrenor. După plecarea lui Kopic și instalarea lui Campos la conducerea tehnică, Nicolescu a făcut o declarație enigmatică. „Cine a avut urechi să audă, a înțeles!”, a transmis oficialul dinamovist, sugerând că decizia nu a fost întâmplătoare și că există un context intern. Cuvintele sale lasă loc interpretărilor privind motivele reale din spatele acestei mutări strategice la Dinamo.",
-      "instagram_caption": "Schimbare de antrenor la Dinamo! ⚽️ Kopic a plecat, iar Campos preia banca tehnică. 📣 Oficialul Andrei Nicolescu a avut o reacție enigmatică: „Cine a avut urechi să audă, a înțeles!” 🤔 Ce credeți că se ascunde în spatele acestei declarații? Fanii #Dinamo sunt în plină dezbatere! 💬 Rămâneți pe fază pentru mai multe detalii! 🗞️ #SuperLiga #FotbalRomanesc #DinamoBucuresti #AndreiNicolescu #SchimbareAntrenor",
-      "hashtags": [
-        "#Dinamo",
-        "#SuperLiga",
-        "#FotbalRomanesc",
-        "#DinamoBucuresti",
-        "#AndreiNicolescu",
-        "#SchimbareAntrenor"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Andrei Nicolescu, după ce Kopic a plecat de la Dinamo și a venit Campos: ”Cine a avut urechi să audă. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Bursa la Deschidere: Previziuni cu Andrei Sota (Signal Sigma), 8 iunie, ora 09:30",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/burse-fonduri-mutuale/zf-deschiderea-de-astazi-cum-va-merge-bursa-urmariti-o-discutie-luni-23169076",
-      "date": "2026-06-07T08:36:15+00:00",
-      "category": "Business",
-      "summary": "Ziarul Financiar vă invită să urmăriți o ediție specială a emisiunii 'ZF Deschidere de Astăzi', dedicată evoluției pieței bursiere. Invitatul acestei discuții va fi Andrei Sota, fondator al Signal Sigma, care va oferi perspective și analize asupra direcției în care se îndreaptă bursa. Nu ratați această analiză esențială pentru investitori și toți cei interesați de piața de capital. Emisiunea va fi difuzată luni, 8 iunie 2026, începând cu ora 09:30.",
-      "instagram_caption": "📈 Ce ne rezervă bursa? Nu ratați o discuție esențială la 'ZF Deschidere de Astăzi'! Luni, 8 iunie 2026, de la ora 09:30, Andrei Sota, fondatorul Signal Sigma, va analiza perspectivele pieței. 📊 Descoperiți cum va merge bursa și pregătiți-vă deciziile de investiții! Fiți alături de noi pentru cele mai proaspete analize! 💡 #Bursa #Investitii #ZFDeschidere #AnalizaPiata #SignalSigma #AndreiSota #PiataDeCapital",
-      "hashtags": [
-        "Bursa",
-        "Investitii",
-        "ZFDeschidere",
-        "AnalizaPiata",
-        "SignalSigma",
-        "AndreiSota",
-        "PiataDeCapital"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: ZF DESCHIDEREA DE ASTĂZI. Cum va merge bursa. Urmăriţi o discuţie luni, 8 iunie 2026, ora 09.30 cu A. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Marius Șumudică, elogiu pentru Gică Hagi: \"Este meritul lui pentru schimbările la Națională!\"",
-      "source": "Fanatik",
-      "url": "https://www.fanatik.ro/marius-sumudica-si-a-scos-palaria-in-fata-lui-gica-hagi-este-doar-meritul-lui-stiu-ca-te-a-durut-tot-timpul-de-echipa-nationala-ce-schimbari-a-produs-regele-21485524",
-      "date": "2026-06-07T08:35:12+00:00",
-      "category": "Sport",
-      "summary": "Gică Hagi (61 de ani) a înregistrat prima victorie de la revenirea pe banca tehnică a naționalei României, un rezultat care l-a impresionat profund pe Marius Șumudică. Antrenorul a lăudat performanța \"tricolorilor\" și a subliniat că meritul aparține în totalitate \"Regelui\", evidențiind dedicarea constantă a acestuia pentru echipa națională și impactul său asupra jocului. Șumudică a apreciat schimbările vizibile și îmbunătățirile aduse de Hagi, care au condus la un joc convingător.",
-      "instagram_caption": "Marius Șumudică i-a adus un omagiu lui Gică Hagi! 👏 După prima victorie a \"Regelui\" la conducerea Naționalei României, Șumudică a declarat: \"Este doar meritul lui! Știu că l-a durut tot timpul de echipa națională\". 🇷🇴 Un moment emoționant care subliniază impactul legendarului Hagi! Ce părere aveți? #GicaHagi #Sumudica #EchipaNationala #Tricolori #FotbalRomania #NEXAS",
-      "hashtags": [
-        "GicaHagi",
-        "Sumudica",
-        "EchipaNationala",
-        "Tricolori",
-        "FotbalRomania",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Marius Șumudică și-a scos pălăria în fața lui Gică Hagi! ”Este doar meritul lui. Știu că l-a durut t. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "EXCLUSIV | Negrilă: Rus e cel mai bun fundaș, iar Matei are personalitatea lui Balaci!",
-      "source": "ProSport",
-      "url": "https://www.prosport.ro/fotbal-intern/nationala/am-jucat-fotbal-la-viata-mea-nu-tenis-de-masa-v-am-spus-ca-rus-e-cel-mai-bun-fundas-iar-copilul-matei-are-personalitatea-lui-ilie-balaci-20455887",
-      "date": "2026-06-07T08:30:15+00:00",
-      "category": "Sport",
-      "summary": "Fostul mare fundaș al Craiovei Maxima, Nicolae Negrilă, a declarat pentru ProSport că Adrian Rus și-a demonstrat pe deplin valoarea în primul „11” al naționalei României. După victoria României cu Țara Galilor, scor 2-1, Negrilă și-a exprimat satisfacția față de performanța jucătorilor, evidențiind că Rus este „cel mai bun fundaș” și lăudând personalitatea tânărului Matei, comparându-l cu legendarul Ilie Balaci. El a subliniat că experiența sa în fotbal îi validează afirmațiile.",
-      "instagram_caption": "Legenda fotbalului românesc, Nicolae Negrilă, e convins! 🔥 Adrian Rus a arătat că merită pe deplin locul în echipa națională, fiind \"cel mai bun fundaș\". 🇷🇴 După victoria României cu Țara Galilor (2-1), Negrilă a lăudat și pe tânărul Matei, comparându-l cu legendarul Ilie Balaci! 🌟 O perspectivă directă de la cineva care \"a jucat fotbal, nu tenis de masă\"! ⚽️ Ce părere aveți despre aceste declarații?",
-      "hashtags": [
-        "FotbalRomania",
-        "AdrianRus",
-        "MateiFotbal",
-        "NicolaeNegrila",
-        "NationalaRomaniei",
-        "Tricolori",
-        "ProSport"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: EXCLUSIV „Am jucat fotbal la viața mea, nu tenis de masă. V-am spus că Rus e cel mai bun fundaș, iar. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "PSD, PNL, USR: 92% voturi comune, chiar și după demiterea lui Bolojan de PSD-AUR",
-      "source": "Economica",
-      "url": "https://www.economica.net/surpriza-in-parlament-psd-pnl-si-usr-au-votat-impreuna-pentru-92-din-legi-dupa-motiunea-psd-aur-care-l-a-demis-pe-bolojan_948347.html",
-      "date": "2026-06-07T08:28:39+00:00",
-      "category": "Business",
-      "summary": "Un consens surprinzător a continuat să definească relația dintre PSD, PNL și USR în Parlament, chiar și după ce premierul Ilie Bolojan a fost demis printr-o moțiune a PSD și AUR. Statisticile parlamentare relevă că cele trei partide, care au guvernat țara, au votat identic în 92% dintre proiectele legislative.",
-      "instagram_caption": "Surpriză în Parlament! 😲 Chiar și după demiterea premierului Ilie Bolojan printr-o moțiune a PSD și AUR, PSD, PNL și USR au demonstrat un consens remarcabil. Statisticile parlamentare relevă că cele trei partide au votat identic în 92% dintre proiectele legislative. Un nivel de colaborare neașteptat! Ce părere aveți? 🤔 Sursa: Economica. #PoliticaRomania #Parlament #PSD #PNL #USR #Consens #Legislatie",
-      "hashtags": [
-        "PoliticaRomania",
-        "Parlament",
-        "PSD",
-        "PNL",
-        "USR",
-        "Consens",
-        "Legislatie",
-        "StiriRomania"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Surpriză în Parlament. PSD, PNL și USR au votat împreună pentru 92% din legi, după moțiunea PSD-AUR . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Acordul financiar din spatele statului de 44 de hectare devenit un imperiu economic",
-      "source": "HotNews",
-      "url": "https://hotnews.ro/acordul-financiar-din-spatele-statului-de-44-de-hectare-devenit-un-imperiu-economic-2266724",
-      "date": "2026-06-07T08:26:10+00:00",
-      "category": "Romania",
-      "summary": "Pe 7 iunie, Vaticanul a dobândit oficial statutul de stat independent, marcând sfârșitul unui conflict de aproape șase decenii prin ratificarea Tratatului de la Lateran de către Parlamentul italian. În spatele solemnității clopotelor și a felicitărilor diplomatice, se ascunde însă o poveste mai puțin cunoscută: un acord financiar substanțial, care a transformat micul stat de doar 44 de hectare într-o putere economică, punând bazele a ceea ce mulți numesc un imperiu.",
-      "instagram_caption": "Știați că în spatele independenței Vaticanului se ascunde un acord financiar monumental? 🕵️‍♂️ Pe 7 iunie, statul de 44 de hectare a devenit oficial independent prin Tratatul de la Lateran, punând capăt unui conflict de aproape 60 de ani. Dar povestea nu se oprește aici! Descoperiți cum acest acord a transformat Vaticanul într-un imperiu economic. Detalii complete pe NEXAS.ro! #Vatican #Istorie #TratatulDeLaLateran #Economie #Secret #NEXAS",
-      "hashtags": [
-        "Vatican",
-        "Istorie",
-        "TratatulDeLaLateran",
-        "Economie",
-        "Secret",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Acordul financiar din spatele statului de 44 de hectare devenit un imperiu economic. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Tendința „darecation”: De ce turiștii aleg vacanțe care le provoacă „durere”",
-      "source": "G4Media",
-      "url": "https://www.g4media.ro/tendinta-darecation-de-ce-turistii-aleg-vacante-care-le-provoaca-durere.html",
-      "date": "2026-06-07T08:24:24+00:00",
-      "category": "Romania",
-      "summary": "Un nou trend în turism, denumit „darecation”, redefinește conceptul de vacanță. Din ce în ce mai mulți călători renunță la relaxare și aleg aventuri fizice extreme în cele mai dificile locații de pe glob, conform unui raport BBC. Această tendință este motivată de dorința de a-și depăși limitele și de a experimenta provocări unice. Un exemplu este Sara Storey, care a participat la Maratonul de la cea mai mare altitudine din lume, căutând o experiență fără precedent. Aceste vacanțe nu promit confort, ci o satisfacție profundă obținută prin efort și anduranță.",
-      "instagram_caption": "Uitați de vacanțele clasice de relaxare! 🏖️ Un nou trend, „darecation”, prinde contur: tot mai mulți aleg aventuri fizice extreme în cele mai provocatoare locuri de pe Pământ! ⛰️❄️ De la maratoane la altitudine maximă, ca cel al Sarei Storey, până la expediții epuizante, scopul este depășirea limitelor. Ce părere aveți despre vacanțele care vă aduc „durere” dar și o satisfacție imensă? 💪 Voi ați încerca? #Darecation #AventuriExtreme #TravelTrends #ChallengeYourself #VacanțeNeobișnuite",
-      "hashtags": [
-        "#Darecation",
-        "#AventuriExtreme",
-        "#TravelTrends",
-        "#ChallengeYourself",
-        "#VacanțeNeobișnuite"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Tendința „darecation”: De ce turiștii aleg vacanțe care le provoacă „durere”. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Incendiu izbucnește pe un iaht de lux lângă Sentosa Cove, Singapore",
       "source": "Bloomberg",
       "url": "https://www.bloomberg.com/news/videos/2026-06-07/fire-erupts-on-luxury-yacht-near-singapore-s-sentosa-cove",
@@ -4522,26 +4882,6 @@
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Fire Erupts on Luxury Yacht Near Singapore's Sentosa Cove. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Mașinile electrice chineze, gata să pătrundă pe piața SUA în ciuda barierelor?",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/masinile-electrice-chineze-ar-putea-ajunge-pe-piata-americana-in-urmatorii-ani-in-pofida-barierelor-comerciale-22471348?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-06-07T08:22:00+00:00",
-      "category": "Business",
-      "summary": "Cu toate că Statele Unite aplică tarife substanțiale și restricții severe pentru vehiculele electrice chinezești, experți din industrie anticipează pătrunderea acestora pe piața americană în următorii ani. Acest lucru s-ar putea realiza prin producție locală sau prin parteneriate cu producători auto occidentali, conform CNBC.",
-      "instagram_caption": "⚡️ Viitorul auto se redefinește! 🚗💨 În ciuda barierelor comerciale și tarifelor ridicate impuse de SUA, experții din industrie sunt de părere că mașinile electrice chinezești își vor face apariția pe piața americană în anii următori. Cum? Prin producție locală sau parteneriate strategice cu giganții auto occidentali. 🌍 Această evoluție, transmisă de CNBC, ar putea schimba dinamica pieței globale. Ce părere ai? 🤔 #MasiniElectrice #EV #China #SUA #IndustrieAuto #Tehnologie #ComertGlobal",
-      "hashtags": [
-        "MasiniElectrice",
-        "EV",
-        "China",
-        "SUA",
-        "IndustrieAuto",
-        "Tehnologie",
-        "ComertGlobal"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Mașinile electrice chineze ar putea ajunge pe piața americană în următorii ani, în pofida barierelor. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Medicina antică chineză ar putea transforma tratamentul împotriva căderii părului",
       "source": "Science Daily",
       "url": "https://www.sciencedaily.com/releases/2026/06/260606015144.htm",
@@ -4558,25 +4898,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Stiinta news: Ancient Chinese medicine could transform hair loss treatment. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Atac armat în Ohio: Cel puțin 12 răniți lângă un festival",
-      "source": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/7/at-least-a-dozen-injured-from-shooting-attack-near-ohio-festival?traffic_source=rss",
-      "date": "2026-06-07T08:18:10+00:00",
-      "category": "International",
-      "summary": "Cel puțin 12 persoane au fost rănite, dintre care două în stare critică, într-un atac armat produs în apropierea Festivalului Old West End din Toledo, Ohio.",
-      "instagram_caption": "🚨 Tragere armată în Toledo, Ohio! Cel puțin 12 persoane au fost rănite, două în stare critică, în urma unui incident violent lângă Festivalul Old West End. Gândurile noastre sunt alături de victime și familiile lor. 🙏 Rămâneți informați! #Toledo #Ohio #AtacArmat #StiriInternationale #ViolentaArmata #SUA",
-      "hashtags": [
-        "#Toledo",
-        "#Ohio",
-        "#AtacArmat",
-        "#StiriInternationale",
-        "#ViolentaArmata",
-        "#SUA"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: At least a dozen injured from shooting attack near Ohio festival. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Povestea de iubire a lui Anthony Head. Actorul din „Buffy the Vampire Slayer” a murit la doar șase luni după pierderea partenerei sale - FilmNow",
@@ -4597,84 +4918,6 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: Povestea de iubire a lui Anthony Head. Actorul din „Buffy the Vampire Slayer” a murit la doar șase l. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Steve Rosenberg: Atacurile cu drone umbresc forumul economic rus de la Sankt Petersburg",
-      "source": "BBC World",
-      "url": "https://www.bbc.com/news/articles/c9q2gp52rgro?at_medium=RSS&at_campaign=rss",
-      "date": "2026-06-07T07:11:18+00:00",
-      "category": "International",
-      "summary": "Steve Rosenberg, editorul BBC pentru Rusia, a remarcat cum forumul economic principal al lui Putin, un eveniment emblematic pentru imaginea economică a țării, a fost complet umbrit de atacurile repetate cu drone ucrainene asupra Sankt Petersburgului. Această situație a deturnat atenția de la agenda economică, concentrând discuțiile pe probleme de securitate și vulnerabilitatea Rusiei în fața conflictului.",
-      "instagram_caption": "Editorul BBC pentru Rusia, Steve Rosenberg, semnalează cum forumul economic de la Sankt Petersburg, un eveniment-cheie pentru Putin, a fost eclipsat de atacurile cu drone ucrainene. 😬 Agenda economică a trecut în plan secund, înlocuită de discuții despre securitate și vulnerabilitate. 💥 Un semnal clar al impactului războiului! #Rusia #Ucraina #AtacuriDrone #SanktPetersburg #ForumEconomic #BBCNews #NEXAS",
-      "hashtags": [
-        "Rusia",
-        "Ucraina",
-        "AtacuriDrone",
-        "SanktPetersburg",
-        "ForumEconomic",
-        "BBCNews",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Steve Rosenberg: Russia's economic forum overshadowed by drone attacks on St Petersburg. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Stresul ne poate face să ne pierdem orientarea în spațiu, arată noi dovezi RMN",
-      "source": "Descopera Ro",
-      "url": "https://www.descopera.ro/stiinta/21082908-stresul-ne-poate-face-sa-ne-pierdem-orientarea-in-spatiu-arata-noi-dovezi-rmn",
-      "date": "2026-06-07T07:00:17+00:00",
-      "category": "Stiinta",
-      "summary": "Persoanele stresate ar putea avea dificultăți mai mari în a se orienta în spațiu, iar cercetătorii din Bochum au identificat un posibil motiv. Hormonul stresului, cortizolul, pare să interfereze cu sistemul cerebral care ajută oamenii […] Articolul Stresul ne poate face să ne pierdem orientarea în spațiu, arată noi dovezi RMN apare prima dată în Descopera .",
-      "instagram_caption": "Stresul ne poate face să ne pierdem orientarea în spațiu, arată noi dovezi RMN\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: Stresul ne poate face să ne pierdem orientarea în spațiu, arată noi dovezi RMN. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "JMGO N3 Ultimate: Noul campion al proiectoarelor portabile 4K",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/reviews/943732/best-portable-4k-projector-review",
-      "date": "2026-06-07T07:00:00+00:00",
-      "category": "AI & Tech",
-      "summary": "Scuze, Anker: JMGO a lansat acum proiectorul portabil de top preferat. N3 Ultimate este un proiector portabil 4K excelent, capabil să gestioneze lumina ambientală moderată chiar și la unghiuri de plasare dificile. Pe timp de noapte, performanța sa poate rivaliza cu instalații home theater mult mai scumpe. După câteva săptămâni de testare, adaptabilitatea remarcabilă a JMGO N3 Ultimate m-a convins complet.",
-      "instagram_caption": "Adio, Anker! 👋 Noul proiector portabil 4K JMGO N3 Ultimate a preluat tronul! 👑 Acest mic gigant nu doar că oferă o imagine 4K spectaculoasă, dar se descurcă de minune și cu lumina ambientală moderată, chiar și din unghiuri dificile. 💡 Pe timp de noapte, transformă orice spațiu într-un home cinema de lux, rivalizând cu sisteme mult mai scumpe. 📽️ Adaptabilitatea sa excepțională te va cuceri. Ești pregătit să-ți upgradezi experiența de vizionare? ✨",
-      "hashtags": [
-        "#JMGO",
-        "#N3Ultimate",
-        "#Proiector4K",
-        "#Portabil",
-        "#Tech",
-        "#GadgetNou",
-        "#HomeCinema",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: JMGO’s N3 Ultimate projector is the new portable 4K champ. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Trump la 80 de ani: energie remarcabilă sau semne de îmbătrânire? (Digi24)",
-      "source": "Google Intl",
-      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPWk1GQnl5Wngtc3hPRmZJZ1VqcHc2X1gxalI3S2hIejBhU0dzeVZ1Y1pHWXgxRzBvMWdQQnFLMEI2MFNERklhOVd6MkpBQmp5SjZWaFliQkRQYzJyOGdyZG9xVW9KeEFRZzgtWFZ5VG94cVpBMmdWb191NHYtODVGd1YwelYxQ1UwVzM4RjdnaTRMT25kTFdtWWczcmRmV0VVc0hKVWl3dFR6WVJlSHJ4VzNvTHlDVWNLNUhfc2NCQ19sNU9tcjdlS0M5ZHg2a2JDM2dqZ0J6OWZYMFJGLU5yQTFrYVdsVV9BblM2Z0tObUhxLWRPMFVidXBqSHFnUmM2ZjJsZHVYLVE2aG5i?oc=5",
-      "date": "2026-06-07T06:58:56+00:00",
-      "category": "International",
-      "summary": "La 80 de ani, Donald Trump stârnește dezbateri aprinse: este un președinte cu o energie remarcabilă sau un lider care începe să-și arate vârsta? Articolul Digi24 explorează această dualitate, analizând vitalitatea percepută a fostului președinte în contextul politic actual și ridicând întrebări esențiale despre impactul vârstei asupra capacității de conducere.",
-      "instagram_caption": "Donald Trump la 80 de ani: Este un președinte plin de energie sau un lider care începe să-și arate vârsta? 🤔 Articolul de la Digi24 analizează contrastul dintre vitalitatea percepută și semnele îmbătrânirii, ridicând o întrebare crucială pentru viitorul său politic. 🇺🇸 Află mai multe! #TrumpLa80 #PoliticaSUA #EnergieVsVarsta #LideriPolitici #Digi24 #NEXAS",
-      "hashtags": [
-        "#TrumpLa80",
-        "#PoliticaSUA",
-        "#EnergieVsVarsta",
-        "#LideriPolitici",
-        "#Digi24",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Trump la 80 de ani: un președinte cu o energie remarcabilă vs. un lider îmbătrânit și o întrebare pe. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Imagini rare cu Irina Fodor și tatăl ei, în curtea casei părintești. Mesajul emoționant transmis de vedetă - Libertatea",
       "source": "Google Ent",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVHpVTlJsVmFkRzhOU1g2TVNxSk5XNEdQZVJSQzVFbHRZMGRQdjVDQVA3VU1zbjR5WTkyZ3VhaUtRdVZxdFJEcE15RFZDa2xNSnVwbXFqS1pSQndyQU11Z3loRjBUVFMwY1J1YmgweW5LQjR0aGlKenloNlBIc1o0LXpCbDhQVVlGa3NLT2gtZEh1R09TTXNMZHRhSlR3VmJQNnh5Y1RJQjlvb1J4bkRMRFNfa0Y?oc=5",
@@ -4693,64 +4936,6 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: Imagini rare cu Irina Fodor și tatăl ei, în curtea casei părintești. Mesajul emoționant transmis de . Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Oameni de știință, expulzați de la conferința de diabet pentru distribuirea de reprinturi",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/science/2026/06/scientists-ejected-from-diabetes-conference-for-distributing-journal-reprints/",
-      "date": "2026-06-06T20:53:07+00:00",
-      "category": "AI & Tech",
-      "summary": "Printre persoanele îndepărtate s-au numărat Steven Kahn, redactor-șef al unei reviste a Asociației Americane de Diabet (ADA), și Desmond Schatz, fost președinte al ADA.",
-      "instagram_caption": "Scandal la o conferință de diabet! 🚨 Oameni de știință de renume, inclusiv Steven Kahn (redactor-șef ADA) și Desmond Schatz (fost președinte ADA), au fost expulzați pentru că au distribuit reprinturi ale unor articole de revistă. Ce credeți despre această decizie? 🤔 Aflați mai multe pe NEXAS.ro! #NEXAS #Stiinta #Diabet #Conferinta #Cercetare #Tehnologie #AITech",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Diabet",
-        "#Conferinta",
-        "#Cercetare",
-        "#Tehnologie",
-        "#AITech"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Scientists ejected from diabetes conference for distributing journal reprints. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "OpenAI dezvăluie Modul Blocare: Protejează datele de atacurile de injectare a prompturilor",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
-      "date": "2026-06-06T20:32:24+00:00",
-      "category": "AI & Tech",
-      "summary": "Chiar și cu noul Mod de Blocare, ChatGPT ar putea rămâne vulnerabil la atacurile de injectare a prompturilor. Obiectivul principal al OpenAI este de a reduce semnificativ probabilitatea ca datele sensibile să fie partajate în timpul acestor interacțiuni.",
-      "instagram_caption": "OpenAI a dezvăluit Modul de Blocare! 🛡️ O nouă funcționalitate menită să protejeze datele sensibile de atacurile de injectare a prompturilor. Chiar dacă vulnerabilitatea nu este eliminată total, scopul este reducerea riscului de expunere a informațiilor confidențiale. Un pas important pentru securitatea AI! 🤖🔒 #OpenAI #ChatGPT #SecuritateAI #TechNews #InovațieAI #ProtectieDate #Cybersecurity",
-      "hashtags": [
-        "OpenAI",
-        "ChatGPT",
-        "SecuritateAI",
-        "TechNews",
-        "InovațieAI",
-        "ProtectieDate",
-        "Cybersecurity"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Astronomii au măsurat câmpurile magnetice ale unor planete unde vântul bate cu peste 25.000 km/h. „Este... - Digi24",
-      "source": "Google Stiinta",
-      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNZ2d4SmowRmdpS21fRVZPTC1CYmMzRUtRNG10Njg5Q3RuczdjaUZMc3hYMnY4SUxicWZiQkxOeThBTUpxalR5aXdqNngtUGx2bDR1aXpyNl9vUk9sWmJOQ1kyMG4yNGxBNUZDVmdSeWNRSzJUTzhtc0J4VVg3VjAxX3N2aVZFbGVvZmo0ZVRDbklSU0t2R3RsQUREV3BLRU8tOXFiTDJRRlpDZ1VqZHplU3gzQXpXaVlsQXZZUE10NVcwZjNiQ0ZuaElQTUJkZlZlUXNwcmJOd08zWmpwSzVwQmpFNUpGcHVmaVhBTldFM2syelFiWm8tNlh3Z29lbUJ3cUhyUDVKNU5lbVZBQ1HSAZgCQVVfeXFMTkwtS2JLeXB1NHZ6ZnlLZFRHOThuV09MYmRaVlYxY3FmbVJYaU9uMEFpNjdvMG5JcWkyOVl3SkZOSnZ4SmFMSDhlVWdMMFA3ak9rM3AzUk1uM3A2VVcyUWJibjN2TnBOSmhYeGxMWk9XRHFaakR1aThaaW8zd0liUzdBQWJuT0FLdEpwOWZJUVR1OUtaS3lhaXpvNExELWV1U0lHWXFzZ3NFa1hnMzRSVGMyUjhtTHhqTVUzdi1qcE1JUV9RTFhSQi1vTFVNVUN5eDdCaThKYnhkMDZsa0E2eVhtaVJSYzg5OEV0eThCNVRrMlpJbW1FOUMtRFBJNlR0ZUhGWlhxUWp0MHViWjhpei1wYVB5b2xvZg?oc=5",
-      "date": "2026-06-06T19:07:00+00:00",
-      "category": "Stiinta",
-      "summary": "Astronomii au măsurat câmpurile magnetice ale unor planete unde vântul bate cu peste 25.000 km/h. „Este... Digi24 După decenii de căutări, astronomii au găsit în afara sistemului solar planete cu câmp magnetic HotNews.ro Astronomii au descoperit accidental câmpuri magnetice în jurul a șapte exoplanete Agerpres Semne ale unor câmpuri magnetice asemănătoare Pământului detectate pe o exoplanetă. Vietnam.vn O descoperire",
-      "instagram_caption": "Astronomii au măsurat câmpurile magnetice ale unor planete unde vântul bate cu peste 25.000 km/h. „Este... - Digi24\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: Astronomii au măsurat câmpurile magnetice ale unor planete unde vântul bate cu peste 25.000 km/h. „E. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Membri ai familiei regale britanice, prezenți la căsătoria fiului prințesei Anne - Agerpres",
       "source": "Google Ent",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaU8yS0M2VE45YktaYVp3b1EwaEZpRXBBWEtFaWdSMl91amIxOUFPRWFRMVRNLWhGd0YtWFpmcUNmSEtNWDUwekJIRnREUklZcE9STnpPaHlJNTJ3UmNieWZmdDR6S0dkRmlVSFdYb3JfR2FocEdDSVVtYk9YYnBBWDVvZTBKTUlCTjA4OExycjFCV2ZXVE5EWnA4WTNNcE1PanpYMTVOTGNhV1BNS1FfTERoTTVXMEdZbEFhN3JQLUM2emE0?oc=5",
@@ -4767,24 +4952,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Entertainment news: Membri ai familiei regale britanice, prezenți la căsătoria fiului prințesei Anne - Agerpres. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Sexul în timpul chimioterapiei: este sigur și ce trebuie să știe pacienții",
-      "source": "CSID",
-      "url": "https://www.csid.ro/sanatate/sanatate-health/sexul-in-timpul-chimioterapiei-este-sigur-si-ce-trebuie-sa-stie-pacientii-21205188/",
-      "date": "2026-06-06T15:07:08.051772+00:00",
-      "category": "Sanatate",
-      "summary": "Un diagnostic de cancer și tratamentele care îl urmează pot aduce numeroase întrebări legate nu doar de sănătatea fizică, ci și de viața intimă. Articolul Sexul în timpul chimioterapiei: este sigur și ce trebuie să știe pacienții apare prima dată în CSID: Ce se întâmplă Doctore? .",
-      "instagram_caption": "Sexul în timpul chimioterapiei: este sigur și ce trebuie să știe pacienții\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Sexul în timpul chimioterapiei: este sigur și ce trebuie să știe pacienții. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Războiul din Iran se apropie de 100 de zile",
@@ -4806,28 +4973,6 @@
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: War in Iran Approaches 100 Day Mark. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "ASCO 2026: Sunvozertinib, superior chimioterapiei în cancerul pulmonar cu mutații EGFR exon20ins",
-      "source": "Google Sanatate",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcTJUY0dmYUFHQnQ4d2hJNWpGVUNnNjRDTXpYRUpCMEk1Zk5Ua0RDTUlLUEktZGNiTzhYOEF4SUxRZmEtdnBFS2J0LXBDcE1zSU83U1dicWxsQ1k1cGhYeDBnckFxZ2dGTVpTM3hYUHJkblZEZ3VpWE1ERlBDejlldTFrMTVZeEEzRl8xZHprLXVVT2x2UVBKTEFNOXkxNUJQRzc5NnhB0gGrAUFVX3lxTE95MjFmeFJrV09jcHk1dkV2Z2hQWFdKY3NMUWhDZEk2ZkF3SmlFWFpQM1hmMjRxUHdQYnZQODFfODhVTkFNV0ZTbVVtbzN1OHVJdnRQT2FHQUtPQjY5a0F1dGF5bVdTaGtLbTU4dWxXWkhCRUpLUnJKelh3T09IV2ZrY0VYWVpHQVlieGxWZFZzRmR6aHJ1endnRWFkMHd1OFpVdzF5ZVl0ZFVvdw?oc=5",
-      "date": "2026-06-06T15:00:46+00:00",
-      "category": "Sanatate",
-      "summary": "La conferința ASCO 2026, au fost prezentate date promițătoare despre Sunvozertinib, un nou tratament care demonstrează superioritate față de chimioterapie ca terapie de primă linie. Acesta vizează pacienții cu o formă specifică de cancer pulmonar, caracterizată prin mutații EGFR exon20ins. Rezultatele subliniază un progres important în abordarea terapeutică pentru această subpopulație de pacienți, oferind o nouă speranță și o opțiune de tratament mai eficientă, conform raportărilor.",
-      "instagram_caption": "🌟 Veste importantă de la ASCO 2026! Sunvozertinib se dovedește superior chimioterapiei ca tratament de primă linie pentru pacienții cu cancer pulmonar cu mutații EGFR exon20ins. 🧬 Aceasta reprezintă o evoluție semnificativă în lupta împotriva cancerului pulmonar, oferind noi speranțe și opțiuni terapeutice mai eficiente pentru o categorie specifică de pacienți. Un pas uriaș înainte în medicina oncologică! 💪 Ce părere aveți despre aceste progrese?",
-      "hashtags": [
-        "#Sunvozertinib",
-        "#CancerPulmonar",
-        "#EGFRMutații",
-        "#ASCO2026",
-        "#Oncologie",
-        "#TratamentNou",
-        "#Medicină",
-        "#Sănătate",
-        "#CercetareMedicală"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: ASCO 2026. Sunvozertinib, superior chimioterapiei în prima linie pentru pacienții cu cancer pulmonar. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Motivul numărul 1 pentru a cumpăra și deține Walmart pentru totdeauna nu are practic nimic de-a face cu magazinele sale din cărămidă și mortar",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/markets/stocks/articles/no-1-reason-buy-hold-144344084.html",
@@ -4845,24 +4990,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: The No. 1 Reason to Buy and Hold Walmart Forever Has Virtually Nothing to Do With Its Brick-and-Mort. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "BTA / De la un singur container în Antarctica, Bulgaria a construit un oraș, spune comandantul bazei antarctice - Agerpres",
-      "source": "Google Stiinta",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPZUM3Ym95UDQ5bTNnSFk4ODRsazJsZGgwTzhBM3pTckNWU1kyX09MeUVqV1MwTGpSWEZQbU8tV1ZWWVBSdnJ1NW9wSkR0aldtcHNRdDA3ejJFTUpEcl9KQklhMEllMGdTX291T1RtTjBpNTd6U1hOam1RZjZDZ25ZR1czNXBUd21aZ1RreUtWZzhndTlhQXBTZ29PWFhSWHVPRlhOV3lLU1lQcW1jXzVEZ2d4QThrWlZ2V2JXdUFuaDR2WktQSE11NmotVFZEclhVZnBPUzUyNkxzUzA0d1Q0a3Rn?oc=5",
-      "date": "2026-06-06T14:03:09+00:00",
-      "category": "Stiinta",
-      "summary": "BTA / De la un singur container în Antarctica, Bulgaria a construit un oraș, spune comandantul bazei antarctice Agerpres",
-      "instagram_caption": "BTA / De la un singur container în Antarctica, Bulgaria a construit un oraș, spune comandantul bazei antarctice - Agerpres\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: BTA / De la un singur container în Antarctica, Bulgaria a construit un oraș, spune comandantul bazei. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Dua Lipa și Callum Turner: Iubire ca-n filme și o petrecere siciliană controversată",
@@ -4904,25 +5031,6 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: Andreea Marin rupe tăcerea la 51 de ani: „Uneori nu sunt plăcută, tocmai pentru că sunt directă” - L. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Oura Ring 5: Du-ți sănătatea și fitness-ul la nivelul următor cu noul inel inteligent!",
-      "source": "Healthline",
-      "url": "https://www.healthline.com/health-news/oura-ring-5-new-health-fitness-features",
-      "date": "2026-06-06T08:20:19.132981+00:00",
-      "category": "Sanatate",
-      "summary": "Noul Oura Ring 5 este mai mic și include funcții îmbunătățite pentru a-ți optimiza monitorizarea sănătății și fitness-ului. Oura Ring a anunțat lansarea celei mai noi generații a inelului său inteligent, Oura Ring 5. Acesta promite să fie mai compact, mai proactiv și mai personalizat. Cu noul pachet software, Oura Ring oferă funcții actualizate, capabile să monitorizeze peste 50 de parametri.",
-      "instagram_caption": "Pregătește-te pentru nivelul următor în monitorizarea sănătății! 🚀 Noul Oura Ring 5 a sosit, mai mic și mai inteligent ca niciodată. Cu funcții îmbunătățite și capacitatea de a urmări peste 50 de parametri, acest inel inteligent îți oferă o experiență personalizată de fitness și sănătate. ✨ Ce metrică ești cel mai entuziasmat să monitorizezi? Spune-ne în comentarii! 👇 #OuraRing5 #Sanatate #Fitness #TehnologieWearable #InelInteligent",
-      "hashtags": [
-        "#OuraRing5",
-        "#Sanatate",
-        "#Fitness",
-        "#TehnologieWearable",
-        "#InelInteligent",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Oura Ring 5: Upgraded Smart Ring Takes Your Health, Fitness to the Next Level. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "De ce Susquehanna construiește o afacere de piață de predicții | Loturi ciudate",
       "source": "Bloomberg",
       "url": "https://www.bloomberg.com/news/videos/2026-06-06/why-susquehanna-is-building-a-prediction-market-business-video",
@@ -4958,62 +5066,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Entertainment news: Cum au apărut Grasu XXL și Laura Andreșan de ziua fiicei lor, Maria, care a împlinit 7 ani - Liberta. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cum a fost recuperat de la mafie palatul sicilian în care Dua Lipa și-a organizat petrecerea de nuntă care... - Digi24",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxObURtTVVDXzFuQUxjZFhtNFo5QUtGemVKYkxCejlGRzNSNHlIXzBPSFA4T2R3ZXdObEJqVm4wcG5RcExMMnhYZEVSYlJwa0lyeUo5bWN2cDNFdGgzZnFaSDd1YkNSbzhLbzE5Skx5ZjE0YmFHcFp3YmZIekxFRWo5c1lwWTlrMVBWQzg3R1FnX2Vpd2tudHlIeWRuZ21PVUZUTGltbEQ2ZGVVVEQwWkZMdW42VTdEeWFWS1FIQ3ZaYjFIQVRRcEFaTXBvSVBJUmdpUHlwcWJfR2ZsTHVfVEYtZDQ2VWZROWVIYVhKSjNJbW9lNjFQWnd5TzNvZ3dOLXZyREdVWdIBjwJBVV95cUxPTVM2TUo2MHcwenZUUUM1ZE5mUnE3MldCOWY2V0ExbVNEWHFGamlPR3pLdWZLdkFaZF9hYWp4RUhwM2FZNkZwZkE5VWMzYVY1R3BSa0p2WFQ3ZHpHcFlQczBQMmJNM0d5eG0wRGxXRG9KY2lMUnZXazNGOTlEaUZobDZieG9OemhYbzNPRnBIblN2OHJtUmhoeTVxb1U2amxrcXRPMk5YRHRWOWZLbGdWT08zcEFzN3BEZGtMLXFpanNRN0N0RXVxSnYzQVNMR0M0UnNySG96MnE2NlV6U2NUQXBPMlVidHhOQTRhRWl3MkYwWlczWkJuTGZ2eHlfUHpFU3RoSmdNbFpjeC10NU1r?oc=5",
-      "date": "2026-06-06T06:05:37+00:00",
-      "category": "Entertainment",
-      "summary": "Cum a fost recuperat de la mafie palatul sicilian în care Dua Lipa și-a organizat petrecerea de nuntă care... Digi24 Petrecerea de nuntă a cântăreței Dua Lipa la Palermo stârnește nemulțumirea localnicilor Agerpres Galerie Foto: Sport și plimbare, apoi o nuntă de trei zile. Dua Lipa și Callum Turner, surprinși în Palermo înainte de petrecerea lor ca-n povești ProFM.ro Dua Lipa și Callum Turner, nuntă de vis în Italia",
-      "instagram_caption": "Cum a fost recuperat de la mafie palatul sicilian în care Dua Lipa și-a organizat petrecerea de nuntă care... - Digi24\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Cum a fost recuperat de la mafie palatul sicilian în care Dua Lipa și-a organizat petrecerea de nunt. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Vin banii: 5 zodii dau lovitura financiară până pe 21 iunie - Jurnalul",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMmViYmVpdGxDS3lyWkJQMDl0UHFmM0dySndMdldVQjREN082VktRdHZpRTdkclp2QU9XOUxsanNrd1lEdDZiTkF1ZnVMZlNXcWpDMjZDa1prQTc1bE1yUElUUXJHNjZsVWZ1b1dLX0VWMjNoNDVGU08xaFhUdTJJcndESU1UazRDRGJnRlVwQlJ6MU9XQ3FZc05UN2NGVnFDaUHSAZsBQVVfeXFMTklPX3Y1Y24xVFlQZG9fZTZRbWRKNXh6OXh2Z1BTNG5iaEdIdzJqLVJGUVNjNFpqNnFhOHdqTkJJNF83RzkwNmk5M0FWUEtOczA3VUpveFRlYUx6TElzME5SVFluZ0ctUGd1QldpTjctbnZQZkpybV9ja2hYYko5ZW5fYnBhaW1TMnhCQ2YtWk05bmJDZ1NyaU4xUnM?oc=5",
-      "date": "2026-06-06T05:00:01+00:00",
-      "category": "Entertainment",
-      "summary": "Vin banii: 5 zodii dau lovitura financiară până pe 21 iunie Jurnalul Horoscopul de mâine: 4 zodii vor avea o vară prosperă, vor întâlni evenimente de bun augur, vor atinge succesul și se vor bucura de o viață de familie împlinită. Vietnam.vn În a doua jumătate a anului 2026, trei semne zodiacale vor experimenta o creștere puternică, o bogăție înfloritoare și își vor atinge obiectivele rapid, constant și puternic. Vie",
-      "instagram_caption": "Vin banii: 5 zodii dau lovitura financiară până pe 21 iunie - Jurnalul\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Vin banii: 5 zodii dau lovitura financiară până pe 21 iunie - Jurnalul. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Ce încă îl emoționează pe starul din M*A*S*H*: „Am trăit cu folos”",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMVJMVTllRDVSYUtfeWdiTXZKVUNJRHVoRFBPd0xNZzFqbUg3ZVVqLS1ZX3hQTFdMN2pmNGJyN1hGSEpYanlrMzd5MXBVYTJlY0ZFR052T0QtOWhSUng1TTUxM05TdEdadlBWcmY2ckpZanpuV1lqc2VDeXVPbFhkVVZjaFV0d2hiY0M4TndQM3d6VUhsSmxaeXZVaUFBNktsc3YyN2FSWEdydVM4Rm0zWGNiOC1ZUXQybDA1YlZiZzRadndFd2M4Mlh6azROclIzM2VyYg?oc=5",
-      "date": "2026-06-06T04:16:48+00:00",
-      "category": "Entertainment",
-      "summary": "Decenii după finalul serialului cult M*A*S*H*, unul dintre actorii săi principali a mărturisit ce îl emoționează. Sentimentul \"am trăit cu folos\" vine din impactul durabil al show-ului asupra publicului. M*A*S*H* a depășit o simplă comedie, abordând teme esențiale despre umanitate, suferință și speranță. Recunoașterea valorii continue a muncii sale, care a rezonat cu milioane, îi aduce o satisfacție rară, confirmând relevanța atemporală a producției.",
-      "instagram_caption": "Decenii după încheierea serialului legendar M*A*S*H*, un star al producției a dezvăluit ce îl mai emoționează profund: sentimentul că „a trăit cu folos”! 🥹 Show-ul a avut un impact uriaș, abordând teme de umanitate și speranță care rezonează și azi cu milioane de oameni. ❤️ O recunoaștere a valorii atemporale a muncii lor. Ce părere aveți? 👇",
-      "hashtags": [
-        "#MASH",
-        "#SerialCult",
-        "#Nostalgie",
-        "#ImpactDurabil",
-        "#TVClasics",
-        "#Emotie",
-        "#ViataCuFolos"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Starul din M*A*S*H* numește lucrul care încă îl emoționează la decenii după încheierea serialului: „. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "CEO-ul influenţează până la 29% din performanţa financiară a unei companii. De ce ajung în funcţii de conducere oamenii care nu sunt neapărat cei mai buni lideri?",
@@ -5052,44 +5104,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: AstraZeneca Broadens US Growth Push. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cele mai importante rezultate ale apelului de venituri din Quanex Building Products T2",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/quanex-building-products-q2-earnings-161036265.html",
-      "date": "2026-06-05T16:10:36+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Cele mai importante rezultate ale apelului de venituri din Quanex Building Products T2",
-      "instagram_caption": "Quanex Building Products Q2 Earnings Call Highlights\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Quanex Building Products Q2 Earnings Call Highlights. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Medicamente românești, la căutare în străinătate. Antibiotice Iași lansează vânzările în Spania",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/povesti-cu-profit/medicamente-romanesti-la-cautare-in-strainatate-antibiotice-iasi-lanseaza-vanzarile-in-spania-22469510?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-06-05T09:07:00+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Producătorul de medicamente Antibiotice marchează progrese semnificative în implementarea strategiei de internaționalizare, cu relansarea creșterii vânzărilor pe piața Statelor Unite ale Americii și dezvoltarea prezenței în Europa prin accesarea de noi piețe.",
-      "instagram_caption": "Medicamente românești, la căutare în străinătate. Antibiotice Iași lansează vânzările în Spania\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Medicamente românești, la căutare în străinătate. Antibiotice Iași lansează vânzările în Spania. Professional photorealistic style. No text, no logos, no watermarks."
     }
   ]
 }
