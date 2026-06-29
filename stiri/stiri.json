@@ -1,17 +1,543 @@
 {
-  "updated_at": "2026-06-28T15:19:44.618896+00:00",
+  "updated_at": "2026-06-29T10:20:53.664783+00:00",
   "run_log": {
     "AI & Tech": 3,
     "Sport": 3,
     "Sanatate": 3,
     "Business": 3,
     "International": 3,
-    "Entertainment": 0,
+    "Entertainment": 3,
     "Romania": 3,
     "Stiinta": 3,
     "Bursa & Piete": 3
   },
   "items": [
+    {
+      "title": "Rusia Unită: „A fi de partea lui Putin este minimul necesar” la alegerile din Rusia",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/externe/rusia/sustinerea-lui-putin-este-minimul-necesar-cine-l-sprijina-pe-liderul-de-la-kremlin-la-urmatoarele-alegeri-organizate-in-rusia-3838311",
+      "date": "2026-06-29T10:17:07+00:00",
+      "category": "Romania",
+      "summary": "Partidul de guvernământ „Rusia Unită” a dezvăluit un afiș de campanie pentru Vladimir Putin la congresul său de la Moscova. Sloganul, „A fi de partea lui Putin este minimul necesar”, transmite un mesaj politic și simbolic puternic în contextul alegerilor viitoare. Informația a fost publicată de Meduza.",
+      "instagram_caption": "🗳️🇷🇺 Mesaj clar de la Rusia Unită! La congresul de la Moscova, partidul de guvernământ a dezvăluit afișul de campanie pentru Vladimir Putin: „A fi de partea lui Putin este minimul necesar”. Un slogan cu o încărcătură politică și simbolică puternică, subliniind așteptările de loialitate înainte de alegerile viitoare. Ce crezi despre această strategie? 🤔 #RusiaUnita #Putin #AlegeriRusia #PoliticaRusia",
+      "hashtags": [
+        "#RusiaUnita",
+        "#Putin",
+        "#AlegeriRusia",
+        "#PoliticaRusia"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: „Susținerea lui Putin este minimul necesar”. Cine-l sprijină pe liderul de la Kremlin la următoarele. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Real estate-ul global se reașază până în 2026: lichiditate +18%, ultra-luxury +115%",
+      "source": "Forbes Romania",
+      "url": "https://www.forbes.ro/analiza-forbes-romania-real-estate-ul-global-se-reasaza-in-2026-pe-fondul-lichiditatii-in-crestere-cu-18-si-al-boomului-ultra-luxury-de-115-508774",
+      "date": "2026-06-29T10:15:56+00:00",
+      "category": "Business",
+      "summary": "Piețele globale de real estate se reconfigurează, conform analizei Forbes România. A doua parte a anului aduce o competiție record între creditori, o creștere spectaculoasă de 115% a tranzacțiilor ultra-luxury și un avans de 9,3% în cererea de leasing office-industrial. Se observă repoziționări strategice în Europa și Asia, pe fondul unei lichidități globale care a crescut cu 18% în T2 2026, semnalând o nouă fază de dezvoltare. Această dinamică va modela piața până în 2026.",
+      "instagram_caption": "Piața imobiliară globală e într-o transformare majoră! 🌍 Analiza Forbes România arată că până în 2026, ne așteaptă o realiniere strategică. Ce e în joc? Lichiditatea a crescut cu 18% în T2 2026, iar tranzacțiile ultra-luxury au explodat cu 115%! 🤯 Plus, cererea de spații office-industriale e sus, cu 9,3%. Europa și Asia sunt în centrul repoziționărilor. Ești pregătit pentru noua fază? 👇 Citește mai mult!",
+      "hashtags": [
+        "#RealEstateGlobal",
+        "#Imobiliare",
+        "#ForbesRomania",
+        "#Lichiditate",
+        "#UltraLuxury",
+        "#Investitii",
+        "#PiataImobiliara",
+        "#Economie",
+        "#Tendinte2026"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Analiza Forbes România: Real estate-ul global se reașază în 2026, pe fondul lichidității în creștere. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Căldura și țiuitul în urechi: Medicii dezvăluie legătura surprinzătoare",
+      "source": "CSID",
+      "url": "https://www.csid.ro/stiri/tiuit-in-urechi-dupa-expunerea-la-caldura-medicii-explica-legatura-surprinzatoare-dintre-valurile-de-canicula-si-tinitus-21230808/",
+      "date": "2026-06-29T10:15:40.140618+00:00",
+      "category": "Sanatate",
+      "summary": "Ai experimentat țiuit în urechi după o expunere prelungită la soare sau pe fondul valurilor de caniculă? Medicii subliniază că acest fenomen, cunoscut sub numele de tinitus, ar putea avea o legătură surprinzătoare cu temperaturile ridicate. Află cum deshidratarea, stresul termic și alte mecanisme complexe pot influența apariția sau agravarea tinitusului în perioadele de căldură extremă.",
+      "instagram_caption": "Simți un țiuit neplăcut în urechi după o zi toridă? ☀️ Nu ești singur! Medicii dezvăluie o legătură surprinzătoare între valurile de caniculă și tinitus. 👂🥵 Deshidratarea și stresul termic pot fi factori importanți. Află de ce căldura extremă îți poate afecta auzul și cum să te protejezi! 💧",
+      "hashtags": [
+        "Tinitus",
+        "Canicula",
+        "Sanatate",
+        "Urechi",
+        "Vara",
+        "Medicina",
+        "CalduraExtrema",
+        "StresTermic"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Țiuit în urechi după expunerea la căldură? Medicii explică legătura surprinzătoare dintre valurile d. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Parcul Liniei, Faza 3: Au început plantările de arbori în noul parc din Sectorul 6",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/stiri/social/foto-video-noul-parc-din-bucuresti-au-inceput-plantarile-de-arbori-la-faza-3-a-parcului-liniei-22498342?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-06-29T10:12:00+00:00",
+      "category": "Business",
+      "summary": "Veste bună din Sectorul 6 al Capitalei! Au demarat plantările de arbori pentru Faza 3 a Parcului Liniei, un proiect ambițios ce transformă vechile căi ferate într-un nou spațiu verde urban. Această etapă este crucială pentru amenajarea completă a parcului, care va oferi locuitorilor din București un loc modern pentru relaxare și activități în natură. Contribuind la îmbunătățirea calității aerului și a biodiversității, Parcul Liniei devine o oază verde esențială pentru oraș.",
+      "instagram_caption": "Vesti excelente din Sectorul 6! 🎉 Au început plantările de arbori pentru Faza 3 a Parcului Liniei! 🌳🌱 Acest nou spațiu verde promite să transforme vechile căi ferate într-o oază modernă de relaxare și natură urbană. Ne bucurăm să vedem cum Bucureștiul devine tot mai verde și mai prietenos! 💚 Ce așteptați cel mai mult de la Parcul Liniei? Spuneți-ne în comentarii! 👇",
+      "hashtags": [
+        "ParculLiniei",
+        "Bucuresti",
+        "Sector6",
+        "SpatiuVerde",
+        "NaturaUrbana",
+        "ProiectUrban",
+        "VerdePentruBucuresti",
+        "PlantarideArbori"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: FOTO&VIDEO Noul parc din București. Au început plantările de arbori la Faza 3 a Parcului Liniei. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Rivalul Norris, „șocat” de ritmul foarte slab avut de Ferrari în Austria: „îmi pare rău pentru ei”",
+      "source": "G4Media",
+      "url": "https://www.g4media.ro/rivalul-norris-socat-de-ritmul-foarte-slab-avut-de-ferrari-in-austria-imi-pare-rau-pentru-ei.html",
+      "date": "2026-06-29T10:11:29+00:00",
+      "category": "Romania",
+      "summary": "Pilotul McLaren Lando Norris își exprimă surprinderea și compasiunea față de echipa Ferrari, după performanța slabă înregistrată de Scuderia în cursa de Formula 1 din Austria. Norris s-a declarat șocat de ritmul foarte lent al monoposturilor SF-26 pe circuitul de la Spielberg. Situația a generat reacții puternice, inclusiv din partea publicației Gazzetta dello Sport, care s-a întrebat dacă „visul frumos s-a terminat?” în urma „naufragiului” Ferrari.",
+      "instagram_caption": "Lando Norris de la McLaren, șocat de ritmul slab al Ferrari în Austria! 😲 'Îmi pare rău pentru ei', a declarat pilotul, vizibil surprins de performanța sub așteptări a Scuderiei pe circuitul de la Spielberg. Monoposturile SF-26 au avut dificultăți majore. Gazzetta dello Sport se întreabă deja: „Visul frumos s-a terminat?” 🤔 Un weekend greu pentru Ferrari. 🏎️💨",
+      "hashtags": [
+        "F1",
+        "Ferrari",
+        "LandoNorris",
+        "AustriaGP",
+        "McLaren"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Rivalul Norris, „șocat” de ritmul foarte slab avut de Ferrari în Austria: „îmi pare rău pentru ei”. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Live Blog Wimbledon 2026: Cristian vs. Jovic în desfășurare. Românca are un meci greu!",
+      "source": "Fanatik",
+      "url": "https://www.fanatik.ro/wimbledon-2026-live-blog-tot-ce-trebuie-sa-stii-despre-grand-slamul-londonez-21494808",
+      "date": "2026-06-29T10:11:02+00:00",
+      "category": "Sport",
+      "summary": "NEXAS îți aduce live blog-ul complet pentru Wimbledon 2026. Urmărește în timp real meciul Jaqueline Cristian - Iva Jovic și află tot ce trebuie să știi: de la prezența româncelor pe tabloul principal și programul complet, până la detaliile despre premii și cotele pentru câștigarea turneului. Fii la curent cu toate informațiile esențiale!",
+      "instagram_caption": "🎾 Wimbledon 2026 este LIVE pe NEXAS! Urmărește acum meciul tensionat dintre Jaqueline Cristian și Iva Jovic. O româncă se luptă pe teren! 💪 Nu rata niciun moment din cel mai prestigios turneu de tenis. Îți aducem toate detaliile: româncele de pe tablou, programul complet, premii și cotele de pariuri. Fii la curent cu tot ce se întâmplă! 🔔",
+      "hashtags": [
+        "#Wimbledon2026",
+        "#JaquelineCristian",
+        "#TenisLive",
+        "#NEXAS",
+        "#GrandSlam"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Wimbledon 2026, live blog. Jaqueline Cristian – Iva Jovic se joacă acum! Meci dificil pentru româncă. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ce se poate întâmpla dacă nu mai mâncăm deloc zahăr? Rezultatul neașteptat al unui studiu",
+      "source": "HotNews",
+      "url": "https://hotnews.ro/ce-se-poate-intampla-daca-nu-mai-mancam-deloc-zahar-rezultatul-neasteptat-al-unui-studiu-2286856",
+      "date": "2026-06-29T10:10:02+00:00",
+      "category": "Romania",
+      "summary": "Un studiu recent pe șoareci, prezentat la ENDO 2026 (congresul anual al Societății de Endocrinologie, Chicago), indică efecte metabolice neașteptate la eliminarea completă a zahărului de masă (zaharozei) dintr-o dietă săracă în grăsimi. Cercetătorii de la Dasman Diabetes Institute din Kuwait City au investigat implicațiile acestei schimbări, sugerând că impactul asupra metabolismului poate fi mai complex decât s-ar anticipa.",
+      "instagram_caption": "Știi ce se întâmplă când renunți complet la zahăr? 🧐 Un studiu pe șoareci, prezentat la ENDO 2026, arată că eliminarea totală a zahărului de masă dintr-o dietă săracă în grăsimi ar putea avea efecte metabolice neașteptate! 🐭🔬 Cercetătorii de la Dasman Diabetes Institute din Kuwait City ne avertizează că impactul poate fi surprinzător. Fii informat! #NEXAS #Zahar #Dieta #Sanatate #Studiu #Endocrinologie",
+      "hashtags": [
+        "NEXAS",
+        "Zahar",
+        "Dieta",
+        "Sanatate",
+        "Studiu",
+        "Endocrinologie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Ce se poate întâmpla dacă nu mai mâncăm deloc zahăr? Rezultatul neașteptat al unui studiu. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Dinamo București, mutare decisivă: Atacant nou pentru ofensivă",
+      "source": "DigiSport",
+      "url": "https://www.digisport.ro/fotbal/liga-1/dinamo-si-a-adus-atacant-4346955",
+      "date": "2026-06-29T10:09:35+00:00",
+      "category": "Sport",
+      "summary": "Dinamo București a oficializat astăzi transferul unui nou atacant, conform informațiilor DigiSport. Această mutare strategică vine în contextul eforturilor clubului de a-și consolida lotul și de a îmbunătăți performanțele ofensive. Conducerea tehnică și-a exprimat încrederea că noul jucător va aduce un plus de valoare și va contribui semnificativ la obiectivele echipei în campionat. Detaliile contractuale complete urmează să fie făcute publice. Este o veste importantă pentru fanii \"câinilor roșii\".",
+      "instagram_caption": "OFICIAL! 🔴⚪ Dinamo București și-a adus un nou atacant pentru a întări ofensiva! 💪 Clubul continuă eforturile de consolidare a lotului pentru a atinge obiectivele propuse. 🔥 Ce părere aveți despre această mutare? Suntem gata să vedem noul jucător în acțiune! ⚽ #Dinamo #Transfer #Atacant #Liga1 #Fotbal #NEXAS",
+      "hashtags": [
+        "#Dinamo",
+        "#DinamoBucuresti",
+        "#Transfer",
+        "#Atacant",
+        "#Fotbal",
+        "#Liga1",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Dinamo și-a adus atacant. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Dinamo București încă îl vrea pe Blănuță! Decizia finală, la Dinamo Kiev",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-intern/superliga/dinamo-transfer-vladislav-blanuta-dinamo-kiev-2-20472919",
+      "date": "2026-06-29T10:07:09+00:00",
+      "category": "Sport",
+      "summary": "Dinamo București nu a renunțat la transferul lui Vladislav Blănuță (24 de ani). Andrei Nicolescu a confirmat că decizia finală privind aducerea atacantului aparține clubului Dinamo Kiev. Fotbalistul român a fost transferat în Ucraina pentru aproximativ două milioane de euro, dar nu a reușit să se impună la noua sa echipă, fapt ce deschide ușa unei posibile mutări. Situația rămâne incertă, cu viitorul lui Blănuță depinzând de hotărârea clubului ucrainean.",
+      "instagram_caption": "🚨 Știri de ultimă oră din mercato! Dinamo București nu a renunțat la transferul atacantului Vladislav Blănuță (24 de ani) ⚽️. Decizia finală privind mutarea sa aparține exclusiv clubului Dinamo Kiev. Chiar dacă a fost cumpărat cu 2 milioane de euro, Blănuță nu a reușit să se impună în Ucraina, deschizând o fereastră pentru o posibilă revenire în România. Rămâne de văzut ce vor decide ucrainenii! 🤔",
+      "hashtags": [
+        "DinamoBucuresti",
+        "VladislavBlanuta",
+        "DinamoKiev",
+        "Mercato",
+        "Transferuri",
+        "FotbalRomania",
+        "Liga1",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: MERCATO Dinamo n-a renunțat la transferul lui Vladislav Blănuță! Decizia e la Dinamo Kiev. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ce spune plânsul despre personalitatea ta: biologia lacrimilor",
+      "source": "Descopera Ro",
+      "url": "https://www.descopera.ro/stiinta/21095865-ce-spune-plansul-despre-personalitatea-ta-biologia-lacrimilor",
+      "date": "2026-06-29T10:00:47+00:00",
+      "category": "Stiinta",
+      "summary": "Puține comportamente umane sunt atât de universale și, în același timp, atât de diferite de la o persoană la alta precum plânsul. Unii oameni lăcrimează ușor la un film, la o melodie sau în timpul […] Articolul Ce spune plânsul despre personalitatea ta: biologia lacrimilor apare prima dată în Descopera .",
+      "instagram_caption": "Ce spune plânsul despre personalitatea ta: biologia lacrimilor\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Ce spune plânsul despre personalitatea ta: biologia lacrimilor. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Energie: România are nevoie de 50.000 de angajați până în 2030. Toți greii din industrie fac recrutări.",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/special/analiza-luni-tara-tara-vrem-oameni-energie-solarele-eolienele-23183574",
+      "date": "2026-06-29T10:00:00+00:00",
+      "category": "Business",
+      "summary": "Aproape toate companiile din sectorul energetic românesc, de la cele de infrastructură la dezvoltatorii și investitorii în proiecte de energie regenerabilă și stocare, sunt în căutare activă de forță de muncă. Chiar și domenii de vârf tehnologic, precum energia nucleară, raportează un deficit de personal.",
+      "instagram_caption": "🚀 Veste importantă pentru viitorul energetic al României! Sectorul de energie este într-o creștere accelerată și va crea peste 50.000 de noi locuri de muncă până în 2030. ⚡️ De la proiecte solare și eoliene, la stocare de energie și tehnologie nucleară, oportunitățile de carieră sunt imense! Ești gata să faci parte din această transformare? Descoperă rolurile și contribuie la un viitor mai sustenabil! 💡🌍 #EnergieRomania #JoburiEnergie #CariereVerzi #ViitorSustenabil #NEXAS",
+      "hashtags": [
+        "EnergieRomania",
+        "JoburiEnergie",
+        "CariereVerzi",
+        "ViitorSustenabil",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Analiza de luni. Ţară, ţară, vrem oameni în energie. Solarele, eolienele şi stocarea vor avea nevoie. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Luna căpșunilor răsare în seara asta. Iată la ce să vă așteptați de la luna plină din iunie",
+      "source": "Space.com",
+      "url": "https://www.space.com/stargazing/the-strawberry-moon-rises-june-29-here-is-what-to-expect-from-june-full-moon",
+      "date": "2026-06-29T10:00:00+00:00",
+      "category": "Stiinta",
+      "summary": "Nu ratați răsăritul plin al Lunii Căpșuni din iunie în această seară (29 iunie), marcând prima lună plină a verii cu o strălucire aurie și o iluzie a lunii atrăgătoare.",
+      "instagram_caption": "The Strawberry Moon rises tonight. Here's what to expect from June's full moon\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: The Strawberry Moon rises tonight. Here's what to expect from June's full moon. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Boom de angajări în energie: Peste 50.000 de specialiști căutați în regenerabile până în 2030",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/special/analiza-luni-tara-tara-vrem-oameni-energie-solarele-eolienele-23183574",
+      "date": "2026-06-29T10:00:00+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Sectorul energetic românesc se confruntă cu o nevoie urgentă de forță de muncă, estimând peste 50.000 de noi angajați până în 2030. Companiile, de la infrastructură la dezvoltatori de proiecte regenerabile (solare, eoliene) și soluții de stocare, fac recrutări masive. Chiar și domeniile de vârf, precum energia nucleară, caută specialiști, semnalând noi oportunități de carieră, nu doar de investiții.",
+      "instagram_caption": "Viitorul energiei în România sună promițător pentru cariere! ⚡️ Se estimează că până în 2030, sectorul energetic va avea nevoie de peste 50.000 de noi angajați. Companiile caută activ specialiști în regenerabile (solare, eoliene), stocare și chiar energie nucleară. Oportunități uriașe pentru cei ce își doresc un impact real! Ești pregătit să construiești energia de mâine? 💡💚",
+      "hashtags": [
+        "#EnergieRomania",
+        "#CariereInEnergie",
+        "#Regenerabile",
+        "#LocuriDeMunca",
+        "#ViitorVerde",
+        "#Energie2030"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Analiza de luni. Ţară, ţară, vrem oameni în energie. Solarele, eolienele şi stocarea vor avea nevoie. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ratele HELOC și împrumuturile cu capital propriu, luni, 29 iunie 2026: Rata HELOC actuală este cu 61 de puncte de bază mai mică decât rata HEL",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-and-home-equity-loan-rates-monday-june-29-2026-current-heloc-rate-is-61-basis-points-lower-than-hel-rate-100000263.html",
+      "date": "2026-06-29T10:00:00+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Ratele HELOC și împrumuturile cu capital propriu, luni, 29 iunie 2026: Rata HELOC actuală este cu 61 de puncte de bază mai mică decât rata HEL",
+      "instagram_caption": "HELOC and home equity loan rates, Monday, June 29, 2026: Current HELOC rate is 61 basis points lower than HEL rate\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: HELOC and home equity loan rates, Monday, June 29, 2026: Current HELOC rate is 61 basis points lower. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "„Șterse din istorie”: Un secol de la revoltele anti-grecești din Canada",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/6/29/erased-from-history-a-century-on-from-canadas-anti-greek-riots?traffic_source=rss",
+      "date": "2026-06-29T09:47:32+00:00",
+      "category": "International",
+      "summary": "Istorici și membri ai comunității grecești afirmă că revoltele din 1918 din Toronto sunt o oglindă a retoricii anti-imigranți și a xenofobiei prezente în societatea actuală.",
+      "instagram_caption": "Acum un secol, Canada era scena unor revolte violente anti-grecești. Istoricii și comunitatea greacă spun că evenimentele din 1918 din Toronto sunt tulburător de similare cu retorica anti-imigranți și xenofobia de azi. Un apel la reflecție asupra istoriei și prezentului. 🗓️🇨🇦🇬🇷 #IstorieUitată #Xenofobie #AntiImigranți #Canada #Grecia #NEXAS",
+      "hashtags": [
+        "Istorie",
+        "Canada",
+        "Grecia",
+        "Xenofobie",
+        "AntiImigranti",
+        "Revolte1918",
+        "Discriminare",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: ‘Erased from history’: A century on from Canada’s anti-Greek riots. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "SUA și Iranul convin să stopeze atacurile înaintea discuțiilor",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-29/us-and-iran-agree-to-halt-attacks-ahead-of-talks-video-mqz1a8xz",
+      "date": "2026-06-29T09:47:02+00:00",
+      "category": "Bursa & Piete",
+      "summary": "SUA și Iranul au convenit să înceteze să se atace reciproc înainte ca discuțiile de pace să se reia săptămâna aceasta cu privire la strâmtoarea Hormuz și alte probleme. Urmează zile de atacuri „tit-for-tat”, care riscă să încetinească progresul către restabilirea traficului pe calea navigabilă vitală. (Sursa: Bloomberg)",
+      "instagram_caption": "US and Iran Agree to Halt Attacks Ahead of Talks\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: US and Iran Agree to Halt Attacks Ahead of Talks. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ofițer superior de poliție sud-african a supraviețuit unei tentative de asasinat",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c9v2x700l8vo?at_medium=RSS&at_campaign=rss",
+      "date": "2026-06-29T09:46:08+00:00",
+      "category": "International",
+      "summary": "Maiorul general Feroz Khan, șeful adjunct al serviciilor de informații criminale, a supraviețuit unei tentative de asasinat. Acesta urma să compară săptămâna aceasta în fața unei comisii de anchetă privind corupția în cadrul poliției.",
+      "instagram_caption": "Un ofițer superior de poliție din Africa de Sud a supraviețuit unei tentative de asasinat! 🚨 Maiorul general Feroz Khan, șeful adjunct al serviciilor de informații criminale, era programat să compară săptămâna aceasta într-o anchetă privind corupția poliției. Rămâi informat cu NEXAS! #NEXAS #AfricaDeSud #Poliție #Asasinat #Corupție #ȘtiriInternaționale #BBCWorld",
+      "hashtags": [
+        "NEXAS",
+        "AfricaDeSud",
+        "Poliție",
+        "Asasinat",
+        "Corupție",
+        "ȘtiriInternaționale",
+        "BBCWorld"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Senior South African police officer survives assassination attempt. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Vivo X Fold6: Lansarea oficială a noului smartphone pliabil",
+      "source": "Google News Tech",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9tbHdXTGZfWnFVd0pNRXFBcUI5WDdXRjUwRmw1ZWZRQ2h5NF96aFlXVmNJQmM4ZHoxV0dTcXhPd2xxcXBkREcwTXV2ZGJqdEFITUJvV3p6V2NoOVc2ekh3ajJFRUtrc08ta1lrN1JUd3FoeWdoY0ZXUQ?oc=5",
+      "date": "2026-06-29T09:31:08+00:00",
+      "category": "AI & Tech",
+      "summary": "Prezentarea oficială a modelului Vivo X Fold6 marchează un moment important în industria smartphone-urilor pliabile. Acest eveniment atrage atenția pasionaților de tehnologie și a celor interesați de inovațiile din domeniu, consolidând poziția Vivo pe piața competitivă a telefoanelor cu ecran flexibil. Detaliile complete despre noul dispozitiv urmează să fie analizate, dar lansarea confirmă angajamentul companiei pentru dezvoltarea de tehnologii avansate.",
+      "instagram_caption": "Noul Vivo X Fold6 este oficial aici! 🚀 Industria smartphone-urilor pliabile primește un nou concurent de top. Fii printre primii care află despre inovațiile aduse de acest dispozitiv revoluționar. Ce așteptări ai de la generația X Fold6? 🤔 Rămâi conectat pentru toate detaliile! #VivoXFold6 #Vivo #SmartphonePliabil #Tehnologie #LansareOficiala #Gadgeturi #NEXAS",
+      "hashtags": [
+        "VivoXFold6",
+        "Vivo",
+        "SmartphonePliabil",
+        "Tehnologie",
+        "LansareOficiala",
+        "Gadgeturi",
+        "NEXAS",
+        "AI",
+        "Tech"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Vivo X Fold6 a fost prezentat oficial - MOBzine.ro. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Scăderea fosfatidilcolinei, cheia îmbătrânirii celulare? Soluția, aproape",
+      "source": "Mediafax",
+      "url": "https://www.mediafax.ro/sanatate/celulele-din-corpul-tau-se-estompeaza-odata-cu-varsta-dar-ar-putea-exista-o-modalitate-de-a-inversa-acest-proces-23763137",
+      "date": "2026-06-29T09:10:12+00:00",
+      "category": "Sanatate",
+      "summary": "Un nou studiu în Nature Communications dezvăluie un mecanism crucial al îmbătrânirii celulare: scăderea fosfatidilcolinei. Acest lipid este esențial pentru mitocondrii, „motoarele” celulelor. Descoperirea implică o legătură directă între declinul său și îmbătrânire. Potențialul de a încetini sau inversa acest proces, prin țintirea nivelurilor de fosfatidilcolină, oferă speranțe pentru noi terapii și o longevitate îmbunătățită. O abordare revoluționară pentru știința anti-îmbătrânire.",
+      "instagram_caption": "Îmbătrânirea celulară ar putea fi reversibilă? 🤯 Un studiu revoluționar publicat în Nature Communications aduce o veste uimitoare! 🧬 Cercetătorii au descoperit că scăderea unui lipid vital, fosfatidilcolina, afectează mitocondriile și duce la îmbătrânire. Dar există speranță! ✨ Această descoperire deschide calea spre noi terapii anti-îmbătrânire. Rămâi conectat pentru a afla mai multe! #AntiAging #Longevitate #Stiinta #NEXAS #Descoperire",
+      "hashtags": [
+        "AntiAging",
+        "Longevitate",
+        "Stiinta",
+        "NEXAS",
+        "Descoperire"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Celulele din corpul tău se estompează odată cu vârsta, dar ar putea exista o modalitate de a inversa. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "STUDIU | Terrra ar putea supraviețui după moartea Soarelui / Mercus și Venus nu vor avea acceași soartă - G4Media",
+      "source": "Google Stiinta",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdGNKVjNhcm9YNmdwWXZjczVRTTNvY0hUZE55RXBWc0oxY2NjMkFydDUteEhlU19HaHlaRGI0RWhqc2RQenk0cXBTVF9RV1BiN3FPY29KSEI4Q1hkZ0FMZmo4SjZacnYyTXY1V3pLT3k5eGlHazZnM1JNSi1FX2F6X3JVOUNVVjZwUjVzRkVZaWVGOG1TWEFQcFV0eG9CQUVNdmR1UDBOdzFEWnBHcHNXaWFNd2VlaURlMnhUa19EREVOdXpNRWc?oc=5",
+      "date": "2026-06-29T08:27:03+00:00",
+      "category": "Stiinta",
+      "summary": "STUDIU | Terrra ar putea supraviețui după moartea Soarelui / Mercus și Venus nu vor avea acceași soartă G4Media Predicții despre moartea violentă a Soarelui în următorii 5 miliarde de ani. Vietnam.vn Pământul ar putea supraviețui morții Soarelui. Ce arată cele mai noi modele ale evoluției stelare Antena 3 CNN Va sfârşi sau nu Pământul „înghiţit” de Soare? Datele unui nou studiu vin cu o ipoteză inedită Digi24",
+      "instagram_caption": "STUDIU | Terrra ar putea supraviețui după moartea Soarelui / Mercus și Venus nu vor avea acceași soartă - G4Media\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: STUDIU | Terrra ar putea supraviețui după moartea Soarelui / Mercus și Venus nu vor avea acceași soa. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Trump stârnește îngrijorare în Liban și Israel după propunerea privind Hezbollah",
+      "source": "Google Intl",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNSHVUeTV6MWstNXAwdE5FejhnMGN5NTNwMDE2WlhxcjYtbzZtODFMTHJZa1A4WlYzWmxoZWdHQWhxT0NSYlhUR3ZJZjhubGZkUUVSekFLU29ISEN5T0ZFMjJsanRkaEs4X2VCRHhWcUVJLXF1SnNOTTNqSkxaS3dRcTM4clpGcUNxYTNKNXhvMzlWN2RSS001Z3FJZjZMZzdqcTgtYldISVZSRUNweUxORTVSUi1MRkstXzVLWlZjWndtVEdyVGh3amk2MkY2a2NnT2R0dERKRE9rOTAxRFB2NWNjcWJsbGtsM3pBSXl5emtrelo5Wmc?oc=5",
+      "date": "2026-06-29T08:01:59+00:00",
+      "category": "International",
+      "summary": "Declarația lui Donald Trump prin care a propus Siriei să lupte împotriva Hezbollah a generat îngrijorare în Liban și Israel. În replică, președintele sirian Al-Sharaa a exclus orice rol militar al Siriei în Liban, dar a afirmat deschiderea țării sale pentru dialog cu Hezbollah.",
+      "instagram_caption": "Propunerea lui Donald Trump ca Siria să lupte împotriva Hezbollah a stârnit îngrijorare majoră în Liban și Israel. 🌍 Președintele sirian Al-Sharaa a intervenit, clarificând că Siria exclude orice rol militar în Liban, dar este deschisă dialogului cu Hezbollah. O situație complexă în Orientul Mijlociu care necesită diplomație! 🕊️ #PoliticaInternationala #OrientulMijlociu #Trump #Hezbollah #Siria #Liban #Israel #Geopolitica",
+      "hashtags": [
+        "#PoliticaInternationala",
+        "#OrientulMijlociu",
+        "#Trump",
+        "#Hezbollah",
+        "#Siria",
+        "#Liban",
+        "#Israel",
+        "#Geopolitica"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Trump stârnește îngrijorare în Liban și Israel după ce a propus Siriei să lupte împotriva Hezbollah . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "2 Milioane RON pentru echipament vital în lupta contra cancerului de col uterin",
+      "source": "Google Sanatate",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNa0xyQzVBYmxJZVZRbXdMamVBYmQ3Sm1yUUN6eU9GOVhxSkpZUnVDY1RNX2t4bmNGLXF5cTNyMTlGMWlxZTg3MXFNazZzaWVGdERndTBsUG1EU1N2ZjAwMFU4RFdUUXZUZm52QnNlSUFaWlR4Wlp4TXFPdkI0dFhYOFQ3RGVPUlMtdTctQkU2SUFkcUtJTjdBM3J5dXIydGxXZW1aOUd0b3l6ZE1nWXBLckFQSk4wSXhXbHlz?oc=5",
+      "date": "2026-06-29T07:00:00+00:00",
+      "category": "Sanatate",
+      "summary": "O veste crucială în domeniul sănătății: s-a alocat o sumă de 2 milioane de lei pentru achiziționarea unui echipament medical de ultimă generație, esențial în lupta împotriva cancerului de col uterin. Această investiție majoră are potențialul de a salva numeroase vieți prin diagnosticarea precoce și prin facilitarea unor tratamente mai eficiente. Fondurile demonstrează un angajament serios pentru îmbunătățirea serviciilor medicale destinate femeilor și pentru reducerea incidenței acestei boli devastatoare în comunitate.",
+      "instagram_caption": "O veste excelentă pentru sănătate! 🎗️ S-au alocat 2 milioane de lei pentru echipament vital în lupta contra cancerului de col uterin. Această investiție uriașă va permite diagnosticarea timpurie și tratamente eficiente, salvând vieți prețioase. Un pas important pentru un viitor mai sănătos și mai sigur pentru femeile din România! 🙏 Distribuie și tu mesajul! #CancerDeColUterin #LuptaImpotrivaCancerului #SanatateFemei #InvestitieInSanatate #SalvamVieti #Romania",
+      "hashtags": [
+        "CancerDeColUterin",
+        "LuptaImpotrivaCancerului",
+        "SanatateFemei",
+        "InvestitieInSanatate",
+        "SalvamVieti",
+        "Romania"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Lupta împotriva cancerului de col uterin – 2 milioane de lei pentru un echipament care va salva vieț. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Doina Teodoru, despre întâlnirea cu Cheloo: „El a insistat. Mie îmi era foarte teamă”",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOR292bjVBZUJHVF8wNkl2OFFZd1lERW0yXy1KWWVoM0RJdV9iN2N4UzB1WkhQY1BQMG1rOFBGZ3FWdUlvWkpUMDVVam5nZDdFUklKLVVTd3VCYnJoYVN2Q0ptX2lPX0RvNFlkZDU1MGFibWlkUTlxa0V5Ulhwb1hDTWJDMzJjam5wb3oxeGFkd0dKamZQbEUxRi1TYWNjdGhZejFuZGVhTldXdw?oc=5",
+      "date": "2026-06-29T06:44:07+00:00",
+      "category": "Entertainment",
+      "summary": "Actrița Doina Teodoru a dezvăluit detalii despre o întâlnire surprinzătoare cu rapperul Cheloo, care a marcat-o puternic. Potrivit declarațiilor sale, Cheloo a manifestat o atitudine insistentă, fapt care a generat o stare de neliniște și teamă pentru actriță. „El a insistat. Mie îmi era foarte teamă”, a declarat Doina Teodoru, subliniind impactul emoțional al momentului. Această mărturisire a stârnit interes în spațiul public, oferind o perspectivă personală asupra unei interacțiuni neașteptate între cele două personalități.",
+      "instagram_caption": "Doina Teodoru a dezvăluit detalii neștiute despre o întâlnire tensionată cu Cheloo! 😱 „El a insistat. Mie îmi era foarte teamă”, a mărturisit actrița, explicând momentul plin de emoții. Ce crezi că s-a întâmplat între ei? 🤔 Află povestea completă pe NEXAS și vezi toate dezvăluirile! 👇 Nu rata! #DoinaTeodoru #Cheloo #IntalnireSurpriza #Dezvaluiri #VedeteRomania #Tensiune #NEXAS",
+      "hashtags": [
+        "DoinaTeodoru",
+        "Cheloo",
+        "Dezvaluiri",
+        "IntalnireSurpriza",
+        "VedeteRomania",
+        "Tensiune",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Ce s-a întâmplat când Cheloo s-a întâlnit cu Doina Teodoru: „El a insistat. Mie îmi era foarte teamă. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "„Michael” îl depășește pe „Oppenheimer” și devine filmul biografic cu cele mai mari încasări",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPeDBiOFI0NTNyRjRmSnFnMmJhamdZeHJYT3lIb3lNZ0Nod2prc2YzTlIteTVHTnZKRkV3WjhGblYyeEhxazFPei1JQUY1X0plaWV2N0NUUUNMb0JNSjJ1LXRGTGtRa2FfT1NSd052b0M0aG51NVdXN3pPQ3VId1ZzYjNPb1pac0NJZGRKenF0NUh6eVowZ3IzRm9EREhjdmQ3UWh1V3BtRkVpS2lqc2Iyc0NQeTdmWnFTS2JJWURlQ0o2M203amNz?oc=5",
+      "date": "2026-06-29T06:07:02+00:00",
+      "category": "Entertainment",
+      "summary": "Filmul „Michael”, ce urmărește viața Regelui Pop Michael Jackson, a depășit recent producția „Oppenheimer” la încasările globale, stabilind un nou record impresionant. Cu peste 977 de milioane de dolari obținute la nivel mondial, pelicula a devenit oficial filmul biografic cu cele mai mari încasări din toate timpurile. Această performanță subliniază succesul fenomenal al poveștii sale pe marile ecrane.",
+      "instagram_caption": "„Michael” face istorie! 👑 Filmul despre Regele Pop Michael Jackson a depășit „Oppenheimer” și a devenit oficial filmul biografic cu cele mai mari încasări din toate timpurile! 🚀 Peste 977 de milioane de dolari la nivel mondial demonstrează fascinația continuă pentru viața și muzica sa. Un succes cinematografic de neratat! 🍿✨",
+      "hashtags": [
+        "#MichaelMovie",
+        "#KingOfPop",
+        "#BoxOfficeRecord",
+        "#Oppenheimer",
+        "#FilmBiografic",
+        "#Succes"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: „Michael” bate „Oppenheimer” și stabilește un nou record / Este filmul biografic cu cele mai mari în. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Horoscopul zilei de 29 iunie: Previziuni astrale de la TVR.RO",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8zYlJzc1FiVkhlWGdhS1QzV2w4RjRNQllSV0J4azhMYVZPbU5XOWJTamdfb1JqdkhtS1RhbHNXWDRiQlJaUEtSVDBYdUpZdGtZR3QxTkdmZ0NDUTZUcHZJRmpWaDRWTzdQ?oc=5",
+      "date": "2026-06-29T02:12:22+00:00",
+      "category": "Entertainment",
+      "summary": "Descoperă previziunile astrale complete pentru toate zodiile în horoscopul zilei de 29 iunie, așa cum a fost publicat de TVR.RO. Află ce îți rezervă astrele în dragoste, carieră și sănătate pentru ziua de sâmbătă. Accesează articolul original pentru detalii complete și sfaturi personalizate.",
+      "instagram_caption": "Ce spun astrele pentru sâmbătă, 29 iunie? ✨ Descoperă horoscopul complet al zilei, oferit de TVR.RO, și vezi ce îți rezervă universul în dragoste, carieră și sănătate. Fii pregătit pentru tot ce urmează! 🔮 #Horoscop #ZodiaTa #PreviziuniAstrale #TVRRO #29Iunie #Astre",
+      "hashtags": [
+        "#Horoscop",
+        "#ZodiaTa",
+        "#PreviziuniAstrale",
+        "#TVRRO",
+        "#29Iunie",
+        "#Astre"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Horoscopul zilei de 29 iunie - TVR.RO. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Legea Californiei împotriva reclamelor de streaming zgomotoase intră în vigoare pe 1 iulie",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/28/california-law-targeting-loud-streaming-ads-takes-effect-on-july-1/",
+      "date": "2026-06-28T21:34:14+00:00",
+      "category": "AI & Tech",
+      "summary": "Reclamele de streaming ar putea deveni mult mai silențioase. O nouă lege din California, care intră în vigoare la 1 iulie, vizează nivelul volumului reclamelor difuzate pe platformele de streaming, asigurând o experiență de vizionare mai plăcută pentru utilizatori.",
+      "instagram_caption": "🔊 S-a terminat cu reclamele de streaming mult prea zgomotoase! Din 1 iulie, o nouă lege din California intră în vigoare, vizând nivelul volumului acestora. Asta înseamnă o experiență de vizionare mult mai liniștită pentru toți. 🍿🎧 Crezi că o astfel de lege ar fi utilă și la noi? Spune-ne părerea ta! 👇",
+      "hashtags": [
+        "#StreamingAds",
+        "#CaliforniaLaw",
+        "#TechNews",
+        "#QuietStreaming",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: California law targeting loud streaming ads takes effect on July 1. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "HP Inc. inițiază parteneriatul strategic Frontier cu OpenAI",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/hp-frontier-partnership",
+      "date": "2026-06-28T17:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "HP Inc. își consolidează parteneriatul strategic Frontier cu OpenAI, având ca scop integrarea extinsă a inteligenței artificiale (AI) în diverse arii. Acest demers vizează optimizarea experiențelor clienților, accelerarea dezvoltării de software și eficientizarea operațiunilor la nivel de întreprindere.",
+      "instagram_caption": "HP Inc. își extinde parteneriatul Frontier cu OpenAI! 🚀 Obiectivul? Implementarea AI în experiențele clienților, dezvoltarea software și operațiunile companiei. O mișcare strategică pentru viitorul tehnologiei! ✨ Descoperă mai multe despre această colaborare inovatoare! #HPAI #OpenAI #ParteneriatStrategic #Inovatie #Tehnologie #AI #HPInc #DigitalTransformation",
+      "hashtags": [
+        "HPAI",
+        "OpenAI",
+        "ParteneriatStrategic",
+        "Inovatie",
+        "Tehnologie",
+        "AI",
+        "HPInc",
+        "DigitalTransformation",
+        "TechNews",
+        "FutureOfAI"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: HP Inc. launches Frontier strategic partnership with OpenAI. Professional photorealistic style. No text, no logos, no watermarks."
+    },
     {
       "title": "Iran insistă pentru retragerea Israelului din Liban, o condiție „necesară pentru a ajunge la un acord final” cu SUA",
       "source": "HotNews",
@@ -4260,45 +4786,6 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: Serialul care a făcut istorie la Pro TV revine după două decenii. Primele detalii despre noul sezon . Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Bolojan, Fritz și Kelemen Hunor discută varianta unui Guvern PNL-USR-UDMR",
-      "source": "Digi24",
-      "url": "https://www.digi24.ro/stiri/actualitate/intalnire-intre-bolojan-fritz-si-kelemen-hunor-se-discuta-varianta-unui-guvern-pnl-usr-udmr-3829883",
-      "date": "2026-06-24T08:50:21+00:00",
-      "category": "Romania",
-      "summary": "Ilie Bolojan, Dominic Fritz și Kelemen Hunor s-au întâlnit azi dimineață pentru a analiza variantele de guvernare. Deși PNL, USR și UDMR au discutat public despre o posibilă coaliție fără social-democrați, absența unei majorități parlamentare rămâne principalul impediment. În acest context, PNL și UDMR ar fi pregătite să transfere responsabilitatea către PSD, care ar urma să formeze un guvern monocolor.",
-      "instagram_caption": "Discuții intense în politica românească! 🇷🇴 Ilie Bolojan, Dominic Fritz și Kelemen Hunor s-au întâlnit azi pentru a explora opțiuni de guvernare. Pe masă: o coaliție PNL-USR-UDMR, însă lipsa unei majorități parlamentare complică lucrurile. 🤔 Există și varianta ca PNL și UDMR să cedeze formarea guvernului PSD, pentru un executiv monocolor. Ce crezi că se va întâmpla? 👇",
-      "hashtags": [
-        "#PoliticaRomaneasca",
-        "#GuvernRomania",
-        "#PNL",
-        "#USR",
-        "#UDMR",
-        "#PSD",
-        "#FormareGuvern",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Întâlnire între Bolojan, Fritz și Kelemen Hunor. Se discută varianta unui Guvern PNL-USR-UDMR. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cătălin Predoiu spune ce va face dacă va fi exclus din partid: „Nu a fost o conspirație contra PNL”",
-      "source": "HotNews",
-      "url": "https://hotnews.ro/catalin-predoiu-spune-ce-va-face-daca-va-fi-exclus-din-partid-nu-a-fost-o-conspiratie-contra-pnl-2282963",
-      "date": "2026-06-24T08:50:09+00:00",
-      "category": "Romania",
-      "summary": "Cătălin Predoiu cere „șansa unui dialog și a unui compromis” pentru liberalii care sunt la risc de excludere pentru că au votat pentru învestirea cabinetului Veștea în ciuda deciziei partidului. Despre propria situație spune că nu va contesta o decizie de excludere. Un număr de 12 conduceri de filiale PNL au fost dizolvate marți seară …",
-      "instagram_caption": "Cătălin Predoiu spune ce va face dacă va fi exclus din partid: „Nu a fost o conspirație contra PNL”\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Cătălin Predoiu spune ce va face dacă va fi exclus din partid: „Nu a fost o conspirație contra PNL”. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "HHS va actualiza etichetele terapiei cu testosteron pentru cancerul de prostată, hipogonadism",
       "source": "Healthline",
       "url": "https://www.healthline.com/health-news/hhs-updates-testosterone-therapy-warning-labels",
@@ -4338,63 +4825,6 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: Semnul discret prin care rinichii îți arată că organismul are nevoie de mai multă apă. Mulți oameni . Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "YouTube a ajuns la o înţelegere cu un adolescent american, care a acuzat platforma că i-ar fi afectat sănătatea mintală",
-      "source": "G4Media",
-      "url": "https://www.g4media.ro/youtube-a-ajuns-la-o-intelegere-cu-un-adolescent-american-care-a-acuzat-platforma-ca-i-ar-fi-afectat-sanatatea-mintala.html",
-      "date": "2026-06-24T08:48:29+00:00",
-      "category": "Romania",
-      "summary": "La trei luni după o condamnare fără precedent într-un caz similar, YouTube a ajuns la o înţelegere amiabilă – cu o sumă confidenţială – cu un adolescent american de 15 ani care a acuzat platforma Google şi alte reţele sociale că i-au afectat sănătatea mintală, transmite miercuri agenția de știri AFP, citată de Agerpres. „Acest […] © G4Media.ro .",
-      "instagram_caption": "YouTube a ajuns la o înţelegere cu un adolescent american, care a acuzat platforma că i-ar fi afectat sănătatea mintală\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: YouTube a ajuns la o înţelegere cu un adolescent american, care a acuzat platforma că i-ar fi afecta. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Leapmotor se extinde în Spania, cu o fabrică de asamblare a bateriilor pentru vehicule electrice",
-      "source": "Forbes Romania",
-      "url": "https://www.forbes.ro/leapmotor-se-extinde-in-spania-cu-o-fabrica-de-asamblare-a-bateriilor-pentru-vehicule-electrice-507999",
-      "date": "2026-06-24T08:47:18+00:00",
-      "category": "Business",
-      "summary": "Leapmotor International, societatea mixtă înfiinţată de Stellantis NV şi producătorul chinez de vehicule electrice (EV) Leapmotor, au inaugurat o unitate de asamblare a bateriilor aproape de fabrica de baterii şi EV din Spania deţinută de Stellantis şi CATL. Unitatea, aflată în municipalitatea Mallen, va livra aproximativ 65.000 module de baterii, fiind posibilă majorarea producţiei la ... The post Leapmotor se extin",
-      "instagram_caption": "Leapmotor se extinde în Spania, cu o fabrică de asamblare a bateriilor pentru vehicule electrice\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Leapmotor se extinde în Spania, cu o fabrică de asamblare a bateriilor pentru vehicule electrice. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Messi, la 39 de ani: „Nu cred că voi mai juca la Mondialul din 2030”",
-      "source": "Fanatik",
-      "url": "https://www.fanatik.ro/lionel-messi-si-a-anuntat-sfarsitul-de-drum-la-campionatul-mondial-in-ziua-in-care-a-implinit-39-de-ani-as-cere-prea-mult-21494868",
-      "date": "2026-06-24T08:46:22+00:00",
-      "category": "Sport",
-      "summary": "Lionel Messi a împlinit vârsta de 39 de ani. Cu această ocazie, starul argentinian a declarat că nu crede că va mai participa la ediția din 2030 a Campionatului Mondial. „I-aș cere prea mult lui Dumnezeu” a fost comentariul său, sugerând că o prezență la un turneu final la 43 de ani ar fi o așteptare nerealistă.",
-      "instagram_caption": "Lionel Messi a împlinit 39 de ani! 🎂 Starul argentinian a făcut o declarație ce a stârnit discuții: nu crede că va mai juca la Campionatul Mondial din 2030. 🏆 \"I-aș cere prea mult lui Dumnezeu\", a spus el. Se apropie sfârșitul unei ere la nivel internațional? 🤔 Spune-ne părerea ta! 👇",
-      "hashtags": [
-        "#Messi",
-        "#LionelMessi",
-        "#CampionatulMondial",
-        "#Mondial2030",
-        "#Fotbal",
-        "#Argentina",
-        "#GOAT",
-        "#StireSportiva"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Lionel Messi și-a anunțat sfârșitul de drum la Campionatul Mondial în ziua în care a împlinit 39 de . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "George Simion avertizează: Excluderea AUR de către Grindeanu va costa România!",
       "source": "Viva",
       "url": "https://www.viva.ro/actualitate/george-simion-avertisment-dupa-ce-sorin-grindeanu-a-exclus-un-guvern-cu-psd-si-aur-3948600",
@@ -4414,105 +4844,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Entertainment news: George Simion, avertisment după ce Sorin Grindeanu a exclus un guvern cu PSD și AUR: „Dacă persistă . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Spartan depășește 270 mil. lei cifră de afaceri în 2025; Investește 15 mil. lei în extindere.",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/companii/retail-agrobusiness/lantul-de-restaurante-spartan-a-depasit-270-mil-lei-cifra-de-afaceri-23181426",
-      "date": "2026-06-24T08:43:00+00:00",
-      "category": "Business",
-      "summary": "Lanțul de restaurante Spartan a înregistrat o cifră de afaceri de peste 270 milioane de lei în 2025. Compania își propune să continue creșterea, alocând peste 15 milioane de lei pentru investiții majore destinate extinderii rețelei sale de restaurante la nivel național, consolidându-și poziția pe piață.",
-      "instagram_caption": "Impresionant! 🚀 Lanțul de restaurante Spartan a depășit 270 milioane de lei cifră de afaceri în 2025! Această performanță solidă este susținută de planuri ambițioase de extindere. Spartan pregătește investiții de peste 15 milioane de lei pentru a-și mări rețeaua la nivel național. 💪 Ce restaurant Spartan aștepți cel mai mult în orașul tău? #Spartan #Restaurante #Afaceri #Investitii #Extindere #Romania #Succes 📈",
-      "hashtags": [
-        "Spartan",
-        "Restaurante",
-        "Afaceri",
-        "Investitii",
-        "Extindere",
-        "Romania",
-        "Succes"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Lanţul de restaurante Spartan a depăşit 270 mil. lei cifră de afaceri în 2025 şi pregăteşte investiţ. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "ENGIE anunță în România primul proiect hibrid eolian-baterii din Europa",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/insider/energie/foto-engie-anunta-in-romania-o-premiera-primul-proiect-hibrid-din-europa-al-grupului-care-integreaza-productia-de-energie-eoliana-si-stocarea-energiei-in-baterii-22492266?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-06-24T08:40:00+00:00",
-      "category": "Business",
-      "summary": "Engie, cel mai mare operator de distribuție a gazelor naturale din România, a anunțat dezvoltarea la Băleni, în județul Galați, a primului său proiect hibrid din Europa. Acesta va integra producția de energie eoliană cu stocarea energiei în baterii, marcând o premieră pentru grupul francez pe continent.",
-      "instagram_caption": "🚀 Engie face un pas uriaș spre un viitor mai verde în România! 🌬️⚡ Compania a anunțat dezvoltarea la Băleni, Galați, a primului său proiect hibrid din Europa, care va integra producția de energie eoliană cu stocarea energiei în baterii. O inovație cheie pentru stabilitatea rețelei și tranziția energetică! 🔋🌍 #Engie #EnergieVerde #Romania #Galați #ProiectHibrid #Eolian #Baterii #Sustenabilitate #TranzitieEnergetica",
-      "hashtags": [
-        "#Engie",
-        "#EnergieVerde",
-        "#Romania",
-        "#Galați",
-        "#ProiectHibrid",
-        "#Eolian",
-        "#Baterii",
-        "#Sustenabilitate",
-        "#TranzitieEnergetica"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: FOTO ENGIE anunță în România o premieră. Primul proiect hibrid din Europa al grupului, care integrea. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Pilot român strălucește în Formula 4 la Monza: performanța carierei! Pe urmele lui Chivu",
-      "source": "ProSport",
-      "url": "https://www.prosport.ro/alte-sporturi/auto-moto/nu-doar-cristi-chivu-face-performanta-in-italia-un-pilot-bucurestean-se-descurca-de-minune-in-formula-4-20469365",
-      "date": "2026-06-24T08:35:31+00:00",
-      "category": "Sport",
-      "summary": "Un pilot român din București a avut o performanță remarcabilă în acest weekend la Monza, în cadrul celei de-a treia etape a Campionatului Italian de Formula 4. Pe „Templul vitezei”, el a înregistrat cea mai bună clasare din cariera sa, consolidându-și poziția de pretendent la titlu. Succesul său reamintește că nu doar în fotbal, precum Cristi Chivu, românii fac performanță la cel mai înalt nivel în Peninsulă.",
-      "instagram_caption": "🇷🇴 Pilotul român din București a făcut senzație la Monza! 🚀 În weekend, la „Templul vitezei”, a bifat performanța carierei în Formula 4, arătând că avem talente nu doar pe terenul de fotbal. Un pas important spre titlul din Campionatul Italian de Formula 4! Cine știe, poate e următorul campion român după Cristi Chivu, dar pe pistă! 🏎️💨",
-      "hashtags": [
-        "#NEXAS",
-        "#Formula4",
-        "#PilotRoman",
-        "#Monza",
-        "#Performanta",
-        "#Motorsport",
-        "#Romania",
-        "#Campioni"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Nu doar Cristi Chivu face performanță în Italia! Un pilot bucureștean se descurcă de minune în Formu. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Atac ucrainean asupra podului strategic rusesc din Crimeea",
-      "source": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/ukraine-strikes-strategic-russian-bridge-in-crimea?traffic_source=rss",
-      "date": "2026-06-24T08:32:05+00:00",
-      "category": "International",
-      "summary": "Forțele ucrainene au lansat un atac asupra unui pod strategic din Crimeea ocupată de Rusia. Această acțiune vizează o infrastructură crucială pentru aprovizionarea trupelor rusești și are potențialul de a perturba logistica militară a Rusiei în regiune. Incidentul subliniază intensitatea conflictului dintre Ucraina și Rusia.",
-      "instagram_caption": "Ucraina a lovit un pod strategic cheie din Crimeea ocupată de Rusia! 💥 Această acțiune majoră vizează o rută de aprovizionare crucială pentru forțele rusești și ar putea avea un impact semnificativ asupra logisticii lor militare în regiune. Conflictul continuă să se intensifice. 🛡️ Urmărește cele mai noi știri pe NEXAS.ro!",
-      "hashtags": [
-        "#Ucraina",
-        "#Crimeea",
-        "#Razboi",
-        "#Conflict",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Ukraine strikes strategic Russian bridge in Crimea. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Controversă la Cupa Mondială! Un titular al Angliei a refuzat să dea mâna cu fotbalistul acuzat de viol",
-      "source": "DigiSport",
-      "url": "https://www.digisport.ro/fotbal/cm-2026/controversa-la-cupa-mondiala-un-titular-al-angliei-a-refuzat-sa-dea-mana-cu-fotbalistul-acuzat-de-viol-4335965",
-      "date": "2026-06-24T08:31:25+00:00",
-      "category": "Sport",
-      "summary": "Un incident controversat a marcat atmosfera Cupei Mondiale. Un fotbalist titular al echipei Angliei a refuzat public să dea mâna cu un alt jucător, acuzat de viol. Gestul a stârnit discuții intense și a subliniat tensiunile etice în sportul de performanță, punând presiune pe dilemele morale cu care se confruntă sportivii la cel mai înalt nivel. Evenimentul ridică semne de întrebare privind responsabilitatea și mesajele transmise de figurile publice.",
-      "instagram_caption": "Moment tensionat la Cupa Mondială! 💥 Un titular al naționalei Angliei a refuzat să salute un fotbalist acuzat de viol. Acest gest a provocat valuri de discuții și a pus în lumină dilemele etice din sportul de elită. Ce părere aveți despre această decizie? 🤔⚽️ #CupaMondiala #Fotbal #Controversa #EticaInSport #Anglia",
-      "hashtags": [
-        "CupaMondiala",
-        "Fotbal",
-        "Controversa",
-        "EticaInSport",
-        "Anglia"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Controversă la Cupa Mondială! Un titular al Angliei a refuzat să dea mâna cu fotbalistul acuzat de v. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Subiectele la Matematică de la Evaluarea Națională 2026. Cerința-surpriză de la Subiectul III / Cum se rezolvau exercițiile",
@@ -4553,44 +4884,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: SK Hynix Seeks $29 Billion With US Listing to Fund AI Boom. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Kenya: Elevi acuzați de crimă după incendiul mortal de la Utumishi Girls' School",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/cwykl517xk7o?at_medium=RSS&at_campaign=rss",
-      "date": "2026-06-24T08:13:53+00:00",
-      "category": "International",
-      "summary": "Șaisprezece eleve, cu vârste între 15 și 18 ani, au murit luna trecută într-un incendiu izbucnit într-un cămin al școlii Utumishi Girls' School. Autoritățile kenyene au anunțat acum că vor pune sub acuzare elevi pentru crimă în acest caz, subliniind gravitatea situației și impactul tragic asupra comunității școlare.",
-      "instagram_caption": "O veste șocantă din Kenya! 🇰🇪 Autoritățile vor acuza elevi de crimă, după incendiul devastator de la Utumishi Girls' School, care a curmat viețile a 16 eleve, cu vârste între 15 și 18 ani, luna trecută. Tragedia a lăsat o amprentă adâncă. Fii la curent cu cele mai noi știri internaționale pe NEXAS! #StiriInternationale #Kenya #Tragedie #IncendiuScoala",
-      "hashtags": [
-        "#Kenya",
-        "#IncendiuScoala",
-        "#StiriInternationale",
-        "#Tragedie",
-        "#UtumishiGirlsSchool",
-        "#AcuzatiiCrima"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Kenya to charge students with murder over deadly school fire. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Grecia anunță măsuri contra peștelui-iepure, după ce 148 de oameni au fost mușcați. Recomandări.",
-      "source": "Google Intl",
-      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxONmp2VkdoelZ0NW1pWjhpV1FOdmFRaFFMRDQzQjlqLXhQaTRwRk1KczU4WTNnallLa2tIeHlTNmpWZ3BmY05qakNhazJGZ2JYa3U5WG5FcVhMa2k0RjRSb3hhakpqc210WGhPeHVmN3dzcTZDTzM3aHhCa1dCeUlKSjZ6c2g0U1RrTkVqTVd0dFpXSkRkZVlKQTh1VUNGMDlHQU9ZSmlqRGtqam9fX09zN2w4RF9aclBISEhxcFBFaXc5ZXV4U29HU0JVeHpNbElQdFVBdTZUdG9pdkNlcThGM3RXQjhqMzF4VXQ2UjFjRnBPVUJrM1hKY1lJNWpnSWFzcnZ5a3p30gGQAkFVX3lxTE5PNlhkVVNmWHdfbVZfMk01ZjQxOGxwLU9Dbks2b1lRTV9UNWVDVzh1dmprSDdFQmZnTjRSVDRITjhqMGtPMkFyT1M0d3F1dGpzLTZRdU9NTzRSemRkOEtzd0N6dTMyVTZJaXlwbnNSbkRlRFZxcllDMXpKZm5sUzQ0cjBwTWxaakVVb3FiMFZKV1NWdGNhNko1RDUtem5LOS1nLS1pS0F6Wi1IekQwajFJdkcwbmRCemMzSkJwRGZRYU9WUmd4QWF2X1ZfZFBjRGYtNVdEa0RnQTBjbzJXYW83THJBYnktVUtRLUtnT0JiY0VYZVNQWXV1bVRMblc1N3c2aE1GX0tnU3RVVE1RVlJG?oc=5",
-      "date": "2026-06-24T07:26:35+00:00",
-      "category": "International",
-      "summary": "Grecia a anunțat măsuri împotriva peștelui-iepure, după ce 148 de persoane au fost mușcate. Autoritățile emit recomandări importante. Peștii-iepure au fost semnalați pe plajele grecești, iar specialiștii avertizează asupra pericolelor. Alerta a fost emisă și pentru destinația de vacanță preferată a românilor, unde mai mulți turiști au ajuns la spital în urma mușcăturilor. Aflați ce trebuie să știți despre această specie și sfaturile experților pentru siguranța voastră.",
-      "instagram_caption": "🚨 Alertă în Grecia! 🚨 Autoritățile au anunțat măsuri urgente împotriva peștelui-iepure, după ce 148 de turiști au fost mușcați. 🏖️ Specialiștii oferă recomandări esențiale. Dacă plănuiești o vacanță în Grecia, trebuie să știi ce presupun aceste pericole și cum să te protejezi. Mulți turiști, inclusiv români, au ajuns la spital. Fii informat și în siguranță! ⚠️",
-      "hashtags": [
-        "Grecia",
-        "PesteIepure",
-        "Turism",
-        "Siguranta",
-        "Vacanta2024",
-        "Alertaturistica"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Măsurile anunțate de Grecia împotriva peștelui-iepure, după ce 148 de oameni au fost mușcați. Recoma. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Pentru prima dată, un computer cuantic a citit și analizat un genom viral",
@@ -4653,49 +4946,6 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: Studiu surprinzător: femeile care au mers mai încet au slăbit de aproape trei ori mai mult. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Investiții în AI: Navigarea rapidității schimbării",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/06/23/how-to-invest-when-everything-is-moving-too-fast/",
-      "date": "2026-06-24T06:26:11+00:00",
-      "category": "AI & Tech",
-      "summary": "Evenimentul StrictlyVC organizat de TechCrunch la Los Angeles, săptămâna trecută, a adus laolaltă doi dintre cei mai direcți investitori în AI. Discuțiile lor au fost atât amuzante, cât și pline de învățăminte, oferind perspective valoroase asupra investițiilor în inteligența artificială într-un ritm alert.",
-      "instagram_caption": "Lumea investițiilor în AI accelerează! 🚀 Săptămâna trecută, la evenimentul StrictlyVC din Los Angeles, TechCrunch a reunit doi investitori deschiși în inteligența artificială. 🎤 Discuțiile lor au fost pe cât de amuzante, pe atât de pline de învățăminte, oferind perspective esențiale pentru a naviga în acest ritm alert. 💡 O sursă de inspirație pentru oricine vrea să înțeleagă mai bine viitorul investițiilor! ✨",
-      "hashtags": [
-        "#AI",
-        "#InvestitiiAI",
-        "#TechCrunch",
-        "#InteligentaArtificiala",
-        "#Tehnologie",
-        "#BusinessAI",
-        "#StrictlyVC"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: How to invest when everything is moving too fast. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "OpenAI și Broadcom lansează cipul de inferență optimizat pentru LLM",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-      "date": "2026-06-24T06:00:00+00:00",
-      "category": "AI & Tech",
-      "summary": "OpenAI și Broadcom au lansat Jalapeño, un cip AI personalizat, conceput special pentru inferența modelelor lingvistice mari (LLM). Această inovație vizează optimizarea performanței, creșterea eficienței energetice și asigurarea unei scalabilități superioare pentru toate sistemele AI.",
-      "instagram_caption": "🚀 O veste fierbinte din lumea AI! OpenAI și Broadcom au dezvăluit Jalapeño, un nou cip AI revoluționar, conceput special pentru inferența modelelor lingvistice mari (LLM)! 💡 Acest cip personalizat promite să ducă performanța, eficiența și scalabilitatea sistemelor AI la un nou nivel. Pregătiți-vă pentru o eră nouă a inteligenței artificiale, mai rapidă și mai puternică! 🔥",
-      "hashtags": [
-        "AI",
-        "Tehnologie",
-        "OpenAI",
-        "Broadcom",
-        "Jalapeno",
-        "CipAI",
-        "Inovatie",
-        "LLM",
-        "PerformantaAI",
-        "ViitorulAI"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: OpenAI and Broadcom unveil LLM-optimized inference chip. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Zendaya, într- o fustă cu talie foarte joasă și o vestă minusculă, ambele din piele. Tom Holland, fascinat de soția lui - FilmNow",
       "source": "Google Ent",
       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMlk1ZkVuMVVOV2U2OGF0ckNiOFNDeGQxVnNKdmdNM1BnN0VQS1IwV1RibWVudWU1X1kxNHJlZkY3ZEZGNDlUS1h2cFNaX2ZPcE1fSkJvTGFpSURHalF3ZFQ4aU5VanBNZ3AtTnZfWFZBdmtnTG51b25pSDdKV1J5N19fYlE3elRXSEVIYU5Bc19UWGxjODU2RGJoYzFOdlB6WnBLeUduS0IwWEU3cllibFJJQlhHYUhKbTFra0FtZmthX1h2NkNDTUxJQnd5QmxmTDFvMFhBLVZycWxnOXlrQUhHOTQ?oc=5",
@@ -4712,79 +4962,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Entertainment news: Zendaya, într- o fustă cu talie foarte joasă și o vestă minusculă, ambele din piele. Tom Holland, fa. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Craterul imens din Australia ar putea fi cea mai veche structură de impact de pe Pământ",
-      "source": "New Scientist",
-      "url": "https://www.newscientist.com/article/2531525-huge-crater-in-australia-may-be-the-oldest-impact-structure-on-earth/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=home",
-      "date": "2026-06-23T23:00:24+00:00",
-      "category": "Stiinta",
-      "summary": "Un studiu susține că craterul North Pole Dome din Australia de Vest a fost cauzat de o lovitură de asteroizi în urmă cu 3 miliarde de ani, dar alți cercetători contestă vârsta propusă.",
-      "instagram_caption": "Huge crater in Australia may be the oldest impact structure on Earth\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: Huge crater in Australia may be the oldest impact structure on Earth. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Expansiunea Universului continuă accelerat, iar energia întunecată rămâne 'suspectul de serviciu' - Agerpres",
-      "source": "Google Stiinta",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPZlVwUXJDeGtkMDVRVGpuS0lNbGhrOGZYQU1SMUE5V3JheEJnanYwc0Z0LXY3MUVKX25keXM4akVITXZXeTNQVUhiOHgwbUE5clVNVlVJeG1MU09HaGxNNFFyY3FMRGtRbXp4eDVrTjdnRkpfN1IwWUs0Yno3Y3N1Vm1VRDFkS0hpQUp4eVJ0SlNYUUJ6cUNiVFVJblZQMDNNZXBXbHZIX1BKaWZUMGJUYV82SEY1eVpSbjlUUzBGVVVIOGI3OTJQYUVkeXVBeXp6bUlTbTd5LUlLZw?oc=5",
-      "date": "2026-06-23T21:37:48+00:00",
-      "category": "Stiinta",
-      "summary": "Expansiunea Universului continuă accelerat, iar energia întunecată rămâne 'suspectul de serviciu' Agerpres Astronomii confirmă energia întunecată, după ce o descoperire uimitoare a zguduit cosmologia Descopera NASA investighează un fenomen misterios în Univers. Datele culese de telescopul Hubble ar putea schimba legile cunoscute ale fizicii Romania Libera Expansiunea accelerată a Universului, reconfirmată de un nou s",
-      "instagram_caption": "Expansiunea Universului continuă accelerat, iar energia întunecată rămâne 'suspectul de serviciu' - Agerpres\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: Expansiunea Universului continuă accelerat, iar energia întunecată rămâne 'suspectul de serviciu' - . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "GPT-5 ajută imunologul Derya Unutmaz să rezolve un mister de 3 ani",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/gpt-5-immunology-mystery",
-      "date": "2026-06-23T17:00:00+00:00",
-      "category": "AI & Tech",
-      "summary": "GPT-5 Pro a contribuit la rezolvarea unui mister imunologic care data de 3 ani, oferind noi perspective asupra comportamentului celulelor T. Această inovație majoră ar putea sprijini în mod semnificativ cercetările în domeniul cancerului și al bolilor autoimune.",
-      "instagram_caption": "O veste uimitoare din lumea științei! 🧬 GPT-5 Pro a ajutat-o pe imunologul Derya Unutmaz să rezolve un mister imunologic vechi de 3 ani! 🤯 Această descoperire oferă perspective esențiale despre comportamentul celulelor T. E un pas uriaș care ar putea sprijini cercetarea în cancer și bolile autoimune. 🔬 #GPT5 #Imunologie #AI #Știință #Descoperire #NEXAS",
-      "hashtags": [
-        "#GPT5",
-        "#Imunologie",
-        "#AI",
-        "#Știință",
-        "#Descoperire",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Obișnuiești să te dai cu parfum pe gât? Nu o mai face. Zona poate fi mai sensibilă decât crezi",
-      "source": "CSID",
-      "url": "https://www.csid.ro/stiri/obisnuiesti-sa-te-dai-cu-parfum-pe-gat-nu-o-mai-face-zona-poate-fi-mai-sensibila-decat-crezi-21226927/",
-      "date": "2026-06-23T16:21:21.441157+00:00",
-      "category": "Sanatate",
-      "summary": "Aplicarea parfumului pe gât este un gest pe care majoritatea femeilor îl fac aproape instinctiv, însă unii specialiști atrag atenția că acest obicei ar putea să nu fie cea mai inspirată alegere. Motivul ține atât […] Articolul Obișnuiești să te dai cu parfum pe gât? Nu o mai face. Zona poate fi mai sensibilă decât crezi apare prima dată în CSID: Ce se întâmplă Doctore? .",
-      "instagram_caption": "Obișnuiești să te dai cu parfum pe gât? Nu o mai face. Zona poate fi mai sensibilă decât crezi\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Obișnuiești să te dai cu parfum pe gât? Nu o mai face. Zona poate fi mai sensibilă decât crezi. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Americanii se pregătesc să cumpere case pentru prima dată în 3 ani",
@@ -4804,24 +4981,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Americans are warming up to homebuying for the first time in 3 years. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "NASA vrea să arunce ISS în mare. Experții spun că planul „crește serioase preocupări pentru sănătatea oceanelor”",
-      "source": "Space.com",
-      "url": "https://www.space.com/space-exploration/international-space-station/nasa-wants-to-dump-the-iss-in-the-sea-experts-say-the-plan-raises-serious-concerns-for-ocean-health",
-      "date": "2026-06-23T16:00:00+00:00",
-      "category": "Stiinta",
-      "summary": "Planul NASA de a deorbita Stația Spațială Internațională în următorii ani a stârnit un val de reacție din partea unei organizații de frunte pentru conservarea oceanelor.",
-      "instagram_caption": "NASA wants to dump the ISS in the sea. Experts say the plan 'raises serious concerns for ocean health'\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: NASA wants to dump the ISS in the sea. Experts say the plan 'raises serious concerns for ocean healt. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Rusia ia în calcul interzicerea exporturilor de motorină, pe fondul atacurilor ucrainene asupra rafinăriilor",
@@ -4846,24 +5005,6 @@
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Russia Considers Diesel-Export Ban on Ukraine Refinery Attacks. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "FALS | Pandemia de Covid-19 ar fi fost coordonată de Inteligența Artificială - Factual.ro",
-      "source": "Google Sanatate",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWlFQcFVqWGFPaWk1ODNycXlYMUJseUhMd0YxcnhETjAxd1k0WEZxSXlaZ3o3NVBORklmQ09LdFlEQVd4TXl2aUxTYkw0QmEyZzBEeEJISmcxZGUzMy1fOFdNbTFHV0NFMFRCZWxrS3BZSTh1eGxOTVpwVUZrQ0l1WVlmOV9kSndnVUExNzliNW5OT2hwaG9nNGJaUGtnVFVZczBSQUFpZTY5aERSd2czWVh1eGg?oc=5",
-      "date": "2026-06-23T14:39:00+00:00",
-      "category": "Sanatate",
-      "summary": "FALS | Pandemia de Covid-19 ar fi fost coordonată de Inteligența Artificială Factual.ro",
-      "instagram_caption": "FALS | Pandemia de Covid-19 ar fi fost coordonată de Inteligența Artificială - Factual.ro\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: FALS | Pandemia de Covid-19 ar fi fost coordonată de Inteligența Artificială - Factual.ro. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Anca Serea, prima reacție după ce s-a spus că a divorțat de Adi Sînă: „Revin cu lămuriri” - Libertatea",
       "source": "Google Ent",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTDRmX0t1YlV1dUtyaXlJeUgxVUVSZDVXTXhCOEJNMi1MMV9mR1hYaFc4TUxRODJ4dm9YQkNMUlVsQ2I5bi1aT0IyRFVpeURIRVBqa2QxN0paY1Q1emZ2eXJiOEJZNURaZHdYYmMxQk1rV2JObXYyMGdNdGQ1UXJ3UWxKWjk0NzFIOFljSzA0RXg3NWwySXFSREdKa0tVSFVZZmVaLWZPNWttSVlEb2lSRnZqNENTQQ?oc=5",
@@ -4880,60 +5021,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Entertainment news: Anca Serea, prima reacție după ce s-a spus că a divorțat de Adi Sînă: „Revin cu lămuriri” - Libertat. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Acuzații grave: rușii îngroapă animale infectate cu antrax și provoacă o catastrofă biologică lângă Marea Neagră",
-      "source": "Mediafax",
-      "url": "https://www.mediafax.ro/externe/acuzatii-grave-rusii-ingroapa-animale-infectate-cu-antrax-si-provoaca-o-catastrofa-biologica-langa-marea-neagra-23760218",
-      "date": "2026-06-23T13:04:45+00:00",
-      "category": "Sanatate",
-      "summary": "Rușii provoacă o catastrofă biologică într-o regiune aflată lângă Marea Neagră. Acuzația este făcută de ucraineni. Aceștia susțin că rușii îngroapă cadavre de animale infectate cu antrax în apropierea zonelor populate.",
-      "instagram_caption": "Acuzații grave: rușii îngroapă animale infectate cu antrax și provoacă o catastrofă biologică lângă Marea Neagră\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Acuzații grave: rușii îngroapă animale infectate cu antrax și provoacă o catastrofă biologică lângă . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Andreea Bălan a împlinit 42 de ani: „Sărbatoresc femeia care am devenit” - Libertatea",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQV04ydVhvaWhoTm4tT1doa0N5ck9RQmF2YlAzdXdXNnJPUVV5bVVJUnZMSXhkcE0tYkpmOHlXaGV5c3YyZUxjRVhqLU1fOThqOXdDRmdobHBUNFR3azVMV3Bxb2lvcHkwWEczMjFYS01LMkxJTWdkMmlfY25EdzFGYS1NUUltUjdVV0Yxb3A3MnljM0I4QjlaNGN3MlVZVTJaUXdPX3p0ZFU3eGN4eXg2QmlibnlhMmZz?oc=5",
-      "date": "2026-06-23T11:46:53+00:00",
-      "category": "Entertainment",
-      "summary": "Andreea Bălan a împlinit 42 de ani: „Sărbatoresc femeia care am devenit” Libertatea Andreea Bălan, apariție de senzație la petrecerea ei de 42 de ani! Ce rochie provocatoare a purtat și cum a surprins-o soțul ei, Victor Cornea TVMania Andreea Bălan își petrece prima zi de naștere în calitate de soție fără Victor Cornea. Sportivul „a abandonat-o” chiar cu câteva zile înainte să împlinească 42 de ani: „A plecat astăzi…",
-      "instagram_caption": "Andreea Bălan a împlinit 42 de ani: „Sărbatoresc femeia care am devenit” - Libertatea\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Andreea Bălan a împlinit 42 de ani: „Sărbatoresc femeia care am devenit” - Libertatea. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cine este femeia alături de care Cheloo și-a refăcut viața după divorț. Povestea discretă de iubire cu Daniela Moraru - Libertatea",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQYktJRVNkRVE5eWFGZUNneGtZdlFQWlFLYnU3cG0xc3ZHZ2RKb3Zyc0ZzSzFOWVZLa0Uzd1NEVmRLNnBjWjBtOUxWUDdETFU3RzRKUG1LRExZYldjU0dHWjUwUjVSSzUxd2h6RXZaRFhPX1doVHJwTXZZRWF6MjVmYUxfTWczOHlwZ19nWHFZMUdKZG95dWNWMEctN2VOSVhnME5ta2tKNk4zSk8yRUptcWRtT3l3TjJabkFaZVZxODk1dTZoMFVfZC1kSm14RGxJZm5aaTdUSm1BWEdFNy1wc2ZFa25iYWJYSXdwWXd1ckdqLWRrdFdn?oc=5",
-      "date": "2026-06-23T11:45:00+00:00",
-      "category": "Entertainment",
-      "summary": "Cine este femeia alături de care Cheloo și-a refăcut viața după divorț. Povestea discretă de iubire cu Daniela Moraru Libertatea Cine este femeia alături de care Cheloo și-a refăcut viața după divorț. Câți copii au… B1TV",
-      "instagram_caption": "Cine este femeia alături de care Cheloo și-a refăcut viața după divorț. Povestea discretă de iubire cu Daniela Moraru - Libertatea\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Cine este femeia alături de care Cheloo și-a refăcut viața după divorț. Povestea discretă de iubire . Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Tranzacție majoră în România. Miliardarul Jerzy Starak a finalizat achiziția, prin Zakłady Farmaceutyczne Polpharma, a Biofarm, producătorul Carmol, Triferment, Colebil",
@@ -4972,24 +5059,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: ECB’s Lane Sees Danger Inflation Will Top 2% for Some Time. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Horoscopul zilei de 23 iunie - TVR.RO",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HemdmdWJ4eU9qRDRrR29ZZ3l5N0pyQ3VKZXg5Uk9CT3RTdkhCWXI2YzFYb3RPQkd0emtWUUxHTXNZSjZWcWpkc0dWcWVZVEZPRjRfZTFtZ3o4VmhFNWJFZXNwakd3aTNQ?oc=5",
-      "date": "2026-06-23T02:12:29+00:00",
-      "category": "Entertainment",
-      "summary": "Horoscopul zilei de 23 iunie TVR.RO Vedeți mai multe titluri și perspective în Știri Google",
-      "instagram_caption": "Horoscopul zilei de 23 iunie - TVR.RO\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Horoscopul zilei de 23 iunie - TVR.RO. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Relaxarea sancțiunilor americane pentru petrol deschide o scurtă fereastră pentru importurile din Iran",
@@ -5067,65 +5136,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Morning Bid: Seventh in a decade. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Iranul evită poza partajată din SUA la summit",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-21/iran-avoids-shared-us-photo-at-summit-video",
-      "date": "2026-06-21T15:49:03+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Delegația Iranului a intrat pentru scurt timp în sala de ședințe a Summit-ului de la Lacul Lucerna înainte de a pleca, reflectând refuzul raportat al Teheranului de a participa la o fotografie comună cu oficialii americani pe fondul unor negocieri diplomatice sensibile. Bastian Benrath-Wright, de la Bloomberg News, se alătură Bloomberg în acest weekend pentru a explica că, în ciuda reticerii publicului și a certurilor din culise cu privire la protocol, reprezentanții iranian, americani, qatari și pakistanezi",
-      "instagram_caption": "Iran Avoids Shared US Photo at Summit\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Iran Avoids Shared US Photo at Summit. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Dețineți 500 de acțiuni ale Pfizer și JNJ și iată venitul dvs. anual din dividende",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/healthcare/articles/own-500-shares-pfizer-jnj-153006980.html",
-      "date": "2026-06-21T15:30:06+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Dețineți 500 de acțiuni ale Pfizer și JNJ și iată venitul dvs. anual din dividende",
-      "instagram_caption": "Own 500 Shares of Pfizer and JNJ and Here’s Your Annual Dividend Income\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Own 500 Shares of Pfizer and JNJ and Here’s Your Annual Dividend Income. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cristi Niţă: „Nu particip la criză, aleg oportunitatea.” Avantajul companiilor agile.",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/opinii/cristi-nita-fondatorul-btvideo-mediastory-particip-criza-aleg-23179357",
-      "date": "2026-06-21T09:31:43+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Cristi Niţă, fondatorul platformelor btvideo.ro și mediastory.ro, împărtășește o perspectivă contracurent. El refuză să se lase prins de panica generată de crize, optând în schimb să vadă oportunitățile. Niţă subliniază că frica este un impediment major, diminuând capacitatea de a lua decizii clare și strategice. Potrivit acestuia, companiile bine conduse transformă perioadele dificile în avantaje competitive, inovând și consolidându-și poziția pe piață.",
-      "instagram_caption": "\"Nu particip la criză. Aleg oportunitatea.\" 💡 O filozofie puternică de la Cristi Niţă, fondatorul btvideo.ro și mediastory.ro! El explică cum frica ne poate bloca deciziile și de ce firmele inteligente transformă perioadele dificile în succes. 🚀 Ce crezi? Frica reduce claritatea deciziilor? 🤔 Spune-ne părerea ta! #NEXAS #BusinessInovator",
-      "hashtags": [
-        "#CristiNita",
-        "#Antreprenoriat",
-        "#Afaceri",
-        "#StrategieBusiness",
-        "#Oportunitate",
-        "#Leadership",
-        "#Decizii",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Cristi Niţă, fondatorul btvideo.ro şi mediastory.ro: Nu particip la criză. Aleg oportunitatea. De ce. Professional photorealistic style. No text, no logos, no watermarks."
     }
   ]
 }
