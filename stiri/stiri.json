@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T06:28:24.555426+00:00",
+  "updated_at": "2026-08-19T14:29:02.988800+00:00",
   "run_log": {
     "AI & Tech": 3,
     "Sport": 3,
@@ -12,6 +12,531 @@
     "Bursa & Piete": 3
   },
   "items": [
+    {
+      "title": "Ştiai că poţi deveni ambasador pentru comunitatea ta? Ai şansa să transformi o problemă locală într-o idee discutată la nivel european",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/zf-gen-z/stiai-ca-poti-deveni-ambasador-pentru-comunitatea-ta-ai-sansa-sa-transformi-o-problema-locala-intr-o-idee-discutata-la-nivel-european-23220359",
+      "date": "2026-08-19T14:25:46+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Ştiai că poţi deveni ambasador pentru comunitatea ta? Ai şansa să transformi o problemă locală într-o idee discutată la nivel european",
+      "instagram_caption": "Ştiai că poţi deveni ambasador pentru comunitatea ta? Ai şansa să transformi o problemă locală într-o idee discutată la nivel european\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Ştiai că poţi deveni ambasador pentru comunitatea ta? Ai şansa să transformi o problemă locală într-. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Exempțiile de la vaccinarea copiilor ating un record, cazurile de rujeolă cresc în SUA",
+      "source": "Healthline",
+      "url": "https://www.healthline.com/health-news/cdc-vaccine-exemptions-hit-record-high",
+      "date": "2026-08-19T14:23:29.056622+00:00",
+      "category": "Sanatate",
+      "summary": "Exempțiile de la vaccinarea copiilor din motive medicale sau religioase au atins un nivel record. Un raport CDC arată că acoperirea vaccinală ROR în rândul preșcolarilor americani a scăzut de la 92,5% în 2024–25 la 92,4% în 2025–26. Acest nivel este mult sub pragul de 95% asociat cu imunitatea de turmă împotriva bolilor infecțioase precum rujeola. Exempțiile medicale sau religioase de la unul sau mai multe vaccinuri școlare obligatorii au crescut",
+      "instagram_caption": "Alarmant! 🚨 Numărul exempțiilor de la vaccinarea copiilor a atins un nou record în SUA, în timp ce cazurile de rujeolă sunt în creștere. 📉 Acoperirea vaccinală ROR a scăzut sub pragul de 95% necesar pentru imunitatea de turmă. Află mai multe despre impactul acestor exempții asupra sănătății publice pe site-ul NEXAS! #Vaccinuri #Rujeola #SanatatePublica #SUA",
+      "hashtags": [
+        "#Rujeola",
+        "#Vaccinuri",
+        "#SanatatePublica",
+        "#SUA",
+        "#ImunitateDeTurma"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Childhood Vaccine Exemptions Hit Record High as Measles Cases Surge Across U.S.. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Taramasalata, rețeta grecească pe care puțini români o știu. Ingredientul care îi schimbă complet gustul",
+      "source": "CSID",
+      "url": "https://www.csid.ro/diete/retete-culinare/taramasalata-reteta-greceasca-pe-care-putini-romani-o-stiu-ingredientul-care-ii-schimba-complet-gustul-21283740/",
+      "date": "2026-08-19T14:23:25.663760+00:00",
+      "category": "Sanatate",
+      "summary": "Taramasalata, un preparat emblematic al bucătăriei grecești, poate fi pregătit ușor acasă. Secretul unei creme perfecte, fine și delicioase, stă într-un detaliu adesea neglijat, care face diferența între un gust echilibrat și o consistență prea sărată sau amară. Descoperă cum să eviți greșelile comune și să te bucuri de autenticul gust mediteranean.",
+      "instagram_caption": "Descoperă Taramasalata! 🤩 Această rețetă grecească autentică, adesea necunoscută românilor, este mai ușor de preparat acasă decât crezi. Un ingredient cheie poate transforma complet gustul, ducând-o de la \"bine\" la \"excepțional\". ✨ Află secretul pentru o cremă fină, perfect echilibrată, fără gust amar sau prea sărat. Pregătește-te să impresionezi cu o delicatesă mediteraneană! 😋 Click pe link în bio pentru rețeta completă! ➡️",
+      "hashtags": [
+        "Taramasalata",
+        "RetetaGreceasca",
+        "BucatarieGreaca",
+        "Gastronomie",
+        "PreparateMediteraneene",
+        "Delicatese",
+        "GatitAcasa",
+        "ReteteUsoare"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Taramasalata, rețeta grecească pe care puțini români o știu. Ingredientul care îi schimbă complet gu. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Tragedie în Camerun: prăbușirea unei mine de aur a provocat cel puțin 100 de morți",
+      "source": "G4Media",
+      "url": "https://www.g4media.ro/tragedie-in-camerun-prabusirea-unei-mine-de-aur-a-provocat-cel-putin-100-de-morti.html",
+      "date": "2026-08-19T14:20:24+00:00",
+      "category": "Romania",
+      "summary": "Cel puțin 100 de persoane au murit în urma prăbușirii unei mine de aur la granița dintre Camerun și Republica Centrafricană. Accidentul s-a produs marți, la prânz, la Zamboyé, la aproximativ 50 km de orașul Baboua, potrivit Le Figaro. „Este o catastrofă. Pământul s-a prăbușit complet și a îngropat oamenii”, a declarat pentru AFP Cédric […] © G4Media.ro .",
+      "instagram_caption": "Tragedie în Camerun: prăbușirea unei mine de aur a provocat cel puțin 100 de morți\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Tragedie în Camerun: prăbușirea unei mine de aur a provocat cel puțin 100 de morți. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Rob Strechay devine Prim Analist VentureBeat, consolidând cercetarea în AI enterprise",
+      "source": "VentureBeat AI",
+      "url": "https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push",
+      "date": "2026-08-19T14:18:12+00:00",
+      "category": "AI & Tech",
+      "summary": "Rob Strechay, până de curând director general și analist principal la theCUBE Research, s-a alăturat VentureBeat ca Prim Analist și analist fondator al VentureBeat Research. Venirea sa reprezintă un pas important pentru VentureBeat spre o specializare mai profundă: analiză destinată decidenților tehnici – directori, VP-i, CIO-i și CTO-i – care evaluează, achiziționează și implementează tehnologii AI enterprise.",
+      "instagram_caption": "🚀 VentureBeat face un pas strategic numindu-l pe Rob Strechay Prim Analist! El aduce experiență vastă de la theCUBE Research, alăturându-se ca analist fondator al VentureBeat Research. Această mișcare subliniază dedicarea VentureBeat pentru analize aprofundate în domeniul AI enterprise, special create pentru decidenți tehnici ca directori, VP, CIO și CTO. Pregătește-te pentru perspective esențiale despre evaluarea și implementarea tehnologiilor AI! 💡📊 #VentureBeat #AISpecialization #TechInsights #RobStrechay #EnterpriseAI",
+      "hashtags": [
+        "#VentureBeat",
+        "#AITech",
+        "#EnterpriseAI",
+        "#RobStrechay",
+        "#AIResearch",
+        "#TechNews"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: VentureBeat names Rob Strechay as its first Lead Analyst, expanding its enterprise AI research push. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Unde sunt banii lui David Popovici? ANS, în vizorul controverselor privind premierile",
+      "source": "Fanatik",
+      "url": "https://www.fanatik.ro/unde-sunt-banii-lui-david-popovici-ans-aratata-cu-degetul-21526601",
+      "date": "2026-08-19T14:15:00+00:00",
+      "category": "Sport",
+      "summary": "David Popovici, multiplul campion mondial la natație, încă își așteaptă premiile binemeritate pentru performanțele excepționale aduse României. Ștefan Popescu, expert în domeniu, detaliază situația și explică mecanismul blocării fondurilor. Agenția Națională pentru Sport (ANS) este indicată drept instituția responsabilă pentru întârzierile semnificative în acordarea acestor recompense, stârnind controverse și întrebări despre modul de gestionare a banilor destinați sportivilor de elită.",
+      "instagram_caption": "Incredibil, dar adevărat! 😱 David Popovici, campionul care a adus atâtea medalii și bucurie României, încă își așteaptă premiile pentru performanțele sale uriașe. Unde s-au blocat banii? 🧐 Agenția Națională pentru Sport (ANS) este arătată cu degetul pentru întârzierile inexplicabile. O situație inacceptabilă! Sportivii noștri merită recunoaștere și recompensă la timp. 🏊🏻🇷🇴 Voi ce părere aveți? #DavidPopovici #SportRomania #UndeSuntBanii #ANS #PremiiSportivi",
+      "hashtags": [
+        "#DavidPopovici",
+        "#SportRomania",
+        "#UndeSuntBanii",
+        "#ANS",
+        "#PremiiSportivi"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Unde sunt banii lui David Popovici? ANS, arătată cu degetul în cazul premierilor. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Acțiunile tech scad din nou, contrabalansând randamentele obligațiunilor: AlphaCheck",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/tech-sell-off-resumes-counterbalancing-bond-yield-relief-alphacheck-141446892.html",
+      "date": "2026-08-19T14:14:46+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Vânzarea masivă de acțiuni din sectorul tehnologic reîncepe, contrabalansând efectul pozitiv al unei anumite relaxări a randamentelor obligațiunilor. Această evoluție este semnalată de AlphaCheck.",
+      "instagram_caption": "Acțiunile tech revin sub presiune de vânzare! 📉 Această nouă rundă de scăderi contrabalansează orice ușurare adusă de randamentele obligațiunilor. Ce înseamnă asta pentru piețe? 🤔 Rămâi informat cu analizele #AlphaCheck! Sursa: Yahoo Finance. #Bursa #PieteFinanciare #Investitii #TechStocks #ScadereTech #Economie #Finante",
+      "hashtags": [
+        "Bursa",
+        "PieteFinanciare",
+        "Investitii",
+        "TechStocks",
+        "ScadereTech",
+        "Obligatiuni",
+        "AlphaCheck",
+        "Economie",
+        "Finante"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Tech sell-off resumes, counterbalancing bond yield relief: AlphaCheck. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "ONU îndeamnă Zambia să oprească arestările arbitrare ale membrilor opoziției",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-19/un-urges-zambia-to-halt-arbitrary-arrests-of-opposition-members",
+      "date": "2026-08-19T14:13:51+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Organizația Națiunilor Unite și-a exprimat îngrijorarea cu privire la informațiile conform cărora membrii opoziției din Zambia au fost reținuți în timpul alegerilor din 13 august, în timp ce observatorii au ridicat întrebări cu privire la corectitudinea scrutinului care l-a readus la putere pe președintele Hakainde Hichilema.",
+      "instagram_caption": "UN Urges Zambia to Halt Arbitrary Arrests of Opposition Members\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: UN Urges Zambia to Halt Arbitrary Arrests of Opposition Members. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Regina Camilla, dezvăluiri despre diagnosticul de cancer al regelui Charles: „Greu să păstrăm secretul”",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/externe/ue/camilla-dezvaluiri-despre-diagnosticul-de-cancer-al-regelui-charles-a-fost-greu-sa-pastram-secretul-abia-asteptam-sa-spun-tuturor-3912737",
+      "date": "2026-08-19T14:13:05+00:00",
+      "category": "Romania",
+      "summary": "Regina Camilla a oferit primele sale declarații publice, într-un interviu pentru The Guardian, despre provocarea de a păstra secret diagnosticul de cancer al Regelui Charles înainte de a fi anunțat oficial. Ea a mărturisit că i-a fost extrem de greu și a simțit o puternică „nevoie să spună totul” în timpul unei vizite la centrul caritabil Maggie’s, în ianuarie 2024, la scurt timp după diagnosticarea Regelui. Această perioadă de incertitudine și secret a fost o povară emoțională considerabilă pentru regină.",
+      "instagram_caption": "Regina Camilla a vorbit pentru prima dată despre momentul dificil în care a trebuit să păstreze secret diagnosticul de cancer al Regelui Charles. 💔 Într-un interviu emoționant, ea a mărturisit că i-a fost extrem de greu și a simțit o „nevoie” copleșitoare să împărtășească vestea. O perioadă plină de incertitudine și discreție pentru Casa Regală Britanică. 🙏 Ce putere de a gestiona o asemenea presiune! #CasaRegala #RegeleCharles #ReginaCamilla #Monarhie #CancerAwareness #ConfesiuniRegale",
+      "hashtags": [
+        "#ReginaCamilla",
+        "#RegeleCharles",
+        "#CasaRegala",
+        "#MonarhieBritanica",
+        "#DiagnosticCancer",
+        "#DezvaluiriRegale",
+        "#FamiliaRegala",
+        "#CancerAwareness"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Camilla, dezvăluiri despre diagnosticul de cancer al regelui Charles: „A fost greu să păstrăm secret. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Moderna: Acțiuni explodează cu 120% pe bursă după studiu melanom. Gain de 30 mld. $",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/burse-fonduri-mutuale/actiunile-moderna-explodeaza-bursa-new-york-crestere-120-30-minute-dupa-rezultatele-studiului-clinic-privind-tratamentul-melanomului-compania-castiga-30-mld-dolari-capitalizare-23220356",
+      "date": "2026-08-19T14:12:21+00:00",
+      "category": "Business",
+      "summary": "Acțiunile Moderna au înregistrat o creștere spectaculoasă de 120% pe bursa din New York, în doar 30 de minute, ca urmare a rezultatelor pozitive obținute în studiul clinic privind tratamentul melanomului. Această performanță a adus companiei un câștig de 30 de miliarde de dolari în capitalizarea bursieră, subliniind impactul major al inovației medicale.",
+      "instagram_caption": "Știri fierbinți de la bursă! 📈 Acțiunile Moderna au explodat cu 120% pe bursa din New York în doar 30 de minute! 🚀 Motivul? Rezultate promițătoare pentru tratamentul melanomului. Un studiu clinic de succes a adus companiei un câștig colosal de 30 miliarde dolari în capitalizare. O zi istorică pentru inovația medicală și piața financiară! ✨",
+      "hashtags": [
+        "Moderna",
+        "Bursa",
+        "Melanom",
+        "StiriFinanciare",
+        "InovatieMedicala",
+        "Actiuni",
+        "NewYorkStockExchange"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Acţiunile Moderna explodează pe bursa din New York: Creştere de 120% în doar 30 de minute după rezul. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Adrian Mutu, dur cu Gigi Becali: „Țeapă cu Boutoutaou! Nu driblează pe nimeni”",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-intern/superliga/adrian-mutu-mesaj-dur-pentru-gigi-becali-a-luat-teapa-cu-boutoutaou-a-venit-din-franta-si-nu-dribleaza-pe-nimeni-20506445",
+      "date": "2026-08-19T14:10:56+00:00",
+      "category": "Sport",
+      "summary": "Adrian Mutu, fost mare internațional, a urmărit recent un meci al FCSB și a criticat vehement transferul lui Aymen Boutoutaou. Acesta a declarat că Gigi Becali „a luat țeapă” cu jucătorul francez, subliniind că Boutoutaou, deși venit din Franța, nu reușește să dribleze pe nimeni pe teren. Mutu a transmis un mesaj dur patronului FCSB, sugerând că achiziția nu s-a ridicat la așteptări.",
+      "instagram_caption": "Adrian Mutu nu s-a abținut! 💥 Fostul internațional a urmărit FCSB și a tras concluzia: transferul lui Aymen Boutoutaou este o „țeapă” pentru Gigi Becali! 🗣️ „A venit din Franța și nu driblează pe nimeni!” declarația directă a lui Mutu. Oare ce va zice patronul FCSB? 🤔 Voi ce părere aveți despre Boutoutaou? Scrieți în comentarii! 👇",
+      "hashtags": [
+        "AdrianMutu",
+        "GigiBecali",
+        "FCSB",
+        "Superliga",
+        "FotbalRomania",
+        "Transferuri"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Adrian Mutu, mesaj dur pentru Gigi Becali: „A luat țeapă cu Boutoutaou! A venit din Franța și nu dri. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "ULTIMA ORĂ FOTO Airbnb începe curățenia în România. Apartamentele din clădirile cu bulină roșie riscă eliminarea din platformă",
+      "source": "HotNews",
+      "url": "https://hotnews.ro/ultima-ora-foto-airbnb-incepe-curatenia-in-romania-apartamentele-din-cladirile-cu-bulina-rosie-risca-eliminarea-din-platforma-2328347",
+      "date": "2026-08-19T14:10:47+00:00",
+      "category": "Romania",
+      "summary": "Airbnb a început să notifice proprietarii din clădirile cu risc seismic I din România. Platforma avertizează că legislația românească interzice închirierea în aceste imobile. Cei vizați au 14 zile să demonstreze că apartamentul nu se află în categoria Risc Seismic I, altfel anunțul dispare, arată Cotidianul. Profit.ro a relatat recent că aproximativ 74.000 de spații …",
+      "instagram_caption": "ULTIMA ORĂ FOTO Airbnb începe curățenia în România. Apartamentele din clădirile cu bulină roșie riscă eliminarea din platformă\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: ULTIMA ORĂ FOTO Airbnb începe curățenia în România. Apartamentele din clădirile cu bulină roșie risc. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Calendly intră în cursa asistenților AI pentru notițe la ședințe",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/19/calendly-throws-its-hat-into-meeting-note-taker-circus/",
+      "date": "2026-08-19T14:09:39+00:00",
+      "category": "AI & Tech",
+      "summary": "Calendly își extinde semnificativ portofoliul de servicii, lansând un instrument dedicat pentru notițe inteligente la ședințe, intrând astfel pe o piață competitivă. În plus, compania introduce și Callie, un asistent avansat pentru programarea eficientă a întâlnirilor. Prin aceste noi adăugiri, Calendly își propune să simplifice și mai mult gestionarea timpului și a colaborării, oferind soluții complete de la agendă la documentarea discuțiilor.",
+      "instagram_caption": "Pregătește-te pentru o revoluție în managementul întâlnirilor! 🚀 Calendly se avântă în arena asistenților AI pentru notițe la ședințe, transformând modul în care documentăm discuțiile. 📝 Dar asta nu e tot! Compania lansează și Callie, noul tău asistent inteligent pentru programarea fără efort a întâlnirilor. 🗓️ E timpul să maximizezi productivitatea! #Calendly #AI #Tech #Productivitate #SoluțiiAI #MeetingNotes #Callie #InovațieDigitală #Eficienta",
+      "hashtags": [
+        "#Calendly",
+        "#AI",
+        "#Tech",
+        "#Productivitate",
+        "#MeetingNotes",
+        "#Callie",
+        "#InovațieDigitală",
+        "#AsistentAI"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Calendly throws its hat into meeting note-taker circus. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Decizia luată de Bayern, după ce Jamal Musiala a leșinat de două ori pe teren în doar 3 zile",
+      "source": "DigiSport",
+      "url": "https://www.digisport.ro/fotbal/bundesliga/decizia-luata-de-bayern-dupa-ce-jamal-musiala-a-lesinat-de-doua-ori-pe-teren-in-doar-3-zile-4439823",
+      "date": "2026-08-19T14:08:30+00:00",
+      "category": "Sport",
+      "summary": "Clubul Bayern Munchen a reacționat prompt după ce tânărul său mijlocaș, Jamal Musiala, a suferit două episoade de leșin pe teren în decurs de doar trei zile. Preocupările majore legate de sănătatea jucătorului au determinat conducerea echipei să ia o decizie fermă. Musiala va fi supus unor investigații medicale amănunțite și va primi o perioadă de repaus, fiind retras temporar din antrenamente și meciuri, pentru a asigura o recuperare completă și a identifica eventualele cauze ale incidentelor.",
+      "instagram_caption": "Situație alarmantă la Bayern! 🚨 Tânărul Jamal Musiala a leșinat de două ori pe teren în ultimele 3 zile, stârnind îngrijorare. Clubul a luat o decizie imediată: Musiala va fi supus unor controale medicale amănunțite și va beneficia de o perioadă de repaus. Sănătatea jucătorului este prioritară! Îi dorim însănătoșire grabnică! 🙏 #JamalMusiala #BayernMunchen #Fotbal #SănătateJucători #Bundesliga #NEXAS",
+      "hashtags": [
+        "JamalMusiala",
+        "BayernMunchen",
+        "Fotbal",
+        "SănătateJucători",
+        "Bundesliga",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Decizia luată de Bayern, după ce Jamal Musiala a leșinat de două ori pe teren în doar 3 zile. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ministerul Energiei: Fără notificări de limitare a consumului pentru marii industriali",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/povesti-cu-profit/energie/video-disputa-in-energie-ministerul-dezminte-afirmatia-fostului-ministru-psd-de-resort-ca-ar-fi-fost-trimise-notificari-de-limitare-a-consumului-marilor-consumatori-industriali-22644587?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-08-19T14:08:00+00:00",
+      "category": "Business",
+      "summary": "Ministerul Energiei respinge categoric informațiile conform cărora marii consumatori industriali ar fi primit notificări de limitare sau deconectare a consumului. Instituția a emis un comunicat prin care dezminte oficial aceste afirmații, considerându-le dezinformări.",
+      "instagram_caption": "Dispută în sectorul energetic! ⚡️ Ministerul Energiei dezminte categoric afirmațiile privind trimiterea de notificări de limitare a consumului către marii consumatori industriali. 🚫 Oficialii subliniază că aceste informații sunt false și reprezintă o dezinformare. Află toate detaliile despre această situație tensionată! 👇",
+      "hashtags": [
+        "Energie",
+        "MinisterulEnergiei",
+        "Romania",
+        "Stiri",
+        "ConsumIndustrial"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: VIDEO Dispută în energie. Ministerul dezminte afirmația fostului ministru PSD de resort că ar fi fos. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Japonia pregătește o misiune care ar putea dezvălui originea Sistemului Solar",
+      "source": "Descopera Ro",
+      "url": "https://www.descopera.ro/stiinta/21122540-japonia-pregateste-o-misiune-care-ar-putea-dezvalui-originea-sistemului-solar",
+      "date": "2026-08-19T14:00:40+00:00",
+      "category": "Stiinta",
+      "summary": "Oamenii de știință japonezi pregătesc o misiune spațială ambițioasă către sateliții naturali ai planetei Marte, având ca scop prelevarea de probe ce ar putea descifra originea Sistemului Solar și modul în care a apărut viața […] Articolul Japonia pregătește o misiune care ar putea dezvălui originea Sistemului Solar apare prima dată în Descopera .",
+      "instagram_caption": "Japonia pregătește o misiune care ar putea dezvălui originea Sistemului Solar\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Japonia pregătește o misiune care ar putea dezvălui originea Sistemului Solar. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Israel confirmă că a deschis focul asupra mașinii cu Hind Rajab (5 ani) în Gaza",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/crl7yjlpx2po?at_medium=RSS&at_campaign=rss",
+      "date": "2026-08-19T13:53:51+00:00",
+      "category": "International",
+      "summary": "Fetița Hind Rajab, în vârstă de cinci ani, se afla într-un vehicul asupra căruia Israelul a confirmat că a deschis focul în Fâșia Gaza. Deși a supraviețuit inițial atacului, trupul ei a fost recuperat la câteva zile, în orașul Gaza, în 2024.",
+      "instagram_caption": "Israelul a confirmat că a deschis focul asupra vehiculului în care se afla Hind Rajab, fetița de 5 ani din Gaza. 💔 Deși a supraviețuit inițial atacului, trupul ei a fost recuperat zile mai târziu în Gaza City, în 2024. Un caz tragic raportat de BBC World.",
+      "hashtags": [
+        "#Gaza",
+        "#HindRajab",
+        "#Israel",
+        "#Conflict",
+        "#StiriInternationale",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Israel confirms it opened fire on vehicle carrying five-year-old Hind Rajab in Gaza. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Enverus: H&P și ExxonMobil, lideri în forajul terestru SUA, Q1 2026",
+      "source": "Forbes Romania",
+      "url": "https://www.forbes.ro/enverus-helmerich-payne-si-exxonmobil-liderii-forajului-terestru-din-sua-in-2026-517346",
+      "date": "2026-08-19T13:48:40+00:00",
+      "category": "Business",
+      "summary": "Helmerich & Payne (H&P) și ExxonMobil s-au clasat pe primele poziții în activitatea de foraj terestru din SUA în primul trimestru din 2026, conform unei analize Enverus. Compania a realizat clasamente separate pentru contractorii de foraj și operatorii petrolieri, bazându-se pe datele din această perioadă. Această evaluare subliniază dinamica sectorului energetic și rolul jucat de jucătorii cheie în industrie.",
+      "instagram_caption": "🚀 Helmerich & Payne (H&P) și ExxonMobil domină forajul terestru din SUA! Conform analizei Enverus, aceste companii s-au clasat pe primele poziții în Q1 2026. 🇺🇸 H&P este lider printre contractorii de foraj, iar ExxonMobil printre operatorii petrolieri. O privire esențială asupra performanței în industria energetică americană. Află mai multe! 👇",
+      "hashtags": [
+        "#ForajTerestru",
+        "#SUA",
+        "#Energie",
+        "#PetrolSiGaze",
+        "#Enverus",
+        "#H&P",
+        "#ExxonMobil"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Enverus: Helmerich & Payne și ExxonMobil, liderii forajului terestru din SUA în 2026. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "În atenția carierei: mecanic (vârste 14-18)",
+      "source": "NASA News",
+      "url": "https://www.nasa.gov/learning-resources/career-spotlight-mechanic-ages-14-18/",
+      "date": "2026-08-19T13:48:20+00:00",
+      "category": "Stiinta",
+      "summary": "Ce face un mecanic? Mașinile și motoarele sunt peste tot în jurul nostru. Ele alimentează totul, de la mașini și bărci până la avioane și chiar rachete. Mecanicii sunt experți care știu cum funcționează utilajele, în special motoarele, și cum să le repare. Când te gândești la un mecanic, s-ar putea să-ți imaginezi pe cineva lucrând la mașini. Dar mecanica poate […]",
+      "instagram_caption": "Career Spotlight: Mechanic (Ages 14-18)\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Career Spotlight: Mechanic (Ages 14-18). Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Mourinho lansează o săgeată către Barcelona: „Nu am avut nevoie de Rodri”",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/sports/2026/8/19/mourinho-fires-real-madrid-shot-at-barcelona-saying-he-didnt-need-rodri?traffic_source=rss",
+      "date": "2026-08-19T13:24:34+00:00",
+      "category": "International",
+      "summary": "Jose Mourinho revine la Real Madrid pentru un al doilea mandat și declară că echipa nu a avut nevoie de Rodri, noua achiziție a Barcelonei.",
+      "instagram_caption": "Mourinho revine la Real Madrid! 👑 Antrenorul portughez, cunoscut pentru declarațiile sale tranșante, a lansat o replică acidă la adresa Barcelonei, afirmând că \"Los Blancos\" nu au avut nevoie de noua lor achiziție, Rodri. 🤔 Ce părere aveți despre revenirea lui Mourinho și declarațiile sale? Comentați mai jos! 👇",
+      "hashtags": [
+        "#Mourinho",
+        "#RealMadrid",
+        "#Barcelona",
+        "#Fotbal",
+        "#LaLiga",
+        "#Rodri",
+        "#JoseMourinho",
+        "#ElClasico",
+        "#Transferuri",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Mourinho fires Real Madrid shot at Barcelona saying he ‘didn’t need’ Rodri. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Zeci de mii de ruși fug în Georgia de teama mobilizării. Când semnează Putin ordinul?",
+      "source": "Google Intl",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOa2tOSkxma2hnVXkyZFJyaTh0MjJZb2NVOUNpUlBnMjlKVkYyVk0tYnhnZDNkQU5Ra2ktMGhUWm5qa29NZWJlRzNoRGM1eXVhMnpDN091QlYzVlppa1FubENsVjdCY3FQZDR5b1ExN3AwMjN3TXFxOU03c1U3MDNoa0l5ZDcxLTBJeTNfd1ROZlVEbFJITm5JTzl5SGc0UDVOX1F5VlBGUno3ZHNNQ1ZYZlBFbFJGQ3lPSl8yalctNEdvUWZnX29JczNJNzNVT2ZEbEduUWdTT2FFcEVTUkFGMWw0X0VTSW_SAfIBQVVfeXFMTi1CRmt6NDJNcUplOHo3eGoyUzVTVHZOY1d6NFUyM1pFYXRiMWZsbElZLUNNT2hfWWNBbUxTR01fY3NoeXNVd1N0MmJzSlhKLXVxbENmN3VYaFRRMlJHQmFXajNmYVVUdE5ib0VpVVJUd0sxX05UMU9nRDVZM05rV0lBZ3lGOE9qTkJZRHZzdnFFVDZPNzFBYXROTUZpQWVwc0ZJYUV6M1UwSWlRY0Z1Uzc5akRzTmliblpKeXNybXp0TWJlN0dpd21EdnVTa2c1Mm9paWVyODhGbGxZNnB6Z3BMQUxKYWtRbWVqYWRKUTVtX1E?oc=5",
+      "date": "2026-08-19T13:04:11+00:00",
+      "category": "International",
+      "summary": "Un val masiv de cetățeni ruși a traversat granița în Georgia în ultimele zile, temându-se de o posibilă mobilizare generală anunțată de președintele Vladimir Putin. Situația tensionată a generat îngrijorări în rândul populației, mulți căutând refugiu și evitarea înrolării forțate. Speculațiile privind data la care Putin ar putea semna ordinul de mobilizare cresc, pe fondul eforturilor Kremlinului de a consolida forțele armate.",
+      "instagram_caption": "Situație tensionată la granița Rusiei cu Georgia! 🚨 Zeci de mii de cetățeni ruși fug din țară, panicați de iminența unei mobilizări generale ordonate de Putin. Se tem de înrolarea forțată și caută siguranță peste graniță. Când va semna președintele rus ordinul? Urmărim evoluțiile! #Rusia #Georgia #Mobilizare #RazboiUcraina #Putin #Stiri",
+      "hashtags": [
+        "Rusia",
+        "Georgia",
+        "Mobilizare",
+        "RazboiUcraina",
+        "Putin",
+        "Stiri"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Zeci de mii de ruși fug în Georgia de teama unei mobilizări generale. Când ar putea semna Putin ordi. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Băutorii de cafea au mai puține grăsimi, mai mulți mușchi și diferențe hormonale surprinzătoare",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260819041228.htm",
+      "date": "2026-08-19T12:30:05+00:00",
+      "category": "Stiinta",
+      "summary": "Băutorii de cafea pot primi mai mult decât un plus de energie. Un studiu finlandez a constatat că persoanele care au băut mai multă cafea au tendința de a avea mai puțină grăsime totală și abdominală, mai multă mușchi și markeri metabolici mai sănătoși, în ciuda faptului că au IMC similar. Consumul mai mare de cafea a fost, de asemenea, legat de niveluri mai scăzute ale anumitor aminoacizi asociate cu rezistența la insulină și riscul de diabet de tip 2.",
+      "instagram_caption": "Coffee drinkers have less fat, more muscle, and surprising hormone differences\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Coffee drinkers have less fat, more muscle, and surprising hormone differences. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Tom Holland: Suma Colosală Încasată pentru Blockbusterul 'Spider-Man: Brand New Day'",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPM2JJYWEzdTNhUDZSRWd4eWNQaWJhSmFFbU9YNGlyU1ZPWWhyd3d4S081dGJYZ2xZVzM2dVZ1aFh6N1dyTTlvbVhNY05aMzJsbFlkNjRrXzNieThGTHlfUzg2dzZJOFJKNUF3TDVWR0tSRmtMbG5fSEZBcm1mV0tpN2hIa1ozOTh2bUhjVkl4WjlOT1FlMTliOXZZZlF3eW9xTENxeVNnM2QtRENLekROZjhMRERuWDBPeWc4bFFXeVdFem96b0F2LXBNaW5pZGh2bW80UG52N1RDVU02eUpiOFhsMHBlZTA?oc=5",
+      "date": "2026-08-19T09:31:00+00:00",
+      "category": "Entertainment",
+      "summary": "Tom Holland ar putea încasa o sumă colosală pentru rolul său în blockbusterul 'Spider-Man: Brand New Day'. Filmul este singurul din 2026 care a depășit încasări de 2 miliarde de dolari, plasându-l într-un club exclusivist și menținându-l lider la box-office. Această performanță remarcabilă sugerează un salariu record pentru actor.",
+      "instagram_caption": "Tom Holland, interpretul lui Spider-Man, ar putea stabili un record absolut cu salariul său pentru 'Spider-Man: Brand New Day'! 🤑 Cu încasări de peste 2 miliarde de dolari, filmul este un succes răsunător și a intrat într-un club exclusivist. Ești curios cât va câștiga? 🤔 Un salariu colosal, pe măsura performanței de box-office! #TomHolland #SpiderMan #BrandNewDay #BoxOffice #SalariuRecord #NEXAS",
+      "hashtags": [
+        "#TomHolland",
+        "#SpiderMan",
+        "#BrandNewDay",
+        "#BoxOffice",
+        "#SalariuRecord",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Ce salariu are ”Spiderman”. Suma colosală pe care Tom Holland o încasează pentru blockbusterul ”Spid. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Rotary Club Iași relansează \"Promenada Inimilor\": 5000 de pași pentru o inimă sănătoasă",
+      "source": "Google Sanatate",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9tcXoybHhscDJkWUF1ZmFrN3hJT3ktSXh5M3k1dDhJeUJXMzBkS2ZndTVTTnptSWM3SDNPR3dWZmJRWGpEQTBJVGg5OGYzWm1ybWZTbDFSTDFzQ095cG1TQ01yc0VncElzeWFJTExVVXpodTNXd1lVd1diVFk?oc=5",
+      "date": "2026-08-19T09:12:07+00:00",
+      "category": "Sanatate",
+      "summary": "Rotary Club Iași relansează cu entuziasm evenimentul „Promenada Inimilor”, invitând comunitatea la o acțiune dedicată sănătății cardiovasculare. Inițiativa încurajează participanții să parcurgă 5000 de pași, promovând beneficiile exercițiilor fizice moderate pentru o inimă mai puternică. Prin această campanie, Rotary Club Iași subliniază importanța unui stil de viață activ în prevenția bolilor de inimă și în consolidarea legăturilor sociale.",
+      "instagram_caption": "❤️ Rotary Club Iași aduce din nou „Promenada Inimilor” pentru o comunitate mai sănătoasă! 🎉 Ești gata să faci 5000 de pași pentru inima ta? 🚶‍♀️🚶‍♂️ Ne vedem la evenimentul care ne reamintește importanța mișcării și a unui stil de viață activ. Fii parte din schimbare! #PromenadaInimilor #RotaryIasi #SanatateCardiovasculara #5000DePasi #ComunitateActiva #MiscareSanatate",
+      "hashtags": [
+        "#PromenadaInimilor",
+        "#RotaryIasi",
+        "#SanatateCardiovasculara",
+        "#5000DePasi",
+        "#ComunitateActiva",
+        "#MiscareSanatate"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: 5000 de pași pentru o inimă mai sănătoasă: Rotary Club Iași readuce „Promenada Inimilor” în comunita. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Oradea, sub magia muzicii: \"Smoke on Water\" a umplut malurile Crișului Repede!",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNDQ5Y3hXUF93NDhPU21wTENHQXdXTk1fcEtmbDZWMG95SmdremR5WUtiMkJWbDJZQXFxa1VYSy0zR2NBZ0R3QW5hSVk2SVdYWmhTd2dPTUdma0E4RTc5Ml84bmdKSk9zeVpNMlc5NDMtaUY5aUsxZDZDQkRrbWx6UXNLUTF3ME4wUVdDYmdCVlBuMzdjYWNGM0pQZk8xTzRyRXhKaHFpaEZRLS1oRG5XZTJTMUhxM25waUo3TzgtQWc5bnRleXRZd0Y2UWppdEM0M3ZCdGp0eFdTbWMxTmp5aUpn?oc=5",
+      "date": "2026-08-19T09:12:00+00:00",
+      "category": "Entertainment",
+      "summary": "Sute de orădeni au fost prezenți la un concert extraordinar pe malurile Crișului Repede, unde artiștii Filarmonicii de Stat și Corala Art Nouveau au oferit o seară de neuitat. Publicul a fost cucerit de interpretările muzicale, în special de piesa \"Smoke on Water\", care a rezonat puternic cu atmosfera evenimentului. Seara a fost descrisă drept o experiență magică pentru întreaga comunitate orădeană.",
+      "instagram_caption": "Ce seară magică în Oradea! ✨ Malurile Crișului Repede au vibrat sub acordurile Filarmonicii de Stat și ale Coralei Art Nouveau. Sute de orădeni s-au bucurat de un concert de excepție, unde celebra \"Smoke on Water\" a fost momentul culminant! 🎶 O atmosferă de vis, care ne-a unit pe toți. Mulțumim Oradea pentru o asemenea experiență! 💖",
+      "hashtags": [
+        "Oradea",
+        "Concert",
+        "FilarmonicaDeStat",
+        "SmokeOnWater",
+        "CrisulRepede",
+        "MuzicaLive",
+        "EvenimenteOradea",
+        "Cultura"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: „Ce seara, Oradea!”: „Smoke on Water” a umplut malurile Crisului... - Bihoreanul. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Lewis Hamilton și Kim Kardashian: Relație oficializată pe Instagram cu o poză virală",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdjc3VEpORXBpRFFFNktQS0p4blJBRVNBZVFlR0QxUlBzYlZ4YUtzYTJBenVvLVktSXZtdkNsblZXTDlzUzhWVHo5QXNDZ1E0RElYcE9LR1V4TzBieDBmSWNOTkdhTmVPdV9KeWtOalRZSm5fUnZONHVVbGFoX041NnlnbDU1aUs2X3kzdFZOUS12dkgtY3pFRXpHS3E1dnRURHc?oc=5",
+      "date": "2026-08-19T08:27:12+00:00",
+      "category": "Entertainment",
+      "summary": "Lewis Hamilton și Kim Kardashian nu se mai ascund. Cei doi și-au oficializat relația printr-o postare pe Instagram, care a devenit rapid virală. Fotografia romantică, surprinsă pe o plajă exotică în timpul unei vacanțe, i-a arătat pe cei doi în ipostaze tandre, confirmând speculațiile presei. Postarea a adunat peste 3,4 milioane de aprecieri, marcând public debutul cuplului.",
+      "instagram_caption": "Sunt oficial împreună! 🎉 Lewis Hamilton și Kim Kardashian nu se mai ascund și și-au confirmat relația printr-o postare romantică pe Instagram. 📸 O fotografie de vis de pe plajă, cu ipostaze tandre, a adunat peste 3,4 milioane de aprecieri în scurt timp. Iubirea plutește în aer! ❤️ Ce părere aveți despre noul cuplu?",
+      "hashtags": [
+        "#LewisHamilton",
+        "#KimKardashian",
+        "#CupluNou",
+        "#Oficial",
+        "#Iubire",
+        "#InstagramViral"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Lewis Hamilton și-a oficializat relația cu Kim Kardashian pe Instagram - Sport.ro. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Replit extinde accesul la crearea de software cu GPT-5.6 Luna",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/replit",
+      "date": "2026-08-19T07:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "Replit lansează Modul Gratuit, alimentat de GPT-5.6 Luna, permițând oricui să transforme ideile în software funcțional fără a se preocupa de costurile token-urilor.",
+      "instagram_caption": "🚀 Inovație la Replit! 🎉 Acum oricine poate transforma ideile în software funcțional cu noul Mod Gratuit, alimentat de inteligența GPT-5.6 Luna. Nu mai trebuie să-ți faci griji pentru costurile token-urilor! 💻 Scrie cod, creează și inovează liber! Ce proiect vei începe?",
+      "hashtags": [
+        "Replit",
+        "GPT56Luna",
+        "ModGratuit",
+        "SoftwareDevelopment",
+        "AI",
+        "TechInnovation",
+        "Coding",
+        "FaraCosturi",
+        "Accesibil"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Replit expands access to software creation with GPT-5.6 Luna. Professional photorealistic style. No text, no logos, no watermarks."
+    },
     {
       "title": "Numărul locurilor de muncă vacante a scăzut în trimestrul doi cu 4.900, fiind disponibile 26.500 de poziţii, cele mai multe cereri fiind pentru specialişit în diferite domenii şi lucrători în domeniul serviciilor",
       "source": "Ziarul Financiar",
@@ -177,25 +702,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Business news: China grăbește eliminarea Windows-ului de pe calculatoarele guvernamentale. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "China grăbește eliminarea Windows-ului de pe calculatoarele guvernamentale",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/povesti-cu-profit/it-c/china-grabeste-eliminarea-windows-ului-de-pe-calculatoarele-guvernamentale-22643006?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-08-19T06:12:00+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Ministerul Securității de Stat din China a ordonat instituțiilor afiliate guvernului să dezinstaleze sistemele de operare Windows de pe calculatoarele pe care le folosesc, conform surselor citate de Bloomberg.",
-      "instagram_caption": "China grăbește eliminarea Windows-ului de pe calculatoarele guvernamentale\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: China grăbește eliminarea Windows-ului de pe calculatoarele guvernamentale. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Fotbalistul numit „anti-gol” de Gigi Becali a recidivat în Cupa României Betano: „Puteam fi erou!”",
@@ -4289,42 +4795,6 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: Un profesor s-a supus unui experiment de longevitate. Acum pare cu 15 ani mai tânăr. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Debitul Dunării la intrarea în ţară va scădea la 1300 mc/s până în 21 august",
-      "source": "G4Media",
-      "url": "https://www.g4media.ro/debitul-dunarii-la-intrarea-in-tara-va-scadea-la-1300-mc-s-pana-in-21-august.html",
-      "date": "2026-08-14T14:46:32+00:00",
-      "category": "Romania",
-      "summary": "Debitul Dunării la intrarea în ţară (secţiunea Baziaş) va fi relativ staţionar la valoarea de 1400 m3/s vineri şi sâmbătă, apoi în scădere uşoară până la valoarea de 1300 m3/s, în 21 august, situându-se sub media multianuală a lunii, de 3900m3/s, potrivit Institutului Naţional de Hidrologie şi Gospodărire a Apelor, transmite Agerpres. În aval de […] © G4Media.ro .",
-      "instagram_caption": "Debitul Dunării la intrarea în ţară va scădea la 1300 mc/s până în 21 august\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Debitul Dunării la intrarea în ţară va scădea la 1300 mc/s până în 21 august. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "România, locul 7 în lume și primul în Europa la randamente bursiere în 2026; BET a crescut cu aproape 80% în ultimul an",
-      "source": "Forbes Romania",
-      "url": "https://www.forbes.ro/romania-locul-7-in-lume-si-primul-in-europa-la-randamente-bursiere-in-2026-bet-a-crescut-cu-aproape-80-in-ultimul-an-516698",
-      "date": "2026-08-14T14:46:17+00:00",
-      "category": "Business",
-      "summary": "România se află pe locul al şaptelea la nivel mondial şi pe prima poziţie în Europa în clasamentul performanţelor bursiere din 2026, cu un avans de 47,1% al indicelui BET de la începutul anului, potrivit unei analize realizate de Autoritatea de Supraveghere Financiară (ASF). Chiar şi după ajustarea cu inflaţia acumulată, randamentul real al pieţei ... The post România, locul 7 în lume și primul în Europa la randament",
-      "instagram_caption": "România, locul 7 în lume și primul în Europa la randamente bursiere în 2026; BET a crescut cu aproape 80% în ultimul an\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: România, locul 7 în lume și primul în Europa la randamente bursiere în 2026; BET a crescut cu aproap. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "De ce luarea GLP-1 ca Ozempic înainte de operația bariatrică nu poate duce la o pierdere mai mare în greutate",
       "source": "Healthline",
       "url": "https://www.healthline.com/health-news/glp1-ozempic-before-bariatric-surgery-may-not-boost-weight-loss",
@@ -4341,96 +4811,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Sanatate news: Why Taking GLP-1s Like Ozempic Before Bariatric Surgery May Not Lead to More Weight Loss. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Eclipsa de Soare din 12 august a trecut, dar efectele ei abia încep. Ce se schimbă pentru fiecare zodie în parte?",
-      "source": "CSID",
-      "url": "https://www.csid.ro/lifestyle/horoscop/eclipsa-de-soare-din-12-august-a-trecut-dar-efectele-ei-abia-incep-ce-se-schimba-pentru-fiecare-zodie-in-parte-21279849/",
-      "date": "2026-08-14T14:45:20.038555+00:00",
-      "category": "Sanatate",
-      "summary": "Eclipsa totală de Soare din 12 august a trecut, dar, potrivit astrologilor, efectele sale abia încep să se facă simțite. Articolul Eclipsa de Soare din 12 august a trecut, dar efectele ei abia încep. Ce se schimbă pentru fiecare zodie în parte? apare prima dată în CSID: Ce se întâmplă Doctore? .",
-      "instagram_caption": "Eclipsa de Soare din 12 august a trecut, dar efectele ei abia încep. Ce se schimbă pentru fiecare zodie în parte?\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Eclipsa de Soare din 12 august a trecut, dar efectele ei abia încep. Ce se schimbă pentru fiecare zo. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Agricultorii cer control şi trasabilitate completă a cerealelor ucrainene aflate în tranzit și protejarea fermierilor români",
-      "source": "Digi24",
-      "url": "https://www.digi24.ro/stiri/economie/agricultorii-cer-control-si-trasabilitate-completa-a-cerealelor-ucrainene-aflate-in-tranzit-si-protejarea-fermierilor-romani-3906919",
-      "date": "2026-08-14T14:45:09+00:00",
-      "category": "Romania",
-      "summary": "Alianţa pentru Agricultură şi Cooperare (AAC) solicită, într-o scrisoare deschisă adresată preşedintelui, premierului şi preşedinţilor celor două Camere ale Parlamentului, controlul riguros şi trasabilitatea completă a cerealelor ucrainene aflate în tranzit, precum şi măsuri concrete pentru protejarea intereselor economice ale României.",
-      "instagram_caption": "Agricultorii cer control şi trasabilitate completă a cerealelor ucrainene aflate în tranzit și protejarea fermierilor români\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Agricultorii cer control şi trasabilitate completă a cerealelor ucrainene aflate în tranzit și prote. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "FOTO România, asaltată de fraude. CocoRico, afectat de gruparea Akira. Atac asupra Primăriei Capitalei. O săptămână de blocaj la Apele Române. O fraudă de peste 20.000 de euro prin compromiterea e-mailului",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/stiri/social/foto-romania-asaltata-fraude-cocorico-afectat-gruparea-akira-atac-asupra-primariei-capitalei-saptamana-blocaj-apele-romane-frauda-peste-20-000-euro-compromiterea-e-mailului-22632602?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-08-14T14:43:00+00:00",
-      "category": "Business",
-      "summary": "România este asaltată de diferite variante de fraude digitale, precum phishingul, la care se adaugă amenințări hibride ale Rusiei.",
-      "instagram_caption": "FOTO România, asaltată de fraude. CocoRico, afectat de gruparea Akira. Atac asupra Primăriei Capitalei. O săptămână de blocaj la Apele Române. O fraudă de peste 20.000 de euro prin compromiterea e-mailului\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: FOTO România, asaltată de fraude. CocoRico, afectat de gruparea Akira. Atac asupra Primăriei Capital. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Legea lui Macron care interzice rețelele de socializare pentru minorii sub 15 ani, blocată de curtea constituțională franceză. „O restricţie disproporţionată”",
-      "source": "HotNews",
-      "url": "https://hotnews.ro/legea-lui-macron-care-interzice-retelele-de-socializare-pentru-minorii-sub-15-ani-blocata-de-curtea-constitutionala-franceza-o-restrictie-disproportionata-2324738",
-      "date": "2026-08-14T14:43:00+00:00",
-      "category": "Romania",
-      "summary": "Consiliul Constituțional al Franței a respins vineri o lege adoptată în luna iulie și care interzice utilizarea rețelelor de socializare de către minorii cu vârste sub 15 ani, o premieră în Europa și una dintre inițiativele cheie ale președintelui Emmanuel Macron la final de mandat, relatează agenția France Presse. Judecătorii constituționali francezi au estimat că …",
-      "instagram_caption": "Legea lui Macron care interzice rețelele de socializare pentru minorii sub 15 ani, blocată de curtea constituțională franceză. „O restricţie disproporţionată”\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Legea lui Macron care interzice rețelele de socializare pentru minorii sub 15 ani, blocată de curtea. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Lovitură pentru Macron: Consiliul Constituţional al Franţei a respins interzicerea reţelelor sociale pentru copiii sub 15 ani",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/business-international/lovitura-pentru-macron-consiliul-constitutional-al-frantei-a-respins-interzicerea-retelelor-sociale-pentru-copiii-sub-15-ani-23216857",
-      "date": "2026-08-14T14:42:09+00:00",
-      "category": "Business",
-      "summary": "Lovitură pentru Macron: Consiliul Constituţional al Franţei a respins interzicerea reţelelor sociale pentru copiii sub 15 ani",
-      "instagram_caption": "Lovitură pentru Macron: Consiliul Constituţional al Franţei a respins interzicerea reţelelor sociale pentru copiii sub 15 ani\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Lovitură pentru Macron: Consiliul Constituţional al Franţei a respins interzicerea reţelelor sociale. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Piețele de obligațiuni au fost greu de tranzacționat, spune Kaminski",
@@ -4450,60 +4830,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Bond Markets Have Been Hard to Trade, Kaminski Says. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Finala lui David Popovici la 200 de metri liber. Cursa de la Europenele de la Paris începe la 19:36",
-      "source": "ProSport",
-      "url": "https://www.prosport.ro/david-popovici/finala-david-popovici-200-de-metri-cursa-campionatul-european-paris-20503470",
-      "date": "2026-08-14T14:36:16+00:00",
-      "category": "Sport",
-      "summary": "A venit ziua ultimei curse a lui David Popovici (21 de ani) la Campionatul European de la Paris, în care românul va încerca să cucerească al treilea titlu continental consecutiv. Finala probei favorite a lui David Popivici are loc de la ora 19:36. Principalul adversar al românului este germanul Lukas Martens. David Popovici va înota, […] The post Finala lui David Popovici la 200 de metri liber. Cursa de la Europenele",
-      "instagram_caption": "Finala lui David Popovici la 200 de metri liber. Cursa de la Europenele de la Paris începe la 19:36\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Finala lui David Popovici la 200 de metri liber. Cursa de la Europenele de la Paris începe la 19:36. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "UEFA l-a dat peste cap, după ce a mutat ziua meciului din Europa League: ”Lucrez în tura de seară”",
-      "source": "DigiSport",
-      "url": "https://www.digisport.ro/fotbal/europa-league/uefa-l-a-dat-peste-cap-dupa-ce-a-mutat-ziua-meciului-din-europa-league-lucrez-in-tura-de-seara-4430821",
-      "date": "2026-08-14T14:35:02+00:00",
-      "category": "Sport",
-      "summary": "UEFA l-a dat peste cap, după ce a mutat ziua meciului din Europa League: ”Lucrez în tura de seară”",
-      "instagram_caption": "UEFA l-a dat peste cap, după ce a mutat ziua meciului din Europa League: ”Lucrez în tura de seară”\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: UEFA l-a dat peste cap, după ce a mutat ziua meciului din Europa League: ”Lucrez în tura de seară”. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Horia Ivanovici, show după U Craiova – KuPS 2-1 | Fanatik SuperLiga",
-      "source": "Fanatik",
-      "url": "https://www.fanatik.ro/horia-ivanovici-show-dupa-u-craiova-kups-2-1-fanatik-superliga-21523438",
-      "date": "2026-08-14T14:30:54+00:00",
-      "category": "Sport",
-      "summary": "Horia Ivanovici, show după U Craiova – KuPS 2-1 | Fanatik SuperLiga",
-      "instagram_caption": "Horia Ivanovici, show după U Craiova – KuPS 2-1 | Fanatik SuperLiga\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Horia Ivanovici, show după U Craiova – KuPS 2-1 | Fanatik SuperLiga. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Moderatorii testelor folosesc scrierea generată de AI pentru a evalua standardele de alfabetizare",
@@ -4561,62 +4887,6 @@
       "image_prompt": "Premium editorial photograph for International news: Mutual defence: The alliances that preceded Turkiye-Pakistan-Saudi pact. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Ediția a VII-a a Sepsis Alliance Summit va avea loc online în perioada 16-17 septembrie 2026 - MedicalManager.ro",
-      "source": "Google Sanatate",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSnRPdEN4WVIyOVkwbUx4S1dKemVRMVBlN2hMeHk2RFlDbm9MMGo3UV85YWxwcVpTSXBnaEdJQlkzM1ZTLXU1R0xIa2xHRWRCTTZjR1VZREdSVzZhdGlwWkNzMHZHX3ZqOVZXV2kyVmhEeWlTdHZGbGZxOE45bnk3d0luZEk4Y2MyaEcwaUdIS2EySWRaZkg2amFHNGdNYnpsMDJ3aS1uaFBoSHJUanZpM3ItLXpRbldsNExyclYzNUY?oc=5",
-      "date": "2026-08-14T14:14:42+00:00",
-      "category": "Sanatate",
-      "summary": "Ediția a VII-a a Sepsis Alliance Summit va avea loc online în perioada 16-17 septembrie 2026 MedicalManager.ro",
-      "instagram_caption": "Ediția a VII-a a Sepsis Alliance Summit va avea loc online în perioada 16-17 septembrie 2026 - MedicalManager.ro\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Ediția a VII-a a Sepsis Alliance Summit va avea loc online în perioada 16-17 septembrie 2026 - Medic. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Avertisment pentru hiperscaleri: Gazul natural ar putea deveni un regret costisitor",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
-      "date": "2026-08-14T14:05:00+00:00",
-      "category": "AI & Tech",
-      "summary": "Prețurile gazului natural ar putea crește de trei ori în anumite regiuni din SUA, conform unei noi prognoze. Această evoluție ar putea genera costuri enorme pentru companiile de tip hyperscaler, care ar trebui să achite facturi masive pentru alimentarea centrelor lor de date AI. O decizie anterioară de a opta pentru gaz natural ar putea fi astfel regretată.",
-      "instagram_caption": "Prețurile gazului natural ar putea exploda! 💥 O nouă prognoză arată o posibilă triplare în SUA, ceea ce ar pune hiperscalerii într-o situație dificilă. 💸 Alimentarea centrelor de date AI ar deveni mult mai costisitoare. 🤔 Se vor regreta deciziile privind gazul natural? Rămâi informat cu NEXAS! 🚀 #NEXAS #AITech #GazNatural #Hiperscaleri #DataCenters #CosturiAI #Energie",
-      "hashtags": [
-        "#NEXAS",
-        "#AITech",
-        "#GazNatural",
-        "#Hiperscaleri",
-        "#DataCenters",
-        "#CosturiAI",
-        "#Energie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Hyperscalers might regret embracing natural gas if new forecast proves correct. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cele mai emblematice 10 momente din istoria Gears of War - Noobz.ro",
-      "source": "Google News Tech",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1dkQ1NRd0VSTlgzSy1DaUZJWHVrRVFneTJKMlE1dDVXUXlwU21zZXVyeDdQYXgxU2pQUlNHVHVLanpYSXprN21tb2Frb0JGa1Fta3ZubmhSZFppb29za3VjQi00MmdXLVBhZDNHMHp3SHpRNlc5RGhSWkxnS0xjN0x4bmZZUGpQb2d5d2QtM1J0WlU?oc=5",
-      "date": "2026-08-14T13:40:24+00:00",
-      "category": "AI & Tech",
-      "summary": "Cele mai emblematice 10 momente din istoria Gears of War Noobz.ro",
-      "instagram_caption": "Cele mai emblematice 10 momente din istoria Gears of War - Noobz.ro\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tech",
-        "#Tehnologie",
-        "#InteligentaArtificiala"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Cele mai emblematice 10 momente din istoria Gears of War - Noobz.ro. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Celulele imune inundă în creierul îmbătrânit, descoperă oamenii de știință de la Stanford",
       "source": "Science Daily",
       "url": "https://www.sciencedaily.com/releases/2026/08/260814011033.htm",
@@ -4633,132 +4903,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Stiinta news: Immune cells flood into the aging brain, Stanford scientists discover. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Constructorii dezgroapă o pradă de aur de 9 milioane de euro sigilată în zidurile proprietății belgiene",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/c5ydzg0dnz7o?at_medium=RSS&at_campaign=rss",
-      "date": "2026-08-14T13:18:08+00:00",
-      "category": "International",
-      "summary": "Muncitorii din construcții au găsit rezervele în pereții unei pivnițe în timp ce forau pentru a pune conducte de canalizare.",
-      "instagram_caption": "Builders unearth €9m gold loot sealed in walls of Belgian property\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#International",
-        "#StiriMondiale",
-        "#Lume",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Builders unearth €9m gold loot sealed in walls of Belgian property. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "SUA vor ca Netanyahu să condamne public o asediu organizației de coloniști israelieni împotriva unor cauze palestiniene din Cisiordania - HotNews.ro",
-      "source": "Google Intl",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNa3dYOXdTOHdjUDEwbFphX0gxdkU1amJSTWI5eEljTWFjeHNzSGd6TGZ3b2htMkxiNFByRnMySXB6aUJwRDliTDBTXzN1cFlwSWdHVVBkNkJMLW1KZmxvVnpRX29pWDFPdF9ad1MxWEdTN2o4MllEWXM3MDA3TzRDNUJyX2pMR3NpRkcwdHFIWXZjeERJZHRvTHZYLXlPRTZiQnNpVVF0enQxbFdZRnE3b3ZlT2Y2R0luNzFFeGZoZkd5UkNjUWFuWXlmbk1FNEIzWmZuYnpieVVSNGI4cmZUbHljcENDYmlWeUM1NXJBUVlmZw?oc=5",
-      "date": "2026-08-14T13:03:04+00:00",
-      "category": "International",
-      "summary": "Vor ca Netanyahu să condamne public un asediu organizat de coloniști israelieni împotriva unor cauze palestiniene din Cisiordania HotNews.ro Coloniștii israelieni își vizează resursele de apă din Cisiordania (Reuters) creștină din Cisiordania ca să o apere de radicali",
-      "instagram_caption": "SUA vor ca Netanyahu să condamne public un asediu organizat de coloniștii israelieni împotriva unor case palestiniene din Cisiordania - HotNews.ro\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#International",
-        "#StiriMondiale",
-        "#Lume",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: SUA vor ca Netanyahu să condamne public un asediu organizat de coloniștii israelieni împotriva unor . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Robbie Williams, diagnostic surprinzător la 52 de ani: \"Explică atât de multe\". Artistul a vorbit și despre gândurile care îl sperie - ProFM.ro",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNekFaTlowaWxXVU16UHpBWENMR2dJU2dEMV9QeEh5eWlHQ2ZwLTRZWmx4OEJiamR1Qml3bThsa3dCMy02VHF5ZmpVeGI0c1oycl83UWZKQ1pfRmJUanYwODBDREpOWE9oSVBhaWUtX1J3em1wUVBGdTV3SFpFWjFvZG1LbDBDWnoxTVkxTktOTUludTNhODdhWjBEVHJaVTdyTmliR3h0VVVDendhTE12dVo4Sk8wcEwzel84SzBBMGJRUERfUG1Xek1JanQzMngzMlVBdkh2WkdZejR6THV2U3JZMlktNzNrX1E0cXNrS3NwVnM?oc=5",
-      "date": "2026-08-14T12:02:20+00:00",
-      "category": "Entertainment",
-      "summary": "Robbie Williams, diagnostic surprinzător la 52 de ani: \"Explică atât de multe\". Artistul a vorbit și despre gândurile care îl sperie ProFM.ro Robbie Williams a fost diagnosticat cu autism. „Îmi explică atât de multe”. Artistul se confruntă în continuare cu gânduri intruzive TVMania Robbie Williams a dezvăluit că are autism, ADHD şi Tourette: \"Mintea mea este incredibil de creativă\" observatornews.ro Robbie Williams a",
-      "instagram_caption": "Robbie Williams, diagnostic surprinzător la 52 de ani: \"Explică atât de multe\". Artistul a vorbit și despre gândurile care îl sperie - ProFM.ro\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Robbie Williams, diagnostic surprinzător la 52 de ani: \"Explică atât de multe\". Artistul a vorbit și. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Ce alternative la alergare sunt recomandate pentru impact redus asupra articulațiilor?",
-      "source": "Descopera Ro",
-      "url": "https://www.descopera.ro/stiinta/21121014-ce-alternative-la-alergare-sunt-recomandate-pentru-impact-redus-asupra-articulatiilor",
-      "date": "2026-08-14T12:00:23+00:00",
-      "category": "Stiinta",
-      "summary": "Alergarea devine tot mai populară, iar „runner’s high” pare să devină contagios. În 2024, aplicația de monitorizare a activității Strava a înregistrat o creștere de 59% a numărului de utilizatori care au participat la evenimente […] Articolul Ce alternative la alergare sunt recomandate pentru impact redus asupra articulațiilor? apare prima dată în Descopera .",
-      "instagram_caption": "Ce alternative la alergare sunt recomandate pentru impact redus asupra articulațiilor?\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: Ce alternative la alergare sunt recomandate pentru impact redus asupra articulațiilor?. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "CMF a ajuns la echilibrul dintre căștile cu clip ieftine și bune",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/979928/cmf-clip-pro-review",
-      "date": "2026-08-14T12:00:00+00:00",
-      "category": "AI & Tech",
-      "summary": "Căștile cu clip sunt un exercițiu de compromis. Este un aspect inerent al designului lor - și al fizicii. Ele pot fi mai confortabile pentru persoanele cărora nu le place ceva blocat în ureche, dar răspunsul la sunet are de suferit. Conștientizarea mediului este grozavă pentru că poți auzi cu ușurință sunetul din jurul tău, ceea ce înseamnă să-ți auzi propriul […]",
-      "instagram_caption": "CMF hit the balance between cheap and good clip earbuds\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tech",
-        "#Tehnologie",
-        "#InteligentaArtificiala"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: CMF hit the balance between cheap and good clip earbuds. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Mădălina Ghenea, apariție răvăşitoare. Fosta iubită a lui Dimitrov s-a pozat aproape goală: „Sunt fericită că trăiesc!\" - Prosport",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOEF2eXNINWZHNjU3blVFUE5oaTV5R1BxMDZSSF91X2NzcGhFaWtQaU5QOU16Qk1BejlyaEpEdlRjV0Q2c2J5dWVfRlhtYmQyQzBsQ2xQV1pfSDYtcjc0Y3FLUlUtcjM5MlFieWUyd2tIQ1p0VWFyQm9PY3RCalNleHo4d0RzQ1VaaHBDS2F1dXpkcDBmWDZDT0RQNmE4b0J3M3I0YkJ1MnplOGplUUVQZEpNVFhUci1iUmxKbw?oc=5",
-      "date": "2026-08-14T11:39:16+00:00",
-      "category": "Entertainment",
-      "summary": "Mădălina Ghenea, apariție răvăşitoare. Fosta iubită a lui Dimitrov s-a pozat aproape goală: „Sunt fericită că trăiesc!\" Prosport Mădălina Ghenea, spectaculoasă și seducătoare în costum de baie roșu. Cum arată la 39 de ani proaspăt împliniți ProFM.ro",
-      "instagram_caption": "Mădălina Ghenea, apariție răvăşitoare. Fosta iubită a lui Dimitrov s-a pozat aproape goală: „Sunt fericită că trăiesc!\" - Prosport\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Mădălina Ghenea, apariție răvăşitoare. Fosta iubită a lui Dimitrov s-a pozat aproape goală: „Sunt fe. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Delia, descoperită din întâmplare în liceu de Nick de la N&D. Ce i-a spus artista când a fost rugată să cânte: „Era emoționată” - ProFM.ro",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOU2FCVmZCS3Y3aWJaV0UwNU1zSkRWZ2haVGl2b2xJLUR2Q0poVEJ2OXhYWTUxaDNHNjJQSG84SUdIYjJuVFBxdDlUcTlabzFTeTRlSHNHamJOM1Z4M2FNVUZaVXhBMGE4Z2ZBTHpUR2E0VkJHWk5oX0tIYUNYVnRqUDhQbjFmUEVNN2d3RlRWc29kZ1dwS0MyYlR6d0N1VnozeXBoTFRsUkxvSHc2ejZQWThwbWJDaTNrY2R0dnZnUnFRek5jRkVsUkdKY3pOWUQyaEFpUTJLbXNnb01VdVNTRVp5S0I3Y3FNY0RJ?oc=5",
-      "date": "2026-08-14T09:55:42+00:00",
-      "category": "Entertainment",
-      "summary": "Delia, descoperită din întâmplare în liceu de Nick de la N&D. Ce i-a spus artista când a fost rugată să cânte: „Era emoționată” ProFM.ro",
-      "instagram_caption": "Delia, descoperită din întâmplare în liceu de Nick de la N&D. Ce i-a spus artista când a fost rugată să cânte: „Era emoționată” - ProFM.ro\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Delia, descoperită din întâmplare în liceu de Nick de la N&D. Ce i-a spus artista când a fost rugată. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Tudor Chirilă, în trailerul filmului SF thriller american „April X”, filmat în România",
@@ -4796,84 +4940,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Summer Markets Make Stocks Happy: 3-Minutes MLIV. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Controversa limonadei de deparazitare: Rețeta monahală versus avertismentul medicilor.",
-      "source": "CSID",
-      "url": "https://www.csid.ro/diete/dieta-si-nutritie/limonada-de-deparazitare-recomandata-de-parintele-dimitrie-staretul-manastirii-antim-troianu-medicii-anunta-ca-un-ingredient-ar-putea-fi-periculos-21274907/",
-      "date": "2026-08-14T07:09:06.357167+00:00",
-      "category": "Sanatate",
-      "summary": "O „limonadă de deparazitare”, promovată de părintele Dimitrie de la Mănăstirea Antim-Troianu, a stârnit controverse. În timp ce susținătorii afirmă beneficii pentru sănătate, medicii avertizează că un ingredient din rețetă ar putea fi periculos. Află ce conține această băutură și care sunt riscurile potențiale, conform specialiștilor.",
-      "instagram_caption": "🍋 O rețetă monahală pentru 'deparazitare' stârnește dezbateri! Părintele Dimitrie de la Mănăstirea Antim-Troianu a recomandat o limonadă specială, dar medicii ridică semne de întrebare. ⚠️ Un ingredient ar putea fi periculos! Află detalii despre controversata băutură și avertismentele specialiștilor. Ești curios să știi ce este și de ce medicii sunt sceptici? Citește acum pe NEXAS! 👇 #LimonadaDeparazitare #ParinteleDimitrie #Sanatate #Medicina #Controversa #RemediiNaturale #NEXAS",
-      "hashtags": [
-        "#LimonadaDeparazitare",
-        "#ParinteleDimitrie",
-        "#Sanatate",
-        "#Medicina",
-        "#Controversa",
-        "#RemediiNaturale",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Limonada de deparazitare, recomandată de părintele Dimitrie, starețul Mănăstirii Antim-Troianu. Medi. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Japonia, lovită de ploi \"fără precedent\": șase persoane au murit",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/cq561gpen8lo?at_medium=RSS&at_campaign=rss",
-      "date": "2026-08-14T07:00:56+00:00",
-      "category": "International",
-      "summary": "Furtuna a întrerupt alimentarea cu energie electrică pentru peste 20.000 de gospodării și a blocat 7.000 de persoane pe aeroportul Narita din Tokyo.",
-      "instagram_caption": "Ploi torențiale \"fără precedent\" au lovit Japonia, provocând moartea a șase persoane 😔. Furtuna a lăsat peste 20.000 de gospodării fără curent ⚡ și a blocat 7.000 de oameni pe aeroportul Narita din Tokyo ✈️. Gândurile noastre sunt alături de cei afectați 🙏.",
-      "hashtags": [
-        "#Japonia",
-        "#PloiTorentiale",
-        "#VremeExtrema",
-        "#Narita",
-        "#DezastruNatural",
-        "#Stiri",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: 'Unprecedented' rains in Japan kill six people. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Tendințele psihopatice sunt legate de microbii din corpul tău, dezvăluie un studiu",
-      "source": "Descopera Ro",
-      "url": "https://www.descopera.ro/stiinta/21120916-tendintele-psihopatice-sunt-legate-de-microbii-din-corpul-tau-dezvaluie-un-studiu",
-      "date": "2026-08-14T07:00:22+00:00",
-      "category": "Stiinta",
-      "summary": "Un studiu revoluționar publicat în revista Translational Psychiatry indică o legătură surprinzătoare între microbiomul uman și trăsăturile de personalitate psihopatică. Cercetarea sugerează că bacteriile din intestin și din cavitatea bucală ar putea juca un rol în influențarea acestor comportamente complexe. Această descoperire deschide noi perspective biologice, sugerând că înțelegerea microbiomului ar putea fi esențială pentru a aborda aspectele dificile ale naturii umane.",
-      "instagram_caption": "😱 Descoperire șocantă! Un nou studiu din Translational Psychiatry arată o legătură între microbi, adică bacteriile din intestin și gură, și tendințele psihopatice. 🦠🧬 Poate că înțelegerea bacteriilor din corpul nostru ne va ajuta să descifrăm mai bine comportamentele complexe! Ce părere ai? 🤔 #StudiuNou #Microbiom #Psihopatie #SanatateMentala #NEXAS #Stiinta #Cercetare",
-      "hashtags": [
-        "#StudiuNou",
-        "#Microbiom",
-        "#Psihopatie",
-        "#SanatateMentala",
-        "#NEXAS",
-        "#Stiinta",
-        "#Cercetare"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: Tendințele psihopatice sunt legate de microbii din corpul tău, dezvăluie un studiu. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "APOD: 14 ​​august 2026 – Eclipsă totală de soare din Groenlanda",
-      "source": "NASA News",
-      "url": "https://science.nasa.gov/image-article/apod/apod-2026-august-14-total-solar-eclipse-from-greenland/",
-      "date": "2026-08-14T04:05:00+00:00",
-      "category": "Stiinta",
-      "summary": "APOD Știință APOD APOD: 14 ​​august 2026 – Total... Arhiva APOD de astăzi Indexul trimiterilor Căutare Calendar RSS Educație Despre Discută APOD Poza astronomică a zilei Descoperiți cosmosul! În fiecare zi este prezentată o imagine sau o fotografie diferită a universului nostru fascinant, împreună cu o scurtă explicație scrisă de un astronom profesionist. Solar total […]",
-      "instagram_caption": "APOD: 2026 August 14 – Total Solar Eclipse from Greenland\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: APOD: 2026 August 14 – Total Solar Eclipse from Greenland. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Companiile aeriene reflectă viitorul nostru economic",
@@ -5028,44 +5094,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Norway $2.3 Trillion Fund Posts Best Quarter Since 2020. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Aeroportul din Atlanta primește Munis pentru 1,1 miliarde de dolari ca decalaj al vânzărilor sectoriale",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-11/atlanta-airport-taps-munis-for-1-1-billion-as-sector-sales-lag",
-      "date": "2026-08-11T14:36:41+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Cel mai aglomerat aeroport din lume vine pe piață cu o vânzare de obligațiuni municipale de peste 1 miliard de dolari, stimulând emisiunile în sectorul aeroportuar aflat în întârziere.",
-      "instagram_caption": "Atlanta Airport Taps Munis for $1.1 Billion as Sector Sales Lag\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Atlanta Airport Taps Munis for $1.1 Billion as Sector Sales Lag. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "GEN primește o ofertă de cumpărare de 100 de milioane de dolari pentru operațiunile de restaurante din SUA",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/gen-receives-100m-buyout-offer-143417524.html",
-      "date": "2026-08-11T14:34:17+00:00",
-      "category": "Bursa & Piete",
-      "summary": "GEN primește o ofertă de cumpărare de 100 de milioane de dolari pentru operațiunile de restaurante din SUA",
-      "instagram_caption": "GEN receives $100m buyout offer for US restaurant operations\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: GEN receives $100m buyout offer for US restaurant operations. Professional photorealistic style. No text, no logos, no watermarks."
     }
   ]
 }
