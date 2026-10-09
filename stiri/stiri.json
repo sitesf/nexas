@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T19:42:07.006267+00:00",
+  "updated_at": "2026-10-09T12:17:26.807667+00:00",
   "run_log": {
     "AI & Tech": 3,
     "Sport": 3,
@@ -12,6 +12,533 @@
     "Bursa & Piete": 3
   },
   "items": [
+    {
+      "title": "Dieta DASH: Sigură pentru nivelul de potasiu, chiar și sub medicație pentru tensiune arterială",
+      "source": "Healthline",
+      "url": "https://www.healthline.com/health-news/potassium-rich-dash-diet-safe-with-certain-blood-pressure-medications",
+      "date": "2026-10-09T12:09:48.501863+00:00",
+      "category": "Sanatate",
+      "summary": "Un nou studiu relevă că dieta DASH, recunoscută pentru beneficiile sale, nu influențează semnificativ nivelul de potasiu la adulții aflați sub medicație pentru tensiunea arterială. Cercetătorii subliniază că dieta nu pare să provoace modificări majore ale funcției renale. Această constatare sugerează că dieta DASH este o opțiune sigură și eficientă, chiar și pentru pacienții hipertensivi care urmează un tratament medicamentos.",
+      "instagram_caption": "Dacă iei medicamente pentru tensiune, ai vești bune! 🤩 Un studiu recent arată că dieta DASH, renumită pentru beneficiile sale, nu afectează semnificativ nivelul de potasiu, chiar și sub tratament. 💪 Cercetătorii confirmă că nu provoacă modificări majore ale funcției renale. 💧 Așadar, poți integra cu încredere dieta DASH în stilul tău de viață pentru un control mai bun al tensiunii arteriale! ❤️ Ai încercat dieta DASH până acum?",
+      "hashtags": [
+        "#DietaDASH",
+        "#Sanatate",
+        "#TensiuneArteriala",
+        "#Hipertensiune",
+        "#NutritieSanatoasa",
+        "#NivelPotasiu"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Taking Blood Pressure Meds? DASH Diet Likely Safe for Potassium Levels. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ce faci weekendul acesta în Bucureşti? De la degustări de vin şi ateliere creative la maşini spectaculoase, salsa sau puţin rock",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/zf-gen-z/ce-faci-weekendul-acesta-in-bucuresti-de-la-degustari-de-vin-si-ateliere-creative-la-masini-spectaculoase-salsa-sau-putin-rock-23256750",
+      "date": "2026-10-09T12:09:48+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Ce faci weekendul acesta în Bucureşti? De la degustări de vin şi ateliere creative la maşini spectaculoase, salsa sau puţin rock",
+      "instagram_caption": "Ce faci weekendul acesta în Bucureşti? De la degustări de vin şi ateliere creative la maşini spectaculoase, salsa sau puţin rock\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Ce faci weekendul acesta în Bucureşti? De la degustări de vin şi ateliere creative la maşini spectac. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Descoperă-ți Vârsta Biologică Reală în Doar 10 Secunde Acasă!",
+      "source": "CSID",
+      "url": "https://www.csid.ro/stiri/testul-de-10-secunde-pe-care-il-poti-face-acasa-iti-poate-spune-ce-varsta-biologica-ai-cu-adevarat-21329693/",
+      "date": "2026-10-09T12:09:44.791815+00:00",
+      "category": "Sanatate",
+      "summary": "Vrei să afli care este vârsta ta biologică reală? Există un test simplu, de doar 10 secunde, pe care îl poți efectua chiar la tine acasă. Acest exercițiu rapid îți poate oferi indicii prețioase despre echilibrul general al corpului și starea ta de bine. Află cum poți evalua rapid aceste aspecte esențiale pentru sănătatea ta, conform informațiilor publicate de CSID.",
+      "instagram_caption": "Curios să știi care e vârsta ta biologică reală? 🤔 Un test simplu, de doar 10 secunde, îți poate dezvălui asta, chiar din confortul casei tale! 🏠 Evaluează-ți rapid echilibrul și starea generală de bine. Ești pregătit pentru adevăr? ⏱️ Găsești toate detaliile și instrucțiunile în articolul complet de pe NEXAS! 👇 Link în bio! #TestDe10Secunde #VarstaBiologica #Sanatate #Wellbeing #Echilibru #NEXAS",
+      "hashtags": [
+        "VarstaBiologica",
+        "TestAcasă",
+        "Sanatate",
+        "Wellbeing",
+        "Echilibru",
+        "NEXAS",
+        "CSID"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Testul de 10 secunde pe care îl poți face acasă. Îți poate spune ce vârstă biologică ai cu adevărat!. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Filipe Coelho, dublu standard despre fotbalul românesc: „Educația nu-i permite” vs. critica trecută",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-intern/superliga/filipe-coelho-o-intoarce-dupa-cum-ii-convine-cu-romanii-educatia-nu-ii-permite-20543306",
+      "date": "2026-10-09T12:08:59+00:00",
+      "category": "Sport",
+      "summary": "Prezent la meciul România – Suedia, antrenorul Universității Craiova, Filipe Coelho, a refuzat să comenteze nivelul fotbalului românesc sau rezultatele echipei naționale, invocând \"lipsa de respect\" și faptul că \"educația nu-i permite\". Această poziție contrastează puternic cu declarațiile sale de acum trei luni, când, după eliminarea Craiovei din Conference League de către Levski Sofia, portughezul a criticat deschis fotbalul românesc. Situația subliniază un dublu standard.",
+      "instagram_caption": "Filipe Coelho, antrenorul Universității Craiova, se află în centrul unei controverse! ⚽️ Recent, la meciul România – Suedia, a refuzat să comenteze fotbalul românesc, invocând \"educația\" și \"respectul\". 🤔 Însă, acum doar 3 luni, după eliminarea Craiovei din Conference League, a criticat vehement nivelul fotbalului local! 🇵🇹 Ce părere aveți despre acest dublu standard? Așteptăm comentariile voastre! 👇",
+      "hashtags": [
+        "#FilipeCoelho",
+        "#UniversitateaCraiova",
+        "#FotbalRomania",
+        "#Controversa",
+        "#DubluStandard"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Filipe Coelho o întoarce după cum îi convine cu românii! „Educația nu-i permite” dar acum trei luni . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Merz, indignat de Schroeder la ziua lui Putin: „Este pur și simplu imoral”",
+      "source": "HotNews",
+      "url": "https://hotnews.ro/merz-este-profund-indignat-de-ce-a-facut-fostul-cancelar-schroeder-de-ziua-lui-putin-este-pur-si-simplu-imoral-2371696",
+      "date": "2026-10-09T12:08:41+00:00",
+      "category": "Romania",
+      "summary": "Liderul opoziției germane, Friedrich Merz, este „profund indignat” de vizita fostului cancelar Gerhard Schroeder la reședința lui Vladimir Putin pentru a-i sărbători ziua de naștere. Un purtător de cuvânt al guvernului german a confirmat reacția lui Merz, numind gestul lui Schroeder „pur și simplu imoral”. Vizita lui Schroeder la Moscova pentru ziua lui Putin a stârnit critici aspre în Germania.",
+      "instagram_caption": "Scandal în Germania! 🇩🇪 Liderul opoziției, Friedrich Merz, se declară 'profund indignat' de vizita fostului cancelar Gerhard Schroeder la reședința lui Vladimir Putin. Schroeder a mers la Moscova pentru a sărbători ziua de naștere a președintelui rus, gest catalogat de Merz drept 'pur și simplu imoral'. Ce părere ai despre această controversă? 🤔 #Germania #Schroeder #Putin #Merz #Indignare #PoliticaEuropeana",
+      "hashtags": [
+        "Germania",
+        "Schroeder",
+        "Putin",
+        "Merz",
+        "Indignare",
+        "PoliticaEuropeana"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Merz este „profund indignat” de ce a făcut fostul cancelar Schroeder de ziua lui Putin: „Este pur și. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Guvernul alocă 7,85 milioane de lei pentru modernizarea grupurilor sanitare din 97 de școli",
+      "source": "Forbes Romania",
+      "url": "https://www.forbes.ro/guvernul-aloca-785-milioane-de-lei-pentru-modernizarea-grupurilor-sanitare-din-97-de-scoli-525229",
+      "date": "2026-10-09T12:08:14+00:00",
+      "category": "Business",
+      "summary": "Guvernul a aprobat vineri alocarea de fonduri pentru continuarea lucrărilor de amenajare și modernizare a grupurilor sanitare și pentru asigurarea cu utilități a acestora în 97 de unități de învățământ preuniversitar de stat. Guvernul va repartiza suma de 7,849 milioane de lei pentru unități de învățământ din județele Argeș, Bacău, Botoșani, Buzău, Caraș-Severin, Călărași, Constanța, ... The post Guvernul alocă 7,85 ",
+      "instagram_caption": "Guvernul alocă 7,85 milioane de lei pentru modernizarea grupurilor sanitare din 97 de școli\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Guvernul alocă 7,85 milioane de lei pentru modernizarea grupurilor sanitare din 97 de școli. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "ULTIMA ORĂ Colosul german Rheinmetall cumpără Șantierul Naval Mangalia pentru 138 de milioane euro",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/ultima-ora-colosul-german-rheinmetall-cumpara-santierul-naval-mangalia-pentru-138-de-milioane-euro-22812913?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-10-09T12:07:51+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Astăzi a avut loc cea de-a cincea licitație de vânzare a șantierului naval din Mangalia.",
+      "instagram_caption": "ULTIMA ORĂ Colosul german Rheinmetall cumpără Șantierul Naval Mangalia pentru 138 de milioane euro\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: ULTIMA ORĂ Colosul german Rheinmetall cumpără Șantierul Naval Mangalia pentru 138 de milioane euro. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Jandarmii au sancționat protestele neautorizate de la Arest și DIICOT: 124 amenzi, 5 plângeri penale",
+      "source": "G4Media",
+      "url": "https://www.g4media.ro/jandarmii-au-aplicat-124-de-sanctiuni-contraventionale-fiind-formulate-si-cinci-plangeri-penale-pentru-amenintare-distrugere-ultraj-si-port-de-arme-periculoase-pentru-incidentele-de-la-manifestatii.html",
+      "date": "2026-10-09T12:06:13+00:00",
+      "category": "Romania",
+      "summary": "Jandarmeria a anunțat că manifestațiile recente din fața Arestului Central și a sediului DIICOT au fost organizate ilegal, încălcând Legea privind adunările publice. Chiar și în aceste condiții, forțele de ordine au menținut măsurile de siguranță publică. În urma incidentelor, jandarmii au aplicat 124 de sancțiuni contravenționale și au formulat cinci plângeri penale pentru fapte precum amenințare, distrugere și ultraj.",
+      "instagram_caption": "Proteste cu repercusiuni! 🚨 Jandarmeria a intervenit la manifestațiile neautorizate din fața Arestului Central și a sediului DIICOT. Au fost aplicate 124 de sancțiuni contravenționale și au fost depuse 5 plângeri penale pentru amenințare, distrugere și ultraj. Legea trebuie respectată! 👮‍♂️ #Jandarmeria #Proteste #Neautorizat #Amenzi #PlangeriPenale #ArestCentral #DIICOT #OrdinePublica #StiriRomania",
+      "hashtags": [
+        "Jandarmeria",
+        "Proteste",
+        "Neautorizat",
+        "Amenzi",
+        "PlangeriPenale",
+        "ArestCentral",
+        "DIICOT",
+        "OrdinePublica",
+        "StiriRomania"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Jandarmii au aplicat 124 de sancțiuni contravenționale, fiind formulate și cinci plângeri penale pen. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Programul Geologic Național: Norme aprobate după 8 ani. Ce resurse vor fi cercetate?",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/economie/dupa-opt-ani-programul-geologic-national-are-norme-de-aplicare-ce-resurse-vor-fi-cercetate-3985627",
+      "date": "2026-10-09T12:06:01+00:00",
+      "category": "Romania",
+      "summary": "Guvernul a aprobat vineri normele de aplicare pentru Programul Geologic Național, o lege din 2018 care nu a putut fi pusă în practică până acum. Acest program va permite cercetarea resurselor minerale ale României, inclusiv materii prime critice, ape minerale și geotermale, și resurse recuperabile din iazurile de decantare și haldele de steril.",
+      "instagram_caption": "Veste importantă pentru România! 🇷🇴 După 8 ani, Programul Geologic Național are, în sfârșit, normele de aplicare aprobate de Guvern! 🎉 Aceasta înseamnă că vom putea explora în detaliu resursele minerale ale țării, de la materii prime critice la ape minerale și geotermale. Nu uităm nici de potențialul de recuperare din iazurile de decantare și haldele de steril. Un pas crucial pentru viitorul economic și strategic! 💡 Sursa: Digi24",
+      "hashtags": [
+        "#GeologieRomania",
+        "#ResurseMinerale",
+        "#ProgramGeologicNational",
+        "#EconomiaRomaniei",
+        "#DezvoltareDurabila",
+        "#ApeMinerale",
+        "#MateriilePrimeCritice"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: După opt ani, Programul Geologic Național are norme de aplicare. Ce resurse vor fi cercetate. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Pădurile private din România intră pe piața globală de carbon: Parteneriat cu Anew Climate",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/info/padurile-private-romania-intra-piata-globala-serviciilor-climatice-silvador-forest-capital-au-semnat-parteneriat-americanii-anew-climate-au-livrat-peste-200-milioane-tone-reduceri-eliminari-emisii-23256748",
+      "date": "2026-10-09T12:04:56+00:00",
+      "category": "Business",
+      "summary": "Pădurile private din România fac un pas important pe piața globală a serviciilor climatice. Companiile Silvador și Forest Capital au încheiat un parteneriat strategic cu firma americană Anew Climate. Anew Climate este recunoscută pentru succesul său, livrând peste 200 de milioane de tone de reduceri și eliminări de emisii la peste 1.000 de clienți. Proiectul românesc a obținut deja 80.815 certificate de carbon verificate independent, marcând o contribuție semnificativă la eforturile climatice internaționale.",
+      "instagram_caption": "România face un pas uriaș în lupta împotriva schimbărilor climatice! 🌍 Pădurile private din țară intră pe piața globală a serviciilor climatice printr-un parteneriat de anvergură. Silvador și Forest Capital își unesc forțele cu gigantul american Anew Climate, care a contribuit la reducerea a peste 200 de milioane de tone de emisii la nivel global. 🌲 Proiectul românesc are deja 80.815 certificate de carbon verificate independent. Un viitor mai verde începe acum! 🌱",
+      "hashtags": [
+        "#Romania",
+        "#PăduriPrivate",
+        "#Climat",
+        "#CrediteDeCarbon",
+        "#Sustenabilitate",
+        "#AnewClimate",
+        "#Mediu",
+        "#LuptaCuSchimbărileClimatice"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Pădurile private din România intră pe piaţa globală a serviciilor climatice: Silvador şi Forest Capi. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Prima reacție a lui Costin Curelea, după pozele postate de Nicu Gheară",
+      "source": "DigiSport",
+      "url": "https://www.digisport.ro/fotbal/prima-reactie-a-lui-costin-curelea-dupa-pozele-postate-de-nicu-gheara-4533457",
+      "date": "2026-10-09T12:03:36+00:00",
+      "category": "Sport",
+      "summary": "Fostul internațional Costin Curelea (42 de ani), actual antrenor secund la naționala României, a oferit prima reacție oficială după ce el și alți membri ai staff-ului au apărut în fotografii alături de controversatul Nicu Gheară (61 de ani), postate de acesta pe rețelele sociale. Imaginile au stârnit discuții în spațiul public, având în vedere reputația lui Gheară. Curelea a ținut să clarifice contextul întâlnirii, subliniind că prezența sa nu implică nicio asociere necorespunzătoare.",
+      "instagram_caption": "Costin Curelea rupe tăcerea! 🤫 După ce a apărut în imagini controversate alături de Nicu Gheară, antrenorul secund al naționalei României, în vârstă de 42 de ani, a venit cu o primă explicație. 📸 Ce a avut de spus despre întâlnirea care a stârnit atâtea discuții în lumea fotbalului? Află toate detaliile despre reacția lui Curelea! 👇 #CostinCurelea #NicuGheara #FotbalRomania #ReactieOficiala #Controversa",
+      "hashtags": [
+        "#CostinCurelea",
+        "#NicuGheara",
+        "#FotbalRomania",
+        "#ReactieOficiala",
+        "#Controversa"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Prima reacție a lui Costin Curelea, după pozele postate de Nicu Gheară. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Acțiunile SUA gata de revenire: Petrolul scade, temerile AI se atenuează",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-09/us-stocks-set-to-rebound-as-oil-slips-ai-bubble-fears-recede",
+      "date": "2026-10-09T12:01:10+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Contractele futures pe acțiunile americane înregistrează o creștere, gata să pună capăt unei serii de două zile de scăderi, pe măsură ce prețurile petrolului scad, iar cele mai recente informații privind cheltuielile cu inteligența artificială au contribuit la atenuarea preocupărilor investitorilor.",
+      "instagram_caption": "🚀 Acțiunile americane sunt pregătite pentru o revenire! Contractele futures înregistrează creșteri, gata să pună capăt unei serii de scăderi. Veste bună: prețurile petrolului scad, iar temerile legate de o \"bulă AI\" se atenuează, pe măsură ce investitorii asimilează noile informații despre cheltuielile în domeniul inteligenței artificiale. O zi optimistă pe piețe! 📈 #NEXAS #Bursa #Investitii #ActiuniSUA #Petrol #AI #StiriEconomice",
+      "hashtags": [
+        "NEXAS",
+        "Bursa",
+        "Investitii",
+        "ActiuniSUA",
+        "Petrol",
+        "AI",
+        "StiriEconomice"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: US Stocks Set to Rebound as Oil Slips, AI Bubble Fears Recede. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Fost jucător din Liga 1, gest revoltător: A prins de gât un junior pentru o pasă greșită",
+      "source": "Fanatik",
+      "url": "https://www.fanatik.ro/scene-halucinante-la-un-meci-de-juniori-fostul-jucator-din-liga-1-a-sugrumat-un-copil-din-cauza-unei-pase-gresite-21560700",
+      "date": "2026-10-09T12:00:58+00:00",
+      "category": "Sport",
+      "summary": "Mihăiță Lungu, fost fotbalist în Liga 1, a comis un gest extrem de grav și revoltător în timpul unui meci de juniori. Antrenorul l-a apucat de gât pe unul dintre elevii săi, chiar pe teren, sub privirile colegilor, totul din cauza unei pase greșite.",
+      "instagram_caption": "Scene incredibile și revoltătoare pe terenul de fotbal! ⚽🤯 Mihăiță Lungu, un nume cunoscut din Liga 1, acum antrenor la juniori, a șocat pe toată lumea cu un gest de neiertat. L-a prins de gât pe unul dintre tinerii săi elevi, chiar în timpul meciului, sub ochii colegilor, doar pentru o pasă greșită! 😤 Ce părere aveți despre o astfel de atitudine în sportul juvenil?",
+      "hashtags": [
+        "Fotbal",
+        "Liga1",
+        "Juniors",
+        "ViolentaInSport",
+        "Scandal",
+        "MihaitaLungu"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Scene halucinante la un meci de juniori! Fostul jucător din Liga 1 a sugrumat un copil din cauza une. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Alternativa GPS comercială Xona se pregătește de lansare",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/09/xonas-commercial-gps-alternative-is-about-to-go-live/",
+      "date": "2026-10-09T12:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "Serviciul de sincronizare și navigație de precizie al companiei Xona este gata de lansare. Acesta va intra în faza de testare beta după ce SpaceX va lansa șase sateliți, special concepuți de Xona.",
+      "instagram_caption": "O nouă eră în navigație este aproape! 🚀 Xona se pregătește să lanseze alternativa sa comercială la GPS, promițând o precizie revoluționară. Serviciul va intra în testare beta după ce SpaceX va trimite pe orbită șase sateliți special proiectați de Xona. Fii pregătit pentru viitorul navigației de precizie! ✨ #Xona #GPSAlternative #SpaceX #Navigatie #Tehnologie #Inovatie",
+      "hashtags": [
+        "Xona",
+        "GPSAlternative",
+        "SpaceX",
+        "Navigatie",
+        "Tehnologie",
+        "Inovatie",
+        "AI",
+        "Tech"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Xona’s commercial GPS alternative is about to go live. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Arabia Saudită redeschide aeroportul din Riad după atacul Houthi care a ucis trei persoane",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/9/saudi-arabia-reopens-riyadh-airport-after-houthi-attack-kills-three?traffic_source=rss",
+      "date": "2026-10-09T11:46:39+00:00",
+      "category": "International",
+      "summary": "Arabia Saudită a fost ținta mai multor atacuri ale rebelilor Houthi în ultimele zile, aeroporturile reprezentând aparent principala țintă.",
+      "instagram_caption": "🚨 Știri de ultimă oră din Orientul Mijlociu! Arabia Saudită a redeschis aeroportul din Riad după un atac devastator al rebelilor Houthi, care a lăsat în urmă trei victime. 💔 Regiunea a fost zguduită de o serie de atacuri în ultimele zile, aeroporturile fiind vizate în mod repetat. ✈️ Urmărește NEXAS pentru cele mai recente informații despre situația internațională! 🌍 #ArabiaSaudita #Riad #Aeroport #AtacHouthi #StiriInternationale #Conflict #OrientulMijlociu",
+      "hashtags": [
+        "ArabiaSaudita",
+        "Riad",
+        "Aeroport",
+        "Houthi",
+        "AtacHouthi",
+        "StiriInternationale",
+        "Conflict",
+        "OrientulMijlociu",
+        "Geopolitica"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Saudi Arabia reopens Riyadh airport after Houthi attack kills three. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Samsung revine cu căști over-ear după 10 ani? Galaxy Studio, posibil cu Galaxy S27",
+      "source": "Google News Tech",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNcWpKS2xqT3NWZVJRbVdNQjF2aHRPdnJqZjVmWVhqT2xTMkVGWmNqMktuZ2VkcDBoTEs2QjI0R2lmR0JkclpjMU5ubnJaWGFkZVJwODFreVNxcE5mOTRXUWxnVW9BTFF4UmQwaGl6bzJJaUNXVjJJOGlfMktuNDRTRm9LX2Q4WEU1OFFCeWFITHpMdV9rdlNzdWM0QUEzSlkweXJsWS1fZHdsRXZZV005OHpCUFd4elJaeFE0TTMybFdJdnE0aXFQM0lpQ1hMTjZ4WVJKX0VGVkFYbUFxNXdCT2FqWDFVQ1U4ZkE?oc=5",
+      "date": "2026-10-09T11:44:43+00:00",
+      "category": "AI & Tech",
+      "summary": "Speculațiile indică o revenire a Samsung pe piața căștilor over-ear, segment pe care nu a mai activat de aproape un deceniu. Noul produs, denumit posibil Galaxy Studio, ar putea fi lansat în tandem cu viitoarea serie de telefoane Galaxy S27. Această mișcare ar marca o extindere semnificativă a ecosistemului audio Samsung, oferind o alternativă premium în gama sa de accesorii. Detaliile provin de la Mobilissimo.ro.",
+      "instagram_caption": "Samsung ar putea surprinde piața cu o revenire spectaculoasă în segmentul căștilor over-ear! 🎧 Se zvonește că, după aproape un deceniu de absență, gigantul tech pregătește \"Galaxy Studio\" - un nou set de căști premium. 🤩 Cel mai probabil, le vom vedea debutând alături de seria Galaxy S27. Pregătiți-vă pentru o nouă experiență audio! ✨ Ce părere aveți? 🤔 #Samsung #GalaxyStudio #Castioverear #TechNews #NEXAS #ViitorulAudio #GalaxyS27",
+      "hashtags": [
+        "Samsung",
+        "GalaxyStudio",
+        "Castioverear",
+        "TechNews",
+        "NEXAS",
+        "ViitorulAudio",
+        "GalaxyS27"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Samsung revine pe piața căștilor over-ear după aproape 10 ani? Galaxy Studio ar putea debuta alături. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "MApN: Digital Hub de 133M lei pentru 68 servicii publice digitalizate la București și Sibiu",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/insider/it-c/ministerul-apararii-isi-face-hub-de-servicii-it-cu-peste-133-milioane-de-lei-68-de-servicii-publice-vor-fi-digitalizate-centre-de-date-la-bucuresti-si-sibiu-22812804?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-10-09T11:37:00+00:00",
+      "category": "Business",
+      "summary": "Guvernul a aprobat investiția de peste 133 milioane de lei pentru \"HUB de servicii MApN – Digital HUB\", un proiect lansat în august. Acesta vizează digitalizarea a 68 de servicii publice și modernizarea interacțiunii pentru cetățeni, mediul de afaceri și administrația publică. Hub-ul va include centre de date la București și Sibiu, consolidând infrastructura IT a Ministerului Apărării Naționale.",
+      "instagram_caption": "România face un pas important spre digitalizare! 🚀 Guvernul a aprobat investiția de peste 133 milioane de lei pentru \"HUB de servicii MApN – Digital HUB\". Acest proiect ambițios, lansat în august, va digitaliza 68 de servicii publice, îmbunătățind experiența cetățenilor, a mediului de afaceri și a administrației publice. Centre de date moderne la București și Sibiu vor sta la baza acestei transformări. #Digitalizare #MApN #HubDeServicii #RomâniaDigitală #Inovație #Guvern #IT #Bucuresti #Sibiu",
+      "hashtags": [
+        "#Digitalizare",
+        "#MApN",
+        "#HubDeServicii",
+        "#RomâniaDigitală",
+        "#Inovație",
+        "#Guvern",
+        "#IT",
+        "#Bucuresti",
+        "#Sibiu"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Ministerul Apărării își face Hub de servicii IT cu peste 133 milioane de lei: 68 de servicii publice. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Inteligența artificială poate detecta îmbătrânirea celulelor stem. Descoperirea cercetătorilor din Barcelona - Euronews România",
+      "source": "Google Stiinta",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxObHMybE1TRHYySXV5X2VscXQ4MzE1SHJ5NGxLVjhYX0QzNTNHVHhpYVFoNFRuSnVCb05WTWZQUFJ5S3RWZXdGNWNBbFNHRnZIdENZYW5GMGJfZFZZLXlWRldIa2NjcTk0c3pfT3JUSjhUVDJZUHBiU1dUWlp2RG1wbWZQX1VMM1Z4Ull3VGZKeWhFSW5hU1hKd2syQzFITTRRYWQyZG5OZnZoZ094dGhfQ0RkaXBpWjdZbENNTjR2bElqdTNWUWd0MHFrZFR0bmktTVktMUpYTQ?oc=5",
+      "date": "2026-10-09T11:35:56+00:00",
+      "category": "Stiinta",
+      "summary": "Inteligența artificială poate detecta îmbătrânirea celulelor stem. Descoperirea cercetătorilor din Barcelona Euronews România",
+      "instagram_caption": "Inteligența artificială poate detecta îmbătrânirea celulelor stem. Descoperirea cercetătorilor din Barcelona - Euronews România\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Inteligența artificială poate detecta îmbătrânirea celulelor stem. Descoperirea cercetătorilor din B. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Franța promite 3.000 de profesori noi pentru a calma protestele elevilor",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c6vg98lw017po?at_medium=RSS&at_campaign=rss",
+      "date": "2026-10-09T11:35:00+00:00",
+      "category": "International",
+      "summary": "Ministrul francez al Educației, Edouard Geffray, a anunțat angajarea a 3.000 de profesori suplimentari. Această măsură reprezintă un prim pas al guvernului de la Paris pentru a calma valul de proteste, uneori violente, declanșate de elevii de liceu. Oferta vine după o nouă zi de manifestații, în care tinerii și-au exprimat nemulțumirile.",
+      "instagram_caption": "Franța încearcă să calmeze spiritele! 🇫🇷 Ministrul Educației, Edouard Geffray, a promis 3.000 de profesori noi, o primă măsură menită să potolească protestele elevilor de liceu. 🎓 Aceste demonstrații, uneori violente, au marcat o nouă zi în țară. Va fi suficient acest gest pentru a aduce pacea în școli? 🤔 Spune-ne părerea ta! 👇 #Franta #ProtesteElevi #Educatie #Profesori #NEXAS",
+      "hashtags": [
+        "#Franta",
+        "#ProtesteElevi",
+        "#Educatie",
+        "#Profesori",
+        "#Guvern",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: France promises 3,000 extra teachers in first step to calm student protests. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Doar un singur antrenament i-a ajutat pe adulții în vârstă să piardă grăsimea și să-și păstreze masa musculară",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261007233348.htm",
+      "date": "2026-10-09T10:57:40+00:00",
+      "category": "Stiinta",
+      "summary": "Un studiu de șase luni sugerează că antrenamentul la intervale de mare intensitate (HIIT) le poate oferi adulților în vârstă un avantaj puternic: pierderea grăsimii corporale, păstrând în același timp mușchii. Spre deosebire de antrenamentele de intensitate moderată, care au dus la o mică pierdere a mușchilor slabi, HIIT l-a păstrat, în același timp, a îmbunătățit compoziția corpului din jurul taliei.",
+      "instagram_caption": "Only one workout helped older adults lose fat and keep muscle\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Only one workout helped older adults lose fat and keep muscle. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Trei oameni au fost uciși de o lovitură Houthi asupra aeroportului din capitala saudită Riad, războiul escaladează - HotNews.ro",
+      "source": "Google Intl",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQOXhhNmVIR2JVNUlyTGVzaDJ0NzB2RTZacnpyRnRMYV9zSzdHV0pZSnU2dy1NYk5Rb1dKYkVneWM1TEd0VVBkS3pjSHRGXzdxN29fd0hfMUpHYmlwWkp5ekN6V1NQVmMwMFFJN0gwMmljQkVJTHhtVThlN2twd21GMU1CTmczTFVBb0xwRVB0QUFvbG1vR2RmVEhMcHpMS3NpV1U0NmdxNkRSVzk3ZlRmQkdaakExNEo4RVowVkw4ZW80VXJtTDVKYnlDMjJkSTBPXzB6MEhoQQ?oc=5",
+      "date": "2026-10-09T10:26:07+00:00",
+      "category": "International",
+      "summary": "Trei oameni au fost uciși de o lovitură Houthi asupra aeroportului din capitala saudită Riad, războiul escaladează HotNews.ro Arabia Saudită: Turcia exclude trimiterea de trupe pentru a ataca rebelii houthi din Yemen Agerpres Rebelii Houthi revendică un atac cu rachete asupra aeroportului din Riad. Mai multe explozii au fost... Digi24 Siria, chemată să sprijine Arabia Saudită în conflictul cu rebelii houthi. Capitala",
+      "instagram_caption": "Trei oameni au fost uciși de o lovitură Houthi asupra aeroportului din capitala saudită Riad, războiul escaladează - HotNews.ro\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Trei oameni au fost uciși de o lovitură Houthi asupra aeroportului din capitala saudită Riad, război. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Fraudă AI în muzică: Americanul care a depășit-o pe Taylor Swift merge la închisoare",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOTGpvTzc2bjVxVUd4UGNWZnFEWFRMVktLYmNvMFE1R25UaUNNVk9yeGZSdS02aGoycl9VLXVKMDZzaUFHaWtBbVhoTXlQV0s1LWNjaS11VG9JNHk5ajVrYzNUUS1ub1B1aVRVOWh6QWFxY2RnRDNpa2J2cy0wUFMxQXNBdFdLajhhb3BfMG95aHU1QXI5U1pIV2FQMDhDZDBBajN3WVNlM3hWWE9wQnhKZGZLNzRlWGxmU2NDQm1zcDA5WlVmZkRkdnhnWTNmVTZwRUhhTDZuc2JEeGtWSjVnVjN1NEVjM3FsUERVaFFnYTVfU25SRzhV?oc=5",
+      "date": "2026-10-09T10:19:04+00:00",
+      "category": "Entertainment",
+      "summary": "Un american a fost condamnat la 18 luni de închisoare pentru o fraudă muzicală masivă. Acesta a folosit inteligența artificială pentru a genera muzică și a manipula numărul de ascultări pe platformele de streaming, reușind să o depășească chiar și pe Taylor Swift. Cazul subliniază provocările etice și legale ale AI în industria muzicală.",
+      "instagram_caption": "🚨 Scandal uriaș în industria muzicală! Un american a fost condamnat la 18 luni de închisoare după ce a folosit AI pentru a genera muzică și a-i umfla fraudulos ascultările pe platformele de streaming. 🎶 Culmea, a reușit să o depășească chiar și pe regina Taylor Swift la numărul de ascultări înainte să fie prins! 😱 Oare cât de departe poate merge tehnologia AI fără etică? #FraudăMuzicală #AI #TaylorSwift #Închisoare",
+      "hashtags": [
+        "AIFraud",
+        "MuzicaAI",
+        "TaylorSwift",
+        "Condamnare",
+        "StreamingFraud",
+        "EticaAI",
+        "StiriMuzica"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Un necunoscut a reușit să o întreacă pe Taylor Swift la numărul de ascultări pe rețelele de muzică. . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Congresul de Medicina de Familie 2026: De la Diagnostic la Tratament și Teme Actuale",
+      "source": "Google Sanatate",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQOHk2blFZdGU0OUVuakZGM3JTR1dYTkI3aEl5UFZLYkNwTVR1T0w1ZzJHNFhVcDVad18zejlieVFncVhZa1NsM3JSaFR6aG9DY0pfOWNMUVVvX2ljMFk5dlgtNVlpNFpWdmtLdDFfempVaGpGWnpFTmY2YklUa0JOdUQ3RVNNazMtTE50ZmxQcGlWZVc0MmthenV1QURnbnpBTlZ0ckFNZ0pSNk5NLXRLZWozS0VrMUFWWXdqa3lJQQ?oc=5",
+      "date": "2026-10-09T10:09:48+00:00",
+      "category": "Sanatate",
+      "summary": "Viitorul medicinei de familie este subiectul central la Congresul de Medicina de Familie 2026. Evenimentul va explora teme esențiale, de la diagnostic la tratament, punând accent pe importanța formării medicale continue și a temelor de actualitate. Specialiști din domeniu se vor reuni pentru a discuta inovațiile și provocările, contribuind la dezvoltarea practicilor clinice și la creșterea calității îngrijirii pacienților.",
+      "instagram_caption": "Pregătește-te pentru Congresul de Medicina de Familie 2026! 🗓️ Un eveniment crucial pentru toți profesioniștii din sănătate. Vom explora parcursul pacientului, de la diagnostic la tratament, și cele mai noi teme de actualitate, accentuând importanța formării medicale continue. 👨‍⚕️🩺 Fii la curent cu inovațiile și contribuie la viitorul medicinei de familie! #MedicinaDeFamilie #CongresMedical #FormareMedicala #Sanatate #DiagnosticTratament #NEXAS",
+      "hashtags": [
+        "#MedicinaDeFamilie",
+        "#CongresMedical",
+        "#FormareMedicala",
+        "#Sanatate",
+        "#DiagnosticTratament",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: De la diagnostic la tratament | Teme de actualitate la Congresul de Medicina de Familie 2026 - Forma. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cum ne anesteziază medicamentele și ce ne pot spune despre conștiință",
+      "source": "Descopera Ro",
+      "url": "https://www.descopera.ro/stiinta/21142939-cum-ne-anesteziaza-medicamentele-si-ce-ne-pot-spune-despre-constiinta",
+      "date": "2026-10-09T10:00:54+00:00",
+      "category": "Stiinta",
+      "summary": "Anestezia generală este folosită în sute de milioane de intervenții chirurgicale în fiecare an, însă oamenii de știință nu înțeleg încă pe deplin cum reușesc aceste medicamente să oprească temporar conștiința. Cercetările recente oferă însă […] Articolul Cum ne anesteziază medicamentele și ce ne pot spune despre conștiință apare prima dată în Descopera .",
+      "instagram_caption": "Cum ne anesteziază medicamentele și ce ne pot spune despre conștiință\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Cum ne anesteziază medicamentele și ce ne pot spune despre conștiință. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Tommy Lee Jones, prima apariție pe covorul roșu după moartea fiicei, alături de Ethan Hawke",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNWmJINUMzMzZMRkR6QmtRQy1mci1taGhiQk5TVDBhNU5pV1Y3UDdXM0lVY2ZxU3JmVFRaV1RRZVRUaHl6UFlYRUlZSEFpalRaTFFGYUQ3SzBSTmx4dVFpTG5rb0VNRmxqVnE5YjZKSmF2ZXF4NE5XQlMyWkNUU05NQWVLOU03MHd4cGNTMVkxNDByTU1VM3U2bXVic0poREhfLVFOX3MxaUpMLTJDem55WlFlemxkdVJndzhZM0JXSjk1MXpTNHNzeVFTRmUtRjlCdi1DTWo0VzlBV210ck5ndFpOS2pBVk5GSzVBQ0d0dW5lajlT?oc=5",
+      "date": "2026-10-09T08:39:15+00:00",
+      "category": "Entertainment",
+      "summary": "Actorul legendar Tommy Lee Jones a marcat o apariție rară și emoționantă pe covorul roșu, la mai bine de nouă luni de la tragicul deces al fiicei sale. Momentul a atras atenția, reprezentând o revenire în public pentru celebrul actor de 77 de ani. Acesta a fost însoțit de colegul și prietenul său, Ethan Hawke, prezența lor sugerând un moment de sprijin reciproc sau un posibil proiect comun. Apariția sa este considerată semnificativă, având în vedere perioada dificilă prin care a trecut.",
+      "instagram_caption": "O apariție rară și plină de emoție! ✨ Tommy Lee Jones a pășit din nou pe covorul roșu la mai bine de nouă luni de la decesul fiicei sale. Un moment de revenire marcat de prezența bunului său prieten, Ethan Hawke, simbolizând sprijinul în fața greutăților. 🙏 Admirăm puterea și reziliența unui actor legendar. #TommyLeeJones #EthanHawke #Hollywood #CovorulRosu #Rezistenta #StiriCelebrity",
+      "hashtags": [
+        "TommyLeeJones",
+        "EthanHawke",
+        "Hollywood",
+        "CovorulRosu",
+        "Rezistenta",
+        "StiriCelebrity",
+        "Filme"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Tommy Lee Jones, prima apariție pe covorul roșu la mai bine de nouă luni de la moartea fiicei sale. . Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Văduva lui Hugh Hefner, apel la Jessica Biel: „Nu juca în Playmates!”",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTWV2aWlqWm1QM1hKX2JkMUxZejFGLVp2VkZ1dlhPSE1zQVRxTTV2UDFtR1V5NWdGelQ4UzdIOVhrX0lfXzRTY2g0NVl0dVNzaE9oR1JNbXNkdUxIVE4zZm9nRmJLOXNob3lXLVMzR1JFREFiMjZHQVlwbEpYX1VpWktDSFhVbW1lQkRMQkQyWGdOdXJudXdlQVE4UUZvZDFIQjc5SkxualNUQU51Tk84Sjk2V29UUGh5UGtISF9sZ3dwbi16T1d0NzNRRXBLbHVYSmNJ?oc=5",
+      "date": "2026-10-09T07:44:39+00:00",
+      "category": "Entertainment",
+      "summary": "Crystal Hefner, văduva legendarului fondator Playboy, Hugh Hefner, a lansat un apel public către actrița Jessica Biel. Aceasta o îndeamnă pe Biel să reconsidere decizia de a juca în viitorul film „Playmates”, care va explora lumea din spatele revistei și imperiului Playboy. Mesajul lui Crystal Hefner sugerează o avertizare, cerând actriței să se gândească „din nou” înainte de a accepta rolul, posibil bazându-se pe experiențe personale legate de universul Playboy.",
+      "instagram_caption": "Un apel neașteptat! 😱 Văduva lui Hugh Hefner, Crystal Hefner, o imploră pe Jessica Biel să nu joace în viitorul film „Playmates”. De ce oare? 🤔 Mesajul este clar: „Te rog să te gândești din nou!” Ce secrete ar putea ascunde lumea Playboy de o face pe Crystal să avertizeze o actriță de talie mondială? 🧐 Oare rolul ar putea fi mai periculos decât pare? Așteptăm cu nerăbdare detaliile, dar până atunci, ce părere aveți despre această intervenție?",
+      "hashtags": [
+        "#JessicaBiel",
+        "#Playmates",
+        "#CrystalHefner",
+        "#Playboy",
+        "#Hollywood"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Jessica Biel, îndemnată de văduva lui Hugh Hefner să nu joace în filmul „Playmates”: „Te rog să te g. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Sophos reduce cu 96% timpul de investigare a amenințărilor cu OpenAI Daybreak",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/sophos",
+      "date": "2026-10-09T07:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "Află cum Sophos folosește Daybreak, soluția OpenAI, pentru a reduce timpul de investigare a amenințărilor cibernetice cu 96%. Această inovație automatizează 52% din cazurile de detecție și răspuns gestionat (MDR), menținând totodată un control uman esențial. O demonstrație clară a eficienței AI în securitatea cibernetică.",
+      "instagram_caption": "🔥 Revoluție în securitatea cibernetică! Sophos, cu ajutorul OpenAI Daybreak, reduce cu 96% timpul de investigare a amenințărilor și automatizează 52% din cazurile MDR. 🛡️ Inteligența artificială transformă modul în care luptăm împotriva riscurilor cibernetice, fără a neglija expertiza umană. Un pas uriaș spre un viitor mai sigur! #AI #Cybersecurity #Sophos #OpenAIDaybreak #SecuritateCibernetica #Inovatie",
+      "hashtags": [
+        "#AI",
+        "#Cybersecurity",
+        "#Sophos",
+        "#OpenAIDaybreak",
+        "#SecuritateCibernetica",
+        "#Inovatie",
+        "#Tech",
+        "#NEXAS",
+        "#Tehnologie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Sophos cuts threat investigation time by 96% with OpenAI Daybreak. Professional photorealistic style. No text, no logos, no watermarks."
+    },
     {
       "title": "Congresul divizat așteptat Un pozitiv pentru obligațiuni: Khurana",
       "source": "Bloomberg",
@@ -48,27 +575,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Romania news: Proiectul privind drepturile educaţionale ale minorităţilor naţionale, contestat de asociaţii ale ro. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Dieta DASH: Sigură pentru Nivelul de Potasiu la Pacienții cu Medicamente pentru Tensiune Arterială",
-      "source": "Healthline",
-      "url": "https://www.healthline.com/health-news/potassium-rich-dash-diet-safe-with-certain-blood-pressure-medications",
-      "date": "2026-10-08T19:35:17.050914+00:00",
-      "category": "Sanatate",
-      "summary": "Un studiu recent arată că dieta DASH, o abordare nutrițională binecunoscută pentru sănătatea inimii, nu influențează semnificativ nivelul de potasiu la adulții care urmează un tratament medicamentos pentru tensiunea arterială. Cercetările indică faptul că această dietă nu crește nivelul de potasiu și nu provoacă modificări notabile ale funcției renale. Această veste este importantă pentru pacienții care se temeau de interacțiuni, confirmând că dieta DASH rămâne o opțiune sigură și benefică pentru gestionarea hipertensiunii.",
-      "instagram_caption": "Ai hipertensiune și iei medicamente? 💊 Află o veste bună! Un studiu nou confirmă că dieta DASH, recunoscută pentru beneficiile sale cardiovasculare, este SIGURĂ pentru nivelul tău de potasiu, chiar și atunci când ești sub tratament. 💪 Nu afectează semnificativ funcția renală. O opțiune excelentă pentru un stil de viață sănătos! #NEXAS #Sanatate #DietaDASH #Hipertensiune #TensiuneArteriala #Potasiu #StudiuNou",
-      "hashtags": [
-        "#Sanatate",
-        "#DietaDASH",
-        "#Hipertensiune",
-        "#TensiuneArteriala",
-        "#Potasiu",
-        "#Medicamente",
-        "#StudiuMedical",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Taking Blood Pressure Meds? DASH Diet Likely Safe for Potassium Levels. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Butonul secret de la mașina de spălat pe care trebuie să-l ții apăsat timp de 3 secunde. Această funcție nu e folosită des!",
@@ -251,25 +757,6 @@
       "image_prompt": "Premium editorial photograph for Business news: Alianța giganților auto Japonia - China. Toyota își unește forțele cu noua asociere a companiilor de. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Alianța giganților auto Japonia - China. Toyota își unește forțele cu noua asociere a companiilor de stat FAW - GAC",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/alianta-gigantilor-auto-japonia-china-toyota-isi-uneste-fortele-cu-noua-asociere-a-companiilor-de-stat-faw-gac-22810392?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-10-08T19:00:00+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Cel mai mare producător auto din lume a semnat documentele prin care pune bazele unei „alianțe strategice” cu două dintre cele mai mari companii auto de stat din China.",
-      "instagram_caption": "Alianța giganților auto Japonia - China. Toyota își unește forțele cu noua asociere a companiilor de stat FAW - GAC\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Alianța giganților auto Japonia - China. Toyota își unește forțele cu noua asociere a companiilor de. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Vezi trailerul pentru „The Altruists”, serialul Netflix despre scandalul FTX",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/10/08/watch-the-trailer-for-the-altruists-netflixs-show-about-the-ftx-scandal/",
@@ -343,26 +830,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Business news: Administraţia Trump anunţă că suspendă un program de imigraţie calificată vital pentru companiile am. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Trump suspendă program imigrație calificată vital tech. Microsoft, acuzat de abuz.",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/business-international/administratia-trump-anunta-suspenda-program-imigratie-calificata-vital-companiile-americane-tehnologie-pacate-existat-nicio-companie-statele-unite-abuzat-mult-acest-sistem-microsoft-23256236",
-      "date": "2026-10-08T17:51:11+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Administrația Trump a anunțat suspendarea unui program de imigrație calificată, considerat vital pentru companiile americane din sectorul tehnologic. Oficialii au declarat că „Din păcate, nu a existat nicio companie în Statele Unite care să fi abuzat mai mult de acest sistem decât Microsoft”.",
-      "instagram_caption": "Administrația Trump a decis să suspende un program cheie de imigrație calificată, esențial pentru giganții tech din SUA! 🚨 Un oficial a subliniat că „Din păcate, nu a existat nicio companie în Statele Unite care să fi abuzat mai mult de acest sistem decât Microsoft”. Ce consecințe vor fi pentru sectorul tehnologic și forța de muncă? 📉💻 #TrumpAdministration #ImigratieCalificata #Tehnologie #Microsoft #AbuzH1B #SUA #NEXASNews",
-      "hashtags": [
-        "TrumpAdministration",
-        "ImigratieCalificata",
-        "Tehnologie",
-        "Microsoft",
-        "AbuzH1B",
-        "SUA",
-        "NEXASNews"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Administraţia Trump anunţă că suspendă un program de imigraţie calificată vital pentru companiile am. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Marea întrebare fără răspuns despre moartea „ciumei” a Rusiei",
@@ -4291,245 +4758,6 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: Doar câteva minute de mișcare pot îmbunătăți memoria și atenția. Ce arată o analiză a 25 de studii. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Gică Hagi, răspuns direct la întrebarea: Ianis la națională, cu sau fără numele Hagi?",
-      "source": "DigiSport",
-      "url": "https://www.digisport.ro/fotbal/echipa-nationala/ianis-ar-juca-la-nationala-daca-nu-l-ar-chema-hagi-gica-hagi-a-raspuns-direct-4524117",
-      "date": "2026-10-04T11:20:44+00:00",
-      "category": "Sport",
-      "summary": "Gică Hagi a răspuns direct și fără echivoc uneia dintre cele mai spinoase întrebări din fotbalul românesc: \"Ar fi Ianis convocat la echipa națională dacă nu l-ar chema Hagi?\". Legendarul fotbalist a abordat speculațiile și criticile legate de prezența fiului său în lotul tricolor. Declarația sa, oferită în contextul unor dezbateri aprinse privind selecțiile, subliniază poziția sa fermă față de meritocrația în sport și rolul său de părinte.",
-      "instagram_caption": "🦁 Hagi, \"Regele\" fotbalului românesc, a răspuns direct la întrebarea controversată: Ar fi Ianis la națională dacă nu l-ar chema Hagi? 🤔 Vezi reacția sa fermă la speculațiile care înconjoară selecția fiului său! O dezbatere aprinsă primește un răspuns tranșant. 💬",
-      "hashtags": [
-        "#GicaHagi",
-        "#IanisHagi",
-        "#EchipaNationala",
-        "#FotbalRomania",
-        "#Controversa",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: ”Ianis ar juca la națională dacă nu l-ar chema Hagi?”. Gică Hagi a răspuns direct. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Bărbat căzut 40m în Făgăraș, „La trei pași de moarte”. Stare stabilă.",
-      "source": "Digi24",
-      "url": "https://www.digi24.ro/stiri/actualitate/un-barbat-a-cazut-40-de-metri-in-muntii-fagaras-in-zona-la-trei-pasi-de-moarte-victima-este-stabila-3976997",
-      "date": "2026-10-04T11:18:32+00:00",
-      "category": "Romania",
-      "summary": "Un incident montan a avut loc duminică după-amiază în Munții Făgăraș, unde un bărbat a căzut aproximativ 40 de metri. Acesta se afla în zona denumită sugestiv „La trei pași de moarte”. Echipajele medicale au intervenit prompt, iar victima este acum în stare stabilă, urmând să fie evacuată de către salvamontiști. Informația a fost confirmată de Salvamont Sibiu.",
-      "instagram_caption": "Moment de panică în Munții Făgăraș! 🏔️ Un bărbat a căzut aproximativ 40 de metri duminică după-amiază, într-o zonă cunoscută sub numele de „La trei pași de moarte”. 😮 Din fericire, intervenția rapidă a echipei Salvamont Sibiu a făcut ca victima să fie acum în stare stabilă și să aștepte evacuarea. 🙏 O poveste cu final fericit dintr-o situație periculoasă! Grija la traseele montane! #Salvamont #Fagaras #Munti #AccidentMontan #InterventieRapida #StiriNEXAS",
-      "hashtags": [
-        "#Salvamont",
-        "#Fagaras",
-        "#Munti",
-        "#AccidentMontan",
-        "#InterventieRapida",
-        "#StiriNEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Un bărbat a căzut 40 de metri în Munții Făgăraș, în zona „La trei pași de moarte”. Victima este stab. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cel mai mare regret al lui Leo Messi și sfatul pentru fiii săi",
-      "source": "Fanatik",
-      "url": "https://www.fanatik.ro/cel-mai-mare-regret-al-lui-leo-messi-sfatul-pe-care-l-a-oferit-celor-trei-baieti-21557356",
-      "date": "2026-10-04T11:16:55+00:00",
-      "category": "Sport",
-      "summary": "Leo Messi, una dintre cele mai mari legende ale fotbalului, a dezvăluit care este cel mai mare regret al său. Starul de la Inter Miami a mărturisit că, de-a lungul carierei sale, a trăit sub o presiune imensă și nu s-a bucurat pe deplin de fiecare moment, concentrându-se prea mult pe rezultate. Această remușcare profundă îl motivează să le ofere un sfat esențial celor trei băieți ai săi: să savureze fiecare etapă a vieții, să trăiască în prezent și să nu permită presiunilor externe să le fure bucuria. Messi vrea ca fiii săi să învețe din experiența sa și să aprecieze momentele unice.",
-      "instagram_caption": "Leo Messi, o legendă vie a fotbalului, a făcut o dezvăluire emoționantă! 💔 A mărturisit că cel mai mare regret al său este că nu s-a bucurat pe deplin de fiecare moment al carierei sale, din cauza presiunii imense. 😟 Tocmai de aceea, le-a oferit un sfat prețios celor trei băieți ai săi: să trăiască în prezent și să savureze fiecare clipă! ✨ Un mesaj puternic despre bucuria vieții și importanța de a fi prezent. 🙏 Ce lecție valoroasă!",
-      "hashtags": [
-        "#LeoMessi",
-        "#Messi",
-        "#Fotbal",
-        "#InterMiami",
-        "#RegretMessi",
-        "#SfatDeViata",
-        "#FamilieMessi",
-        "#Inspiratie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Cel mai mare regret al lui Leo Messi. Sfatul pe care l-a oferit celor trei băieți. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Antreprenoarea Laura Ciuhu, din energie și dulciuri, în modă: LARA Wear cu 1M €.",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/profesii/dupa-ce-a-trecut-prin-consultanta-in-energie-regenerabila-dulciuri-acum-laura-ciuhu-si-a-lansat-propriul-brand-de-tricotaje-premium-lara-wear-unde-a-investit-1-milion-de-euro-23252642",
-      "date": "2026-10-04T11:15:00+00:00",
-      "category": "Business",
-      "summary": "Laura Ciuhu, o antreprenoare cu experiență în domenii diverse, de la consultanță în energie regenerabilă la producția de dulciuri, face acum o tranziție către industria modei. Ea a lansat LARA Wear, un brand propriu de tricotaje premium, investind 1 milion de euro în acest nou capitol. LARA Wear promite să aducă pe piață produse de calitate superioară, confirmând versatilitatea și viziunea antreprenorială a Laurei Ciuhu.",
-      "instagram_caption": "🎉 Nou capitol antreprenorial pentru Laura Ciuhu! După succesul în energie regenerabilă și dulciuri, acum își lansează propriul brand de modă: LARA Wear. 🧶 Este vorba despre tricotaje premium, iar investiția inițială se ridică la 1 milion de euro! 💰 O poveste de inspirație despre versatilitate și viziune în business. Ești gata să descoperi noile creații? ✨",
-      "hashtags": [
-        "#LauraCiuhu",
-        "#LARAWear",
-        "#TricotajePremium",
-        "#ModaRomaneasca",
-        "#Investitie",
-        "#Antreprenoriat",
-        "#BusinessRomania",
-        "#NouBrand",
-        "#FashionRomania",
-        "#MilionDeEuro"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: După ce a trecut prin consultanţă în energie regenerabilă, dulciuri, acum Laura Ciuhu şi-a lansat pr. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Iran: Strâmtoarea Ormuz rămâne închisă fără îndeplinirea condițiilor SUA",
-      "source": "Forbes Romania",
-      "url": "https://www.forbes.ro/raspunsul-iranului-la-propunerea-sua-transmisa-prin-qatar-ormuz-nu-se-deschide-fara-indeplinirea-conditiilor-524252",
-      "date": "2026-10-04T11:10:40+00:00",
-      "category": "Business",
-      "summary": "Mohammad Baqer Qalibaf, președintele Parlamentului iranian și negociatorul-șef, a anunțat duminică că Teheranul nu va redeschide Strâmtoarea Ormuz. Această decizie depinde de îndeplinirea condițiilor Iranului de către Statele Unite. Declarația survine ca răspuns la o propunere americană privind încheierea războiului, transmisă prin intermediul mediatorilor din Qatar. Qalibaf a subliniat că SUA trebuie să înțeleagă clar că accesul prin Strâmtoare va rămâne blocat până la satisfacerea cerințelor iraniene.",
-      "instagram_caption": "🚨 Tensiuni crescute! Iranul a anunțat că nu va redeschide strategic importanta Strâmtoare Ormuz decât dacă SUA îi îndeplinesc condițiile. Această declarație, făcută de președintele Parlamentului iranian, Mohammad Baqer Qalibaf, vine după ce o propunere americană de încheiere a conflictului a fost transmisă prin Qatar. Ce înseamnă acest blocaj pentru comerțul global și diplomația internațională? Rămâneți conectați pentru detalii! #Iran #SUA #StramtoareaOrmuz #Geopolitica #NEXAS",
-      "hashtags": [
-        "#Iran",
-        "#SUA",
-        "#StramtoareaOrmuz",
-        "#Geopolitica",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Răspunsul Iranului la propunerea SUA transmisă prin Qatar: Ormuz nu se deschide fără îndeplinirea co. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Gică Hagi, mesaj categoric pentru fotbaliștii naționalei: „Ușa deschisă!”",
-      "source": "ProSport",
-      "url": "https://www.prosport.ro/fotbal-extern/liga-natiunilor/gica-hagi-mesaj-fotbalisti-romania-neintelegere-exercitii-20539586",
-      "date": "2026-10-04T11:09:31+00:00",
-      "category": "Sport",
-      "summary": "Nicolae Stanciu a dezvăluit mesajul clar transmis de Gică Hagi, selecționerul în vârstă de 61 de ani, fotbaliștilor naționalei României care nu înțeleg pe deplin cerințele sale la antrenamente. Potrivit ProSport, Hagi le-a spus direct: „Ușa deschisă!”, accentuând necesitatea adaptării și înțelegerii tacticilor. Articolul scoate la iveală episoade intense petrecute în cantonamentul „tricolorilor”, ilustrând exigența antrenorului.",
-      "instagram_caption": "Gică Hagi a dat un ultimatum jucătorilor naționalei! 🤯 Nicolae Stanciu a dezvăluit mesajul dur al \"Regelui\" pentru fotbaliștii care nu înțeleg cerințele la antrenamente: „Ușa deschisă!” 🚪 Ce înseamnă asta pentru viitorul \"tricolorilor\"? 🤔 Află toate detaliile despre exigența selecționerului și episoadele din cantonament! 👇",
-      "hashtags": [
-        "GicaHagi",
-        "NationalaRomaniei",
-        "Fotbal",
-        "Ultimatum",
-        "Antrenamente",
-        "Exigenta",
-        "ProSport",
-        "Stanciu"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Ce le-a zis Gică Hagi fotbaliștilor României care nu înțeleg ce le cere la anumite exerciții: „Ușa d. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Accident grav în Munții Făgăraș: Bărbat căzut 40 de metri, salvat cu elicopter SMURD",
-      "source": "G4Media",
-      "url": "https://www.g4media.ro/un-barbat-s-a-accidentat-grav-in-muntii-fagaras-un-elicopter-smurd-solicitat-pentru-a-l-recupera.html",
-      "date": "2026-10-04T11:08:13+00:00",
-      "category": "Romania",
-      "summary": "Salvamontiștii sibieni au intervenit duminică după-amiază în Munții Făgăraș, lângă zona „La trei pași de moarte”, pentru a recupera un bărbat care a căzut aproximativ 40 de metri. Victima este stabilă, iar medicul și asistentul din echipajul elicopterului SMURD au ajuns deja la ea. Anunțul a fost făcut de Salvamont Sibiu.",
-      "instagram_caption": "Intervenție de urgență în Munții Făgăraș! 🏔️ Salvamontiștii sibieni au acționat duminică pentru a salva un bărbat care a căzut aproximativ 40 de metri, aproape de temuta zonă „La trei pași de moarte”. 😥 Un elicopter SMURD a fost solicitat, iar echipa medicală a ajuns deja la victimă. Buna veste este că starea bărbatului este stabilă! 🙏 Mulțumiri echipajelor de salvare! #Salvamont #Fagaras #Munti #Accident #SMURD #Interventie #Romania",
-      "hashtags": [
-        "Salvamont",
-        "Fagaras",
-        "Munti",
-        "Accident",
-        "SMURD",
-        "Interventie",
-        "Romania"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Un bărbat s-a accidentat grav în Munţii Făgăraş / Un elicopter SMURD, solicitat pentru a-l recupera. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Novartis și Abogen: 8 miliarde $ pentru noi terapii mRNA în boli autoimune",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/povesti-cu-profit/medicament-nou-pentru-tratarea-bolilor-autoimune-acord-de-aproape-8-miliarde-de-dolari-novartis-abogen-pentru-terapii-bazate-pe-mrna-22801812?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-10-04T11:08:00+00:00",
-      "category": "Business",
-      "summary": "Grupul farmaceutic elvețian Novartis a făcut un nou pas strategic în domeniul tehnologiei ARN mesager, încheind un parteneriat cu compania chineză de biotehnologie Abogen. Acordul, evaluat la aproape 8 miliarde de dolari, vizează dezvoltarea unor noi terapii bazate pe mRNA, cu un accent deosebit pe tratarea bolilor autoimune. Această colaborare subliniază angajamentul Novartis de a explora soluții inovatoare și de a extinde portofoliul de tratamente pentru afecțiuni complexe.",
-      "instagram_caption": "O veste revoluționară în medicină! 🚀 Novartis și Abogen au semnat un parteneriat colosal de aproape 8 miliarde de dolari pentru a revoluționa tratamentul bolilor autoimune. Prin tehnologia ARN mesager, cele două companii își unesc forțele pentru a dezvolta noi terapii inovatoare. Un pas uriaș spre un viitor mai sănătos! 💪 #Novartis #Abogen #mRNA #BoliAutoimune #MedicinăInovatoare #Sănătate #Parteneriat",
-      "hashtags": [
-        "Novartis",
-        "Abogen",
-        "mRNA",
-        "BoliAutoimune",
-        "MedicinăInovatoare",
-        "Sănătate",
-        "Parteneriat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Medicament nou pentru tratarea bolilor autoimune. Acord de aproape 8 miliarde de dolari Novartis - A. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Reacții după ce susținătorii lui Călin Geogescu au aprins lumănări cu inițialele lui Cristian Tudor Popescu în fața Arestului Central",
-      "source": "HotNews",
-      "url": "https://hotnews.ro/reactii-dupa-ce-sustinatorii-lui-calin-geogescu-au-aprins-lumanari-cu-initialele-lui-cristian-tudor-popescu-in-fata-arestului-central-2366191",
-      "date": "2026-10-04T11:04:15+00:00",
-      "category": "Romania",
-      "summary": "Susținătorii lui Călin Georgescu au scris cu lumânări aprinse inițialele gazetarului Cristian Tudor Popescu pe pavajul de la sediul Arestului Central, unde este încarcerat fostul candidat la alegerile prezidențiale, potrivit unor imagini publicate pe rețelele de socializare și devenite virale. Situația a fost semnalată de cunoscutul activist rom Ciprian Necula, care a publicat și o …",
-      "instagram_caption": "Reacții după ce susținătorii lui Călin Geogescu au aprins lumănări cu inițialele lui Cristian Tudor Popescu în fața Arestului Central\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Reacții după ce susținătorii lui Călin Geogescu au aprins lumănări cu inițialele lui Cristian Tudor . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Armata Sudaneză Câștigă Avânt Împotriva RSF?",
-      "source": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/10/4/is-the-sudanese-army-gaining-momentum-against-the-rsf?traffic_source=rss",
-      "date": "2026-10-04T10:56:12+00:00",
-      "category": "International",
-      "summary": "Forțele Armate Sudaneze (SAF) au anunțat o victorie crucială într-un oraș strategic din statul Kordofan de Nord. Această reușită militară este percepută ca o lovitură semnificativă pentru Forțele de Sprijin Rapid (RSF), deoarece limitează drastic accesul acestora la noi luptători și le perturbă rutele esențiale de aprovizionare. Evenimentul marchează un posibil punct de cotitură în conflictul prelungit din Sudan.",
-      "instagram_caption": "🇸🇩 Forțele Armate Sudaneze (SAF) anunță o victorie strategică crucială într-un oraș cheie din Kordofanul de Nord! ⚔️ Această reușită ar putea slăbi semnificativ Forțele de Sprijin Rapid (RSF), limitându-le accesul la luptători și perturbându-le rutele de aprovizionare esențiale. 🛡️ Un moment de cotitură în conflictul din Sudan? Urmărește evoluțiile! #Sudan #ConflictSudan #SAF #RSF #Kordofan #Africa #StiriInternationale 🔥🌍",
-      "hashtags": [
-        "Sudan",
-        "ConflictSudan",
-        "SAF",
-        "RSF",
-        "Kordofan",
-        "Africa",
-        "StiriInternationale"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Is the Sudanese army gaining momentum against the RSF?. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Pericol pentru Merz: Bruxellesul pregătește scenarii pentru o Germanie fără lider puternic",
-      "source": "Google Intl",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONXRJVFFMQTJLRkMtNjQwTXpKWnl6SXd3TktCZDBMVlAxSTdyTl9fZHlEN0pJU2JJZlg5alM2QzJhTEdaTDZlODlVTlVzblB3ZHJmcGI1WGRLTk83X2x1ZFQzTWN4MFZuY2ZnSDR4bVlGX2VjTEszaWNlaXdpWmVlSnVWd3VrUFEwc3dUSk91TzZOa18tWlhzS2U5d0pYRXNRS2QxWFNOT1JfZC1DcUNtQ1duTnFudjhxbGk3Z29HaWpGNlBoX0I4d9IBwwFBVV95cUxQT1dFNDdvbkdXX3ZkS0R4UlA4dDRocXhGUkxsUXk4dHVNRnZxc21HTHgtQm1uM2lTdFZmUktCbGJLVlU1M3gxdnJPbkVURTBDZnk3NzVkUjJmdVlMbDZhSXZMV0xJSmliMEhNWGVXTzVvWHNJdW44YWxCWWJBRGh0MG4yQXhLVEVxQ3A0N0tveV8wRWVmUUFYbGpTY0VjSzdLOS05UXh3aTRoYlkzd0c4SFdCbk0xOE5VZ25XOFVDTjJid2s?oc=5",
-      "date": "2026-10-04T10:30:00+00:00",
-      "category": "International",
-      "summary": "Declinul politic al lui Friedrich Merz este din ce în ce mai evident, forțând Bruxellesul să ia în calcul planuri pentru o Germanie fără un lider stabil sau chiar fără cancelar. UE analizează cel mai pesimist scenariu, în contextul în care partidul AfD atinge un nou maxim istoric în preferințele electoratului german. Există semne de frustrare la nivelul coaliției și întrebări privind angajamentul lui Merz față de interesele europene.",
-      "instagram_caption": "Situația politică din Germania devine tot mai tensionată! 🇩🇪 Declinu-i lui Friedrich Merz îi pune pe gânduri pe oficialii de la Bruxelles, care pregătesc deja scenarii pentru o Germanie fără un lider puternic. 🇪🇺 În același timp, partidul AfD atinge cote istorice în sondaje. Ce înseamnă asta pentru viitorul Europei? 🤔 Coaliția și cancelarul Merz stârnesc frustrare. Urmărim îndeaproape evoluțiile! #Germania #Politica #UE #FriedrichMerz #AfD #CrizaPolitica #NEXAS",
-      "hashtags": [
-        "Germania",
-        "Politica",
-        "UE",
-        "FriedrichMerz",
-        "AfD",
-        "CrizaPolitica",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Friedrich Merz, în pericol. Bruxellesul își face planuri pentru o Germanie fără cancelar - Antena 3. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Atac cu drone rusești la Kiev: Pod lovit în timpul vizitei surpriză a cancelarului german",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/ckreyjzzzywqo?at_medium=RSS&at_campaign=rss",
-      "date": "2026-10-04T10:11:32+00:00",
-      "category": "International",
-      "summary": "Imagini video neverificate surprind momentul în care o dronă lovește Podul de Nord din Kiev, în timp ce vehiculele circulau, provocând o explozie puternică și o minge de foc. Atacul vine pe fondul unei vizite surpriză a cancelarului german în capitala ucraineană, intensificând tensiunile internaționale.",
-      "instagram_caption": "🚨 Alerte la Kiev! Un pod a fost lovit de o dronă rusească, generând o explozie spectaculoasă. 💥 Imaginile neverificate arată o minge de foc pe Podul de Nord, în timp ce traficul era activ. Incidentul are loc chiar în timpul unei vizite surpriză a cancelarului german. 🇩🇪🇷🇺🇺🇦 Fii la curent cu cele mai noi știri internaționale! #Kiev #Ucraina #AtacRusesc #Drone #StiriInternationale #NEXAS",
-      "hashtags": [
-        "Kiev",
-        "Ucraina",
-        "AtacRusesc",
-        "Drone",
-        "Razboi",
-        "StiriInternationale",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Kyiv bridge hit in further Russian drone attack as German chancellor makes surprise visit. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Irakul își modifică strategia petrolieră, transportând țiței dincolo de Strâmtoarea Hormuz",
       "source": "Bloomberg",
       "url": "https://www.bloomberg.com/news/articles/2026-10-04/iraq-shifts-oil-strategy-by-arranging-tanker-to-move-past-hormuz",
@@ -4570,85 +4798,6 @@
       "image_prompt": "Premium editorial photograph for Stiinta news: First photos from Smile spacecraft show Earth like you've never seen it before. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Aspirina, declinul cerebral și demența: Ce au descoperit oamenii de știință",
-      "source": "Google Sanatate",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWndDaUg1cU9LSzVNV1ZUT2hVZEJXbzQ1eDZ3S3FWQjhXeTB2ckdhd01lNGkzdzJza2R2d201S1JVOEJjeGs4blZuTTZ6M0Q0cldzcktscE9MaWpvRUdJMnc2bkxaelpmcVVTNXJzbENCYjh2SG1yczJSUFZpc01DOWVVUjFpcy1nNncxdk5kVFZHTUxVYkI0clc1Ynd6NXNOaXhYYmxYQUZQaHV2T0wtOQ?oc=5",
-      "date": "2026-10-04T08:02:00+00:00",
-      "category": "Sanatate",
-      "summary": "Cercetătorii continuă să exploreze legătura complexă dintre utilizarea aspirinei, declinul cognitiv și riscul de demență. Noi studii își propun să elucideze modul în care acest medicament comun influențează sănătatea creierului pe termen lung. Aceste investigații sunt esențiale pentru a înțelege mai bine mecanismele neurodegenerative și pentru a identifica potențiale strategii de prevenție și îngrijire în lupta împotriva afecțiunilor cerebrale.",
-      "instagram_caption": "Știați că Aspirina, medicamentul de zi cu zi, este acum subiectul unor studii intense legate de sănătatea creierului? 🧠 Cercetătorii analizează impactul său asupra declinului cognitiv și a riscului de demență. Descoperă cele mai noi perspective științifice despre cum Aspirina ar putea influența funcțiile cerebrale pe termen lung. Fii informat! 👇 #Aspirina #SanatateaCreierului #Dementa #Neurostiinte #CercetareMedicala #NEXAS",
-      "hashtags": [
-        "Aspirina",
-        "SanatateaCreierului",
-        "Dementa",
-        "Neurostiinte",
-        "CercetareMedicala",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Aspirina, declinul creierului și demența. Ce au descoperit oamenii de știință - spotmedia.ro. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "De ce ard unii oameni salvie pentru a curăța o casă de „energia negativă”? Ce este tradiție și ce este efect real",
-      "source": "Descopera Ro",
-      "url": "https://www.descopera.ro/stiinta/21141806-de-ce-ard-unii-oameni-salvie-pentru-a-curata-o-casa-de-energia-negativa-ce-este-traditie-si-ce-este-efect-real",
-      "date": "2026-10-04T07:00:02+00:00",
-      "category": "Stiinta",
-      "summary": "Fumul de salvie este folosit în unele tradiții pentru purificarea locuinței, iar internetul îi atribuie chiar proprietăți antibacteriene spectaculoase. Ce poate produce în realitate acest ritual și unde se termină efectul psihologic și începe mitul? […] Articolul De ce ard unii oameni salvie pentru a curăța o casă de „energia negativă”? Ce este tradiție și ce este efect real apare prima dată în Descopera .",
-      "instagram_caption": "De ce ard unii oameni salvie pentru a curăța o casă de „energia negativă”? Ce este tradiție și ce este efect real\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: De ce ard unii oameni salvie pentru a curăța o casă de „energia negativă”? Ce este tradiție și ce es. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "REDMAGIC 12 Pro+: Peste 12.600 de puncte în Geekbench! AnTuTu, te așteptăm!",
-      "source": "Google News Tech",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRWY3S3JlWDNTZFlHWktQS2tHNk5UalBZZlhPRkFyUC1rOWJtdi1OWjZTeU9BWmJTQjVfWElCRm5TZkxydW5tdVFoMUtrVmUwUlNTYUZHYkFLenRxM0dNVGxDZUJibk9NMUtIV3Y2Zlo0RF93UElXRXhtc3FEREYteVIwaTJPdDMwc2JSc2ZtLWxmbnpuQjVRQ0xJa2JQejJjaDR4Uno5UU1YcDZzY2RPOXg5dnA3RXFwN2pCQjJROUhYS0ZpbjJmdFBLSll6SjhMOUFFTnEtQkg?oc=5",
-      "date": "2026-10-04T06:26:27+00:00",
-      "category": "AI & Tech",
-      "summary": "REDMAGIC 12 Pro+ a impresionat în testele Geekbench, depășind pragul de 12.600 de puncte. Performanța remarcabilă este atribuită procesorului Snapdragon 8 Elite Extreme Gen 6. Comunitatea tech așteaptă acum cu nerăbdare și rezultatele din AnTuTu. Pe un front similar, Qualcomm a lansat Snapdragon Sound Elite Gen 2, platformă ce integrează inteligența artificială în dispozitive audio și ochelari, iar Snapdragon 8 Elite Gen 6 ar putea aduce jocurile de PC pe platforme mobile.",
-      "instagram_caption": "Uau! 🚀 REDMAGIC 12 Pro+ a rupt topurile în Geekbench cu peste 12.600 de puncte! 😱 Se pare că procesorul Snapdragon 8 Elite Extreme Gen 6 face minuni. Toată lumea așteaptă acum rezultatele din AnTuTu. 🤔 Pe lângă asta, Qualcomm lansează Snapdragon Sound Elite Gen 2 pentru AI în audio și ochelari 🎧🕶️, iar Snapdragon 8 Elite Gen 6 ar putea aduce jocurile de PC pe mobil! 🎮 Ce părere ai?",
-      "hashtags": [
-        "REDMAGIC12ProPlus",
-        "Geekbench",
-        "AnTuTu",
-        "Snapdragon",
-        "GamingMobile",
-        "AI",
-        "TechNews",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: REDMAGIC 12 Pro+ trece de 12.600 de puncte în Geekbench; Așteptăm acum și rezultatul din AnTuTu - Mo. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "APOD: 4 octombrie 2026 – Curcubee Supranumerare peste New Jersey",
-      "source": "NASA News",
-      "url": "https://science.nasa.gov/image-article/apod-2026-october-4-supernumerary-rainbows-over-new-jersey/",
-      "date": "2026-10-04T04:05:00+00:00",
-      "category": "Stiinta",
-      "summary": "Astronomy Picture of the Day (APOD) de pe 4 octombrie 2026 prezintă curcubee supranumerare observate peste New Jersey. Descoperiți cosmosul! APOD oferă zilnic o imagine sau o fotografie diferită a universului nostru fascinant, însoțită de o scurtă explicație redactată de un astronom profesionist. Sursa: NASA.",
-      "instagram_caption": "Imaginile cosmice ale zilei (APOD) ne aduc astăzi, 4 octombrie 2026, curcubee supranumerare spectaculoase, surprinse deasupra statului New Jersey! 🌈 O demonstrație uimitoare a opticii atmosferice și a frumuseții naturii. Descoperiți zilnic minunile universului prin lentila astronomilor profesioniști. Sursă: NASA. ✨ #APOD #CurcubeuSupranumerar #NewJersey #NASA #Stiinta #Astronomie #Cosmos #NEXAS",
-      "hashtags": [
-        "APOD",
-        "CurcubeeSupranumerare",
-        "NewJersey",
-        "NASA",
-        "Stiinta",
-        "Astronomie",
-        "Cosmos",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: APOD: 2026 October 4 – Supernumerary Rainbows over New Jersey. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Actrița apreciată, la un pas de evacuare: \"Eram ciudată, un singur regizor mi-a văzut potențialul\".",
       "source": "Google Ent",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNYjBwdnRGQTF6QzdUMHVuLUpBcC1MQU5uOXZjb2JJc2M1R2N5UF9yQW84QVpSUWhUS0ZsQjFUN2N4UWRJZV9DVl8td09yUlo3bVFlN3RiRjNJNmlhTXB4bWZGTlhBZzhUamI3ZTBtU19OM3lZd1ctaUdyTDYtbkZlMHBVdlFxcHV3R0ZTWVFydW1xdnJ1RU1STzVLSzJES1pnWkhkelV0RU52Sm5GZ21zQy1UczJZX0RPakRYODZMZzI4dVh1N3VLaHlIX3g1MER0UlpWN0ZfUzJvdw?oc=5",
@@ -4669,65 +4818,6 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: O actriță apreciată spune că era atât de ciudată încât un singur regizor i-a văzut potențialul: „Urm. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Milt Windler, directorul NASA care a salvat Apollo 13, s-a stins din viață la 94 de ani",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/space/2026/10/milt-windler-nasa-flight-director-who-helped-save-apollo-13-dies-at-94/",
-      "date": "2026-10-03T19:45:17+00:00",
-      "category": "AI & Tech",
-      "summary": "Milt Windler, un nume emblematic pentru NASA și un erou în povestea Apollo 13, a încetat din viață la vârsta de 94 de ani. În calitate de director de zbor, a jucat un rol crucial în aducerea în siguranță a astronauților misiunii Apollo 13, o realizare memorabilă despre care a spus cândva: 'făceam istorie'. Contribuția sa rămâne o mărturie a ingeniozității umane în fața provocărilor spațiale.",
-      "instagram_caption": "Ne luăm rămas bun de la Milt Windler, directorul de zbor NASA care a fost esențial în salvarea misiunii Apollo 13. 🚀 La 94 de ani, Windler ne-a lăsat o moștenire de curaj și inovație. Un adevărat erou care, prin munca sa, a demonstrat că \"făceam istorie\" este mai mult decât o vorbă. 🙏 O inspirație pentru toți cei pasionați de spațiu și tehnologie! #NEXAS #NASA #Apollo13 #MiltWindler #InMemoriam #ErouSpatial #Tehnologie",
-      "hashtags": [
-        "NEXAS",
-        "NASA",
-        "Apollo13",
-        "MiltWindler",
-        "RIP",
-        "Spatiu",
-        "Tehnologie",
-        "Istorie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Milt Windler, NASA flight director who helped save Apollo 13, dies at 94. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Judecător federal numește Flock 'supraveghere în masă indiscriminată'",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/",
-      "date": "2026-10-03T19:33:15+00:00",
-      "category": "AI & Tech",
-      "summary": "Un judecător federal a decis că un adjunct de șerif a încălcat drepturile unei femei, conform celui de-al Patrulea Amendament, utilizând sistemul Flock pentru a-i căuta plăcuța de înmatriculare fără mandat.",
-      "instagram_caption": "Un judecător federal a numit sistemul Flock o 'supraveghere în masă indiscriminată'! 🚨 Un adjunct de șerif a încălcat drepturile unei femei, căutând plăcuța ei de înmatriculare cu Flock, fără mandat. Decizia subliniază preocupări majore privind confidențialitatea și etica tehnologiilor AI. Ce părere ai? 🤔 Mai multe pe NEXAS! #AIdrepturi #ConfidentialitateDigitala #SupraveghereAI #EticaAI #NEXAS",
-      "hashtags": [
-        "#SupraveghereAI",
-        "#Confidentialitate",
-        "#DrepturiCivile",
-        "#EticaAI",
-        "#Tehnologie",
-        "#Flock",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Federal judge calls Flock ‘indiscriminate mass surveillance’. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Reducerea alimentelor ultraprocesate poate ajuta la ameliorarea simptomelor depresiei",
-      "source": "Healthline",
-      "url": "https://www.healthline.com/health-news/cutting-back-ultra-processed-foods-may-help-depression-symptoms",
-      "date": "2026-10-03T17:42:09.660568+00:00",
-      "category": "Sanatate",
-      "summary": "Cercetări recente au descoperit că reducerea aportului de UPF poate ajuta la îmbunătățirea simptomelor depresiei. cafotodigital · E+/Getty Un mic studiu a constatat că reducerea consumului de alimente ultraprocesate (UPF) a fost asociată cu îmbunătățirea simptomelor depresiei. Descoperirile se adaugă cercetărilor anterioare care leagă consumul ridicat de UPF cu un risc crescut de depresie. Cercetătorii investighează modul în care factori precum nutriția, inflamația",
-      "instagram_caption": "Cutting Back on Ultra-Processed Foods May Help Ease Depression Symptoms\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Cutting Back on Ultra-Processed Foods May Help Ease Depression Symptoms. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Hotelurile mici sunt următorul lucru important al călătoriilor de lux",
       "source": "Bloomberg",
       "url": "https://www.bloomberg.com/news/videos/2026-10-03/tiny-hotels-are-luxury-travel-s-next-big-thing-video",
@@ -4745,80 +4835,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Tiny Hotels Are Luxury Travel’s Next Big Thing. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "1 din 8 cazuri de cancer sunt cauzate de infecții, subliniind importanța vaccinurilor, spun experții",
-      "source": "Live Science",
-      "url": "https://www.livescience.com/health/cancer/1-in-8-cancer-cases-are-caused-by-infections-underscoring-the-importance-of-vaccines-experts-say",
-      "date": "2026-10-03T16:00:00+00:00",
-      "category": "Stiinta",
-      "summary": "Patru agenți patogeni reprezintă majoritatea cancerelor legate de infecții, subliniază un nou studiu, dar instrumentele pentru prevenirea acestora variază de la vaccinuri bine stabilite până la tratamente încă în curs de dezvoltare.",
-      "instagram_caption": "1 in 8 cancer cases are caused by infections, underscoring the importance of vaccines, experts say\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: 1 in 8 cancer cases are caused by infections, underscoring the importance of vaccines, experts say. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Tensiuni regale: William nu vrea în documentarul lui Harry despre Diana",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOUTJKaTQyOENyVzlZSXBKTlRyZzRLVGdXWFpKNjhoc1NHZVlBdGZxbTFjT01YUW5LZnFDSGFUTXFHUVU0MVZsNFpTRUEybHlmWklzeVFHcVhNY0loS1lJZVVTQXl3V1ZZNmJac3NQam5qaS1Pb3kzNUp3SEpOTy0ycEwxRzNlN0VvX0VVTUhLRm5ZUUdhOUF5ekc3YUxmTkwteXNySVhualRBTEx3amlpdE1XM3pCUjIyVTZtcUVkZVdhbzAxMjJfTGZHSGJvbDNfM28zQmxMUUlEdTVWZTZlQjZTWEw5cTdSS2FDOXF30gH4AUFVX3lxTFBIQVdweVNBUnhmWVc4dXJiczJPTUJib3VOc0ZHOTR5Tmw5QmtER1A5RlhtQ1huWlJGVjNXdVM2QlEweXFJWkFvTWFvajNDUUlWV3JYa3kyLXpSck12ZzJhQmwycDNmdklNQkRDeGN0QW95T3lreDJpWXRDTWFXSHhIX3NMUDBfT2F5eXIzb1RxSjhiTGM3WEVURWFiQnFkLTJpWW1SMDZrd2tzS242VEl1eWtwdW5icXNxdlhVOFFZWkdRZUkyTnFxdUhwREVZTXAwLU1xQ2EzdkF6a3JtbHBXZHpMajVEWVZTaVF2NlF6LUpRN3dkcXFG?oc=5",
-      "date": "2026-10-03T12:30:35+00:00",
-      "category": "Entertainment",
-      "summary": "Prințul William ar fi refuzat să participe la documentarul despre Prințesa Diana, inițiat de fratele său, Prințul Harry. Această decizie subliniază tensiunile persistente dintre cei doi frați regali. Surse media indică faptul că William nu va apărea în proiectul lui Harry despre mama lor, iar unele rapoarte sugerează că ar fi încercat să îl împiedice pe fratele său să dezvolte anumite inițiative legate de Prințesa Diana. Situația reflectă divergențele profunde din familia regală britanică.",
-      "instagram_caption": "Tensiunile dintre Prințul William și Prințul Harry continuă! 💔 William ar fi refuzat să participe la documentarul despre mama lor, Prințesa Diana, inițiat de Harry. 👑 Această decizie subliniază ruptura dintre frații regali, iar surse indică faptul că William nu va apărea în proiect. Unii spun chiar că ar fi încercat să-l oprească pe Harry din a dezvolta anumite inițiative legate de Prințesa Diana. 😔 Ce părere aveți despre această situație complicată din familia regală? 🤔 #FamiliaRegala #PrintulWilliam #PrintulHarry #PrintesaDiana #Documentar #TensiuniRegale #Royals",
-      "hashtags": [
-        "#FamiliaRegala",
-        "#PrintulWilliam",
-        "#PrintulHarry",
-        "#PrintesaDiana",
-        "#Documentar",
-        "#TensiuniRegale",
-        "#Royals"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Prințul William ar fi refuzat să participe la documentarul despre prințesa Diana pe care fratele său. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Trapperul Ian a urinat pe scenă în timpul unui concert la Arenele Romane din București. Azteca, colegul... - Ziare.com",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1lbTV0NnRLU2p0OHVPTUJhYzNBVEdXQ1N5N3MyWmZjT2dQVEJoSE1hSkhPaHVoOEwzbnNyTV9TXzlLX0VrNmFfZmpISGNPam96TTZOTWFsdVV3c1NRNHZOQ3NUdkwzY2gyN3fSAXJBVV95cUxNcHEtX3ZzUDR6QWtGN3FWbk5WUHVwMm8tLUhhM0QtNWNKUF81QS1OVFpxa21HX25NY1hndDJuWE1kZGJzQWVFUlBrSXN2TjV3OTM4dzI1aG5oUDlpbHRad2dkR0ZMS3lZQVlZZTQweG9UN3c?oc=5",
-      "date": "2026-10-03T11:56:18+00:00",
-      "category": "Entertainment",
-      "summary": "Trapperul Ian a urinat pe scenă în timpul unui concert la Arenele Romane din București. Azteca, colegul... Ziare.com Tzancă Uraganu și Jador, dezgustați de gestul lui Ian, de la Arenele Romane: \"Nu credeam că o să văd vreodată în România așa ceva\" oficiuldestiri.ro Trapperul Ian, gest controversat în timpul concertului de la Arenele Romane. Ce a făcut pe… Gândul Ian, moment controversat pe scena de la Arenele Romane.",
-      "instagram_caption": "Trapperul Ian a urinat pe scenă în timpul unui concert la Arenele Romane din București. Azteca, colegul... - Ziare.com\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Trapperul Ian a urinat pe scenă în timpul unui concert la Arenele Romane din București. Azteca, cole. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Regizorii filmului „Avengers: Doomsday” sugerează revenirea lui Hulk și anunță prezența unor personaje-surpriză. - G4Media",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPVXhuRS1ZSmFKSjgwNFVXeERRQmpZRWxFR05SYVVtajMxNXVwbDl2VTFyUnI0Z2IzYkVSZmF3Yk5maW5NcDRlQUNaN2pxNEhScTBlUkRzdHFXbDBoUW9xLWhCUWVoOEl3ZHNLUENNRXhQNkZ1VXhXVmszOC1vTUd6NE5DMWpoWWl1WDBCaTBHRXBGU01jMU9SZ3gxbjRIMDZkU1RFd0pmQnE4R3hQNUJNVVdGQXNtcEhJZkctMTFCWWF6ZW9VYlVsOVV4UGp6bVVpSmY5MHVhY2p5X3FxYUo0M05iTVJEUWdhRXNkZkttVHdMZzJxYW1zbWs1ZFpiZGViVUExbw?oc=5",
-      "date": "2026-10-03T11:19:50+00:00",
-      "category": "Entertainment",
-      "summary": "Regizorii filmului „Avengers: Doomsday” sugerează revenirea lui Hulk și anunță prezența unor personaje-surpriză. G4Media",
-      "instagram_caption": "Regizorii filmului „Avengers: Doomsday” sugerează revenirea lui Hulk și anunță prezența unor personaje-surpriză. - G4Media\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Regizorii filmului „Avengers: Doomsday” sugerează revenirea lui Hulk și anunță prezența unor persona. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "India analizează modificări la instrumentele derivate pe mărfuri pentru a crește lichiditatea",
@@ -5085,25 +5101,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Saudi Arabia’s Key Oil Pipeline Starts Exports After Repairs. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Un ministru israelian cere anexarea sudului Libanului, a Fâșiei Gaza până la ”linia Galbenă” și război în Cisiordania ocupată",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/stiri/politic/un-ministru-israelian-cere-anexarea-sudului-libanului-a-fasiei-gaza-pana-la-linia-galbena-si-razboi-in-cisiordania-ocupata-22788146?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-09-27T18:02:00+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Ministrul israelian de extremă dreapta Bezalel Smotrich cere duminică anexarea sudului Libanului și unei părți a Fâșiei Gaza și se declară în favoarea unui Război în Cisiordania ocupată, în vederea izgonirii Autorității Palestiniene (AP), relatează AFP.",
-      "instagram_caption": "Un ministru israelian cere anexarea sudului Libanului, a Fâșiei Gaza până la ”linia Galbenă” și război în Cisiordania ocupată\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Un ministru israelian cere anexarea sudului Libanului, a Fâșiei Gaza până la ”linia Galbenă” și răzb. Professional photorealistic style. No text, no logos, no watermarks."
     }
   ]
 }
