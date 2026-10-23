@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T18:20:43.787866+00:00",
+  "updated_at": "2026-10-23T10:41:04.193650+00:00",
   "run_log": {
     "AI & Tech": 3,
     "Sport": 3,
@@ -12,6 +12,530 @@
     "Bursa & Piete": 3
   },
   "items": [
+    {
+      "title": "Endometrioza și Migrena: De ce Riscul Tău Se Poate Dubla",
+      "source": "Healthline",
+      "url": "https://www.healthline.com/health-news/women-with-endometriosis-more-likely-to-experience-migraine",
+      "date": "2026-10-23T10:36:07.861176+00:00",
+      "category": "Sanatate",
+      "summary": "Cercetătorii au descoperit o legătură surprinzătoare între endometrioză și migrenă. O nouă analiză a peste 13 milioane de femei a relevat că persoanele cu endometrioză au un risc de 2,3 ori mai mare de a suferi și de migrenă. Se crede că cele două afecțiuni ar putea împărți o cale comună a durerii. Un studiu clinic viitor va testa eficacitatea medicamentelor pentru migrenă în ameliorarea durerii cauzate de endometrioză.",
+      "instagram_caption": "Știai că dacă suferi de endometrioză, riscul tău de migrenă se poate dubla? 😲 Un studiu recent pe peste 13 milioane de femei a scos la iveală o legătură surprinzătoare între aceste două afecțiuni. Se explorează o cale comună a durerii și se pregătește un studiu clinic pentru a vedea dacă medicamentele pentru migrenă pot ameliora și durerea de endometrioză. Rămâi la curent cu descoperirile! 💡",
+      "hashtags": [
+        "Endometrioza",
+        "Migrena",
+        "SanatateFemei",
+        "CercetareMedicala",
+        "DurereCronica",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Why Living with Endometriosis May Double Your Odds of Migraine. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cancerul de Sân: 5 Mituri Demontate de Oncologi – Ce Trebuie Să Știi",
+      "source": "CSID",
+      "url": "https://www.csid.ro/sanatate/sanatate-health/cancerul-de-san-5-mituri-in-care-multe-femei-inca-mai-cred-demontate-de-oncologi-21343085/",
+      "date": "2026-10-23T10:36:03.327126+00:00",
+      "category": "Sanatate",
+      "summary": "Cancerul de sân este subiectul multor concepții greșite, de la ereditate și utilizarea deodorantelor, până la eficacitatea mamografiilor și semnificația nodulilor. Descoperă cele cinci mituri comune demontate de oncologi și află informațiile esențiale pe care fiecare femeie ar trebui să le cunoască despre depistarea precoce a bolii.",
+      "instagram_caption": "Fiecare femeie merită să știe adevărul! 💖 Cancerul de sân este înconjurat de multe mituri, de la ereditate la deodorante și mamografii. 🧐 Oncologii demontează 5 dintre cele mai răspândite convingeri greșite. Află ce trebuie să știi cu adevărat despre depistarea și prevenția acestei boli. Informația corectă salvează vieți! 💪 #CancerLaSan #SanatateaFemeii #MituriDemontate #Oncologie #Preventie",
+      "hashtags": [
+        "#CancerLaSan",
+        "#SanatateaFemeii",
+        "#MituriMedicale",
+        "#DemontatDeOncologi",
+        "#DepistarePrecoce",
+        "#Sanatate",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Cancerul de sân: 5 mituri în care multe femei încă mai cred, demontate de oncologi. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Meghan Markle, \"profund tulburată\" de acuzațiile la adresa tatălui. Avea suspiciuni de ani.",
+      "source": "HotNews",
+      "url": "https://hotnews.ro/meghan-markle-spune-ca-este-profund-tulburata-de-acuzatiile-grave-aduse-tatalui-ei-si-ca-avea-suspiciuni-de-ani-de-zile-2384458",
+      "date": "2026-10-23T10:34:21+00:00",
+      "category": "Romania",
+      "summary": "Meghan Markle, soția Prințului Harry, a reacționat față de acuzațiile grave aduse tatălui său, Thomas Markle Sr., în presa britanică, declarând că este „profund tulburată” și că avea suspiciuni de ani de zile. Revista People a relatat reacția Ducesei. Tatăl ei, 82 de ani, este acuzat de fiul său, Thomas Markle Jr., fratele vitreg al lui Meghan. Detaliile specifice ale acuzațiilor nu au fost precizate în sursa inițială.",
+      "instagram_caption": "Meghan Markle, Ducesa de Sussex, este „profund tulburată” de acuzațiile grave aduse tatălui ei, Thomas Markle Sr. 💔 Soția Prințului Harry a dezvăluit că avea suspiciuni de ani de zile. Tatăl, în vârstă de 82 de ani, este acuzat de fiul său, Thomas Markle Jr., fratele vitreg al lui Meghan. O poveste de familie complicată ce continuă să facă valuri în presa britanică. 📰",
+      "hashtags": [
+        "MeghanMarkle",
+        "FamiliaRegala",
+        "ThomasMarkle",
+        "Scandal",
+        "StiriRoyale"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Meghan Markle spune că este „profund tulburată” de acuzațiile grave aduse tatălui ei și că avea susp. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "SUA: Virus creat cu AI, administrat unui pacient pentru superbacterii rezistente la antibiotice",
+      "source": "G4Media",
+      "url": "https://www.g4media.ro/un-laborator-din-statele-unite-i-a-administrat-unui-pacient-un-virus-conceput-cu-inteligenta-artificiala-pentru-combaterea-superbacteriilor-rezistente-la-antibiotice.html",
+      "date": "2026-10-23T10:33:52+00:00",
+      "category": "Romania",
+      "summary": "Un laborator de cercetare în inteligența artificială din California, SUA, a anunțat administrarea unui virus conceput cu AI unui pacient. Acesta reprezintă o potențială soluție scalabilă pentru combaterea superbacteriilor rezistente la antibiotice. Tratamentul, anunțat marți, este în prezent în așteptarea unei analize științifice riguroase.",
+      "instagram_caption": "O veste majoră din lumea medicală! 🦠 Un laborator de cercetare din California a administrat unui pacient un virus conceput cu inteligență artificială! 🤖 Scopul? Combaterea superbacteriilor rezistente la antibiotice, o amenințare globală. 🧪 Tratamentul, o inovație spectaculoasă, așteaptă acum validarea științifică. Rămâi conectat pentru mai multe detalii! #AIinMedicina #Superbacterii #Antibiotice #Sanatate #Inovatie #Stiinta #NEXAS",
+      "hashtags": [
+        "#AIinMedicina",
+        "#Superbacterii",
+        "#Antibiotice",
+        "#Sanatate",
+        "#Inovatie",
+        "#Stiinta",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Un laborator din Statele Unite i-a administrat unui pacient un virus conceput cu inteligența artific. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Luca (Tinervis Group) investește peste 2 mil. euro în echipamente pentru încălzirea sandvișurilor",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/companii/retail-agrobusiness/tinervis-group-compania-care-opereaza-reteaua-de-simigerii-luca-a-investit-peste-2-mil-euro-in-echipamente-pentru-incalzirea-sandvisurilor-23266581",
+      "date": "2026-10-23T10:32:12+00:00",
+      "category": "Business",
+      "summary": "Tinervis Group, compania din spatele popularei rețele de simigerii Luca, a realizat o investiție semnificativă de peste 2 milioane de euro. Această sumă a fost alocată achiziției de echipamente moderne dedicate încălzirii sandvișurilor, cu scopul de a îmbunătăți experiența clienților și eficiența operațională în locațiile Luca. Investiția subliniază angajamentul companiei pentru inovație și calitatea produselor oferite.",
+      "instagram_caption": "Știm cu toții cât de bune sunt produsele de la Luca! 🤩 Tinervis Group, compania care operează simigeriile Luca, a investit peste 2 milioane de euro în echipamente noi pentru încălzirea sandvișurilor! 🥪🔥 Asta înseamnă că sandvișurile tale preferate vor fi și mai delicioase și calde! Ce spui, ești pregătit pentru o experiență îmbunătățită? #Luca #Investitie #SimigeriaLuca #Sandwichuri #ExperientaClient",
+      "hashtags": [
+        "Luca",
+        "Investitie",
+        "SimigeriaLuca",
+        "Sandwichuri",
+        "ExperientaClient"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Tinervis Group, compania care operează reţeaua de simigerii Luca, a investit peste 2 mil. euro în ec. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Tinervis Group, compania care operează reţeaua de simigerii Luca, a investit peste 2 mil. euro în echipamente pentru încălzirea sandvişurilor",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/companii/retail-agrobusiness/tinervis-group-compania-care-opereaza-reteaua-de-simigerii-luca-a-investit-peste-2-mil-euro-in-echipamente-pentru-incalzirea-sandvisurilor-23266581",
+      "date": "2026-10-23T10:32:12+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Tinervis Group, compania care operează reţeaua de simigerii Luca, a investit peste 2 mil. euro în echipamente pentru încălzirea sandvişurilor",
+      "instagram_caption": "Tinervis Group, compania care operează reţeaua de simigerii Luca, a investit peste 2 mil. euro în echipamente pentru încălzirea sandvişurilor\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Tinervis Group, compania care operează reţeaua de simigerii Luca, a investit peste 2 mil. euro în ec. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Neculăescu: Atacul din Marea Neagră, 'încălcare flagrantă a libertății de navigație'",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/actualitate/reactia-lui-dan-neculaescu-dupa-atacul-asupra-navei-din-marea-neagra-o-incalcare-flagranta-a-libertatii-de-navigatie-4005861",
+      "date": "2026-10-23T10:31:26+00:00",
+      "category": "Romania",
+      "summary": "Noul ministru român de Externe, Dan Neculăescu, a condamnat ferm atacul recent asupra unei nave comerciale în Marea Neagră. Oficialul a declarat că incidentul reprezintă o 'încălcare flagrantă a dreptului internațional și a libertății de navigație', subliniind gravitatea situației în regiune și importanța respectării normelor internaționale.",
+      "instagram_caption": "Noul ministru de Externe, Dan Neculăescu, reacționează ferm! 🇷🇴🗣️ Atacul asupra navei comerciale din Marea Neagră este considerat o încălcare flagrantă a dreptului internațional și a libertății de navigație. Un semnal clar despre importanța respectării normelor în regiune. Fii la curent cu știrile importante! 👇 #MareaNeagra #DanNeculaescu #PoliticaExterna #DreptInternational #NEXASnews",
+      "hashtags": [
+        "MareaNeagra",
+        "DanNeculaescu",
+        "Romania",
+        "PoliticaExterna",
+        "DreptInternational",
+        "LibertateNavigatie",
+        "NEXASnews"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Reacția lui Dan Neculăescu după atacul asupra navei din Marea Neagră: „O încălcare flagrantă a liber. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Rapid, mutare decisivă înainte de derby-ul cu FCSB! Pancu e în al nouălea cer",
+      "source": "DigiSport",
+      "url": "https://www.digisport.ro/fotbal/liga-1/a-semnat-cu-rapid-chiar-inaintea-derby-ului-cu-fcsb-daniel-pancu-isi-freaca-palmele-4560539",
+      "date": "2026-10-23T10:29:22+00:00",
+      "category": "Sport",
+      "summary": "Rapid București a confirmat o achiziție importantă chiar în pragul marelui derby cu FCSB. Această mutare strategică, anunțată de DigiSport, a generat un entuziasm considerabil în rândurile conducerii și fanilor giuleșteni. Daniel Pancu, președintele clubului, și-a exprimat deschis satisfacția profundă, considerând transferul un impuls esențial pentru moralul și performanța echipei în confruntarea crucială care urmează.",
+      "instagram_caption": "Boom! 💥 Rapid București a dat lovitura pe piața transferurilor chiar înainte de derby-ul incendiar cu FCSB! ⚽️ Daniel Pancu, președintele giuleștenilor, radiază de fericire și vede în această achiziție un atu major. Ce așteptări ai de la noul venit în meciul cu FCSB? Spune-ne în comentarii! 👇 #Rapid #FCSB #Derby #Superliga #Transfer #FotbalRomanesc #Pancu",
+      "hashtags": [
+        "Rapid",
+        "FCSB",
+        "Derby",
+        "Superliga",
+        "Transfer",
+        "FotbalRomanesc",
+        "Pancu"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: A semnat cu Rapid chiar înaintea derby-ului cu FCSB! Daniel Pancu își freacă palmele. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Reghecampf, conferință LIVE înainte de FCSB – Rapid: Când va fi echipa la nivelul dorit?",
+      "source": "Fanatik",
+      "url": "https://www.fanatik.ro/laurentiu-reghecampf-conferinta-de-presa-live-inainte-de-fcsb-rapid-antrenorul-ros-albastrilor-ultimele-informatii-inaintea-derby-ului-21570607",
+      "date": "2026-10-23T10:28:18+00:00",
+      "category": "Sport",
+      "summary": "Laurențiu Reghecampf, antrenorul FCSB, susține o conferință de presă LIVE crucială înaintea derby-ului cu Rapid din SuperLigă. Tehnicianul va prefața intensul duel și va adresa mesaje clare către suporteri, rivali și propriul lot. Printre subiectele abordate, Reghecampf va detalia când estimează că echipa va atinge nivelul de performanță dorit. Nu rata declarațiile cheie.",
+      "instagram_caption": "🔥 Reghecampf, LIVE în conferință de presă înainte de derby-ul FCSB - Rapid! 🎙️ Ce mesaje va transmite suporterilor, adversarilor și jucătorilor? Când estimează că va atinge FCSB nivelul de performanță dorit? 🤔 Fii la curent cu toate declarațiile cheie și pregătirile pentru confruntarea din SuperLigă! Un meci de foc ne așteaptă! ⚽️🔴🔵 #FCSBRapid #SuperLiga #Reghecampf #Derby #FotbalRomania #NEXAS",
+      "hashtags": [
+        "#FCSBRapid",
+        "#SuperLiga",
+        "#Reghecampf",
+        "#Derby",
+        "#FotbalRomania",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Laurențiu Reghecampf, conferință de presă LIVE înainte de FCSB – Rapid. Antrenorul „roș-albaștrilor”. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cine verifică deciziile la vârful companiilor? Rolul esențial al guvernanței corporative.",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/legal/cine-ii-verifica-pe-cei-care-conduc-guvernanta-corporativa-in-dezbatere-la-legile-afacerilor-cu-madalin-enache-duminica-de-la-ora-12-00-22875444?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-10-23T10:27:01+00:00",
+      "category": "Business",
+      "summary": "O companie poate avea profit, crește spectaculos și raporta rezultate excelente, dar ce se întâmplă atunci când, în spatele acestor cifre, deciziile sunt luate fără transparență, responsabilitatea este evitată, iar mecanismele de control există doar pe hârtie?",
+      "instagram_caption": "Profituri mari, creștere spectaculoasă... dar ce se ascunde în spatele cifrelor? 🤔 Când deciziile sunt luate fără transparență și responsabilitate, iar controlul e doar pe hârtie, afacerile pot deraia. Guvernanța corporativă e esențială pentru un mediu de afaceri sănătos și sustenabil! 💡 Descoperă de ce este crucial să-i verificăm pe cei care conduc. ⚖️",
+      "hashtags": [
+        "GuvernantaCorporativa",
+        "AfaceriTransparente",
+        "Responsabilitate",
+        "ControlIntern",
+        "BusinessRomania",
+        "NEXAS",
+        "EticaInAfaceri"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Cine îi verifică pe cei care conduc? Guvernanța corporativă, în dezbatere la „Legile Afacerilor”, cu. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cine îi verifică pe cei care conduc? Guvernanța corporativă, în dezbatere la „Legile Afacerilor”, cu Mădălin Enache, duminică de la ora 12:00",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/legal/cine-ii-verifica-pe-cei-care-conduc-guvernanta-corporativa-in-dezbatere-la-legile-afacerilor-cu-madalin-enache-duminica-de-la-ora-12-00-22875444?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-10-23T10:27:01+00:00",
+      "category": "Bursa & Piete",
+      "summary": "O companie poate avea profit, crește spectaculos și raporta rezultate excelente, dar ce se întâmplă atunci când, în spatele acestor cifre, deciziile sunt luate fără transparență, responsabilitatea este evitată, iar mecanismele de control există doar pe hârtie?",
+      "instagram_caption": "Cine îi verifică pe cei care conduc? Guvernanța corporativă, în dezbatere la „Legile Afacerilor”, cu Mădălin Enache, duminică de la ora 12:00\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Cine îi verifică pe cei care conduc? Guvernanța corporativă, în dezbatere la „Legile Afacerilor”, cu. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cinci israelieni răniți și doi atacatori palestinieni suspectați uciși în Cisiordania",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss",
+      "date": "2026-10-23T10:26:06+00:00",
+      "category": "International",
+      "summary": "Cinci israelieni au fost răniți și doi atacatori palestinieni suspectați au fost uciși într-un schimb de focuri în Cisiordania. Incidentul vine într-un moment de tensiuni crescute în regiune și cu doar patru zile înainte de alegerile generale din Israel.",
+      "instagram_caption": "Un atac armat a zguduit Cisiordania! 📍 Cinci israelieni au fost răniți, iar doi atacatori palestinieni suspectați au fost uciși. ⚠️ Incidentul are loc pe fondul tensiunilor sporite din regiune și cu doar patru zile înainte de alegerile generale din Israel. 🗳️ Urmărim evoluția situației. Rămâneți informat cu NEXAS! #Cisiordania #Israel #Palestina #AtacArmat #Tensiuni #AlegeriIsrael",
+      "hashtags": [
+        "Cisiordania",
+        "Israel",
+        "Palestina",
+        "AtacArmat",
+        "Tensiuni",
+        "AlegeriIsrael"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Five Israelis wounded and two suspected Palestinian attackers killed in West Bank shooting. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Accor raportează creștere de 7,7% a veniturilor în T3 2026, depășind 1,5 miliarde €",
+      "source": "Forbes Romania",
+      "url": "https://www.forbes.ro/accor-crestere-de-aproape-8-procente-a-veniturilor-in-t3-din-2026-527725",
+      "date": "2026-10-23T10:24:11+00:00",
+      "category": "Business",
+      "summary": "Accor a înregistrat venituri de 1.503 milioane de euro în T3 2026, o creștere de 7,7% la curs valutar constant. Indicatorul RevPAR (venitul pe cameră disponibilă) a crescut cu 4,9%, reflectând o performanță operațională solidă. În ultimele 12 luni, rețeaua hotelieră Accor a crescut net cu 3%. Pe baza acestor rezultate promițătoare, grupul și-a revizuit în creștere estimarea pentru EBITDA recurent aferent întregului an 2026.",
+      "instagram_caption": "📈 Veste bună din industria ospitalității! Accor a înregistrat o creștere semnificativă a veniturilor în T3 2026, ajungând la 1,5 miliarde de euro, cu un plus de 7,7% la curs constant. RevPAR-ul a crescut și el cu 4,9%, iar rețeaua globală s-a extins cu 3% în ultimul an. Grupul și-a îmbunătățit estimările pentru întregul an. Ce crezi despre aceste rezultate? 🏨🌍",
+      "hashtags": [
+        "Accor",
+        "RezultateFinanciare",
+        "Ospitalitate",
+        "CrestereEconomica",
+        "T32026",
+        "Investitii"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Accor, creștere de aproape 8 procente a veniturilor în T3 din 2026. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Möller’s lansează ONE Căpșuni și lime: Omega-3 natural, într-un singur jeleu pe zi",
+      "source": "Google Sanatate",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWVR1NUJIb2pLd3Z3M2JLQ1FOZnRZOGdaV1VUTk9PY1M3dXJweVNUQmNNcDVNU0F2bnExdi04QUNKRGxnOEtzVjJ0UEluVEVSR1M5QlRiVFBQZXFYc05BWFRiamQydWVuRFEwMDhIN04zRV9Nek9SWmlHYW4tWnNFcTZUcEpmUXphTGh6eEZuS04tZS1PbXc1R2FjTXN1UHhmU19mcF9VcTRGZFhILTZob3dLYw?oc=5",
+      "date": "2026-10-23T10:22:28+00:00",
+      "category": "Sanatate",
+      "summary": "Möller’s, recunoscut pentru produsele sale de calitate, introduce pe piața românească noul supliment alimentar ONE Căpșuni și lime. Acesta oferă o sursă naturală de Omega-3 esențial pentru sănătate, într-un format inovator și gustos. Conceput pentru a fi ușor de integrat în rutina zilnică, noul produs se administrează printr-un singur jeleu pe zi, combinând beneficiile Omega-3 cu o aromă proaspătă de căpșuni și lime. Ideal pentru cei care caută o metodă simplă și plăcută de a-și susține bunăstarea generală.",
+      "instagram_caption": "O veste fresh de la Möller's! 🍓🍋 Descoperă noul Möller's ONE Căpșuni și lime: Omega-3 natural, într-un singur jeleu delicios pe zi! ✨ Suportă-ți sănătatea inimii și a creierului cu gust! Simplu, eficient și plin de savoare. Perfect pentru rutina ta zilnică! #Mollers #Omega3 #JeleuOmega3 #ViataSanatoasa #NoulProdus",
+      "hashtags": [
+        "#Mollers",
+        "#Omega3Natural",
+        "#JeleuOmega3",
+        "#SuplimenteSanatate",
+        "#MollersONE",
+        "#CăpșuniȘiLime"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Möller’s lansează ONE Căpșuni și lime: Omega-3 natural, într-un singur jeleu pe zi - https://www.sma. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Coreea de Sud invită Coreea de Nord la discuții militare la frontieră",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/23/south-korea-invites-north-for-military-talks-over-border?traffic_source=rss",
+      "date": "2026-10-23T10:20:31+00:00",
+      "category": "International",
+      "summary": "Propunerea Coreei de Sud vine la doar câteva zile după ce Phenianul a anunțat că a mutat noi unități militare în „poziții de tragere” de-a lungul graniței comune. Această invitație vizează detensionarea situației, în contextul creșterii prezenței militare nord-coreene.",
+      "instagram_caption": "Tensiuni în Peninsula Coreeană! 🇰🇷🤝🇰🇵 Coreea de Sud a invitat Coreea de Nord la discuții militare la frontieră, o propunere ce vine la scurt timp după ce Phenianul a anunțat că a mutat noi unități militare în „poziții de tragere” de-a lungul graniței. Oare se va ajunge la o detensionare sau situația escaladează? Fii la curent cu cele mai recente știri internaționale! 🚨🌍 #CoreeaDeSud #CoreeaDeNord #DiscutiiMilitare #Frontiera #Geopolitica #NEXAS #StiriInternationale",
+      "hashtags": [
+        "#CoreeaDeSud",
+        "#CoreeaDeNord",
+        "#DiscutiiMilitare",
+        "#Frontiera",
+        "#Geopolitica",
+        "#NEXAS",
+        "#StiriInternationale"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: South Korea invites North for military talks over border. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Real Madrid confirmă: Arda Guler a semnat până în 2032, ignorând Arsenal și Chelsea",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-extern/real-madrid-lovitura-oferte-arsenal-chelsea-arda-guler-da-semnat-2032-20553986",
+      "date": "2026-10-23T10:09:55+00:00",
+      "category": "Sport",
+      "summary": "Jurnalistul italian Fabrizio Romano a confirmat că Real Madrid l-a convins pe tânărul Arda Guler, în vârstă de 21 de ani, să semneze un nou contract. Acordul se extinde până în 2032, asigurând prezența fotbalistului turc la clubul spaniol pe termen lung. Această mutare vine în ciuda ofertelor tentante primite de Guler de la cluburi puternice din Premier League, precum Arsenal și Chelsea. Decizia de a rămâne la Real Madrid subliniază ambiția jucătorului și strategia clubului.",
+      "instagram_caption": "Confirmare majoră la Real Madrid! 🤩 Talentatul Arda Guler (21 de ani) a semnat un nou contract cu \"Los Blancos\" până în 2032! ✍️ Această decizie vine după ce Guler a fost intens curtat de giganți din Premier League, precum Arsenal și Chelsea. Un viitor strălucit îl așteaptă pe Bernabéu! ⚪🔥 #RealMadrid #ArdaGuler #HalaMadrid #LaLiga #FootballNews #Transferuri",
+      "hashtags": [
+        "#RealMadrid",
+        "#ArdaGuler",
+        "#HalaMadrid",
+        "#LaLiga",
+        "#FootballNews",
+        "#Transferuri"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Real Madrid, ce lovitură! Cu oferte de la Arsenal și Chelsea, Arda Guler a ales, a spus „DA” și a se. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Riskiest Bank Securities Lose Luster as Investors Get Picky",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-23/at1s-easy-money-run-fades-as-banks-pay-up-for-riskiest-debt",
+      "date": "2026-10-23T10:02:44+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Investors in the riskiest instruments sold by US and European banks are starting to demand more compensation on new deals.",
+      "instagram_caption": "Riskiest Bank Securities Lose Luster as Investors Get Picky\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Riskiest Bank Securities Lose Luster as Investors Get Picky. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Pisicile și stăpânii lor împărtășesc o conexiune hormonală care poate îmbunătăți starea de spirit",
+      "source": "Descopera Ro",
+      "url": "https://www.descopera.ro/stiinta/21145614-pisicile-si-stapanii-lor-impartasesc-o-conexiune-hormonala-care-poate-imbunatati-starea-de-spirit",
+      "date": "2026-10-23T10:00:59+00:00",
+      "category": "Stiinta",
+      "summary": "Pisicile și stăpânii lor împărtășesc o conexiune hormonală, un subiect care ridică întrebarea dacă felinele îmbunătățesc calitatea vieții umane. Deși unele cercetări susțin această idee, rezultatele sunt considerate neconcludente. Există chiar studii care sugerează că prezența unei pisici poate avea efecte complexe asupra stării de spirit a stăpânilor.",
+      "instagram_caption": "Legătura dintre pisici și stăpâni e mai profundă decât crezi! 😻 Studiile arată o conexiune hormonală care ne poate influența starea de spirit. Dar oare pisicile chiar ne fac viața mai bună? 🧐 Cercetările sunt împărțite: unii spun da, alții... nu sunt atât de siguri. E o lume complexă, chiar și în relația cu felinele noastre iubite! Tu ce crezi? Spune-ne în comentarii! 👇",
+      "hashtags": [
+        "#Pisici",
+        "#AnimaleDeCompanie",
+        "#ConexiuneUmanaFelina",
+        "#StareDeSpirit",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Pisicile și stăpânii lor împărtășesc o conexiune hormonală care poate îmbunătăți starea de spirit. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "iPhone Duo: De ce noul gadget Apple nu este un telefon compact",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1017090/iphone-duo-screen-size-mini",
+      "date": "2026-10-23T10:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "Când am publicat recenzia noastră pentru iPhone Duo, am primit multe întrebări pline de speranță de la fanii telefoanelor Mini, care au observat dimensiunea ecranului extern de 5,4 inci, similară cu cea a unui Mini. „Este acesta… un telefon mic care se transformă într-o tabletă?”, au întrebat ei. Îmi pare rău să aduc vești proaste, dar nu.",
+      "instagram_caption": "Fanii telefoanelor compacte, atenție! 📣 La prima vedere, ecranul exterior de 5,4 inci al noului iPhone Duo ar putea părea o revenire la formatul Mini. Mulți speră că este un telefon mic ce se transformă în tabletă... dar, din păcate, realitatea este alta. 😥 Descoperă pe NEXAS de ce iPhone Duo nu este, de fapt, un telefon mic! Link în bio. #iPhoneDuo #Apple #TechNews #TelefoaneCompacte #NEXAS",
+      "hashtags": [
+        "#iPhoneDuo",
+        "#Apple",
+        "#Smartphone",
+        "#TechNews",
+        "#TelefoaneCompacte",
+        "#GadgetNou",
+        "#NEXAS",
+        "#Tehnologie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: No, the iPhone Duo isn’t a small phone. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Frauda de 9 miliarde de dolari: Elizabeth Holmes, tânăra ce a păcălit elitele SUA",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNMUhtR1cyaUFkbzJXTlN0R0ZfalhyYWlqdDVxeE51cGxvU3B1aV9XRlpfT21OZ0NOSmNpQThSbHNuajZOdVltRFJFQXFkRFJPT3VYSjRQMVd0MW5LX3RzU2lNQWdnWjhSVUxicHI2OWRvNDV1M1UtWVpqODZwY3c0c1dlenlHcFM4czlHcFhscEkxVlUzTTVOMENVNUUyU2lGVUhrcjJMMGg2VW05V0Q5RU4ySk1WQ04yUDhERC1PRlF4b0NZRW1LOTVja0hrdFZ1YzZBbEktdDVpWUx3UWxFblk5MVZHSE5ROEl1d2VJbnBZbXFkdVE?oc=5",
+      "date": "2026-10-23T09:34:50+00:00",
+      "category": "Entertainment",
+      "summary": "Elizabeth Holmes, fondatoarea Theranos, a orchestrat o fraudă de 9 miliarde de dolari, reușind să păcălească la doar 22 de ani miliardari, generali și foști secretari de stat americani. Povestea ascensiunii și căderii sale este acum subiectul unui nou documentar, care a stârnit deja un val de entuziasm. Criticii îl consideră deja „filmul anului” și prevăd un potențial câștigător de Oscar, aducând din nou în atenția publicului una dintre cele mai șocante povești de înșelăciune din istoria recentă.",
+      "instagram_caption": "Elizabeth Holmes, fondatoarea Theranos, a șocat lumea cu o fraudă de 9 miliarde de dolari! 🤯 La doar 22 de ani, a reușit să păcălească cele mai puternice figuri din SUA, de la miliardari la foști secretari de stat. Acum, povestea ei incredibilă prinde viață într-un documentar nou, deja aclamat ca „filmul anului” și un potențial câștigător de Oscar. 🎬 Nu ratați această poveste uimitoare despre ambiție, înșelăciune și căderea unui imperiu!",
+      "hashtags": [
+        "#ElizabethHolmes",
+        "#Theranos",
+        "#Frauda",
+        "#Documentar",
+        "#Oscar",
+        "#PovesteAdevărată"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Frauda de 9 miliarde de dolari: Cum a reușit o tânără de 22 de ani să păcălească miliardari, general. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ileana Lazariuc: Viața actuală și sursele de venit ale mamei copiilor lui Alexandru Țiriac",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVW03YUxyemk0TE9mRmhtaDJyTGQyQ2xzc203dl9UWFljd2hYOS1KTmY2YnNpRFp0SlBjYjRIcXFPTFZjOWtpLVAweEtaeXZCLUJGQTlYTm1FNUItd2oxU0E3SzNVaDdPeVBuUWlGcmlDTkdzcm1Mek5RZEtCUzFfUlN5VnFWN3M2RmNWX1R1MnUxd1BaT3VwWXh1cG0wMnBVa2I2RE9uUkxSdldYNG85d0JSMUhYdG1hVFZydkVBVzRHa0hrTTM4b3dwTUg?oc=5",
+      "date": "2026-10-23T09:29:11+00:00",
+      "category": "Entertainment",
+      "summary": "Articolul explorează aspecte din viața actuală a Ilenei Lazariuc, mama copiilor lui Alexandru Țiriac. Cunoscută anterior pentru prezența sa în lumina reflectoarelor, fosta vedetă a optat pentru un stil de viață mai privat. Materialul detaliază cum arată acum și din ce activități își asigură independența financiară, oferind o perspectivă asupra parcursului său personal și profesional, departe de agitația publică.",
+      "instagram_caption": "Curios să afli ce face Ileana Lazariuc, mama copiilor lui Alexandru Țiriac? 🤔 Descoperă cum arată acum și din ce își câștigă existența, departe de agitația showbiz-ului! 🌟 Un material complet despre viața discretă a fostei vedete. 👇 Citește acum pe NEXAS!",
+      "hashtags": [
+        "IleanaLazariuc",
+        "AlexandruTiriac",
+        "ViataDiscreta",
+        "ShowbizRomania",
+        "VedeteRomania",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Ce s-a ales de Ileana Lazariuc, mama copiilor lui Alexandru Țiriac. Cum arată acum și din ce face ba. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Emily St. John Mandel: ‘I don’t want to write something relentlessly bleak’",
+      "source": "New Scientist",
+      "url": "https://www.newscientist.com/article/2594154-emily-st-john-mandel-i-dont-want-to-write-something-relentlessly-bleak/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+      "date": "2026-10-23T09:00:00+00:00",
+      "category": "Stiinta",
+      "summary": "The science-fiction novelist talks to Alison Flood about her latest book Exit Party, a tale of parallel worlds that is the October read for the New Scientist Book Club",
+      "instagram_caption": "Emily St. John Mandel: ‘I don’t want to write something relentlessly bleak’\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Emily St. John Mandel: ‘I don’t want to write something relentlessly bleak’. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "„M-am culcat bogat, m-am trezit sărac”: Turcii își pierd economiile în fonduri blocate?",
+      "source": "Google Intl",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOaGNQcUN5SldYUmxwZlZmdEdLa0tzYmtwcWJDcFlvLTFzU2pkdTBGTWFHUU84bWI4VmZ5MFd0NldSdFdDUXVZU0xlQ1R5UUFmdnRscnFtOGp5OGt6ek1CX0JPOGRQQUVoejJTRFc3T3A2bVJjZGkwWlRZdjNpVlA0dVdpc0xMdU5zWGpzUGxvVzJPc0h4b1U2RXpfd1BCYzVDbklseDNCNl9VY2pObEQ1ZE5KRE92dGdSVkV5YnFNczRrVUQ3VlJNcUxGR1I4TURFT0plUktNRGpBLUctREl6RGNOSlhRMlFKTkw3aGVabw?oc=5",
+      "date": "2026-10-23T08:04:19+00:00",
+      "category": "International",
+      "summary": "Investitorii turci care și-au plasat economiile în fonduri de investiții se confruntă cu o situație dramatică, mulți temându-se că nu își vor mai recupera banii. Expresia „M-am culcat bogat și m-am trezit sărac” reflectă disperarea lor. Deși Parlamentul Turciei a adoptat o lege pentru lichidarea fondurilor înghețate, aceasta generează incertitudini majore privind modul și succesul recuperării economiilor depuse. Situația financiară a mii de familii este acum în cumpănă.",
+      "instagram_caption": "Situație dramatică în Turcia! 🇹🇷 Mii de investitori care și-au plasat economiile în fonduri se tem că nu le vor mai recupera. „M-am culcat bogat și m-am trezit sărac” - iată disperarea! Deși Parlamentul a adoptat o lege pentru lichidarea fondurilor înghețate, soarta banilor rămâne incertă. 💸 Ce soluții vor găsi? 🤔",
+      "hashtags": [
+        "Turcia",
+        "Investitii",
+        "CrizaFinanciara",
+        "Economii",
+        "BaniPierduti",
+        "FonduriBlocate"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: „M-am culcat bogat și m-am trezit sărac”: Turcii ce și-au pus economiile în fonduri de investiții se. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ryu Murakami: Maestrul șocului literar japonez explorează sex, droguri și alienare",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQZXowdExkRllFTTlLdmFQMDlpdXdHZTNMem5iN0hwLTV1ekVWOGRjbWk1VGlMRDRiaDliNzAzX2U0TUE1Mk1fTzd5MHphTDFpSXVLUjlyblEydkZFdEtzX2Y1Z2E1bVFUQ1c4cWt1d21pVHRkZWY0eDFCRWh6RFBDbUVmM3lHcHltR2VoV01nUEgxNTdENzYySWhFdzVYSllNbUFGZnMybURLNHNKZUpPUUNWaWNfWkoxZlp2OG1fSTA3RFQzaTdrSDRDQTZrcHBKdWJ2bjQzNDlTTnpTelpESmF1ZDQ5b3NpTjlmTFk4LTd4cWhCd2tXNWx0X2l5Z21rSlROZdIBjwJBVV95cUxPWkpFZ1VJM2czX3FWcVdtSEpOZlF4cGMwYllzZmVuTnRJdjBvMFI5SjdWUU9pODZrb0JjLXN5VkZZMF9fUVp4SGtUMUxfX2xVTGlvMEc0dzdCYTdBQlRYSElHdTYzUi1JLWR0d3pfYjJvTFo1SmpvQWtVSUE2bkh3RmVmek5fZm1WWnozaFl4SExkNG01WWRxVjQ0blRqdzRhM1BlLThpZ1lTRi1JeHVUYUZjWDVLNUQxNm00Ql9HVVBZVUUwUFl2bDBJTzd5YkVuOXZ2RHUxTm5QaFVBWG5BSTJRSC0tMXZQcU5lU09zbmo4OUE1Zm4zWDBmWVptX1V6azhaS1dyeS1nc25zMEhF?oc=5",
+      "date": "2026-10-23T06:39:26+00:00",
+      "category": "Entertainment",
+      "summary": "Ryu Murakami este scriitorul japonez renumit pentru abordarea fără perdea a temelor controversate. Prin romanele sale, el a șocat și provocat lumea literară, explorând cu o brutalitate necruțătoare subiecte precum sexul, drogurile, alienarea socială și aspectele întunecate ale condiției umane. Operele sale redefinesc limitele literare, oferind o perspectivă profundă și adesea deranjantă asupra societății contemporane.",
+      "instagram_caption": "Descoperă universul controversat al lui Ryu Murakami! 📚 Scriitorul japonez a șocat lumea literară cu romane pline de sex, droguri și o explorare profundă a alienării. 🤯 O voce autentică ce nu se teme să dezvăluie fața întunecată a societății. Ești pregătit să explorezi operele sale? 🤔 #RyuMurakami #LiteraturaJaponeza #Carti #Controversa #NEXAS #SexDroguriAlienare",
+      "hashtags": [
+        "#RyuMurakami",
+        "#LiteraturaJaponeza",
+        "#Carti",
+        "#Controversa",
+        "#NEXAS",
+        "#SexDroguriAlienare"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Ryu Murakami, scriitorul japonez care a șocat lumea literară cu romane despre sex, droguri și aliena. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Oura dă din nou în judecată rivalul Ultrahuman, amenințând revenirea pe piața SUA",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/22/oura-sues-rival-ultrahuman-again-threatening-its-u-s-smart-ring-comeback/",
+      "date": "2026-10-23T04:22:57+00:00",
+      "category": "AI & Tech",
+      "summary": "În cel mai recent proces intentat, Oura susține că inelul inteligent Ring Pro al rivalului Ultrahuman încalcă două dintre brevetele sale.",
+      "instagram_caption": "Rivalitatea dintre giganții inelelor inteligente se intensifică! 💥 Oura a dat din nou în judecată Ultrahuman, acuzând că inelul Ring Pro încalcă două dintre brevetele sale. Această acțiune legală ar putea amenința serios revenirea Ultrahuman pe piața din SUA. 🇺🇸 Fii la curent cu ultimele știri din lumea #AI #Tech! Sursa: TechCrunch",
+      "hashtags": [
+        "Oura",
+        "Ultrahuman",
+        "SmartRing",
+        "InelInteligent",
+        "ProcesLegal",
+        "Brevete",
+        "TechNews",
+        "AITech",
+        "Gadgeturi"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Oura sues rival Ultrahuman again, threatening its U.S. smart ring comeback. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cernobîl, 40 de ani mai târziu: Contaminarea nucleară a surprins oamenii de știință",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261021231241.htm",
+      "date": "2026-10-23T03:35:13+00:00",
+      "category": "Stiinta",
+      "summary": "La patruzeci de ani de la dezastrul de la Cernobîl, particule radioactive minuscule persistă încă în sol, lăsând o moștenire periculoasă. Folosind raze X puternice, oamenii de știință au descoperit că unele dintre aceste particule au rămas surprinzător de stabile. Acestea, în loc să elibereze substanțe radioactive în mediu, le-au reținut în interior.",
+      "instagram_caption": "La 40 de ani de la dezastrul de la Cernobîl, descoperiri uimesc! 🤯 Particulele radioactive din sol, crezute a elibera constant substanțe periculoase, sunt surprinzător de stabile. Cu raze X, cercetătorii au observat că multe rețin substanțele radioactive în interior. O perspectivă nouă asupra moștenirii Cernobîlului! ☢️ Citește pe site-ul NEXAS!",
+      "hashtags": [
+        "Cernobîl",
+        "Stiinta",
+        "Radioactivitate",
+        "Descoperiri",
+        "Mediu"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: 40 years later, Chernobyl's nuclear fallout is not what scientists expected. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "OpenAI și NASK Polonia: Parteneriat pentru Siguranța și Securitatea AI",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "date": "2026-10-23T00:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "OpenAI și NASK din Polonia au inițiat un parteneriat strategic în domeniul siguranței, securității și cercetării tehnice în inteligența artificială. Această colaborare vizează consolidarea măsurilor de protecție, sprijinind dezvoltarea unui ecosistem digital mai robust și rezistent. Prin această inițiativă, se urmărește abordarea proactivă a provocărilor AI și asigurarea unei utilizări responsabile a tehnologiei.",
+      "instagram_caption": "O veste esențială pentru viitorul AI! 🚀 OpenAI și NASK din Polonia își unesc forțele într-un parteneriat strategic axat pe siguranța, securitatea și cercetarea tehnică în inteligența artificială. 🛡️ Această colaborare vizează consolidarea măsurilor de protecție și crearea unui ecosistem digital mai robust și rezistent. Împreună, pentru un AI responsabil! ✨ #AISafety #AI #TechPartnership #OpenAI #NASK #SecuritateAI #Inovație",
+      "hashtags": [
+        "#AI",
+        "#Tech",
+        "#OpenAI",
+        "#NASK",
+        "#AISafety",
+        "#AISecurity",
+        "#DigitalEcosystem",
+        "#Innovation",
+        "#ParteneriatAI",
+        "#CercetareAI",
+        "#Polonia"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: OpenAI and Poland’s NASK partner to advance AI safety and security. Professional photorealistic style. No text, no logos, no watermarks."
+    },
     {
       "title": "Ședință de urgență la Palatul Cotroceni, convocată de Luca Niculescu. Pe ce temă",
       "source": "HotNews",
@@ -157,25 +681,6 @@
       "image_prompt": "Premium editorial photograph for Business news: Mașinile viitorului nu vor mai avea nevoie de șofer. Ce pregătește Rivian. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Mașinile viitorului nu vor mai avea nevoie de șofer. Ce pregătește Rivian",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/masinile-viitorului-nu-vor-mai-avea-nevoie-de-sofer-ce-pregateste-rivian-22868108?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-10-22T18:00:00+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Mașinile viitorului ar putea să nu mai semene prea mult cu automobilele pe care le conducem astăzi.",
-      "instagram_caption": "Mașinile viitorului nu vor mai avea nevoie de șofer. Ce pregătește Rivian\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Mașinile viitorului nu vor mai avea nevoie de șofer. Ce pregătește Rivian. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Donald Trump, obligat de un judecător să se prezinte la audieri în procesul de calomnie de 10 miliarde de dolari împotriva BBC",
       "source": "G4Media",
       "url": "https://www.g4media.ro/donald-trump-obligat-de-un-judecator-sa-se-prezinte-la-audieri-in-procesul-de-calomnie-de-10-miliarde-de-dolari-impotriva-bbc.html",
@@ -264,25 +769,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Business news: Cine este Ştefan-Radu Oprea, ministrul apărării din noul guvern. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cine este Ştefan-Radu Oprea, ministrul apărării din noul guvern",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/eveniment/cine-este-stefan-radu-oprea-ministrul-apararii-din-noul-guvern-23265925",
-      "date": "2026-10-22T17:40:00+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Cine este Ştefan-Radu Oprea, ministrul apărării din noul guvern",
-      "instagram_caption": "Cine este Ştefan-Radu Oprea, ministrul apărării din noul guvern\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Cine este Ştefan-Radu Oprea, ministrul apărării din noul guvern. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Raport: Elon Musk investește 1 miliard de dolari în Skydance",
@@ -4233,24 +4719,6 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: Un gigant farmaceutic investește în crearea unor „oameni virtuali” pentru descoperirea de medicament. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "10 cele mai bune locuri pentru a vedea eclipsa totală de soare din 2027 din Spania",
-      "source": "Space.com",
-      "url": "https://www.space.com/stargazing/solar-eclipses/10-best-places-to-see-the-2027-total-solar-eclipse-in-spain",
-      "date": "2026-10-18T10:00:00+00:00",
-      "category": "Stiinta",
-      "summary": "De la Costa del Sol la satele de munte văruite în alb, iată 10 dintre cele mai bune locuri din sudul Spaniei pentru a experimenta eclipsa totală de soare din 2 august 2027.",
-      "instagram_caption": "10 best places to see the 2027 total solar eclipse in Spain\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: 10 best places to see the 2027 total solar eclipse in Spain. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Cine este Carmen Petcu, director general De'Longhi România, un business de 3 mld. lei, adică aproape 600 mil. euro: Viteza şi complexitatea business-ului sunt prea mari pentru un singur om atotştiutor",
       "source": "Ziarul Financiar",
       "url": "https://www.zf.ro/eveniment/cine-este-carmen-petcu-director-general-de-longhi-romania-un-business-de-3-mld-lei-adica-aproape-600-mil-euro-viteza-si-complexitatea-business-ului-sunt-prea-mari-pentru-un-singur-om-atotstiutor-23262171",
@@ -4289,254 +4757,6 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: Siropul natural care te scapă de tusea seacă. Ai nevoie de doar trei ingrediente. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Incendiu major la Centrala de Termoficare Iași: Mii de locuințe fără căldură și apă caldă",
-      "source": "Digi24",
-      "url": "https://www.digi24.ro/stiri/primele-imagini-din-interiorul-centralei-de-termoficare-din-iasi-dupa-incendiul-urias-de-sambata-zeci-de-locuinte-fara-caldura-3997435",
-      "date": "2026-10-18T09:58:13+00:00",
-      "category": "Romania",
-      "summary": "Peste 22.000 de apartamente din Iași au rămas fără apă caldă și căldură, după ce sâmbătă Centrala de Termoficare a fost cuprinsă de un incendiu uriaș. Flăcările au izbucnit la un transformator al unității.",
-      "instagram_caption": "Situație critică în Iași! 🚨 Peste 22.000 de apartamente au rămas fără apă caldă și căldură, după ce Centrala de Termoficare a fost lovită de un incendiu puternic sâmbătă. Flăcările au pornit de la un transformator, lăsând mii de familii în frig. Rămânem cu ochii pe evoluția situației! 👀 #Iasi #Incendiu #Termoficare #CrizaCaldurii",
-      "hashtags": [
-        "Iasi",
-        "Incendiu",
-        "Termoficare",
-        "CrizaCaldurii",
-        "ApaCalda",
-        "LocuinteAfectate"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Primele imagini din interiorul Centralei de Termoficare din Iași, după incendiul uriaș de sâmbătă. Z. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Mașini arse și sticlă spartă pe străzile din Paris, după ce protestele s-au transformat în revolte și jaf",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no?at_medium=RSS&at_campaign=rss",
-      "date": "2026-10-18T09:56:45+00:00",
-      "category": "International",
-      "summary": "Aproximativ 1.800 de persoane au fost arestate după ce protestele la nivel național au avut loc izbucniri de violență și vandalism.",
-      "instagram_caption": "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#International",
-        "#StiriMondiale",
-        "#Lume",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Notificare electronică înainte de expirarea actelor: Senatul a adoptat, Camera Deputaților decide",
-      "source": "G4Media",
-      "url": "https://www.g4media.ro/autoritatile-vor-notifica-cetatenii-inainte-de-expirarea-actelor-senatul-a-adoptat-un-proiect-usr-urmeaza-votul-decisiv-din-camera-deputatilor.html",
-      "date": "2026-10-18T09:55:15+00:00",
-      "category": "Romania",
-      "summary": "Senatul a adoptat o inițiativă USR ce impune autorităților notificarea electronică a cetățenilor cu cel puțin 30 de zile înainte de expirarea actelor administrative individuale (permise, certificate, autorizații etc.). Proiectul, inițiat de senatoarea Violeta Alexandru, vizează evitarea situațiilor neplăcute cauzate de expirarea documentelor. Decizia finală aparține Camerei Deputaților, care este camera decizională.",
-      "instagram_caption": "Nu mai rata termenul de expirare al actelor! ⏰ Senatul a votat un proiect important care obligă autoritățile să te notifice electronic, cu 30 de zile înainte. De la permis la certificat, vei fi informat la timp! 📩 Acum, mingea e în terenul Camerei Deputaților. Sperăm să treacă! Ce părere ai? 👇",
-      "hashtags": [
-        "Legislatie",
-        "Romania",
-        "USR",
-        "ActeValabile",
-        "NoutatiLegislative",
-        "CetateniInformati"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Autoritățile vor notifica cetățenii înainte de expirarea actelor. Senatul a adoptat un proiect USR, . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "JD Vance dă vina pe imigrație pentru violențele din Franța",
-      "source": "Forbes Romania",
-      "url": "https://www.forbes.ro/jd-vance-da-vina-pe-imigratie-pentru-violentele-din-franta-526742",
-      "date": "2026-10-18T09:54:41+00:00",
-      "category": "Business",
-      "summary": "Vicepreședintele american JD Vance a susținut sâmbătă că imigrația este responsabilă pentru violențele care au izbucnit în cursul protestelor din Franța și a acuzat opoziția democrată că dorește același „viitor” pentru Statele Unite. „Progresiștii occidentali au importat Lumea a Treia în Franța și în alte țări, în numele diversității și al compasiunii. Au ignorat chestiuni ... The post JD Vance dă vina pe imigrație p",
-      "instagram_caption": "JD Vance dă vina pe imigrație pentru violențele din Franța\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: JD Vance dă vina pe imigrație pentru violențele din Franța. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Antrenorul lui Rayo, anunț direct despre Andrei Rațiu: Ce se întâmplă cu românul",
-      "source": "DigiSport",
-      "url": "https://www.digisport.ro/fotbal/la-liga/out-antrenorul-lui-rayo-a-facut-anuntul-despre-andrei-ratiu-4550465",
-      "date": "2026-10-18T09:51:09+00:00",
-      "category": "Sport",
-      "summary": "Antrenorul echipei Rayo Vallecano a făcut un anunț important legat de situația lui Andrei Rațiu. Acesta a clarificat că fundașul român nu va face parte din lotul pentru următoarea partidă, fără a oferi detalii suplimentare despre motive. Decizia, conform declarațiilor, este una tactică, iar Rațiu va continua să se antreneze pentru a-și recâștiga locul. Fanii așteaptă cu interes evoluția situației, mai ales că EURO 2024 se apropie.",
-      "instagram_caption": "¡Alerta Rayo Vallecano! 🚨 Antrenorul a făcut un anunț important despre Andrei Rațiu. Românul nu va fi în lotul pentru următorul meci. 🤔 Ce înseamnă asta pentru viitorul său la club și șansele la EURO 2024? Toate detaliile le găsești pe NEXAS! 📲 #AndreiRatiu #RayoVallecano #LaLiga #Fotbal #Romania #EURO2024 #NEXAS",
-      "hashtags": [
-        "AndreiRatiu",
-        "RayoVallecano",
-        "LaLiga",
-        "Fotbal",
-        "Romania",
-        "EURO2024",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: OUT: antrenorul lui Rayo a făcut anunțul despre Andrei Rațiu. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Andrei Nicolescu analizează lupta la titlu: Rapid, Craiova și parcursul FCSB",
-      "source": "Fanatik",
-      "url": "https://www.fanatik.ro/andrei-nicolescu-a-analizat-lupta-la-titlu-cum-le-vede-pe-rapid-si-craiova-si-de-ce-crede-ca-fcsb-poate-castiga-titlul-21566706",
-      "date": "2026-10-18T09:40:37+00:00",
-      "category": "Sport",
-      "summary": "Analistul Andrei Nicolescu a oferit o perspectivă detaliată asupra luptei la titlu în SuperLiga. El a comparat performanța și stilul de joc al Rapidului cu cel al Universității Craiova și a explicat factorii cheie care pot contribui la calificarea FCSB în play-off.",
-      "instagram_caption": "Andrei Nicolescu a disecat lupta acerbă la titlu din SuperLiga! ⚽️ Aflați cum vede șansele Rapidului și Universității Craiova, dar și argumentele sale pentru calificarea FCSB în play-off. 🤔 O analiză esențială pentru orice fan al fotbalului românesc! #SuperLiga #FotbalRomania #AndreiNicolescu #LuptaLaTitlu #Rapid #UniversitateaCraiova #FCSB #AnalizaSportiva #SportRomania",
-      "hashtags": [
-        "#SuperLiga",
-        "#FotbalRomania",
-        "#AndreiNicolescu",
-        "#LuptaLaTitlu",
-        "#Rapid",
-        "#UniversitateaCraiova",
-        "#FCSB",
-        "#AnalizaSportiva",
-        "#SportRomania"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Andrei Nicolescu a analizat lupta la titlu. Cum le vede pe Rapid și Craiova și de ce crede că FCSB p. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Schimbări la Facebook, Instagram, WhatsApp și Messenger. Meta promite însă că nu va copia conținutul site-urilor care au pagini de Facebook",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/romania-conectata/schimbari-la-facebook-instagram-whatsapp-si-messenger-meta-promite-insa-ca-nu-va-copia-continutul-site-urilor-care-au-pagini-de-facebook-22853243?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-10-18T09:38:00+00:00",
-      "category": "Business",
-      "summary": "După ce a modificat regulile de folosire ale propriilor platforme sociale, permițându-și să se folosească de conținutul publicațiilor care au conturi business, Meta neagă acum că vrea să facă acest lucru.",
-      "instagram_caption": "Schimbări la Facebook, Instagram, WhatsApp și Messenger. Meta promite însă că nu va copia conținutul site-urilor care au pagini de Facebook\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Schimbări la Facebook, Instagram, WhatsApp și Messenger. Meta promite însă că nu va copia conținutul. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Deepfake-uri nud cu eurodeputata Lena Schilling: „Mi s-a făcut greață”. 138 femei vizate.",
-      "source": "HotNews",
-      "url": "https://hotnews.ro/o-eurodeputata-povesteste-cum-a-descoperit-deepfake-uri-in-care-aparea-dezbracata-mi-s-a-facut-greata-138-de-femei-parlamentar-din-ue-au-fost-vizate-2379094",
-      "date": "2026-10-18T09:31:17+00:00",
-      "category": "Romania",
-      "summary": "Eurodeputata austriacă Lena Schilling (Partidul Verzilor) a dezvăluit că a descoperit luna trecută imagini deepfake în care apărea goală, distribuite pe internet. Când a accesat linkurile, a fost șocată să vadă fotografii de la una dintre primele sale conferințe de presă, modificate digital pentru a o prezenta dezbrăcată. „Mi s-a făcut greață”, a declarat Schilling. Incidentul face parte dintr-un val de atacuri digitale care a vizat 138 de femei parlamentar din Uniunea Europeană.",
-      "instagram_caption": "O poveste șocantă 💔 Eurodeputata austriacă Lena Schilling a descoperit deepfake-uri nud cu ea, distribuite online. „Mi s-a făcut greață” a mărturisit ea, după ce a văzut cum imagini de la o conferință de presă au fost manipulate digital. Nu e un caz izolat! 🚨 În total, 138 de femei parlamentar din UE au fost ținta unor astfel de atacuri abuzive. Este o problemă gravă de dezinformare și abuz digital, care subliniază pericolele inteligenței artificiale folosite malitios. Ce părere ai? E timpul să acționăm împotriva deepfake-urilor? 👇",
-      "hashtags": [
-        "#Deepfake",
-        "#LenaSchilling",
-        "#UE",
-        "#ParlamentulEuropean",
-        "#AbuzDigital",
-        "#Dezinformare",
-        "#StiriRomania",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: O eurodeputată povestește cum a descoperit deepfake-uri în care apărea dezbrăcată: „Mi s-a făcut gre. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Este timpul să lăsăm pesimismul în spate: În criza din 2007 România a pierdut 15% din angajaţi, astăzi, doar 1% s-au pierdut din cauza tulburărilor economice. „Nu ne îndreptăm spre o recesiune brutală, riscuri există, dar nu ne aflăm în acel scenariu. 2027 va arăta mai bine decât 2026” VIDEO",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/zf-live/timpul-lasam-pesimismul-spate-criza-2007-romania-pierdut-15-angajati-astazi-1-s-au-pierdut-cauza-tulburarilor-economice-ne-indreptam-spre-recesiune-brutala-riscuri-exista-ne-aflam-acel-scenariu-2027-23262432",
-      "date": "2026-10-18T09:30:00+00:00",
-      "category": "Business",
-      "summary": "Este timpul să lăsăm pesimismul în spate: În criza din 2007 România a pierdut 15% din angajaţi, astăzi, doar 1% s-au pierdut din cauza tulburărilor economice. „Nu ne îndreptăm spre o recesiune brutală, riscuri există, dar nu ne aflăm în acel scenariu. 2027 va arăta mai bine decât 2026” VIDEO",
-      "instagram_caption": "Este timpul să lăsăm pesimismul în spate: În criza din 2007 România a pierdut 15% din angajaţi, astăzi, doar 1% s-au pierdut din cauza tulburărilor economice. „Nu ne îndreptăm spre o recesiune brutală, riscuri există, dar nu ne aflăm în acel scenariu. 2027 va arăta mai bine decât 2026” VIDEO\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Este timpul să lăsăm pesimismul în spate: În criza din 2007 România a pierdut 15% din angajaţi, astă. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Apple lansează iPhone Duo, modelul pliabil de 2000$, deja epuizat la precomenzi",
-      "source": "Google News Tech",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVFh6ckdlaV9tZDNUclprcVRGcExDdEdVNE1pT1pMMU5jS2dOdjVPZFoxQlZIZnduSUgzdUVzZ0Nqeng1QWNybHlReVZVV29ueFpBRkU1ZzBVZjdlNHp1aG9DMnZnZVhSc1ZqdUw5T0piYVRqYVdqMURFQzhjQnFDeHRKYWhLbkZoT0RRcTEycFhlOFB5ZTI0b1FWWjZ3ZUdBanZUQmRzRlRWU291WFlSdUhjcDlvR0VQdE5Oc2NkejNnZmRRcS1hV1A4YmlTSUozQ1pROQ?oc=5",
-      "date": "2026-10-18T09:26:14+00:00",
-      "category": "AI & Tech",
-      "summary": "Apple a lansat oficial iPhone Duo, primul său smartphone pliabil, la prețul de 2000 de dolari, devenind astfel cel mai scump iPhone din istorie. Succesul este răsunător: modelul s-a epuizat rapid la precomenzi, confirmând cererea „extraordinară” și interesul masiv al publicului. Prin acest produs, Apple testează limitele pieței și disponibilitatea clienților de a investi în inovație. iPhone Duo promite să preia sarcini ale unui laptop, dar se anticipează posibile întârzieri la livrare.",
-      "instagram_caption": "😱 Apple a șocat piața cu lansarea iPhone Duo, primul său smartphone pliabil și cel mai scump din istorie, la 2000$! 💰 Ce e și mai uimitor? S-a epuizat complet la precomenzi! 🚀 Aparent, lumea e gata să plătească oricât pentru inovație. Acest gadget promite să înlocuiască laptopul tău pentru multe sarcini, dar deja se vorbește despre posibile întârzieri la livrare. 📦 Ce părere ai? Ești dispus să investești? #iPhoneDuo #Apple #SmartphonePliabil #TechNews #Inovație #Gadgeturi",
-      "hashtags": [
-        "iPhoneDuo",
-        "Apple",
-        "SmartphonePliabil",
-        "TechNews",
-        "Inovație",
-        "Gadgeturi"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Apple lansează cel mai scump iPhone din istorie: modelul pliabil de 2000 de dolari, epuizat încă de . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Ianis Hagi a reacționat concis după primul gol al lui Andrei Coubiș în Anglia",
-      "source": "ProSport",
-      "url": "https://www.prosport.ro/fotbal-intern/nationala/ianis-hagi-un-singur-cuvant-internet-primul-gol-andrei-coubis-anglia-lincoln-20550080",
-      "date": "2026-10-18T09:25:31+00:00",
-      "category": "Sport",
-      "summary": "Ianis Hagi (27 de ani) a fost atent la performanța lui Andrei Coubiș (23 de ani), care a marcat primul său gol în Anglia. Coubiș a deschis scorul în minutul 1 al partidei Millwall – Lincoln (2-2), din etapa a 11-a a Championship, printr-un șut din voleu executat impecabil. Entuziasmat, Ianis Hagi a reacționat pe internet, transmițând un mesaj scurt, dintr-un singur cuvânt, după reușita conaționalului său.",
-      "instagram_caption": "⚽️ Primul gol în Anglia pentru Andrei Coubiș! 🎉 Mijlocașul de 23 de ani a deschis scorul în minutul 1 pentru Millwall, într-un meci din Championship. O reușită spectaculoasă, un șut din voleu impecabil! 👏 Ianis Hagi (27 de ani) a fost printre primii care l-au felicitat, printr-o reacție scurtă, de doar un cuvânt, pe internet. Felicitări, Andrei! 🇷🇴",
-      "hashtags": [
-        "AndreiCoubis",
-        "IanisHagi",
-        "Championship",
-        "FotbalRomania",
-        "Gol"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: VIDEO Ianis Hagi a scris un singur cuvânt pe internet după ce a văzut primul gol al lui Andrei Coubi. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Mâncare sau medicamente? Alegerile imposibile cu care se confruntă bolnavii cronici din Sudan",
-      "source": "Al Jazeera",
-      "url": "https://www.aljazeera.com/features/2026/10/18/food-or-medicine-the-impossible-choices-facing-sudans-chronically-ill?traffic_source=rss",
-      "date": "2026-10-18T09:22:44+00:00",
-      "category": "International",
-      "summary": "Războiul civil din Sudan a generat o criză umanitară profundă, iar populația se confruntă cu o creștere exponențială a costurilor medicamentelor esențiale. Accesul la tratament devine un lux pentru mulți, transformând alegerile dintre hrană și sănătate într-o dilemă tragică pentru bolnavii cronici.",
-      "instagram_caption": "În Sudan, războiul civil a transformat accesul la medicamente esențiale într-un lux. Bolnavii cronici sunt puși în fața unor alegeri imposibile: mâncare sau tratament? 💔 Costurile cresc vertiginos, iar sistemul sanitar este la pământ. O dramă umanitară care cere atenție globală. Sursa: Al Jazeera #Sudan #CrizaUmanitara #Medicamente #RazboiCivil #AlegeriImposibile #Sanatate #International",
-      "hashtags": [
-        "Sudan",
-        "CrizaUmanitara",
-        "Medicamente",
-        "RazboiCivil",
-        "AlegeriImposibile",
-        "Sanatate",
-        "International"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Food or medicine? The impossible choices facing Sudan’s chronically ill. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Japonia va trimite o navă spațială pe Phobos, una dintre lunile planetei Marte - G4Media",
-      "source": "Google Stiinta",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZDRrX0tJV2JadUs4WUVWbHJEX204Sm1jZ05ubE1jTWE5YUJQMXluUnBRei11SF8tTXh0c3hXSDRQLVZ1NEFLYWlLbTFzTVRuNnJXQVk5YmZxT2dLSngzZjIwems1ZUVzOUhNY3JXaW9fZFlYNzlwcDRrZXc1RU9RWk5kOG8yQzRDYmdfMlhRV2g0SFdnYk9YRUgzZEIwYUpVVVAxZXlFYlFITGhaaUowbHdlNFFuNjJvOUZ2LUFGVzFlOTFIdks0?oc=5",
-      "date": "2026-10-18T09:00:57+00:00",
-      "category": "Stiinta",
-      "summary": "Japonia va trimite o navă spațială pe Phobos, una dintre lunile planetei Marte G4Media O misiune spațială va încerca prelevarea de mostre de pe Phobos. Când decolează? Descopera Misiune spațială istorică pe satelitul planetei Marte: omenirea vizează primele mostre de pe Phobos Go4IT",
-      "instagram_caption": "Japonia va trimite o navă spațială pe Phobos, una dintre lunile planetei Marte - G4Media\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: Japonia va trimite o navă spațială pe Phobos, una dintre lunile planetei Marte - G4Media. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Miley Cyrus a izbucnit în lacrimi în timpul unui concert. Ce le-a mărturisit spectatorilor VIDEO - PRO TV.ro",
       "source": "Google Ent",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbjZQUjRRRHdtaWdPWFpoODhVNFpGcTBBVVIweUtIVHhfRmlUSElWTFhva3I2UUhFbWZxOFlaWUlNMkdFN0FSbG5CU1RLS3VqNkxONjdlWWFrLVpGTkk5RXhUYzlYZVE0a2ZmdjYwMzBXSU9JeEl5aE5DYURMRVFqMFF3LVZKODRLTWtKaDdBLW9PbW9yMWl4MjlzVzJIMnIxQnlLYkc3QldGN094YTZlZTJfX1VpSlNVQ3pPNXFHSDR6TjA?oc=5",
@@ -4553,26 +4773,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Entertainment news: Miley Cyrus a izbucnit în lacrimi în timpul unui concert. Ce le-a mărturisit spectatorilor VIDEO - P. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "JD Vance: Imigrația, cauza violențelor din Franța. Macron condamnă haosul",
-      "source": "Google Intl",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSE1ETm9aN1Q0V3l0WUF2U1NsUFc1Z0dCcUlxQm5IREdVYnhtX3d1SmxrNzRYbnVWNzRzdmZuNlV0OV95V1ZZUGFUNV91REVmRU4tYTBwUEpvSE4zSlJ2QXZ0aGEzQk1VcE81NXdQV2RlaDR3cmNhTVBZb203U1Flel9MdWdqMXBQYzh0TXp6ODUtY2J3MmZiZFN1ejVwUVhId2pXRHpENE4wRm9TZmRLWQ?oc=5",
-      "date": "2026-10-18T07:59:44+00:00",
-      "category": "International",
-      "summary": "Vicepreședintele american JD Vance a atribuit imigrației violențele recente din Franța. Tulburările au escaladat, ducând la distrugerea Primăriei din Limoges, un eveniment catalogat drept „o catastrofă pentru patrimoniu”. Președintele Emmanuel Macron a condamnat ferm actele de violență și jaf, afirmând că „nu există loc pentru violență” și promițând acțiuni. Franța se confruntă cu un val de proteste violente și vandalism, incluzând distrugerea de clădiri istorice și peste 1.200 de arestări.",
-      "instagram_caption": "Val de violențe în Franța! 🇫🇷 Vicepreședintele american JD Vance a stârnit controverse, atribuind imigrației escaladarea tulburărilor. Primăria din Limoges a fost distrusă, un act „catastrofal pentru patrimoniu”. Președintele Macron a condamnat ferm jaful și vandalismul, reiterând că „nu există loc pentru violență” și promițând măsuri. Peste 1.200 de persoane au fost arestate în urma protestelor ce au afectat clădiri istorice. #Franta #Violente #JDVance #Imigratie #Macron #Proteste #NEXAS 🚨",
-      "hashtags": [
-        "#Franta",
-        "#Violente",
-        "#JDVance",
-        "#Imigratie",
-        "#Macron",
-        "#Proteste",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Vicepreședintele american JD Vance dă vina pe imigrație pentru violențele din Franța - HotNews.ro. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Pregătește-ți casa pentru sezonul răcelilor și gripei: Semne care te trimit la medic",
@@ -4635,65 +4835,6 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: „Nu e iubire, e stres pur”. Psihologii explică de ce suferi după fostul partener. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "APOD: 18 octombrie 2026 – Sonificat: Stâlpii Nebuloasei Vulturului",
-      "source": "NASA News",
-      "url": "https://science.nasa.gov/image-article/apod-2026-october-18-sonified-eagle-nebula-pillars/",
-      "date": "2026-10-18T04:05:00+00:00",
-      "category": "Stiinta",
-      "summary": "APOD Știință APOD APOD: 2026 18 octombrie –... Arhiva APOD de astăzi Indexul trimiterilor Căutare Calendar RSS Educație Despre Discută APOD Poza astronomică a zilei Descoperiți cosmosul! În fiecare zi este prezentată o imagine sau o fotografie diferită a universului nostru fascinant, împreună cu o scurtă explicație scrisă de un astronom profesionist. Sonificat: Nebuloasa Vultur […]",
-      "instagram_caption": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Meta renunță la formulări controversate legate de extragerea datelor și antrenamentul AI",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "date": "2026-10-17T21:31:32+00:00",
-      "category": "AI & Tech",
-      "summary": "Meta a eliminat recent din termenii săi o formulare care stârnise îngrijorări semnificative legate de extragerea datelor (scraping) și antrenarea sistemelor de inteligență artificială. Decizia a venit după reacții publice, însă un purtător de cuvânt al companiei a subliniat că actualizarea nu reflectă o modificare a modului în care Meta indexează conținutul web sau colectează date. Compania a insistat că scopul este clarificarea, nu o schimbare a practicilor.",
-      "instagram_caption": "🚨 Meta a făcut o mișcare surprinzătoare! Compania a eliminat formulări controversate din politicile sale, care generaseră îngrijorări legate de extragerea datelor (scraping) și utilizarea lor pentru antrenarea modelelor AI. Un purtător de cuvânt a asigurat că acest lucru nu schimbă modul în care Meta indexează web-ul. O mișcare de PR sau o reală clarificare? 🤔 Sursa: TechCrunch",
-      "hashtags": [
-        "#Meta",
-        "#AI",
-        "#InteligentaArtificiala",
-        "#Tehnologie",
-        "#NoutatiTech",
-        "#Confidentialitate",
-        "#WebCrawling"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Meta removes language that raised scraping and AI training concerns. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "TikTok banează contul documentarului \"Musk\" înainte de lansarea oficială",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1013453/tiktok-bans-alex-gibneys-musk-documentary",
-      "date": "2026-10-17T19:32:23+00:00",
-      "category": "AI & Tech",
-      "summary": "Chiar înainte de lansarea documentarului \"Musk\" al lui Alex Gibney, TikTok a interzis contul de social media al filmului de pe platforma sa. TikTok nu a răspuns imediat unei solicitări de comentarii. Potrivit The Hollywood Reporter, distribuitorul filmului, Bleecker Street, a fost informat vineri că o \"suspendare permanentă\" este iminentă.",
-      "instagram_caption": "🚨 ȘOC! TikTok a interzis contul documentarului \"Musk\" al lui Alex Gibney chiar înainte de lansarea sa oficială! 🎬 Platforma nu a oferit explicații imediate. 🚫 Potrivit The Hollywood Reporter, distribuitorul Bleecker Street a fost anunțat despre o \"suspendare permanentă\" iminentă. Ce credeți că se întâmplă? 🤔 Este vorba de cenzură? #TikTok #ElonMusk #DocumentarMusk #AlexGibney #TechNews #CenzuraDigitala #SocialMedia #NEXAS",
-      "hashtags": [
-        "#TikTok",
-        "#ElonMusk",
-        "#DocumentarMusk",
-        "#AlexGibney",
-        "#TechNews",
-        "#CenzuraDigitala",
-        "#SocialMedia",
-        "#NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: TikTok bans Musk documentary account. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "HBO: Serialul antologic premiat cu Emmy anunță două nume mari în distribuția noului sezon",
       "source": "Google Ent",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWTJsUTZhZE1jR2h4Q0hfektpVWZOOXRpd0ZZNGo3bG8waDdEQm1IMGEwUzZmUnY4ejhSRnFrUnV4WVlaa2dqeFV3cmhWR09OWXVHSmtRcWh3X3BkYXNuQ0t1RU9aWUFLdXBvZzNSYkNCSDdnajV0aE1nRENhTW9UTFdRcWYwYmJWZVBEOWZn?oc=5",
@@ -4735,42 +4876,6 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: VIDEO Tablou de Vincent van Gogh, expus în Hong Kong după mai bine de șase decenii: Vizitatorii au f. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Spitalele din România, în pragul unui blocaj financiar. Cseke Attila avertizează că sunt necesare miliarde de lei pentru continuarea activității",
-      "source": "CSID",
-      "url": "https://www.csid.ro/stiri/spitalele-din-romania-in-pragul-unui-blocaj-financiar-cseke-attila-avertizeaza-ca-sunt-necesare-miliarde-de-lei-pentru-continuarea-activitatii-21337185/",
-      "date": "2026-10-17T16:45:46.808093+00:00",
-      "category": "Sanatate",
-      "summary": "Spitalele din România riscă să ajungă în pragul blocajului financiar în următoarele două-trei săptămâni, dacă Guvernul nu aprobă o rectificare bugetară. Articolul Spitalele din România, în pragul unui blocaj financiar. Cseke Attila avertizează că sunt necesare miliarde de lei pentru continuarea activității apare prima dată în CSID: Ce se întâmplă Doctore? .",
-      "instagram_caption": "Spitalele din România, în pragul unui blocaj financiar. Cseke Attila avertizează că sunt necesare miliarde de lei pentru continuarea activității\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Spitalele din România, în pragul unui blocaj financiar. Cseke Attila avertizează că sunt necesare mi. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Nu găsiți vaccinul antigripal? Ce alternative avem și cum facem diferența între gripă și viroză - Spotmedia.ro",
-      "source": "Google Sanatate",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbkhTWUxBSUJWSDlyVnljaHlZdHhVZUQwUGVoMVVDQjltRC1iV1YtUE10NUtXbHhOdzdEcllBb0hGQ3gzdU1LWjVsVUp3RFdma2czVE9wckE3RFVUV2ZGQTlTd0tuZHNDSlA0Y285djdmZEk5ZXRzNGZJMWxzWWFEdUZTZ0tIejJCR2UwMUQ1djI0VEVsMTBqRlh2R2tYU0VHYTZkZXZmUEV1QWhsUzFDRTVGQVBXLTR3OEtSNlZMcFZ0M0hLRGk2ZDl3?oc=5",
-      "date": "2026-10-17T15:04:43+00:00",
-      "category": "Sanatate",
-      "summary": "Nu găsiți vaccinul antigripal? Ce alternative avem și cum facem diferența între gripă și viroză Spotmedia.ro Gripă sau răceală? Medicii din Timișoara explică simptomele care fac diferența și când trebuie să fim atenți Pagina de Timiș Gripă sau răceală? Medicii Spitalului CFR Timișoara explică diferențele și când pot apărea complicații Tion",
-      "instagram_caption": "Nu găsiți vaccinul antigripal? Ce alternative avem și cum facem diferența între gripă și viroză - Spotmedia.ro\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Nu găsiți vaccinul antigripal? Ce alternative avem și cum facem diferența între gripă și viroză - Sp. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Pointed! Bloomberg's Weekly News Quiz For Risk-Takers",
       "source": "Bloomberg",
       "url": "https://www.bloomberg.com/news/videos/2026-10-17/pointed-bloomberg-s-weekly-news-quiz-for-risk-takers-video",
@@ -4788,80 +4893,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Pointed! Bloomberg's Weekly News Quiz For Risk-Takers. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Fiica unei actrițe din \"Game of Thrones\", numită canibală după ce a recunoscut că a mâncat cenușa mamei sale. De ce a recurs la asta - Film Now",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPSjdtSDJYd1Bwa2VYeENkb1B2N2ZXdEpPSkRIT3ZuTm11VlhmcUdJRG1uVU9velpZeDVoVm45ZkRPMkFKZG4ybDhvMXNuUi10cllCZDZxTWI1ZlFneDAxSVZudmhzaHcxSkwtemNYTHJHUmZFb0JEVjJiOGlzblE0WFBDSFZFZXN5VnQ4dUpBdjB5SThJSTZtQ2tzM3FGRnBzQzZWbU96T2ZLbnJVT3VaZFF3cENtOWlSeGxmbWt5MTlhTVlNNFdLMndOcmVjSk16Mng3OTlnVVl6MVNEV01iTjM3dlZtbHdzWTdwRk1lZnF1aEJfdW1J?oc=5",
-      "date": "2026-10-17T12:45:26+00:00",
-      "category": "Entertainment",
-      "summary": "Fiica unei actrițe din \"Game of Thrones\", numită canibală după ce a recunoscut că a mâncat cenușa mamei sale. De ce a recurs la asta Film Now Ritualul neobișnuit al actriței Rachael Stirling înainte de a urca pe scenă https://www.goldring.ro/ro Actrița Rachael Stirling, „tratată ca o canibală” după ce a dezvăluit că a mâncat din cenușa mamei sale: „Oamenii sunt șocați” PRO TV.ro Înghite puțin din cenușa mamei înainte",
-      "instagram_caption": "Fiica unei actrițe din \"Game of Thrones\", numită canibală după ce a recunoscut că a mâncat cenușa mamei sale. De ce a recurs la asta - Film Now\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Fiica unei actrițe din \"Game of Thrones\", numită canibală după ce a recunoscut că a mâncat cenușa ma. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Andreea Bălan, schimbări în echipa de dansatori după Petrișor Ruge: „E foarte tare!”",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPdHdWbXBJZ281MkNhWEpVdHl0bjJqQ1N1SExzaVZ4eFlUWDlXejJVMzNMaTNmZ1FKbC02YmRWUkhCbVdIcVRsVnVvVFpUVlVkYXVVa0oxb0VMM2ZjRnBzX2ZoaFU4SW1CTG5iVDNENHV1eThjV01xdjlDZHYtQ3E2WkNGVWpyUnBMY09ScEpmUWNTNUFuOEFsMHNKZlNJd1ItMzJLMXVwaXpTVzY0dWsxVjFza0w4MWk3VzlSRkhLOGh6Q1Z6amZYNzNGbno3Ui1nU2hWeExKeVh4T0RtM1hjYmR1M2JCaHgw?oc=5",
-      "date": "2026-10-17T12:44:59+00:00",
-      "category": "Entertainment",
-      "summary": "Andreea Bălan a operat modificări importante în componența trupei sale de dansatori. Decizia vine ca urmare a încheierii colaborării de lungă durată cu Petrișor Ruge, un parteneriat emblematic în cariera artistei. Noile schimbări par să o entuziasmeze pe artistă, care a declarat deja că rezultatul este \"foarte tare\", sugerând o direcție proaspătă și inovatoare pentru spectacolele sale.",
-      "instagram_caption": "Andreea Bălan vine cu noutăți bombă! ✨ Artista a făcut schimbări majore în echipa ei de dansatori, după ce a încheiat un capitol important alături de Petrișor Ruge. 💃🕺 Se pare că noua formulă o entuziasmează la maxim: \"E foarte tare!\" Ce surprize ne pregătește? 🤔 Abia așteptăm să vedem spectacolele! 👇",
-      "hashtags": [
-        "AndreeaBalan",
-        "NouaEchipa",
-        "Dansatori",
-        "PetrisorRuge",
-        "MuzicaRomaneasca",
-        "Schimbari",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Ce schimbări a făcut Andreea Bălan în echipa de dansatori după ce a încheiat colaborarea cu Petrișor. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Nici o dată pe lună, nici la două săptămâni. Cât de des trebuie schimbată lenjeria de pat",
-      "source": "Mediafax",
-      "url": "https://www.mediafax.ro/sanatate/nici-o-data-pe-luna-nici-la-doua-saptamani-cat-de-des-trebuie-schimbata-lenjeria-de-pat-23827175",
-      "date": "2026-10-17T11:11:01+00:00",
-      "category": "Sanatate",
-      "summary": "Lenjeria de pat ar trebui schimbată o dată pe săptămână, nu la două săptămâni sau o dată pe lună, cum fac mulți, iar fețele de pernă chiar mai des, recomandă specialiștii.",
-      "instagram_caption": "Nici o dată pe lună, nici la două săptămâni. Cât de des trebuie schimbată lenjeria de pat\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Nici o dată pe lună, nici la două săptămâni. Cât de des trebuie schimbată lenjeria de pat. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "A crezut că are o icoană veche pe peretele din bucătărie. Era, de fapt, o avere. Tabloul s-a vândut cu 24,2 milioane de euro - Antena 3",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPSHRxNDhxbGR2bDllYjk3dWoxeVYyVzE1ckJoZ1VLQ1k1YTBWeVVNYXA4NkhaeGNkVmlTVkhFQ1BvLTlEN080MzRqelZBVUY0RF9ZaGhKbkFvRHd0dzFpMEVxREdNRGE2aUZPa1JtRGVnem9WZXBFSElURGNiMzV3cUliSWJ1UlVURlFwNkRxWTdKdDlLcm9mUUNESWRRX0N3YnJXSDVOcVVnTWFKN2JydGhGWm9tTkFweS1IeGVlTkp1Q2FLaU5HclM2X3RVUkhGdVBQRkhzcmphLVlBYVh3YmR6bWlBM1Vzb0JacjJfUDJnWGdlRUVTZi1EVGNYcTVKdkHSAfABQVVfeXFMT1NMTEtVSnNJY3BiTkhUZmFTNDlZeHVJWnBwVGRucXFCU19uZXlRUTFvZDhfdjZnbnVSVEZESml6YjNEeFJ5bTlvWGpWQldiaGlVVFhseXVDZDZzVl9rc0Z0MURGTlVHOUlYNmc1MDdBWkw0V2Rrb2pQTzNBQmlpZnlQU05KY2d5XzJmWllxVTZLZUU2SHFBTnRIU3Z5dnhNaVFqbVlSVlliakhvYlRjTWhpN0JNbENyNlNsXzZROUlKNlJWSjl1OHhYOFh5VFZCNjlxVEVfR0l6blVETEhGOWNiYjJCZmdWQzc2bVp6cGV0?oc=5",
-      "date": "2026-10-17T10:00:01+00:00",
-      "category": "Entertainment",
-      "summary": "A crezut că are o icoană veche pe peretele din bucătărie. Era, de fapt, o avere. Tabloul s-a vândut cu 24,2 milioane de euro Antena 3",
-      "instagram_caption": "A crezut că are o icoană veche pe peretele din bucătărie. Era, de fapt, o avere. Tabloul s-a vândut cu 24,2 milioane de euro - Antena 3\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: A crezut că are o icoană veche pe peretele din bucătărie. Era, de fapt, o avere. Tabloul s-a vândut . Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "David Byrne Explains How Forgotten Ideas Come Back to Life",
@@ -5111,25 +5142,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Fmr. Fed Governor Betsy Duke on CPI Amid Bank Results. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Firma susținută de Gramercy respinge eliminarea de la un proces de 36 de miliarde de dolari",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-12/gramercy-backed-firm-fends-off-ouster-from-36-billion-lawsuit",
-      "date": "2026-10-12T13:00:17+00:00",
-      "category": "Bursa & Piete",
-      "summary": "O firmă de avocatură susținută de Gramercy Funds Management a fost concediată în mod ilegal dintr-un proces de 36 de miliarde de dolari în care doi investitori privați de credit s-au confruntat cu privire la cine va reprezenta sute de mii de victime ale prăbușirii unui baraj în Brazilia.",
-      "instagram_caption": "Gramercy-Backed Firm Fends Off Ouster From $36 Billion Lawsuit\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Gramercy-Backed Firm Fends Off Ouster From $36 Billion Lawsuit. Professional photorealistic style. No text, no logos, no watermarks."
     }
   ]
 }
