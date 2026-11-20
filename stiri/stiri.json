@@ -1,17 +1,430 @@
 {
-  "updated_at": "2026-11-20T14:32:00.200990+00:00",
+  "updated_at": "2026-11-20T21:44:48.637911+00:00",
   "run_log": {
     "AI & Tech": 3,
     "Sport": 3,
     "Sanatate": 3,
     "Business": 3,
     "International": 3,
-    "Entertainment": 3,
+    "Entertainment": 0,
     "Romania": 3,
     "Stiinta": 3,
     "Bursa & Piete": 3
   },
   "items": [
+    {
+      "title": "Pacientă în stare gravă după ce a căzut de la etajul Secției de Neurologie din Spitalul Sibiu",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/actualitate/evenimente/o-pacienta-a-cazut-de-la-etajul-sectiei-de-neurologie-a-spitalului-judetean-din-sibiu-femeia-este-in-stare-grava-4046731",
+      "date": "2026-11-20T21:39:31+00:00",
+      "category": "Romania",
+      "summary": "O pacientă a căzut vineri de la etajul Secției de Neurologie a Spitalului Clinic Județean de Urgență Sibiu. Femeia se află în stare gravă. Informația a fost confirmată de Călin Boar, purtătorul de cuvânt al unității sanitare, citat de Agerpres.",
+      "instagram_caption": "Tragédie la Sibiu! 😔 O pacientă a căzut vineri de la etajul Secției de Neurologie a Spitalului Clinic Județean de Urgență Sibiu. Femeia se află în stare gravă, conform declarațiilor purtătorului de cuvânt al spitalului. Gândurile noastre sunt alături de ea și familia sa. 🙏 Rămânem atenți la evoluția situației.",
+      "hashtags": [
+        "Sibiu",
+        "Spital",
+        "Tragedie",
+        "Pacienta",
+        "Urgenta",
+        "Neurologie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: O pacientă a căzut de la etajul Secţiei de Neurologie a Spitalului Judeţean din Sibiu. Femeia este î. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Two-Thirds of Dementia Content On TikTok Is Misleading, Researchers Say",
+      "source": "Healthline",
+      "url": "https://www.healthline.com/health-news/dementia-content-tiktok-often-misleading",
+      "date": "2026-11-20T21:38:39.701956+00:00",
+      "category": "Sanatate",
+      "summary": "New research suggests that two-thirds (66.4%) of TikTok videos with dementia advice contained misleading information. Richard Drury/DigitalVision/Getty Images A new survey found that about two-thirds of dementia advice videos on TikTok contained inaccurate information. Researchers report that 44% of the creators behind the misleading dementia videos have no relevant qualifications. Experts advise seeking information ",
+      "instagram_caption": "Two-Thirds of Dementia Content On TikTok Is Misleading, Researchers Say\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sanatate",
+        "#Health",
+        "#Medicina",
+        "#Wellness"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Two-Thirds of Dementia Content On TikTok Is Misleading, Researchers Say. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "De ce se spune că se deschid cerurile pe 21 noiembrie și ce trebuie să faci obligatoriu cu prima lumânare aprinsă",
+      "source": "CSID",
+      "url": "https://www.csid.ro/stiri/de-ce-se-spune-ca-se-deschid-cerurile-pe-21-noiembrie-si-ce-trebuie-sa-faci-obligatoriu-cu-prima-lumanare-aprinsa-21361777/",
+      "date": "2026-11-20T21:38:37.260676+00:00",
+      "category": "Sanatate",
+      "summary": "Vovidenia se sărbătorește pe 21 noiembrie. Află de ce se spune că se deschid cerurile, ce tradiții se respectă și ce semnificație are prima lumânare aprinsă. Articolul De ce se spune că se deschid cerurile pe 21 noiembrie și ce trebuie să faci obligatoriu cu prima lumânare aprinsă apare prima dată în CSID: Ce se întâmplă Doctore? .",
+      "instagram_caption": "De ce se spune că se deschid cerurile pe 21 noiembrie și ce trebuie să faci obligatoriu cu prima lumânare aprinsă\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sanatate",
+        "#Health",
+        "#Medicina",
+        "#Wellness"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: De ce se spune că se deschid cerurile pe 21 noiembrie și ce trebuie să faci obligatoriu cu prima lum. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Comisioanele la bursă, pe înţelesul tuturor: tu cât plăteşti pentru un ordin de 1.000 de lei la Bursa de Valori Bucureşti? ZF a trecut în revistă grilele brokerilor după intrarea Salt Bank pe piaţă",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/burse-fonduri-mutuale/comisioanele-la-bursa-pe-intelesul-tuturor-tu-cat-platesti-pentru-un-ordin-de-1-000-de-lei-la-bursa-de-valori-bucuresti-zf-a-trecut-in-revista-grilele-brokerilor-dupa-intrarea-salt-bank-pe-piata-23283262",
+      "date": "2026-11-20T21:37:00+00:00",
+      "category": "Business",
+      "summary": "Comisionul pentru un ordin de cumpărare de acţiuni de 1.000 de lei la Bursa de Valori Bucureşti porneşte de la 5 lei şi ajunge la 9 lei la tarifele standard, arată grilele analizate de ZF după intrarea Salt Bank pe acest segment.",
+      "instagram_caption": "Comisioanele la bursă, pe înţelesul tuturor: tu cât plăteşti pentru un ordin de 1.000 de lei la Bursa de Valori Bucureşti? ZF a trecut în revistă grilele brokerilor după intrarea Salt Bank pe piaţă\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Comisioanele la bursă, pe înţelesul tuturor: tu cât plăteşti pentru un ordin de 1.000 de lei la Burs. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Comisioanele la bursă, pe înţelesul tuturor: tu cât plăteşti pentru un ordin de 1.000 de lei la Bursa de Valori Bucureşti? ZF a trecut în revistă grilele brokerilor după intrarea Salt Bank pe piaţă",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/burse-fonduri-mutuale/comisioanele-la-bursa-pe-intelesul-tuturor-tu-cat-platesti-pentru-un-ordin-de-1-000-de-lei-la-bursa-de-valori-bucuresti-zf-a-trecut-in-revista-grilele-brokerilor-dupa-intrarea-salt-bank-pe-piata-23283262",
+      "date": "2026-11-20T21:37:00+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Comisionul pentru un ordin de cumpărare de acţiuni de 1.000 de lei la Bursa de Valori Bucureşti porneşte de la 5 lei şi ajunge la 9 lei la tarifele standard, arată grilele analizate de ZF după intrarea Salt Bank pe acest segment.",
+      "instagram_caption": "Comisioanele la bursă, pe înţelesul tuturor: tu cât plăteşti pentru un ordin de 1.000 de lei la Bursa de Valori Bucureşti? ZF a trecut în revistă grilele brokerilor după intrarea Salt Bank pe piaţă\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Comisioanele la bursă, pe înţelesul tuturor: tu cât plăteşti pentru un ordin de 1.000 de lei la Burs. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "\"M-a înjurat de morți! Dacă îl prindeam, îl omoram.\" Alex Chipciu, scandal la Farul-U Cluj",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-intern/superliga/chipciu-scandal-farul-u-cluj-20574127",
+      "date": "2026-11-20T21:36:11+00:00",
+      "category": "Sport",
+      "summary": "Alexandru Chipciu (37 de ani) a răbufnit după victoria Universității Cluj cu Farul Constanța, scor 3-2, în etapa a 16-a din Superliga. Fotbalistul clujenilor a dezvăluit că a fost scuipat și înjurat de o persoană aflată în tribune. Incidentul a generat o reacție extrem de nervoasă din partea fostului internațional, care a declarat: „M-a înjurat de morți, de familie! Dacă îl prindeam, îl omoram. Nu se poate așa ceva, sunt tată de copii!”. Chipciu a subliniat că astfel de comportamente nu își au locul pe stadioane și a cerut măsuri.",
+      "instagram_caption": "Scandal monstru la meciul Farul - U Cluj! 🤯 Alex Chipciu a răbufnit după ce a fost scuipat și înjurat de un suporter. \"M-a înjurat de morți, de familie! Dacă îl prindeam, îl omoram. Nu se poate așa ceva, sunt tată de copii!\" a declarat fotbalistul. O reacție extrem de dură, care ridică întrebări despre comportamentul fanilor pe stadioane. ❌ Ce părere aveți?",
+      "hashtags": [
+        "#AlexChipciu",
+        "#Superliga",
+        "#Farul",
+        "#UCluj",
+        "#Fotbal",
+        "#Scandal",
+        "#ComportamentFans",
+        "#DeclaratiiDure"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: DECLARAȚII „M-a înjurat de morți, de familie! Dacă îl prindeam, îl omoram”. Alex Chipciu, scandal mo. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Transferul lui Petru Popescu, inspirat de o greșeală a lui Gigi Becali: un fost golgheter de la Dinamo și CFR Cluj",
+      "source": "Fanatik",
+      "url": "https://www.fanatik.ro/transferul-lui-petru-popescu-inspirat-de-o-greseala-a-lui-gigi-becali-un-fost-golgheter-de-la-dinamo-si-cfr-cluj-21594700",
+      "date": "2026-11-20T21:35:50+00:00",
+      "category": "Sport",
+      "summary": "Gigi Becali (68 de ani) a povestit ce l-a determinat să-l transfere la FCSB pe atacantul moldovean Petru Popescu, de la Petrocub Hîncești. O experiență din trecut l-a convins să parafeze rapid mutarea.",
+      "instagram_caption": "Transferul lui Petru Popescu, inspirat de o greșeală a lui Gigi Becali: un fost golgheter de la Dinamo și CFR Cluj\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sport",
+        "#Fotbal",
+        "#Romania",
+        "#Campionat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Transferul lui Petru Popescu, inspirat de o greșeală a lui Gigi Becali: un fost golgheter de la Dina. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Bolojan nu se așteaptă la plecări din PNL, dar nu le exclude. „Cei care nu sunt de acord pot să aibă un alt drum”",
+      "source": "HotNews",
+      "url": "https://hotnews.ro/bolojan-nu-se-asteapta-la-plecari-din-pnl-dar-nu-le-exclude-cei-care-nu-sunt-de-acord-pot-sa-aiba-un-alt-drum-2410213",
+      "date": "2026-11-20T21:34:34+00:00",
+      "category": "Romania",
+      "summary": "Preşedintele PNL, Ilie Bolojan, a declarat, vineri seara, într-o conferinţă de presă la Sibiu, că nu se aşteaptă la plecări din partid, în contextul temerilor privind o posibilă scindare a formaţiunii, informează Agerpres. „Nu ne aşteptăm la plecări din partid”, a afirmat Ilie Bolojan, întrebat de jurnalişti dacă există riscul ca unii liberali să părăsească …",
+      "instagram_caption": "Bolojan nu se așteaptă la plecări din PNL, dar nu le exclude. „Cei care nu sunt de acord pot să aibă un alt drum”\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Bolojan nu se așteaptă la plecări din PNL, dar nu le exclude. „Cei care nu sunt de acord pot să aibă. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Scandal! Ioan Sabău a rupt tăcerea după Chipciu și Macalou: Declarații neașteptate",
+      "source": "DigiSport",
+      "url": "https://www.digisport.ro/fotbal/liga-1/scandal-dupa-chipciu-si-macalou-sabau-a-vorbit-si-el-si-putini-se-asteptau-la-ce-avea-sa-zica-4616693",
+      "date": "2026-11-20T21:28:46+00:00",
+      "category": "Sport",
+      "summary": "Un nou episod de tensiune mocnește în fotbalul românesc. După ce Alexandru Chipciu și Mamadou Macalou au fost în centrul atenției cu declarațiile lor, a venit rândul lui Ioan Sabău să ia poziție. Fostul internațional a intervenit în discuție, iar cuvintele sale au surprins publicul și au stârnit controverse, adăugând o nouă dimensiune unui scandal care deja făcea valuri. Ce anume a declarat Sabău și de ce reacția sa a fost atât de neașteptată?",
+      "instagram_caption": "Tensiunea crește în fotbal! 💥 După declarațiile lui Chipciu și Macalou, Ioan Sabău a intervenit și el, iar vorbele sale au lăsat pe toată lumea fără cuvinte. 😲 Ce a spus fostul mare jucător de data aceasta? Un nou episod incendiar într-un scandal ce pare să nu se mai termine! Nu rata detalii! ⚽ #Scandal #FotbalRomania #IoanSabau #Chipciu #Macalou #DeclaratiiSoc #NEXAS",
+      "hashtags": [
+        "Scandal",
+        "FotbalRomania",
+        "IoanSabau",
+        "Chipciu",
+        "Macalou",
+        "DeclaratiiSoc",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Scandal! După Chipciu și Macalou, Sabău a vorbit și el și puțini se așteptau la ce avea să zică. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Iraq PM targets militia stronghold in bid to assert state control",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/aje-onl-nf_iraq-pm-targets-militia-stronghold-jurf-al-sakhar-201126?traffic_source=rss",
+      "date": "2026-11-20T21:28:25+00:00",
+      "category": "International",
+      "summary": "Iraqi PM Ali al-Zaidi said an operation in Jurf al-Sakhar marks the start of a nationwide push to assert state control.",
+      "instagram_caption": "Iraq PM targets militia stronghold in bid to assert state control\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Iraq PM targets militia stronghold in bid to assert state control. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ipoteza Riemann: Semnificația monumentală a unei posibile soluții",
+      "source": "New Scientist",
+      "url": "https://www.newscientist.com/article/2600226-what-is-the-riemann-hypothesis-and-why-is-its-solution-so-monumental/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+      "date": "2026-11-20T21:24:57+00:00",
+      "category": "Stiinta",
+      "summary": "A fost denumită cea mai dificilă problemă din matematică, iar acum, printr-o combinație de ingeniozitate și perseverență umană, alături de puterea computațională a inteligenței artificiale, ipoteza Riemann ar putea fi, în sfârșit, soluționată.",
+      "instagram_caption": "Ipoteza Riemann, considerată cea mai dificilă problemă din matematică, ar putea fi în sfârșit rezolvată! 🤯 O combinație de ingeniozitate umană și puterea de calcul a inteligenței artificiale a dus la acest potențial progres monumental. Află mai multe despre această descoperire epocală și cum rescrie istoria matematicii! 🚀 Citește articolul complet pe site-ul NEXAS.",
+      "hashtags": [
+        "#IpotezaRiemann",
+        "#Matematica",
+        "#AI",
+        "#Descoperire",
+        "#Stiinta",
+        "#NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: What is the Riemann hypothesis and why is its solution so monumental?. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Neculăescu: Incidente în Marea Neagră, Polonia și Danemarca întăresc unitatea NATO",
+      "source": "G4Media",
+      "url": "https://www.g4media.ro/ministrul-neculaescuatacuri-in-marea-neagra-rachete-deasupra-poloniei-si-o-tentativa-de-asasinat-in-danemarca-apropie-si-mai-mult-aliatii-nato.html",
+      "date": "2026-11-20T21:18:20+00:00",
+      "category": "Romania",
+      "summary": "Ministrul Afacerilor Externe, Dan Neculăescu, a declarat că recentele incidente, incluzând atacurile asupra navelor comerciale în Marea Neagră, rachetele care au încălcat spațiul aerian al Poloniei și tentativa de asasinare a unui artist ucrainean în Danemarca, nu fac decât să consolideze unitatea aliaților NATO și să întărească Alianța. Aceste evenimente subliniază necesitatea cooperării continue în fața amenințărilor la adresa securității regionale și globale.",
+      "instagram_caption": "Ministrul de Externe Dan Neculăescu subliniază cum recentele incidente — atacuri în Marea Neagră 🚢, rachete deasupra Poloniei 🇵🇱 și o tentativă de asasinat în Danemarca 🇩🇰 — întăresc unitatea NATO! 🤝 Aceste evenimente critice, departe de a diviza, consolidează Alianța în fața amenințărilor. Un semnal clar de unitate și determinare pentru securitatea regională și globală. #NATO #Securitate #Europa #DanNeculăescu #MareaNeagră #Polonia #Danemarca #UnitateNATO #Aliati",
+      "hashtags": [
+        "#NATO",
+        "#Securitate",
+        "#Europa",
+        "#DanNeculăescu",
+        "#MareaNeagră",
+        "#Polonia",
+        "#Danemarca",
+        "#UnitateNATO",
+        "#Aliati"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Ministrul Neculăescu:Atacuri în Marea Neagră, rachete deasupra Poloniei şi o tentativă de asasinat î. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "CrowdStrike în discuții pentru a cumpăra firma de securitate cibernetică Zscaler",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-20/crowdstrike-is-in-talks-to-buy-cybersecurity-firm-zscaler",
+      "date": "2026-11-20T21:05:11+00:00",
+      "category": "Bursa & Piete",
+      "summary": "CrowdStrike Holdings Inc. se află în discuții pentru achiziționarea Zscaler Inc., conform unor surse familiare cu situația. Această tranzacție ar putea deveni una dintre cele mai mari din istoria sectorului securității cibernetice, marcând o potențială consolidare semnificativă pe piață.",
+      "instagram_caption": "🚨 Știre de ultimă oră în lumea securității cibernetice! CrowdStrike Holdings Inc. poartă discuții pentru a achiziționa Zscaler Inc., conform unor surse Bloomberg. 🚀 Această potențială tranzacție ar putea fi una dintre cele mai mari din istoria sectorului, marcând o consolidare majoră pe piața bursieră și de tehnologie. Rămâneți pe fază pentru detalii! #NEXAS #Bursa #Piete #CrowdStrike #Zscaler #Cibernetica #Achizitie #Tehnologie",
+      "hashtags": [
+        "NEXAS",
+        "Bursa",
+        "Piete",
+        "CrowdStrike",
+        "Zscaler",
+        "Cibernetica",
+        "Achizitie",
+        "Tehnologie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: CrowdStrike Is in Talks to Buy Cybersecurity Firm Zscaler. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Avertisment experți: Aproape toți specialiștii AI, vulnerabili la capcane amoroase",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+      "date": "2026-11-20T20:58:29+00:00",
+      "category": "AI & Tech",
+      "summary": "Specialiștii în tehnologie construiesc inovații care pot propulsa toate aspectele lumii. Însă, pot ei să-și protejeze inimile? Aceasta este vulnerabilitatea pe care o exploatează schemele de tip 'honey trap'.",
+      "instagram_caption": "Specialiștii AI dezvoltă tehnologii uimitoare care transformă lumea 🌍. Dar, în spatele ecranelor, sunt vulnerabili la capcane sentimentale? 💔 Experții avertizează că aproape oricine lucrează în domeniul AI ar putea fi o țintă pentru scheme de tip 'honey trap', unde conexiunile personale sunt manipulate. Rămâneți vigilenți! #NEXAS #AI #Tehnologie #SecuritateCibernetica #HoneyTrap",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tehnologie",
+        "#SecuritateCibernetica",
+        "#HoneyTrap"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Experts warn: Nearly everyone in AI is susceptible to a honey trap scheme right now. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Trump threatens ban on US firms building AI data centres overseas",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+      "date": "2026-11-20T20:54:12+00:00",
+      "category": "International",
+      "summary": "The US president provided little detail on the potential policy, saying others in his team were hearing about it for the first time.",
+      "instagram_caption": "Trump threatens ban on US firms building AI data centres overseas\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Trump threatens ban on US firms building AI data centres overseas. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "New NASA Seed Funding Primes Small Businesses for Innovation",
+      "source": "NASA News",
+      "url": "https://www.nasa.gov/directorates/rtmd/new-nasa-seed-funding-primes-small-businesses-for-innovation/",
+      "date": "2026-11-20T20:46:14+00:00",
+      "category": "Stiinta",
+      "summary": "Awards to small businesses around the country are addressing some of NASA’s most crucial technology needs for exploration of the Moon and Mars while fueling the U.S. space economy. NASA’s Small Business Innovation Research/Small Business Technology Transfer (SBIR/STTR) program recently selected 302 innovative projects, for a total investment of up to $171 million in seed […]",
+      "instagram_caption": "New NASA Seed Funding Primes Small Businesses for Innovation\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: New NASA Seed Funding Primes Small Businesses for Innovation. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Russian ornithologist jailed over small donations to Navalny's foundation",
+      "source": "DW News",
+      "url": "https://www.dw.com/en/russian-ornithologist-jailed-over-small-donations-to-navalny-s-foundation/a-80005505?maca=en-rss-en-world-4025-rdf",
+      "date": "2026-11-20T20:45:00+00:00",
+      "category": "International",
+      "summary": "Sofia Rosenfeld has devoted her life to studying Arctic birds. A Russian court sentenced her to 3.5 years in a penal colony over donations to Navalny's foundation. Friends and family are fighting for her release.",
+      "instagram_caption": "Russian ornithologist jailed over small donations to Navalny's foundation\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Russian ornithologist jailed over small donations to Navalny's foundation. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "YouTube is reportedly preparing to settle social media addiction claims for $3 billion",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement",
+      "date": "2026-11-20T20:43:52+00:00",
+      "category": "AI & Tech",
+      "summary": "YouTube is preparing to pay $3 billion to thousands of school districts to settle claims that its \"addictive design\" harmed kids, according to Bloomberg. Sources tell the publication that YouTube reached the agreement \"in principle,\" and that the deal would also include new safeguards for teens. The settlement would allow Google to avoid a wave […]",
+      "instagram_caption": "YouTube is reportedly preparing to settle social media addiction claims for $3 billion\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tech",
+        "#Tehnologie",
+        "#InteligentaArtificiala"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: YouTube is reportedly preparing to settle social media addiction claims for $3 billion. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Trump se oțărăște din nou la CPI. Președintele american a anunțat mândru că China a fost de acord în premieră să condamne excesele Curții",
+      "source": "Economica",
+      "url": "https://www.economica.net/trump-se-otaraste-din-nou-la-cpi-presedintele-american-a-anuntat-mandru-ca-china-a-fost-de-acord-in-premiera-sa-condamne-excesele-curtii_997858.html",
+      "date": "2026-11-20T20:21:06+00:00",
+      "category": "Business",
+      "summary": "Preşedintele american Donald Trump a acuzat vineri Curtea Penală Internaţională (CPI) că este \"scăpată de sub control\", lăudând China şi Rusia pentru că i s-au alăturat în condamnarea acţiunilor acestei instituţii, relatează AFP, transmite Agerpres.",
+      "instagram_caption": "Trump se oțărăște din nou la CPI. Președintele american a anunțat mândru că China a fost de acord în premieră să condamne excesele Curții\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Trump se oțărăște din nou la CPI. Președintele american a anunțat mândru că China a fost de acord în. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "ULTIMA ORĂ România, blocată iar de gigantul Pfizer pentru vaccinuri COVID. ROMATSA are din nou conturile blocate",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/ultima-ora-romania-blocata-iar-de-gigantul-pfizer-pentru-vaccinuri-covid-romatsa-are-din-nou-conturile-blocate-23001189?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-11-20T20:08:00+00:00",
+      "category": "Business",
+      "summary": "ROMATSA are din nou cu banii blocați în disputa juridică pe care România o are cu gigantul farmaceutic Pfizer pentru vaccinuri livrate în pandemia COVID, contractate de stat, dar refuzate ulterior.",
+      "instagram_caption": "ULTIMA ORĂ România, blocată iar de gigantul Pfizer pentru vaccinuri COVID. ROMATSA are din nou conturile blocate\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: ULTIMA ORĂ România, blocată iar de gigantul Pfizer pentru vaccinuri COVID. ROMATSA are din nou contu. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Conturile ROMATSA, blocate din nou de Pfizer în disputa pe vaccinurile COVID",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/ultima-ora-romania-blocata-iar-de-gigantul-pfizer-pentru-vaccinuri-covid-romatsa-are-din-nou-conturile-blocate-23001189?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-11-20T20:08:00+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Regia Autonomă Administrația Română a Serviciilor de Trafic Aerian (ROMATSA) se confruntă din nou cu blocarea conturilor. Această situație survine în contextul disputei juridice dintre România și gigantul farmaceutic Pfizer, privind vaccinurile anti-COVID-19. Vaccinurile au fost contractate de statul român în timpul pandemiei, dar au fost ulterior refuzate, declanșând un litigiu complex cu implicații financiare semnificative pentru instituțiile publice.",
+      "instagram_caption": "🚨 ALERTĂ MAXIMĂ! ROMÂNIA, BLOCATĂ IAR! 🚨 Conturile ROMATSA, instituția crucială pentru traficul aerian, sunt din nou blocate! ✈️ Situația este o consecință directă a disputei juridice dintre statul român și gigantul farmaceutic Pfizer, privind vaccinurile anti-COVID-19 💉. Acestea au fost contractate în pandemie, dar ulterior refuzate. Cine plătește, de fapt? 🤔 #ROMATSA #Pfizer #Romania #VaccinuriCOVID #Litigiu #StiriRomania #NEXAS",
+      "hashtags": [
+        "ROMATSA",
+        "Pfizer",
+        "Romania",
+        "VaccinuriCOVID",
+        "Litigiu",
+        "StiriRomania",
+        "NEXAS"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: ULTIMA ORĂ România, blocată iar de gigantul Pfizer pentru vaccinuri COVID. ROMATSA are din nou contu. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Oamenii de știință au descoperit limbajul ascuns al psihopaților și nu este cum se așteptau",
+      "source": "Descopera Ro",
+      "url": "https://www.descopera.ro/stiinta/21158770-oamenii-de-stiinta-au-descoperit-limbajul-ascuns-al-psihopatilor-si-nu-este-cum-se-asteptau",
+      "date": "2026-11-20T18:00:29+00:00",
+      "category": "Stiinta",
+      "summary": "Oamenii de știință au descoperit că trăsăturile psihopatice sunt asociate cu modele surprinzător de diferite de limbaj. Descoperirile contestă stereotipurile familiare despre psihopatie și sugerează că poveștile pe care oamenii le spun despre viața lor […] Articolul Oamenii de știință au descoperit limbajul ascuns al psihopaților și nu este cum se așteptau apare prima dată în Descopera .",
+      "instagram_caption": "Oamenii de știință au descoperit limbajul ascuns al psihopaților și nu este cum se așteptau\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Oamenii de știință au descoperit limbajul ascuns al psihopaților și nu este cum se așteptau. Professional photorealistic style. No text, no logos, no watermarks."
+    },
     {
       "title": "Japonia: Exporturi-record în octombrie, dar petrolul scump a menținut deficitul comercial",
       "source": "Forbes Romania",
@@ -190,25 +603,6 @@
       "image_prompt": "Premium editorial photograph for Business news: Adrian Sandu, secretarul general al ACAROM, devine consilier onorific al premierului Luca Niculescu. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Adrian Sandu, secretarul general ACAROM, devine consilier onorific al premierului Luca Niculescu",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/eveniment/adrian-sandu-secretarul-general-al-acarom-devine-consilier-onorific-al-premierului-luca-niculescu-23286234",
-      "date": "2026-11-20T14:16:31+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Adrian Sandu, secretarul general al Asociației Constructorilor de Automobile din România (ACAROM), a fost numit consilier onorific al premierului Luca Niculescu. Această numire îl aduce pe un reprezentant important al industriei auto din România în echipa guvernamentală, subliniind o potențială consolidare a legăturilor dintre mediul de afaceri și administrația centrală.",
-      "instagram_caption": "O veste importantă pentru industria auto românească! 🚗 Adrian Sandu, secretarul general ACAROM, devine consilier onorific al premierului Luca Niculescu. O colaborare strategică ce va aduce expertiza sectorului privat direct în Guvern. Ce impact crezi că va avea această decizie? Spune-ne părerea ta! 👇 #AdrianSandu #ACAROM #PremierLucaNiculescu #GuvernulRomaniei #IndustriaAuto #Romania 🇷🇴",
-      "hashtags": [
-        "#AdrianSandu",
-        "#ACAROM",
-        "#PremierLucaNiculescu",
-        "#GuvernulRomaniei",
-        "#IndustriaAuto",
-        "#Romania"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Adrian Sandu, secretarul general al ACAROM, devine consilier onorific al premierului Luca Niculescu. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Săptămâna colapsului digital: Când tehnologia a părut să cedeze",
       "source": "The Verge",
       "url": "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast",
@@ -293,25 +687,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Business news: Aeroportul Timișoara se redeschide duminică seara, după lucrări de refacere a pistei. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Aeroportul Timișoara se redeschide duminică seara, după lucrări de refacere a pistei",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/aeroportul-timisoara-se-redeschide-duminica-seara-dupa-lucrari-de-refacere-a-pistei-22999707?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-11-20T14:00:00+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Aeroportul Internațional „Traian Vuia” din Timișoara își reia activitatea duminică, după 20 de zile de lucrări la pistă.",
-      "instagram_caption": "Aeroportul Timișoara se redeschide duminică seara, după lucrări de refacere a pistei\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Aeroportul Timișoara se redeschide duminică seara, după lucrări de refacere a pistei. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Tusk: O rachetă rusească a lovit Polonia în timpul exercițiilor militare ale aliaților Ucrainei",
@@ -487,6 +862,24 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: Sindromul intestinului iritabil vs boala inflamatorie intestinală: analize și diagnostic diferențial. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
+      "title": "Combatting adversarial distillation",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "date": "2026-11-20T10:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "OpenAI’s layered approach to adversarial distillation combines model AI training, safeguards, detection, and enforcement to protect against capability extraction.",
+      "instagram_caption": "Combatting adversarial distillation\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tech",
+        "#Tehnologie",
+        "#InteligentaArtificiala"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Combatting adversarial distillation. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
       "title": "BREAKING: Raed Arafat, trimis în judecată de Parchetul Militar în dosarul „Elicopterul”",
       "source": "Google Ent",
       "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNUUcyaXJuMV9lR2JkNVpMQWc0UE1LZlFJd3ZkY1hWTG83QVRidmxOVXpId3liSXgtLWtJZDJCX1BSU3djZlA2UldDWGZxNW5nem9Kck5ZRTRzQ2UzYncxT3NoNG4xakRmYml4SU5RdHlLUjZkdnZZem5sQW1vWmhDQWlueThlcHdpaVFhbi14eEpsZXdnUEhGVndZY0JuVnE4WGxOVWJnUHdLM3hvM2gwVUZrYXlNR3dESUxfZVo0Y0RHOWhYcTdRVWE3MXJ4dHdweXpwWng5WjV1VGdWdXh1X0FmTk55Tno4eG41RTBsT0thaUZC?oc=5",
@@ -525,19 +918,19 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: A murit tatăl lui Bruno Mars / Peter Hernandez l-a inițiat în muzică, apoi au locuit împreună în maș. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Studiu uimitor: Muzica personalizată reduce stresul mai eficient decât zgomotul roz",
+      "title": "Un playlist personalizat, efecte surprinzătoare asupra corpului. Ce arată un studiu",
       "source": "Mediafax",
       "url": "https://www.mediafax.ro/sanatate/un-playlist-personalizat-efecte-surprinzatoare-asupra-corpului-ce-arata-un-studiu-23846566",
       "date": "2026-11-20T09:32:33+00:00",
       "category": "Sanatate",
-      "summary": "Un studiu canadian a demonstrat efecte surprinzătoare: doar 24 de minute de muzică personalizată au redus hormonul stresului, cortizolul, de peste două ori mai mult decât zgomotul roz. Descoperirea subliniază puterea unui playlist adaptat individual asupra bunăstării fizice și mentale, oferind o metodă eficientă și accesibilă de combatere a stresului cotidian.",
-      "instagram_caption": "🎶 Un studiu fascinant din Canada a dezvăluit puterea incredibilă a muzicii personalizate! Doar 24 de minute dintr-un playlist adaptat individual pot reduce hormonul stresului (cortizolul) de peste două ori mai eficient decât zgomotul roz. 🤯 E timpul să-ți cureți playlistul și să-l transformi într-o armă secretă pentru bunăstare! Ce melodii te relaxează cel mai mult? Spune-ne în comentarii! 👇 #MuzicaAntiStres #PlaylistPersonalizat #SanatateMentalasiFizica #StudiuCercetare #NEXAS",
+      "summary": "Un studiu canadian arată că doar 24 de minute de muzică personalizată scad hormonul stresului, cortizolul, de peste două ori mai eficient decât zgomotul roz. Această descoperire subliniază impactul profund al playlisturilor create individual asupra stării de bine. Potențialul muzicii ca instrument de gestionare a stresului, reducerea anxietății și îmbunătățirea sănătății mentale este imens. Este o metodă accesibilă și plăcută de a-ți regla echilibrul fizic și mental.",
+      "instagram_caption": "Știm că muzica te relaxează, dar un studiu canadian arată că un playlist personalizat poate face minuni! 🎶 Doar 24 de minute reduc hormonul stresului, cortizolul, de peste două ori mai eficient decât zgomotul roz. Imaginează-ți puterea playlistului tău! ✨ Ce melodii te ajută pe tine să te deconectezi? Spune-ne în comentarii! 👇",
       "hashtags": [
-        "MuzicaAntiStres",
-        "PlaylistPersonalizat",
-        "SanatateMentalasiFizica",
-        "StudiuCercetare",
-        "NEXAS"
+        "#MuzicaAntiStres",
+        "#PlaylistPersonalizat",
+        "#SanatateMentala",
+        "#NEXAS",
+        "#Studiu"
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Sanatate news: Un playlist personalizat, efecte surprinzătoare asupra corpului. Ce arată un studiu. Professional photorealistic style. No text, no logos, no watermarks."
@@ -4169,60 +4562,6 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: Cum a fost la Half Is Free, ediția de toamnă, de la Cluj - Alist Magazine. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Copil de 9 ani, rănit grav de o petardă care i-a explodat în mână",
-      "source": "G4Media",
-      "url": "https://www.g4media.ro/copil-de-9-ani-ranit-grav-de-o-petarda-care-i-a-explodat-in-mana.html",
-      "date": "2026-11-15T19:33:11+00:00",
-      "category": "Romania",
-      "summary": "Un copil de 9 ani a ajuns, duminică, la spital după ce o petardă i-a explodat în mână. Incidentul a avut loc în localitatea Cosoba, județul Giurgiu. Băiatul a ridicat de pe stradă o petardă neexplodată pentru a o reaprindă, moment în care aceasta i-ar fi explodat în mână. „La data de 15 noiembrie a.c., […] © G4Media.ro .",
-      "instagram_caption": "Copil de 9 ani, rănit grav de o petardă care i-a explodat în mână\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Copil de 9 ani, rănit grav de o petardă care i-a explodat în mână. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Zelensky le îndeamnă SUA și Musk să ridice restricțiile Starlink și să fie pe „partea dreaptă a istoriei”",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss",
-      "date": "2026-11-15T19:32:39+00:00",
-      "category": "International",
-      "summary": "Președintele ucrainean spune că restricțiile sunt încă în vigoare și fac dificilă oprirea atacurilor rusești.",
-      "instagram_caption": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#International",
-        "#StiriMondiale",
-        "#Lume",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Cum crede AUR că ar trebui făcută reforma administrativ-teritorială a României: „E nevoie de reformarea întregului aparat de stat”",
-      "source": "Digi24",
-      "url": "https://www.digi24.ro/stiri/actualitate/politica/cum-crede-aur-ca-ar-trebui-facuta-reforma-administrativ-teritoriala-a-romaniei-e-nevoie-de-reformarea-intregului-aparat-de-stat-4037541",
-      "date": "2026-11-15T19:31:55+00:00",
-      "category": "Romania",
-      "summary": "Alianța pentru Unirea Românilor (AUR) a prezentat, cu ocazia Forumului Aleșilor Locali din România, desfășurat la Palatul Parlamentului, propria viziune privind reorganizarea administrativă.",
-      "instagram_caption": "Cum crede AUR că ar trebui făcută reforma administrativ-teritorială a României: „E nevoie de reformarea întregului aparat de stat”\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Cum crede AUR că ar trebui făcută reforma administrativ-teritorială a României: „E nevoie de reforma. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "(P) Marcus Aurelius lua un medicament care conținea opiu! Ce era teriaca, preparatul cu zeci de ingrediente folosit de împăratul Romei",
       "source": "CSID",
       "url": "https://www.csid.ro/advertoriale/p-marcus-aurelius-lua-un-medicament-care-continea-opiu-ce-era-teriaca-preparatul-cu-zeci-de-ingrediente-folosit-de-imparatul-romei-21359211/",
@@ -4239,133 +4578,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Sanatate news: (P) Marcus Aurelius lua un medicament care conținea opiu! Ce era teriaca, preparatul cu zeci de ingr. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Bosnia are o problemă uriașă înaintea meciului cu România! De ce Barbarez ar putea sacrifica ultima etapă",
-      "source": "Fanatik",
-      "url": "https://www.fanatik.ro/bosnia-are-o-problema-uriasa-inaintea-meciului-cu-romania-de-ce-barbarez-ar-putea-sacrifica-ultima-etapa-21591888",
-      "date": "2026-11-15T19:22:07+00:00",
-      "category": "Sport",
-      "summary": "Bosnia are o problemă uriașă înaintea duelului cu România! Opt fotbaliști și selecționerul Sergej Barbarez riscă să rateze barajul din martie. Situația le-ar putea oferi tricolorilor un avantaj nesperat la Zenica.",
-      "instagram_caption": "Bosnia are o problemă uriașă înaintea meciului cu România! De ce Barbarez ar putea sacrifica ultima etapă\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Bosnia are o problemă uriașă înaintea meciului cu România! De ce Barbarez ar putea sacrifica ultima . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Brutal! A auzit ce a spus Jorge Jesus despre Cristiano Ronaldo și nu s-a abținut",
-      "source": "DigiSport",
-      "url": "https://www.digisport.ro/fotbal/fotbal-international/brutal-a-auzit-ce-a-spus-jorge-jesus-despre-cristiano-ronaldo-si-nu-s-a-abtinut-4607053",
-      "date": "2026-11-15T19:21:11+00:00",
-      "category": "Sport",
-      "summary": "Brutal! A auzit ce a spus Jorge Jesus despre Cristiano Ronaldo și nu s-a abținut",
-      "instagram_caption": "Brutal! A auzit ce a spus Jorge Jesus despre Cristiano Ronaldo și nu s-a abținut\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Brutal! A auzit ce a spus Jorge Jesus despre Cristiano Ronaldo și nu s-a abținut. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Congresul vrea reguli mai stricte pentru exportul de cipuri AI după scandalul Nvidia",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
-      "date": "2026-11-15T19:15:43+00:00",
-      "category": "AI & Tech",
-      "summary": "În urma scandalului de spionaj implicând pe acum-fostul CEO Nvidia, Jensen Huang, și un presupus spion chinez, Congresul SUA dorește să înăsprească regulile de export pentru cipurile AI. Atât democrații, cât și republicanii susțin măsuri care ar consolida restricțiile și au cerut ca Huang și alți lideri Nvidia să depună mărturie. Această inițiativă vizează securitatea națională și prevenirea transferului de tehnologie avansată.",
-      "instagram_caption": "Scandalul de spionaj implicând Nvidia și fostul CEO Jensen Huang a stârnit reacții puternice în Congresul SUA! 🕵️‍♂️🏛️ Legislatorii, atât democrați, cât și republicani, vor să înăsprească semnificativ regulile de export pentru cipurile AI, pe fondul temerilor legate de securitatea națională. Se cer mărturii de la liderii Nvidia. Ce impact va avea asta asupra viitorului AI și al tehnologiei? #Nvidia #AIChips #ExportRestrictions #CongresSUA #SecuritateNationala #TechNews #ScandalNvidia #JensenHuang",
-      "hashtags": [
-        "Nvidia",
-        "AIChips",
-        "ExportRestrictions",
-        "CongresSUA",
-        "SecuritateNationala",
-        "TechNews"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Congress wants to tighten export rules on AI chips after Nvidia spy scandal. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Trei candidați la Rezidențiat, reținuți după ce au încercat să fraudeze examenul",
-      "source": "HotNews",
-      "url": "https://hotnews.ro/trei-candidati-la-rezidentiat-retinuti-dupa-ce-au-incercat-sa-fraudeze-examenul-2405077",
-      "date": "2026-11-15T19:09:36+00:00",
-      "category": "Romania",
-      "summary": "Trei persoane au fost reţinute, după ce au fost prinse încercând să fraudeze examenul de rezidenţiat desfăşurat duminică în centrul universitar de la Timişoara. Acestea aveau asupra lor dispozitive de comunicare la distanţă, potrivit News.ro. „Poliţiştii s-au sesizat din oficiu cu privire la faptul că, în cadrul examenului de rezidenţiat organizat la data de 15 …",
-      "instagram_caption": "Trei candidați la Rezidențiat, reținuți după ce au încercat să fraudeze examenul\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Trei candidați la Rezidențiat, reținuți după ce au încercat să fraudeze examenul. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "CSM București, victorie importantă cu Brest, în Liga Campionilor",
-      "source": "ProSport",
-      "url": "https://www.prosport.ro/alte-sporturi/handbal/csm-bucuresti-victorie-brest-liga-campionilor-20570294",
-      "date": "2026-11-15T19:04:02+00:00",
-      "category": "Sport",
-      "summary": "Duminică, 15 noiembrie, CSM București a trecut de Brest, scor 34-30, în Liga Campionilor. „Tigroaicele” s-au revanșat pentru înfrângerea din meciul tur, 25-40, în urma căreia antrenoarea principală Bojana Popovic (46 de ani) a plecat. Acum, Iulia Curea (44) conduce echipa din Capitală. CSM București a pornit cu șansa a doua, dar handbalistele s-au mobilizat […] The post CSM București, victorie importantă cu Brest, în",
-      "instagram_caption": "CSM București, victorie importantă cu Brest, în Liga Campionilor\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: CSM București, victorie importantă cu Brest, în Liga Campionilor. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Dronă israeliană a filmat zburând jos în afara caselor din sudul Libanului",
-      "source": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/israeli-drone-filmed-flying-low-outside-homes-in-southern-lebanon?traffic_source=rss",
-      "date": "2026-11-15T19:02:21+00:00",
-      "category": "International",
-      "summary": "Videoclipul arată o dronă israeliană zburând la joasă altitudine deasupra unei zone rezidențiale din sudul Libanului.",
-      "instagram_caption": "Israeli drone filmed flying low outside homes in southern Lebanon\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#International",
-        "#StiriMondiale",
-        "#Lume",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Israeli drone filmed flying low outside homes in southern Lebanon. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Estonia își închide granița cu Rusia",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/povesti-cu-profit/vecini/estonia-isi-inchide-granita-cu-rusia-22990064?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-11-15T19:02:00+00:00",
-      "category": "Business",
-      "summary": "Estonia a decis că își va închide granița cu Rusia de la 1 decembrie, acuzând o tentativă de sabotaj.",
-      "instagram_caption": "Estonia își închide granița cu Rusia\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Estonia își închide granița cu Rusia. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "IPO-ul lui Anthropic îl face pe Dario Amodei noua față a boom-ului AI",
@@ -4385,152 +4597,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Anthropic’s IPO Makes Dario Amodei the New Face of the AI Boom. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Rusia avertizează: „răspuns adecvat” dacă SUA sau alții reiau testele nucleare",
-      "source": "Economica",
-      "url": "https://www.economica.net/rusia-avertizeaza-cu-un-raspuns-adecvat-daca-sunt-reluate-testele-nucleare-in-sua-sau-orice-alta-tara_995646.html",
-      "date": "2026-11-15T18:34:44+00:00",
-      "category": "Business",
-      "summary": "Mihail Ulianov, reprezentantul permanent al Rusiei la AIEA, a emis duminică un avertisment ferm împotriva reluării testelor nucleare. Moscova a amenințat cu un „răspuns adecvat” în cazul în care un astfel de scenariu ar avea loc, conform informațiilor EFE.",
-      "instagram_caption": "Rusia avertizează comunitatea internațională! 🚨 Mihail Ulianov, reprezentantul Rusiei la AIEA, a declarat că Moscova va oferi un „răspuns adecvat” dacă SUA sau orice altă țară va relua testele nucleare. O nouă tensiune în peisajul geopolitic! #Rusia #TesteNucleare #Geopolitica #AIEA #SecuritateMondiala",
-      "hashtags": [
-        "Rusia",
-        "TesteNucleare",
-        "Geopolitica",
-        "AIEA",
-        "SecuritateMondiala"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Rusia avertizează cu un „răspuns adecvat” dacă sunt reluate testele nucleare în SUA sau orice altă ţ. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Flaming Hydra: Campania Kickstarter care regândește proprietatea e-book-urilor și împrumutul digital",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/11/15/flaming-hydras-new-kickstarter-campaign-rethinks-e-book-ownership-and-digital-lending/",
-      "date": "2026-11-15T18:29:14+00:00",
-      "category": "AI & Tech",
-      "summary": "O nouă campanie Kickstarter are ca scop să introducă „întoarcerea internetului uman”.",
-      "instagram_caption": "Flaming Hydra revoluționează modul în care privim proprietatea e-book-urilor și împrumutul digital printr-o nouă campanie Kickstarter! 📚✨ Obiectivul? Să readucem „internetul uman” – o experiență online mai autentică și centrată pe tine. Fii parte din schimbare! 👇 #FlamingHydra #Kickstarter #eBooks #ProprietateDigitala #DigitalLending #InternetUman #Tech",
-      "hashtags": [
-        "FlamingHydra",
-        "Kickstarter",
-        "eBooks",
-        "ProprietateDigitala",
-        "DigitalLending",
-        "InternetUman",
-        "Tech"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Flaming Hydra’s new Kickstarter campaign rethinks e-book ownership and digital lending. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Ediţia 16 noiembrie 2026 epaper",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/auxiliar/editia-16-noiembrie-2026-epaper-23282287",
-      "date": "2026-11-15T17:20:00+00:00",
-      "category": "Business",
-      "summary": "Ediţia 16 noiembrie 2026 epaper",
-      "instagram_caption": "Ediţia 16 noiembrie 2026 epaper\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Ediţia 16 noiembrie 2026 epaper. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Ce ar putea fi 1998 KY26, obiectul care străbate Sistemul Solar cu o accelerație neobișnuită. Ipoteza unei... - Digi24",
-      "source": "Google Stiinta",
-      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPM0w1WkxfQVhZR19LVnVvTmpvN3d2THNWY09OVnlUblIwd1pIbGFnRDZxVXcyMTMwdXRHVVlRcUJUeDNiVVVCQUpjc0FvRWtHNThzRmNQMHN6VTBmTUpwYWlWNDVEeHdza3gwdWRoNnVfd252bTFPaDBPZWpPZUNMRjUwVDJZQS1Ba2Qwajl0X0s4RWNJUG5KSlZ6VG9UNGtXTzR2QWFIdkdwZVlaSmZhWGFLaXc0YUdqX3VOWExDbDlhQmRTWHdiUHNxUW5LUEJhb2VRQTVsbVIxZkVKaE5ReVFRU1pzeXRJemllSDNXOFhMMXB2QTI3ekdVQi0wR1FoN19GVlZvdHEyMW93M0VrcW9kX1JzZ9IBoAJBVV95cUxNNXRyUVN3and5dHVySWo2Sl9EZlBzXzJLQUVsY3VGQUxBUXZJVmFlakZQLUdfMHlMY2FSSk96dGhXc0hod1NfQzNrcDlvSnZhaTIycFFnZnR4UUs0V2Nuc2xRTmJCOXF4bzAtUWFGTW5kdGN2aVhNYXdlaWRXY3BXellwTjdkVjJycERDbkhPVUdVeXdkUWZZRXdtRUtmdHpta2xwSTJvbHE1TV94TzdIV2QtN0hYRXNKWmxkQWJ0WFJCS2duWVBsZS1fdzNwek41Z24xcDRueW40c1JhTFZFNUk0MFJYdllVTk5fQ3paVnVuSmhxb0Exd3NxcWlaWXBkZG5UNXhmaXhSTTc5M2hfX0RyUHFvNzNuVlRfajlXemY?oc=5",
-      "date": "2026-11-15T17:17:15+00:00",
-      "category": "Stiinta",
-      "summary": "Ce ar putea fi 1998 KY26, obiectul care străbate Sistemul Solar cu o accelerație neobișnuită. Ipoteza unei... Digi24 O nouă ipoteză surprinzătoare despre obiectul care „accelerează” spre Pământ: ar putea fi o sondă sovietică. Ce spune NASA Adevarul.ro Obiect misterios în spațiu: Asteroid sau navă spațială sovietică dispărută de 40 de ani? Oficiul de Știri Un asteroid misterios accelerează în spaţiu, iar noi rămânem f",
-      "instagram_caption": "Ce ar putea fi 1998 KY26, obiectul care străbate Sistemul Solar cu o accelerație neobișnuită. Ipoteza unei... - Digi24\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: Ce ar putea fi 1998 KY26, obiectul care străbate Sistemul Solar cu o accelerație neobișnuită. Ipotez. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Revoltă la Nvidia după plecarea lui Jensen Huang. Peste 1.600 de mesaje de susținere, petiție cu 115.000... - Digi24",
-      "source": "Google Intl",
-      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNcnFpVE50MDBTV0VaUXlSUlVGR2VweFBzQUZsZXhsMEtjem9qOXEzclMwTjYxRTk3am9QYnFpeFJTQ3lWYnFGOGlpVExRZ0F1MzJ0R3ZmdjFFbXBNRUxhemEwYWJsRGQ3QXVid25uWFBkd3F1VnJOWHBWT09NTkpLQ1lwOVZsZUJPc0l6Njc0QlVaLWZQUkliMXN1MTl3T0JqWTZOMnpJb25DXzlUMHBSal9JYXV2MFpNVWUxQ3h0bFkyQWhweTU0TXBGS0w4Vkg2LW93WlI3dXUycW1fYi04QVhVck1CREhsVGhUaDNYTnVybXVuUFhyVzlsX1dvamF4bk54cF9UVU81WjR5Y2lSQkdwa9IBngJBVV95cUxPZkMtRjU4S0xsc2toektoQWVaZGN5bF9qVzlJYU1Fb1pWd2RhUmJydVBJOHdrRkRsUF95V2xqa2otZ05SY2VSTnFINkVvVUFUOFROeWJtOUtMdFN1UkdqZFFuVGdOYUc5SlB0eDhvQUNMTkVQcWtpS3o3RU9ZcTFrRW5TMms3a0NweVBraUhMX2o4TGJsMk9hRkRxMThtYWtSQTM3eDE5cHVNR2FESnpQTHgtM1pWOHFJNXk5REFVNUlUZUpDdTZXM01lamladDk3cXh5aC03cExwQ3BSQldTU3cwTkZOOUs0U05fbkpPNTR2Y1JDVndzVVAtekdqY3p6eUxCSjFBVjFsRW5TSm9tc093TWVOSFhncjhqc3JR?oc=5",
-      "date": "2026-11-15T16:43:02+00:00",
-      "category": "International",
-      "summary": "Revoltă la Nvidia după plecarea lui Jensen Huang. Peste 1.600 de mesaje de susținere, petiție cu 115.000... Digi24 CNBC: Doi mari acționari Nvidia cer consiliului să analizeze toate opțiunile pentru conducerea companiilor, inclusiv „posibila revenire a lui Jensen Huang\" Ziarul Bursa Serviciul secret al Chinei, tot mai influent sub conducerea lui. Care e principala țintă a... Digi24 Petiție pentru revenirea l",
-      "instagram_caption": "Revoltă la Nvidia după plecarea lui Jensen Huang. Peste 1.600 de mesaje de susținere, petiție cu 115.000... - Digi24\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#International",
-        "#StiriMondiale",
-        "#Lume",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Revoltă la Nvidia după plecarea lui Jensen Huang. Peste 1.600 de mesaje de susținere, petiție cu 115. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Face ID, buton Action și cameră telefoto; ce pregătește Apple pentru viitoarele iPhone Duo - Mobilissimo.",
-      "source": "Google News Tech",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNb3JjVFRPNHE1RDJrWjg3aUM4YjIxT01iRUpPQTBvV0NjVER6bG0xTFp4bktPbDFMdXBnS2p3VEhtNkZNNk9EMnVFbWRVaWd5SFNRdmhyNmpSUHI4alZTUnZVcVRJNFNpT2UyLVJRMmQtMWlYc1FUYVlpZy1XRy1vQjVvTjBBTE5sYW1Sa1BaVWxjN3czdHRtZHFZSU9zbWx0bHdTRkhabjZMRXFtNE5IN29vWmFQTjZmanJXQzN0ZC1FUmVpNkFWN09hdw?oc=5",
-      "date": "2026-11-15T16:41:42+00:00",
-      "category": "AI & Tech",
-      "summary": "Face ID, buton Action și cameră telefoto; ce pregătește Apple pentru viitoarele iPhone Duo Mobilissimo.",
-      "instagram_caption": "Face ID, buton Action și cameră telefoto; ce pregătește Apple pentru viitoarele iPhone Duo - Mobilissimo.\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tech",
-        "#Tehnologie",
-        "#InteligentaArtificiala"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Face ID, buton Action și cameră telefoto; ce pregătește Apple pentru viitoarele iPhone Duo - Mobilis. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Tulburările de somn sunt legate de modificări structurale ale creierului, au descoperit cercetătorii",
-      "source": "Descopera Ro",
-      "url": "https://www.descopera.ro/stiinta/21154766-tulburarile-de-somn-sunt-legate-de-modificari-structurale-ale-creierului-au-descoperit-cercetatorii",
-      "date": "2026-11-15T15:00:51+00:00",
-      "category": "Stiinta",
-      "summary": "Un nou studiu major arată că tulburările de somn sunt legate de modificări structurale ale creierului care pot perturba concentrarea, luarea deciziilor și controlul emoțional. Tulburările de somn pot avea consecințe care se extind mult […] Articolul Tulburările de somn sunt legate de modificări structurale ale creierului, au descoperit cercetătorii apare prima dată în Descopera .",
-      "instagram_caption": "Tulburările de somn sunt legate de modificări structurale ale creierului, au descoperit cercetătorii\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: Tulburările de somn sunt legate de modificări structurale ale creierului, au descoperit cercetătorii. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Vitamina C ar putea ajuta la blocarea substanțelor chimice legate de cancer din stomac, arată studiul",
-      "source": "Science Daily",
-      "url": "https://www.sciencedaily.com/releases/2026/11/261114202236.htm",
-      "date": "2026-11-15T14:13:18+00:00",
-      "category": "Stiinta",
-      "summary": "Oamenii de știință au descoperit că vitamina C poate ajuta la prevenirea formării substanțelor chimice potențial cancerigene în stomac după consumul de alimente care conțin nitrați și nitriți. Un nou model matematic sugerează că administrarea de vitamina C după masă ar putea reduce aceste reacții dăunătoare, oferind o posibilă nouă strategie pentru scăderea riscului de cancer.",
-      "instagram_caption": "Vitamin C could help block cancer-linked chemicals in your stomach, study finds\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: Vitamin C could help block cancer-linked chemicals in your stomach, study finds. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "De ce buretele de vase e dreptunghiular? Explicația surprinzătoare pe care nu o știai",
@@ -4734,24 +4800,6 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: AI Music Awards: Prima gală a premiilor pentru muzica generată cu Inteligenţă Artificială, organizat. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Nervul vag, „butonul ascuns” al organismului care ar putea reduce anxietatea și stresul",
-      "source": "Mediafax",
-      "url": "https://www.mediafax.ro/sanatate/nervul-vag-butonul-ascuns-al-organismului-care-ar-putea-reduce-anxietatea-si-stresul-23841646",
-      "date": "2026-11-14T17:14:45+00:00",
-      "category": "Sanatate",
-      "summary": "Un nerv despre care se vorbește tot mai mult ar putea avea un rol important în gestionarea stresului și a anxietății. Este vorba despre nervul vag, o structură esențială a sistemului nervos El face legătura între creier și mai multe organe, între care inima, plămânii și sistemul digestiv.",
-      "instagram_caption": "Nervul vag, „butonul ascuns” al organismului care ar putea reduce anxietatea și stresul\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Nervul vag, „butonul ascuns” al organismului care ar putea reduce anxietatea și stresul. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Oprirea la sol la nivel național a fost ridicată, scandalul de spionaj Nvidia, cel mai lung zbor de testare al navei",
       "source": "Bloomberg",
       "url": "https://www.bloomberg.com/news/videos/2026-11-14/bloomberg-this-weekend-11-14-2026-video",
@@ -4805,28 +4853,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Entertainment news: Multiple nominalizări pentru „Fjord” al lui Cristian Mungiu la Premiile Academiei Europene de Film -. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Trucul cu coji de portocală în oțet: Descoperă la ce ajută și de ce devine popular",
-      "source": "Google Sanatate",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbXppNFF1NlZvSUNsOHhPZmJFUnFPbDVOeU9NdUJkWVRtMTFqazZMblVxQ2V4dzl1QlpZY3drZG1nMjZwZk01Wl9CZFpUa201ZUYtOTg0b2E4SVctNkVpOTM0X2RDTTNVd21oNjVPc1NPQzFRQ3dJSTZZamlTdEtpdUxtU3dNNjEx?oc=5",
-      "date": "2026-11-14T15:52:45+00:00",
-      "category": "Sanatate",
-      "summary": "Un truc simplu, dar eficient, câștigă tot mai mult teren în rândul publicului: lăsarea cojilor de portocală în oțet timp de două săptămâni. Această metodă inedită promite multiple beneficii, de la soluții de curățenie ecologică la repelent natural. Află la ce anume folosește acest amestec neașteptat și de ce atât de mulți oameni sunt curioși să-l încerce și să-l integreze în rutina lor zilnică. Descoperă secretul din spatele acestei practici devenite virale.",
-      "instagram_caption": "Știai că poți transforma cojile de portocală într-un aliat puternic pentru casă? 🍊✨ Lăsate în oțet timp de două săptămâni, devin ingredientul secret pentru soluții de curățenie naturale sau chiar repelente ecologice! 💚 Tot mai mulți oameni încearcă acest truc ingenios și sunt uimiți de rezultate. Vrei să afli mai multe despre beneficiile acestui amestec inedit și cum îl poți folosi și tu? 👀 Rămâi pe NEXAS pentru detalii complete! #NEXAS #TrucuriCasa #DIY #ViataVerde #CuratenieNaturala #CojiPortocala #Otet #SolutiiEco #Inovatie",
-      "hashtags": [
-        "#NEXAS",
-        "#TrucuriCasa",
-        "#DIY",
-        "#ViataVerde",
-        "#CuratenieNaturala",
-        "#CojiPortocala",
-        "#Otet",
-        "#SolutiiEco",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Coji de portocală lăsate în oțet timp de două săptămâni: la ce folosesc și de ce tot mai mulți oamen. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Filmul \"FJORD\" al lui Cristian Mungiu, 5 nominalizări la Premiile Academiei Europene",
@@ -5117,25 +5143,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Liderii industriei energetice și reprezentanții instituțiilor naționale și europene s-au reunit la B. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Pierderea acordului cu GNL din Polonia de către Qatar este o lovitură gravă pentru planurile de expansiune",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-11-11/qatar-s-loss-of-polish-lng-deal-is-a-serious-blow-to-expansion-plans",
-      "date": "2026-11-11T12:46:40+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Ambiția statului din Golf de a-și dubla aproape capacitatea de export de gaze naturale lichefiate a suferit un regres major.",
-      "instagram_caption": "Qatar’s Loss of Polish LNG Deal Is a Serious Blow to Expansion Plans\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Qatar’s Loss of Polish LNG Deal Is a Serious Blow to Expansion Plans. Professional photorealistic style. No text, no logos, no watermarks."
     }
   ]
 }
