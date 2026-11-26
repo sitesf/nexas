@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T15:57:26.918172+00:00",
+  "updated_at": "2026-11-26T22:49:31.797631+00:00",
   "run_log": {
     "AI & Tech": 3,
     "Sport": 3,
@@ -12,6 +12,482 @@
     "Bursa & Piete": 3
   },
   "items": [
+    {
+      "title": "Te ia somnul după ce mănânci? Specialiștii explică ce obiceiuri alimentare pot crea probleme",
+      "source": "CSID",
+      "url": "https://www.csid.ro/stiri/te-ia-somnul-dupa-ce-mananci-specialistii-explica-ce-obiceiuri-alimentare-pot-crea-probleme-21367863/",
+      "date": "2026-11-26T22:42:22.619917+00:00",
+      "category": "Sanatate",
+      "summary": "După o masă bogată, mai ales în perioadele de sărbătoare, multe persoane se confruntă cu aceeași problemă: oboseala și nevoia de a se întinde puțin. Senzația apare frecvent după mesele care includ mai multe feluri […] Articolul Te ia somnul după ce mănânci? Specialiștii explică ce obiceiuri alimentare pot crea probleme apare prima dată în CSID: Ce se întâmplă Doctore? .",
+      "instagram_caption": "Te ia somnul după ce mănânci? Specialiștii explică ce obiceiuri alimentare pot crea probleme\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sanatate",
+        "#Health",
+        "#Medicina",
+        "#Wellness"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Te ia somnul după ce mănânci? Specialiștii explică ce obiceiuri alimentare pot crea probleme. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Ce român a reușit să îl surprindă pe Fabian Hurzeler, chiar și după Brighton - Craiova 4-0: \"Grozav\"",
+      "source": "DigiSport",
+      "url": "https://www.digisport.ro/fotbal/conference-league/ce-roman-a-reusit-sa-il-surprinda-pe-fabian-hurzeler-chiar-si-dupa-brighton-craiova-4-0-grozav-4627361",
+      "date": "2026-11-26T22:35:02+00:00",
+      "category": "Sport",
+      "summary": "Ce român a reușit să îl surprindă pe Fabian Hurzeler, chiar și după Brighton - Craiova 4-0: \"Grozav\"",
+      "instagram_caption": "Ce român a reușit să îl surprindă pe Fabian Hurzeler, chiar și după Brighton - Craiova 4-0: \"Grozav\"\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sport",
+        "#Fotbal",
+        "#Romania",
+        "#Campionat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Ce român a reușit să îl surprindă pe Fabian Hurzeler, chiar și după Brighton - Craiova 4-0: \"Grozav\". Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "AI Rout Makes Kioxia Japan’s Cheapest Blue Chip, Backing Bulls",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-26/ai-rout-makes-kioxia-japan-s-cheapest-blue-chip-backing-bulls",
+      "date": "2026-11-26T22:30:13+00:00",
+      "category": "Bursa & Piete",
+      "summary": "The brutal selloff in Kioxia Holdings Corp. on worries over the AI boom’s sustainability has made it the cheapest Japanese blue chip, reinforcing bullish analyst calls.",
+      "instagram_caption": "AI Rout Makes Kioxia Japan’s Cheapest Blue Chip, Backing Bulls\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: AI Rout Makes Kioxia Japan’s Cheapest Blue Chip, Backing Bulls. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Cum a modificat Trump declaraţia comună convenită cu şeful NATO, scriind că Ucraina nu trebuie să extindă războiul",
+      "source": "HotNews",
+      "url": "https://hotnews.ro/cum-a-modificat-trump-declaratia-comuna-convenita-cu-seful-nato-scriind-ca-ucraina-nu-trebuie-sa-extinda-razboiul-2415245",
+      "date": "2026-11-26T22:30:06+00:00",
+      "category": "Romania",
+      "summary": "Donald Trump i-a făcut o surpriză secretarului general al NATO, Mark Rutte, după ce s-au întâlnit în Florida, pe fondul ultimelor eforturi ale preşedintelui SUA de a pune capăt războiului dintre Ucraina şi Rusia, scrie POLITICO. În urma întâlnirii de miercuri seară de la Mar-a-Lago, cei doi au declarat că au „discutat despre importanţa ca …",
+      "instagram_caption": "Cum a modificat Trump declaraţia comună convenită cu şeful NATO, scriind că Ucraina nu trebuie să extindă războiul\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Cum a modificat Trump declaraţia comună convenită cu şeful NATO, scriind că Ucraina nu trebuie să ex. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Concurent gigant în România pentru Uber și Bolt. Unicornul inDrive intră pe piața locală",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/povesti-cu-profit/foto-concurent-gigant-romania-uber-bolt-doua-cea-descarcata-aplicatie-categoria-ride-hailing-nivel-global-unicornul-indrive-intrat-piata-locala-propria-platforma-comision-zero-confirmare-23013449?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-11-26T22:30:00+00:00",
+      "category": "Business",
+      "summary": "Suol Innovations, companie înregistrată în Cipru și care operează în Europa aplicația de transport inDrive, a intrat în România, deschizându-și propria platformă în limba română, operațiune anunțată din vară de Profit.ro ca fiind pregătită.",
+      "instagram_caption": "Concurent gigant în România pentru Uber și Bolt. Unicornul inDrive intră pe piața locală\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Concurent gigant în România pentru Uber și Bolt. Unicornul inDrive intră pe piața locală. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Concurent gigant în România pentru Uber și Bolt. Unicornul inDrive intră pe piața locală",
+      "source": "Profit.ro",
+      "url": "https://www.profit.ro/povesti-cu-profit/foto-concurent-gigant-romania-uber-bolt-doua-cea-descarcata-aplicatie-categoria-ride-hailing-nivel-global-unicornul-indrive-intrat-piata-locala-propria-platforma-comision-zero-confirmare-23013449?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
+      "date": "2026-11-26T22:30:00+00:00",
+      "category": "Bursa & Piete",
+      "summary": "Suol Innovations, companie înregistrată în Cipru și care operează în Europa aplicația de transport inDrive, a intrat în România, deschizându-și propria platformă în limba română, operațiune anunțată din vară de Profit.ro ca fiind pregătită.",
+      "instagram_caption": "Concurent gigant în România pentru Uber și Bolt. Unicornul inDrive intră pe piața locală\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Concurent gigant în România pentru Uber și Bolt. Unicornul inDrive intră pe piața locală. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Românii, în prim-plan joi seară în Europa League și Conference League. Cum s-au descurcat Tănase, Corbu, Radu, Olaru și Dragomir",
+      "source": "Fanatik",
+      "url": "https://www.fanatik.ro/romani-europa-league-conference-league-21601646",
+      "date": "2026-11-26T22:10:06+00:00",
+      "category": "Sport",
+      "summary": "Tot ce fac românii joi seară în Europa League și Conference League. „Tricolorii” lui Gică Hagi, implicați în meciuri importante",
+      "instagram_caption": "Românii, în prim-plan joi seară în Europa League și Conference League. Cum s-au descurcat Tănase, Corbu, Radu, Olaru și Dragomir\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sport",
+        "#Fotbal",
+        "#Romania",
+        "#Campionat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Românii, în prim-plan joi seară în Europa League și Conference League. Cum s-au descurcat Tănase, Co. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "INTERVIU ZF. Cel mai puternic excutiv din retailul românesc, Xavier Piesvaux, CEO al Mega Image şi Profi, un business cumulat de peste 5 mld. euro, este optimist în ciuda vremurilor grele din consum: România este una dintre pieţele cele mai atractive din Europa, dacă nu chiar cea mai atractivă. Oferă multiple oportunităţi",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/companii/interviu-zf-cel-puternic-excutiv-retailul-romanesc-xavier-piesvaux-ceo-mega-image-profi-business-cumulat-peste-5-mld-euro-optimist-ciuda-vremurilor-grele-consum-romania-una-dintre-pietele-cele-23290542",
+      "date": "2026-11-26T22:08:00+00:00",
+      "category": "Business",
+      "summary": "România este una dintre pieţele cele mai atractive din Europa, dacă nu chiar cea mai atractivă, consideră executivul Xavier Piesvaux, CEO al operaţiunilor Ahold Delhaize România, grup care deţine local Profi, Mega Image şi Shop&Go, în total 2.750 de magazine. El a revenit pe plan autohton după o pauză de 11 ani, anterior fiind CEO al Mega Image.",
+      "instagram_caption": "INTERVIU ZF. Cel mai puternic excutiv din retailul românesc, Xavier Piesvaux, CEO al Mega Image şi Profi, un business cumulat de peste 5 mld. euro, este optimist în ciuda vremurilor grele din consum: România este una dintre pieţele cele mai atractive din Europa, dacă nu chiar cea mai atractivă. Oferă multiple oportunităţi\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: INTERVIU ZF. Cel mai puternic excutiv din retailul românesc, Xavier Piesvaux, CEO al Mega Image şi P. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "INTERVIU ZF. Cel mai puternic excutiv din retailul românesc, Xavier Piesvaux, CEO al Mega Image şi Profi, un business cumulat de peste 5 mld. euro, este optimist în ciuda vremurilor grele din consum: România este una dintre pieţele cele mai atractive din Europa, dacă nu chiar cea mai atractivă. Oferă multiple oportunităţi",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/companii/interviu-zf-cel-puternic-excutiv-retailul-romanesc-xavier-piesvaux-ceo-mega-image-profi-business-cumulat-peste-5-mld-euro-optimist-ciuda-vremurilor-grele-consum-romania-una-dintre-pietele-cele-23290542",
+      "date": "2026-11-26T22:08:00+00:00",
+      "category": "Bursa & Piete",
+      "summary": "România este una dintre pieţele cele mai atractive din Europa, dacă nu chiar cea mai atractivă, consideră executivul Xavier Piesvaux, CEO al operaţiunilor Ahold Delhaize România, grup care deţine local Profi, Mega Image şi Shop&Go, în total 2.750 de magazine. El a revenit pe plan autohton după o pauză de 11 ani, anterior fiind CEO al Mega Image.",
+      "instagram_caption": "INTERVIU ZF. Cel mai puternic excutiv din retailul românesc, Xavier Piesvaux, CEO al Mega Image şi Profi, un business cumulat de peste 5 mld. euro, este optimist în ciuda vremurilor grele din consum: România este una dintre pieţele cele mai atractive din Europa, dacă nu chiar cea mai atractivă. Oferă multiple oportunităţi\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Bursa",
+        "#Piete",
+        "#Investitii",
+        "#Finance",
+        "#BVB"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Bursa & Piete news: INTERVIU ZF. Cel mai puternic excutiv din retailul românesc, Xavier Piesvaux, CEO al Mega Image şi P. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Report: CIA tortured more people with waterboarding than US agency admitted",
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/26/report-cia-tortured-more-people-with-waterboarding-than-us-agency-admitted?traffic_source=rss",
+      "date": "2026-11-26T22:06:54+00:00",
+      "category": "International",
+      "summary": "A New York Times report lends credence to long-held belief that torture method was more widely used than acknowledged.",
+      "instagram_caption": "Report: CIA tortured more people with waterboarding than US agency admitted\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Report: CIA tortured more people with waterboarding than US agency admitted. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Adrian Mutu a spus-o fără ocolișuri după Brighton – Universitatea Craiova 4-0: „Nu au avut ce să învețe!”",
+      "source": "ProSport",
+      "url": "https://www.prosport.ro/fotbal-extern/conference-league/adi-mutu-reactie-craiova-brighton-20577720",
+      "date": "2026-11-26T22:03:57+00:00",
+      "category": "Sport",
+      "summary": "Adrian Mutu (47 de ani) a avut un discurs dur după înfrângerea suferită de Universitatea Craiova în Anglia, scor 0-4 cu Brighton, în etapa a patra din Conference League. Fostul internațional consideră că diferența dintre cele două echipe a fost atât de mare încât oltenii nici măcar nu au avut ocazia să învețe ceva din […] The post Adrian Mutu a spus-o fără ocolișuri după Brighton – Universitatea Craiova 4-0: „Nu au a",
+      "instagram_caption": "Adrian Mutu a spus-o fără ocolișuri după Brighton – Universitatea Craiova 4-0: „Nu au avut ce să învețe!”\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sport",
+        "#Fotbal",
+        "#Romania",
+        "#Campionat"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sport news: Adrian Mutu a spus-o fără ocolișuri după Brighton – Universitatea Craiova 4-0: „Nu au avut ce să înv. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+      "date": "2026-11-26T22:01:22+00:00",
+      "category": "International",
+      "summary": "The possible environmental damage is still being assessed by Spain's sea rescue service.",
+      "instagram_caption": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Noi secretari de stat în aparatul de lucru al vicepremierului Marian Neacşu. Noi numiri și la Secretariatul General al Guvernului",
+      "source": "Digi24",
+      "url": "https://www.digi24.ro/stiri/actualitate/politica/noi-secretari-de-stat-in-aparatul-de-lucru-al-vicepremierului-marian-neacsu-noi-numiri-si-la-secretariatul-general-al-guvernului-4055057",
+      "date": "2026-11-26T21:59:47+00:00",
+      "category": "Romania",
+      "summary": "Florin-Alexandru Gavril şi Adeline Dan vor ocupa funcţiile de secretar de stat în cadrul Secretariatului General al Guvernului.",
+      "instagram_caption": "Noi secretari de stat în aparatul de lucru al vicepremierului Marian Neacşu. Noi numiri și la Secretariatul General al Guvernului\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Noi secretari de stat în aparatul de lucru al vicepremierului Marian Neacşu. Noi numiri și la Secret. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Donald Trump a modificat declaraţia comună convenită cu şeful NATO în legătură cu războiul dus de Rusia în... - Digi24",
+      "source": "Google Intl",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQbExSWUItWmhBdFZQME1iNTVIeGRNQnhJMjk0RUt1R28xWFdGdzIwbEdHa210V0ItUTJOTkZxYjNKR1NQaTFaMjNCcGpQTllON3B3c2czV1NMa0JjNVE5dEc5NjRXc1pUcG96S2prazczTldQMkVmdThDanplSl9PaklXV0lpc0F4VzdzT1ZSSldDeTJtNS1lMTJ1amxwMXJSVlJ4VmVlbDdZdW5BM1dxU0V2TjhRejhLTlVRbGxLX2x6UnQ5Y3ptMEU4VF9Rc3U3N01oa3dCZ3J0aWx5VHZVTDdrcjJScjZ6TkpDUm1yclFPWTZt0gH_AUFVX3lxTE00TWJ1UXQ4cnlmaXd1SHA0UlJObkhLVzhQLXVrR2xSa0o1eVJ0MC1UU1JmeVR4UUlNUkx0Mi0wMExPOENSS3l5RjRPd2ROUU9tZnVSUE12UlhUaTVmQm8zNzgtalFZVzFvRTdCWU9TLWNQSFZKWDljTDRIcDdqLTFCVHExbHo5cUpSYmRDcDFpY0VoT3BsVlVuamJtTzRxVlYyWTFzY05aU2RTbkVEUi1kVHBFbnlkVXI5X29Fb1hoM2pVaUd1SWxORDZsV2V3TUcxbkM0WTFYNjdMQWIyS2ZUV2ZwZVVDVWJrbWkwa1lOMll1M0NzMk95ZjZzYjg3Yw?oc=5",
+      "date": "2026-11-26T21:37:29+00:00",
+      "category": "International",
+      "summary": "Donald Trump a modificat declaraţia comună convenită cu şeful NATO în legătură cu războiul dus de Rusia în... Digi24 Mark Rutte: Pierderile rusești în război sunt \"nesustenabile\". Ucraina se descurcă excepțional de bine tvrinfo.ro UPDATE Trump și Rutte cer Rusiei să nu extindă războiul din #Ucraina Agerpres /LIVE TEXT/ Război în Ucraina, ziua 1737: Avertizare în Moldova, promisiune atomică și premieră cu Blisk. Trump",
+      "instagram_caption": "Donald Trump a modificat declaraţia comună convenită cu şeful NATO în legătură cu războiul dus de Rusia în... - Digi24\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#International",
+        "#StiriMondiale",
+        "#Lume",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for International news: Donald Trump a modificat declaraţia comună convenită cu şeful NATO în legătură cu războiul dus de Ru. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Florin-Alexandru Gavril, Adeline Dan și Claudiu Mureşan, numiți secretari de stat în cadrul aparatului Guvernului",
+      "source": "G4Media",
+      "url": "https://www.g4media.ro/florin-alexandru-gavril-adeline-dan-si-claudiu-muresan-numiti-secretari-de-stat-in-cadrul-aparatului-guvernului.html",
+      "date": "2026-11-26T21:22:18+00:00",
+      "category": "Romania",
+      "summary": "Florin-Alexandru Gavril şi Adeline Dan preiau funcţiile de secretar de stat în cadrul Secretariatului General al Guvernului. Deciziile de numire au fost publicate joi în Monitorul Oficial. Atât Gavril cât Adelina Dan sunt conectați cu PSD. Adeline Dan a mai deţinut funcţia de consilier de stat în cadrul aparatului de lucru al viceprim-ministrului Marian Neacşu, […] © G4Media.ro .",
+      "instagram_caption": "Florin-Alexandru Gavril, Adeline Dan și Claudiu Mureşan, numiți secretari de stat în cadrul aparatului Guvernului\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Romania",
+        "#StiriRomania",
+        "#Actualitate",
+        "#Breaking"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Romania news: Florin-Alexandru Gavril, Adeline Dan și Claudiu Mureşan, numiți secretari de stat în cadrul aparatul. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Every smart telescope we've reviewed and highly rate that is cheaper for Black Friday — full list",
+      "source": "Space.com",
+      "url": "https://www.space.com/stargazing/skywatching-kit/every-smart-telescope-weve-reviewed-and-highly-rate-that-is-cheaper-for-black-friday-full-list",
+      "date": "2026-11-26T21:08:45+00:00",
+      "category": "Stiinta",
+      "summary": "Black Friday has seen the price of smart telescopes slashed, with great beginner models available from Unistellar, ZWO, Vaonis and Dwarflab.",
+      "instagram_caption": "Every smart telescope we've reviewed and highly rate that is cheaper for Black Friday — full list\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Every smart telescope we've reviewed and highly rate that is cheaper for Black Friday — full list. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "De ce Samsung Galaxy S27 Ultra NU va veni cu procesorul Exynos 2700 la bord? - Gadget.ro",
+      "source": "Google News Tech",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQc3I0S19iZFBLNWlBYTZXMHdsMEhpbFZoWXRWcnp5Mk41a1dENmtsNmxzMW85RWM5Sk50RjdGN3lXa05DYlR4Z1RiVkgxc2FxcnRDZm9yMzRuYWtuT3ptdHJHMXNYNVpIYjlLMmdxOXJxbEVxZDFOakFTNWZfTDBCSDR1MmttbzJxZTNQYmF2TG1hbDAtR0F6aEJ3?oc=5",
+      "date": "2026-11-26T21:08:16+00:00",
+      "category": "AI & Tech",
+      "summary": "De ce Samsung Galaxy S27 Ultra NU va veni cu procesorul Exynos 2700 la bord? Gadget.ro Samsung Galaxy S27 Ultra apare într-un nou clip hands-on cu o machetă; Cum arată viitorul flagship (Video) Mobilissimo. Galaxy S27 Ultra pierde o cameră foto, sistemul de focalizare laser și rezervă upgrade-ul de memorie pentru eprocesorările superioare Zona IT Care este comparația performanței? Galaxy S27 Pro Raport iPhone 18 ProBench",
+      "instagram_caption": "De ce Samsung Galaxy S27 Ultra NU va veni cu procesorul Exynos 2700 la bord? - Gadget.ro\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#AI",
+        "#Tech",
+        "#Tehnologie",
+        "#InteligentaArtificiala"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: De ce Samsung Galaxy S27 Ultra NU va veni cu procesorul Exynos 2700 la bord? - Gadget.ro. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Revenirea discretă a celui mai confortabil serial de pe Netflix",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/entertainment/1043489/midnight-diner-season3",
+      "date": "2026-11-26T21:00:00+00:00",
+      "category": "AI & Tech",
+      "summary": "Pe măsură ce Netflix devine tot mai mare, e tot mai ușor să ratezi conținut. Acest lucru e valabil pentru toate platformele digitale, dar mai ales pentru Netflix, a cărui ofertă include acum reality show-uri, programe live și chiar jocuri. Acest lucru face ca unele dintre cele mai bune producții să treacă neobservate...",
+      "instagram_caption": "Netflix e un univers vast și, uneori, cele mai bune bijuterii se ascund! 💎 Unul dintre cele mai confortabile seriale ale platformei a revenit în liniște, iar mulți abonați ar putea să-l rateze. 🤫 Ești gata să te pierzi în atmosfera sa caldă? 🛋️ Descoperă povestea completă pe site-ul NEXAS! 👇",
+      "hashtags": [
+        "#Netflix",
+        "#SerialeNetflix",
+        "#RevenireSerial",
+        "#ShowConfortabil",
+        "#Streaming",
+        "#CeVizionam",
+        "#NEXAS",
+        "#DivertismentAcasă"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Netflix’s coziest show has made a very quiet return. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Disputa dintre Brad Pitt și Angelina Jolie pentru podgoria de la castelul Miraval, principalul dezacord din divorț, la final - HotNews.ro",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNSm9GQjRULXh1NFFDTTJTcHFPekFqZFZNWDU5ZEhnQVV4cVVZMEtDdlBJSFZWUU0zc2lQczJEUGpfZEgyYnc2NzMzaUhOS0EtR3YtTTd1NURXX2QwUk1VM3BxNVRDa2RmZVJnTVBfNUJjS1FSY0FRVmlMS1A4UEc0QUo0N2o3elpsREFqN1lWb042NDJYcTA0VzA2OTVuc0F5bVVZdnNqSG8xRnVDUzZBcFhFSU5rREJjVUFidllxQ3BWa0tReTRZUlliNmE1Njh4ZWRrQXRaR0hXY3Y5SUl2UjkxQQ?oc=5",
+      "date": "2026-11-26T20:29:56+00:00",
+      "category": "Entertainment",
+      "summary": "Disputa dintre Brad Pitt și Angelina Jolie pentru podgoria de la castelul Miraval, principalul dezacord din divorț, la final HotNews.ro Înțelegere secretă. Brad Pitt şi Angelina Jolie au pus capăt disputei juridice privind podgoria din Franţa... Digi24 Angelina Jolie și Brad Pitt au încheiat disputa pentru crama din Franța. Ce au anunțat după ani de procese Adevarul.ro După ani de procese și acuzații, Brad Pitt și An",
+      "instagram_caption": "Disputa dintre Brad Pitt și Angelina Jolie pentru podgoria de la castelul Miraval, principalul dezacord din divorț, la final - HotNews.ro\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Entertainment",
+        "#Vedete",
+        "#Divertisment",
+        "#Lifestyle"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Disputa dintre Brad Pitt și Angelina Jolie pentru podgoria de la castelul Miraval, principalul dezac. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Datoria României va continua să crească și cu un deficit bugetar mai mic. Unde se va ajunge povara conform analiștilor BCR",
+      "source": "Economica",
+      "url": "https://www.economica.net/datoria-romaniei-va-continua-sa-creasca-si-cu-un-deficit-bugetar-mai-mic-unde-se-va-ajunge-povara-conform-analistilor-bcr_998756.html",
+      "date": "2026-11-26T20:21:22+00:00",
+      "category": "Business",
+      "summary": "Chiar cu o reducere a deficitului la 5% din PIB în 2028, datoria publică nu ar putea fi stabilizată. Potrivit scenariului BCR Erste, datoria publică ar urma să atingă un vârf de aproximativ 66% din PIB în 2029, luând în calcul și reducerile suplimentare de deficit estimate pentru perioada 2029-2030. Și asta deoarece deficitul României este unul structural, iar reducerea acestuia se face în ani de recesiune economică,",
+      "instagram_caption": "Datoria României va continua să crească și cu un deficit bugetar mai mic. Unde se va ajunge povara conform analiștilor BCR\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Business",
+        "#Economie",
+        "#Antreprenoriat",
+        "#Finance"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Business news: Datoria României va continua să crească și cu un deficit bugetar mai mic. Unde se va ajunge povara c. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Nvidia oprește livrările de cipuri către Asia de Sud-Est",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "date": "2026-11-26T20:03:54+00:00",
+      "category": "AI & Tech",
+      "summary": "Nvidia a cerut partenerilor săi de producție să suspende livrările de servere către Malaysia, Singapore, Thailanda și Indonezia. Decizia vine în contextul în care Statele Unite își intensifică eforturile de a împiedica accesul Chinei la cipurile avansate de Inteligență Artificială, redefinind lanțurile globale de aprovizionare.",
+      "instagram_caption": "Nvidia a oprit livrările de servere către anumite țări din Asia de Sud-Est! 🛑🇲🇾🇸🇬🇹🇭🇮🇩 Această decizie vine în contextul presiunilor tot mai mari din partea SUA de a limita accesul Chinei la cipurile avansate de Inteligență Artificială. Un pas major în războiul tehnologic global care redefinește lanțurile de aprovizionare. Ce impact crezi că va avea pe termen lung? 🤔 #Nvidia #AIChips #Tehnologie #AsiaDeSudEst #SUA #RazboiTehnologic #Nexas",
+      "hashtags": [
+        "Nvidia",
+        "AIChips",
+        "Tehnologie",
+        "AsiaDeSudEst",
+        "SUA",
+        "RazboiTehnologic",
+        "Nexas"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for AI & Tech news: Nvidia hits pause on chip shipments to Southeast Asia. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Unul dintre cele mai așteptate seriale ale anului a apărut în streaming și a împărțit imediat opiniile - HotNews.ro",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOR2NVb3JROGVsVE1ISEVabWJZUk15UnVRN2EwdWFpWkZtNVd4cUJsSEhQTWJBcnBtY1ozSlgwVzQ5MUxkdmdXNHd2VWFhbnJFcmRoSWV2VV83dnd3aUtudGgxRTNVUDlFOXVUODA0QlFveDV2VVJ4cURzUTJ5UWV6NUlsZjF1ZEhFQUxEVTkyeUpidWdCXzl1OS01bUZGSElNNWdaMzFVNW9xY3lBRkNrUVVrUDgzNjlxb1BJTDN3YjlobkdPd3VEaA?oc=5",
+      "date": "2026-11-26T19:28:18+00:00",
+      "category": "Entertainment",
+      "summary": "Unul dintre cele mai așteptate seriale ale anului a apărut în streaming și a împărțit imediat opiniile HotNews.ro ''Blade Runner 2099'', un serial TV care extinde franciza creată de cineastul Ridley Scott, va fi lansat miercuri Agerpres Michelle Yeoh revine într-un rol spectaculos! Ce se întâmplă în „Blade Runner 2099”, noua miniserie Prime Video TVMania Vânătorul de recompense 2099 ajunge pe Prime Video SOM NEWS „Bl",
+      "instagram_caption": "Unul dintre cele mai așteptate seriale ale anului a apărut în streaming și a împărțit imediat opiniile - HotNews.ro\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Entertainment",
+        "#Vedete",
+        "#Divertisment",
+        "#Lifestyle"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Unul dintre cele mai așteptate seriale ale anului a apărut în streaming și a împărțit imediat opinii. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Veruschka a murit la vârsta de 87 de ani: supermodelul a jucat în filme celebre precum „Blow-Up” și... - Digi24",
+      "source": "Google Ent",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQcXI4d3JCOV9TLVJNSlZOU0NwWFBmRGdPeGJ1RXBuaDE5ZVVzRERKak42WDFlT1dlc3RMRWl0NjZhN2JVQTBjMGVDSDkwWmdQQU01Ykc5TGRqNU4yaDBtREpLR2J2akhId2RTWTYxNmUzMlJGQ09ZZnI4Yk1MX3B6SDA0Y0QwekhhOUZoekp4QUtNR0U5Zy1DRWxrYzVMbEhJUG9GUnF5cjZlakJpNjZaVWMycnpoMmpIYU1iZGdiRkozU09aMEZ5R2hhTll4ZVhfVW5ZLUdPTmZfaHYzeW9JM05fZ3dwb3VES1NHMmhLWHdSYk9ITWfSAYACQVVfeXFMTU5meFQ0ZzVuMHo4bklEdjJud2h0SXNRYnl4a1YtUGlhY29zRHhqMXQtR25QZ0l6QUVBUlJDMi1XU29JeDJJQTJQSEpKeEN6eUtZXzlaZ2FiSkU5TjdZYWhST2hHeld5V2dvSUJ6bm9PdFZicGhVM3dEeENXRm9FRFNKcTI0NXZqc3pORjFqMVBlc2R5RE9PYWVNeXRvR2dqaUsxdjRXYVVybHdfUS0tR0U2cUI1V2tFWGhGMnhUel9ORmU5d0J5ZWtOSS14STBVTEtnX0UxNGtwanRSUENnYUwwUzdzLTJyRFo5LTI3V3IwY003Y1dfNDZaeXNReE5NVA?oc=5",
+      "date": "2026-11-26T19:15:56+00:00",
+      "category": "Entertainment",
+      "summary": "Veruschka a murit la vârsta de 87 de ani: supermodelul a jucat în filme celebre precum „Blow-Up” și... Digi24 Veruschka, unul dintre primele supermodele din lume, a murit la 87 de ani. Povestea ei este una de film Antena 3 A murit Veruschka von Lehndorff, unul dintre primele supermodele ale lumii. Avea 87 de ani | AUDIO : Europa FM A murit Veruschka, primul supermodel german, fiica unui ofițer executat pentru atentat",
+      "instagram_caption": "Veruschka a murit la vârsta de 87 de ani: supermodelul a jucat în filme celebre precum „Blow-Up” și... - Digi24\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Entertainment",
+        "#Vedete",
+        "#Divertisment",
+        "#Lifestyle"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Entertainment news: Veruschka a murit la vârsta de 87 de ani: supermodelul a jucat în filme celebre precum „Blow-Up” și.. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "CNAS: Ce servicii medicale sunt decontate pentru pacienții cu insuficiență cardiacă",
+      "source": "Mediafax",
+      "url": "https://www.mediafax.ro/sanatate/cnas-ce-servicii-medicale-sunt-decontate-pentru-pacientii-cu-insuficienta-cardiaca-23850312",
+      "date": "2026-11-26T18:42:03+00:00",
+      "category": "Sanatate",
+      "summary": "Casa Națională de Asigurări de Sănătate (CNAS) publică un nou ghid dedicat pacienților cu insuficiență cardiacă, în care prezintă serviciile medicale decontate prin sistemul de asigurări sociale de sănătate: traseul pacientului de la prevenție la tratament, recuperare și monitorizare pe termen lung.",
+      "instagram_caption": "CNAS: Ce servicii medicale sunt decontate pentru pacienții cu insuficiență cardiacă\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sanatate",
+        "#Health",
+        "#Medicina",
+        "#Wellness"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: CNAS: Ce servicii medicale sunt decontate pentru pacienții cu insuficiență cardiacă. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Tusea persistentă poate ascunde o problemă cu inima. Semnele care ar trebui să te trimită la medic - Ziare.com",
+      "source": "Google Sanatate",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd1JIWHFYa0lqVGNkVUZST0ZYdGtHb3VYN0VNLVFQaTdMM2JSeUZKdTBrOEZhbXVWNlVPRWNXdl9mMk9qQk9BblluZ3NFWUJjWWV3QV9faTkzYWlHVmZTSmVNZ2tZQUhOT2dxQkZ2ZTJzdXV1YVBlN2JjQ2dLWlh4czRLVdIBiwFBVV95cUxNMVQtU0hNbVd1bmVoM25pNGhQRTRCMmoxVlpiV2M4aWVWaTlvWUJKY2Zwa05LZFlmSGhoR3Bzcm1xbUZWeUU3SW0tMVlqYU45aU96VTdWZnpJMGZIVzBWNG9wcmpRaHZyNHVpQm9XUkN6TTVOUzY4aXpqVl9qNjZpWDhHRnp0N19GZjI0?oc=5",
+      "date": "2026-11-26T18:21:58+00:00",
+      "category": "Sanatate",
+      "summary": "Tusea persistentă poate ascunde o problemă cu inima. Semnele care ar trebui să te trimită la medic Ziare.com",
+      "instagram_caption": "Tusea persistentă poate ascunde o problemă cu inima. Semnele care ar trebui să te trimită la medic - Ziare.com\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Sanatate",
+        "#Health",
+        "#Medicina",
+        "#Wellness"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Sanatate news: Tusea persistentă poate ascunde o problemă cu inima. Semnele care ar trebui să te trimită la medic -. Professional photorealistic style. No text, no logos, no watermarks."
+    },
+    {
+      "title": "Oldest male orca on record may have been identified thanks to historical atomic bomb testing",
+      "source": "Live Science",
+      "url": "https://www.livescience.com/animals/orcas/oldest-male-orca-on-record-may-have-been-identified-thanks-to-historical-atomic-bomb-testing",
+      "date": "2026-11-26T18:20:31+00:00",
+      "category": "Stiinta",
+      "summary": "Researchers might have identified the oldest male orca ever recorded after testing for radioactive traces of atomic bombs in the teeth of whales stranded in Scotland.",
+      "instagram_caption": "Oldest male orca on record may have been identified thanks to historical atomic bomb testing\n\nCiteste pe nexas.ro/stiri/",
+      "hashtags": [
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
+      ],
+      "image": "",
+      "image_prompt": "Premium editorial photograph for Stiinta news: Oldest male orca on record may have been identified thanks to historical atomic bomb testing. Professional photorealistic style. No text, no logos, no watermarks."
+    },
     {
       "title": "Inteligența artificială este pe punctul de a face securitatea online inutilă. Avertismentul matematicienilor",
       "source": "Digi24",
@@ -153,27 +629,6 @@
       "image_prompt": "Premium editorial photograph for Business news: FOTO&VIDEO Mii de parfumuri contrafăcute, găsite în container în Portul Constanța. Veneau din India,. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Mii de parfumuri contrafăcute din India, destinate Moldovei, găsite în Portul Constanța",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/stiri/social/foto-video-mii-de-parfumuri-contrafacute-gasite-in-container-in-portul-constanta-veneau-din-india-pentru-republica-moldova-23012610?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-11-26T15:42:00+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Autoritățile din Portul Constanța au interceptat un transport masiv de mii de parfumuri susceptibile a fi contrafăcute, estimate la o valoare de peste 2,5 milioane de lei. Produsele, ambalate într-un container, proveneau din India și aveau ca destinație finală Republica Moldova. Această descoperire subliniază eforturile continue de combatere a comerțului ilegal cu produse contrafăcute care tranzitează România.",
-      "instagram_caption": "🚨 Captură impresionantă în Portul Constanța! Autoritățile au descoperit mii de parfumuri contrafăcute, evaluate la peste 2,5 milioane de lei, într-un container sosit din India, cu destinația Republica Moldova. 😲 Această acțiune reconfirmă lupta continuă împotriva comerțului ilegal și a produselor false care pot afecta siguranța consumatorilor și economia! 🚫",
-      "hashtags": [
-        "#ParfumuriContrafacute",
-        "#PortulConstanta",
-        "#Contrabanda",
-        "#ProduseFalse",
-        "#VamaRomania",
-        "#CombatereaFalsului",
-        "#India",
-        "#Moldova"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: FOTO&VIDEO Mii de parfumuri contrafăcute, găsite în container în Portul Constanța. Veneau din India,. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "„Nu le zic boți, le zic actori non-statali”. Explicațiile unui inițiator al proiectului PSD care restricționează accesul la informațiile de interes public",
       "source": "HotNews",
       "url": "https://hotnews.ro/nu-le-zic-boti-le-zic-actori-non-statali-explicatiile-unui-initiator-al-proiectului-psd-care-restrictioneaza-accesul-la-informatiile-de-interes-public-2414864",
@@ -231,26 +686,6 @@
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: What JLL Sees This Holiday Season. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Tragedie lângă Ibiza: Petrolier cu 7.000 tone motorină s-a răsturnat, un mort",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
-      "date": "2026-11-26T15:17:18+00:00",
-      "category": "International",
-      "summary": "Un petrolier ce transporta până la 7.000 de tone de motorină s-a răsturnat în largul insulei Ibiza, soldat cu un deces. Serviciul spaniol de salvare maritimă evaluează în continuare amploarea potențialelor daune ecologice cauzate de incident.",
-      "instagram_caption": "Tragedie în Marea Mediterană! 🌊 Un petrolier ce transporta până la 7.000 de tone de motorină s-a răsturnat lângă Ibiza, soldat cu pierderea unei vieți. 😢 Autoritățile spaniole de salvare maritimă evaluează acum impactul ecologic potențial. Rămânem cu ochii pe situație! #Ibiza #Petrolier #AccidentMaritim #DezastruEcologic #StiriNEXAS #Mediterana #Spania",
-      "hashtags": [
-        "Ibiza",
-        "Petrolier",
-        "AccidentMaritim",
-        "DezastruEcologic",
-        "StiriNEXAS",
-        "Mediterana",
-        "Spania"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Nojorid, Bihor: Peste 2,6 mil. € din fonduri UE pentru o piață agroalimentară modernă",
       "source": "Ziarul Financiar",
       "url": "https://www.zf.ro/zf-transilvania/primaria-comunei-nojorid-judetul-bihor-a-accesat-un-proiect-european-de-peste-2-6-mil-euro-pentru-construirea-unei-piete-agroalimentare-23290291",
@@ -269,25 +704,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Business news: Primăria comunei Nojorid, judeţul Bihor, a accesat un proiect european de peste 2,6 mil. euro pentru. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Primăria comunei Nojorid, judeţul Bihor, a accesat un proiect european de peste 2,6 mil. euro pentru construirea unei pieţe agroalimentare",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/zf-transilvania/primaria-comunei-nojorid-judetul-bihor-a-accesat-un-proiect-european-de-peste-2-6-mil-euro-pentru-construirea-unei-piete-agroalimentare-23290291",
-      "date": "2026-11-26T15:16:40+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Primăria comunei Nojorid, judeţul Bihor, a accesat un proiect european de peste 2,6 mil. euro pentru construirea unei pieţe agroalimentare",
-      "instagram_caption": "Primăria comunei Nojorid, judeţul Bihor, a accesat un proiect european de peste 2,6 mil. euro pentru construirea unei pieţe agroalimentare\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Primăria comunei Nojorid, judeţul Bihor, a accesat un proiect european de peste 2,6 mil. euro pentru. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Philips 34B2U5600 Review: ultrawide bine echipat si accesibil - Arena IT",
@@ -450,19 +866,19 @@
       "image_prompt": "Premium editorial photograph for Sanatate news: Schimbarea anotimpurilor poate agrava multe boli respiratorii: 4 semne de avertizare care necesită s. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Omega-3 și aspirina, la fel de eficiente ca antibioticele în parodontoza severă",
+      "title": "Common supplements rival antibiotics in treating severe gum disease",
       "source": "Science Daily",
       "url": "https://www.sciencedaily.com/releases/2026/11/261126033031.htm",
       "date": "2026-11-26T11:43:30+00:00",
       "category": "Stiinta",
-      "summary": "O combinație de omega-3 și aspirină în doză mică a demonstrat rezultate similare cu antibioticele, atunci când a fost utilizată împreună cu tratamentul standard pentru parodontoza severă. Beneficiile au persistat mult timp după încheierea suplimentării. Această descoperire surprinzătoare poate oferi o alternativă valoroasă și poate reduce dependența de antibiotice.",
-      "instagram_caption": "Știri uimitoare! 🤯 Omega-3 și aspirina, în doză mică, au produs rezultate comparabile cu antibioticele în tratamentul parodontozei severe, alături de terapia standard. 🦷 Beneficiile au persistat mult după încetarea suplimentării. O alternativă surprinzătoare ce reduce dependența de antibiotice! ✨ #NEXAS #Stiinta #SanatateOrala #Parodontoza #Suplimente",
+      "summary": "A combination of omega-3 and low-dose aspirin produced results comparable to antibiotics when used alongside standard treatment for severe gum disease, with benefits persisting long after supplementation ended. The surprising descoperire could offer an alternative for some patients while reducing reliance on antibiotics.",
+      "instagram_caption": "Common supplements rival antibiotics in treating severe gum disease\n\nCiteste pe nexas.ro/stiri/",
       "hashtags": [
-        "NEXAS",
-        "Stiinta",
-        "SanatateOrala",
-        "Parodontoza",
-        "Suplimente"
+        "#NEXAS",
+        "#Stiinta",
+        "#Science",
+        "#Descoperiri",
+        "#Inovatie"
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Stiinta news: Common supplements rival antibiotics in treating severe gum disease. Professional photorealistic style. No text, no logos, no watermarks."
@@ -4361,204 +4777,6 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: Cântăreața Miley Cyrus s-a căsătorit cu bateristul trupei Liily, Maxx Morando - Digi24. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Două treimi din conținutul de demență de pe TikTok este înșelător, spun cercetătorii",
-      "source": "Healthline",
-      "url": "https://www.healthline.com/health-news/dementia-content-tiktok-often-misleading",
-      "date": "2026-11-21T20:19:28.788107+00:00",
-      "category": "Sanatate",
-      "summary": "O nouă cercetare sugerează că două treimi (66,4%) dintre videoclipurile TikTok cu sfaturi privind demența conțineau informații înșelătoare. Richard Drury/DigitalVision/Getty Images Un nou sondaj a constatat că aproximativ două treimi din videoclipurile cu sfaturi despre demență de pe TikTok conțineau informații inexacte. Cercetătorii raportează că 44% dintre creatorii din spatele videoclipurilor înșelătoare despre demență nu au calificări relevante. Experții sfătuiesc să căutați informații",
-      "instagram_caption": "Two-Thirds of Dementia Content On TikTok Is Misleading, Researchers Say\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Two-Thirds of Dementia Content On TikTok Is Misleading, Researchers Say. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "(P) Te urmărește iubitul prin telefon? Când gelozia se transformă în supraveghere. Legătura tulburătoare cu „1984” de George Orwell",
-      "source": "CSID",
-      "url": "https://www.csid.ro/stiri/p-te-urmareste-iubitul-prin-telefon-cand-gelozia-se-transforma-in-supraveghere-legatura-tulburatoare-cu-1984-de-george-orwell-21365223/",
-      "date": "2026-11-21T20:19:25.093766+00:00",
-      "category": "Sanatate",
-      "summary": "Îți cere să îi trimiți locația în timp real, îți verifică mesajele, vrea să știe cu cine vorbești și se supără dacă nu răspunzi imediat la telefon. La început, asemenea gesturi pot fi prezentate drept […] Articolul (P) Te urmărește iubitul prin telefon? Când gelozia se transformă în supraveghere. Legătura tulburătoare cu „1984” de George Orwell apare prima dată în CSID: Ce se întâmplă Doctore? .",
-      "instagram_caption": "(P) Te urmărește iubitul prin telefon? Când gelozia se transformă în supraveghere. Legătura tulburătoare cu „1984” de George Orwell\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sanatate",
-        "#Health",
-        "#Medicina",
-        "#Wellness"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: (P) Te urmărește iubitul prin telefon? Când gelozia se transformă în supraveghere. Legătura tulburăt. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Explozii și alerte de raid aerian în Kaliningrad. O bază strategică a Flotei ruse ar fi fost vizată de un atac cu drone",
-      "source": "Digi24",
-      "url": "https://www.digi24.ro/stiri/externe/explozii-si-alerte-de-raid-aerian-in-kaliningrad-o-baza-strategica-a-flotei-ruse-ar-fi-fost-vizata-de-un-atac-cu-drone-4047445",
-      "date": "2026-11-21T20:15:26+00:00",
-      "category": "Romania",
-      "summary": "Explozii și o posibilă activitate a dronelor au fost semnalate în apropierea bazei navale a Flotei ruse din Marea Baltică, în orașul Baltiisk, din regiunea Kaliningrad. Sirenele de raid aerian au răsunat în mai multe zone ale exclavei ruse, sâmbătă, potrivit unor canale de monitorizare ucrainene, citate de Kyiv Independent.",
-      "instagram_caption": "Explozii și alerte de raid aerian în Kaliningrad. O bază strategică a Flotei ruse ar fi fost vizată de un atac cu drone\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Explozii și alerte de raid aerian în Kaliningrad. O bază strategică a Flotei ruse ar fi fost vizată . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Marele Cesare Prandelli pune la îndoială decizia lui Cristi Chivu: „E paradoxal!”",
-      "source": "ProSport",
-      "url": "https://www.prosport.ro/fotbal-extern/marele-cesare-prandelli-reactie-pio-esposito-chivu-inter-20574641",
-      "date": "2026-11-21T20:14:29+00:00",
-      "category": "Sport",
-      "summary": "Cesare Prandelli nu înțelege de ce titularul din atacul naționalei Italiei nu e titular incontestabil și sub comanda lui Cristi Chivu (46 de ani). Pio Esposito (21 de ani) profită de accidentarea lui Lautaro Martinez (29 de ani) și a adunat mai multe minute în tricoul „nerazzurilor”. Marele Prandelli consideră că e „paradoxal” faptul că […] The post Marele Cesare Prandelli pune la îndoială decizia lui Cristi Chivu: „",
-      "instagram_caption": "Marele Cesare Prandelli pune la îndoială decizia lui Cristi Chivu: „E paradoxal!”\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Marele Cesare Prandelli pune la îndoială decizia lui Cristi Chivu: „E paradoxal!”. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Premieră în RCA. Prețurile au scăzut serios în noiembrie după explozia din vară-toamnă. Firmele din afara țării de la care cumpără o treime din șoferi",
-      "source": "Economica",
-      "url": "https://www.economica.net/premiera-in-rca-preturile-au-scazut-serios-in-noiembrie-dupa-explozia-din-vara-toamna-firmele-din-afara-tarii-de-la-care-cumpara-o-treime-din-soferi_997926.html",
-      "date": "2026-11-21T20:13:51+00:00",
-      "category": "Business",
-      "summary": "Premieră în RCA. Pentru prima dată din martie 2026, prețurile de vânzare au scăzut substanțial. Datele din prima jumătate a lunii noiembrie consemnează, printre altele, consolidareea pozițiilor Axeria Iard (Franța) și Hellas Direct (Cipru), care, alături de nou intrata Anytime Interamerican (Grecia) au adunat spre o treime din toate contractele vândute în perioada amintită.",
-      "instagram_caption": "Premieră în RCA. Prețurile au scăzut serios în noiembrie după explozia din vară-toamnă. Firmele din afara țării de la care cumpără o treime din șoferi\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Premieră în RCA. Prețurile au scăzut serios în noiembrie după explozia din vară-toamnă. Firmele din . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Marius Avram a dat verdictul, după haosul de la Dinamo - Petrolul! Întrerupere de 24 de minute la Slobozia",
-      "source": "DigiSport",
-      "url": "https://www.digisport.ro/fotbal/liga-1/marius-avram-a-dat-verdictul-dupa-haosul-de-la-dinamo-petrolul-intrerupere-de-24-de-minute-la-slobozia-4618155",
-      "date": "2026-11-21T20:11:45+00:00",
-      "category": "Sport",
-      "summary": "Marius Avram a dat verdictul, după haosul de la Dinamo - Petrolul! Întrerupere de 24 de minute la Slobozia",
-      "instagram_caption": "Marius Avram a dat verdictul, după haosul de la Dinamo - Petrolul! Întrerupere de 24 de minute la Slobozia\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Marius Avram a dat verdictul, după haosul de la Dinamo - Petrolul! Întrerupere de 24 de minute la Sl. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Fostul preşedinte brazilian Jair Bolsonaro, internat la terapie intensivă din cauza unei ocluzii intestinale",
-      "source": "G4Media",
-      "url": "https://www.g4media.ro/fostul-presedinte-brazilian-jair-bolsonaro-internat-la-terapie-intensiva-din-cauza-unei-ocluzii-intestinale.html",
-      "date": "2026-11-21T20:07:53+00:00",
-      "category": "Romania",
-      "summary": "Fostul preşedinte brazilian Jair Bolsonaro a fost internat la terapie intensivă din cauza unei ocluzii intestinale, a anunţat sâmbătă spitalul DF Star din Brasilia, unde acesta a fost admis vineri, relatează agențiile de știri AFP şi Reuters, citate de Agerpres. Bolsonaro, în vârstă de 71 de ani, execută o pedeapsă de 27 de ani de […] © G4Media.ro .",
-      "instagram_caption": "Fostul preşedinte brazilian Jair Bolsonaro, internat la terapie intensivă din cauza unei ocluzii intestinale\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Fostul preşedinte brazilian Jair Bolsonaro, internat la terapie intensivă din cauza unei ocluzii int. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Vinicius l-a înțepat pe Xabi Alonso după umilința lui Chelsea! Gestul care a aprins internetul",
-      "source": "Fanatik",
-      "url": "https://www.fanatik.ro/vinicius-l-a-intepat-pe-xabi-alonso-dupa-umilinta-lui-chelsea-gestul-care-a-aprins-internetul-21597380",
-      "date": "2026-11-21T20:04:21+00:00",
-      "category": "Sport",
-      "summary": "Vinicius, ironie la adresa lui Xabi Alonso după eșecul usturător al lui Chelsea! Internetul a explodat",
-      "instagram_caption": "Vinicius l-a înțepat pe Xabi Alonso după umilința lui Chelsea! Gestul care a aprins internetul\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Sport",
-        "#Fotbal",
-        "#Romania",
-        "#Campionat"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sport news: Vinicius l-a înțepat pe Xabi Alonso după umilința lui Chelsea! Gestul care a aprins internetul. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "ONU nu reușește să convină asupra regulilor care reglementează „roboții ucigași”",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-      "date": "2026-11-21T20:03:37+00:00",
-      "category": "AI & Tech",
-      "summary": "Unul dintre punctele de pe ordinea de zi a diplomaților ONU reuniți la Geneva săptămâna aceasta a fost elaborarea unor reguli privind utilizarea armelor autonome, sau așa-numiții „roboți ucigași”. În cele din urmă, reprezentanții au părăsit întâlnirile, fiind de acord să „înceapă să discute despre opțiuni” după o săptămână de negocieri în mare parte fără rezultate. Potrivit NPR: Înainte de începerea negocierilor, […]",
-      "instagram_caption": "The UN fails to agree on rules regulating ‘killer robots’\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tech",
-        "#Tehnologie",
-        "#InteligentaArtificiala"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: The UN fails to agree on rules regulating ‘killer robots’. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Act secret semnat la Guvern. Salarii majorate la Transelectrica și Transgaz. Creșterea va fi acoperită din fondurile proprii ale companiilor",
-      "source": "Profit.ro",
-      "url": "https://www.profit.ro/stiri/politic/act-secret-semnat-la-guvern-salarii-majorate-la-transelectrica-si-transgaz-cresterea-va-fi-acoperita-din-fondurile-proprii-ale-companiilor-23002787?utm_source=Rss&utm_medium=Referral&utm_campaign=Cross",
-      "date": "2026-11-21T19:56:00+00:00",
-      "category": "Business",
-      "summary": "Salariile de la Transelectrica și Transgaz au fost indexate cu 6,5%, printr-un memorandul secret avizat de Guvern.",
-      "instagram_caption": "Act secret semnat la Guvern. Salarii majorate la Transelectrica și Transgaz. Creșterea va fi acoperită din fondurile proprii ale companiilor\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Act secret semnat la Guvern. Salarii majorate la Transelectrica și Transgaz. Creșterea va fi acoperi. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Polițiști anchetați în Franța pentru violențe și agresiune sexuală împotriva protestatarilor",
-      "source": "HotNews",
-      "url": "https://hotnews.ro/politisti-anchetati-in-franta-pentru-violente-si-agresiune-sexuala-impotriva-protestatarilor-2410708",
-      "date": "2026-11-21T19:54:35+00:00",
-      "category": "Romania",
-      "summary": "Parchetul francez a deschis o anchetă care vizează mai mulţi poliţişti, acuzaţi de violenţe asupra a doi tineri participanţi la o manifestaţie desfăşurată la Paris la 31 octombrie. Unul dintre agenţi este cercetat şi pentru agresiune sexuală, scrie AFP, preluată de Agerpres. Cei doi tineri au depus plângeri la 4 noiembrie, reclamând modul în care …",
-      "instagram_caption": "Polițiști anchetați în Franța pentru violențe și agresiune sexuală împotriva protestatarilor\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Romania",
-        "#StiriRomania",
-        "#Actualitate",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Romania news: Polițiști anchetați în Franța pentru violențe și agresiune sexuală împotriva protestatarilor. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Lupta pentru combustibilii fosili lasă discuțiile COP31 privind climă în impas",
       "source": "BBC World",
       "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
@@ -4577,44 +4795,6 @@
       "image_prompt": "Premium editorial photograph for International news: Fight over fossil fuels leaves COP31 climate talks in deadlock. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Ministrul Agriculturii, Florin Barbu, vrea prelungirea plafonării adaosului comercial până la finalul anului 2027",
-      "source": "Ziarul Financiar",
-      "url": "https://www.zf.ro/companii/retail-agrobusiness/ministrul-agriculturii-florin-barbu-vrea-prelungirea-plafonarii-adaosului-comercial-pana-la-finalul-anului-2027-23286654",
-      "date": "2026-11-21T19:21:02+00:00",
-      "category": "Business",
-      "summary": "Ministrul Agriculturii, Florin Barbu, vrea prelungirea plafonării adaosului comercial până la finalul anului 2027",
-      "instagram_caption": "Ministrul Agriculturii, Florin Barbu, vrea prelungirea plafonării adaosului comercial până la finalul anului 2027\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Business",
-        "#Economie",
-        "#Antreprenoriat",
-        "#Finance"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Business news: Ministrul Agriculturii, Florin Barbu, vrea prelungirea plafonării adaosului comercial până la finalu. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Trump comentează atacul cibernetic raportat la baza de date FBI: „Nu e bine”",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
-      "date": "2026-11-21T18:44:53+00:00",
-      "category": "AI & Tech",
-      "summary": "FBI-ul investighează un presupus atac cibernetic ce a vizat National Crime Information Center (NCIC). Președintele Trump a comentat incidentul, declarând că situația „nu e bine”. Detaliile sunt încă sub investigație.",
-      "instagram_caption": "Președintele Trump a reacționat la presupusul atac cibernetic asupra bazei de date a FBI, National Crime Information Center (NCIC)! 🕵️‍♂️ „Nu e bine”, a declarat el. FBI-ul investighează incidentul, care a fost raportat de TechCrunch. 😱 Urmărește NEXAS pentru cele mai noi știri din #AI și #Tech! 💻🔒 #FBI #Cybersecurity #Trump #NEXAS",
-      "hashtags": [
-        "FBI",
-        "Cybersecurity",
-        "Trump",
-        "AtacCibernetic",
-        "AI",
-        "Tech",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: Trump says reported FBI database hack is ‘not good’. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Atac mortal la Kiev, când Rusia lansează un baraj împotriva Ucrainei",
       "source": "Al Jazeera",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/aje-onl-nf_deadly-attack-in-kyiv-as-russia-launches-barrage-211126?traffic_source=rss",
@@ -4631,42 +4811,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for International news: Deadly attack in Kyiv as Russia launches barrage against Ukraine. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Viața la un pas de catastrofă: Satele din inima Europei, care au ajuns brusc în prima linie a „războiului... - Digi24",
-      "source": "Google Intl",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQbTEtWVpPUERxeV9Cb2RrbE1qZWNzZ1dyMi1WNERfTC1zekR6eGJnMnJYWlBtWktFcXdIUlJLeUFfVDJMNEUzb3diVEhzbnlid2RQUHVyVmY5MmdhdEVoOG1FQTVOY2gxQWlOb3d5bGxZaTlvSkIxd3k2aUp0OFRkSExMUXlJNlBRMmRVUW5pRThTOTFROEQ0aWl0ZHdxVGxRR01mU0g0VXZyWGdkdjBDM0lXQmxlbHhxWGFxbzJSUnhlanNxcE5ZODNZdlAtTTB4ZmZUeG9jQzhyVWIwbkYwT1BYV3VCU1pkaEhjLWdveDIzOE41SEhZ0gGEAkFVX3lxTE1sd09SZ2tFWGFyVHVrUTcwdDN6QWJVZVNTWXluYnRNbXVsQTMxQ3RuQU9rUDZxSU50MEVfblBxWThocUEtNlFMS2drR1NIWW5EVXhLMlc0RUJ5SWRQWUZ3YXE3WnNRdWNrNFJzUmJId1hqOTlGal9KZTllV0RZYzZQUFdDRVR2OTNFQVpkeng4Q1NRZlR6MUdhMFdYWXVvd1M2d3lfZTI0RnRIV1ctRFpaWHRzeFpOLWgzem9vVERXV2x6THd5d1JuSFdtODM4dGdIeENpLTBIZG9fQUtSdXNPQUNla3VOcFJiSGFDX3ExbzF4endfVS1qeVBGR3pkZnlLaEpr?oc=5",
-      "date": "2026-11-21T18:20:19+00:00",
-      "category": "International",
-      "summary": "Viața la un pas de catastrofă: Satele din inima Europei, care au ajuns brusc în prima linie a „războiului... Digi24",
-      "instagram_caption": "Viața la un pas de catastrofă: Satele din inima Europei, care au ajuns brusc în prima linie a „războiului... - Digi24\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#International",
-        "#StiriMondiale",
-        "#Lume",
-        "#Breaking"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Viața la un pas de catastrofă: Satele din inima Europei, care au ajuns brusc în prima linie a „războ. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "HONOR 700 și 700 Pro ar avea baterii de 9.000 mAh, camere de 200 MP și ecran pe spate; Specificațiile apar înainte de lansare - Mobilissimo.",
-      "source": "Google News Tech",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPdXk1V19EdFA1bFJST3pEUFZEN0JYVVlBaWN3RXdXN29LQUw3WnZ2cEM2Um8wanBRNXNrQ2tYaldnMlZpMGRPV3lHMEhPM2J4dnZQbFVoaWt2cERLYXZvcDg5OHlWczh6WU5sYlVkZlVycEJYVGlERl9aYjBCQk9CRTZqVGw5M3ViUEw3bW8wc09Dd1N6U3NJRC1BV3A5UWtQa2ktTUhybEp6SVFvWi1odXdKdV9tSVdhaGx6TXdtMWNhajdxeFEta2ZaelFQeFdacHZ3MFpmZ3RqbmdQX1ZwTEgycVF5aGhlYzN4ZEVfb0VwUm5VSEE5anpn?oc=5",
-      "date": "2026-11-21T18:18:56+00:00",
-      "category": "AI & Tech",
-      "summary": "HONOR 700 și 700 Pro ar avea baterii de 9.000 mAh, camere de 200 MP și ecran pe spate; Specificațiile apar înainte de lansare Mobilissimo.",
-      "instagram_caption": "HONOR 700 și 700 Pro ar avea baterii de 9.000 mAh, camere de 200 MP și ecran pe spate; Specificațiile apar înainte de lansare - Mobilissimo.\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#AI",
-        "#Tech",
-        "#Tehnologie",
-        "#InteligentaArtificiala"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for AI & Tech news: HONOR 700 și 700 Pro ar avea baterii de 9.000 mAh, camere de 200 MP și ecran pe spate; Specificațiil. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "Fizicienii propun un tabel periodic al materiei întunecate",
@@ -4742,79 +4886,6 @@
       "image_prompt": "Premium editorial photograph for Entertainment news: INTERVIU Carla's Dreams se întoarce pe scenă, după un an de pauză, cu un concert simfonic și din nou. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
-      "title": "Horoscop. Soarele intră în Săgetător pe 22 noiembrie 2026. Ce schimbări se anunță pentru toate zodii până la finalul anului - Stirile ProTV",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQQ2xKZWtldzVLY3p3cTVSX01JNmVoVFJtX1ZIbDlpZHJqU2JCYm1DWHN1cFVWR19tQ3BIUDFRSU84b2lQaHc0bVY4NHNrOUFRUF9CazlhaGp5d0NRTnEwUWdHLXdxRlEwaFFNT1Q0OUdRREpNblZLYkx4OXlEaWtRR2tWRHlLWTlzNi1CaV9nZW00U25uMDhmVGxtYjU4YnZacmFSNUF6dXV2WVJMTEVOTF9ydzRuQTRXbl9hYTJnai1OUjFjWDVSM19tMXp0Q0ZhOEt1bkZlcGRxNVpRVTNfZ01IZXlSRlA3R0dhNHVB?oc=5",
-      "date": "2026-11-21T16:09:50+00:00",
-      "category": "Entertainment",
-      "summary": "Horoscop. Soarele intră în Săgetător pe 22 noiembrie 2026. Ce schimbări se anunță pentru toate zodii până la finalul anului Stirile ProTV E scris în stele – duminică, 22 noiembrie 2026 Televiziunea INFO HD Soarele în Săgetător răstoarnă planurile unor zodii. Cine este îndemnat să lase trecutul în urmă TVMania Trei zodii pentru care viața se îmbunătățește până pe 22 noiembrie. Ce schimbări anunță astrele Evenimentul Z",
-      "instagram_caption": "Horoscop. Soarele intră în Săgetător pe 22 noiembrie 2026. Ce schimbări se anunță pentru toate zodii până la finalul anului - Stirile ProTV\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Entertainment",
-        "#Vedete",
-        "#Divertisment",
-        "#Lifestyle"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Horoscop. Soarele intră în Săgetător pe 22 noiembrie 2026. Ce schimbări se anunță pentru toate zodii. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "O misiune din 1969, cum nu găsești nici în GTA 6: echipajul Apollo 12 a fost pe Lună și a recuperat câteva echipamente de pe o sondă - Republica.ro",
-      "source": "Google Stiinta",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQ0RpZVJGb3RHdWw5QjJxT0NnSXNLNFNpMFJITnF3eU9PWWFfMGY4M2phY3lWckJrcjkyTUpweGQ5NlJzcE9PX0kwR1BYYTloY0V4Rko4Z1AzbHEzNHVCNGctVFM0TDV6OXY4VUJlTjdXS2E2a0FJU1RoM3BGWUpROTFJaTdiMllJNjYwOTBMY3pUWkRnSjJrR2ZWV2xLaXpoNGRnOHVseC1zcGhDR3Awc0tPVXFCc3ZfbDBuWDh3?oc=5",
-      "date": "2026-11-21T15:38:13+00:00",
-      "category": "Stiinta",
-      "summary": "O misiune din 1969, cum nu găsești nici în GTA 6: echipajul Apollo 12 a fost pe Lună și a recuperat câteva echipamente de pe o sondă Republica.ro",
-      "instagram_caption": "O misiune din 1969, cum nu găsești nici în GTA 6: echipajul Apollo 12 a fost pe Lună și a recuperat câteva echipamente de pe o sondă - Republica.ro\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: O misiune din 1969, cum nu găsești nici în GTA 6: echipajul Apollo 12 a fost pe Lună și a recuperat . Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "La urma urmei, AI poate să nu funcționeze ca creierul uman, descoperă oamenii de știință",
-      "source": "Science Daily",
-      "url": "https://www.sciencedaily.com/releases/2026/11/261120075701.htm",
-      "date": "2026-11-21T15:24:58+00:00",
-      "category": "Stiinta",
-      "summary": "La urma urmei, AI poate să nu gândească ca creierul uman, potrivit unei noi descoperiri izbitoare care provoacă modul în care oamenii de știință înțeleg inteligența artificială. Cercetătorii au descoperit că chiar și modelele de inteligență artificială care prezic îndeaproape activitatea creierului se pot baza pe procese interne pe care creierul nu le utilizează, ridicând întrebări importante cu privire la fiabilitatea lor în cercetarea în neuroștiință.",
-      "instagram_caption": "AI may not work like the human brain after all, scientists discover\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Stiinta",
-        "#Science",
-        "#Descoperiri",
-        "#Inovatie"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Stiinta news: AI may not work like the human brain after all, scientists discover. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Dr. Lucian Bratu, despre cancerul testicular. Mai poți deveni tată după tratament? | CSID Talks #16",
-      "source": "CSID",
-      "url": "https://www.csid.ro/video/talks/dr-lucian-bratu-despre-cancerul-testicular-mai-poti-deveni-tata-dupa-tratament-csid-talks-16-21364881/",
-      "date": "2026-11-21T13:46:30.737077+00:00",
-      "category": "Sanatate",
-      "summary": "Dr. Lucian Bratu, medic specialist urolog, este invitatul special al ediției CSID Talks programată duminică, 22 noiembrie, la ora 18:00. Emisiunea va explora teme esențiale legate de cancerul testicular și penian, depistarea precoce, sănătatea sexuală și fertilitatea masculină. Descoperiți informații cruciale pentru sănătatea masculină.",
-      "instagram_caption": "Subiect vital la CSID Talks! 🚨 Dr. Lucian Bratu, medic specialist urolog, va fi invitat duminică, 22 noiembrie, ora 18:00, pentru o discuție esențială despre cancerul testicular și penian. 🩺 Vom aborda depistarea precoce, sănătatea sexuală și fertilitatea masculină. Întrebarea crucială: Mai poți deveni tată după tratament? 👨‍👩‍👧‍👦 Nu ratați! Detalii complete în articolul nostru. Link în bio! 💪",
-      "hashtags": [
-        "#SanatateMasculina",
-        "#CancerTesticular",
-        "#Fertilitate",
-        "#Urologie",
-        "#CSIDTalks",
-        "#Prevenire"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Sanatate news: Dr. Lucian Bratu, despre cancerul testicular. Mai poți deveni tată după tratament? | CSID Talks #16. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
       "title": "Eșecul IPO Anthropic nu liniștește piața AI",
       "source": "Bloomberg",
       "url": "https://www.bloomberg.com/news/videos/2026-11-21/anthropic-ipo-fails-to-calm-ai-jitters-video",
@@ -4836,68 +4907,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Anthropic IPO Fails to Calm AI Jitters. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Zelensky: Atacurile asupra Podului Crimeei, „răspuns justificat” în timpul întâlnirii cu Streeting",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
-      "date": "2026-11-21T13:17:38+00:00",
-      "category": "International",
-      "summary": "Președintele ucrainean Volodimir Zelensky a declarat că acțiunile Kievului asupra Podului Crimeei reprezintă un „răspuns echitabil”. Acesta a subliniat că Ucraina a reacționat în urma celor 109 atacuri aeriene separate ale Rusiei asupra podurilor din țară, o ofensivă majoră care a precedat riposta ucraineană. Declarațiile au fost făcute în contextul întâlnirii sale cu un oficial britanic.",
-      "instagram_caption": "Zelensky declară că atacurile asupra Podului Crimeei sunt un „răspuns justificat”! ⚖️ Președintele ucrainean a subliniat că acțiunile Kievului vin după 109 atacuri aeriene rusești separate asupra podurilor din Ucraina. 🇺🇦🇷🇺 O replică la agresiune, discutată în timpul întâlnirii sale cu oficialul britanic Streeting. 🇬🇧 Rămâi informat cu NEXAS! #Zelensky #Ucraina #PodulCrimeei #Război #RăspunsJustificat #NEXAS #ȘtiriInternaționale",
-      "hashtags": [
-        "#Zelensky",
-        "#Ucraina",
-        "#PodulCrimeei",
-        "#Război",
-        "#RăspunsJustificat",
-        "#NEXAS",
-        "#ȘtiriInternaționale"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for International news: Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "De ce s-au întors Prințul Harry și Meghan brusc în Marea Britanie?",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeGVYUFdGcG8xOUlMTE9iRXJRdGR5NEE5SGRkdDFaWEdZcVlVN0FvLW5LUU5FRndlci1hSzdjcFNnXy1wMXBxN2ZZZlFxQnRPcW1TcU9pempFWWtwaGZmVTBKTjZ6QU9vVUpIYzFxb0NFajlMSHdGQTZ4cVYtcEZUdEJIS081VVVQWTJwN1JodC1PVnB5UzFkZWJ6OHpWdXc0dDlzYi1SUjRkaDlzSDR0U3FpU29fUGFjaWEtdDlCcGJQVkU?oc=5",
-      "date": "2026-11-21T11:45:36+00:00",
-      "category": "Entertainment",
-      "summary": "Prințul Harry, Meghan Markle și copiii lor s-au întors brusc din SUA în Marea Britanie. Această mutare neașteptată a generat numeroase speculații privind motivele din spatele deciziei. Surse apropiate susțin că ar exista un secret important care a determinat cuplul să își schimbe planurile, inclusiv cele de Crăciun. Întoarcerea lor a surprins pe toată lumea, iar misterul persistă în legătură cu adevăratul scop al acestei decizii.",
-      "instagram_caption": "Prințul Harry, Meghan Markle și copiii lor s-au întors brusc din SUA în Marea Britanie! 🇬🇧✈️🇺🇸 Ce se ascunde în spatele acestei decizii neașteptate? 😮 Planurile lor de Crăciun s-au schimbat complet, iar misterul continuă să planeze. 🤔 Descoperă mai multe detalii despre secretul întoarcerii Ducilor de Sussex! #PrințulHarry #MeghanMarkle #FamiliaRegală #MareaBritanie #ÎntoarcereSurpriză #NEXAS",
-      "hashtags": [
-        "PrințulHarry",
-        "MeghanMarkle",
-        "FamiliaRegală",
-        "MareaBritanie",
-        "ÎntoarcereSurpriză",
-        "NEXAS"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: Dezvăluire. De ce s-au întors brusc prinţul Harry, Meghan Markle și copiii din SUA în Marea Britanie. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "5 Cărți Esențiale pentru Cadourile de Secret Santa: Inspirație Literară de Crăciun",
-      "source": "Google Ent",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNckJBTFBaTlNLcUlJRHNjOVlYUmJfRkJjaEJIVWVBLVozcXZJYlE4MlFtOUQ1b0RScnVNR1c2X3MxelFEZkM5RWVkMXZZYjZaTnRlR1FXaUNlNXktLWZONGFkWnlVcU0teG9GVk01c3pGamdMRWNjUnZYUzgtZGtZOFRDVnVSRTBpVGVPdHBTbXJjbzE4X2lNUHFCX0N6Y3BqOXc?oc=5",
-      "date": "2026-11-21T08:55:51+00:00",
-      "category": "Entertainment",
-      "summary": "Se apropie perioada magică a sărbătorilor, iar găsirea cadoului perfect de Secret Santa poate fi o adevărată provocare. Un cadou literar este însă o alegere atemporală și personală, oferind nu doar o carte, ci o întreagă experiență. Am pregătit o selecție atentă de 5 cărți, ideale pentru a aduce bucurie și a surprinde plăcut sub brad. Descoperă titluri captivante, potrivite pentru diverse gusturi și bugete, de la ficțiune la non-ficțiune inspirațională. Fă din Secret Santa o amintire de neuitat!",
-      "instagram_caption": "Cadoul perfect de Secret Santa există! 🎁 Nu știi ce să-i iei colegului sau prietenului tău? O carte este întotdeauna o idee genială! 📚 Am selectat 5 titluri care vor aduce zâmbete și seri de lectură minunate. De la romane captivante la cărți inspiraționale, avem ceva pentru fiecare gust. Descoperă-le pe site și găsește inspirația pentru Secret Santa-ul perfect! ✨ Link în BIO! #SecretSanta #CadouriCraciun #Carti #Lectura #Craciun #NEXAS #IdeiCadouri",
-      "hashtags": [
-        "SecretSanta",
-        "CadouriCraciun",
-        "Carti",
-        "Lectura",
-        "Craciun",
-        "NEXAS",
-        "IdeiCadouri",
-        "RecomandariCarti",
-        "GhidCadouri",
-        "TimpulLecturii"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Entertainment news: 5 cărți de Crăciun pentru cadourile de Secret Santa - Alist Magazine. Professional photorealistic style. No text, no logos, no watermarks."
     },
     {
       "title": "CrowdStrike în discuții pentru a cumpăra firma de securitate cibernetică Zscaler",
@@ -5166,25 +5175,6 @@
       ],
       "image": "",
       "image_prompt": "Premium editorial photograph for Bursa & Piete news: Tranzacție cu impact în România. Apare un nou gigant european în transport și logistică: L.I.T. Grou. Professional photorealistic style. No text, no logos, no watermarks."
-    },
-    {
-      "title": "Dolarul canadian, cel mai scăzut din 2025, cu o inflație de 3,1%.",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-16/canada-inflation-holds-steady-at-3-1-in-october",
-      "date": "2026-11-16T13:30:01+00:00",
-      "category": "Bursa & Piete",
-      "summary": "Rata inflației din Canada s-a menținut la 3,1% în octombrie, deoarece prețurile mai mari la energie au exercitat o presiune ascendentă asupra indicelui prețurilor de consum, în timp ce planurile pentru telefoane mobile s-au relaxat și creșterea prețului chiriei a încetinit.",
-      "instagram_caption": "Canadian Dollar Lowest Since 2025 on 3.1% Inflation Print\n\nCiteste pe nexas.ro/stiri/",
-      "hashtags": [
-        "#NEXAS",
-        "#Bursa",
-        "#Piete",
-        "#Investitii",
-        "#Finance",
-        "#BVB"
-      ],
-      "image": "",
-      "image_prompt": "Premium editorial photograph for Bursa & Piete news: Canadian Dollar Lowest Since 2025 on 3.1% Inflation Print. Professional photorealistic style. No text, no logos, no watermarks."
     }
   ]
 }
